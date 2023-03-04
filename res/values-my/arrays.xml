@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort">
+        <item>အမည်</item>
+        <item>အမည်(ပြောင်းပြန်)</item>
+        <item>အမျိုးအစား</item>
+        <item>အမျိုးအစား(ပြောင်းပြန်)</item>
+        <item>အရွယ်အစား</item>
+        <item>အရွယ်အစား(ပြောင်းပြန်)</item>
+        <item>အချိန်</item>
+        <item>အချိန်(ပြောင်းပြန်)</item>
+    </string-array> 
+	<string-array name="auto_save_variants">
+		<item>Off</item>
+		<item>15 စက္ကန့်</item> 
+		<item>30 စက္ကန့်</item>
+		<item>1 မိနစ်</item> 
+		<item>5 မိနစ်</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>မူလ</item>
+		<item>အသစ်</item> 
+	</string-array>
+	<string-array name="format">
+        <item>@string/jks</item>
+        <item>@string/pkcs12</item>
+        <item>@string/bks</item>
+        <item>@string/pk8</item>
+    </string-array>
+</resources>

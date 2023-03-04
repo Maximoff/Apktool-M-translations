@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="copy_variants">
+        <item>Переназвати</item>
+		<item>Rename files only</item>
+        <item>Замінити</item>
+        <item>Пропустити</item>
+    </string-array>
+    <string-array name="menu_pos">
+        <item>Зліва</item>
+        <item>Зправа</item>
+    </string-array>
+    <string-array name="sort">
+        <item>Ім\'я</item>
+        <item>Ім\'я (навпаки)</item>
+        <item>Тип</item>
+        <item>Тип (навпаки)</item>
+        <item>Розмір</item>
+        <item>Розмір (навпаки)</item>
+        <item>Час</item>
+        <item>Час (навпаки)</item>
+    </string-array>
+    <string-array name="resDecodeMode">
+        <item>Не декомпільовувати</item>
+        <item>Декомпілювати в загальну директорію</item>
+        <item>Декомпілювати в віддільну директорію</item>
+    </string-array>
+    <string-array name="converter_items">
+        <item>Текст &lt;-> Base64</item>
+        <item>Текст &lt;-> Unicode</item>
+        <item>Текст &lt;-> URL кодування</item>
+        <item>Текст &lt;-> MD5</item>
+        <item>Текст &lt;-> SHA-1</item>
+        <item>Текст &lt;-> SHA-224</item>
+        <item>Текст &lt;-> SHA-256</item>
+        <item>Текст &lt;-> SHA-384</item>
+        <item>Текст &lt;-> SHA-512</item>
+        <item>Текст &lt;-> Масив (UTF-8)</item>
+        <item>Текст &lt;-> Масив (UTF-16)</item>
+        <item>Текст &lt;-> Масив (UTF-16LE)</item>
+        <item>Текст &lt;-> Масив (UTF-16BE)</item>
+        <item>Текст &lt;-> Масив (US-ASCII)</item>
+        <item>Текст &lt;-> Масив (ISO-8859-1)</item>
+        <item>Текст &lt;-> Масив (CP1251)</item>
+        <item>Decimal &lt;-> Binary</item>
+        <item>Decimal &lt;-> Octal</item>
+        <item>Decimal &lt;-> Hex</item>
+        <item>Decimal &lt;-> Hex (0x0)</item>
+        <item>Decimal &lt;-> Hex (0x00000000)</item>
+        <item>Float &lt;-> Binary</item>
+		<item>Float &lt;-> Octal</item>
+		<item>Float &lt;-> Hex</item>
+		<item>Float &lt;-> Hex (0x0)</item>
+		<item>Float &lt;-> Hex (0x00000000)</item>
+        <item>Color &lt;-> Smali</item>
+        <item>Color &lt;-> Decimal</item>
+    </string-array>
+    <string-array name="installLocation">
+        <item>Не визначено</item>
+        <item>Автоматично</item>
+        <item>Внутрішня пам\'ять</item>
+        <item>Зовнішня пам\'ять</item>
+    </string-array>
+    <string-array name="auto_save_variants">
+        <item>Вимкнути</item>
+        <item>15 секунд</item>
+        <item>30 секунд</item>
+        <item>1 хвилина</item>
+        <item>5 хвилин</item>
+    </string-array>
+    <string-array name="to_vector_values">
+        <item>Адаптоване зображення (якість нижча)</item>
+        <item>Якісне зображення (великий розмір)</item>
+        <item>Convert to SVG</item>
+    </string-array>
+    <string-array name="backup_values">
+        <item>Налаштування</item>
+        <item>Закладки</item>
+        <item>Історія пошуку/заміни</item>
+        <item>Словник</item>
+    </string-array>
+    <string-array name="editor_themes">
+        <item>За замовчуванням</item>
+        <item>Нова</item>
+    </string-array>
+</resources>

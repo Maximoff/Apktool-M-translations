@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="copy_variants">
+        <item>Преименувай</item>
+		<item>Rename files only</item>
+        <item>Замени</item>
+        <item>Пропусни</item>
+    </string-array>
+    <string-array name="menu_pos">
+        <item>Отляво</item>
+        <item>Отдясно</item>
+    </string-array>
+    <string-array name="sort">
+        <item>Име</item>
+        <item>Име (реверс)</item>
+        <item>Тип</item>
+        <item>Тип (реверс)</item>
+        <item>Размер</item>
+        <item>Размер (реверс)</item>
+        <item>Време</item>
+        <item>Време (реверс)</item>
+    </string-array>
+    <string-array name="format">
+        <item>@string/jks</item>
+        <item>@string/pkcs12</item>
+        <item>@string/bks</item>
+        <item>@string/pk8</item>
+    </string-array>
+    <string-array name="converter_items">
+        <item>Текст &lt;-> Base64</item>
+        <item>Текст &lt;-> Юникод</item>
+        <item>Текст &lt;-> URL кодировка</item>
+        <item>Текст &lt;-> MD5</item>
+        <item>Текст &lt;-> SHA-1</item>
+        <item>Текст &lt;-> SHA-224</item>
+        <item>Текст &lt;-> SHA-256</item>
+        <item>Текст &lt;-> SHA-384</item>
+        <item>Текст &lt;-> SHA-512</item>
+        <item>Текст &lt;-> Масив (UTF-8)</item>
+        <item>Текст &lt;-> Масив (UTF-16)</item>
+        <item>Текст &lt;-> Масив (UTF-16LE)</item>
+        <item>Текст &lt;-> Масив (UTF-16BE)</item>
+        <item>Текст &lt;-> Масив (US-ASCII)</item>
+        <item>Текст &lt;-> Масив (ISO-8859-1)</item>
+        <item>Текст &lt;-> Масив (CP1251)</item>
+        <item>Decimal &lt;-> Binary</item>
+        <item>Decimal &lt;-> Octal</item>
+        <item>Decimal &lt;-> Hex</item>
+        <item>Decimal &lt;-> Hex (0x0)</item>
+        <item>Decimal &lt;-> Hex (0x00000000)</item>
+        <item>Float &lt;-> Binary</item>
+		<item>Float &lt;-> Octal</item>
+		<item>Float &lt;-> Hex</item>
+		<item>Float &lt;-> Hex (0x0)</item>
+		<item>Float &lt;-> Hex (0x00000000)</item>
+        <item>Color &lt;-> Smali</item>
+        <item>Color &lt;-> Decimal</item>
+    </string-array>
+    <string-array name="installLocation">
+        <item>Не е зададено</item>
+        <item>Авто</item>
+        <item>Вътрешна памет</item>
+        <item>Външна памет</item>
+    </string-array>
+    <string-array name="auto_save_variants">
+        <item>Изключи</item>
+        <item>15 секунди</item>
+        <item>30 секунди</item>
+        <item>1 минута</item>
+        <item>5 минути</item>
+    </string-array>
+    <string-array name="to_vector_values">
+        <item>Адаптирано изображение (качество по-ниско)</item>
+        <item>Качествено изображение (по-голям размер)</item>
+        <item>Convert to SVG</item>
+    </string-array>
+    <string-array name="backup_values">
+        <item>Настройки</item>
+        <item>Отметки</item>
+        <item>История търсене/замяна</item>
+        <item>Речници</item>
+    </string-array>
+    <string-array name="editor_themes">
+        <item>По подразб</item>
+        <item>Нова</item>
+    </string-array>
+    <string-array name="bing_translator_names">
+        <item>Определи Езика</item>
+        <item>Азербайджанский (латиница)</item>
+        <item>Албански</item>
+        <item>Английски</item>
+        <item>Арабски</item>
+        <item>Арменски</item>
+        <item>Африкаанс</item>
+        <item>Бенгалски</item>
+        <item>Български</item>
+        <item>Босненски</item>
+        <item>Валийски</item>
+        <item>Унгарски</item>
+        <item>Виетнамски</item>
+        <item>Хавайски</item>
+        <item>Холандски</item>
+        <item>Гръцки</item>
+        <item>Гуджарати</item>
+        <item>Датски</item>
+        <item>Иврит</item>
+        <item>Индонезийски</item>
+        <item>Ирландски</item>
+        <item>Исландски</item>
+        <item>Испански</item>
+        <item>Италиански</item>
+        <item>Казахски</item>
+        <item>Канада</item>
+        <item>Кантонски (традиционен)</item>
+        <item>Каталански</item>
+        <item>Каретарски отоми</item>
+        <item>Китайски (традиционен)</item>
+        <item>Китайски (опростен)</item>
+        <item>Корейски</item>
+        <item>Латишски</item>
+        <item>Литовски</item>
+        <item>Малайзийски</item>
+        <item>Малайски</item>
+        <item>Малаялам</item>
+        <item>Малтийски</item>
+        <item>Маори</item>
+        <item>Маратхи</item>
+        <item>Немски</item>
+        <item>Непалски</item>
+        <item>Норвежки</item>
+        <item>Ория</item>
+        <item>Панджаби</item>
+        <item>Персийски</item>
+        <item>Полски</item>
+        <item>Португалски (Бразилия)</item>
+        <item>Португалски (Португалия)</item>
+        <item>Румънски</item>
+        <item>Руски</item>
+        <item>Самоански</item>
+        <item>Сръбски (кирилица)</item>
+        <item>Сръбски (латиница)</item>
+        <item>Словацки</item>
+        <item>Словенски</item>
+        <item>Суахили</item>
+        <item>Таити</item>
+        <item>Тайски</item>
+        <item>Тамилски</item>
+        <item>Телугу</item>
+        <item>Тонга</item>
+        <item>Турски</item>
+        <item>Украински</item>
+        <item>Урду</item>
+        <item>Фиджи</item>
+        <item>Филипински</item>
+        <item>Финландски</item>
+        <item>Френски</item>
+        <item>Хинди</item>
+        <item>Хмонг дау</item>
+        <item>Хърватски</item>
+        <item>Чешки</item>
+        <item>Шведски</item>
+        <item>Естонски</item>
+        <item>Юкатекски майя</item>
+        <item>Японский</item>
+        <item>Амхарски</item>
+        <item>Асамски</item>
+        <item>Дари</item>
+        <item>Френски (Канада)</item>
+        <item>Инуктитут</item>
+        <item>Кхмерски</item>
+        <item>Клингон (латиница)</item>
+        <item>Курдски (централен)</item>
+        <item>Курдски (северен)</item>
+        <item>Лаоски</item>
+        <item>Мянма (Бирманский)</item>
+        <item>Пушту</item>
+        <item>Тигрин</item>
+    </string-array>
+    <string-array name="google_translator_codes">
+        <item>auto</item>
+        <item>az</item>
+        <item>sq</item>
+        <item>am</item>
+        <item>en</item>
+        <item>ar</item>
+        <item>hy</item>
+        <item>af</item>
+        <item>eu</item>
+        <item>be</item>
+        <item>bn</item>
+        <item>my</item>
+        <item>bg</item>
+        <item>bs</item>
+        <item>cy</item>
+        <item>hu</item>
+        <item>vi</item>
+        <item>haw</item>
+        <item>gl</item>
+        <item>el</item>
+        <item>ka</item>
+        <item>gu</item>
+        <item>da</item>
+        <item>zu</item>
+        <item>iw</item>
+        <item>ig</item>
+        <item>yi</item>
+        <item>id</item>
+        <item>ga</item>
+        <item>is</item>
+        <item>es</item>
+        <item>it</item>
+        <item>yo</item>
+        <item>kk</item>
+        <item>kn</item>
+        <item>ca</item>
+        <item>ky</item>
+        <item>zh-tw</item>
+        <item>zh-cn</item>
+        <item>ko</item>
+        <item>co</item>
+        <item>ht</item>
+        <item>ku</item>
+        <item>km</item>
+        <item>xh</item>
+        <item>lo</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>lb</item>
+        <item>mk</item>
+        <item>mg</item>
+        <item>ms</item>
+        <item>ml</item>
+        <item>mt</item>
+        <item>mi</item>
+        <item>mr</item>
+        <item>mn</item>
+        <item>de</item>
+        <item>ne</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>or</item>
+        <item>pa</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ps</item>
+        <item>rw</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sm</item>
+        <item>ceb</item>
+        <item>sr</item>
+        <item>st</item>
+        <item>si</item>
+        <item>sd</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>so</item>
+        <item>sw</item>
+        <item>su</item>
+        <item>tg</item>
+        <item>th</item>
+        <item>ta</item>
+        <item>tt</item>
+        <item>te</item>
+        <item>tr</item>
+        <item>tk</item>
+        <item>uz</item>
+        <item>ug</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>tl</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>fy</item>
+        <item>ha</item>
+        <item>hi</item>
+        <item>hmn</item>
+        <item>hr</item>
+        <item>ny</item>
+        <item>cs</item>
+        <item>sv</item>
+        <item>sn</item>
+        <item>gd</item>
+        <item>eo</item>
+        <item>et</item>
+        <item>jw</item>
+        <item>ja</item>
+    </string-array>
+    <string-array name="google_translator_names">
+        <item>Определи Езика</item>
+        <item>Азербайджански</item>
+        <item>Албански</item>
+        <item>Амхарски</item>
+        <item>Английски</item>
+        <item>Арабски</item>
+        <item>Арменски</item>
+        <item>Африкаанс</item>
+        <item>Баски</item>
+        <item>Белоруски</item>
+        <item>Бенгалски</item>
+        <item>Бирмански</item>
+        <item>Български</item>
+        <item>Босненски</item>
+        <item>Валийски</item>
+        <item>Унгарски</item>
+        <item>Виетнамски</item>
+        <item>Хавайски</item>
+        <item>Галийски</item>
+        <item>Гръцки</item>
+        <item>Грузински</item>
+        <item>Гуджарати</item>
+        <item>Датски</item>
+        <item>Зулу</item>
+        <item>Иврит</item>
+        <item>Игбо</item>
+        <item>Идиш</item>
+        <item>Индонезийски</item>
+        <item>Ирландски</item>
+        <item>Исландски</item>
+        <item>Испански</item>
+        <item>Италиански</item>
+        <item>Йоруба</item>
+        <item>Казахски</item>
+        <item>Канада</item>
+        <item>Каталонски</item>
+        <item>Киргизки</item>
+        <item>Китайски (традиционен)</item>
+        <item>Китайски (опростен)</item>
+        <item>Корейски</item>
+        <item>Корсикански</item>
+        <item>Креолски (Хаити)</item>
+        <item>Курманджи</item>
+        <item>Кхмерски</item>
+        <item>Кхоса</item>
+        <item>Лаоски</item>
+        <item>Латински</item>
+        <item>Латишски</item>
+        <item>Литовски</item>
+        <item>Люксембургски</item>
+        <item>Македонски</item>
+        <item>Малайзийски</item>
+        <item>Малайски</item>
+        <item>Малаялам</item>
+        <item>Малтийски</item>
+        <item>Маори</item>
+        <item>Маратхи</item>
+        <item>Монголски</item>
+        <item>Немски</item>
+        <item>Непалски</item>
+        <item>Холандски</item>
+        <item>Норвежки</item>
+        <item>Ория</item>
+        <item>Панджаби</item>
+        <item>Персийски</item>
+        <item>Полски</item>
+        <item>Португалски</item>
+        <item>Пушту</item>
+        <item>Руанда</item>
+        <item>Румънски</item>
+        <item>Руски</item>
+        <item>Самоански</item>
+        <item>Себуански</item>
+        <item>Сръбски</item>
+        <item>Сесото</item>
+        <item>Сингалски</item>
+        <item>Синдхи</item>
+        <item>Словацки</item>
+        <item>Словенски</item>
+        <item>Сомалийски</item>
+        <item>Суахили</item>
+        <item>Судански</item>
+        <item>Таджикски</item>
+        <item>Тайски</item>
+        <item>Тамилски</item>
+        <item>Татарски</item>
+        <item>Телугу</item>
+        <item>Турски</item>
+        <item>Туркменски</item>
+        <item>Узбекски</item>
+        <item>Уйгурски</item>
+        <item>Украински</item>
+        <item>Урду</item>
+        <item>Филипински</item>
+        <item>Финландски</item>
+        <item>Френски</item>
+        <item>Фризски</item>
+        <item>Хауса</item>
+        <item>Хинди</item>
+        <item>Хмонг</item>
+        <item>Хърватски</item>
+        <item>Чева</item>
+        <item>Чешки</item>
+        <item>Шведски</item>
+        <item>Шона</item>
+        <item>Шотландски (галски)</item>
+        <item>Есперанто</item>
+        <item>Естонски</item>
+        <item>Явански</item>
+        <item>Японски</item>
+    </string-array>
+    <string-array name="yandex_translator_codes">
+        <item>auto</item>
+        <item>az</item>
+        <item>sq</item>
+        <item>am</item>
+        <item>en</item>
+        <item>ar</item>
+        <item>hy</item>
+        <item>af</item>
+        <item>eu</item>
+        <item>ba</item>
+        <item>be</item>
+        <item>bn</item>
+        <item>my</item>
+        <item>bg</item>
+        <item>bs</item>
+        <item>cy</item>
+        <item>hu</item>
+        <item>vi</item>
+        <item>ht</item>
+        <item>gl</item>
+        <item>mrj</item>
+        <item>el</item>
+        <item>ka</item>
+        <item>gu</item>
+        <item>da</item>
+        <item>he</item>
+        <item>yi</item>
+        <item>id</item>
+        <item>ga</item>
+        <item>is</item>
+        <item>es</item>
+        <item>it</item>
+        <item>kk</item>
+        <item>kazlat</item>
+        <item>kn</item>
+        <item>ca</item>
+        <item>ky</item>
+        <item>zh</item>
+        <item>ko</item>
+        <item>xh</item>
+        <item>km</item>
+        <item>lo</item>
+        <item>la</item>
+        <item>lv</item>
+        <item>lt</item>
+        <item>lb</item>
+        <item>mk</item>
+        <item>mg</item>
+        <item>ms</item>
+        <item>ml</item>
+        <item>mt</item>
+        <item>mi</item>
+        <item>mr</item>
+        <item>mhr</item>
+        <item>mn</item>
+        <item>de</item>
+        <item>ne</item>
+        <item>nl</item>
+        <item>no</item>
+        <item>pa</item>
+        <item>pap</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>ceb</item>
+        <item>sr</item>
+        <item>si</item>
+        <item>sk</item>
+        <item>sl</item>
+        <item>sw</item>
+        <item>su</item>
+        <item>tl</item>
+        <item>tg</item>
+        <item>th</item>
+        <item>ta</item>
+        <item>tt</item>
+        <item>te</item>
+        <item>tr</item>
+        <item>udm</item>
+        <item>uz</item>
+        <item>uzbcyr</item>
+        <item>uk</item>
+        <item>ur</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>hi</item>
+        <item>hr</item>
+        <item>cs</item>
+        <item>cv</item>
+        <item>sv</item>
+        <item>gd</item>
+        <item>sjn</item>
+        <item>emj</item>
+        <item>eo</item>
+        <item>et</item>
+        <item>jv</item>
+        <item>sah</item>
+        <item>ja</item>
+    </string-array>
+    <string-array name="yandex_translator_names">
+        <item>Определи езика</item>
+        <item>Азербайджански</item>
+        <item>Албански</item>
+        <item>Амхарски</item>
+        <item>Английски</item>
+        <item>Арабски</item>
+        <item>Арменски</item>
+        <item>Африкански</item>
+        <item>Баскски</item>
+        <item>Башкирски</item>
+        <item>Белоруски</item>
+        <item>Бенгалски</item>
+        <item>Бирмански</item>
+        <item>Български</item>
+        <item>Босненски</item>
+        <item>Валийски</item>
+        <item>Унгарски</item>
+        <item>Виетнамски</item>
+        <item>Хаитски</item>
+        <item>Галиски</item>
+        <item>Горномарийски</item>
+        <item>Гръцки</item>
+        <item>Грузински</item>
+        <item>Гуджарати</item>
+        <item>Датски</item>
+        <item>Иврит</item>
+        <item>Идиш</item>
+        <item>Индонезийски</item>
+        <item>Ирландски</item>
+        <item>Исландски</item>
+        <item>Испански</item>
+        <item>Италиански</item>
+        <item>Казахски</item>
+        <item>Казахски (латиница)</item>
+        <item>Канада</item>
+        <item>Каталонски</item>
+        <item>Киргизки</item>
+        <item>Китайски</item>
+        <item>Корейски</item>
+        <item>Коса</item>
+        <item>Кхмерски</item>
+        <item>Лаоски</item>
+        <item>Латински</item>
+        <item>Латишски</item>
+        <item>Литовски</item>
+        <item>Люксембургски</item>
+        <item>Македонски</item>
+        <item>Малагаси</item>
+        <item>Малайски</item>
+        <item>Малаялам</item>
+        <item>Малтийски</item>
+        <item>Маори</item>
+        <item>Маратхи</item>
+        <item>Марийски</item>
+        <item>Монголски</item>
+        <item>Немски</item>
+        <item>Непалски</item>
+        <item>Холандски</item>
+        <item>Норвежки</item>
+        <item>Панджаби</item>
+        <item>Папименто</item>
+        <item>Персийски</item>
+        <item>Полски</item>
+        <item>Португалски</item>
+        <item>Румънски</item>
+        <item>Руски</item>
+        <item>Себуански</item>
+        <item>Сръбски</item>
+        <item>Сингалски</item>
+        <item>Словашки</item>
+        <item>Словенски</item>
+        <item>Суахили</item>
+        <item>Судански</item>
+        <item>Тагалски</item>
+        <item>Таджикски</item>
+        <item>Тайски</item>
+        <item>Тамилски</item>
+        <item>Татарски</item>
+        <item>Телугу</item>
+        <item>Турски</item>
+        <item>Удмурдски</item>
+        <item>Узбекски</item>
+        <item>Узбекски (кирилица)</item>
+        <item>Украински</item>
+        <item>Урду</item>
+        <item>Финландски</item>
+        <item>Френски</item>
+        <item>Хинди</item>
+        <item>Хърватски</item>
+        <item>Чешки</item>
+        <item>Чувашки</item>
+        <item>Шведски</item>
+        <item>Шотландски (галски)</item>
+        <item>Елфийски (синдарин)</item>
+        <item>Емодзи</item>
+        <item>Есперанто</item>
+        <item>Естонски</item>
+        <item>Явански</item>
+        <item>Якутски</item>
+        <item>Японски</item>
+    </string-array>
+</resources>

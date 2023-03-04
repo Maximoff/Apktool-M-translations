@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="copy_variants">
+		<item>이름 바꾸기</item>
+		<item>Rename files only</item>
+		<item>바꾸기</item>
+		<item>건너뛰기</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>왼쪽</item>
+		<item>오른쪽</item>
+	</string-array>
+	<string-array name="sort">
+		<item>이름</item>
+		<item>이름 역순</item>
+		<item>유형</item>
+		<item>유형 역순</item>
+		<item>크기</item>
+		<item>크기 역순</item>
+		<item>시간</item>
+		<item>시간 역순</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>디컴파일 안 함</item>
+		<item>주 디렉토리로 디컴파일</item>
+		<item>별도의 디렉토리로 디컴파일</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>텍스트 &lt;-&gt; Base64</item>
+		<item>텍스트 &lt;-&gt; Unicode</item>
+		<item>텍스트 &lt;-&gt; URL 인코딩</item>
+		<item>텍스트 &lt;-&gt; MD5</item>
+		<item>텍스트 &lt;-&gt; SHA-1</item>
+		<item>텍스트 &lt;-&gt; SHA-224</item>
+		<item>텍스트 &lt;-&gt; SHA-256</item>
+		<item>텍스트 &lt;-&gt; SHA-384</item>
+		<item>텍스트 &lt;-&gt; SHA-512</item>
+		<item>텍스트 &lt;-&gt; Array (UTF-8)</item>
+		<item>텍스트 &lt;-&gt; Array (UTF-16)</item>
+		<item>텍스트 &lt;-&gt; Array (UTF-16LE)</item>
+		<item>텍스트 &lt;-&gt; Array (UTF-16BE)</item>
+		<item>텍스트 &lt;-&gt; Array (US-ASCII)</item>
+		<item>텍스트 &lt;-&gt; Array (ISO-8859-1)</item>
+		<item>텍스트 &lt;-&gt; Array (CP1251)</item>
+		<item>10진수 &lt;-&gt; 2진수</item>
+		<item>10진수 &lt;-&gt; 8진수</item>
+		<item>10진수 &lt;-&gt; 16진수</item>
+		<item>10진수 &lt;-&gt; 16진수 (0x0)</item>
+		<item>10진수 &lt;-&gt; 16진수 (0x00000000)</item>
+		<item>Float &lt;-> Binary</item>
+		<item>Float &lt;-> Octal</item>
+		<item>Float &lt;-> Hex</item>
+		<item>Float &lt;-> Hex (0x0)</item>
+		<item>Float &lt;-> Hex (0x00000000)</item>
+		<item>Color &lt;-> Smali</item>
+		<item>Color &lt;-> Decimal</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>설정 안 함</item>
+		<item>자동</item>
+		<item>내부만</item>
+		<item>선호하는 외부</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>끄기</item>
+		<item>15초</item>
+		<item>30초</item>
+		<item>1분</item>
+		<item>5분</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>수정된 이미지(아래 품질)</item>
+		<item>고화질 이미지(큰 사이즈)</item>
+		<item>Convert to SVG</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>설정</item>
+		<item>북마크</item>
+		<item>검색/바꾸기 기록</item>
+		<item>사전</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>기본값</item>
+		<item>새 테마</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>자동</item>
+		<item>Azerbaijani (Latin)</item>
+		<item>Albanian</item>
+		<item>English</item>
+		<item>Arabic</item>
+		<item>Armenian</item>
+		<item>Afrikaans</item>
+		<item>Bengali</item>
+		<item>Bulgarian</item>
+		<item>Bosnian</item>
+		<item>Welsh</item>
+		<item>Hungarian</item>
+		<item>Vietnamese</item>
+		<item>Haitian Creole</item>
+		<item>Dutch</item>
+		<item>Greek</item>
+		<item>Gujarati</item>
+		<item>Danish</item>
+		<item>Hebrew</item>
+		<item>Indonesian</item>
+		<item>Irish</item>
+		<item>Icelandic</item>
+		<item>Spanish</item>
+		<item>Italian</item>
+		<item>Kazakh</item>
+		<item>Kannada</item>
+		<item>Cantonese Traditional</item>
+		<item>Catalan</item>
+		<item>Keretarian Otomi</item>
+		<item>Traditional Chinese</item>
+		<item>Chinese Simplified</item>
+		<item>한국어</item>
+		<item>Latvian</item>
+		<item>Lithuanian</item>
+		<item>Malagasy</item>
+		<item>Malay</item>
+		<item>Malayalam</item>
+		<item>Maltese</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>German</item>
+		<item>Nepali</item>
+		<item>Norwegian</item>
+		<item>Oriya</item>
+		<item>Punjabi</item>
+		<item>Persian</item>
+		<item>Polish</item>
+		<item>Portuguese (Brazil)</item>
+		<item>Portuguese (Portugal)</item>
+		<item>Romanian</item>
+		<item>Russian</item>
+		<item>Samoa</item>
+		<item>Serbian (Cyrillic)</item>
+		<item>Serbian (Latin)</item>
+		<item>Slovak</item>
+		<item>Slovenian</item>
+		<item>Swahili</item>
+		<item>Tahiti</item>
+		<item>Thai</item>
+		<item>Tamil</item>
+		<item>Telugu</item>
+		<item>Tonga</item>
+		<item>Turkish</item>
+		<item>Ukrainian</item>
+		<item>Urdu</item>
+		<item>Fiji</item>
+		<item>Filipino</item>
+		<item>Finnish</item>
+		<item>French</item>
+		<item>Hindi</item>
+		<item>Hmong Dhow</item>
+		<item>Croatian</item>
+		<item>Czech</item>
+		<item>Swedish</item>
+		<item>Estonian</item>
+		<item>Yucatec Maya</item>
+		<item>Japanese</item>
+		<item>Amharic</item>
+		<item>Assamese</item>
+		<item>Dari</item>
+		<item>French (Canada)</item>
+		<item>Inuktitut</item>
+		<item>Khmer</item>
+		<item>Klingon (Latin)</item>
+		<item>Kurdish (Central)</item>
+		<item>Kurdish (Northern)</item>
+		<item>Lao</item>
+		<item>Myanmar (Burmese)</item>
+		<item>Pashto</item>
+		<item>Tigrinya</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>자동</item>
+		<item>Afrikaans</item>
+		<item>Albanian</item>
+		<item>Amharic</item>
+		<item>Arabic</item>
+		<item>Armenian</item>
+		<item>Azerbaijani</item>
+		<item>Basque</item>
+		<item>Belarusian</item>
+		<item>Bengali</item>
+		<item>Bosnian</item>
+		<item>Bulgarian</item>
+		<item>Catalan</item>
+		<item>Cebuano</item>
+		<item>Chichewa</item>
+		<item>Chinese Simplified</item>
+		<item>Chinese Traditional</item>
+		<item>Corsican</item>
+		<item>Croatian</item>
+		<item>Czech</item>
+		<item>Danish</item>
+		<item>Dutch</item>
+		<item>English</item>
+		<item>Esperanto</item>
+		<item>Estonian</item>
+		<item>Filipino</item>
+		<item>Finnish</item>
+		<item>French</item>
+		<item>Frisian</item>
+		<item>Galician</item>
+		<item>Georgian</item>
+		<item>German</item>
+		<item>Greek</item>
+		<item>Gujarati</item>
+		<item>Haitian Creole</item>
+		<item>Hausa</item>
+		<item>Hawaiian</item>
+		<item>Hebrew</item>
+		<item>Hindi</item>
+		<item>Hmong</item>
+		<item>Hungarian</item>
+		<item>Icelandic</item>
+		<item>Igbo</item>
+		<item>Indonesian</item>
+		<item>Irish</item>
+		<item>Italian</item>
+		<item>Japanese</item>
+		<item>Javanese</item>
+		<item>Kannada</item>
+		<item>Kazakh</item>
+		<item>Khmer</item>
+		<item>한국어</item>
+		<item>Kurdish (Kurmanji)</item>
+		<item>Kyrgyz</item>
+		<item>Lao</item>
+		<item>Latin</item>
+		<item>Latvian</item>
+		<item>Lithuanian</item>
+		<item>Luxembourgish</item>
+		<item>Macedonian</item>
+		<item>Malagasy</item>
+		<item>Malay</item>
+		<item>Malayalam</item>
+		<item>Maltese</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>Mongolian</item>
+		<item>Myanmar (Burmese)</item>
+		<item>Nepali</item>
+		<item>Norwegian</item>
+		<item>Pashto</item>
+		<item>Persian</item>
+		<item>Polish</item>
+		<item>Portuguese</item>
+		<item>Punjabi</item>
+		<item>Romanian</item>
+		<item>Russian</item>
+		<item>Samoan</item>
+		<item>Scots Gaelic</item>
+		<item>Serbian</item>
+		<item>Sesotho</item>
+		<item>Shona</item>
+		<item>Sindhi</item>
+		<item>Sinhala</item>
+		<item>Slovak</item>
+		<item>Slovenian</item>
+		<item>Somali</item>
+		<item>Spanish</item>
+		<item>Sundanese</item>
+		<item>Swahili</item>
+		<item>Swedish</item>
+		<item>Tajik</item>
+		<item>Tamil</item>
+		<item>Telugu</item>
+		<item>Thai</item>
+		<item>Turkish</item>
+		<item>Ukrainian</item>
+		<item>Urdu</item>
+		<item>Uzbek</item>
+		<item>Vietnamese</item>
+		<item>Welsh</item>
+		<item>Xhosa</item>
+		<item>Yiddish</item>
+		<item>Yoruba</item>
+		<item>Zulu</item>
+		<item>Oriya</item>
+		<item>Punjabi</item>
+		<item>Rwanda</item>
+		<item>Tatar</item>
+		<item>Turkmen</item>
+		<item>Uigur</item>
+	</string-array>
+	<string-array name="yandex_translator_names">
+		<item>자동</item>
+		<item>Afrikaans</item>
+		<item>Albanian</item>
+		<item>Amharic</item>
+		<item>Arabic</item>
+		<item>Armenian</item>
+		<item>Azerbaijani</item>
+		<item>Bashkir</item>
+		<item>Basque</item>
+		<item>Belarusian</item>
+		<item>Bengali</item>
+		<item>Bosnian</item>
+		<item>Bulgarian</item>
+		<item>Burmese</item>
+		<item>Catalan</item>
+		<item>Cebuano</item>
+		<item>Chinese</item>
+		<item>Chuvash</item>
+		<item>Croatian</item>
+		<item>Czech</item>
+		<item>Danish</item>
+		<item>Dutch</item>
+		<item>Elvish (Sindarin)</item>
+		<item>Emoji</item>
+		<item>English</item>
+		<item>Esperanto</item>
+		<item>Estonian</item>
+		<item>Finnish</item>
+		<item>French</item>
+		<item>Galician</item>
+		<item>Georgian</item>
+		<item>German</item>
+		<item>Greek</item>
+		<item>Gujarati</item>
+		<item>Haitian</item>
+		<item>Hebrew</item>
+		<item>Hill Mari</item>
+		<item>Hindi</item>
+		<item>Hungarian</item>
+		<item>Icelandic</item>
+		<item>Indonesian</item>
+		<item>Irish</item>
+		<item>Italian</item>
+		<item>Japanese</item>
+		<item>Javanese</item>
+		<item>Kannada</item>
+		<item>Kazakh</item>
+		<item>Kazakh (Latin)</item>
+		<item>Khmer</item>
+		<item>한국어</item>
+		<item>Kyrgyz</item>
+		<item>Lao</item>
+		<item>Latin</item>
+		<item>Latvian</item>
+		<item>Lithuanian</item>
+		<item>Luxembourgish</item>
+		<item>Macedonian</item>
+		<item>Malagasy</item>
+		<item>Malay</item>
+		<item>Malayalam</item>
+		<item>Maltese</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>Mari</item>
+		<item>Mongolian</item>
+		<item>Nepali</item>
+		<item>Norwegian</item>
+		<item>Papiamento</item>
+		<item>Persian</item>
+		<item>Polish</item>
+		<item>Portuguese</item>
+		<item>Punjabi</item>
+		<item>Romanian</item>
+		<item>Russian</item>
+		<item>Scottish Gaelic</item>
+		<item>Serbian</item>
+		<item>Sinhalese</item>
+		<item>Slovak</item>
+		<item>Slovenian</item>
+		<item>Spanish</item>
+		<item>Sundanese</item>
+		<item>Swahili</item>
+		<item>Swedish</item>
+		<item>Tagalog</item>
+		<item>Tajik</item>
+		<item>Tamil</item>
+		<item>Tatar</item>
+		<item>Telugu</item>
+		<item>Thai</item>
+		<item>Turkish</item>
+		<item>Udmurt</item>
+		<item>Ukrainian</item>
+		<item>Urdu</item>
+		<item>Uzbek</item>
+		<item>Uzbek (Cyrillic)</item>
+		<item>Vietnamese</item>
+		<item>Welsh</item>
+		<item>Xhosa</item>
+		<item>Yakut</item>
+		<item>Yiddish</item>
+	</string-array>
+</resources>

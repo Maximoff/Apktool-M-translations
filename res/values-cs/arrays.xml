@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sort">
+        <item>Název</item>
+        <item>Name reverse</item>
+        <item>Typ</item>
+        <item>Type reverse</item>
+        <item>Velikost</item>
+        <item>Size reverse</item>
+        <item>Čas</item>
+        <item>Čas zpět</item>
+    </string-array>
+	<string-array name="auto_save_variants">
+		<item>Vypnuto</item>
+		<item>15 sekund</item> 
+		<item>30 sekund</item>
+		<item>1 minuta</item> 
+		<item>5 minut</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>Výchozí</item>
+		<item>Nový</item> 
+	</string-array>
+	<string-array name="format">
+        <item>@string/jks</item>
+        <item>@string/pkcs12</item>
+        <item>@string/bks</item>
+        <item>@string/pk8</item>
+    </string-array>
+</resources>

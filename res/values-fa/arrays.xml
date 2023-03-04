@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="copy_variants">
+		<item>تغییر نام</item>
+		<item>Rename files only</item>
+		<item>جایگزینی</item>
+		<item>انکار</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>چپ</item>
+		<item>راست</item>
+	</string-array>
+	<string-array name="sort">
+		<item>نام</item>
+		<item>نام برعکس</item>
+		<item>قالب</item>
+		<item>قالب برعکس</item>
+		<item>حجم</item>
+		<item>حجم برعکس</item>
+		<item>تاریخ</item>
+		<item>تاریخ برعکس</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>بدون تغییر</item>
+		<item>خودکار</item>
+		<item>فقط داخلی</item>
+		<item>فقط خارجی</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>خاموش</item>
+		<item>15 ثانیه</item>
+		<item>30 ثانیه</item>
+		<item>1 دقیقه</item>
+		<item>5 دقیقه</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>پیشفرض</item>
+		<item>جدید</item>
+	</string-array>
+</resources>
