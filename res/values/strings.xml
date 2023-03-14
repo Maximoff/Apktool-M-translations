@@ -127,6 +127,7 @@
 	<string name="accessibility_service_name">Current activity</string>
 	<string name="accessibility_service_description">Service for getting information about running activities. The service does not collect any personal data.</string>
 	<string name="accessibility_service_toast">Activate the Apktool M service</string>
+	<string name="encript_notice">After encrypting resources, the application may partially or completely fail to work!</string>
 
 	<string name="files">Files</string>
 	<string name="apps">Applications</string>

@@ -380,7 +380,6 @@
 	<string name="search_hint">Hier Text eingeben</string>
 	<string name="search_info">Inhaltssuche wird in Dateien mit den folgenden Erweiterungen durchgeführt: %s.\nUnterstützte mehrzeilige Suche.</string>
 	<string name="search_inres">in den Suchergebnissen</string>
-	<string name="search_menu_title">Suchen</string>
 	<string name="search_name">nach Dateiname</string>
 	<string name="search_rec">Rekursive Suche</string>
 	<string name="search_regexp">Reguläre Ausdrücke</string>

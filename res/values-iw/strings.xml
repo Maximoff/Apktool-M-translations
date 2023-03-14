@@ -225,6 +225,8 @@
 	<string name="file_filter_help">השתמש בתבניות של נתיב ו/או שם קובץ, לדוגמה: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". אל תשתמש בביטויים רגולריים.</string>
 	<string name="file_is_changed">הקובץ \"%s\" השתנה במכשיר, לטעון מחדש את הקובץ?</string>
 	<string name="file_not_found">הקובץ \"%s\" לא נמצא!</string>
+	<string name="file_size">גודל הקובץ</string>
+	<string name="file_size_summary">פורמט גודל קובץ מוצג</string>
 	<string name="filef">קובץ: %s</string>
 	<string name="files">קבצים</string>
 	<string name="filesc">קבצים</string>
@@ -233,7 +235,7 @@
 	<string name="find_next">הבא</string>
 	<string name="find_prev">הקודם</string>
 	<string name="fix1056_aapt2">תיקון עבור aapt2</string>
-	<string name="fix1056_aapt2_summary">החלף את \"&amp;#1056;\" ב- \"&amp;#80;\" במחרוזות</string>
+	<string name="fix1056_aapt2_summary">החלף את \"Р\" ב- \"P\" במחרוזות</string>
 	<string name="fix_drawer">קבצים קבועים</string>
 	<string name="fix_drawer_summary">אל תסגור את מנהל הקבצים באמצעות החלקה מהירה</string>
 	<string name="fix_line_numbers">תיקון מספרי שורות</string>
@@ -503,7 +505,6 @@
 	<string name="qualicon">סמל באיכות גבוהה (גודל גדול יותר)</string>
 	<string name="quick_panel_sym">התאמה אישית של החלונית</string>
 	<string name="quick_panel_sym_summary">התאמה אישית של תווי החלונית</string>
-	<string name="rarrow">→</string>
 	<string name="recent_files">קבצים אחרונים</string>
 	<string name="redo">נסה שוב </string>
 	<string name="reduceimg">התמונה הופחתה ל-%1$d×%2$d כדי לחסוך בזיכרון!</string>
@@ -554,7 +555,6 @@
 	<string name="search_hint">טקסט הזנה כאן</string>
 	<string name="search_info">חיפושי תוכן מבוצעים בקבצים עם ההרחבות הבאות: %s.\nתמיכה בחיפוש מרובה שורות.</string>
 	<string name="search_inres">בתוצאות החיפוש</string>
-	<string name="search_menu_title">חיפוש</string>
 	<string name="search_name">לפי שם הקובץ</string>
 	<string name="search_over">מצא עקיפות</string>
 	<string name="search_rec">חיפוש רקורסיבי</string>
