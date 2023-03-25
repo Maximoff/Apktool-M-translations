@@ -27,6 +27,8 @@
 	<string name="refresh_res">Refresh resources</string>
 	<string name="added_res">Added resources: %d</string>
 	<string name="app_is_killed">The system killed the application process in the background! Add the application to system optimizer exceptions! For more information, visit https://dontkillmyapp.com</string>
+	<string name="editor_state_str">L:%1$d[%2$d], C:%3$d[%4$d], %5$s</string>
+	<string name="editor_state_str2">L:%1$d[%2$d], C:%3$d[%4$d], S:%5$d[%6$d-%7$d], %8$s</string>
 
     <string name="close_cur">Close</string>
     <string name="close_others">Close Others</string>
@@ -457,6 +459,8 @@
 	<string name="mlong">Long</string>
 	<string name="file_size">File size</string>
 	<string name="file_size_summary">Displayed file size format</string>
+	<string name="editor_state">Status bar</string>
+	<string name="editor_state_summary">Line with the cursor state and encoding</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>
@@ -575,6 +579,8 @@
 	<string name="add_nsc_summary">Add a general permissive network security configuration at build time</string>
 	<string name="add_nsc_ex">Do not change if it exists</string>
 	<string name="add_nsc_ex_summary">Do not change the already added network security config</string>
+	<string name="dont_reset_cpb">Do not reset the paste button</string>
+	<string name="dont_reset_cpb_summary">The paste button when copying files will only be reset with a long press on it</string>
 	
 	<string name="search_call">Find calls</string>
 	<string name="search_over">Find overrides</string>

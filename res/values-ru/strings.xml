@@ -21,6 +21,8 @@
 	<string name="refresh_res">Обновить ресурсы</string>
 	<string name="added_res">Добавлено ресурсов: %d</string>
 	<string name="app_is_killed">Система уничтожила процесс приложения в фоне! Добавьте приложение в исключения системных оптимизаторов! Для дополнительной информации посетите сайт https://dontkillmyapp.com</string>
+	<string name="editor_state_str">С:%1$d[%2$d], К:%3$d[%4$d], %5$s</string>
+	<string name="editor_state_str2">С:%1$d[%2$d], К:%3$d[%4$d], В:%5$d[%6$d-%7$d], %8$s</string>
 
     <string name="close_cur">Закрыть</string>
     <string name="close_others">Закрыть другие</string>
@@ -447,6 +449,8 @@
 	<string name="mlong">Длинные</string>
 	<string name="file_size">Размер файлов</string>
 	<string name="file_size_summary">Отображаемый формат размера файлов</string>
+	<string name="editor_state">Строка состояния</string>
+	<string name="editor_state_summary">Строка с положением курсора и кодировкой</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>
@@ -563,6 +567,8 @@
 	<string name="add_nsc_summary">Добавлять общую конфигурацию сетевой безопасности во время сборки</string>
 	<string name="add_nsc_ex">Не изменять, если существует</string>
 	<string name="add_nsc_ex_summary">Не изменять уже добавленный network security config</string>
+	<string name="dont_reset_cpb">Не сбрасывать кнопку вставки</string>
+	<string name="dont_reset_cpb_summary">Кнопка вставки при копировании файлов будет сброшена только долгим нажатием на неё</string>
 	
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_over">Найти переопределения</string>
