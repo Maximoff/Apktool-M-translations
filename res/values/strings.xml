@@ -461,6 +461,8 @@
 	<string name="file_size_summary">Displayed file size format</string>
 	<string name="editor_state">Status bar</string>
 	<string name="editor_state_summary">Line with the cursor state and encoding</string>
+	<string name="editor_caps">Capitals automatically</string>
+	<string name="editor_caps_summary">Automatic entry of capital letters</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>

@@ -451,6 +451,8 @@
 	<string name="file_size_summary">Отображаемый формат размера файлов</string>
 	<string name="editor_state">Строка состояния</string>
 	<string name="editor_state_summary">Строка с положением курсора и кодировкой</string>
+	<string name="editor_caps">Заглавные автоматически</string>
+	<string name="editor_caps_summary">Автоматический ввод заглавных букв</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>
