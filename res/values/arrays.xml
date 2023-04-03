@@ -30,6 +30,10 @@
         <item>checksum_upper</item>
         <item>checksum_separate</item>
     </string-array>
+	<string-array name="refresh_res">
+        <item>Add new resources (files only)</item>
+        <item>Delete missing resources</item>
+    </string-array>
 	<string-array name="charsets">
 		<item>UTF-8</item>
 		<item>UTF-16</item>

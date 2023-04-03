@@ -14,6 +14,10 @@
         <item>Все заглавные</item>
         <item>Разделить двоеточием</item>
     </string-array>
+	<string-array name="refresh_res">
+        <item>Добавить новые ресурсы (только файлы)</item>
+        <item>Удалить отсутствующие ресурсы</item>
+    </string-array>
     <string-array name="sort">
 		<item>Имя</item>
 		<item>Имя (реверс)</item>

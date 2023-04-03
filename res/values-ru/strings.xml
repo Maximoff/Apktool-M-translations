@@ -121,6 +121,8 @@
 	<string name="accessibility_service_description">Сервис для получения информации о запущенных активностях. Сервис не собирает никаких личных данных.</string>
 	<string name="accessibility_service_toast">Активируйте службу Apktool M</string>
 	<string name="encript_notice">После шифрования ресурсов приложение может частично или полностью не работать!</string>
+	<string name="res_added">Добавлен ресурс \"%s\"</string>
+	<string name="res_removed">Удалён ресурс \"%s\"</string>
 
 	<string name="files">Файлы</string>
 	<string name="apps">Приложения</string>
