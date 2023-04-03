@@ -453,6 +453,10 @@
 	<string name="editor_state_summary">Строка с положением курсора и кодировкой</string>
 	<string name="editor_caps">Заглавные автоматически</string>
 	<string name="editor_caps_summary">Автоматический ввод заглавных букв</string>
+	<string name="editor_xml_format">Форматирование XML</string>
+	<string name="editor_xml_format_summary">Вариант форматирования XML при выравнивании кода</string>
+	<string name="editor_magnifier">Лупа</string>
+	<string name="editor_magnifier_summary">Лупа при перемещении курсора</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>

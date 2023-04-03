@@ -186,6 +186,18 @@
 		<item>HH:mm yyyy/MM/dd</item> 
 		<item>HH:mm dd/MM/yyyy</item>
 	</string-array>
+	<string-array name="xml_format_variants">
+		<item>Default</item>
+		<item>Apktool</item> 
+		<item>Android Studio</item>
+		<item>Simple Trick</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item> 
+		<item>2</item>
+		<item>3</item>
+	</string-array>
 	<string-array name="orientation_variants">
 		<item>Default</item>
 		<item>Landscape</item> 

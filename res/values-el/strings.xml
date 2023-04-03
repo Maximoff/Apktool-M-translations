@@ -121,6 +121,7 @@
     <string name="accessibility_service_name">Τρέχουσα δραστηριότητα</string>
     <string name="accessibility_service_description">Υπηρεσία λήψης πληροφοριών σχετικά με την εκτέλεση δραστηριοτήτων. Η υπηρεσία δεν συλλέγει προσωπικά δεδομένα.</string>
     <string name="accessibility_service_toast">Ενεργοποίηση της υπηρεσίας Apktool M</string>
+    <string name="encript_notice">Μετά την κρυπτογράφηση των πόρων, η εφαρμογή ενδέχεται να μην λειτουργεί εν μέρει ή εντελώς!</string>
     <string name="files">Αρχεία</string>
     <string name="apps">Εφαρμογές</string>
     <string name="errors">Σφάλματα</string>
@@ -132,7 +133,7 @@
     <string name="version_app">Όνομα έκδοσης</string>
     <string name="vcode_app">Κωδικός έκδοσης</string>
     <string name="pname_app">Πακέτο</string>
-    <string name="path_app">Μονοπάτι</string>
+    <string name="path_app">Διαδρομή</string>
     <string name="data_dir">Κατάλογος δεδομένων</string>
     <string name="app_uid">UID</string>
     <string name="inst_ver">Εγκατεστημένη έκδοση</string>
@@ -290,9 +291,9 @@
     <string name="output_directory">Κατάλογος εξόδου</string>
     <string name="set_as_output_directory">Ορισμός ως Κατάλογος εξόδου</string>
     <string name="output_directory_summary">Ορίστε τον κατάλογο εξόδου των εγκατεστημένων εφαρμογών.</string>
-    <string name="output_directory_not_extsts">"Ο Κατάλογος εξόδου '%1$s' δεν υπάρχει και δεν μπορεί να δημιουργηθεί!"</string>
+    <string name="output_directory_not_extsts">"Ο Κατάλογος εξόδου \'%1$s\' δεν υπάρχει και δεν μπορεί να δημιουργηθεί!"</string>
     <string name="output_directory_not_set">Πρέπει πρώτα να ορίσετε τον κατάλογο εξόδου!</string>
-    <string name="not_directory">"'%1$s' δεν είναι κατάλογος!"</string>
+    <string name="not_directory">\'%1$s\' δεν είναι κατάλογος!</string>
     <string name="compile_project">Μεταγλώττιση αυτού του έργου</string>
     <string name="no_open">Χωρίς ανοιχτά αρχεία!</string>
     <string name="copy_success">Αντιγράφηκε!</string>
@@ -338,11 +339,11 @@
     <string name="signature_file">Αρχείο υπογραφής</string>
     <string name="sel_signature_file">Επιλέξτε ένα αρχείο υπογραφής</string>
     <string name="signature_file_summary">Το αρχείο ρυθμίσεων (αρχείο pk8 ή αρχείο keystore). Εάν είναι αρχείο pk8, θα δημιουργήσει αυτόματα ένα αρχείο x509.pem με το ίδιο όνομα (για παράδειγμα, το testkey.pk8 αντιστοιχεί στο testkey.x509.pem).</string>
-    <string name="signature_file_missing">"Αρχείο υπογραφής '%1$s' δεν βρέθηκε, χρησιμοποιώντας προεπιλεγμένη υπογραφή!"</string>
+    <string name="signature_file_missing">"Αρχείο υπογραφής \'%1$s\' δεν βρέθηκε, χρησιμοποιώντας προεπιλεγμένη υπογραφή!"</string>
     <string name="signature_pass_not_set">Δεν έχει οριστεί κωδικός πρόσβασης για το keystore, χρησιμοποιείται η προεπιλεγμένη υπογραφή!</string>
-    <string name="load_signature_file_fail">"Αδύνατη η φόρτωση του αρχείου υπογραφής '%1$s'."</string>
+    <string name="load_signature_file_fail">"Αδύνατη η φόρτωση του αρχείου υπογραφής \'%1$s\'."</string>
     <string name="enter_password">Εισαγωγή κωδικού:</string>
-    <string name="about">Σχετικά με</string>
+    <string name="about">Σχετικά</string>
     <string name="about_summary">Πληροφορίες για τον συγγραφέα, χρήσιμοι σύνδεσμοι</string>
     <string name="overwrite_apk">Αντικατάσταση αρχείων</string>
     <string name="overwrite_apk_summary">Αντικατάσταση αρχείων και φακέλων</string>
@@ -399,7 +400,7 @@
     <string name="use_v2_sign">Υπογραφή v2</string>
     <string name="use_v2_sign_summary">Χρήση σχεδίου υπογραφών v2 (Android 7.0+)</string>
     <string name="use_v3_sign">Υπογραφή v3</string>
-    <string name="use_v3_sign_summary">Χρήση σχήματος υπογραφών v3 (Android 9.0+)</string>
+    <string name="use_v3_sign_summary">Χρήση σχεδίου υπογραφών v3 (Android 9.0+)</string>
     <string name="use_v4_sign">Υπογραφή v4</string>
     <string name="use_v4_sign_summary">Χρήση σχεδίου υπογραφών v4 (Android 11+)</string>
     <string name="delete_build">Διαγραφή του φακέλου \"Kατασκευή\".</string>
@@ -414,7 +415,7 @@
     <string name="update_freq_summary">Η συχνότητα ελέγχου για ενημερώσεις σε ημέρες</string>
     <string name="menu_position">Θέση μενού</string>
     <string name="menu_position_summary">Θέση μενού στο περιβάλλον αρχείου</string>
-    <string name="share_type">Λάβετε υπόψη τον τύπο αρχείου κατά την αποστολή</string>
+    <string name="share_type">Εξετάστε τον τύπο αρχείου κατά την αποστολή</string>
     <string name="share_type_summary">Κατά την αποστολή ενός αρχείου σε άλλη εφαρμογή, θα λαμβάνεται υπόψη ο τύπος αρχείου</string>
     <string name="buffer_size">Μέγεθος buffer</string>
     <string name="buffer_size_summary">Μέγεθος buffer byte σε kilobyte</string>
@@ -432,8 +433,8 @@
     <string name="v1_cert_name">Όνομα αρχείων RSA/SF</string>
     <string name="v1_cert_name_info">Οι χαρακτήρες που επιτρέπονται είναι τα λατινικά γράμματα \"A-Z\", οι αριθμοί \"0-9\", η παύλα \"-\" και ο χαρακτήρας υπογράμμισης \"_\". Όλοι οι άλλοι χαρακτήρες θα αντικατασταθούν από τον χαρακτήρα υπογράμμισης.</string>
     <string name="v1_cert_name_summary">Όνομα αρχείων RSA/SF για υπογραφή V1</string>
-    <string name="created_cert_name">Όνομα δημιουργού υπογραφής</string>
-    <string name="created_cert_name_summary">Όνομα δημιουργού υπογραφής στο αρχείο SF</string>
+    <string name="created_cert_name">Υπογραφή όνομα δημιουργού</string>
+    <string name="created_cert_name_summary">Όνομα δημιουργού στην υπογραφή σε αρχείο SF</string>
     <string name="checksum_format">Ένδειξη ελέγχου αθροισμάτων</string>
     <string name="checksum_format_summary">Προβολή μορφής ελέγχου αθροίσματος</string>
     <string name="refreshing">Ανανέωση με χειρονομία</string>
@@ -447,6 +448,12 @@
     <string name="mlong">Μακρύ</string>
     <string name="file_size">Μέγεθος αρχείου</string>
     <string name="file_size_summary">Εμφάνιση τύπου μεγέθους αρχείου</string>
+    <string name="editor_state">Γραμμή κατάστασης</string>
+    <string name="editor_state_summary">Γραμμή με την κατάσταση και κωδικοποίηση του δρομέα</string>
+    <string name="editor_caps">Αυτόματα κεφαλαία</string>
+    <string name="editor_caps_summary">Αυτόματη καταχώριση κεφαλαίων γραμμάτων</string>
+    <string name="editor_xml_format">XML μορφοποίηση</string>
+    <string name="editor_xml_format_summary">Επιλογή μορφοποίησης XML για τη στοίχιση κώδικα</string>
     <string name="key_type">Τύπος κλειδιού:</string>
     <string name="key_path">Διαδρομή κλειδιού:</string>
     <string name="cert_path">Διαδρομή πιστοποιητικού:</string>
@@ -463,7 +470,7 @@
     <string name="date">Ημερ/νία ισχύος:</string>
     <string name="vdate_info">Η περίοδος ισχύος πρέπει να είναι σε ΧΡΟΝΙΑ!</string>
     <string name="common_name">Κοινή ονομασία:</string>
-    <string name="organization_unit">Οργανωτική Μονάδα:</string>
+    <string name="organization_unit">Μονάδα Οργανισμού:</string>
     <string name="organization_name">Ονομα Οργανισμού:</string>
     <string name="locality_name">Όνομα περιοχής:</string>
     <string name="state_name">Όνομα Πολιτείας:</string>
@@ -534,20 +541,20 @@
     <string name="apk_template">Υπόδειγμα ονόματος APK</string>
     <string name="apk_template_summary">Υπόδειγμα για αυτόματη μετονομασία αρχείων apk</string>
     <string name="system_theme">Θέμα συστήματος</string>
-    <string name="system_theme_summary">Αλλάξτε το θέμα αυτόματα ανάλογα με τις ρυθμίσεις του συστήματος</string>
+    <string name="system_theme_summary">Αυτόματη αλλαγή θέματος ανάλογα με τις ρυθμίσεις του συστήματος</string>
     <string name="ext_editor">Εξωτερικός επεξεργαστής</string>
     <string name="ext_editor_summary">Άνοιγμα αρχείων κειμένου σε εξωτερικό επεξεργαστή</string>
     <string name="help_templates">Βοηθητικά πρότυπα</string>
     <string name="help_templates_text">Για να αντικαταστήσετε κενά στα πρότυπα \"LABEL\", \"VERSION\", καθώς και διαχωριστικά στα πρότυπα \"ARCH\", \"DATE\" και \"TIME\", για παράδειγμα, με την υπογράμμιση \"_\", χρησιμοποιήστε την ακόλουθη μορφή: {LABEL_ }, {VERSION_}, {ARCH_}, {DATE_}, {TIME_}. Η τιμή μπορεί να είναι αυθαίρετη.</string>
     <string name="scaling">Κλιμάκωση</string>
-    <string name="scaling_summary">Κλίμακα με δύο δάχτυλα</string>
+    <string name="scaling_summary">Κλιμάκωση με δύο δάχτυλα</string>
     <string name="copy_with_ext">Αντιγραφή χωρίς επέκταση</string>
     <string name="copy_with_ext_summary">Αντιγραφή ονόματος αρχείου χωρίς επέκταση</string>
     <string name="crowdin">Crowdin</string>
     <string name="crowdin_summary">Βοηθήστε στη μετάφραση του Apktool M στη γλώσσα σας</string>
     <string name="man_frame">Διαχείριση frameworks</string>
     <string name="man_frame_summary">Διαχείριση εγκατεστημένων frameworks</string>
-    <string name="clear_preview">Καθαρισμός cache μικρογραφιών</string>
+    <string name="clear_preview">Καθαρισμός cache μικρ/φιών</string>
     <string name="clear_preview_summary">Το διάστημα για τον καθαρισμό παλιών μικρογραφιών είναι σε ημέρες</string>
     <string name="icons_outline">Περίγραμμα εικονιδίων</string>
     <string name="icons_outline_summary">Προσθέστε ένα περίγραμμα για μικρογραφίες στη λίστα αρχείων</string>
@@ -557,8 +564,10 @@
     <string name="add_nsc_summary">Προσθέστε μια γενική επιτρεπτή ρύθμιση παραμέτρων ασφάλειας δικτύου κατά το χρόνο κατασκευής</string>
     <string name="add_nsc_ex">Μην αλλάξει αν υπάρχει</string>
     <string name="add_nsc_ex_summary">Μην αλλάζετε την ήδη ρύθμιση παραμέτρων ασφαλείας δικτύου</string>
-    <string name="search_call">Βρείτε κλήσεις</string>
-    <string name="search_over">Βρείτε παρακάμψεις</string>
+   <string name="dont_reset_cpb">Μην επαναφέρετε το κουμπί επικόλλησης</string>
+   <string name="dont_reset_cpb_summary">Το κουμπί επικόλλησης κατά την αντιγραφή αρχείων θα μηδενίζεται μόνο με παρατεταμένο πάτημα.</string>
+      <string name="search_call">Εύρεση κλήσεις</string>
+    <string name="search_over">Εύρεση παρακάμψεις</string>
     <string name="search_files">Αναζήτηση αρχείων</string>
     <string name="search_result">Αποτέλεσμα αναζήτησης</string>
     <string name="search_hint">Εισαγάγετε κείμενο εδώ</string>
@@ -627,7 +636,7 @@
     <string name="moptimize_file">Βελτιστοποίηση: %s</string>
     <string name="moptimize_hint">Ονόματα ή μοτίβα ονομάτων</string>
     <string name="moptimize_info">Καθορίστε ονόματα αρχείων ή μοτίβα ονομάτων αρχείων που δεν θέλετε να συμπιέσετε. Εισαγάγετε κάθε όνομα ή μοτίβο σε μια νέα γραμμή. Μην χρησιμοποιείτε κανονικές εκφράσεις.</string>
-    <string name="mshow_more_options">Περισσότερο</string>
+    <string name="mshow_more_options">Περισσότερα</string>
     <string name="mtranslator">Μεταφράστης</string>
     <string name="gplay">Google Play</string>
     <string name="moriginal">Πρωτότυπο</string>
@@ -687,7 +696,7 @@
 
 Θέλετε να κάνετε λήψη τώρα;"</string>
     <string name="plugin_modif">Η προσθήκη UnApkm υπογράφεται από την υπογραφή κάποιου άλλου. Μάλλον το πρόσθετο έχει τροποποιηθεί. Συνιστάται ιδιαίτερα να καταργήσετε την προσθήκη και να κάνετε λήψη του αρχικού αρχείου από τον ιστότοπο του προγραμματιστή. Κάνοντας κλικ στο \"Χωρίς υπενθύμιση\" συνεχίζετε να χρησιμοποιείτε το τροποποιημένο πρόσθετο με δικό σας κίνδυνο και κίνδυνο!</string>
-    <string name="not_remind">Όχι υπενθύμιση</string>
+    <string name="not_remind">Χωρίς υπενθύμιση</string>
     <string name="mpatcher">MPatcher</string>
     <string name="mpatcher_down">Λήψη το MPatcher</string>
     <string name="mpatcher_run">Εκτελέστε το MPatcher</string>
@@ -695,7 +704,7 @@
     <string name="telegram">Telegram</string>
     <string name="telegram_summary">Κανάλι Telegram με ενημερώσεις</string>
     <string name="report_descr">Περιγράψτε εν συντομία τις ενέργειές σας μετά τις οποίες προέκυψε το σφάλμα</string>
-    <string name="optimize_battery">Βελτιστοπ/ση απόδοσης μπαταρίας</string>
+    <string name="optimize_battery">Βελτιστοπ/ση μπαταρίας</string>
     <string name="optimization_notice">"Για να λειτουργεί το πρόγραμμα στο παρασκήνιο (όταν είναι ελαχιστοποιημένο), συνιστάται να το προσθέσετε στις εξαιρέσεις του προγράμματος βελτιστοποίησης συστήματος. Η εφαρμογή θα τρέχει στο παρασκήνιο μόνο αν την εκτελέσετε μόνοι σας!
 
 Θέλετε να το κάνετε αυτό;"</string>

@@ -75,6 +75,12 @@
 		<item>Цвет &lt;-> Smali</item>
 		<item>Цвет &lt;-> Decimal</item>
 	</string-array>
+	<string-array name="xml_format_variants">
+		<item>По умолчанию</item>
+		<item>Apktool</item> 
+		<item>Android Studio</item>
+		<item>Simple Trick</item>
+	</string-array>
 	<string-array name="orientation_variants">
 		<item>По умолчанию</item>
 		<item>Ландшафтная</item> 

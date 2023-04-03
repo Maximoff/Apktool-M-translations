@@ -2,21 +2,17 @@
 <resources>
     <string-array name="copy_variants">
         <item>Renomear</item>
-		<item>Rename files only</item>
+        <item>Renomear apenas arquivos</item>
         <item>Substituir</item>
         <item>Pular</item>
     </string-array>
     <string-array name="menu_pos">
-        <item>Esquerda</item>
-        <item>Direita</item>
+        <item>Eaquerda</item>
+        <item>Direito</item>
     </string-array>
     <string-array name="checksum_names">
-        <item>Tudo maiúsculo</item>
-        <item>Separado com dois pontos</item>
-    </string-array>
-    <string-array name="color_var">
-        <item>Cor HEX</item>
-        <item>Código Smali</item>
+        <item>Todas MAIÚSCULAS</item>
+        <item>Separe com dois pontos</item>
     </string-array>
     <string-array name="sort">
         <item>Nome</item>
@@ -25,8 +21,12 @@
         <item>Tipo (Reverso)</item>
         <item>Tamanho</item>
         <item>Tamanho (Reverso)</item>
-        <item>Data</item>
-        <item>Data (Reverso)</item>
+        <item>Tempo</item>
+        <item>Tempo (Reverso)</item>
+    </string-array>
+    <string-array name="color_var">
+        <item>HEX-Color</item>
+        <item>Código Smali</item>
     </string-array>
     <string-array name="format">
         <item>@string/jks</item>
@@ -35,15 +35,51 @@
         <item>@string/pk8</item>
     </string-array>
     <string-array name="resDecodeMode">
-        <item>Não decompilar</item>
-        <item>Decompilar para diretório principal</item>
-        <item>Decompilar em um diretório separado</item>
+        <item>Não descompilar</item>
+        <item>Descompilar ao diretório principal</item>
+        <item>Descompilar em um diretório separado</item>
+    </string-array>
+    <string-array name="converter_items">
+        <item>Texto &lt;-> Base64</item>
+        <item>Texto &lt;-> Unicode</item>
+        <item>Texto &lt;-> Codificação de URL</item>
+        <item>Texto &lt;-> MD5</item>
+        <item>Texto &lt;-> SHA-1</item>
+        <item>Texto &lt;-> SHA-224</item>
+        <item>Texto &lt;-> SHA-256</item>
+        <item>Texto &lt;-> SHA-384</item>
+        <item>Texto &lt;-> SHA-512</item>
+        <item>Texto &lt;-> Array (UTF-8)</item>
+        <item>Texto &lt;-> Array (UTF-16)</item>
+        <item>Texto &lt;-> Array (UTF-16LE)</item>
+        <item>Texto &lt;-> Array (UTF-16BE)</item>
+        <item>Texto &lt;-> Array (US-ASCII)</item>
+        <item>Texto &lt;-> Array (ISO-8859-1)</item>
+        <item>Texto &lt;-> Array (CP1251)</item>
+        <item>Decimal &lt;-> Binário</item>
+        <item>Decimal &lt;-> Octal</item>
+        <item>Decimal &lt;-> Hex</item>
+        <item>Decimal &lt;-> Hex (0x0)</item>
+        <item>Decimal &lt;-> Hex (0x00000000)</item>
+        <item>Float &lt;-> Binary</item>
+        <item>Float &lt;-> Octal</item>
+        <item>Float &lt;-> Hex</item>
+        <item>Float &lt;-> Hex (0x0)</item>
+        <item>Float &lt;-> Hex (0x00000000)</item>
+        <item>Color &lt;-> Smali</item>
+        <item>Color &lt;-> Decimal</item>
     </string-array>
     <string-array name="installLocation">
         <item>Não configurado</item>
-        <item>Automático</item>
+        <item>Auto</item>
         <item>Apenas interno</item>
-        <item>Preferir externo</item>
+        <item>Externo preferido</item>
+    </string-array>
+    <string-array name="xml_format_variants">
+        <item>Padrão</item>
+        <item>Apktool</item>
+        <item>Android Studio</item>
+        <item>Truque Simples</item>
     </string-array>
     <string-array name="orientation_variants">
         <item>Padrão</item>
@@ -51,21 +87,21 @@
         <item>Retrato</item>
     </string-array>
     <string-array name="auto_save_variants">
-        <item>Desativado</item>
+        <item>Desativo</item>
         <item>15 segundos</item>
         <item>30 segundos</item>
         <item>1 minuto</item>
         <item>5 minutos</item>
     </string-array>
     <string-array name="to_vector_values">
-        <item>Imagem adaptada (qualidade reduzida)</item>
+        <item>Imagem adaptada (qualidade baixa)</item>
         <item>Imagem de alta qualidade (tamanho maior)</item>
-        <item>Convert to SVG</item>
+        <item>Converter para SVG</item>
     </string-array>
     <string-array name="backup_values">
-        <item>Definições</item>
+        <item>Configurações</item>
         <item>Favoritos</item>
-        <item>Histórico de busca/substituição</item>
+        <item>Pesquisar/Substituir o histórico</item>
         <item>Dicionários</item>
     </string-array>
     <string-array name="editor_themes">
@@ -166,7 +202,7 @@
     </string-array>
     <string-array name="bing_translator_names">
         <item>Automático</item>
-        <item>Azerbaijani (Latin)</item>
+        <item>Azerbaijão (Latim)</item>
         <item>Albanês</item>
         <item>Inglês</item>
         <item>Árabe</item>
@@ -191,10 +227,10 @@
         <item>Italiano</item>
         <item>Cazaque</item>
         <item>Canarês</item>
-        <item>Cantonese Traditional</item>
+        <item>Cantonês Tradicional</item>
         <item>Catalão</item>
         <item>Keretarian Otomi</item>
-        <item>Traditional Chinese</item>
+        <item>Chinês Tradicional</item>
         <item>Chinês Simplificado</item>
         <item>Coreano</item>
         <item>Letão</item>
@@ -212,13 +248,13 @@
         <item>Panjabi</item>
         <item>Persa</item>
         <item>Polonês</item>
-        <item>Portuguese (Brazil)</item>
-        <item>Portuguese (Portugal)</item>
+        <item>Português (Brasil)</item>
+        <item>Português (Portugal)</item>
         <item>Romeno</item>
         <item>Russo</item>
         <item>Samoa</item>
-        <item>Serbian (Cyrillic)</item>
-        <item>Serbian (Latin)</item>
+        <item>Sérvio (Cirílico)</item>
+        <item>Sérvio (Latim)</item>
         <item>Eslovaco</item>
         <item>Esloveno</item>
         <item>Suaíle</item>
@@ -243,14 +279,14 @@
         <item>Yucatec Maya</item>
         <item>Japonês</item>
         <item>Amárico</item>
-        <item>Assamese</item>
+        <item>Assamês</item>
         <item>Dari</item>
-        <item>French (Canada)</item>
+        <item>Francês (Canadá)</item>
         <item>Inuktitut</item>
         <item>Quemer</item>
-        <item>Klingon (Latin)</item>
-        <item>Kurdish (Central)</item>
-        <item>Kurdish (Northern)</item>
+        <item>Klingon (Latim)</item>
+        <item>Curdo (Central)</item>
+        <item>Curdo (Norte)</item>
         <item>Laosiano</item>
         <item>Mianmar (Birmanês)</item>
         <item>Pastó</item>

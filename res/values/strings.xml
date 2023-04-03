@@ -463,6 +463,10 @@
 	<string name="editor_state_summary">Line with the cursor state and encoding</string>
 	<string name="editor_caps">Capitals automatically</string>
 	<string name="editor_caps_summary">Automatic entry of capital letters</string>
+	<string name="editor_xml_format">XML formatting</string>
+	<string name="editor_xml_format_summary">XML formatting option for code alignment</string>
+	<string name="editor_magnifier">Magnifier</string>
+	<string name="editor_magnifier_summary">Magnifier when moving the cursor</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>
