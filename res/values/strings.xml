@@ -373,8 +373,6 @@
 	<string name="dirs_size_summary">Display folder size in list</string>
 	<string name="date_format">Date format</string>
 	<string name="date_format_summary">Date format displayed</string>
-	<string name="confirm_build">Compilation confirmation</string>
-	<string name="confirm_build_summary">Show confirmation dialog before compilation</string>
 	<string name="round_icons">Round icons</string>
 	<string name="round_icons_summary">Round explorer icons</string>
 	<string name="hidden_files">Hidden files</string>
@@ -524,8 +522,6 @@
 	<string name="split">Split</string>
 	<string name="mcompress">Compress</string>
 	<string name="mcompression">Compression</string>
-	<string name="fix1056_aapt2">Fix for aapt2</string>
-	<string name="fix1056_aapt2_summary">Replace \"&amp;#1056;\" with \"&amp;#80;\" in the strings</string>
 	
 	<string name="mupdate_pref">Program update</string>
 	<string name="mupdate_pref_summary">Update settings</string>

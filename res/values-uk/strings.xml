@@ -287,8 +287,6 @@
     <string name="dirs_size_summary">Відображати розмір тек в списку.</string>
     <string name="date_format">Формат дати</string>
     <string name="date_format_summary">Відображуваний формат дати</string>
-    <string name="confirm_build">Підтвердження збірки</string>
-    <string name="confirm_build_summary">Показувати діалог підтвердження перед збіркою.</string>
     <string name="round_icons">Круглі іконки</string>
     <string name="round_icons_summary">Круглі іконки замість квадратнокруглих.</string>
     <string name="hidden_files">Приховані файли</string>
@@ -390,8 +388,6 @@
     <string name="split">Спліт</string>
     <string name="mcompress">Стиснути</string>
     <string name="mcompression">Стиснення</string>
-    <string name="fix1056_aapt2">Фікс для aapt2</string>
-    <string name="fix1056_aapt2_summary">Замінювати \"&amp;#1056;\" на \"&amp;#80;\" в рядках.</string>
     <string name="mupdate_pref">Оновлення програми</string>
     <string name="mupdate_pref_summary">Налаштування оновлення.</string>
     <string name="mauto_update">Перевіряти оновлення</string>

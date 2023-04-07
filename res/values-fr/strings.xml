@@ -359,8 +359,6 @@ Taille: %3$s"</string>
     <string name="dirs_size_summary">Afficher la taille du dossier dans la liste</string>
     <string name="date_format">Format de la date</string>
     <string name="date_format_summary">Format de date affiché</string>
-    <string name="confirm_build">Confirmation du compilation</string>
-    <string name="confirm_build_summary">Afficher la boîte de dialogue de confirmation avant la compilation</string>
     <string name="round_icons">Icônes arrondis</string>
     <string name="round_icons_summary">L\'explorateur des icônes arrondie</string>
     <string name="hidden_files">Fichiers caché</string>
@@ -495,8 +493,6 @@ Taille: %3$s"</string>
     <string name="split">Diviser</string>
     <string name="mcompress">Compresse</string>
     <string name="mcompression">Compression</string>
-    <string name="fix1056_aapt2">Réparer pour aapt2</string>
-    <string name="fix1056_aapt2_summary">Remplace \"&amp;#1056;\" avec \"&amp;#80;\" dans le chaîne de caractères</string>
     <string name="mupdate_pref">Mise à jour du programme</string>
     <string name="mupdate_pref_summary">Mettre à jour les paramètres</string>
     <string name="mauto_update">Vérifier les mises à jour</string>

@@ -287,8 +287,6 @@
     <string name="dirs_size_summary">목록에 폴더 크기를 표시하거나 숨깁니다</string>
     <string name="date_format">날짜 형식</string>
     <string name="date_format_summary">표시되는 날짜 형식을 설정합니다</string>
-    <string name="confirm_build">컴파일 확인</string>
-    <string name="confirm_build_summary">컴파일 전에 확인 대화 상자를 표시합니다</string>
     <string name="round_icons">둥근 아이콘</string>
     <string name="round_icons_summary">앱의 탐색기에서 아이콘 모양을 설정합니다</string>
     <string name="hidden_files">숨겨진 파일 표시/숨김</string>
@@ -390,8 +388,6 @@
     <string name="split">분할</string>
     <string name="mcompress">압축</string>
     <string name="mcompression">압축</string>
-    <string name="fix1056_aapt2">aapt2 수정</string>
-    <string name="fix1056_aapt2_summary">문자열에서 \"&amp;#80;\"를 \"&amp;#1056;\"로 교체</string>
     <string name="mupdate_pref">프로그램 업데이트</string>
     <string name="mupdate_pref_summary">업데이트를 설정합니다</string>
     <string name="mauto_update">업데이트 확인</string>

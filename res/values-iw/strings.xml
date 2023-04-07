@@ -101,8 +101,6 @@
 	<string name="completed_error">הפעולה הושלמה עם שגיאות!</string>
 	<string name="completed_success">הפעולה הושלמה בהצלחה!</string>
 	<string name="compress_level">רמת דחיסה</string>
-	<string name="confirm_build">אישור הידור</string>
-	<string name="confirm_build_summary">הצגת תיבת דו-שיח לאישור לפני ההידור</string>
 	<string name="confirmation">אישור</string>
 	<string name="confirmb">להדר פרויקט \"%s\"?</string>
 	<string name="convert_jks">המר ל- pk8+x509.pem</string>
@@ -234,8 +232,6 @@
 	<string name="find_all">הכל</string>
 	<string name="find_next">הבא</string>
 	<string name="find_prev">הקודם</string>
-	<string name="fix1056_aapt2">תיקון עבור aapt2</string>
-	<string name="fix1056_aapt2_summary">החלף את \"Р\" ב- \"P\" במחרוזות</string>
 	<string name="fix_drawer">קבצים קבועים</string>
 	<string name="fix_drawer_summary">אל תסגור את מנהל הקבצים באמצעות החלקה מהירה</string>
 	<string name="fix_line_numbers">תיקון מספרי שורות</string>

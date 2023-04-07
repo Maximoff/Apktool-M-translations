@@ -361,8 +361,6 @@
 	<string name="dirs_size_summary">Отображать размер папок в списке</string>
 	<string name="date_format">Формат даты</string>
 	<string name="date_format_summary">Отображаемый формат даты</string>
-	<string name="confirm_build">Подтверждение сборки</string>
-	<string name="confirm_build_summary">Показывать диалог подтверждения перед сборкой</string>
 	<string name="round_icons">Круглые иконки</string>
 	<string name="round_icons_summary">Круглые иконки вместо круглоквадратных</string>
 	<string name="hidden_files">Скрытые файлы</string>
@@ -514,8 +512,6 @@
 	<string name="split">Сплит</string>
 	<string name="mcompress">Сжать</string>
 	<string name="mcompression">Сжатие</string>
-	<string name="fix1056_aapt2">Фикс для aapt2</string>
-	<string name="fix1056_aapt2_summary">Заменять \"&amp;#1056;\" на \"&amp;#80;\" в строках</string>
 	
 	<string name="mupdate_pref">Обновление программы</string>
 	<string name="mupdate_pref_summary">Настройки обновления</string>

@@ -68,8 +68,6 @@
 	<string name="completed_error">Operation mit Fehlern abgeschlossen!</string>
 	<string name="completed_success">Der Vorgang wurde erfolgreich abgeschlossen!</string>
 	<string name="compress_level">Komprimierungsstufe</string>
-	<string name="confirm_build">Kompilierungsbestätigung</string>
-	<string name="confirm_build_summary">Bestätigungsdialog vor der Kompilierung anzeigen</string>
 	<string name="confirmation">Bestätigung</string>
 	<string name="confirmb">Projekt kompilieren \"%s\"?</string>
 	<string name="copy">Kopieren</string>
@@ -154,8 +152,6 @@
 	<string name="find_all">Alle</string>
 	<string name="find_next">Nächster</string>
 	<string name="find_prev">Zurück</string>
-	<string name="fix1056_aapt2">Fix für aapt2</string>
-	<string name="fix1056_aapt2_summary">Ersetze \"&amp;#1056;\" durch \"&amp;#80;\" in der Zeichenfolge</string>
 	<string name="fix_drawer">Dateien fixieren</string>
 	<string name="fix_drawer_summary">Schließt den Dateimanager nicht mit einem Wisch</string>
 	<string name="foldersc">Verzeichnisse</string>

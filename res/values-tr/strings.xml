@@ -262,8 +262,6 @@ Boyut: %3$s"</string>
     <string name="dirs_size_summary">Listede klasör boyutunu görüntüle.</string>
     <string name="date_format">Tarih biçimi</string>
     <string name="date_format_summary">Görüntülenen tarih biçimini belirleyin.</string>
-    <string name="confirm_build">Derleme onayı</string>
-    <string name="confirm_build_summary">Derlemeden önce onay iletişim kutusunu göster.</string>
     <string name="round_icons">Yuvarlak simge</string>
     <string name="round_icons_summary">Yuvarlak simgeleri kullanın.</string>
     <string name="hidden_files">Gizli dosyalar</string>
@@ -359,8 +357,6 @@ Boyut: %3$s"</string>
     <string name="split">Bölünmüş</string>
     <string name="mcompress">Sıkıştır</string>
     <string name="mcompression">Sıkıştırma</string>
-    <string name="fix1056_aapt2">aapt2 için düzelt</string>
-    <string name="fix1056_aapt2_summary">Dizelerde \"&amp;#1056;\" yerine \"&amp;#80;\" yazılsın.</string>
     <string name="mupdate_pref">Güncelleme</string>
     <string name="mupdate_pref_summary">Güncelleme ayarları</string>
     <string name="mauto_update">Güncellemeleri kontrol et</string>

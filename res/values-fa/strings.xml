@@ -258,8 +258,6 @@
     <string name="dirs_size_summary">حجم پوشه را در لیست نشان میدهد.</string>
     <string name="date_format">قالب تاریخ</string>
     <string name="date_format_summary">قالب تاریخ نمایش داده شده را انتخاب کنید.</string>
-    <string name="confirm_build">تایید کامپایل</string>
-    <string name="confirm_build_summary">یک کادر تایید قبل از کامپایل را نشان میدهد.</string>
     <string name="round_icons">نمادهای گرد</string>
     <string name="round_icons_summary">نمادهای کاوشگر را گرد میکند.</string>
     <string name="hidden_files">‏فایلهای پنهان</string>
@@ -358,8 +356,6 @@
     <string name="split">تقسیم</string>
     <string name="mcompress">فشرده سازی</string>
     <string name="mcompression">فشرده سازی</string>
-    <string name="fix1056_aapt2">تعمیر aapt2</string>
-    <string name="fix1056_aapt2_summary">در رشته ها \"&amp;#1056;\" را با \"&amp;#80;\" جایگزین میکند.</string>
     <string name="mupdate_pref">بروز رسانی برنامه</string>
     <string name="mupdate_pref_summary">شامل تنظیمات بروزرسانی است.</string>
     <string name="mauto_update">بررسی بروز رسانی ها</string>

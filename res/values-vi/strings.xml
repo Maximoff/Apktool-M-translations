@@ -287,8 +287,6 @@ Kích thước: %3$s</string>
     <string name="dirs_size_summary">Hiển thị kích thước thư mục trong danh sách</string>
     <string name="date_format">Định dạng ngày tháng</string>
     <string name="date_format_summary">Định dạng ngày tháng hiển thị</string>
-    <string name="confirm_build">Xác nhận biên dịch</string>
-    <string name="confirm_build_summary">Hiển thị hộp thoại xác nhận trước khi biên dịch</string>
     <string name="round_icons">Biểu tượng thư mục</string>
     <string name="round_icons_summary">Biểu tượng thành hình tròn</string>
     <string name="hidden_files">Các mục ẩn</string>
@@ -390,8 +388,6 @@ Kích thước: %3$s</string>
     <string name="split">Tách ra</string>
     <string name="mcompress">Nén</string>
     <string name="mcompression">Nén</string>
-    <string name="fix1056_aapt2">Sửa lỗi cho aapt2</string>
-    <string name="fix1056_aapt2_summary">Thay thế &amp;#1056 bằng &amp;#80 trong chuỗi</string>
     <string name="mupdate_pref">Cập nhật chương trình</string>
     <string name="mupdate_pref_summary">Cập nhật cài đặt</string>
     <string name="mauto_update">Kiểm tra cập nhật</string>

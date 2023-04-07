@@ -280,8 +280,6 @@
 	<string name="dirs_size_summary">عرض حجم المجلد في القائمة</string>
 	<string name="date_format">صيغة التاريخ</string>
 	<string name="date_format_summary">عرض تنسيق التاريخ</string>
-	<string name="confirm_build">تأكيد التجميع</string>
-	<string name="confirm_build_summary">إظهار مربع حوار التأكيد قبل التجميع</string>
 	<string name="round_icons">أيقونات مستديرة</string>
 	<string name="round_icons_summary">أيقونات المستكشف المستديرة</string>
 	<string name="hidden_files">الملفات المخفية</string>
@@ -381,8 +379,6 @@
 	<string name="split">مقسمة</string>
 	<string name="mcompress">ضغط</string>
 	<string name="mcompression">ضغط</string>
-	<string name="fix1056_aapt2">إصلاح لapt2</string>
-	<string name="fix1056_aapt2_summary">استبدال \"&amp;#1056;\" بـ \"&amp;#80;\" في السلاسل</string>
 	<string name="mupdate_pref">تحديث البرنامج</string>
 	<string name="mupdate_pref_summary">تحديث الإعدادات</string>
 	<string name="mauto_update">التحقق من وجود تحديثات</string>

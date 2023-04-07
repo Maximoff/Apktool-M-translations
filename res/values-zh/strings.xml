@@ -285,8 +285,6 @@
     <string name="dirs_size_summary">在列表中显示文件夹大小</string>
     <string name="date_format">日期格式</string>
     <string name="date_format_summary">显示日期格式</string>
-    <string name="confirm_build">编译确认</string>
-    <string name="confirm_build_summary">编译前显示确认对话框</string>
     <string name="round_icons">圆形图标</string>
     <string name="round_icons_summary">使用圆形资源管理器图标</string>
     <string name="hidden_files">显示隐藏文件</string>
@@ -388,8 +386,6 @@
     <string name="split">分包</string>
     <string name="mcompress">压缩</string>
     <string name="mcompression">压缩文件</string>
-    <string name="fix1056_aapt2">修复aapt2</string>
-    <string name="fix1056_aapt2_summary">将strings字符串中“&amp;#1056;”替换为“&amp;#80;”</string>
     <string name="mupdate_pref">更新</string>
     <string name="mupdate_pref_summary">更新设置</string>
     <string name="mauto_update">自动检查更新</string>

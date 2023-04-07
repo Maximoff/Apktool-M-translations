@@ -78,8 +78,6 @@
 	<string name="completed_error">Operasi selesai dengan kesalahan!</string>
 	<string name="completed_success">Operasi berhasil diselesaikan!</string>
 	<string name="compress_level">Tingkat kompresi</string>
-	<string name="confirm_build">Konfirmasi kompilasi</string>
-	<string name="confirm_build_summary">Tampilkan dialog konfirmasi sebelum kompilasi</string>
 	<string name="confirmation">Konfirmasi</string>
 	<string name="confirmb">Kompilasi proyek \"%s\"?</string>
 	<string name="converter">Konverter</string>
@@ -187,8 +185,6 @@
 	<string name="find_all">Semua</string>
 	<string name="find_next">Berikutnya</string>
 	<string name="find_prev">Sebelumnya</string>
-	<string name="fix1056_aapt2">Perbaiki untuk aapt2</string>
-	<string name="fix1056_aapt2_summary">Ganti \"&amp;#1056;\" dengan \"&amp;#80;\" di string</string>
 	<string name="fix_drawer">File tetap</string>
 	<string name="fix_drawer_summary">Jangan tutup pengelola file dengan sapuan</string>
 	<string name="folder_menu">Menu folder</string>

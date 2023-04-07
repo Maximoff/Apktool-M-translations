@@ -303,8 +303,6 @@
 	<string name="dirs_size_summary">Afișează dimensiunea folderului în listă</string>
 	<string name="date_format">Formatul datei</string>
 	<string name="date_format_summary">Formatul datei afișat</string>
-	<string name="confirm_build">Confirmarea Compilației</string>
-	<string name="confirm_build_summary">Afișează dialogul de confirmare a compilației</string>
 	<string name="round_icons">Iconițe rotunjite</string>
 	<string name="round_icons_summary">Iconițe rotunjite în explorer</string>
 	<string name="hidden_files">Fișiere ascunse</string>
@@ -422,8 +420,6 @@
 	<string name="split">Split</string>
 	<string name="mcompress">Compresă</string>
 	<string name="mcompression">Compresie</string>
-	<string name="fix1056_aapt2">Fix for aapt2</string>
-	<string name="fix1056_aapt2_summary">Înlocuiește \"&amp;#1056;\" cu \"&amp;#80;\" în string-uri</string>
 	
 	<string name="mupdate_pref">Actualizare Program</string>
 	<string name="mupdate_pref_summary">Setări actualizare</string>

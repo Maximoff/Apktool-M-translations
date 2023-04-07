@@ -275,8 +275,6 @@ Dydis: %3$s"</string>
     <string name="dirs_size_summary">Rodyti aplanko dydį sąraše</string>
     <string name="date_format">Datos formatas</string>
     <string name="date_format_summary">Rodomas datos formatas</string>
-    <string name="confirm_build">Kompiliavimo patvirtinimas</string>
-    <string name="confirm_build_summary">Rodyti patvirtinimo dialogo langą prieš kompiliavimą</string>
     <string name="round_icons">Apvalios piktogramos</string>
     <string name="round_icons_summary">Apvalios piktogramos vietoj apvaliai kvadratinių</string>
     <string name="hidden_files">Paslėpti failai</string>
@@ -376,8 +374,6 @@ Dydis: %3$s"</string>
     <string name="split">Split</string>
     <string name="mcompress">Suspausti</string>
     <string name="mcompression">Suspaudžiama</string>
-    <string name="fix1056_aapt2">Taisyti aapt2</string>
-    <string name="fix1056_aapt2_summary">Pakeisti \"&amp;#1056;\" su \"&amp;#80;\" į eilutes</string>
     <string name="mupdate_pref">Programos atnaujinimas</string>
     <string name="mupdate_pref_summary">Atnaujinti nustatymus</string>
     <string name="mauto_update">Tikrinti, ar yra naujinimų</string>

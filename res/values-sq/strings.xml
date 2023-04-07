@@ -285,8 +285,6 @@
     <string name="dirs_size_summary">Shfaqni madhësinë e dosjes në listë</string>
     <string name="date_format">Formati i datës</string>
     <string name="date_format_summary">Formati i datës së shfaqur</string>
-    <string name="confirm_build">Konfirmimi i përpilimit</string>
-    <string name="confirm_build_summary">Trego dialogun e konfirmimit para përpilimit</string>
     <string name="round_icons">Ikona të rrumbullakëta</string>
     <string name="round_icons_summary">Ikona të rrumbullakët explorer</string>
     <string name="hidden_files">Skedarë të fshehur</string>
@@ -388,8 +386,6 @@
     <string name="split">I ndarë</string>
     <string name="mcompress">Ngjesh</string>
     <string name="mcompression">Kompresim</string>
-    <string name="fix1056_aapt2">Fix për AAPT2</string>
-    <string name="fix1056_aapt2_summary">Replace \"&amp; # 1056;\" me \"&amp; # 80;\" në strings</string>
     <string name="mupdate_pref">Përditësimi i programit</string>
     <string name="mupdate_pref_summary">Përditësoni Cilësimet</string>
     <string name="mauto_update">Kontrolloni për përditësime</string>

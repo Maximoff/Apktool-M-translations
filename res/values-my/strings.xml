@@ -163,8 +163,6 @@
 	<string name="dirs_size_summary">Folderအရွယ်အစားကိုListတွင်ပြသပါ</string>
 	<string name="date_format">ရက်စွဲပုံစံ</string>
 	<string name="date_format_summary">Dateပုံစံအား မည်သို့မည်ပုံ ပြသမည်ကိုရွေးချယ်ရန်</string>
-	<string name="confirm_build">Compilation အတည်ပြုချက်</string>
-	<string name="confirm_build_summary">Complie မလုပ်ခင် AlertDialogဖြင့် Compileလုပ်မလုပ်မေးစေမည်</string>
 	<string name="round_icons">လုံးဝန်းသော iconများအသုံးပြု</string>
 	<string name="round_icons_summary">ဤmode ဖွင့်ထားလျင် iconများသည် အဝိုင်းပုံဖြစ်သွားမည်</string>
 	<string name="hidden_files">မမြင်နိုင်သောဖိုင်များ</string>

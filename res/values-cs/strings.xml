@@ -230,8 +230,6 @@
 	<string name="dirs_size_summary">Zobrazení velikosti složky v seznamu</string>
 	<string name="date_format">Datový formát</string>
 	<string name="date_format_summary">Date format displayed</string>
-	<string name="confirm_build">Potvrzení kompilace</string>
-	<string name="confirm_build_summary">Před kompilací zobrazit potvrzovací dialog</string>
 	<string name="round_icons">Kulaté ikony</string>
 	<string name="round_icons_summary">Round explorer icons</string>
 	<string name="hidden_files">Skryté soubory</string>
@@ -312,8 +310,6 @@
 	<string name="split">Split</string>
 	<string name="mcompress">Compress</string>
 	<string name="mcompression">Compression</string>
-	<string name="fix1056_aapt2">Oprava pro aapt2</string>
-	<string name="fix1056_aapt2_summary">Replace \"&amp;#1056;\" with \"&amp;#80;\" in the strings</string>
 	
 	<string name="mupdate_pref">Aktualizace programu</string>
 	<string name="mupdate_pref_summary">Aktualizace nastavení</string>

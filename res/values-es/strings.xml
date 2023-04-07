@@ -291,8 +291,6 @@ Tamaño: %3$s</string>
     <string name="dirs_size_summary">Muestra el tamaño de la carpeta en la lista.</string>
     <string name="date_format">Formato de Fecha</string>
     <string name="date_format_summary">Formato de fecha que se mostrará.</string>
-    <string name="confirm_build">Confirmar compilación</string>
-    <string name="confirm_build_summary">Muestra un diálogo de confirmación antes de compilar.</string>
     <string name="round_icons">Iconos redondos</string>
     <string name="round_icons_summary">Muestra iconos redondos en el explorador de archivos.</string>
     <string name="hidden_files">Archivos ocultos</string>
@@ -398,8 +396,6 @@ Tamaño: %3$s</string>
     <string name="split">Split</string>
     <string name="mcompress">Comprimir</string>
     <string name="mcompression">Compresión</string>
-    <string name="fix1056_aapt2">Arreglo para aapt2</string>
-    <string name="fix1056_aapt2_summary">Reemplaza "&amp;#1056;" con "&amp;#80;" en las cadenas.</string>
     <string name="mupdate_pref">Actualización del programa</string>
     <string name="mupdate_pref_summary">Ajustes de actualización.</string>
     <string name="mauto_update">Buscar actualizaciones</string>

@@ -270,8 +270,6 @@
     <string name="dirs_size_summary">Показвай размера на папката в списъка</string>
     <string name="date_format">Формат на датата</string>
     <string name="date_format_summary">Избор на формат за дата</string>
-    <string name="confirm_build">Потвърждение за сборка</string>
-    <string name="confirm_build_summary">Показвай диалогов прозорец за потвърждение преди компилация</string>
     <string name="round_icons">Кръгли икони</string>
     <string name="round_icons_summary">Кръгли икони вместо закръглени квадратни</string>
     <string name="hidden_files">Скрити файлове</string>
@@ -371,8 +369,6 @@
     <string name="split">Сплит</string>
     <string name="mcompress">Архивирай</string>
     <string name="mcompression">Компресия</string>
-    <string name="fix1056_aapt2">Поправка за aapt2</string>
-    <string name="fix1056_aapt2_summary">Подмени \"&amp;#1056;\" на \"&amp;#80;\" в редовете</string>
     <string name="mupdate_pref">Актуализация на програмата</string>
     <string name="mupdate_pref_summary">Актуализиране на настройките</string>
     <string name="mauto_update">Проверка за актуализации</string>
