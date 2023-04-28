@@ -38,6 +38,9 @@
 	<string name="sets_nf">Наборов библиотек не найдено!</string>
 	<string name="enter_path">Ввести путь</string>
 	<string name="ultra_target_api">не менять целевой API</string>
+    <string name="error_try_again">Ошибка, попробуйте ещё раз</string>
+    <string name="miui_warn_title">Обнаружена MIUI!</string>
+    <string name="miui_warn_message">Похоже, у Вас MIUI! Я рекомендую открыть настройки разработчика и отключить оптимизацию MIUI. Если этого не сделать, у Вас могут возникнуть проблемы с работой приложения, ошибки и падения. Пожалуйста, не пишите мне об ошибках программы, если Вы прочитали это сообщение и не последовали моему совету!</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -292,10 +295,10 @@
 	<string name="light_theme_summary">Выберите между светлой темой и темной темой для пользовательского интерфейса.</string>
 	<string name="output_directory">Выходной каталог</string>
 	<string name="set_as_output_directory">Установить как выходной каталог</string>
-	<string name="output_directory_summary">Установите выходной каталог установленных приложений.</string>
-	<string name="output_directory_not_extsts">Выходной каталог \'%1$s\' не существует и не может быть создан!</string>
+	<string name="output_directory_summary">Установите выходной каталог по умолчанию</string>
+	<string name="output_directory_not_extsts">Выходной каталог \"%1$s\" не существует и не может быть создан!</string>
 	<string name="output_directory_not_set">Вы должны сначала установить выходной каталог!</string>
-	<string name="not_directory">\'%1$s\' каталог отсутствует!</string>
+	<string name="not_directory">\"%1$s\" каталог отсутствует!</string>
 	<string name="compile_project">Собрать проект</string>
 	<string name="no_open">Нет открытых файлов!</string>
 	<string name="copy_success">Скопировано!</string>
@@ -324,25 +327,25 @@
     <string name="build_and_decode">Сборка и декомпиляция</string>
     <string name="build_and_decode_summary">Параметры сборки и декомпиляции</string>
     <string name="font_size">Размер шрифта редактора</string>
-    <string name="font_size_summary">Укажите размер шрифта по умолчанию для редактора.</string>
+    <string name="font_size_summary">Укажите размер шрифта по умолчанию для редактора</string>
     <string name="font_size_title">Размер шрифта редактора:</string>
     <string name="debug_mode">Режим отладки apk</string>
     <string name="debug_mode_summary">Установить android:debuggable в \"true\" в разобраном манифесте APK</string>
-    <string name="verbose_mode">Полный</string>
-    <string name="verbose_mode_summary">Включить подробный режим.</string>
-    <string name="copyOriginalFiles">Соответствие оригиналу</string>
-    <string name="copyOriginalFiles_summary">Сохраняется оригинальная подпись и манифест.</string>
+    <string name="verbose_mode">Подробный лог</string>
+    <string name="verbose_mode_summary">Включить подробный режим логгирования</string>
+    <string name="copyOriginalFiles">Сохранить оригинал</string>
+    <string name="copyOriginalFiles_summary">Сохраняется оригинальная подпись и манифест</string>
     <string name="mBakdeb">Отладочная информация</string>
     <string name="mBakdeb_summary">Записывать отладочную информацию (.local, .param, .line и пр.)</string>
     <string name="default_signature_file">Подпись по умолчанию</string>
 	<string name="custom_signature_file">Пользовательский файл подписи</string>
-    <string name="custom_signature_file_summary">Использовать пользовательский ключ подписи.</string>
+    <string name="custom_signature_file_summary">Использовать пользовательский ключ подписи</string>
     <string name="signature_file">Файл подписи</string>
 	<string name="sel_signature_file">Выберите файл подписи</string>
     <string name="signature_file_summary">Файл настроек (pk8 файл или файл хранилища ключей). Если это pk8 файл, тогда автоматически сгенерирует x509.pem файл с тем же именем (для примера, testkey.pk8 соответствует testkey.x509.pem).</string>
-    <string name="signature_file_missing">Файл подписи \'%1$s\' не найден, используется подпись по умолчанию!</string>
+    <string name="signature_file_missing">Файл подписи \"%1$s\" не найден, используется подпись по умолчанию!</string>
 	<string name="signature_pass_not_set">Не указан пароль хранилища, используется подпись по умолчанию!</string>
-	<string name="load_signature_file_fail">Невозможно загрузить ключ подписи \'%1$s\'.</string>
+	<string name="load_signature_file_fail">Невозможно загрузить ключ подписи \"%1$s\".</string>
 	<string name="enter_password">Введите пароль:</string>
 	<string name="about">О приложении</string>
 	<string name="about_summary">Информация об авторе, полезные ссылки</string>
@@ -380,7 +383,7 @@
 	<string name="editor_cs">Тема</string>
 	<string name="editor_cs_summary">Цветовая схема редактора</string>
 	<string name="use_aapt2">Использовать aapt2</string>
-	<string name="use_aapt2_summary">Использовать aapt2 для сборки. Экспериментальная опция!</string>
+	<string name="use_aapt2_summary">Использовать aapt2 для сборки</string>
 	<string name="check_install">Проверять apk</string>
 	<string name="check_install_summary">Проверять apk перед установкой</string>
 	<string name="editor_non_printing">Непечатаемые символы</string>
@@ -457,6 +460,8 @@
 	<string name="editor_xml_format_summary">Вариант форматирования XML при выравнивании кода</string>
 	<string name="editor_magnifier">Лупа</string>
 	<string name="editor_magnifier_summary">Лупа при перемещении курсора</string>
+    <string name="old_picker">Старый выбор цвета</string>
+    <string name="old_picker_summary">Старый диалог выбора цвета</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>
@@ -483,7 +488,7 @@
     <string name="gen_key_title">Создать ключ</string>
     <string name="gen_key_summary">Нажмите, чтобы создать файл ключа.</string>
     <string name="analysis_all_smali">Анализ всех smali</string>
-    <string name="analysis_all_smali_summary">Анализ всех smali файлов при запуске и настройке основного проекта.</string>
+    <string name="analysis_all_smali_summary">Анализ всех smali файлов при запуске и настройке основного проекта</string>
     <string name="create_and_use">Создать и использовать</string>
     
     <string name="please_update_your_android">Обновите вашу систему до  Android 4.3 или выше!</string>
@@ -587,6 +592,7 @@
 	<string name="search_reset">Сброс</string>
 	<string name="search_regexp">Регулярные выражения</string>
 	<string name="search_sen2">Учитывать регистр</string>
+    <string name="search_loop">Поиск по кругу</string>
 	<string name="minfo">Инфо</string>
 	<string name="mauto">Авто</string>
 	<string name="permissions">Разрешения</string>

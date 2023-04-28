@@ -44,6 +44,9 @@
 	<string name="sets_nf">No library sets found!</string>
 	<string name="enter_path">Enter path</string>
 	<string name="ultra_target_api">do not change the target API</string>
+    <string name="error_try_again">Error, please try again</string>
+    <string name="miui_warn_title">MIUI detected!</string>
+    <string name="miui_warn_message">It looks like you have MIUI! I recommend opening developer settings and disabling MIUI optimization. If you do not do this, you may have problems with the operation of the application, errors and crashes. Please do not write to me about program errors if you read this message and did not follow my advice!</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -300,9 +303,9 @@
 	
 	<string name="light_theme">Light Theme</string>
 	<string name="light_theme_summary">Choose between a light theme and a dark theme for the user interface.</string>
-	<string name="output_directory">Output Directory</string>
-	<string name="set_as_output_directory">Set As Output Directory</string>
-	<string name="output_directory_summary">Set the output directory of installed apps.</string>
+	<string name="output_directory">Output directory</string>
+	<string name="set_as_output_directory">Set as output directory</string>
+	<string name="output_directory_summary">Set the default output directory</string>
 	<string name="output_directory_not_extsts">Output directory \'%1$s\' not exists and can not be created!</string>
 	<string name="output_directory_not_set">You must set output directory first!</string>
 	<string name="not_directory">\'%1$s\' not a directory!</string>
@@ -336,14 +339,14 @@
     <string name="build_and_decode">Build &amp; Decode</string>
     <string name="build_and_decode_summary">Configure Build &amp; Decode settings.</string>
     <string name="font_size">Editor font size</string>
-    <string name="font_size_summary">Specify the default font size of the editor.</string>
+    <string name="font_size_summary">Specify the default font size of the editor</string>
     <string name="font_size_title">Editor font size:</string>
     <string name="debug_mode">Set apk as debugable</string>
     <string name="debug_mode_summary">Sets android:debuggable to \"true\" in the APK\'s compiled manifest</string>
     <string name="verbose_mode">Verbose</string>
     <string name="verbose_mode_summary">Enable verbose mode</string>
     <string name="copyOriginalFiles">Match original</string>
-    <string name="copyOriginalFiles_summary">The original signature and manifest are retained.</string>
+    <string name="copyOriginalFiles_summary">The original signature and manifest are retained</string>
     <string name="mBakdeb">Write debug info</string>
     <string name="mBakdeb_summary">Write out debug info (.local, .param, .line, etc.)</string>
 	<string name="default_signature_file">Default signature</string>
@@ -392,7 +395,7 @@
 	<string name="editor_cs">Color scheme</string>
 	<string name="editor_cs_summary">Editor color scheme</string>
 	<string name="use_aapt2">Use aapt2</string>
-	<string name="use_aapt2_summary">Use aapt2 to build.  Experimental option!</string>
+	<string name="use_aapt2_summary">Use aapt2 to build</string>
 	<string name="check_install">Verify apk</string>
 	<string name="check_install_summary">Verify apk file before installation</string>
 	<string name="editor_non_printing">Unprintable characters</string>
@@ -467,6 +470,8 @@
 	<string name="editor_xml_format_summary">XML formatting option for code alignment</string>
 	<string name="editor_magnifier">Magnifier</string>
 	<string name="editor_magnifier_summary">Magnifier when moving the cursor</string>
+    <string name="old_picker">Old color picker</string>
+    <string name="old_picker_summary">The old color selection dialog</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>
@@ -599,6 +604,7 @@
 	<string name="search_reset">Reset</string>
 	<string name="search_regexp">Regular expressions</string>
 	<string name="search_sen2">Case sensitive</string>
+    <string name="search_loop">Loop a search</string>
 	<string name="minfo">Info</string>
 	<string name="mauto">Auto</string>
 	<string name="permissions">Permissions</string>
@@ -679,6 +685,7 @@
 	<string name="mtr_properties">Project: %1$s\nTotal localizations: %2$s\nCurrent localization: %3$s\nSize: %4$s\nTotal strings: %5$s\nTranslated strings: %6$s</string>
 	<string name="mtr_service">Translation service</string>
 	<string name="mtr_google">Google</string>
+	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_bing">Bing</string>
 	<string name="mtr_yandex">Yandex</string>
 	<string name="mtr_create">Create</string>
