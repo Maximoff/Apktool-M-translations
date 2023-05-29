@@ -41,6 +41,8 @@
     <string name="error_try_again">Ошибка, попробуйте ещё раз</string>
     <string name="miui_warn_title">Обнаружена MIUI!</string>
     <string name="miui_warn_message">Похоже, у Вас MIUI! Я рекомендую открыть настройки разработчика и отключить оптимизацию MIUI. Если этого не сделать, у Вас могут возникнуть проблемы с работой приложения, ошибки и падения. Пожалуйста, не пишите мне об ошибках программы, если Вы прочитали это сообщение и не последовали моему совету!</string>
+    <string name="topmenu_toast">Теперь ты знаешь, что тут есть меню!</string>
+    <string name="add_media">Добавить в медиагалерею</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -637,6 +639,7 @@
 	<string name="msplit_rm">удалить \"android:isSplitRequired\"</string>
 	<string name="mdebug_rm">удалить \"android:debuggable\"</string>
 	<string name="mtest_rm">удалить \"android:testOnly\"</string>
+    <string name="msui_rm">удалить \"android:sharedUserId\"</string>
 	<string name="madapt_tv">адаптировать для Android TV</string>
 	<string name="mreset_app_files">Сбросить все файлы приложения: фреймворки, aapt и т.д.? Настройки не будут сброшены.</string>
 	<string name="mreset_app_settings">Сбросить все настройки приложения?</string>

@@ -47,6 +47,8 @@
     <string name="error_try_again">Error, please try again</string>
     <string name="miui_warn_title">MIUI detected!</string>
     <string name="miui_warn_message">It looks like you have MIUI! I recommend opening developer settings and disabling MIUI optimization. If you do not do this, you may have problems with the operation of the application, errors and crashes. Please do not write to me about program errors if you read this message and did not follow my advice!</string>
+    <string name="topmenu_toast">Now you know there\'s a menu here!</string>
+    <string name="add_media">Add to media gallery</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -649,6 +651,7 @@
 	<string name="msplit_rm">remove \"android:isSplitRequired\"</string>
 	<string name="mdebug_rm">remove \"android:debuggable\"</string>
 	<string name="mtest_rm">remove \"android:testOnly\"</string>
+    <string name="msui_rm">remove \"android:sharedUserId\"</string>
 	<string name="madapt_tv">adapt for Android TV</string>
 	<string name="mreset_app_files">Reset all application files: frameworks, aapt, etc.?  Settings will not be reset.</string>
 	<string name="mreset_app_settings">Reset all application settings?</string>
