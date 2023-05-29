@@ -736,4 +736,6 @@
     <string name="view_content">Προβολή περιεχομένου</string>
     <string name="whole_words">Ολόκληρες λέξεις</string>
     <string name="yes">Ναι</string>
+    <string name="topmenu_toast">Τώρα ξέρετε ότι υπάρχει ένα μενού εδώ!</string>
+    <string name="add_media">Προσθήκη στη Συλλογή πολυμέσων</string>
 </resources>
