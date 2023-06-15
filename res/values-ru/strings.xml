@@ -45,6 +45,7 @@
     <string name="add_media">Добавить в медиагалерею</string>
     <string name="wait_bg">Дождитесь окончания запущенного процесса!</string>
     <string name="dummy_file">Заменить пустышкой</string>
+    <string name="extract_icon">Извлечь иконку</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -582,6 +583,8 @@
 	<string name="add_nsc_ex_summary">Не изменять уже добавленный network security config</string>
 	<string name="dont_reset_cpb">Не сбрасывать кнопку вставки</string>
 	<string name="dont_reset_cpb_summary">Кнопка вставки при копировании файлов будет сброшена только долгим нажатием на неё</string>
+    <string name="build_toout">Сборка в выходной каталог</string>
+	<string name="build_toout_summary">При сборке проектов APK сохраняются в выходной каталог</string>
 	
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_over">Найти переопределения</string>
