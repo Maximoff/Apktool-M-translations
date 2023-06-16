@@ -26,7 +26,7 @@
     <string name="analysis_all_smali_summary">Ανάλυση Όλα τα αρχεία smali κατά την εκκίνηση και ρύθμιση κύριου έργου.</string>
     <string name="api_version">Έκδοση API</string>
     <string name="apk_size_label">Μέγεθος APK</string>
-    <string name="apk_template">Υπόδειγμα ονόματος APK</string>
+    <string name="apk_template">Πρότυπο όνομα APK</string>
     <string name="apk_template_summary">Υπόδειγμα για αυτόματη μετονομασία αρχείων apk</string>
     <string name="app_disabled">Απενεργοποιημένη εφαρμογή</string>
     <string name="app_fontsz">Μέγεθος γραμ/σειράς</string>
@@ -66,6 +66,8 @@
     <string name="build_notification">Ειδοποιήσεις</string>
     <string name="build_notification_summary">Αποστολή ειδοποίησης με την ολοκλήρωση της Κατασκευής &amp; Απομεταγλώττισης</string>
     <string name="build_run_title">Μεταγλώττιση...</string>
+    <string name="build_toout">Κατασκευή στον κατάλογο εξόδου</string>
+	<string name="build_toout_summary">Κατά τη δημιουργία έργων, τα APK αποθηκεύονται στον κατάλογο εξόδου</string>
     <string name="cancel">Ακύρωση</string>
     <string name="cert_by_owner">Υπογεγραμμένο από τον κάτοχο του πιστοποιητικού</string>
     <string name="cert_issuer">Εκδότης Πιστοποιητικού: %s</string>
@@ -120,8 +122,8 @@
     <string name="create_list">Δημιουργία μιας λίστας</string>
     <string name="create_logcat">Δημιουργία LogCat αρχείου</string>
     <string name="create_shortcut">Δημιουργία συντόμευσης</string>
-    <string name="created_cert_name">Υπογραφή όνομα δημιουργού</string>
-    <string name="created_cert_name_summary">Υπογραφή όνομα δημιουργού σε αρχείο SF</string>
+    <string name="created_cert_name">Υπογραφή με όνομα δημιουργού</string>
+    <string name="created_cert_name_summary">Υπογραφή με όνομα δημιουργού σε αρχείο SF</string>
     <string name="crowdin">Crowdin</string>
     <string name="crowdin_summary">Βοηθήστε στη μετάφραση του Apktool M στη γλώσσα σας</string>
     <string name="custom_signature_file">Προσαρμοσμένο αρχείο υπογραφής</string>
@@ -166,14 +168,15 @@
     <string name="dirs_size_summary">Εμφάνιση μεγέθους φακέλου στη λίστα</string>
     <string name="dont_notify">Χωρίς ειδοποίηση εάν εκτελείται</string>
     <string name="dont_notify_summary">Χωρίς εμφάνιση ειδοποίησης εάν η εφαρμογή είναι ανοιχτή</string>
-    <string name="dont_reset_cpb">Μην επαναφέρεται το κουμπί επικόλλησης</string>
-    <string name="dont_reset_cpb_summary">Το κουμπί επικόλλησης κατά την αντιγραφή αρχείων θα επαναφέρεται μόνο με παρατεταμένο πάτημα.</string>
+    <string name="dont_reset_cpb">Χωρίς επαναφορά πλήκτρου επικόλλησης</string>
+    <string name="dont_reset_cpb_summary">Το πλήκτρο επικόλλησης κατά την αντιγραφή αρχείων θα επαναφέρεται μόνο με παρατεταμένο πάτημα.</string>
     <string name="dont_work_aapt2">Αυτό δεν λειτουργεί με το aapt2</string>
     <string name="down_for">Λήψη για %s</string>
     <string name="down_started">Η λήψη του αρχείου ξεκίνησε</string>
     <string name="download_success">%s το αρχείο λήφθηκε με επιτυχία!</string>
     <string name="drawer_fullscreen">Λίστα αρχείων πλήρους οθόνης</string>
     <string name="drawer_fullscreen_summary">Ο διαχειριστής αρχείων θα καταλαμβάνει πλήρη οθόνη</string>
+    <string name="dummy_file">Αντικατάσταση με ένα εικονικό</string>
     <string name="edit">Επεξεργασία</string>
     <string name="edit_mode">Λειτουργία επεξεργασίας</string>
     <string name="editor">Επεξεργαστής</string>
@@ -227,6 +230,7 @@
     <string name="ext_editor">Εξωτερικός επεξεργαστής</string>
     <string name="ext_editor_summary">Άνοιγμα αρχείων κειμένου σε εξωτερικό επεξεργαστή</string>
     <string name="extract">Εξαγωγή</string>
+    <string name="extract_icon">Εξαγωγή Εικονιδίου</string>
     <string name="extraction">Εξαγωγή: %s</string>
     <string name="failed_open">Αδυναμία ανοίγματος \"%s\"!</string>
     <string name="failed_openset">Αποτυχία ανοίγματος ρυθμίσεων!</string>
@@ -339,7 +343,7 @@
     <string name="madapt_tv">προσαρμογή για Android TV</string>
     <string name="madd">Προσθήκη</string>
     <string name="main_project">Ορισμός ως κύριο έργο</string>
-    <string name="make_home">Κάντε ως αρχικό κατάλογο</string>
+    <string name="make_home">Ορισμός ως Αρχικός κατάλογος</string>
     <string name="man_frame">Διαχείριση frameworks</string>
     <string name="man_frame_summary">Διαχείριση εγκατεστημένων frameworks</string>
     <string name="mantisplit">Αντιδιαχωρισμός</string>
@@ -585,15 +589,15 @@
     <string name="scaling">Κλιμάκωση</string>
     <string name="scaling_summary">Κλιμάκωση με δύο δάχτυλα</string>
     <string name="scan_mode">Λειτουργία πλοήγησης</string>
-    <string name="scoped_storage">Εμβέλεια Αποθήκευσης</string>
+    <string name="scoped_storage">Εύρος Αποθήκευσης</string>
     <string name="scoped_storage_msg">Το Android 11 εισάγει έναν νέο τρόπο διαχείρισης αρχείων που ονομάζεται \"Scoped Storage\". Πρέπει να χορηγήσετε ειδική άδεια!</string>
     <string name="scoped_storage_title">Αλλαγές στο Android 11 R</string>
     <string name="screen_on">Χωρίς απενεργοποίηση Οθόνης</string>
-    <string name="screen_on_summary">Κρατήστε την οθόνη πάντα αναμμένη</string>
+    <string name="screen_on_summary">Παραμονή οθόνης πάντα αναμμένη</string>
     <string name="screen_orientation">Προσανατολισμός οθόνης</string>
     <string name="scrollbar_left">Γραμμή κύλισης στα αριστερά</string>
     <string name="scrollbar_left_summary">Γραμμή κύλισης στις λίστες στα αριστερά</string>
-    <string name="search_call">Εύρεση κλήσεων</string>
+    <string name="search_call">Αναζήτηση κλήσεων</string>
     <string name="search_files">Αναζήτηση αρχείων</string>
     <string name="search_hint">Εισάγετε κείμενο εδώ</string>
     <string name="search_info">"Οι αναζητήσεις περιεχομένου πραγματοποιούνται σε αρχεία με τις ακόλουθες επεκτάσεις: %s.
@@ -734,6 +738,7 @@
     <string name="verify_v2_success">Η επαλήθευση υπογραφής V2 ολοκληρώθηκε με επιτυχία.</string>
     <string name="version_app">Όνομα έκδοσης</string>
     <string name="view_content">Προβολή περιεχομένου</string>
+    <string name="wait_bg">Περιμένετε για το τέλος της διαδικασίας εκτέλεσης!</string>
     <string name="whole_words">Ολόκληρες λέξεις</string>
     <string name="yes">Ναι</string>
 </resources>
