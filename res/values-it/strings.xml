@@ -126,7 +126,7 @@
     <string name="build_dex">Build dex</string>
     <string name="decompile">Decompila</string>
     <string name="decompile_res">Decompila risorse</string>
-    <string name="decompile_dex">Decompila classes.dex</string>
+    <string name="decompile_dex">Decompila classes*.dex</string>
     <string name="decompile_all_dex">Decompila tutto \"*.dex\"</string>
     <string name="install">Installa</string>
     <string name="install_session">Installa utilizzando la sessione</string>

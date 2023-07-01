@@ -130,7 +130,7 @@
     <string name="build_dex">dex 빌드</string>
     <string name="decompile">디컴파일</string>
     <string name="decompile_res">리소스 디컴파일</string>
-    <string name="decompile_dex">classes.dex 디컴파일</string>
+    <string name="decompile_dex">classes*.dex 디컴파일</string>
     <string name="decompile_all_dex">모든 \".dex\" 디컴파일</string>
     <string name="decompile_multi_res">추가 리소스 디컴파일</string>
     <string name="install">설치</string>

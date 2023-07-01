@@ -52,6 +52,7 @@
     <string name="wait_bg">Wait for the end of the running process!</string>
     <string name="dummy_file">Replace with a dummy</string>
     <string name="extract_icon">Extract Icon</string>
+    <string name="comment">Comment</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -211,7 +212,7 @@
 	<string name="build_dex">Build dex</string>
 	<string name="decompile">Decompile</string>
     <string name="decompile_res">Decompile resources</string>
-    <string name="decompile_dex">Decompile classes.dex</string>
+    <string name="decompile_dex">Decompile classes*.dex</string>
 	<string name="decompile_all_dex">Decompile all \"*.dex\"</string>
 	<string name="decompile_multi_res">Decompiling additional resources</string>
     <string name="install">Install</string>

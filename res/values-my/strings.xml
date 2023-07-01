@@ -70,7 +70,7 @@
 	<string name="save_file_msg">အချို့သောဖိုင်များ မသိမ်းဆည်းရသေးပါ။သိမ်းဆည်းပါမည်လား?</string>
     <string name="settings">ပြင်ဆင်ချက်များ</string>
     <string name="decompile_res">Resourcesများဖြည်ချပါ</string>
-    <string name="decompile_dex">Classes.dexဖြည်ချပါ</string>
+    <string name="decompile_dex">classes*.dexဖြည်ချပါ</string>
     <string name="install">installလုပ်ရန်</string>
     <string name="verify">Signatureစစ်ဆေး</string>
     <string name="translate">Translate</string>

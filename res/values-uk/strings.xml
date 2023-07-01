@@ -130,7 +130,7 @@
     <string name="build_dex">Зібрати dex</string>
     <string name="decompile">Декомпілювати</string>
     <string name="decompile_res">Декомпілювати ресурси</string>
-    <string name="decompile_dex">Декомпілювати classes.dex</string>
+    <string name="decompile_dex">Декомпілювати classes*.dex</string>
     <string name="decompile_all_dex">Декомпілювати всі \"*.dex\"</string>
     <string name="decompile_multi_res">Декомпілювати додаткові ресурси</string>
     <string name="install">Встановити</string>

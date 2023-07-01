@@ -193,7 +193,7 @@ A configuração de um tamanho muito grande não é recomendado.
     <string name="build_dex">Construir Dex</string>
     <string name="decompile">Descompilar</string>
     <string name="decompile_res">Descompilar recursos</string>
-    <string name="decompile_dex">Descompilar classes.dex</string>
+    <string name="decompile_dex">Descompilar classes*.dex</string>
     <string name="decompile_all_dex">Descompilar todos os \"*.dex\"</string>
     <string name="decompile_multi_res">Descompilar recursos adicionais</string>
     <string name="install">Instalar</string>

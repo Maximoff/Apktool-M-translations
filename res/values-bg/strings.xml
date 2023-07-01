@@ -117,7 +117,7 @@
     <string name="build_dex">Събери dex</string>
     <string name="decompile">Декомпилирай</string>
     <string name="decompile_res">Декомпилирай ресурси</string>
-    <string name="decompile_dex">Декомпилирай classes.dex</string>
+    <string name="decompile_dex">Декомпилирай classes*.dex</string>
     <string name="decompile_all_dex">Декомпилирай всички \"*.dex\"</string>
     <string name="install">Инсталирай</string>
     <string name="install_session">Инсталирай със сесия</string>

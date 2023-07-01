@@ -130,7 +130,7 @@
     <string name="build_dex">构建dex</string>
     <string name="decompile">反编译</string>
     <string name="decompile_res">反编译资源</string>
-    <string name="decompile_dex">反编译classes.dex</string>
+    <string name="decompile_dex">反编译classes*.dex</string>
     <string name="decompile_all_dex">反编译所有“*.dex”</string>
     <string name="decompile_multi_res">反编译额外资源</string>
     <string name="install">安装</string>

@@ -190,7 +190,7 @@ Définir une taille trop grande n\'est pas recommandé
     <string name="build_dex">Construire dex</string>
     <string name="decompile">Décompiler</string>
     <string name="decompile_res">Décompiler les resources</string>
-    <string name="decompile_dex">Décompiler le(s) classes.dex</string>
+    <string name="decompile_dex">Décompiler le(s) classes*.dex</string>
     <string name="decompile_all_dex">Décompiler tout \"*.dex\"</string>
     <string name="decompile_multi_res">Décompiler des ressources supplémentaires</string>
     <string name="install">Installer</string>

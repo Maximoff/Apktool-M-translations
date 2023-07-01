@@ -95,7 +95,7 @@
     <string name="settings">Nastavení</string>
 	<string name="decompile">Dekompilovat</string>
     <string name="decompile_res">Dekompilovat resources</string>
-    <string name="decompile_dex">Dekompilovat classes.dex</string>
+    <string name="decompile_dex">Dekompilovat classes*.dex</string>
     <string name="install">Nainstalovat</string>
 	<string name="install_sign">Podepsat a nainstalovat</string>
 	<string name="install_anyway">Nainstalujte přesto</string>

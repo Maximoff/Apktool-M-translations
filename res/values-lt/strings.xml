@@ -120,7 +120,7 @@
     <string name="build_dex">Surinkti dex</string>
     <string name="decompile">Dekompiliuoti</string>
     <string name="decompile_res">Dekompiliuoti resources</string>
-    <string name="decompile_dex">Dekompiliuoti classes.dex</string>
+    <string name="decompile_dex">Dekompiliuoti classes*.dex</string>
     <string name="decompile_all_dex">Dekompiliuoti visus \"*.dex\"</string>
     <string name="install">Įdiegti</string>
     <string name="install_session">Diegimas naudojant sesiją</string>

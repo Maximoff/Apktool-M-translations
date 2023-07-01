@@ -94,7 +94,7 @@
 	<string name="decoding_shared_library">Gemeinsame Bibliothek %1$s, pkgId: %2$d dekodieren</string>
 	<string name="decompile">Dekompilieren</string>
 	<string name="decompile_all_dex">Decompiliere alle \"*.dex\"</string>
-	<string name="decompile_dex">Dekompilieren classes.dex</string>
+	<string name="decompile_dex">Dekompilieren classes*.dex</string>
 	<string name="decompile_res">Dekompilieren resources</string>
 	<string name="default_key">Standardschlüssel</string>
 	<string name="default_key_summary">Standard-Signaturschlüssel</string>

@@ -134,7 +134,7 @@
     <string name="build_dex">Compilar Dex</string>
     <string name="decompile">Descompilar</string>
     <string name="decompile_res">Descompilar recursos</string>
-    <string name="decompile_dex">Descompilar classes.dex</string>
+    <string name="decompile_dex">Descompilar classes*.dex</string>
     <string name="decompile_all_dex">Descompilar todo los "*.dex"</string>
     <string name="decompile_multi_res">Descompilando recursos adicionales</string>
     <string name="install">Instalar</string>

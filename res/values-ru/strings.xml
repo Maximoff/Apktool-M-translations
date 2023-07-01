@@ -46,6 +46,7 @@
     <string name="wait_bg">Дождитесь окончания запущенного процесса!</string>
     <string name="dummy_file">Заменить пустышкой</string>
     <string name="extract_icon">Извлечь иконку</string>
+    <string name="comment">Комментарий</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -201,7 +202,7 @@
 	<string name="build_dex">Собрать dex</string>
 	<string name="decompile">Декомпилировать</string>
     <string name="decompile_res">Декомпилировать ресурсы</string>
-    <string name="decompile_dex">Декомпилировать classes.dex</string>
+    <string name="decompile_dex">Декомпилировать classes*.dex</string>
 	<string name="decompile_all_dex">Декомпилировать все \"*.dex\"</string>
 	<string name="decompile_multi_res">Декомпиляция дополнительных ресурсов</string>
     <string name="install">Установить</string>

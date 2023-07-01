@@ -130,7 +130,7 @@
     <string name="build_dex">Xây dựng dex</string>
     <string name="decompile">Giải mã</string>
     <string name="decompile_res">Giải mã tài nguyên</string>
-    <string name="decompile_dex">Giải mã các classes.dex</string>
+    <string name="decompile_dex">Giải mã các classes*.dex</string>
     <string name="decompile_all_dex">Giải mã tất cả \"*.dex\" trong tệp</string>
     <string name="decompile_multi_res">Giải mã các tài nguyên bổ sung</string>
     <string name="install">Cài đặt</string>

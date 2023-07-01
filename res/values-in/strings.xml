@@ -112,7 +112,7 @@
 	<string name="decoding_shared_library">Mendekode Pustaka Bersama %1$s, pkgId: %2$d</string>
 	<string name="decompile">Decompile</string>
 	<string name="decompile_all_dex">Dekompilasi semua \"*.dex\"</string>
-	<string name="decompile_dex">Dekompilasi classes.dex</string>
+	<string name="decompile_dex">Dekompilasi classes*.dex</string>
 	<string name="decompile_multi_res">Mendekompilasi sumber daya tambahan</string>
 	<string name="decompile_res">Dekompilasi sumber daya</string>
 	<string name="default_key">Kunci default</string>

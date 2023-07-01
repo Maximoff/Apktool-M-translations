@@ -106,7 +106,7 @@
     <string name="build_dex">ایجاد DEX</string>
     <string name="decompile">دکامپایل</string>
     <string name="decompile_res">منابع تجزیه</string>
-    <string name="decompile_dex">دکامپایل classes.dex</string>
+    <string name="decompile_dex">دکامپایل classes*.dex</string>
     <string name="decompile_all_dex">دکامپایل \"‎\"*.dex</string>
     <string name="install">نصب</string>
     <string name="install_session">نصب با استفاده از جلسه</string>

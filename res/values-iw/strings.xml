@@ -144,7 +144,7 @@
 	<string name="decoding_shared_library">פענוח הספרייה המשותפת %1$s, pkgId: %2$d</string>
 	<string name="decompile">הידור מחדש</string>
 	<string name="decompile_all_dex">הידור כל \"*.dex\"</string>
-	<string name="decompile_dex">Decompile classes.dex</string>
+	<string name="decompile_dex">Decompile classes*.dex</string>
 	<string name="decompile_multi_res">פירוק משאבים נוספים</string>
 	<string name="decompile_res">פירוק משאבים</string>
 	<string name="default_key">מפתח ברירת מחדל</string>

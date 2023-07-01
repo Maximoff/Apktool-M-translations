@@ -143,7 +143,7 @@
 	<string name="build_dex">Construieşte dex</string>
 	<string name="decompile">Decompilează</string>
     <string name="decompile_res">Decompilează Resursele</string>
-    <string name="decompile_dex">Decompilează classes.dex</string>
+    <string name="decompile_dex">Decompilează classes*.dex</string>
 	<string name="decompile_all_dex">Decompilare totală \"*.dex\"</string>
 	<string name="decompile_multi_res">Se decompilează resursele suplimentare</string>
     <string name="install">Instalează</string>
