@@ -47,6 +47,12 @@
     <string name="dummy_file">Заменить пустышкой</string>
     <string name="extract_icon">Извлечь иконку</string>
     <string name="comment">Комментарий</string>
+    <string name="cloning">Клонирование</string>
+    <string name="cloning_result">Старое имя: %1$s\nНовое имя: %2$s\nЗатрачено времени: %3$s</string>
+    <string name="originalf">Оригинал: %s</string>
+    <string name="soeditor">Редактор библиотек</string>
+    <string name="file_changed">Файл изменён, сохранить изменения?</string>
+    <string name="so_prop">Файл: %1$s\nРазмер: %2$s\nТип: %3$s\nВсего строк: %4$s\nИзменено строк: %5$s</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -698,12 +704,14 @@
 	<string name="mtr_sure">Вы уверены?</string>
 	<string name="mtr_trans_smali">Перевод smali</string>
 	<string name="mtr_no_trans">Строка не нуждается в переводе!</string>
+    <string name="mtr_first_notrans">Сначала не переведённые</string>
 	
 	<string name="attention">Внимание!</string>
 	<string name="repeat">Повторить</string>
 	<string name="down_for">Загрузить для %s</string>
 	<string name="file_download">Загрузка файла: %s</string>
 	<string name="download_success">Файл %s успешно загружен!</string>
+    <string name="load_binaries2">Необходимо загрузить файлы aapt/aapt2! Вы можете загрузить их сейчас или сделать это позже в настройках. Для загрузки требуется подключение к сети Интернет.\n\nХотите загрузить сейчас?</string>
 	<string name="load_binaries">Встроенные бинарные файлы aapt/aapt2 могут быть несовместимы с вашей системой. Вы можете обновить их сейчас или сделать это позже в настройках. Для загрузки требуется подключение к сети Интернет.\n\nХотите загрузить сейчас?</string>
 	<string name="plugin_modif">Плагин UnApkm подписан чужой подписью. Вероятно, плагин был модифицирован. Крайне рекомендуется удалить плагин и скачать оригинальный файл с сайта разработчика. Нажав \"Не напоминать\" Вы продолжите пользоваться модифицированным плагином на свой страх и риск!</string>
 	<string name="not_remind">Не напоминать</string>

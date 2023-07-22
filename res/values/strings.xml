@@ -53,6 +53,12 @@
     <string name="dummy_file">Replace with a dummy</string>
     <string name="extract_icon">Extract Icon</string>
     <string name="comment">Comment</string>
+    <string name="cloning">Cloning</string>
+    <string name="cloning_result">Old name: %1$s\nNew name: %2$s\nTime elapsed: %3$s</string>
+    <string name="originalf">Original: %s</string>
+    <string name="soeditor">Library editor</string>
+    <string name="file_changed">File changed, save changes?</string>
+    <string name="so_prop">File: %1$s\nSize: %2$s\nType: %3$s\nTotal lines: %4$s\nLines changed: %5$s</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -714,12 +720,14 @@
 	<string name="mtr_sure">Are you sure?</string>
 	<string name="mtr_trans_smali">Translate smali</string>
 	<string name="mtr_no_trans">The string does not need to be translated!</string>
+    <string name="mtr_first_notrans">Not translated at first</string>
 	
 	<string name="attention">Attention!</string>
 	<string name="repeat">Repeat</string>
 	<string name="down_for">Download for %s</string>
 	<string name="file_download">File download: %s</string>
 	<string name="download_success">%s file downloaded successfully!</string>
+    <string name="load_binaries2">You need to download the aapt/aapt2 files! You can download them now or do it later in the settings. An Internet connection is required to download.\n\nDo you want to download now?</string>
 	<string name="load_binaries">The built-in aapt/aapt2 binaries may not be compatible with your system. You can update them now or do it later in the settings. An Internet connection is required to download.\n\nDo you want to download now?</string>
 	<string name="plugin_modif">The UnApkm plugin is signed by someone else\'s signature.  Probably the plugin has been modified.  It is highly recommended that you remove the plugin and download the original file from the developer\'s site.  By clicking \"Not remind\" you continue to use the modified plugin at your own peril and risk!</string>
 	<string name="not_remind">Not remind</string>
