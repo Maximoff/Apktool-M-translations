@@ -67,7 +67,7 @@
     <string name="build_notification_summary">Αποστολή ειδοποίησης με την ολοκλήρωση της Κατασκευής &amp; Απομεταγλώττισης</string>
     <string name="build_run_title">Μεταγλώττιση...</string>
     <string name="build_toout">Κατασκευή στον κατάλογο εξόδου</string>
-	<string name="build_toout_summary">Κατά τη δημιουργία έργων, τα APK αποθηκεύονται στον κατάλογο εξόδου</string>
+    <string name="build_toout_summary">Κατά τη δημιουργία έργων, τα APK αποθηκεύονται στον κατάλογο εξόδου</string>
     <string name="cancel">Ακύρωση</string>
     <string name="cert_by_owner">Υπογεγραμμένο από τον κάτοχο του πιστοποιητικού</string>
     <string name="cert_issuer">Εκδότης Πιστοποιητικού: %s</string>
@@ -741,4 +741,13 @@
     <string name="wait_bg">Περιμένετε για το τέλος της διαδικασίας εκτέλεσης!</string>
     <string name="whole_words">Ολόκληρες λέξεις</string>
     <string name="yes">Ναι</string>
+    <string name="comment">Σχόλιο</string>
+    <string name="cloning">Κλωνοποίηση</string>
+    <string name="cloning_result">Παλιό όνομα: %1$s\nΝέο όνομα: %2$s\nΧρόνος που πέρασε: %3$s</string>
+    <string name="originalf">Αρχικό: %s</string>
+    <string name="soeditor">Επεξεργαστής βιβλιοθήκης</string>
+    <string name="file_changed">Το αρχείο άλλαξε, αποθήκευση αλλαγών;</string>
+    <string name="so_prop">Αρχείο: %1$s\nΜέγεθος: %2$s\nΤύπος: %3$s\nΣύνολο γραμμών: %4$s\nΓραμμές που άλλαξαν: %5$s</string>
+    <string name="mtr_first_notrans">Δεν μεταφράστηκε αρχικά</string>
+    <string name="load_binaries2">Πρέπει να κατεβάσετε τα αρχεία aapt/aapt2! Μπορείτε να τα κατεβάσετε τώρα ή να το κάνετε αργότερα στις ρυθμίσεις. Για τη λήψη απαιτείται σύνδεση στο Internet.\n\nΘέλετε να κάνετε λήψη τώρα;</string>
 </resources>
