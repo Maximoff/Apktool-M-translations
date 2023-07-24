@@ -59,6 +59,7 @@
     <string name="soeditor">Library editor</string>
     <string name="file_changed">File changed, save changes?</string>
     <string name="so_prop">File: %1$s\nSize: %2$s\nType: %3$s\nTotal lines: %4$s\nLines changed: %5$s</string>
+    <string name="base64_decode">Decode Base64</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -604,6 +605,8 @@
 	<string name="dont_reset_cpb_summary">The paste button when copying files will only be reset with a long press on it</string>
     <string name="build_toout">Build to output directory</string>
 	<string name="build_toout_summary">When building projects, APKs are saved to the output directory</string>
+    <string name="aicon_size">Adaptive icon size</string>
+	<string name="aicon_size_summary">Adaptive or vector icon size for quick edit</string>
 	
 	<string name="search_call">Find calls</string>
 	<string name="search_over">Find overrides</string>
