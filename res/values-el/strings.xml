@@ -750,4 +750,7 @@
     <string name="so_prop">Αρχείο: %1$s\nΜέγεθος: %2$s\nΤύπος: %3$s\nΣύνολο γραμμών: %4$s\nΓραμμές που άλλαξαν: %5$s</string>
     <string name="mtr_first_notrans">Δεν μεταφράστηκε αρχικά</string>
     <string name="load_binaries2">Πρέπει να κατεβάσετε τα αρχεία aapt/aapt2! Μπορείτε να τα κατεβάσετε τώρα ή να το κάνετε αργότερα στις ρυθμίσεις. Για τη λήψη απαιτείται σύνδεση στο Internet.\n\nΘέλετε να κάνετε λήψη τώρα;</string>
+    <string name="base64_decode">Αποκωδικοποίηση Base64</string>
+    <string name="aicon_size">Προσαρμοζόμενο μέγεθος εικονιδίου</string>
+	<string name="aicon_size_summary">Προσαρμοζόμενο ή διανυσματικό μέγεθος εικονιδίων για γρήγορη επεξεργασία</string>
 </resources>
