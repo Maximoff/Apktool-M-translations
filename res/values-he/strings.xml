@@ -18,12 +18,15 @@
 	<string name="add_dummy">הוסף \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">הוספת משאבים חסרים בעת פירוק</string>
 	<string name="add_from">הוסף מ-</string>
+	<string name="add_media">הוסף לגלריית המדיה</string>
 	<string name="add_nsc">הוסף תצורת אבטחת רשת</string>
 	<string name="add_nsc_ex">אל תשנה אם הוא קיים</string>
 	<string name="add_nsc_ex_summary">אל תשנה את תצורת אבטחת הרשת שכבר נוספה</string>
 	<string name="add_nsc_summary">הוסף תצורת אבטחת רשת מתירנית כללית בזמן הבנייה</string>
 	<string name="add_to_archive">הוסף</string>
 	<string name="added_res">משאבים נוספים: %d</string>
+	<string name="aicon_size">גודל סמל מותאם</string>
+	<string name="aicon_size_summary">גודל סמל מותאם או וקטור לעריכה מהירה</string>
 	<string name="all_files_saved">כל הקבצים שנשמרו!</string>
 	<string name="analysis_all_smali">ניתוח כל הsmali</string>
 	<string name="analysis_all_smali_summary">ניתוח כל קובץ smali בעת ההשקה והגדרת הפרויקט הראשי.</string>
@@ -55,6 +58,7 @@
 	<string name="background">רקע</string>
 	<string name="backup">גיבוי</string>
 	<string name="base64">Base64: %s</string>
+	<string name="base64_decode">פענוח Base64</string>
 	<string name="base64_sign">Base64 של חתימה: %s</string>
 	<string name="bks">חנות מפתחות (BKS)</string>
 	<string name="bookmark_add">הוספה לסימניות</string>
@@ -69,6 +73,8 @@
 	<string name="build_notification">הודעות</string>
 	<string name="build_notification_summary">שליחת הודעה עם השלמת הבנייה וההתפרקות</string>
 	<string name="build_run_title">קומפילציה...</string>
+	<string name="build_toout">בניית ספריית פלט</string>
+	<string name="build_toout_summary">בעת בניית פרויקטים, חבילות APK נשמרות בספריית הפלט</string>
 	<string name="cancel">בטל</string>
 	<string name="cert_by_owner">חתימה עצמית על ידי בעל אישור</string>
 	<string name="cert_issuer">מנפיק תעודות: %s</string>
@@ -88,12 +94,15 @@
 	<string name="clear_preview">ניקוי מטמון התמונות הממוזערות</string>
 	<string name="clear_preview_summary">המרווח לניקוי תמונות ממוזערות ישנות הוא בימים</string>
 	<string name="click_once_more">לחץ שוב על מנת לצאת!</string>
+	<string name="cloning">שיבוט</string>
+	<string name="cloning_result">שם ישן: %1$s\nשם חדש: %2$s\nזמן שחלף: %3$s</string>
 	<string name="close_all">סגור הכל</string>
 	<string name="close_cur">סגור</string>
 	<string name="close_files">סגירת קבצים</string>
 	<string name="close_others">סגור אחרים</string>
 	<string name="close_project">פרויקט סגור</string>
 	<string name="colors_editor">עורך צבעים</string>
+	<string name="comment">תגובה</string>
 	<string name="common_name">שם נפוץ:</string>
 	<string name="compare_sign">השווה את החתימה</string>
 	<string name="compile_project">ערוך פרויקט זה</string>
@@ -107,7 +116,7 @@
 	<string name="converter">ממיר</string>
 	<string name="copy">העתק</string>
 	<string name="copyOriginalFiles">התאמה מקורית</string>
-	<string name="copyOriginalFiles_summary">החתימה והמניפסט המקוריים נשמרים.</string>
+	<string name="copyOriginalFiles_summary">החתימה והמניפסט המקוריים נשמרים</string>
 	<string name="copy_here">להעתיק \"%s\" כאן?</string>
 	<string name="copy_id">העתק מזהה</string>
 	<string name="copy_path">העתקת נתיב</string>
@@ -144,7 +153,7 @@
 	<string name="decoding_shared_library">פענוח הספרייה המשותפת %1$s, pkgId: %2$d</string>
 	<string name="decompile">הידור מחדש</string>
 	<string name="decompile_all_dex">הידור כל \"*.dex\"</string>
-	<string name="decompile_dex">Decompile classes*.dex</string>
+	<string name="decompile_dex">מחלקות הידור לאחור*.dex</string>
 	<string name="decompile_multi_res">פירוק משאבים נוספים</string>
 	<string name="decompile_res">פירוק משאבים</string>
 	<string name="default_key">מפתח ברירת מחדל</string>
@@ -172,6 +181,7 @@
 	<string name="download_success">הקובץ %s הורד בהצלחה!</string>
 	<string name="drawer_fullscreen">רשימת קבצים במסך מלא</string>
 	<string name="drawer_fullscreen_summary">מנהל הקבצים יתפוס מסך מלא</string>
+	<string name="dummy_file">החלף בדמה</string>
 	<string name="edit">לערוך </string>
 	<string name="edit_mode">מצב עריכה</string>
 	<string name="editor">עורך</string>
@@ -215,6 +225,7 @@
 	<string name="err_not_exists">\"%s\" לא קיים או לא ניתן לקרוא אותו!</string>
 	<string name="err_save">שמור שגיאה: %s</string>
 	<string name="error">שגיאה</string>
+	<string name="error_try_again">שגיאה, נסה שוב</string>
 	<string name="errorf">שגיאה: %s</string>
 	<string name="errors">שגיאות</string>
 	<string name="ex_match">התאמה מדוייקת</string>
@@ -222,6 +233,7 @@
 	<string name="ext_editor">עורך חיצוני</string>
 	<string name="ext_editor_summary">פתיחת קבצי טקסט בעורך חיצוני</string>
 	<string name="extract">חלץ</string>
+	<string name="extract_icon">חלץ סמל</string>
 	<string name="extraction">מיצוי: %s</string>
 	<string name="failed_open">לא יכול היה לפתוח את \"%s\"!</string>
 	<string name="failed_openset">פתיחת ההגדרות נכשלה!</string>
@@ -231,6 +243,7 @@
 	<string name="fav_full">מועדפים</string>
 	<string name="fav_short">Fav.</string>
 	<string name="file">קובץ</string>
+	<string name="file_changed">הקובץ השתנה, לשמור שינויים?</string>
 	<string name="file_download">הורדת קבצים: %s</string>
 	<string name="file_filter">מסנן קבצים</string>
 	<string name="file_filter_help">השתמש בתבניות של נתיב ו/או שם קובץ, לדוגמה: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". אל תשתמש בביטויים רגולריים.</string>
@@ -253,7 +266,7 @@
 	<string name="folders_rec">תיקיות באופן רקורסיבי</string>
 	<string name="foldersc">dirs</string>
 	<string name="font_size">גודל גופן העורך</string>
-	<string name="font_size_summary">ציין את גודל הגופן המוגדר כברירת מחדל של העורך.</string>
+	<string name="font_size_summary">ציין את גודל הגופן המוגדר כברירת מחדל של העורך</string>
 	<string name="font_size_title">גודל גופן עורך:</string>
 	<string name="force_exit">סגור לחלוטין</string>
 	<string name="force_exit_summary">סגור את היישום לחלוטין ביציאה</string>
@@ -321,6 +334,7 @@
 	<string name="list_methods">רשימת שיטות</string>
 	<string name="list_strings">מחרוזות</string>
 	<string name="load_binaries">ייתכן שהקבצים הבינאריים המובנים aapt/aapt2 אינם תואמים למערכת שלך. אתה יכול לעדכן אותם עכשיו או לעשות זאת מאוחר יותר בהגדרות. נדרש חיבור לאינטרנט כדי להוריד.\n\nהאם אתה רוצה להוריד עכשיו?</string>
+	<string name="load_binaries2">עליך להוריד את קבצי aapt/aapt2! אתה יכול להוריד אותם עכשיו או לעשות את זה מאוחר יותר בהגדרות. נדרשת הורדה של חיבור לאינטרנט.\n\nהאם ברצונך להוריד כעת?</string>
 	<string name="load_signature_file_fail">לא ניתן לטעון את קובץ החתימה \'%1$s\'.</string>
 	<string name="locality_name">שם היישוב:</string>
 	<string name="lower_case">אותיות קטנות</string>
@@ -371,6 +385,8 @@
 	<string name="mextract_zip_to">חלץ ל\"%s\"</string>
 	<string name="mime_type">סוג פנטומימה</string>
 	<string name="minfo">מידע</string>
+	<string name="miui_warn_message">נראה שיש לך MIUI! אני ממליץ לפתוח הגדרות מפתח ולהשבית אופטימיזציה MIUI. אם לא תעשה זאת, ייתכן שתיתקל בבעיות בהפעלת היישום, שגיאות וקריסות. אנא אל תכתוב לי על שגיאות תוכנית אם קראת הודעה זו ולא פעלת לפי עצתי!</string>
+	<string name="miui_warn_title">MIUI זוהה!</string>
 	<string name="mlong">ארוך</string>
 	<string name="mmerge">למזג</string>
 	<string name="mmerge_json">מיזוג קבצי \"apktool.json\"</string>
@@ -410,7 +426,8 @@
 	<string name="mshort">קצר</string>
 	<string name="mshow_more_options">עוד</string>
 	<string name="msplit_rm">הסר את \"android:isSplitRequired\"</string>
-	<string name="mtest_rm">הסר את \"אנדרואיד:testOnly\"</string>
+	<string name="msui_rm">הסר את \"Android:sharedUserId\"</string>
+	<string name="mtest_rm">הסר את \"android:testOnly\"</string>
 	<string name="mtool_repl">החלפת כלים</string>
 	<string name="mtool_repl_summary">החלפת aapt, aapt2</string>
 	<string name="mtr_add_dict">הוספת מילון</string>
@@ -422,8 +439,10 @@
 	<string name="mtr_create">ליצור</string>
 	<string name="mtr_create_dict">יצירת מילון</string>
 	<string name="mtr_del_array">מחיקת מערך</string>
+	<string name="mtr_first_notrans">לא תורגם בהתחלה</string>
 	<string name="mtr_fix_tr">תרגום נכון</string>
 	<string name="mtr_google">Google</string>
+	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_hide_trans">הסתר מתורגם</string>
 	<string name="mtr_info">אם משאב המחרוזת כבר קיים, הוא יוחלף. אם אין ספרייה כזו, היא תיווצר. שם הספרייה חייב להתחיל ב\"ערכים \".</string>
 	<string name="mtr_invalid_res">תגובת שרת לא חוקית</string>
@@ -473,6 +492,8 @@
 	<string name="not_remind">לא להזכיר</string>
 	<string name="not_sign">אל תחתום</string>
 	<string name="ok">אישור </string>
+	<string name="old_picker">בוחר צבעים ישן</string>
+	<string name="old_picker_summary">תיבת הדו-שיח הישנה לבחירת צבע</string>
 	<string name="ongoing_notification">הודעה בעבודה</string>
 	<string name="ongoing_notification_summary">הצגת הודעה במהלך בנייה ופרוק</string>
 	<string name="only_here">רק כאן</string>
@@ -485,10 +506,11 @@
 	<string name="option_enabled">האפשרות \"%s\" מופעלת</string>
 	<string name="organization_name">שם הארגון:</string>
 	<string name="organization_unit">יחידת הארגון:</string>
+	<string name="originalf">מקור: %s</string>
 	<string name="output_directory">ספריית פלט</string>
 	<string name="output_directory_not_extsts">ספריית פלט \'%1$s\' לא קיימת ולא ניתן ליצור אותה!</string>
 	<string name="output_directory_not_set">עליך להגדיר תחילה ספריית פלט!</string>
-	<string name="output_directory_summary">הגדר את ספריית הפלט של אפליקציות מותקנות.</string>
+	<string name="output_directory_summary">הגדר את ספריית הפלט המוגדרת כברירת מחדל</string>
 	<string name="overcompress">דחיסת יתר של כל הקבצים</string>
 	<string name="overwrite_apk">החלפת קבצים</string>
 	<string name="overwrite_apk_summary">החלפת קבצים ותיקיות</string>
@@ -566,6 +588,7 @@
 	<string name="search_hint">טקסט הזנה כאן</string>
 	<string name="search_info">חיפושי תוכן מבוצעים בקבצים עם ההרחבות הבאות: %s.\nתמיכה בחיפוש מרובה שורות.</string>
 	<string name="search_inres">בתוצאות החיפוש</string>
+	<string name="search_loop">ביצוע חיפוש בלולאה</string>
 	<string name="search_menu_title">חיפוש</string>
 	<string name="search_name">לפי שם הקובץ</string>
 	<string name="search_over">מצא עקיפות</string>
@@ -622,6 +645,8 @@
 	<string name="skip_to_archive">דלג</string>
 	<string name="smali_snalysis">סמלי אנליזה</string>
 	<string name="smali_snalysis_desc">ערוץ ניתוח סמלי</string>
+	<string name="so_prop">קובץ: %1$s\nגודל: %2$s\nסוג: %3$s\nסה\"כ שורות: %4$s\nשורות השתנו: %5$s</string>
+	<string name="soeditor">עורך ספרייה</string>
 	<string name="sort">שיטת מיון</string>
 	<string name="sorting">מיון</string>
 	<string name="split">פיצול</string>
@@ -652,6 +677,7 @@
 	<string name="to_unicode">To Unicode</string>
 	<string name="to_vector">המרה לווקטור</string>
 	<string name="to_xml">המרה ל- XML</string>
+	<string name="topmenu_toast">עכשיו אתה יודע שיש כאן תפריט!</string>
 	<string name="total_filesc">סה\"כ קבצים</string>
 	<string name="total_foldersc">סה\"כ dirs</string>
 	<string name="total_repl">סה\"כ תחליפים: %d</string>
@@ -665,7 +691,7 @@
 	<string name="update_freq_summary">תדירות בדיקת העדכונים בימים</string>
 	<string name="upper_case">אותיות רישיות</string>
 	<string name="use_aapt2">השתמש ב-aapt2</string>
-	<string name="use_aapt2_summary">השתמש ב- aapt2 כדי לבנות. אפשרות ניסיונית!</string>
+	<string name="use_aapt2_summary">השתמש ב- aapt2 כדי לבנות</string>
 	<string name="use_monospace_font">גופן מונוספייס</string>
 	<string name="use_monospace_font_summary">שימוש בגופן monospace בעורך</string>
 	<string name="use_v1_sign">חתימה v1</string>
@@ -700,6 +726,7 @@
 	<string name="verify_v2_success">אימות חתימת V2 הצליח.</string>
 	<string name="version_app">שם גירסה</string>
 	<string name="view_content">הצגת תוכן</string>
+	<string name="wait_bg">המתן לסוף תהליך הריצה!</string>
 	<string name="whole_words">מילים שלמות</string>
 	<string name="yes">כן</string>
 </resources>

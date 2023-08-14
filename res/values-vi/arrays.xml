@@ -55,6 +55,7 @@
 		<item>Float &lt;-> Hex (0x00000000)</item>
         <item>Color &lt;-> Smali</item>
         <item>Color &lt;-> Decimal</item>
+        <item>Color &lt;-> A,R,G,B</item>
     </string-array>
     <string-array name="installLocation">
         <item>Mặc định (Không rõ)</item>

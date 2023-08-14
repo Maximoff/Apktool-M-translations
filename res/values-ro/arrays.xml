@@ -23,6 +23,7 @@
 	<string-array name="color_var">
         <item>culoare-HEX</item>
         <item>Cod Smali</item>
+        <item>A,R,G,B</item>
     </string-array>
 	<string-array name="resDecodeMode">
 		<item>Nu decompila</item>
@@ -58,6 +59,7 @@
 		<item>Float &lt;-> Hex (0x00000000)</item>
 		<item>Culoare &lt;-> Smali</item>
 		<item>Culoare &lt;-> Decimal</item>
+        <item>Culoare &lt;-> A,R,G,B</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Nesetat</item>

@@ -77,6 +77,7 @@
 	<string name="properties">Свойства</string>
 	<string name="modified">Последнее изменение</string>
 	<string name="size_label">Размер</string>
+    <string name="csize_label">Сжатый размер</string>
 	<string name="apk_size_label">Размер APK</string>
 	<string name="close_project">Закрыть проект</string>
 	<string name="failed_openset">Не удалось открыть настройки!</string>
@@ -595,6 +596,8 @@
 	<string name="build_toout_summary">При сборке проектов APK сохраняются в выходной каталог</string>
     <string name="aicon_size">Размер адаптивной иконки</string>
 	<string name="aicon_size_summary">Размер адаптивной или векторной иконки при быстром редактировании</string>
+    <string name="github">Файлы для перевода</string>
+	<string name="github_summary">Ресурсы для перевода программы на GitHub</string>
 	
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_over">Найти переопределения</string>

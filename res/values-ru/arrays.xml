@@ -31,6 +31,7 @@
 	<string-array name="color_var">
         <item>HEX-цвет</item>
         <item>Smali код</item>
+        <item>A,R,G,B</item>
     </string-array>
     <string-array name="format">
 		<item>@string/jks</item>
@@ -78,6 +79,7 @@
 		<item>Float &lt;-> Hex (0x00000000)</item>
 		<item>Цвет &lt;-> Smali</item>
 		<item>Цвет &lt;-> Decimal</item>
+        <item>Цвет &lt;-> A,R,G,B</item>
 	</string-array>
 	<string-array name="xml_format_variants">
 		<item>По умолчанию</item>
