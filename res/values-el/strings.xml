@@ -752,5 +752,14 @@
     <string name="load_binaries2">Πρέπει να κατεβάσετε τα αρχεία aapt/aapt2! Μπορείτε να τα κατεβάσετε τώρα ή να το κάνετε αργότερα στις ρυθμίσεις. Για τη λήψη απαιτείται σύνδεση στο Internet.\n\nΘέλετε να κάνετε λήψη τώρα;</string>
     <string name="base64_decode">Αποκωδικοποίηση Base64</string>
     <string name="aicon_size">Προσαρμοζόμενο μέγεθος εικονιδίου</string>
-	<string name="aicon_size_summary">Προσαρμοζόμενο ή διανυσματικό μέγεθος εικονιδίων για γρήγορη επεξεργασία</string>
+    <string name="aicon_size_summary">Προσαρμοζόμενο ή διανυσματικό μέγεθος εικονιδίων για γρήγορη επεξεργασία</string>
+    <string name="accessibility_info">Στο Android 13+, πρέπει να χορηγηθεί ένα ειδική άδεια για να ενεργοποιηθεί η υπηρεσία προσβασιμότητας. Για να το κάνετε αυτό, ανοίξτε τις πληροφορίες συστήματος σχετικά με την εφαρμογή και στο μενού στην κορυφή (τρεις τελείες) δώστε την άδεια. Αυτό το μενού ενδέχεται να μην εμφανιστεί μέχρι να κάνετε κλικ στην υπηρεσία προσβασιμότητας.</string>
+    <string name="total">Συνολικά</string>
+    <string name="dexs_info">Πληροφορίες Dex</string>
+    <string name="dex_limit_info">Μέγιστος αριθμός μεθόδων/πεδίων στο dex: %d</string>
+    <string name="strings_count">Αριθμός συμβολοσειρών</string>
+    <string name="class_count">Αριθμός κατηγοριών</string>
+    <string name="fields_count">Αριθμός πεδίων</string>
+    <string name="types_count">Αριθμός τύπων</string>
+    <string name="protos_count">Αριθμός πρωτοτύπων</string>
 </resources>
