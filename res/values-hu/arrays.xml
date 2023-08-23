@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="copy_variants">
+        <item>Átnevezés</item>
+		<item>Csak a fájlok átnevezése</item>
+        <item>Csere</item>
+        <item>Kihagyás</item>
+    </string-array>
+	<string-array name="menu_pos">
+        <item>Balra</item>
+        <item>Jobbra</item>
+    </string-array>
+	<string-array name="checksum_names">
+        <item>Csupa nagybetű</item>
+        <item>Elválasztás kettősponttal</item>
+    </string-array>
+	<string-array name="refresh_res">
+        <item>Új forráskészletek hozzáadása (csak fájlok)</item>
+        <item>Hiányzó forráskészletek törlése</item>
+    </string-array>
+    <string-array name="sort">
+        <item>Név</item>
+        <item>Név megfordítása</item>
+        <item>Típus</item>
+        <item>Típus megfordítása</item>
+        <item>Méret</item>
+        <item>Méret megfordítása</item>
+        <item>Idő</item>
+        <item>Idő megfordítása</item>
+    </string-array>
+	<string-array name="color_var">
+        <item>HEX-szín</item>
+        <item>Smali kód</item>
+        <item>A,R,G,B</item>
+    </string-array>
+    <string-array name="format">
+        <item>@string/jks</item>
+        <item>@string/pkcs12</item>
+        <item>@string/bks</item>
+        <item>@string/pk8</item>
+    </string-array>
+	<string-array name="resDecodeMode">
+		<item>Nincs visszafejtés</item>
+		<item>Visszafejtés a fő könyvtárba</item>
+		<item>Visszafejtés egy különálló könyvtárba</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>Szöveg &lt;-> Base64</item>
+		<item>Szöveg &lt;-> Unicode</item>
+		<item>Szöveg &lt;-> URL kódolás</item>
+		<item>Szöveg &lt;-> MD5</item>
+		<item>Szöveg &lt;-> SHA-1</item>
+		<item>Szöveg &lt;-> SHA-224</item>
+		<item>Szöveg &lt;-> SHA-256</item>
+		<item>Szöveg &lt;-> SHA-384</item>
+		<item>Szöveg &lt;-> SHA-512</item>
+		<item>Szöveg &lt;-> Tömb (UTF-8)</item>
+		<item>Szöveg &lt;-> Tömb (UTF-16)</item>
+		<item>Szöveg &lt;-> Tömb (UTF-16LE)</item>
+		<item>Szöveg &lt;-> Tömb (UTF-16BE)</item>
+		<item>Szöveg &lt;-> Tömb (US-ASCII)</item>
+		<item>Szöveg &lt;-> Tömb (ISO-8859-1)</item>
+		<item>Szöveg &lt;-> Tömb (CP1251)</item>
+		<item>Decimális &lt;-> Bináris</item>
+		<item>Decimális &lt;-> Oktális</item>
+		<item>Decimális &lt;-> Hex</item>
+		<item>Decimális &lt;-> Hex (0x0)</item>
+		<item>Decimális &lt;-> Hex (0x00000000)</item>
+		<item>Lebegő &lt;-> Bináris</item>
+		<item>Lebegő &lt;-> Oktális</item>
+		<item>Lebegő &lt;-> Hex</item>
+		<item>Lebegő &lt;-> Hex (0x0)</item>
+		<item>Lebegő &lt;-> Hex (0x00000000)</item>
+		<item>Szín &lt;-> Smali</item>
+		<item>Szín &lt;-> Decimális</item>
+        <item>Szín &lt;-> A,R,G,B</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>Nincs beállítva</item>
+        <item>Automatikus</item>
+        <item>Csak belső</item>
+        <item>Preferált külső</item>
+    </string-array>
+	<string-array name="xml_format_variants">
+		<item>Alapértelmezett</item>
+		<item>Apktool</item> 
+		<item>Android Studio</item>
+		<item>Egyszerű trükk</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>Alapértelmezett</item>
+		<item>Fekvő</item> 
+		<item>Álló</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>Ki</item>
+		<item>15 másodperc</item> 
+		<item>30 másodperc</item>
+		<item>1 perc</item> 
+		<item>5 perc</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>Adaptált kép (gyengébb minőség)</item>
+		<item>Kiváló minőségű kép (nagyobb méret)</item>
+		<item>Átalakítás SVG-re</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>Beállítások</item>
+		<item>Könyvjelzők</item>
+        <item>Előzmények keresése/cseréje</item>
+		<item>Szótárak</item>
+    </string-array>
+	<string-array name="editor_themes">
+		<item>Alapértelmezett</item>
+		<item>Új</item> 
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>Automatikus</item>
+		<item>Azerbajdzsáni (latin)</item>
+		<item>Albán</item>
+		<item>Angol</item>
+		<item>Arab</item>
+		<item>Örmény</item>
+		<item>Afrikai</item>
+		<item>Bengáli</item>
+		<item>Bolgár</item>
+		<item>Bosnyák</item>
+		<item>Walesi</item>
+		<item>Magyar</item>
+		<item>Vietnámi</item>
+		<item>Haiti kreol</item>
+		<item>Holland</item>
+		<item>Görög</item>
+		<item>Gudzsaráti</item>
+		<item>Dán</item>
+		<item>Héber</item>
+		<item>Indonéz</item>
+		<item>Ír</item>
+		<item>Izlandi</item>
+		<item>Spanyol</item>
+		<item>Olasz</item>
+		<item>Kazah</item>
+		<item>Kannada</item>
+		<item>Kantoni hagyományos</item>
+		<item>Katalán</item>
+		<item>Keretarian Otomi</item>
+		<item>Hagyományos kínai</item>
+		<item>Egyszerűsített kínai</item>
+		<item>Koreai</item>
+		<item>Lett</item>
+		<item>Litván</item>
+		<item>Madagaszkári</item>
+		<item>Maláj</item>
+		<item>Malajálam</item>
+		<item>Máltai</item>
+		<item>Új-zélandi bennszülött</item>
+		<item>Maráti</item>
+		<item>Német</item>
+		<item>Nepáli</item>
+		<item>Norvég</item>
+		<item>Orijá</item>
+		<item>Pandzsábi</item>
+		<item>Perzsa</item>
+		<item>Lengyel</item>
+		<item>Portugál (Brazília)</item>
+		<item>Portugál (Portugália)</item>
+		<item>Román</item>
+		<item>Orosz</item>
+		<item>Szamoa</item>
+		<item>Szerb (cirill)</item>
+		<item>Szerb (latin)</item>
+		<item>Szlovák</item>
+		<item>Szlovén</item>
+		<item>Szuahéli</item>
+		<item>Tahiti</item>
+		<item>Thaiföldi</item>
+		<item>Tamil</item>
+		<item>Telugu</item>
+		<item>Tonga</item>
+		<item>Török</item>
+		<item>Ukrán</item>
+		<item>Urdu</item>
+		<item>Fidzsi</item>
+		<item>Fülöp-szigetek</item>
+		<item>Finn</item>
+		<item>Francia</item>
+		<item>Hindi</item>
+		<item>Hmong Dhow</item>
+		<item>Horvát</item>
+		<item>Cseh</item>
+		<item>Svéd</item>
+		<item>Észt</item>
+		<item>Yucatec Maya</item>
+		<item>Japán</item>
+		<item>Amhara</item>
+		<item>Asszámi</item>
+		<item>Dari</item>
+		<item>Francia (Kanada)</item>
+		<item>Inuktitut</item>
+		<item>Kmer</item>
+		<item>Klingon (Latin)</item>
+		<item>Kurd (közép)</item>
+		<item>Kurd (északi)</item>
+		<item>Laoszi</item>
+		<item>Mianmar (Burmai)</item>
+		<item>Pastu</item>
+		<item>Tigrinya</item>
+	</string-array>
+    <string-array name="google_translator_names">
+        <item>Automatikus</item>
+        <item>Afrikai</item>
+        <item>Albán</item>
+        <item>Amhara</item>
+        <item>Arab</item>
+        <item>Örmény</item>
+        <item>Azerbajdzsán</item>
+        <item>Baszk</item>
+        <item>Belarusz</item>
+        <item>Bengáli</item>
+        <item>Bosnyák</item>
+        <item>Bolgár</item>
+        <item>Katalán</item>
+        <item>Cebui</item>
+        <item>Chichewa</item>
+        <item>Egyszerűsített kínai</item>
+        <item>Hagyományos kínai</item>
+        <item>Korzikai</item>
+        <item>Horvát</item>
+        <item>Cseh</item>
+        <item>Dán</item>
+        <item>Holland</item>
+        <item>Angol</item>
+        <item>Eszperantó</item>
+        <item>Észt</item>
+        <item>Fülöp-szigetek</item>
+        <item>Finn</item>
+        <item>Francia</item>
+        <item>Fríz</item>
+        <item>Galíciai</item>
+        <item>Grúz</item>
+        <item>Német</item>
+        <item>Görög</item>
+        <item>Gudzsaráti</item>
+        <item>Haiti kreol</item>
+        <item>Hausza</item>
+        <item>Hawaii</item>
+        <item>Héber</item>
+        <item>Hindi</item>
+        <item>Hmong</item>
+        <item>Magyar</item>
+        <item>Izlandi</item>
+        <item>Ibo</item>
+        <item>Indonéz</item>
+        <item>Ír</item>
+        <item>Olasz</item>
+        <item>Japán</item>
+        <item>Jávai</item>
+        <item>Kannada</item>
+        <item>Kazah</item>
+        <item>Kmer</item>
+        <item>Koreai</item>
+        <item>Kurd (Kurmanji)</item>
+        <item>Kirgiz</item>
+        <item>Laoszi</item>
+        <item>Latin</item>
+        <item>Lett</item>
+        <item>Litván</item>
+        <item>Luxemburgi</item>
+        <item>Makedón</item>
+        <item>Madagaszkári</item>
+        <item>Maláj</item>
+        <item>Malajálam</item>
+        <item>Máltai</item>
+        <item>Új-zélandi bennszülött</item>
+        <item>Maráti</item>
+        <item>Mongol</item>
+        <item>Mianmar (Burmai)</item>
+        <item>Nepáli</item>
+        <item>Norvég</item>
+        <item>Pastu</item>
+        <item>Perzsa</item>
+        <item>Lengyel</item>
+        <item>Portugál</item>
+        <item>Pandzsábi</item>
+        <item>Román</item>
+        <item>Orosz</item>
+        <item>Szamoai</item>
+        <item>Skót Kelta</item>
+        <item>Szerb</item>
+        <item>Sesothói</item>
+        <item>Shona</item>
+        <item>Szindi</item>
+        <item>Szingaléz</item>
+        <item>Szlovák</item>
+        <item>Szlovén</item>
+        <item>Szomáli</item>
+        <item>Spanyol</item>
+        <item>Sundanese</item>
+        <item>Szuahéli</item>
+        <item>Svéd</item>
+        <item>Tádzsik</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Thaiföldi</item>
+        <item>Török</item>
+        <item>Ukrán</item>
+        <item>Urdu</item>
+        <item>Üzbég</item>
+        <item>Vietnámi</item>
+        <item>Walesi</item>
+        <item>Xhosa</item>
+        <item>Jiddis</item>
+        <item>Joruba</item>
+        <item>Zulu</item>
+        <item>Orijá</item>
+        <item>Pandzsábi</item>
+        <item>Ruanda</item>
+        <item>Tatár</item>
+        <item>Türkmén</item>
+        <item>Uigur</item>
+    </string-array>
+	<string-array name="yandex_translator_names">
+		<item>Automatikus</item>
+		<item>Afrikai</item>
+		<item>Albán</item>
+		<item>Amhara</item>
+		<item>Arab</item>
+		<item>Örmény</item>
+		<item>Azerbajdzsán</item>
+		<item>Baskír</item>
+		<item>Baszk</item>
+		<item>Belarusz</item>
+		<item>Bengáli</item>
+		<item>Bosnyák</item>
+		<item>Bolgár</item>
+		<item>Burmai</item>
+		<item>Katalán</item>
+		<item>Cebui</item>
+		<item>Kínai</item>
+		<item>Csuvas</item>
+		<item>Horvát</item>
+		<item>Cseh</item>
+		<item>Dán</item>
+		<item>Holland</item>
+		<item>Elvis (Szindarin)</item>
+		<item>Emoji</item>
+		<item>Angol</item>
+		<item>Eszperantó</item>
+		<item>Észt</item>
+		<item>Finn</item>
+		<item>Francia</item>
+		<item>Galíciai</item>
+		<item>Grúz</item>
+		<item>Német</item>
+		<item>Görög</item>
+		<item>Gudzsaráti</item>
+		<item>Haiti</item>
+		<item>Héber</item>
+		<item>Hill Mari</item>
+		<item>Hindi</item>
+		<item>Magyar</item>
+		<item>Izlandi</item>
+		<item>Indonéz</item>
+		<item>Ír</item>
+		<item>Olasz</item>
+		<item>Japán</item>
+		<item>Jávai</item>
+		<item>Kannada</item>
+		<item>Kazah</item>
+		<item>Kazah (Latin)</item>
+		<item>Kmer</item>
+		<item>Koreai</item>
+		<item>Kirgiz</item>
+		<item>Laoszi</item>
+		<item>Latin</item>
+		<item>Lett</item>
+		<item>Litván</item>
+		<item>Luxemburgi</item>
+		<item>Makedón</item>
+		<item>Madagaszkári</item>
+		<item>Maláj</item>
+		<item>Malajálam</item>
+		<item>Máltai</item>
+		<item>Új-zélandi bennszülött</item>
+		<item>Maráti</item>
+		<item>Mari</item>
+		<item>Mongol</item>
+		<item>Nepáli</item>
+		<item>Norvég</item>
+		<item>Papiamentó</item>
+		<item>Perzsa</item>
+		<item>Lengyel</item>
+		<item>Portugál</item>
+		<item>Pandzsábi</item>
+		<item>Román</item>
+		<item>Orosz</item>
+		<item>Skót kelta</item>
+		<item>Szerb</item>
+		<item>Szingaléz</item>
+		<item>Szlovák</item>
+		<item>Szlovén</item>
+		<item>Spanyol</item>
+		<item>Sundanese</item>
+		<item>Szuahéli</item>
+		<item>Svéd</item>
+		<item>Tagalog</item>
+		<item>Tádzsik</item>
+		<item>Tamil</item>
+		<item>Tatár</item>
+		<item>Telugu</item>
+		<item>Thaiföldi</item>
+		<item>Török</item>
+		<item>Udmurt</item>
+		<item>Ukrán</item>
+		<item>Urdu</item>
+		<item>Üzbég</item>
+		<item>Üzbég (cirill)</item>
+		<item>Vietnámi</item>
+		<item>Walesi</item>
+		<item>Xhosa</item>
+		<item>Jakut</item>
+		<item>Jiddis</item>
+	</string-array>
+</resources>
