@@ -58,6 +58,7 @@
     <string name="total">Всего</string>
     <string name="dexs_info">Информация о дексах</string>
     <string name="dex_limit_info">Максимальное количество методов/полей в dex: %d</string>
+    <string name="hide">Скрыть</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -485,6 +486,8 @@
 	<string name="editor_magnifier_summary">Лупа при перемещении курсора</string>
     <string name="old_picker">Старый выбор цвета</string>
     <string name="old_picker_summary">Старый диалог выбора цвета</string>
+    <string name="floating_button">Плавающая кнопка</string>
+    <string name="floating_button_summary">Показывать кнопку скрытия файлов, если файлы зафиксированы</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>

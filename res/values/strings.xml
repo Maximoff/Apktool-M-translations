@@ -64,6 +64,7 @@
     <string name="total">Total</string>
     <string name="dexs_info">Dex information</string>
     <string name="dex_limit_info">Max number of methods/fields in dex: %d</string>
+    <string name="hide">Hide</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -495,6 +496,8 @@
 	<string name="editor_magnifier_summary">Magnifier when moving the cursor</string>
     <string name="old_picker">Old color picker</string>
     <string name="old_picker_summary">The old color selection dialog</string>
+    <string name="floating_button">Floating button</string>
+    <string name="floating_button_summary">Show the hide files button if files are fixed</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>
