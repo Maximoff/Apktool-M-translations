@@ -59,6 +59,7 @@
     <string name="dexs_info">Информация о дексах</string>
     <string name="dex_limit_info">Максимальное количество методов/полей в dex: %d</string>
     <string name="hide">Скрыть</string>
+    <string name="unsupported_android">Не поддерживается в вашей версии Android!</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>

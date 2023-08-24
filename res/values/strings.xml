@@ -65,6 +65,7 @@
     <string name="dexs_info">Dex information</string>
     <string name="dex_limit_info">Max number of methods/fields in dex: %d</string>
     <string name="hide">Hide</string>
+    <string name="unsupported_android">Unsupported in your Android version!</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
