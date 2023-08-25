@@ -76,7 +76,7 @@
 	<string name="smali_snalysis_desc">Canal de Análisis Smali</string>
 	<string name="failed_open">No se pudo abrir \"%s\"!</string>
 	<string name="filesc">archivos</string>
-	<string name="foldersc">dirs</string>
+	<string name="foldersc">Directorios</string>
 	<string name="selected">seleccionados</string>
 	<string name="total_filesc">Total de archivos</string>
 	<string name="total_foldersc">Dirs totales</string>
