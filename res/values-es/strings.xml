@@ -116,7 +116,7 @@
 	<string name="convert_jks">Convertir a pk8 + x509.pem</string>
 	<string name="import_jks">Importar clave de firma</string>
 	<string name="internal">Memoria interna</string>
-	<string name="root_dir">Directorio raíz</string>
+	<string name="root_dir">Directorio root</string>
 	<string name="custom_size">Tu tamaño</string>
 	<string name="custom_size_info">Tamaño de la imagen terminada: %s.\n\nEspecifique el lado más grande, las proporciones se guardarán automáticamente.\nNo se recomienda establecer un tamaño demasiado grande.</string>
 	<string name="custom_size_info_vc">Especifique el lado más grande, las proporciones se guardarán automáticamente.\nNo se recomienda establecer un tamaño demasiado grande.\n0 - automáticamente.</string>
