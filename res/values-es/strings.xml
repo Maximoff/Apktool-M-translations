@@ -238,7 +238,7 @@
 	<string name="import_framework">Importar como biblioteca </string>
 	<string name="sign">Firmar</string>
 	<string name="rename">Renombrar</string>
-	<string name="delete">Borrar</string>
+	<string name="delete">Eliminar</string>
 	<string name="send">Enviar</string>
 	<string name="complete">Completo</string>
 	<string name="success">Éxito</string>
