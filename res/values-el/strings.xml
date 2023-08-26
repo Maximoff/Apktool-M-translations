@@ -762,4 +762,6 @@
     <string name="fields_count">Αριθμός πεδίων</string>
     <string name="types_count">Αριθμός τύπων</string>
     <string name="protos_count">Αριθμός πρωτοτύπων</string>
+    <string name="github">Αρχεία για μετάφραση</string>
+	<string name="github_summary">Πηγές για τη μετάφραση του προγράμματος στο GitHub</string>
 </resources>
