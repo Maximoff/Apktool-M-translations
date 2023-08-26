@@ -271,6 +271,8 @@
 	<string name="to_vector">Convertir a vector</string>
 	<string name="to_svg">Convertir a SVG</string>
 	<string name="to_xml">Convertir a XML</string>
+	<string name="tooltips">Información sobre herramientas en el editor</string>
+	<string name="tooltips_summary">Información sobre herramientas para smali y xml</string>
 	<string name="to_png">Convertir a PNG</string>
 	<string name="to_archive">A comprimido</string>
 	<string name="archive_mode">Nivel de Compresión</string>
