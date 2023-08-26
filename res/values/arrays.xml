@@ -30,6 +30,14 @@
         <item>checksum_upper</item>
         <item>checksum_separate</item>
     </string-array>
+    <string-array name="tooltips_names">
+        <item>Smali</item>
+        <item>XML</item>
+    </string-array>
+	<string-array name="tooltips_keys">
+        <item>tooltips_smali</item>
+        <item>tooltips_xml</item>
+    </string-array>
 	<string-array name="refresh_res">
         <item>Add new resources (files only)</item>
         <item>Delete missing resources</item>

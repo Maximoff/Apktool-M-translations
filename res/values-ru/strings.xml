@@ -17,6 +17,7 @@
     <string name="cancel">Отмена</string>
 	<string name="go_to">Перейти</string>
 	<string name="base64_sign">Base64 подписи: %s</string>
+    <string name="base64_cert">Base64 сертификата: %s</string>
 	<string name="clear_history">Очистить историю поиска?</string>
 	<string name="refresh_res">Обновить ресурсы</string>
 	<string name="added_res">Добавлено ресурсов: %d</string>
@@ -489,6 +490,10 @@
     <string name="old_picker_summary">Старый диалог выбора цвета</string>
     <string name="floating_button">Плавающая кнопка</string>
     <string name="floating_button_summary">Показывать кнопку скрытия файлов, если файлы зафиксированы</string>
+    <string name="tooltips">Подсказки в редакторе</string>
+    <string name="tooltips_summary">Подсказки для smali и xml</string>
+    <string name="keep_structure">Сохранить структуру папок</string>
+    <string name="keep_structure_summary">Пытаться сохранить структуру папок как в оригинале, полезно для системных приложений</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>

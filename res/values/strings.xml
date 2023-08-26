@@ -18,6 +18,7 @@
 	<string name="block_icon" translatable="false">&#xec41;</string>
 	<string name="base64">Base64: %s</string>
 	<string name="base64_sign">Base64 of signature: %s</string>
+    <string name="base64_cert">Base64 of certificate: %s</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="ok">Ok</string>
@@ -499,6 +500,10 @@
     <string name="old_picker_summary">The old color selection dialog</string>
     <string name="floating_button">Floating button</string>
     <string name="floating_button_summary">Show the hide files button if files are fixed</string>
+    <string name="tooltips">Tooltips in the editor</string>
+    <string name="tooltips_summary">Tooltips for smali and xml</string>
+    <string name="keep_structure">Keep the folder structure</string>
+    <string name="keep_structure_summary">Trying to keep the folder structure as it is in the original, useful for system apps</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>
