@@ -17,7 +17,7 @@
 	<string name="base64_sign">Base64 of signature: %s</string>
 	<string name="yes">Sí</string>
 	<string name="no">No</string>
-	<string name="ok">Ok</string>
+	<string name="ok">Aceptar</string>
 	<string name="cancel">Cancelar</string>
 	<string name="go_to">Ir a</string>
 	<string name="clear_history">¿Borrar el historial de búsqueda?</string>
