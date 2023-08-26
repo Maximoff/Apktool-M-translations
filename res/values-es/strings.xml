@@ -751,4 +751,6 @@
 	<string name="license_accept">Aceptar</string>
 	<string name="license_refuse">No aceptar</string>
 	<string name="send_log">Enviar  registro al desarrollador</string>
+	<string name="keep_structure">Mantener la estructura de carpetas</string>
+	<string name="keep_structure_summary">Trata de mantener la estructura de carpetas como está en la original, útil para las aplicaciones del sistema</string>
 </resources>
