@@ -255,7 +255,7 @@
     <string name="find_next">Επόμενο</string>
     <string name="find_prev">Προηγούμενο</string>
     <string name="fix_drawer">Διορθωμένα αρχεία</string>
-    <string name="fix_drawer_summary">Μην κλείνετε τη διαχείριση αρχείων με μια σάρωση</string>
+    <string name="fix_drawer_summary">Μην κλείνετε το Διαχειριστή αρχείων με σάρωση</string>
     <string name="fix_line_numbers">Διόρθωση αριθμών γραμμών</string>
     <string name="fix_line_numbers_summary">Διορθώστε τους αριθμούς των γραμμών κατά την κύλιση</string>
     <string name="folder_menu">Μενού φακέλου</string>
@@ -762,4 +762,15 @@
     <string name="fields_count">Αριθμός πεδίων</string>
     <string name="types_count">Αριθμός τύπων</string>
     <string name="protos_count">Αριθμός πρωτοτύπων</string>
+    <string name="hide">Απόκρυψη</string>
+    <string name="unsupported_android">Δεν υποστηρίζεται στην έκδοση του Android σας!</string>
+    <string name="floating_button">Αιωρούμενο κουμπί</string>
+    <string name="floating_button_summary">Εμφάνιση του κουμπιού απόκρυψη αρχείων εάν τα αρχεία έχουν διορθωθεί</string>
+    <string name="base64_cert">Base64 πιστοποιητικό: %s</string>
+    <string name="tooltips">Συμβουλές εργαλείων στον επεξεργαστή</string>
+    <string name="tooltips_summary">Συμβουλές εργαλείων για smali και xml</string>
+    <string name="keep_structure">Διατήρηση δομής φακέλου</string>
+    <string name="keep_structure_summary">Προσπάθεια διατήρησης  δομής των φακέλων όπως είναι στο πρωτότυπο, χρήσιμο για τις εφαρμογές του συστήματος</string>
+    <string name="github">Αρχεία για μετάφραση</string>
+	<string name="github_summary">Πηγές για τη μετάφραση του προγράμματος στο GitHub</string>
 </resources>
