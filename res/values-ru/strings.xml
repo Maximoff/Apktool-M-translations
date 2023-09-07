@@ -61,6 +61,7 @@
     <string name="dex_limit_info">Максимальное количество методов/полей в dex: %d</string>
     <string name="hide">Скрыть</string>
     <string name="unsupported_android">Не поддерживается в вашей версии Android!</string>
+    <string name="reset_fab">Сбросить позицию плавающей кнопки?</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -494,6 +495,8 @@
     <string name="tooltips_summary">Подсказки для smali и xml</string>
     <string name="keep_structure">Сохранить структуру папок</string>
     <string name="keep_structure_summary">Пытаться сохранить структуру папок как в оригинале, полезно для системных приложений</string>
+    <string name="keep_modified_time">Сохранить время изменения</string>
+    <string name="keep_modified_time_summary">Пытаться сохранить время изменения файлов и папок, если это возможно</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>

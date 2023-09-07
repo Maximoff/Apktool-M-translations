@@ -67,6 +67,7 @@
     <string name="dex_limit_info">Max number of methods/fields in dex: %d</string>
     <string name="hide">Hide</string>
     <string name="unsupported_android">Unsupported in your Android version!</string>
+    <string name="reset_fab">Reset floating button position?</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -504,6 +505,8 @@
     <string name="tooltips_summary">Tooltips for smali and xml</string>
     <string name="keep_structure">Keep the folder structure</string>
     <string name="keep_structure_summary">Trying to keep the folder structure as it is in the original, useful for system apps</string>
+    <string name="keep_modified_time">Keep modification time</string>
+    <string name="keep_modified_time_summary">Trying to keep file and folder modification times if possible</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>
