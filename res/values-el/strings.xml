@@ -765,12 +765,15 @@
     <string name="hide">Απόκρυψη</string>
     <string name="unsupported_android">Δεν υποστηρίζεται στην έκδοση του Android σας!</string>
     <string name="floating_button">Αιωρούμενο κουμπί</string>
-    <string name="floating_button_summary">Εμφάνιση του κουμπιού απόκρυψη αρχείων εάν τα αρχεία έχουν διορθωθεί</string>
+    <string name="floating_button_summary">Εμφάνιση κουμπιού Απόκρυψης αρχείων εάν τα αρχεία έχουν διορθωθεί</string>
     <string name="base64_cert">Base64 πιστοποιητικό: %s</string>
-    <string name="tooltips">Συμβουλές εργαλείων στον επεξεργαστή</string>
-    <string name="tooltips_summary">Συμβουλές εργαλείων για smali και xml</string>
+    <string name="tooltips">Προτάσεις εργαλείων στον επεξεργαστή</string>
+    <string name="tooltips_summary">Προτάσεις εργαλείων για smali και xml</string>
     <string name="keep_structure">Διατήρηση δομής φακέλου</string>
-    <string name="keep_structure_summary">Προσπάθεια διατήρησης  δομής των φακέλων όπως είναι στο πρωτότυπο, χρήσιμο για τις εφαρμογές του συστήματος</string>
+    <string name="keep_structure_summary">Προσπάθεια διατήρησης δομής των φακέλων όπως είναι στο πρωτότυπο, χρήσιμο για τις εφαρμογές του συστήματος</string>
     <string name="github">Αρχεία για μετάφραση</string>
-	<string name="github_summary">Πηγές για τη μετάφραση του προγράμματος στο GitHub</string>
+    <string name="github_summary">Πηγές για τη μετάφραση του προγράμματος στο GitHub</string>
+    <string name="reset_fab">Επαναφορά θέσης αιωρούμενου κουμπιού;</string>
+    <string name="keep_modified_time">Διατήρηση χρόνου τροποποίησης</string>
+    <string name="keep_modified_time_summary">Προσπάθει διατήρησης χρόνου τροποποίησης αρχείων και φακέλων αν είναι δυνατόν</string>
 </resources>
