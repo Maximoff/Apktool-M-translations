@@ -32,27 +32,27 @@
         <item>Descompilar en un directorio distinto</item>
     </string-array>
     <string-array name="converter_items">
-        <item>Texto &lt;-&gt; Base64</item>
-        <item>Texto &lt;-&gt; Unicode</item>
-        <item>Texto &lt;-&gt; Codificación URL</item>
-        <item>Texto &lt;-&gt; MD5</item>
-        <item>Texto &lt;-&gt; SHA-1</item>
-        <item>Texto &lt;-&gt; SHA-224</item>
-        <item>Texto &lt;-&gt; SHA-256</item>
-        <item>Texto &lt;-&gt; SHA-384</item>
-        <item>Texto &lt;-&gt; SHA-512</item>
-        <item>Texto &lt;-&gt; Array (UTF-8)</item>
-        <item>Texto &lt;-&gt; Array (UTF-16)</item>
-        <item>Texto &lt;-&gt; Array (UTF-16LE)</item>
-        <item>Texto &lt;-&gt; Array (UTF-16BE)</item>
-        <item>Texto &lt;-&gt; Array (US-ASCII)</item>
-        <item>Texto &lt;-&gt; Array (ISO-8859-1)</item>
-        <item>Texto &lt;-&gt; Array (CP1251)</item>
-        <item>Decimal &lt;-&gt; Binario</item>
-        <item>Decimal &lt;-&gt; Octal</item>
-        <item>Decimal &lt;-&gt; Hex</item>
-        <item>Decimal &lt;-&gt; Hex (0x0)</item>
-        <item>Decimal &lt;-&gt; Hex (0x00000000)</item>
+        <item>Texto &lt;-> Base64</item>
+        <item>Texto &lt;-> Unicode</item>
+        <item>Texto &lt;-> Codificación URL</item>
+        <item>Texto &lt;-> MD5</item>
+        <item>Texto &lt;-> SHA-1</item>
+        <item>Texto &lt;-> SHA-224</item>
+        <item>Texto &lt;-> SHA-256</item>
+        <item>Texto &lt;-> SHA-384</item>
+        <item>Texto &lt;-> SHA-512</item>
+        <item>Texto &lt;-> Array (UTF-8)</item>
+        <item>Texto &lt;-> Array (UTF-16)</item>
+        <item>Texto &lt;-> Array (UTF-16LE)</item>
+        <item>Texto &lt;-> Array (UTF-16BE)</item>
+        <item>Texto &lt;-> Array (US-ASCII)</item>
+        <item>Texto &lt;-> Array (ISO-8859-1)</item>
+        <item>Texto &lt;-> Array (CP1251)</item>
+        <item>Decimal &lt;-> Binario</item>
+        <item>Decimal &lt;-> Octal</item>
+        <item>Decimal &lt;-> Hex</item>
+        <item>Decimal &lt;-> Hex (0x0)</item>
+        <item>Decimal &lt;-> Hex (0x00000000)</item>
         <item>Float &lt;-> Binary</item>
 		<item>Float &lt;-> Octal</item>
 		<item>Float &lt;-> Hex</item>
