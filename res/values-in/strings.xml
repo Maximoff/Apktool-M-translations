@@ -61,6 +61,7 @@
     <string name="dex_limit_info">Jumlah maksimum metode/bidang dalam dex: %d</string>
     <string name="hide">Sembunyikan</string>
     <string name="unsupported_android">Tidak didukung di versi Android Anda!</string>
+    <string name="reset_fab">Atur ulang posisi tombol mengambang?</string>
     
     <string name="go_back">Kembali ke direktori induk</string>
     <string name="sort">Urutkan Metode</string>
@@ -498,6 +499,8 @@
     <string name="tooltips_summary">Keterangan alat untuk smali dan xml</string>
     <string name="keep_structure">Menjaga struktur folder</string>
     <string name="keep_structure_summary">Mencoba menjaga struktur folder seperti aslinya, berguna untuk aplikasi sistem</string>
+    <string name="keep_modified_time">Jaga waktu modifikasi</string>
+    <string name="keep_modified_time_summary">Mencoba menjaga waktu modifikasi file dan folder jika memungkinkan</string>
     
     <string name="key_type">Jenis Kunci:</string>
     <string name="key_path">Jenis Jalur:</string>
