@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="LangDialogTitle">Seleccione idioma:</string>
+	<string name="LangDialogTitle">Seleccione el idioma:</string>
 	<string name="LangSummary">Idioma de la aplicación</string>
 	<string name="LangTitle">Idioma</string>
 	<string name="aapt2_configs">Establecer configuraciones</string>
@@ -43,7 +43,7 @@
 	<string name="app_name">Apktool M</string>
 	<string name="app_uid">UID</string>
 	<string name="application">Aplicación</string>
-	<string name="application_summary"> Ajustes globales de la aplicación.</string>
+	<string name="application_summary">Ajustes globales de la aplicación.</string>
 	<string name="apps">Aplicaciones</string>
 	<string name="apps_installed">Aplicaciones Instaladas</string>
 	<string name="apps_installed_sum">Ver aplicaciones de usuario</string>
@@ -54,7 +54,7 @@
 	<string name="atod_set_summary">Descompilar todo en el directorio de salida</string>
 	<string name="attention">¡Atención!</string>
 	<string name="auto_save">Autoguardar</string>
-	<string name="auto_save_summary">Autoguardar texto en el editor </string>
+	<string name="auto_save_summary">Autoguardar texto en el editor</string>
 	<string name="auto_save_title">Autoguardado</string>
 	<string name="background">Antecedentes</string>
 	<string name="backup">Copia de Seguridad</string>
@@ -67,13 +67,13 @@
 	<string name="bookmarks">Marcadores</string>
 	<string name="buffer_size">Tamaño del búfer</string>
 	<string name="buffer_size_summary">Tamaño del búfer de bytes en kilobytes</string>
-	<string name="build_and_decode">Compilar y Descompilar </string>
+	<string name="build_and_decode">Compilar y Descompilar</string>
 	<string name="build_and_decode_summary">Ajustes de Compilación y Descompilación.</string>
 	<string name="build_copy_file">Copiando \"%1$s\"...</string>
 	<string name="build_dex">Compilar dex</string>
 	<string name="build_notification">Notificaciones</string>
 	<string name="build_notification_summary">Enviar notificación al finalizar la compilación y descompilación</string>
-	<string name="build_run_title">Compilación...</string>
+	<string name="build_run_title">Compilando...</string>
 	<string name="build_toout">Compilar en el directorio de salida</string>
 	<string name="build_toout_summary">Al crear proyectos, los APK se guardan en el directorio de salida</string>
 	<string name="cancel">Cancelar</string>
@@ -120,8 +120,8 @@
 	<string name="copyOriginalFiles">Conservar archivos originales</string>
 	<string name="copyOriginalFiles_summary">Se conservan la firma y el manifiesto originales</string>
 	<string name="copy_here">¿Copiar \"%s\" aquí?</string>
-	<string name="copy_id">Copiar  ID</string>
-	<string name="copy_path">Copiar ruta </string>
+	<string name="copy_id">Copiar ID</string>
+	<string name="copy_path">Copiar ruta</string>
 	<string name="copy_success">Copiado!</string>
 	<string name="copy_value">Copiar valor</string>
 	<string name="copy_with_ext">Copia sin extensión</string>
@@ -152,7 +152,7 @@
 	<string name="date_format_summary">Formato de fecha mostrado</string>
 	<string name="debug_mode">Establecer apk como depurable</string>
 	<string name="debug_mode_summary">Establece android:debuggable en \"true\" en el manifiesto compilado del APK</string>
-	<string name="decode_run_title">Descompilación...</string>
+	<string name="decode_run_title">Descompilando...</string>
 	<string name="decoding_shared_library">Decodificación Bliblioteca Compartida %1$s, pkgId: %2$d</string>
 	<string name="decompile">Descompilar</string>
 	<string name="decompile_all_dex">Descompilar todo \"*.dex\"</string>
@@ -180,13 +180,12 @@
 	<string name="dont_notify_summary">No mostrar una notificación si la aplicación está abierta</string>
 	<string name="dont_reset_cpb">No reinicie el botón pegar</string>
 	<string name="dont_reset_cpb_summary">El botón pegar al copiar archivos solo se restablecerá con una pulsación larga</string>
-	<string name="dont_work_aapt2"> no funciona con aapt2</string>
+	<string name="dont_work_aapt2">no funciona con aapt2</string>
 	<string name="down_for">Descargar por %s</string>
 	<string name="down_started">Descarga de archivos iniciada</string>
 	<string name="download_success">¡El archivo %s se descargó correctamente!</string>
 	<string name="drawer_fullscreen">Explorador a pantalla completa</string>
-	<string name="drawer_fullscreen_summary">Mues
- tra el explorador de archivos a pantalla completa</string>
+	<string name="drawer_fullscreen_summary">Mues tra el explorador de archivos a pantalla completa</string>
 	<string name="dummy_file">Replace with a dummy</string>
 	<string name="edit">Editar</string>
 	<string name="edit_mode">Modo de edición</string>
@@ -208,7 +207,7 @@
 	<string name="editor_state_str">L:%1$d[%2$d], C:%3$d[%4$d], %5$s</string>
 	<string name="editor_state_str2">L:%1$d[%2$d], C:%3$d[%4$d], S:%5$d[%6$d-%7$d], %8$s</string>
 	<string name="editor_state_summary">Línea con el estado del cursor y la codificación</string>
-	<string name="editor_summary">Ajustes del editor. </string>
+	<string name="editor_summary">Ajustes del editor.</string>
 	<string name="editor_wordwrap">Ajuste de línea</string>
 	<string name="editor_wordwrap_summary">Ajuste de linea en el editor</string>
 	<string name="editor_xml_format">Formato XML</string>
@@ -273,7 +272,7 @@
 	<string name="floating_button_summary">Mostrar el botón de ocultar archivos si los archivos están fijos</string>
 	<string name="folder_menu">Menú de carpetas</string>
 	<string name="folders_rec">carpetas de forma recursiva</string>
-	<string name="foldersc">Contenido de  carpetas</string>
+	<string name="foldersc">Contenido de carpetas</string>
 	<string name="font_size">Tamaño de fuente del editor</string>
 	<string name="font_size_summary">Establece el tamaño de la fuente predeterminada del editor</string>
 	<string name="font_size_title">Tamaño de fuente del editor:</string>
@@ -281,7 +280,7 @@
 	<string name="force_exit_summary">Cerrar la aplicación completamente al salir</string>
 	<string name="format">Alinear código</string>
 	<string name="format_html">Formato HTML</string>
-	<string name="format_html_summary">Formatee HTML en cadenas al descompilar.  Puede llevar a problemas.</string>
+	<string name="format_html_summary">Formatee HTML en cadenas al descompilar. Puede llevar a problemas.</string>
 	<string name="from_unicode">De Unicode</string>
 	<string name="gen_key_summary">Toque para crear un archivo de clave.</string>
 	<string name="gen_key_title">Crear un archivo de clave</string>
@@ -306,7 +305,7 @@
 	<string name="icons_outline_summary">Agregar un esquema para miniaturas en la lista de archivos</string>
 	<string name="if_exists">Si el archivo existe</string>
 	<string name="image_damage">La imagen está dañada!</string>
-	<string name="import_framework">Importar como biblioteca </string>
+	<string name="import_framework">Importar como biblioteca</string>
 	<string name="import_jks">Importar clave de firma</string>
 	<string name="import_scheme">Importar como esquema de color</string>
 	<string name="import_scheme_confirm">Quieres importar \"%s\" como esquema de color del editor?</string>
@@ -335,6 +334,7 @@
 	<string name="key_type">Tipo de clave:</string>
 	<string name="keyboard_suggestions">Sugerencias de autocompletado del teclado</string>
 	<string name="keyboard_suggestions_summary">Mostrar sugerencias de teclado (funciona de forma inestable, no recomendado)</string>
+	<string name="kill_sign">Remover verificación de firma</string>
 	<string name="launch_app">Ejecutar</string>
 	<string name="launch_fail">Ejecución fallida</string>
 	<string name="lib_set">Conjuntos de bibliotecas</string>
@@ -390,7 +390,7 @@
 	<string name="mcleaning_manifest">Limpiando \"AndroidManifest.xml\"</string>
 	<string name="mcolor_properties">Proyecto: %1$s\nDirectorio actual: %2$s\nTamaño: %3$s\nNúmero total de colores: %4$s\nColores editados: %5$s</string>
 	<string name="mcompress">Comprimir</string>
-	<string name="mcompression">Compresión </string>
+	<string name="mcompression">Compresión</string>
 	<string name="mdebug_rm">eliminar \"android:debuggable\"</string>
 	<string name="menu_position">Posición del menú</string>
 	<string name="menu_position_summary">Posición del menú contextual del archivos</string>
@@ -405,13 +405,13 @@
 	<string name="mmerge">Combinar</string>
 	<string name="mmerge_json">Combinar archivos \"apktool.json\"</string>
 	<string name="modified">Última modificación</string>
-	<string name="mopen_site">Sitio abierto</string>
+	<string name="mopen_site">Sitio web</string>
 	<string name="mopen_site_summary">Abrir página de actualización</string>
 	<string name="moptimize">Optimizar</string>
 	<string name="moptimize2">Optimizar (aapt2)</string>
 	<string name="moptimize_file">Optimización: %s</string>
 	<string name="moptimize_hint">Nombres o patrones de nombres</string>
-	<string name="moptimize_info">Especifique nombres de archivo o patrones de nombre de archivo que no desee comprimir.  Ingrese cada nombre o patrón en una nueva línea.  No uses expresiones regulares.</string>
+	<string name="moptimize_info">Especifique nombres de archivo o patrones de nombre de archivo que no desee comprimir. Ingrese cada nombre o patrón en una nueva línea. No uses expresiones regulares.</string>
 	<string name="moriginal">Original</string>
 	<string name="move_here">¿Mover \"%s\" aquí?</string>
 	<string name="moving">Moviendo</string>
@@ -458,7 +458,7 @@
 	<string name="mtr_google">Google</string>
 	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_hide_trans">Ocultar traducido</string>
-	<string name="mtr_info">Si el recurso de cadena ya existe, se sobrescribirá.  Si no existe tal directorio, se creará.  El nombre del directorio debe comenzar con \"values\".</string>
+	<string name="mtr_info">Si el recurso de cadena ya existe, se sobrescribirá. Si no existe tal directorio, se creará. El nombre del directorio debe comenzar con \"values\".</string>
 	<string name="mtr_invalid_res">respuesta de servidor no válida</string>
 	<string name="mtr_line_num">Números de línea</string>
 	<string name="mtr_net_err">error de red</string>
@@ -485,12 +485,12 @@
 	<string name="mupdate_4pda">Tema en 4PDA.RU</string>
 	<string name="mupdate_4pda_summary">Tema de discusión de la aplicación</string>
 	<string name="mupdate_down">Descargar</string>
-	<string name="mupdate_error">Error al buscar actualizaciones!  ¡Inténtalo más tarde!</string>
+	<string name="mupdate_error">Error al buscar actualizaciones! ¡Inténtalo más tarde!</string>
 	<string name="mupdate_get">Actualizar ahora</string>
 	<string name="mupdate_inbrowser">Abrir en el navegador</string>
 	<string name="mupdate_message">Nueva versión: %1$s&lt;br>&lt;br>Fecha: %2$s&lt;br>&lt;br>Tamaño: %3$s&lt;br>&lt;br>Registro de cambios:&lt;br>%4$s</string>
 	<string name="mupdate_notf">Ya tienes la última versión!</string>
-	<string name="mupdate_pref">Actualizar  programa</string>
+	<string name="mupdate_pref">Actualizar programa</string>
 	<string name="mupdate_pref_summary">Configuración de actualización</string>
 	<string name="mzipalign">ZipAlign</string>
 	<string name="name">Nombre</string>
@@ -498,7 +498,7 @@
 	<string name="new_dir">Nuevo Directorio</string>
 	<string name="new_file">Nuevo Archivo</string>
 	<string name="no">No</string>
-	<string name="no_media">crear archivo \" .nomedia\" </string>
+	<string name="no_media">crear archivo \" .nomedia\"</string>
 	<string name="no_open">Ningún archivo abierto!</string>
 	<string name="not_directory">\'%1$s\' no es un directorio!</string>
 	<string name="not_found">¡No se ha encontrado nada!</string>
@@ -540,7 +540,7 @@
 	<string name="play">Play</string>
 	<string name="player">Player</string>
 	<string name="please_update_your_android">Por favor, actualice su sistema Android a 4.3 o posterior!</string>
-	<string name="plugin_modif">El complemento UnApkm está firmado por la firma de otra persona.  Probablemente el plugin ha sido modificado.  Se recomienda encarecidamente que elimine el complemento y descargue el archivo original del sitio del desarrollador.  Al hacer clic en \"No recordar\", continúa utilizando el complemento modificado bajo su propio riesgo y riesgo.</string>
+	<string name="plugin_modif">El complemento UnApkm está firmado por la firma de otra persona. Probablemente el plugin ha sido modificado. Se recomienda encarecidamente que elimine el complemento y descargue el archivo original del sitio del desarrollador. Al hacer clic en \"No recordar\", continúa utilizando el complemento modificado bajo su propio riesgo y riesgo.</string>
 	<string name="pname_app">Paquete</string>
 	<string name="pngquant">PngQuant</string>
 	<string name="preview">Vista previa</string>
@@ -576,7 +576,7 @@
 	<string name="reset_remind">Restablecer recordatorios</string>
 	<string name="reset_settings">Restablecer la configuración</string>
 	<string name="restore">Restaurar</string>
-	<string name="restore_set_dialog">¿Quieres restaurar la configuración?  La configuración actual se sobrescribirá.</string>
+	<string name="restore_set_dialog">¿Quieres restaurar la configuración? La configuración actual se sobrescribirá.</string>
 	<string name="result">Resultado</string>
 	<string name="return_smali">Volver a Smali</string>
 	<string name="root_dir">Directorio root</string>
@@ -602,8 +602,9 @@
 	<string name="search_files">Archivos de búsqueda</string>
 	<string name="search_hint">Ingrese texto aquí</string>
 	<string name="search_info">Las búsquedas de contenido se realizan en archivos con las siguientes extensiones: %s. Búsqueda multilínea admitida.</string>
-	<string name="search_inres">en  resultados de búsqueda</string>
+	<string name="search_inres">en resultados de búsqueda</string>
 	<string name="search_loop">Repetir una búsqueda</string>
+	<string name="search_menu_title">Buscar</string>
 	<string name="search_name">por nombre de archivo</string>
 	<string name="search_over">Buscar anulaciones</string>
 	<string name="search_rec">búsqueda recursiva</string>
@@ -618,7 +619,7 @@
 	<string name="select_mod">Seleccionar modificado</string>
 	<string name="selected">seleccionados</string>
 	<string name="send">Enviar</string>
-	<string name="send_log">Enviar  registro al desarrollador</string>
+	<string name="send_log">Enviar registro al desarrollador</string>
 	<string name="server">Servidor</string>
 	<string name="set_as_output_directory">Establecer como directorio de salida</string>
 	<string name="set_enl">Valor de \"android:extractNativeLibs\":</string>
@@ -626,7 +627,7 @@
 	<string name="settings">Ajustes</string>
 	<string name="share_type">Considere el tipo de archivo al enviar</string>
 	<string name="share_type_summary">Al enviar un archivo a otra aplicación, se considerará el tipo de archivo</string>
-	<string name="sharing_file">Compartir archivo(s)...</string>
+	<string name="sharing_file">Compartir</string>
 	<string name="shortcut_exists">El atajo ya existe</string>
 	<string name="show">Mostrar</string>
 	<string name="show_errors">Mostrar errores</string>
@@ -682,7 +683,7 @@
 	<string name="system_theme_summary">Cambie el tema automáticamente según la configuración del sistema</string>
 	<string name="task_cancel_sure">¿Está seguro de que desea cancelar el proceso?</string>
 	<string name="telegram">Telegram</string>
-	<string name="telegram_summary">Canal de Telegram con actualizaciones de la aplicación </string>
+	<string name="telegram_summary">Canal de Telegram con actualizaciones de la aplicación</string>
 	<string name="text">%1$s</string>
 	<string name="time_spent">Tiempo transcurrido: %s</string>
 	<string name="to_apks">Convertir a \"*.apks\"</string>
@@ -702,10 +703,10 @@
 	<string name="translate">Traducir</string>
 	<string name="translate_java">Traducir a Java</string>
 	<string name="types_count">Número de tipos</string>
-	<string name="ultra_target_api">no cambie la API de destino</string>
+	<string name="ultra_target_api">no cambiar el API de destino</string>
 	<string name="ultra_zip">UltraZip</string>
 	<string name="undo">Deshacer</string>
-	<string name="unknown_skip_bytes">Se han detectado datos desconocidos. Omitiendo: %d byte\(s\)</string>
+	<string name="unknown_skip_bytes">Se han detectado datos desconocidos. Omitiendo: %d bytes</string>
 	<string name="unsupported_android">Sin soporte en su versión de Android!</string>
 	<string name="update_freq">Frecuencia de comprobación de actualizaciones</string>
 	<string name="update_freq_summary">Frecuencia de comprobación de actualizaciones en días</string>
