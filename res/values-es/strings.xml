@@ -604,7 +604,6 @@
 	<string name="search_info">Las búsquedas de contenido se realizan en archivos con las siguientes extensiones: %s. Búsqueda multilínea admitida.</string>
 	<string name="search_inres">en resultados de búsqueda</string>
 	<string name="search_loop">Repetir una búsqueda</string>
-	<string name="search_menu_title">Buscar</string>
 	<string name="search_name">por nombre de archivo</string>
 	<string name="search_over">Buscar anulaciones</string>
 	<string name="search_rec">búsqueda recursiva</string>
