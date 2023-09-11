@@ -610,7 +610,6 @@
 	<string name="search_info">חיפושי תוכן מבוצעים בקבצים עם ההרחבות הבאות: %s.\nתמיכה בחיפוש מרובה שורות.</string>
 	<string name="search_inres">בתוצאות החיפוש</string>
 	<string name="search_loop">ביצוע חיפוש בלולאה</string>
-	<string name="search_menu_title">חיפוש</string>
 	<string name="search_name">לפי שם הקובץ</string>
 	<string name="search_over">מצא עקיפות</string>
 	<string name="search_rec">חיפוש רקורסיבי</string>

@@ -26,8 +26,8 @@
     <string name="editor_state_str2">L:%1$d[%2$d], C:%3$d[%4$d], S:%5$d[%6$d-%7$d], %8$s</string>
     
     <string name="close_cur">Tutup</string>
-    <string name="close_others">Tutup Lainnya</string>
-    <string name="close_all">Tutup Semua</string>
+    <string name="close_others">Tutup lainnya</string>
+    <string name="close_all">Tutup semua</string>
     
     <string name="open_files">Buka file</string>
     <string name="close_files">Tutup file</string>
@@ -38,7 +38,7 @@
     <string name="split_arch">Dibagi berdasarkan arsitektur</string>
     <string name="sets_nf">Tidak ditemukan set perpustakaan!</string>
     <string name="enter_path">Masukkan jalur</string>
-    <string name="ultra_target_api">jangan mengubah API target</string>
+    <string name="ultra_target_api">jangan ubah API target</string>
     <string name="error_try_again">Kesalahan, silakan coba lagi</string>
     <string name="miui_warn_title">MIUI terdeteksi!</string>
     <string name="miui_warn_message">Sepertinya Anda memiliki MIUI! Saya sarankan untuk membuka pengaturan pengembang dan menonaktifkan pengoptimalan MIUI. Jika Anda tidak melakukan ini, Anda mungkin mengalami masalah dengan pengoperasian aplikasi, kesalahan, dan kerusakan. Tolong jangan menulis kepada saya tentang kesalahan program jika Anda membaca pesan ini dan tidak mengikuti saran saya!</string>
@@ -62,6 +62,10 @@
     <string name="hide">Sembunyikan</string>
     <string name="unsupported_android">Tidak didukung di versi Android Anda!</string>
     <string name="reset_fab">Atur ulang posisi tombol mengambang?</string>
+    <string name="kill_sign">Hapus verifikasi tanda tangan</string>
+    <string name="kill_sign_advanced">Metode yang ditingkatkan</string>
+    <string name="kill_sign_orig">Tambahkan apk asli untuk memeriksa integritas</string>
+    <string name="kill_sign_exists">Pengait sudah ditambahkan</string>
     
     <string name="go_back">Kembali ke direktori induk</string>
     <string name="sort">Urutkan Metode</string>
@@ -91,7 +95,7 @@
     <string name="failed_openset">Gagal membuka pengaturan!</string>
     <string name="linel">baris</string>
     <string name="confirmb">Kompilasi proyek \"%s\"?</string>
-    <string name="make_home">Jadikan sebagai direktori rumah</string>
+    <string name="make_home">Jadikan sebagai direktori utama</string>
     <string name="check_hash">Periksa hash</string>
     <string name="matches">cocok</string>
     <string name="not_match">tidak cocok</string>
@@ -165,7 +169,7 @@
     <string name="details">Rincian</string>
     <string name="apps_installed_sum">Lihat aplikasi pengguna</string>
     <string name="apps_system_sum">Lihat aplikasi sistem</string>
-    <string name="version_app">Name versi</string>
+    <string name="version_app">Nama versi</string>
     <string name="vcode_app">Kode versi</string>
     <string name="pname_app">Paket</string>
     <string name="path_app">Jalur</string>
@@ -187,8 +191,8 @@
     <string name="enc_res">Enkripsi sumber</string>
     <string name="enc_success">Sumber dienkripsi, file disimpan sebagai \"%s\"</string>
     <string name="bookmarks">Bookmark</string>
-    <string name="bookmark_add">Tambahkan ke bookmark</string>
-    <string name="bookmark_remove">Hapus dari bookmark</string>
+    <string name="bookmark_add">Tambahkan ke Bookmark</string>
+    <string name="bookmark_remove">Hapus dari Bookmark</string>
     <string name="name_filter">Nama filter</string>
     <string name="api_version">Versi API</string>
     <string name="dex_version">Versi DEX</string>
@@ -208,7 +212,7 @@
     <string name="open_in">Buka di...</string>
     <string name="sharing_file">Bagikan file(s)...</string>
     <string name="open_in_editor">Buka di editor</string>
-    <string name="view_content">Lihat konten</string>
+    <string name="view_content">Lihat isi</string>
     <string name="edit_mode">Mode edit</string>
     <string name="scan_mode">Mode navigasi</string>
     <string name="translate_java">Terjemahkan ke Java</string>
@@ -256,7 +260,7 @@
     <string name="copy_here">Salin \"%s\" di sini?</string>
     <string name="move_here">Pindahkan \"%s\" di sini?</string>
     <string name="file_not_found">File \"%s\" tidak ditemukan!</string>
-    <string name="copy_path">Salin Jalur</string> 
+    <string name="copy_path">Salin jalur</string> 
     <string name="build_copy_file">Menyalin \"%1$s\"...</string>
     <string name="jaxp_not_support">Dukungan JAXP 1.5 diperlukan untuk memvalidasi XML</string>
     <string name="report_error">Silakan laporkan aplikasi ini ke Apktool untuk perbaikan: https://github.com/iBotPeaches/Apktool/issues/1728</string>
@@ -323,10 +327,10 @@
     <string name="err_encex">Pengecualian pengkodean: %s</string>
     
     <string name="light_theme">Tema Terang</string>
-    <string name="light_theme_summary">Pilih antara tema terang dan tema gelap untuk antarmuka pengguna.</string>
+    <string name="light_theme_summary">Pilih antara tema terang atau tema gelap untuk antarmuka pengguna.</string>
     <string name="output_directory">Direktori keluaran</string>
     <string name="set_as_output_directory">Tetapkan sebagai direktori keluaran</string>
-    <string name="output_directory_summary">Mengatur direktori keluaran default</string>
+    <string name="output_directory_summary">Atur direktori keluaran default</string>
     <string name="output_directory_not_extsts">Direktori keluaran \'%1$s\' tidak ada dan tidak dapat dibuat!</string>
     <string name="output_directory_not_set">Anda harus mengatur direktori keluaran terlebih dahulu!</string>
     <string name="not_directory">\'%1$s\' bukan direktori!</string>
@@ -357,18 +361,18 @@
     <string name="editor_summary">Konfigurasikan editor.</string>
     <string name="signature">Tanda tangan</string>
     <string name="signature_summary">Konfigurasikan pengaturan tanda tangan.</string>
-    <string name="build_and_decode">Membangun &amp; Memecahkan kode</string>
-    <string name="build_and_decode_summary">Konfigurasikan pengaturan Membangun &amp; Memecahkan kode.</string>
+    <string name="build_and_decode">Pembangunan &amp; Pemecahan kode</string>
+    <string name="build_and_decode_summary">Konfigurasikan pengaturan Pembangunan &amp; Pemecahan kode.</string>
     <string name="font_size">Ukuran font editor</string>
-    <string name="font_size_summary">Menentukan ukuran font default editor</string>
+    <string name="font_size_summary">Tentukan ukuran font default editor</string>
     <string name="font_size_title">Ukuran font editor:</string>
     <string name="debug_mode">Atur apk sebagai dapat di-debug</string>
-    <string name="debug_mode_summary">Mengatur android:debugable ke \"true\" dalam manifest yang dikompilasi oleh APK</string>
+    <string name="debug_mode_summary">Atur android:debugable ke \"true\" dalam manifest yang dikompilasi oleh APK</string>
     <string name="verbose_mode">Verbose</string>
     <string name="verbose_mode_summary">Aktifkan mode verbose</string>
     <string name="copyOriginalFiles">Cocokkan dengan yang asli</string>
     <string name="copyOriginalFiles_summary">Tanda tangan dan manifest asli dipertahankan</string>
-    <string name="mBakdeb">Tulis info debug</string>
+    <string name="mBakdeb">Tuliskan info debug</string>
     <string name="mBakdeb_summary">Tuliskan info debug (.local, .param, .line, etc.)</string>
     <string name="default_signature_file">Tanda tangan default</string>
     <string name="custom_signature_file">File tanda tangan khusus</string>
@@ -382,8 +386,8 @@
     <string name="enter_password">Masukkan kata sandi:</string>
     <string name="about">Tentang</string>
     <string name="about_summary">Informasi tentang penulis, tautan yang berguna</string>
-    <string name="overwrite_apk">Menimpa file</string>
-    <string name="overwrite_apk_summary">Menimpa file dan folder</string>
+    <string name="overwrite_apk">Timpa file</string>
+    <string name="overwrite_apk_summary">Timpa file dan folder</string>
     <string name="editor_wordwrap">Bungkus kata</string>
     <string name="editor_wordwrap_summary">Bungkus kata di editor</string>
     <string name="use_monospace_font">Font monospace</string>
@@ -438,8 +442,8 @@
     <string name="use_v3_sign_summary">Gunakan skema tanda tangan v3 (Android 9.0+)</string>
     <string name="use_v4_sign">Tanda tangan v4</string>
     <string name="use_v4_sign_summary">Gunakan skema tanda tangan v4 (Android 11+)</string>
-    <string name="delete_build">Hapus folder \"build\".</string>
-    <string name="delete_build_summary">Hapus folder \"build\" setelah kompilasi</string>
+    <string name="delete_build">Hapus folder \"bangun\".</string>
+    <string name="delete_build_summary">Hapus folder \"bangun\" setelah kompilasi</string>
     <string name="fix_drawer">Perbaiki file</string>
     <string name="fix_drawer_summary">Jangan menutup pengelola file dengan mengusap</string>
     <string name="dont_notify">Jangan beri tahu jika sedang berjalan</string>
@@ -472,12 +476,12 @@
     <string name="created_cert_name_summary">Nama pembuat tanda tangan di file SF</string>
     <string name="checksum_format">Tampilan checksum</string>
     <string name="checksum_format_summary">Format tampilan checksum</string>
-    <string name="refreshing">Menyegarkan dengan sebuah gerakan</string>
+    <string name="refreshing">Segarkan dengan sebuah gerakan</string>
     <string name="refreshing_summary">Tarik ke bawah untuk menyegarkan daftar file</string>
     <string name="suffix">Akhiran untuk apk</string>
     <string name="suffix_summary">Akhiran untuk nama file keluaran</string>
     <string name="perm_description">Keterangan untuk izin</string>
-    <string name="perm_description_summary">Menambahkan keterangan untuk izin ke AndroidManifest.xml (jika tersedia)</string>
+    <string name="perm_description_summary">Tambahkan keterangan untuk izin ke AndroidManifest.xml (jika tersedia)</string>
     <string name="description_type">Jenis keterangan</string>
     <string name="mshort">Pendek</string>
     <string name="mlong">Panjang</string>
@@ -486,7 +490,7 @@
     <string name="editor_state">Bilah status</string>
     <string name="editor_state_summary">Baris dengan status kursor dan pengkodean</string>
     <string name="editor_caps">Kapital secara otomatis</string>
-    <string name="editor_caps_summary">Memasukkan huruf kapital secara otomatis</string>
+    <string name="editor_caps_summary">Masukkan huruf kapital secara otomatis</string>
     <string name="editor_xml_format">Pemformatan XML</string>
     <string name="editor_xml_format_summary">Opsi pemformatan XML untuk perataan kode</string>
     <string name="editor_magnifier">Pembesar</string>
@@ -586,7 +590,7 @@
     <string name="build_notification">Pemberitahuan</string>
     <string name="build_notification_summary">Kirim pemberitahuan setelah selesai membangun dan mendekompilasi</string>
     <string name="ongoing_notification">Pemberitahuan di tempat kerja</string>
-    <string name="ongoing_notification_summary">Menampilkan pemberitahuan selama pembuatan dan dekompilasi</string>
+    <string name="ongoing_notification_summary">Tampilkan pemberitahuan selama pembuatan dan dekompilasi</string>
     <string name="format_html">Format HTML</string>
     <string name="format_html_summary">Memformat HTML dalam bentuk string saat mendekompilasi.  Dapat menyebabkan masalah.</string>
     <string name="add_dummy">Tambahkan \"APKTOOL_DUMMY\"</string>
@@ -605,14 +609,14 @@
     <string name="copy_with_ext_summary">Salin nama file tanpa ekstensi</string>
     <string name="crowdin">Crowdin</string>
     <string name="crowdin_summary">Bantu menerjemahkan Apktool M ke dalam bahasa Anda</string>
-    <string name="man_frame">Mengelola kerangka kerja</string>
-    <string name="man_frame_summary">Mengelola kerangka kerja yang terinstal</string>
-    <string name="clear_preview">Membersihkan cache gambar mini</string>
-    <string name="clear_preview_summary">Interval untuk membersihkan gambar mini lama adalah dalam hitungan hari</string>
+    <string name="man_frame">Kelola kerangka kerja</string>
+    <string name="man_frame_summary">Kelola kerangka kerja yang terinstal</string>
+    <string name="clear_preview">Bersihkan cache gambar kecil</string>
+    <string name="clear_preview_summary">Interval untuk membersihkan gambar kecil lama adalah dalam hitungan hari</string>
     <string name="icons_outline">Ikon garis besar</string>
-    <string name="icons_outline_summary">Tambahkan garis besar untuk gambar mini dalam daftar file</string>
-    <string name="editor_colors">Menyorot warna</string>
-    <string name="editor_colors_summary">Menyorot warna heksa pada teks</string>
+    <string name="icons_outline_summary">Tambahkan garis besar untuk gambar kecil dalam daftar file</string>
+    <string name="editor_colors">Penyorot warna</string>
+    <string name="editor_colors_summary">Penyorot warna heksa pada teks</string>
     <string name="add_nsc">Tambahkan konfigurasi keamanan jaringan</string>
     <string name="add_nsc_summary">Tambahkan konfigurasi keamanan jaringan permisif umum pada waktu pembuatan</string>
     <string name="add_nsc_ex">Jangan ubah jika sudah ada</string>
@@ -672,10 +676,10 @@
     <string name="mapp_label">Nama aplikasi</string>
     <string name="mapp_pn">Nama paket</string>
     <string name="mapp_vn">Nama versi</string>
-    <string name="mapp_cn">Bangun nama</string>
+    <string name="mapp_cn">Kode versi</string>
     <string name="mapp_inLocation">Lokasi pemasangan</string>
     <string name="mapp_minsdk">Versi Min SDK</string>
-    <string name="mapp_targetsdk">Versi SDK target</string>
+    <string name="mapp_targetsdk">Versi target SDK</string>
     <string name="mapp_down_plugin">Ingin mengunduh plugin dekripsi apkm?</string>
     <string name="mapk_damage">File Apk rusak!</string>
     <string name="mapk_nosign">File Apk tidak ditandatangani!</string>

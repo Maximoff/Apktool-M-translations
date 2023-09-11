@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="copy_variants">
+        <item>Ganti nama</item>
+        <item>Ganti nama file saja</item>
+        <item>Ganti</item>
+        <item>Lewati</item>
+    </string-array>
+    
+    <string-array name="menu_pos">
+        <item>Kiri</item>
+        <item>Kanan</item>
+    </string-array>
+    
+    <string-array name="checksum_names">
+        <item>Semua huruf besar</item>
+        <item>Pisahkan dengan titik dua</item>
+    </string-array>
+    
+    <string-array name="refresh_res">
+        <item>Tambahkan sumber baru (hanya file)</item>
+        <item>Hapus sumber yang hilang</item>
+    </string-array>
+    
+    <string-array name="sort">
+        <item>Nama</item>
+        <item>Nama terbalik</item>
+        <item>Jenis</item>
+        <item>Jenis terbalik</item>
+        <item>Ukuran</item>
+        <item>Ukuran terbalik</item>
+        <item>Waktu</item>
+        <item>Waktu terbalik</item>
+    </string-array>
+    
+    <string-array name="color_var">
+        <item>Warna HEX</item>
+        <item>Kode Smali</item>
+        <item>A,R,G,B</item>
+    </string-array>
+    
+    <string-array name="resDecodeMode">
+        <item>Jangan dekompilasi</item>
+        <item>Dekompilasi ke direktori utama</item>
+        <item>Dekompilasi ke direktori terpisah</item>
+    </string-array>
+    
+    <string-array name="converter_items">
+        <item>Teks &lt;-> Base64</item>
+        <item>Teks &lt;-> Unicode</item>
+        <item>Teks &lt;-> Pengkodean URL</item>
+        <item>Teks &lt;-> MD5</item>
+        <item>Teks &lt;-> SHA-1</item>
+        <item>Teks &lt;-> SHA-224</item>
+        <item>Teks &lt;-> SHA-256</item>
+        <item>Teks &lt;-> SHA-384</item>
+        <item>Teks &lt;-> SHA-512</item>
+        <item>Teks &lt;-> Susunan (UTF-8)</item>
+        <item>Teks &lt;-> Susunan (UTF-16)</item>
+        <item>Teks &lt;-> Susunan (UTF-16LE)</item>
+        <item>Teks &lt;-> Susunan (UTF-16BE)</item>
+        <item>Teks &lt;-> Susunan (US-ASCII)</item>
+        <item>Teks &lt;-> Susunan (ISO-8859-1)</item>
+        <item>Teks &lt;-> Susunan (CP1251)</item>
+        <item>Desimal &lt;-> Biner</item>
+        <item>Desimal &lt;-> Oktal</item>
+        <item>Desimal &lt;-> Hex</item>
+        <item>Desimal &lt;-> Hex (0x0)</item>
+        <item>Desimal &lt;-> Hex (0x00000000)</item>
+        <item>Mengambang &lt;-> Biner</item>
+        <item>Mengambang &lt;-> Oktal</item>
+        <item>Mengambang &lt;-> Hex</item>
+        <item>Mengambang &lt;-> Hex (0x0)</item>
+        <item>Mengambang &lt;-> Hex (0x00000000)</item>
+        <item>Warna &lt;-> Smali</item>
+        <item>Warna &lt;-> Desimal</item>
+        <item>Warna &lt;-> A,R,G,B</item>
+    </string-array>
+    
+    <string-array name="installLocation">
+        <item>Tidak diatur</item>
+        <item>Otomatis</item>
+        <item>Hanya internal</item>
+        <item>Eksternal pilihan</item>
+    </string-array>
+    
+    <string-array name="xml_format_variants">
+        <item>Default</item>
+        <item>Apktool</item> 
+        <item>Android Studio</item>
+        <item>Trik Sederhana</item>
+    </string-array>
+    
+    <string-array name="orientation_variants">
+        <item>Default</item>
+        <item>Lanskap</item> 
+        <item>Potret</item>
+    </string-array>
+    
+    <string-array name="auto_save_variants">
+        <item>Mati</item>
+        <item>15 detik</item> 
+        <item>30 detik</item>
+        <item>1 menit</item> 
+        <item>5 menit</item>
+    </string-array>
+    
+    <string-array name="to_vector_values">
+        <item>Gambar yang disesuaikan (kualitas di bawah)</item>
+        <item>Gambar berkualitas tinggi (ukuran lebih besar)</item>
+        <item>Konversi ke SVG</item>
+    </string-array>
+    
+    <string-array name="backup_values">
+        <item>Pengaturan</item>
+        <item>Bookmark</item>
+        <item>Cari/ganti riwayat</item>
+        <item>Kamus</item>
+    </string-array>
+    
+    <string-array name="editor_themes">
+        <item>Default</item>
+        <item>Baru</item> 
+    </string-array>
+    
+    <string-array name="bing_translator_names">
+        <item>Otomatis</item>
+        <item>Azerbaijan (Latin)</item>
+        <item>Albania</item>
+        <item>Inggris</item>
+        <item>Arab</item>
+        <item>Armenia</item>
+        <item>Afrikaans</item>
+        <item>Bengali</item>
+        <item>Bulgaria</item>
+        <item>Bosnia</item>
+        <item>Wales</item>
+        <item>Hungaria</item>
+        <item>Vietnam</item>
+        <item>Kreol Haiti</item>
+        <item>Belanda</item>
+        <item>Yunani</item>
+        <item>Gujarat</item>
+        <item>Denmark</item>
+        <item>Ibrani</item>
+        <item>Indonesia</item>
+        <item>Irlandia</item>
+        <item>Islandia</item>
+        <item>Spanyol</item>
+        <item>Italia</item>
+        <item>Kazakhstan</item>
+        <item>Kannada</item>
+        <item>Kanton Tradisional</item>
+        <item>Katalan</item>
+        <item>Keretarian Otomi</item>
+        <item>Cina Tradisional</item>
+        <item>Cina Sederhana</item>
+        <item>Korea</item>
+        <item>Latvia</item>
+        <item>Lithuania</item>
+        <item>Malagasi</item>
+        <item>Melayu</item>
+        <item>Malayalam</item>
+        <item>Malta</item>
+        <item>Maori</item>
+        <item>Marathi</item>
+        <item>Jerman</item>
+        <item>Nepal</item>
+        <item>Norwegia</item>
+        <item>Oriya</item>
+        <item>Punjabi</item>
+        <item>Persia</item>
+        <item>Polandia</item>
+        <item>Portugis (Brasil)</item>
+        <item>Portugis (Portugal)</item>
+        <item>Romania</item>
+        <item>Rusia</item>
+        <item>Samoa</item>
+        <item>Serbia (Sirilik)</item>
+        <item>Serbia (Latin)</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Swahili</item>
+        <item>Tahiti</item>
+        <item>Thailand</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Tonga</item>
+        <item>Turki</item>
+        <item>Ukraina</item>
+        <item>Urdu</item>
+        <item>Fiji</item>
+        <item>Filipina</item>
+        <item>Finlandia</item>
+        <item>Prancis</item>
+        <item>Hindi</item>
+        <item>Hmong Dhow</item>
+        <item>Kroasia</item>
+        <item>Ceko</item>
+        <item>Swedia</item>
+        <item>Estonia</item>
+        <item>Yucatec Maya</item>
+        <item>Jepang</item>
+        <item>Amharik</item>
+        <item>Assam</item>
+        <item>Dari</item>
+        <item>Prancis (Kanada)</item>
+        <item>Inuktitut</item>
+        <item>Khmer</item>
+        <item>Klingon (Latin)</item>
+        <item>Kurdi (Tengah)</item>
+        <item>Kurdi (Utara)</item>
+        <item>Lao</item>
+        <item>Myanmar (Burma)</item>
+        <item>Pashto</item>
+        <item>Tigrinya</item>
+    </string-array>
+    
+    <string-array name="google_translator_names">
+        <item>Otomatis</item>
+        <item>Afrikaans</item>
+        <item>Albania</item>
+        <item>Amharik</item>
+        <item>Arab</item>
+        <item>Armenia</item>
+        <item>Azerbaijan</item>
+        <item>Basque</item>
+        <item>Belarusia</item>
+        <item>Bengali</item>
+        <item>Bosnia</item>
+        <item>Bulgaria</item>
+        <item>Katalan</item>
+        <item>Cebuano</item>
+        <item>Chichewa</item>
+        <item>Cina Sederhana</item>
+        <item>Cina Tradisional</item>
+        <item>Korsika</item>
+        <item>Kroasia</item>
+        <item>Ceko</item>
+        <item>Denmark</item>
+        <item>Belanda</item>
+        <item>Inggris</item>
+        <item>Esperanto</item>
+        <item>Estonia</item>
+        <item>Filipina</item>
+        <item>Finlandia</item>
+        <item>Prancis</item>
+        <item>Frisian</item>
+        <item>Galicia</item>
+        <item>Georgia</item>
+        <item>Jerman</item>
+        <item>Yunani</item>
+        <item>Gujarat</item>
+        <item>Kreol Haiti</item>
+        <item>Hausa</item>
+        <item>Hawaii</item>
+        <item>Ibrani</item>
+        <item>Hindi</item>
+        <item>Hmong</item>
+        <item>Hungaria</item>
+        <item>Islandia</item>
+        <item>Igbo</item>
+        <item>Indonesia</item>
+        <item>Irlandia</item>
+        <item>Italia</item>
+        <item>Jepang</item>
+        <item>Jawa</item>
+        <item>Kannada</item>
+        <item>Kazakhstan</item>
+        <item>Khmer</item>
+        <item>Korea</item>
+        <item>Kurdi (Kurmanji)</item>
+        <item>Kirgistan</item>
+        <item>Lao</item>
+        <item>Latin</item>
+        <item>Latvia</item>
+        <item>Lithuania</item>
+        <item>Luksemburg</item>
+        <item>Makedonia</item>
+        <item>Malagasi</item>
+        <item>Melayu</item>
+        <item>Malayalam</item>
+        <item>Malta</item>
+        <item>Maori</item>
+        <item>Marathi</item>
+        <item>Mongolia</item>
+        <item>Myanmar (Burma)</item>
+        <item>Nepal</item>
+        <item>Norwegia</item>
+        <item>Pashto</item>
+        <item>Persia</item>
+        <item>Polandia</item>
+        <item>Portugis</item>
+        <item>Punjabi</item>
+        <item>Romania</item>
+        <item>Rusia</item>
+        <item>Samoa</item>
+        <item>Gaelik Skotlandia</item>
+        <item>Serbia</item>
+        <item>Sesotho</item>
+        <item>Shona</item>
+        <item>Sindhi</item>
+        <item>Sinhala</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Somalia</item>
+        <item>Spanyol</item>
+        <item>Sunda</item>
+        <item>Swahili</item>
+        <item>Swedia</item>
+        <item>Tajik</item>
+        <item>Tamil</item>
+        <item>Telugu</item>
+        <item>Thailand</item>
+        <item>Turki</item>
+        <item>Ukraina</item>
+        <item>Urdu</item>
+        <item>Uzbekistan</item>
+        <item>Vietnam</item>
+        <item>Wales</item>
+        <item>Xhosa</item>
+        <item>Yiddish</item>
+        <item>Yoruba</item>
+        <item>Zulu</item>
+        <item>Oriya</item>
+        <item>Punjabi</item>
+        <item>Rwanda</item>
+        <item>Tatar</item>
+        <item>Turkmenistan</item>
+        <item>Uigur</item>
+    </string-array>
+    
+    <string-array name="yandex_translator_names">
+        <item>Otomatis</item>
+        <item>Afrikaans</item>
+        <item>Albania</item>
+        <item>Amharik</item>
+        <item>Arab</item>
+        <item>Armenia</item>
+        <item>Azerbaijan</item>
+        <item>Bashkir</item>
+        <item>Basque</item>
+        <item>Belarusia</item>
+        <item>Bengali</item>
+        <item>Bosnia</item>
+        <item>Bulgaria</item>
+        <item>Burma</item>
+        <item>Katalan</item>
+        <item>Cebuano</item>
+        <item>Cina</item>
+        <item>Chuvash</item>
+        <item>Kroasia</item>
+        <item>Ceko</item>
+        <item>Denmark</item>
+        <item>Belanda</item>
+        <item>Elvish (Sindarin)</item>
+        <item>Emoji</item>
+        <item>Inggris</item>
+        <item>Esperanto</item>
+        <item>Estonia</item>
+        <item>Finlandia</item>
+        <item>Prancis</item>
+        <item>Galicia</item>
+        <item>Georgia</item>
+        <item>Jerman</item>
+        <item>Yunani</item>
+        <item>Gujarat</item>
+        <item>Haiti</item>
+        <item>Ibrani</item>
+        <item>Hill Mari</item>
+        <item>Hindi</item>
+        <item>Hungaria</item>
+        <item>Islandia</item>
+        <item>Indonesia</item>
+        <item>Irlandia</item>
+        <item>Italia</item>
+        <item>Jepang</item>
+        <item>Jawa</item>
+        <item>Kannada</item>
+        <item>Kazakhstan</item>
+        <item>Kazakhstan (Latin)</item>
+        <item>Khmer</item>
+        <item>Korea</item>
+        <item>Kirgistan</item>
+        <item>Lao</item>
+        <item>Latin</item>
+        <item>Latvia</item>
+        <item>Lithuania</item>
+        <item>Luksemburg</item>
+        <item>Makedonia</item>
+        <item>Malagasi</item>
+        <item>Melayu</item>
+        <item>Malayalam</item>
+        <item>Malta</item>
+        <item>Maori</item>
+        <item>Marathi</item>
+        <item>Mari</item>
+        <item>Mongolia</item>
+        <item>Nepal</item>
+        <item>Norwegia</item>
+        <item>Papiamento</item>
+        <item>Persia</item>
+        <item>Polandia</item>
+        <item>Portugis</item>
+        <item>Punjabi</item>
+        <item>Romania</item>
+        <item>Rusia</item>
+        <item>Gaelik Skotlandia</item>
+        <item>Serbia</item>
+        <item>Sinhala</item>
+        <item>Slovakia</item>
+        <item>Slovenia</item>
+        <item>Spanyol</item>
+        <item>Sunda</item>
+        <item>Swahili</item>
+        <item>Swedia</item>
+        <item>Tagalog</item>
+        <item>Tajik</item>
+        <item>Tamil</item>
+        <item>Tatar</item>
+        <item>Telugu</item>
+        <item>Thailand</item>
+        <item>Turki</item>
+        <item>Udmurt</item>
+        <item>Ukraina</item>
+        <item>Urdu</item>
+        <item>Uzbekistan</item>
+        <item>Uzbekistan (Sirilik)</item>
+        <item>Vietnam</item>
+        <item>Wales</item>
+        <item>Xhosa</item>
+        <item>Yakut</item>
+        <item>Yiddish</item>
+    </string-array>
+</resources>

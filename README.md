@@ -9,6 +9,8 @@ dot
 rarrow
 lock_icon
 block_icon
+search_menu_title
+status_bar_notification_info_overflow
 ```
 
 ## For English
@@ -22,4 +24,6 @@ dot
 rarrow
 lock_icon
 block_icon
+search_menu_title
+status_bar_notification_info_overflow
 ```
