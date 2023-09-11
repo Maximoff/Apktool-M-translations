@@ -8,7 +8,7 @@
     <string name="about">Σχετικά</string>
     <string name="about_summary">Πληροφορίες για τον συγγραφέα, χρήσιμοι σύνδεσμοι</string>
     <string name="accessibility_service_description">Υπηρεσία λήψης πληροφοριών σχετικά με την εκτέλεση δραστηριοτήτων. Η υπηρεσία δεν συλλέγει προσωπικά δεδομένα.</string>
-    <string name="accessibility_service_name">Τρέχουσα δραστηριότητα</string>
+    <string name="accessibility_service_name">Υπηρεσία προσβασιμότητας</string>
     <string name="accessibility_service_toast">Ενεργοποίηση της υπηρεσίας Apktool M</string>
     <string name="act_launch">Δραστηριότητα για εκκίνηση</string>
     <string name="act_list">Λίστα δραστηριοτήτων</string>
@@ -159,7 +159,7 @@
     <string name="delete_build_summary">Διαγραφή του φακέλου \"Kατασκευή\" μετά τη Μεταγλώττιση</string>
     <string name="deletion">Διαγραφή %s</string>
     <string name="description_type">Είδος περιγραφών</string>
-    <string name="details">Λεπτομέριες</string>
+    <string name="details">Λεπτομέρειες</string>
     <string name="dex_version">Έκδοση DEX</string>
     <string name="dex2jar">Dex2Jar</string>
     <string name="dir">Κατάλογος</string>
@@ -589,7 +589,7 @@
     <string name="scaling">Κλιμάκωση</string>
     <string name="scaling_summary">Κλιμάκωση με δύο δάχτυλα</string>
     <string name="scan_mode">Λειτουργία πλοήγησης</string>
-    <string name="scoped_storage">Εύρος Αποθήκευσης</string>
+    <string name="scoped_storage">Πρόσβαση Αποθήκευσης</string>
     <string name="scoped_storage_msg">Το Android 11 εισάγει έναν νέο τρόπο διαχείρισης αρχείων που ονομάζεται \"Scoped Storage\". Πρέπει να χορηγήσετε ειδική άδεια!</string>
     <string name="scoped_storage_title">Αλλαγές στο Android 11 R</string>
     <string name="screen_on">Χωρίς απενεργοποίηση Οθόνης</string>
@@ -607,7 +607,7 @@
     <string name="search_menu_title">Αναζήτηση</string>
     <string name="search_name">με όνομα αρχείου</string>
     <string name="search_over">Εύρεση αντικαταστάσεων</string>
-    <string name="search_rec">αναδρομική αναζήτηση</string>
+    <string name="search_rec">επαναλαμβανόμενη αναζήτηση</string>
     <string name="search_regexp">Κανονικές εκφράσεις</string>
     <string name="search_reset">Επαναφορά</string>
     <string name="search_result">Αναζήτηση αποτέλεσματος</string>
@@ -775,5 +775,9 @@
     <string name="github_summary">Πηγές για τη μετάφραση του προγράμματος στο GitHub</string>
     <string name="reset_fab">Επαναφορά θέσης αιωρούμενου κουμπιού;</string>
     <string name="keep_modified_time">Διατήρηση χρόνου τροποποίησης</string>
-    <string name="keep_modified_time_summary">Προσπάθει διατήρησης χρόνου τροποποίησης αρχείων και φακέλων αν είναι δυνατόν</string>
+    <string name="keep_modified_time_summary">Προσπάθεια διατήρησης χρόνου τροποποίησης αρχείων και φακέλων αν είναι δυνατόν</string>
+    <string name="kill_sign">Αφαίρεση επαλήθευσης υπογραφής</string>
+    <string name="kill_sign_advanced">Βελτιωμένη μέθοδος</string>
+    <string name="kill_sign_orig">Προσθήκη αρχικού apk για έλεγχο ακεραιότητας</string>
+    <string name="kill_sign_exists">Το άγκιστρο έχει ήδη προστεθεί</string>
 </resources>
