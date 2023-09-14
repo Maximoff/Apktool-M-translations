@@ -39,10 +39,19 @@
         <item>A,R,G,B</item>
     </string-array>
     
+    <string-array name="quantity_items">
+        <item>nol</item>
+        <item>satu</item>
+        <item>dua</item>
+        <item>sedikit</item>
+        <item>banyak</item>
+        <item>lebih</item>
+    </string-array>
+    
     <string-array name="resDecodeMode">
         <item>Jangan dekompilasi</item>
-        <item>Dekompilasi ke direktori utama</item>
-        <item>Dekompilasi ke direktori terpisah</item>
+        <item>Dekompilasi ke folder utama</item>
+        <item>Dekompilasi ke folder terpisah</item>
     </string-array>
     
     <string-array name="converter_items">

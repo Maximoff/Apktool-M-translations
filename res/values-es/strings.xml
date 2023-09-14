@@ -237,7 +237,7 @@
 	<string name="exit">Salida</string>
 	<string name="ext_editor">Editor externo</string>
 	<string name="ext_editor_summary">Abrir archivos de texto en un editor externo</string>
-	<string name="extract">Extraer</string>
+	<string name="extract">Extrayendo...</string>
 	<string name="extract_icon">Icono de Extracción</string>
 	<string name="extraction">Extraer: %s</string>
 	<string name="failed_open">No se pudo abrir \"%s\"!</string>
@@ -305,7 +305,7 @@
 	<string name="icons_outline_summary">Agregar un esquema para miniaturas en la lista de archivos</string>
 	<string name="if_exists">Si el archivo existe</string>
 	<string name="image_damage">La imagen está dañada!</string>
-	<string name="import_framework">Importar como biblioteca</string>
+	<string name="import_framework">Importar como marco de trabajo </string>
 	<string name="import_jks">Importar clave de firma</string>
 	<string name="import_scheme">Importar como esquema de color</string>
 	<string name="import_scheme_confirm">Quieres importar \"%s\" como esquema de color del editor?</string>
@@ -335,6 +335,8 @@
 	<string name="keyboard_suggestions">Sugerencias de autocompletado del teclado</string>
 	<string name="keyboard_suggestions_summary">Mostrar sugerencias de teclado (funciona de forma inestable, no recomendado)</string>
 	<string name="kill_sign">Remover verificación de firma</string>
+	<string name="kill_sign_advanced">Método mejorado</string>
+	<string name="kill_sign_orig">Agregar archivo apk original para verificar la integrida</string>
 	<string name="launch_app">Ejecutar</string>
 	<string name="launch_fail">Ejecución fallida</string>
 	<string name="lib_set">Conjuntos de bibliotecas</string>
@@ -376,7 +378,7 @@
 	<string name="mapp_quickedit">Edición rápida</string>
 	<string name="mapp_targetsdk">Versión del SDK de destino</string>
 	<string name="mapp_vn">Nombre de la versión</string>
-	<string name="mark_file">Archivo de marca</string>
+	<string name="mark_file">Marcar archivo</string>
 	<string name="matches">partidos</string>
 	<string name="mauto">Auto</string>
 	<string name="mauto_update">Buscar actualizaciones</string>
@@ -390,12 +392,12 @@
 	<string name="mcleaning_manifest">Limpiando \"AndroidManifest.xml\"</string>
 	<string name="mcolor_properties">Proyecto: %1$s\nDirectorio actual: %2$s\nTamaño: %3$s\nNúmero total de colores: %4$s\nColores editados: %5$s</string>
 	<string name="mcompress">Comprimir</string>
-	<string name="mcompression">Compresión</string>
+	<string name="mcompression">Comprimiendo...</string>
 	<string name="mdebug_rm">eliminar \"android:debuggable\"</string>
 	<string name="menu_position">Posición del menú</string>
 	<string name="menu_position_summary">Posición del menú contextual del archivos</string>
 	<string name="methods_count">Número de métodos</string>
-	<string name="mextract_zip">Extracto aquí</string>
+	<string name="mextract_zip">Extraer aquí</string>
 	<string name="mextract_zip_to">Extraer a \"%s\"</string>
 	<string name="mime_type">Tipo Mime</string>
 	<string name="minfo">Información</string>
@@ -420,7 +422,7 @@
 	<string name="mpatcher_down">Descargar MPatcher</string>
 	<string name="mpatcher_down_summary">MPatcher-programa para ejecutar scripts de shell</string>
 	<string name="mpatcher_run">Ejecutar MPatcher</string>
-	<string name="mplease_wait">Espera un momento...</string>
+	<string name="mplease_wait">Espere un momento...</string>
 	<string name="mplugin_down">Descargar plugin</string>
 	<string name="mplugin_installed">Complemento UnApkm instalado</string>
 	<string name="mplugin_installed_summary">Haga clic para eliminar el complemento</string>
@@ -599,7 +601,7 @@
 	<string name="scrollbar_left">Barra de desplazamiento a la izquierda</string>
 	<string name="scrollbar_left_summary">Barra de desplazamiento en las listas de la izquierda</string>
 	<string name="search_call">Buscar llamadas</string>
-	<string name="search_files">Archivos de búsqueda</string>
+	<string name="search_files">Buscando archivos...</string>
 	<string name="search_hint">Ingrese texto aquí</string>
 	<string name="search_info">Las búsquedas de contenido se realizan en archivos con las siguientes extensiones: %s. Búsqueda multilínea admitida.</string>
 	<string name="search_inres">en resultados de búsqueda</string>
@@ -664,7 +666,7 @@
 	<string name="sort">Método de Clasificación</string>
 	<string name="sorting">Clasificación</string>
 	<string name="split">Split</string>
-	<string name="split_arch">Dividido por arquitectura</string>
+	<string name="split_arch">Dividir por arquitectura</string>
 	<string name="split_install">Instalación...</string>
 	<string name="split_install_toast">La instalación continúa en segundo plano</string>
 	<string name="state_name">Nombre del Estado:</string>

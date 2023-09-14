@@ -66,6 +66,7 @@
     <string name="kill_sign_advanced">Улучшенный метод</string>
     <string name="kill_sign_orig">Добавить оригинал apk для проверки целостности</string>
     <string name="kill_sign_exists">Хук уже был добавлен</string>
+    <string name="kill_sign_by_orig">Взять подпись из указанного оригинала</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
