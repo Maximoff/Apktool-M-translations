@@ -66,6 +66,7 @@
     <string name="kill_sign_advanced">Metode yang ditingkatkan</string>
     <string name="kill_sign_orig">Tambahkan apk asli untuk memeriksa integritas</string>
     <string name="kill_sign_exists">Pengait sudah ditambahkan</string>
+    <string name="kill_sign_by_orig">Mengambil tanda tangan dari dokumen asli yang telah ditentukan</string>
     
     <string name="go_back">Kembali ke folder induk</string>
     <string name="sort">Urutkan metode</string>
@@ -249,8 +250,8 @@
     <string name="delete">Hapus</string>
     <string name="send">Kirim</string>
     <string name="complete">Lengkap</string>
-    <string name="success">Sukses</string>
-    <string name="successf">Sukses: %s</string>
+    <string name="success">Berhasil</string>
+    <string name="successf">Berhasil: %s</string>
     <string name="success_of">Berhasil %1$d dari %2$d!</string>
     <string name="copy">Salin</string>
     <string name="cut">Potong</string>
@@ -509,7 +510,7 @@
     <string name="key_type">Jenis Kunci:</string>
     <string name="key_path">Jenis Jalur:</string>
     <string name="cert_path">Jalur Sertifikat:</string>
-    <string name="key_alias">Alias:</string>
+    <string name="key_alias">Nama Samaran:</string>
     <string name="store_pass">Kata Sandi Keystore:</string>
     <string name="key_pass">Kata Sandi Kunci Pribadi:</string>
     
@@ -650,8 +651,8 @@
     <string name="search_info">Pencarian konten dilakukan pada file dengan ekstensi berikut: %s.\nPencarian multi-baris yang didukung.</string>
     <string name="preview">Pratinjau</string>
     <string name="previewf">Pratinjau \"%s\"</string>
-    <string name="completed_success">Operasi berhasil diselesaikan dengan sukses!</string>
-    <string name="completed_error">Operasi diselesaikan dengan kesalahan!</string>
+    <string name="completed_success">Operasi berhasil diselesaikan dengan baik!</string>
+    <string name="completed_error">Operasi selesai dengan kesalahan!</string>
     <string name="to_unicode">Untuk Unicode</string>
     <string name="from_unicode">Dari Unicode</string>
     <string name="list_methods">Daftar metode</string>
