@@ -512,6 +512,8 @@
     <string name="keep_structure_summary">Trying to keep the folder structure as it is in the original, useful for system apps</string>
     <string name="keep_modified_time">Keep modification time</string>
     <string name="keep_modified_time_summary">Trying to keep file and folder modification times if possible</string>
+    <string name="open_apk">Open apk files</string>
+    <string name="open_apk_summary">Open apk files from other applications in the program</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>

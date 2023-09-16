@@ -502,6 +502,8 @@
     <string name="keep_structure_summary">Пытаться сохранить структуру папок как в оригинале, полезно для системных приложений</string>
     <string name="keep_modified_time">Сохранить время изменения</string>
     <string name="keep_modified_time_summary">Пытаться сохранить время изменения файлов и папок, если это возможно</string>
+    <string name="open_apk">Открывать файлы apk</string>
+    <string name="open_apk_summary">Открывать в программе файлы apk из других приложений</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>
