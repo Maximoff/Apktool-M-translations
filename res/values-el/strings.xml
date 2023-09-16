@@ -779,4 +779,6 @@
     <string name="kill_sign_advanced">Βελτιωμένη μέθοδος</string>
     <string name="kill_sign_orig">Προσθήκη αρχικού apk για έλεγχο ακεραιότητας</string>
     <string name="kill_sign_exists">Το άγκιστρο έχει ήδη προστεθεί</string>
+    <string name="open_apk">Άνοιγμα αρχείων apk</string>
+    <string name="open_apk_summary">Άνοιγμα αρχείων apk από άλλες εφαρμογές στο πρόγραμμα</string>
 </resources>
