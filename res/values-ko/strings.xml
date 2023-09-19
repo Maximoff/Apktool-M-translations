@@ -67,7 +67,7 @@
     <string name="kill_sign">서명 확인 제거</string>
     <string name="kill_sign_advanced">개선된 방법</string>
     <string name="kill_sign_orig">무결성을 확인하려면 원본 APK를 추가하세요.</string>
-    <string name="kill_sign_exists">후크가 이미 추가되었습니다.</string>    
+    <string name="kill_sign_exists">후크가 이미 추가되었습니다.</string>
     <string name="go_back">상위 디렉터리로 돌아가기</string>
     <string name="sort">정렬 방법</string>
     <string name="sorting">정렬</string>
@@ -508,6 +508,8 @@
     <string name="keep_structure_summary">시스템 앱에 유용한 폴더 구조를, 원본 그대로 유지</string>
     <string name="keep_modified_time">수정 시간 유지</string>
     <string name="keep_modified_time_summary">가능하면 파일 및 폴더 수정 시간을 유지하려고합니다.</string>
+    <string name="open_apk">APK 파일 열기</string>
+    <string name="open_apk_summary">다른 앱으로 APK 파일을 엽니다.</string>
     <string name="key_type">키 유형:</string>
     <string name="key_path">키 경로:</string>
     <string name="cert_path">인증서 경로:</string>

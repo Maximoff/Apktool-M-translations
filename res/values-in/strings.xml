@@ -506,6 +506,8 @@
     <string name="keep_structure_summary">Mencoba menjaga struktur folder seperti aslinya, berguna untuk aplikasi sistem</string>
     <string name="keep_modified_time">Jaga waktu modifikasi</string>
     <string name="keep_modified_time_summary">Mencoba menjaga waktu modifikasi file dan folder jika memungkinkan</string>
+    <string name="open_apk">Buka file apk</string>
+    <string name="open_apk_summary">Buka file apk dari aplikasi lain dalam program</string>
     
     <string name="key_type">Jenis Kunci:</string>
     <string name="key_path">Jenis Jalur:</string>

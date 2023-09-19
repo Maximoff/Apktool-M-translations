@@ -3,6 +3,7 @@
 
     <string name="app_name">Apktool M</string>
     <string name="click_once_more">Press back once more to exit!</string>
+    <string name="click_once_more2">Click again to close</string>
     <string name="all_files_saved">All files saved!</string>
 	<string name="storage_error">Grant application access to storage!</string>
 
@@ -73,6 +74,8 @@
     <string name="kill_sign_orig">Add original apk to check integrity</string>
     <string name="kill_sign_exists">The hook has already been added</string>
     <string name="kill_sign_by_orig">Take a signature from the specified original</string>
+    <string name="compare_text">Compare text</string>
+    <string name="files_identical">The files are identical!</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>

@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="accessibility_info">עבור אנדרואיד 13+, יש להעניק הרשאה מיוחדת כדי להפעיל את שירות הנגישות.  לשם כך, פתחו את מידע המערכת על האפליקציה ובתפריט למעלה (שלוש נקודות) תן הרשאה.  ייתכן שתפריט זה לא יופיע עד שתלחץ על שירות הנגישות.</string>
 	<string name="base64_cert">Base64 of certificate: %s</string>
-	<string name="class_count">מספר כיתות</string>
-	<string name="csize_label">גודל דחוס</string>
-	<string name="dex_limit_info">מספר מרבי של שיטות/שדות ב- dex: %d</string>
-	<string name="dexs_info">מידע Dex</string>
 	<string name="editor_state_str">L:%1$d[%2$d], C:%3$d[%4$d], %5$s</string>
 	<string name="editor_state_str2">L:%1$d[%2$d], C:%3$d[%4$d], S:%5$d[%6$d-%7$d], %8$s</string>
-	<string name="fields_count">מספר שדות</string>
-	<string name="floating_button">לחצן צף</string>
-	<string name="floating_button_summary">הצג את לחצן הסתר קבצים אם הקבצים תוקנו</string>
-	<string name="github">קבצים לתרגום</string>
-	<string name="github_summary">משאבים לתרגום התוכנית ב- GitHub</string>
-	<string name="hide">להסתיר</string>
-	<string name="keep_structure">שמור על מבנה התיקיות</string>
-	<string name="keep_structure_summary">מנסה לשמור על מבנה התיקיות כפי שהוא במקור, שימושי עבור אפליקציות מערכת</string>
+	<string name="kill_sign_exists">The hook has already been added</string>
 	<string name="mtr_google_web">Google Web</string>
-	<string name="protos_count">מספר אבות טיפוס</string>
-	<string name="strings_count">מספר מחרוזות</string>
-	<string name="tooltips">תיאורי כלים בעורך</string>
-	<string name="tooltips_summary">תיאורי כלים עבור smali ו- xml</string>
-	<string name="total">סה\"כ</string>
-	<string name="types_count">מספר סוגים</string>
-	<string name="unsupported_android">לא נתמך בגרסת האנדרואיד שלך!</string>
 	<string name="LangDialogTitle">בחר שפה:</string>
 	<string name="LangSummary">שפת יישום</string>
 	<string name="LangTitle">שפה</string>
@@ -34,6 +15,7 @@
 	<string name="aapts33">הורד עבור SDK 33</string>
 	<string name="about">אודות </string>
 	<string name="about_summary">מידע על המחבר, קישורים שימושיים</string>
+	<string name="accessibility_info">עבור אנדרואיד 13+, יש להעניק הרשאה מיוחדת כדי להפעיל את שירות הנגישות.  לשם כך, פתחו את מידע המערכת על האפליקציה ובתפריט למעלה (שלוש נקודות) תן הרשאה.  ייתכן שתפריט זה לא יופיע עד שתלחץ על שירות הנגישות.</string>
 	<string name="accessibility_service_description">שירות לקבלת מידע על הפעלת פעילויות. השירות אינו אוסף נתונים אישיים כלשהם.</string>
 	<string name="accessibility_service_name">פעילות שוטפת</string>
 	<string name="accessibility_service_toast">הפעל את שירות ה- Apktool M</string>
@@ -114,6 +96,7 @@
 	<string name="check_install_summary">אימות קובץ apk לפני ההתקנה</string>
 	<string name="checksum_format">תצוגת בדיקות</string>
 	<string name="checksum_format_summary">פורמט תצוגת CHECKSUM</string>
+	<string name="class_count">מספר כיתות</string>
 	<string name="clear_history">נקה היסטוריית חיפוש?</string>
 	<string name="clear_preview">ניקוי מטמון התמונות הממוזערות</string>
 	<string name="clear_preview_summary">המרווח לניקוי תמונות ממוזערות ישנות הוא בימים</string>
@@ -160,6 +143,7 @@
 	<string name="created_cert_name_summary">שם יוצר החתימה בקובץ SF</string>
 	<string name="crowdin">Crowdin</string>
 	<string name="crowdin_summary">עזור לתרגם את Apktool M לשפה שלך</string>
+	<string name="csize_label">גודל דחוס</string>
 	<string name="custom_signature_file">קובץ חתימה מותאם אישית</string>
 	<string name="custom_signature_file_summary">שימוש בקובץ חתימה מותאם אישית</string>
 	<string name="custom_size">הגודל שלך</string>
@@ -190,7 +174,9 @@
 	<string name="description_type">סוג התיאורים</string>
 	<string name="details">פרטים</string>
 	<string name="dex2jar">Dex2Jar</string>
+	<string name="dex_limit_info">מספר מרבי של שיטות/שדות ב- dex: %d</string>
 	<string name="dex_version">גרסת DEX</string>
+	<string name="dexs_info">מידע Dex</string>
 	<string name="dir">תקיה </string>
 	<string name="dirf">תקיה: %s</string>
 	<string name="dirs_size">גודל התיקיה</string>
@@ -264,6 +250,7 @@
 	<string name="fav_add">הוסף למועדפים</string>
 	<string name="fav_full">מועדפים</string>
 	<string name="fav_short">Fav.</string>
+	<string name="fields_count">מספר שדות</string>
 	<string name="file">קובץ</string>
 	<string name="file_changed">הקובץ השתנה, לשמור שינויים?</string>
 	<string name="file_download">הורדת קבצים: %s</string>
@@ -284,6 +271,8 @@
 	<string name="fix_drawer_summary">אל תסגור את מנהל הקבצים באמצעות החלקה מהירה</string>
 	<string name="fix_line_numbers">תיקון מספרי שורות</string>
 	<string name="fix_line_numbers_summary">תיקון מספרי שורות בעת גלילה</string>
+	<string name="floating_button">לחצן צף</string>
+	<string name="floating_button_summary">הצג את לחצן הסתר קבצים אם הקבצים תוקנו</string>
 	<string name="folder_menu">תפריט תיקיה</string>
 	<string name="folders_rec">תיקיות באופן רקורסיבי</string>
 	<string name="foldersc">dirs</string>
@@ -298,6 +287,8 @@
 	<string name="from_unicode">מ- Unicode</string>
 	<string name="gen_key_summary">גע כדי ליצור קובץ מפתח.</string>
 	<string name="gen_key_title">יצירת קובץ מפתח</string>
+	<string name="github">קבצים לתרגום</string>
+	<string name="github_summary">משאבים לתרגום התוכנית ב- GitHub</string>
 	<string name="go_back">חזרה לספריית האב</string>
 	<string name="go_to">ללכת ל</string>
 	<string name="go_to_line">עבור לתור</string>
@@ -312,6 +303,7 @@
 	<string name="help_templates_text">כדי להחליף רווחים בתבניות \"LABEL\", \"DEFAULT_LABEL\", \"VERSION\", כמו גם מפרידים בתבניות \"ARCH\", \"DATE\" ו- \"TIME\", לדוגמה, עם הקו התחתון \"_\", השתמש בתבנית הבאה: {LABEL_}, {DEFAULT_LABEL_}, {VERSION_}, {ARCH_}, {DATE_}, {TIME_}. הערך יכול להיות שרירותי.</string>
 	<string name="hidden_files">קבצים מוסתרים</string>
 	<string name="hidden_files_summary">הצגת קבצים ותיקיות מוסתרים</string>
+	<string name="hide">להסתיר</string>
 	<string name="icons_outline">מתאר סמלים</string>
 	<string name="icons_outline_summary">הוסף קווי מתאר עבור תמונות ממוזערות ברשימת הקבצים</string>
 	<string name="if_exists">אם הקובץ קיים</string>
@@ -336,6 +328,10 @@
 	<string name="jar2dex">Jar2Dex</string>
 	<string name="jaxp_not_support">תמיכת JAXP 1.5 נדרשת כדי לאמת XML</string>
 	<string name="jks">חנות מפתחות (JKS)</string>
+	<string name="keep_modified_time">שמור על זמן שינוי</string>
+	<string name="keep_modified_time_summary">מנסה לשמור על זמני שינוי קבצים ותיקיות במידת האפשר</string>
+	<string name="keep_structure">שמור על מבנה התיקיות</string>
+	<string name="keep_structure_summary">מנסה לשמור על מבנה התיקיות כפי שהוא במקור, שימושי עבור אפליקציות מערכת</string>
 	<string name="key_alias">כינוי:</string>
 	<string name="key_pass">סיסמת מפתח פרטי:</string>
 	<string name="key_path">נתיב מפתח:</string>
@@ -343,6 +339,10 @@
 	<string name="key_type">סוג מפתח:</string>
 	<string name="keyboard_suggestions">השלמה אוטומטית של המקלדת</string>
 	<string name="keyboard_suggestions_summary">הצגת בקשות למקלדת (פועלת לא יציבה, לא מומלצת)</string>
+	<string name="kill_sign">הסר אימות חתימה</string>
+	<string name="kill_sign_advanced">שיטה משופרת</string>
+	<string name="kill_sign_by_orig">קח חתימה מהמקור שצוין</string>
+	<string name="kill_sign_orig">הוסף APK מקורי כדי לבדוק תקינות</string>
 	<string name="launch_app">הפעלה</string>
 	<string name="launch_fail">ההפעלה נכשלה!</string>
 	<string name="lib_set">ערכות ספריות</string>
@@ -519,6 +519,8 @@
 	<string name="ongoing_notification_summary">הצגת הודעה במהלך בנייה ופרוק</string>
 	<string name="only_here">רק כאן</string>
 	<string name="open">פתוח</string>
+	<string name="open_apk">פתח קבצי APK</string>
+	<string name="open_apk_summary">פתח קבצי APK מיישומים אחרים בתוכנית</string>
 	<string name="open_files">פתיחת קבצים</string>
 	<string name="open_in">פתח ב...</string>
 	<string name="open_in_editor">פתח בעורך</string>
@@ -553,6 +555,7 @@
 	<string name="preview">תצוגה מקדימה</string>
 	<string name="previewf">תצוגה מקדימה של \"%s\"</string>
 	<string name="properties">מאפיינים</string>
+	<string name="protos_count">מספר אבות טיפוס</string>
 	<string name="public_key">מפתח ציבורי: %s</string>
 	<string name="qualicon">סמל באיכות גבוהה (גודל גדול יותר)</string>
 	<string name="quick_panel_sym">התאמה אישית של החלונית</string>
@@ -578,6 +581,7 @@
 	<string name="report_error">אנא דווח על יישום זה ל- Apktool לתיקון: https://github.com/iBotPeaches/Apktool/issues/1728</string>
 	<string name="res_added">נוסף משאב \"%s\"</string>
 	<string name="res_removed">הוסר המשאב \"%s\"</string>
+	<string name="reset_fab">לאפס את מיקום הכפתור הצף?</string>
 	<string name="reset_files">איפוס קבצים</string>
 	<string name="reset_remind">איפוס תזכורות</string>
 	<string name="reset_settings">הגדרות איפוס</string>
@@ -677,6 +681,7 @@
 	<string name="storage_error">הענק גישה לבקשה לאחסון!</string>
 	<string name="store_pass">סיסמת חנות המפתחות:</string>
 	<string name="string_exists">מחרוזת עם אותו שם כבר קיימת!</string>
+	<string name="strings_count">מספר מחרוזות</string>
 	<string name="success">הצלחה</string>
 	<string name="success_of">מוצלח %1$d מתוך %2$d!</string>
 	<string name="successf">הצלחה: %s</string>
@@ -697,16 +702,21 @@
 	<string name="to_unicode">To Unicode</string>
 	<string name="to_vector">המרה לווקטור</string>
 	<string name="to_xml">המרה ל- XML</string>
+	<string name="tooltips">תיאורי כלים בעורך</string>
+	<string name="tooltips_summary">תיאורי כלים עבור smali ו- xml</string>
 	<string name="topmenu_toast">עכשיו אתה יודע שיש כאן תפריט!</string>
+	<string name="total">סה\"כ</string>
 	<string name="total_filesc">סה\"כ קבצים</string>
 	<string name="total_foldersc">סה\"כ dirs</string>
 	<string name="total_repl">סה\"כ תחליפים: %d</string>
 	<string name="translate">תרגם</string>
 	<string name="translate_java">תרגם לג\'אווה</string>
+	<string name="types_count">מספר סוגים</string>
 	<string name="ultra_target_api">אל תשנה את ה- API של היעד</string>
 	<string name="ultra_zip">UltraZip</string>
 	<string name="undo">לבטל</string>
 	<string name="unknown_skip_bytes">זוהו נתונים לא ידועים. דילוג: %d בתים</string>
+	<string name="unsupported_android">לא נתמך בגרסת האנדרואיד שלך!</string>
 	<string name="update_freq">תדירות בדיקת העדכונים</string>
 	<string name="update_freq_summary">תדירות בדיקת העדכונים בימים</string>
 	<string name="upper_case">אותיות רישיות</string>
