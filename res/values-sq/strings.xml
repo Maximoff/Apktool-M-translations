@@ -12,8 +12,8 @@
 	<string name="base64">Baza 64: %s</string>
 	<string name="base64_sign">Baza 64 e nënshkrimit: %s</string>
 	<string name="base64_cert">Baza 64 e certifikatës: %s</string>
-	<string name="yes">po</string>
-	<string name="no">Nr</string>
+	<string name="yes">Po</string>
+	<string name="no">Jo</string>
 	<string name="ok">Ne rregull</string>
 	<string name="cancel">Anulo</string>
 	<string name="go_to">Shkoni në</string>
@@ -35,7 +35,7 @@
 	<string name="split_arch">Ndarë sipas arkitekturës</string>
 	<string name="sets_nf">Nuk u gjet asnjë grup bibliotekë!</string>
 	<string name="enter_path">Fut rrugën</string>
-	<string name="ultra_target_api">mos e ndryshoni API-në e synuar</string>
+	<string name="ultra_target_api">Mos e ndryshoni API-në e synuar</string>
 	<string name="error_try_again">Gabim, ju lutemi provoni përsëri</string>
 	<string name="miui_warn_title">MIUI u zbulua!</string>
 	<string name="miui_warn_message">Duket sikur keni MIUI! Unë rekomandoj hapjen e cilësimeve të zhvilluesit dhe çaktivizimin e optimizimit të MIUI. Nëse nuk e bëni këtë, mund të keni probleme me funksionimin e aplikacionit, gabime dhe përplasje. Ju lutem mos më shkruani për gabimet e programit nëse e keni lexuar këtë mesazh dhe nuk keni ndjekur këshillën time!</string>
@@ -205,8 +205,8 @@
 	<string name="save_all">Ruaj te gjitha</string>
 	<string name="undo">Zhbër</string>
 	<string name="redo">Ribëje</string>
-	<string name="open">Hapur</string>
-	<string name="open_in">Hapur në...</string>
+	<string name="open">Hap</string>
+	<string name="open_in">Hap në...</string>
 	<string name="sharing_file">Ndarja e skedarëve...</string>
 	<string name="open_in_editor">Hapni në redaktues</string>
 	<string name="view_content">Shikoni përmbajtjen</string>
@@ -355,7 +355,7 @@
 	<string name="editor_summary">Konfiguro redaktorin.</string>
 	<string name="signature">Nënshkrimi</string>
 	<string name="signature_summary">Konfiguro cilësimet e nënshkrimit.</string>
-	<string name="build_and_decode">Ndërtoni dhe deshifroni</string>
+	<string name="build_and_decode">Ndërtimi dhe deshifrimi</string>
 	<string name="build_and_decode_summary">Konfiguro cilësimet e Ndërtimit dhe Dekodimit.</string>
 	<string name="font_size">Madhësia e shkronjave të redaktuesit</string>
 	<string name="font_size_summary">Specifikoni madhësinë e paracaktuar të fontit të redaktuesit</string>
@@ -388,7 +388,7 @@
 	<string name="use_monospace_font_summary">Përdorni fontin monospace në redaktues</string>
 	<string name="keyboard_suggestions">Tastiera plotësohet automatikisht</string>
 	<string name="keyboard_suggestions_summary">Shfaq kërkesat e tastierës (punon e paqëndrueshme, nuk rekomandohet)</string>
-	<string name="LangTitle">Gjuhe</string>
+	<string name="LangTitle">Gjuha</string>
 	<string name="LangDialogTitle">Zgjidh gjuhen:</string>
 	<string name="LangSummary">Gjuha e aplikacionit</string>
 	<string name="dirs_size">Madhësia e dosjes</string>
