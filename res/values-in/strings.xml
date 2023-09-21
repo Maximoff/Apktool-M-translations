@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Apktool M</string>
     <string name="click_once_more">Tekan kembali sekali lagi untuk keluar!</string>
+    <string name="click_once_more2">Klik sekali lagi untuk menutup</string>
     <string name="all_files_saved">Semua file tersimpan!</string>
     <string name="storage_error">Berikan akses aplikasi ke penyimpanan!</string>
     
@@ -67,6 +68,9 @@
     <string name="kill_sign_orig">Tambahkan apk asli untuk memeriksa integritas</string>
     <string name="kill_sign_exists">Pengait sudah ditambahkan</string>
     <string name="kill_sign_by_orig">Mengambil tanda tangan dari dokumen asli yang telah ditentukan</string>
+    <string name="compare_text">Bandingkan teks</string>
+    <string name="files_identical">Berkas-berkasnya identik!</string>
+    <string name="delete_files_cm">Hapus file setelah kompresi</string>
     
     <string name="go_back">Kembali ke folder induk</string>
     <string name="sort">Urutkan metode</string>
