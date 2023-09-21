@@ -70,6 +70,7 @@
     <string name="kill_sign_by_orig">Взять подпись из указанного оригинала</string>
     <string name="compare_text">Сравнить текст</string>
     <string name="files_identical">Файлы идентичны!</string>
+    <string name="delete_files_cm">Удалить файлы после сжатия</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>

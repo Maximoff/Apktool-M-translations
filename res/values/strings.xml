@@ -76,6 +76,7 @@
     <string name="kill_sign_by_orig">Take a signature from the specified original</string>
     <string name="compare_text">Compare text</string>
     <string name="files_identical">The files are identical!</string>
+    <string name="delete_files_cm">Delete files after compression</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
