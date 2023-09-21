@@ -781,4 +781,8 @@
     <string name="kill_sign_exists">Το άγκιστρο έχει ήδη προστεθεί</string>
     <string name="open_apk">Άνοιγμα αρχείων apk</string>
     <string name="open_apk_summary">Άνοιγμα αρχείων apk από άλλες εφαρμογές στο πρόγραμμα</string>
+    <string name="click_once_more2">Κλικ ξανά για κλείσιμο</string>
+    <string name="compare_text">Σύγκριση κειμένου</string>
+    <string name="files_identical">Τα αρχεία είναι πανομοιότυπα!</string>
+    <string name="delete_files_cm">Διαγραφή αρχείων μετά τη συμπίεση</string>
 </resources>
