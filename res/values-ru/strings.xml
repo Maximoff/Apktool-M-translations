@@ -73,6 +73,7 @@
     <string name="delete_files_cm">Удалить файлы после сжатия</string>
     <string name="dec_indent">Уменьшить отступ</string>
     <string name="inc_indent">Увеличить отступ</string>
+    <string name="search_class">Поиск класса \"%s\"</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -154,6 +155,7 @@
 	<string name="mark_file">Отметить файл</string>
 	<string name="create_logcat">Создать файл LogCat</string>
 	<string name="aapts33">Загрузить для SDK 33</string>
+    <string name="aapts33_warn">Будьте готовы, что файлы для SDK 33 могут работать медленно и не стабильно!</string>
 	<string name="aapt2_dens">Задать плотность экрана</string>
 	<string name="aapt2_configs">Задать конфигурации</string>
 	<string name="aapt2_dens_info">Список плотностей экрана, под которые будет оптимизирован APK, &lt;b>разделённый запятыми&lt;/b>. Все ресурсы, которые не использовались бы на устройствах с указанной плотностью, будут удалены из APK.</string>

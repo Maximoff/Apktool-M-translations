@@ -71,6 +71,8 @@
     <string name="compare_text">Bandingkan teks</string>
     <string name="files_identical">Berkas-berkasnya identik!</string>
     <string name="delete_files_cm">Hapus file setelah kompresi</string>
+    <string name="dec_indent">Kurangi indentasi</string>
+    <string name="inc_indent">Tingkatkan indentasi</string>
     
     <string name="go_back">Kembali ke folder induk</string>
     <string name="sort">Urutkan metode</string>

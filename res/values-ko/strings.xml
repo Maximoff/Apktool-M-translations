@@ -553,7 +553,7 @@
     <string name="mcleaning">\"%s\"의 파일 정리 중</string>
     <string name="mcleaning_manifest">\"AndroidManifest.xml\" 정리 중</string>
     <string name="mextract_zip">여기에 추출</string>
-    <string name="mextract_zip_to">\"%s\"에 추출</string>
+    <string name="mextract_zip_to">추출 : \"%s\"</string>
     <string name="mplease_wait">기다려 주십시오...</string>
     <string name="split">분할</string>
     <string name="mcompress">압축</string>

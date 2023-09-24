@@ -79,6 +79,7 @@
     <string name="delete_files_cm">Delete files after compression</string>
     <string name="dec_indent">Decrease indent</string>
     <string name="inc_indent">Increase indent</string>
+    <string name="search_class">Search for class \"%s\"</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -163,6 +164,7 @@
 	<string name="mark_file">Mark file</string>
 	<string name="create_logcat">Create LogCat file</string>
 	<string name="aapts33">Download for SDK 33</string>
+    <string name="aapts33_warn">Be prepared that files for SDK 33 may be slow and unstable!</string>
 	<string name="aapt2_dens">Set screen density</string>
 	<string name="aapt2_configs">Set configurations</string>
 	<string name="aapt2_dens_info">&lt;b>Comma separated&lt;/b> list of the screen densities that the APK will be optimized for. All the resources that would be unused on devices of the given densities will be removed from the APK.</string>
