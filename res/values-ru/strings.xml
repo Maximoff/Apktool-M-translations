@@ -74,6 +74,8 @@
     <string name="dec_indent">Уменьшить отступ</string>
     <string name="inc_indent">Увеличить отступ</string>
     <string name="search_class">Поиск класса \"%s\"</string>
+    <string name="checksums_original">Подмена контрольных сумм из оригинала</string>
+    <string name="clear">Очистить</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>

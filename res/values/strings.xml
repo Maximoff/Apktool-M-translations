@@ -80,6 +80,8 @@
     <string name="dec_indent">Decrease indent</string>
     <string name="inc_indent">Increase indent</string>
     <string name="search_class">Search for class \"%s\"</string>
+    <string name="checksums_original">Replacing checksums from the original</string>
+    <string name="clear">Clear</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
