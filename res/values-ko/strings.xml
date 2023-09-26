@@ -156,6 +156,7 @@
     <string name="mark_file">파일 표시</string>
     <string name="create_logcat">LogCat 파일 생성</string>
     <string name="aapts33">SDK 33용 다운로드</string>
+    <string name="aapts33_warn">SDK 33용 파일은 느리고 불안정할 수 있습니다!</string>    
     <string name="aapt2_dens">화면 밀도 설정</string>
     <string name="aapt2_configs">구성 설정</string>
     <string name="aapt2_dens_info">APK가 최적화될 화면 밀도의 &lt;b>쉼표로 구분된&lt;/b> 목록입니다. 지정된 밀도의 기기에서 사용되지 않는 모든 리소스는 APK에서 제거됩니다.</string>
