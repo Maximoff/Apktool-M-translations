@@ -789,4 +789,7 @@
     <string name="inc_indent">Αύξηση εσοχής</string>
     <string name="search_class">Αναζήτηση για κλάση \"%s\"</string>
     <string name="aapts33_warn">Να είστε ενήμεροι ότι τα αρχεία για το SDK 33 μπορεί να είναι αργά και ασταθή!</string>
+    <string name="checksums_original">Αντικατάσταση των αθροισμάτων ελέγχου από το αρχικό</string>
+    <string name="clear">Εκκαθάριση</string>
+    <string name="kill_sign_notice">Μια εφαρμογή που υποβάλλεται σε επεξεργασία από αυτήν τη λειτουργία δεν θα μπορεί να λειτουργήσει σε εκδόσεις Android παλαιότερες από 5!</string>
 </resources>
