@@ -83,6 +83,7 @@
     <string name="search_class">Search for class \"%s\"</string>
     <string name="checksums_original">Replacing checksums from the original</string>
     <string name="clear">Clear</string>
+    <string name="no_data">no data available</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -651,6 +652,8 @@
 	<string name="github_summary">Resources for translating the program on GitHub</string>
 	
 	<string name="search_call">Find calls</string>
+    <string name="search_call_get">Find get calls</string>
+    <string name="search_call_put">Find put calls</string>
 	<string name="search_over">Find overrides</string>
 	<string name="search_files">Search files</string>
 	<string name="search_result">Search result</string>

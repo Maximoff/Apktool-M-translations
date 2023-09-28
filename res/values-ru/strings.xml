@@ -77,6 +77,7 @@
     <string name="search_class">Поиск класса \"%s\"</string>
     <string name="checksums_original">Подмена контрольных сумм из оригинала</string>
     <string name="clear">Очистить</string>
+    <string name="no_data">данные отсутствуют</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -639,6 +640,8 @@
 	<string name="github_summary">Ресурсы для перевода программы на GitHub</string>
 	
 	<string name="search_call">Найти вызовы</string>
+    <string name="search_call_get">Найти вызовы get</string>
+    <string name="search_call_put">Найти вызовы put</string>
 	<string name="search_over">Найти переопределения</string>
 	<string name="search_files">Поиск файлов</string>
 	<string name="search_result">Результаты поиска</string>
