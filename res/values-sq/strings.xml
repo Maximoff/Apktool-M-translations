@@ -80,8 +80,8 @@
 	<string name="smali_snalysis">Analiza Smali</string>
 	<string name="smali_snalysis_desc">Kanali i Analizës Smali</string>
 	<string name="failed_open">\"%s\" nuk mund të hapej!</string>
-	<string name="filesc">dosjet</string>
-	<string name="foldersc">thuaj</string>
+	<string name="filesc">Skader</string>
+	<string name="foldersc">Dosje</string>
 	<string name="selected">të zgjedhura</string>
 	<string name="total_filesc">Totali i skedarëve</string>
 	<string name="total_foldersc">Drejtori totale</string>
@@ -250,7 +250,7 @@
 	<string name="successf">Sukses: %s</string>
 	<string name="success_of">%1$d nga %2$d me sukses!</string>
 	<string name="copy">Kopjo</string>
-	<string name="cut">Prerje</string>
+	<string name="cut">Prije</string>
 	<string name="copying">Duke kopjuar</string>
 	<string name="moving">Duke lëvizur</string>
 	<string name="moving_file">Po lëviz \"%s\"...</string>
