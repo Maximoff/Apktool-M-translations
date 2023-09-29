@@ -792,4 +792,7 @@
     <string name="checksums_original">Αντικατάσταση των αθροισμάτων ελέγχου από το αρχικό</string>
     <string name="clear">Εκκαθάριση</string>
     <string name="kill_sign_notice">Μια εφαρμογή που υποβάλλεται σε επεξεργασία από αυτήν τη λειτουργία δεν θα μπορεί να λειτουργήσει σε εκδόσεις Android παλαιότερες από 5!</string>
+    <string name="no_data">μη διαθέσιμα δεδομένα</string>
+    <string name="search_call_get">Αναζήτηση κλήσεων get</string>
+    <string name="search_call_put">Αναζήτηση κλήσεων put</string>
 </resources>
