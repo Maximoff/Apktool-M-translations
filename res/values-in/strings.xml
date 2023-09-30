@@ -76,6 +76,7 @@
     <string name="search_class">Cari class \"%s\"</string>
     <string name="checksums_original">Mengganti checksum dari yang asli</string>
     <string name="clear">Hapus</string>
+    <string name="no_data">tidak ada data yang tersedia</string>
     
     <string name="go_back">Kembali ke folder induk</string>
     <string name="sort">Urutkan metode</string>
@@ -278,7 +279,7 @@
     <string name="decoding_shared_library">Mendekode Pustaka Bersama \(%1$s\), pkgId: %2$d</string>
     <string name="unknown_skip_bytes">Data tidak dikenal terdeteksi. Melewati: %d byte\(s\)</string>
     <string name="using_apktool">Menggunakan Apktool M %1$s pada %2$s</string>
-    <string name="build_run_title">Kompilasi...</string>
+    <string name="build_run_title">Mengkompilasi...</string>
     <string name="sign_done">"Tanda tangan selesai dan file keluarannya adalah '%1$s'."</string>
     <string name="verify_v1_success">Verifikasi tanda tangan V1 berhasil.</string>
     <string name="verify_v1_fail">Verifikasi tanda tangan V1 gagal.</string>
@@ -644,6 +645,8 @@
     <string name="github_summary">Sumber untuk menerjemahkan program di GitHub</string>
     
     <string name="search_call">Temukan panggilan</string>
+    <string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
+    <string name="search_call_put">Temukan panggilan yang dimasukkan</string>
     <string name="search_over">Temukan penggantian</string>
     <string name="search_files">Cari file</string>
     <string name="search_result">Hasil pencarian</string>
