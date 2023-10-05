@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Register</item>
+		<item>Nilai-nilai literal</item>
+		<item>Tipe data primitif</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA merupakan register 4-bit dengan rentang nilai v0 – v15\nvAA merupakan register 8-bit dengan rentang nilai v0 - v255\nvAAAA adalah register 16-bit dengan rentang nilai v0 - v65535</item>
+		<item>0xF, 0xFF, dll. digunakan. untuk mewakili nilai literal. Seperti halnya register, bilangan F digunakan untuk mewakili suatu rentang nilai, misalnya:\nKisaran nilai 0xF diwakili oleh [-0x8, 0x7]\nRentang nilai 0xFF diwakili oleh [-0x80, 0x7F]</item>
+		<item>V - batal, Z - boolean, B - byte\nC - char, S - pendek, I - int\nJ - panjang, F - mengambang, D - ganda\nvoid: hanya dapat digunakan untuk tipe pengembalian\nboolean: menyimpan nilai benar atau salah\nbyte: menyimpan bilangan bulat dari -128 hingga 127 dan menempati 1 byte\npendek: menyimpan bilangan bulat dari -32768 hingga 32767 dan membutuhkan 2 byte\nint: menyimpan bilangan bulat dari -2147483648 hingga 2147483647 dan menempati 4 byte\nlong: menyimpan bilangan bulat dari -9223372036854775808 hingga 9223372036854775807 dan menempati 8 byte\ndouble: menyimpan angka floating point dari ±4.9*10³²⁴ hingga ±1.7976931348623157*10³⁰⁸ dan menempati 8 byte. Titik digunakan sebagai pemisah desimal dalam literal pecahan.\nfloat: menyimpan angka floating point dari -3.4*10³⁸ hingga 3.4*10³⁸ dan menempati 4 byte\nchar: menyimpan satu karakter dalam pengkodean UTF-16 dan menempati 2 byte, sehingga rentang nilai yang disimpan adalah dari 0 hingga 65535.</item>
+		<item>Tidak ada tindakan.</item>
+		<item>Memindahkan nilai register vB ke register vA.</item>
+		<item>Memindahkan nilai register vBBBB ke register vAA.</item>
+		<item>Memindahkan nilai register vBBBB ke register vAAAA.</item>
+		<item>Memindahkan nilai panjang/ganda pasangan register (vB, vB+1) ke pasangan register vA, vA+1.</item>
+		<item>Memindahkan nilai panjang/ganda dari pasangan register (vBBBB, vBBBB+1) ke pasangan register vAA, vAA+1.</item>
+		<item>Memindahkan nilai panjang/ganda dari pasangan register (vBBBB, vBBBB+1) ke pasangan register vAAAA, vAAAA+1.</item>
+		<item>Memindahkan referensi objek dari register vB ke register vA.</item>
+		<item>Memindahkan referensi objek dari register vBBBB ke register vAA.</item>
+		<item>Memindahkan referensi objek dari register vBBBB ke register vAAAA.</item>
+		<item>Memindahkan nilai kembalian dari metode yang dipanggil sebelumnya ke dalam register vAA.</item>
+		<item>Memindahkan nilai panjang/ganda yang dikembalikan oleh metode yang dipanggil sebelumnya ke dalam pasangan register vAA, vAA+1.</item>
+		<item>Memindahkan referensi objek yang dikembalikan oleh metode yang dipanggil sebelumnya ke dalam register vAA.</item>
+		<item>Memindahkan referensi ke objek yang dikecualikan yang dikeluarkan selama pemanggilan metode (selama eksekusi) ke register vAA.</item>
+		<item>Kembali tanpa nilai kembalian.</item>
+		<item>Kembali dengan mengembalikan nilai dari register vAA.</item>
+		<item>Kembali dengan mengembalikan nilai ganda/panjang ke dalam sepasang register vAA, vAA+1.</item>
+		<item>Kembali dengan mengembalikan nilai referensi objek dari register vAA.</item>
+		<item>Menempatkan konstanta 4-bit ke dalam register vA.</item>
+		<item>Menempatkan konstanta 16-bit ke dalam register vAA.</item>
+		<item>Menempatkan konstanta bilangan bulat ke dalam register vAA.</item>
+		<item>Menempatkan konstanta 16-bit ke bit atas register vAA. Digunakan untuk menginisialisasi nilai float (floating point).</item>
+		<item>Menempatkan konstanta bilangan bulat 16-bit ke dalam pasangan register vAA, vAA+1, mengubah konstanta bilangan bulat menjadi konstanta panjang.</item>
+		<item>Menempatkan konstanta bilangan bulat 32-bit ke dalam pasangan register vAA, vAA+1, mengubah konstanta bilangan bulat menjadi konstanta panjang.</item>
+		<item>Menempatkan konstanta 64-bit ke dalam pasangan register vAA, vAA+1.</item>
+		<item>Menempatkan konstanta 16-bit ke dalam 16-bit teratas dari pasangan register vAA, vAA+1. Digunakan untuk menginisialisasi nilai ganda (floating point).</item>
+		<item>Menempatkan referensi ke string yang ditentukan dalam register vAA.</item>
+		<item>Menempatkan referensi ke string yang ditentukan dalam register vAA.</item>
+		<item>Menempatkan referensi ke konstanta string (string) yang diidentifikasi oleh string_id ke dalam register vAA.</item>
+		<item>Mendapatkan monitor objek yang direferensikan oleh register vAA.</item>
+		<item>Merilis monitor objek yang direferensikan oleh register vAA.</item>
+		<item>Memeriksa apakah referensi objek yang terdapat dalam register vAA dapat dilemparkan ke kelas yang diidentifikasi oleh type_id. Melemparkan ClassCastException jika tidak bisa, jika tidak, lanjutkan eksekusi.</item>
+		<item>Memeriksa apakah isi register vB merupakan turunan dari kelas yang diidentifikasi oleh type_id. Setel register vA ke bukan nol jika ada, 0 jika tidak.\nvA = vB tipe instanceOf? 10</item>
+		<item>Menentukan jumlah elemen array dari register vB dan menempatkan nilainya dalam register vA.\nvA = vB.panjang</item>
+		<item>Membuat instance dari tipe objek dan menempatkan referensi ke instance yang dibuat di register vAA.</item>
+		<item>Membuat array baru variabel type_id dengan ukuran elemen register vB dan menempatkan referensi ke array di register vA.</item>
+		<item>Membuat array data baru bertipe type_id dan mengisinya dengan parameter (yaitu, tidak ada array panjang/ganda, tetapi tipe referensi diperbolehkan). Referensi ke array yang baru dibuat dapat diperoleh dengan menggunakan pernyataan move-result-object segera setelah pernyataan ini (jika ingin digunakan).</item>
+		<item>Membuat array data baru bertipe type_id dan mengisinya dengan rentang parameter (yaitu, tidak ada array panjang/ganda, tetapi tipe referensi dapat diterima). Referensi ke array yang baru dibuat dapat diperoleh dengan menggunakan pernyataan move-result-object segera setelah pernyataan ini (jika ingin digunakan).</item>
+		<item>Mengisi array yang direferensikan dalam register vAA dengan data statis. Lokasi data adalah jumlah posisi instruksi ini dan offsetnya.</item>
+		<item>Melempar objek pengecualian. Referensi ke objek pengecualian di register vAA.</item>
+		<item>Lompat tanpa syarat ke offset 8-bit pendek (integer).</item>
+		<item>Lompatan tanpa syarat ke offset 16-bit.</item>
+		<item>Lompatan tanpa syarat ke offset 32-bit.</item>
+		<item>Mengimplementasikan operator Switch ketika konstanta kontrol berdekatan satu sama lain (berjajar). Instruksi menggunakan tabel indeks. Offset instruksi untuk kasus tertentu ditentukan oleh indeks vAA. Jika indeks vAA melampaui tabel, eksekusi dilanjutkan dengan pernyataan berikutnya (default).</item>
+		<item>Mengimplementasikan operator Switch jika tabelnya jarang. Instruksi menggunakan tabel yang menentukan offset untuk setiap konstanta. Jika tidak ada kecocokan yang ditemukan dalam tabel, maka pernyataan berikutnya akan dieksekusi (kasus default).</item>
+		<item>Membandingkan nilai float (floating point) di vBB dan vCC dan menempatkan nilai integer di register vAA:\nvAA = vBB &lt; vCC ? ya: 1, tidak: -1, sama dengan: 0</item>
+		<item>Membandingkan nilai float (floating point) di vBB dan vCC dan menempatkan nilai integer di register vAA:\nvAA = vBB &lt; vCC ? ya: 1, tidak: -1, sama dengan: 0</item>
+		<item>Membandingkan nilai ganda (floating point) di vBB dan vCC dan menempatkan nilai integer di register vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? kamu\nya: 1, tidak: -1, sama dengan: 0</item>
+		<item>Membandingkan nilai ganda (floating point) di vBB dan vCC dan menempatkan nilai integer di register vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ya: 1, tidak: -1, sama dengan: 0</item>
+		<item>Membandingkan nilai panjang (integer) di vBB dan vCC dan menempatkan nilai integer (integer) di register vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ya: 1, tidak: -1, sama dengan: 0</item>
+		<item>Melompat ke label yang ditentukan jika vA == vB. vA dan vB berisi nilai integer.\n(eq adalah kependekan dari Equals)</item>
+		<item>Melompat ke label yang ditentukan jika vA != vB. vA dan vB berisi nilai integer.\n(ne adalah kependekan dari Not Equals)</item>
+		<item>Melompat ke label yang ditentukan jika vA &lt; vB. vA dan vB berisi nilai integer.\n(singkatan dari Less Than)</item>
+		<item>Melompat ke label yang ditentukan jika vA</item>
+		<item>Melompat ke label yang ditentukan jika vA > vB. vA dan vB berisi nilai integer.\n(gt adalah kependekan dari Greater Than/More Than)</item>
+		<item>Melompat ke label yang ditentukan jika vA >= vB. vA dan vB berisi nilai integer.\n(ge adalah kependekan dari Lebih Besar dari atau Sama)</item>
+		<item>Melompat ke label yang ditentukan jika vAA == 0. vAA berisi nilai integer.\n(eqz adalah kependekan dari Equals to Zero)</item>
+		<item>Melompat ke label yang ditentukan jika vAA != 0. vAA berisi nilai integer.\n(nez adalah kependekan dari Not Equals to Zero)</item>
+		<item>Melompat ke label yang ditentukan jika vAA &lt; 0. vAA berisi nilai integer.\n(ltz adalah kependekan dari Less Than Zero)</item>
+		<item>Melompat ke label yang ditentukan jika vAA</item>
+		<item>Melompat ke label yang ditentukan jika vAA > 0. vAA berisi nilai integer.\n(gtz adalah kependekan dari Greater Than Zero)</item>
+		<item>Melompat ke label yang ditentukan jika vAA >= 0. vAA berisi nilai integer.\n(gez adalah singkatan dari Greater than atau Equal to Zero)</item>
+		<item>Mendapatkan nilai integer pada indeks yang terdapat dalam vCC dari array yang direferensikan dalam vBB dan menempatkannya di register vAA.\nvAA = vBB[vCC]</item>
+		<item>Mendapatkan, pada indeks yang terdapat dalam vCC, dari larik yang direferensikan dalam vBB, nilai ganda/panjang dan menempatkannya pada pasangan register vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Menerima, pada indeks yang terdapat dalam vCC, dari array yang direferensikan dalam vBB, referensi ke objek dan menempatkannya di register vAA.\nvAA = vBB[vCC]</item>
+		<item>Mendapatkan, pada indeks yang terdapat dalam vCC, dari array yang direferensikan dalam vBB, nilai boolean dan menempatkannya di register vAA.\nvAA = vBB[vCC]</item>
+		<item>Mengambil, pada indeks yang terdapat dalam vCC, dari larik yang direferensikan dalam vBB, nilai byte (integer) dan menempatkannya dalam register vAA.\nvAA = vBB[vCC]</item>
+		<item>Mengambil, pada indeks yang terdapat dalam vCC, dari larik yang direferensikan dalam vBB, nilai char dan menempatkannya di register vAA.\nvAA = vBB[vCC]</item>
+		<item>Mengambil, pada indeks yang terdapat dalam vCC, dari larik yang direferensikan dalam vBB, nilai pendek (integer) dan menempatkannya dalam register vAA.\nvAA = vBB[vCC]</item>
+		<item>Menempatkan nilai integer dari vAA ke dalam array yang direferensikan di vBB dengan elemen yang berisi register vCC.\nvBB[vCC] = vAA</item>
+		<item>Menempatkan nilai ganda/panjang dari pasangan register vAA, vAA+1 ke dalam larik yang direferensikan dalam vBB, dengan elemen yang berisi register vCC.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Menempatkan referensi ke objek dari vAA ke dalam array yang direferensikan di vBB dengan elemen dengan register vCC.\nvBB[vCC] = vAA</item>
+		<item>Menempatkan nilai boolean dari vAA ke dalam array yang direferensikan oleh vBB dengan elemen yang berisi register vCC.\nvBB[vCC] = vAA</item>
+		<item>Menempatkan nilai byte (integer) dari vAA ke dalam array yang direferensikan dalam vBB dengan elemen yang berisi register vCC.\nvBB[vCC] = vAA</item>
+		<item>Menempatkan nilai char (karakter) dari vAA ke dalam array yang direferensikan dalam vBB berdasarkan elemen dengan register vCC.\nvBB[vCC] = vAA</item>
+		<item>Menempatkan nilai pendek (integer) dari vAA ke dalam array yang direferensikan di vBB dengan elemen yang berisi register vCC.\nvBB[vCC] = vAA</item>
+		<item>Membaca nilai dari kolom instance dan menempatkannya di register vA. Referensi ke kelas yang berisi field ini ada di register vB.\nvA = vB.bidang</item>
+		<item>Membaca nilai ganda/panjang dari kolom instance dan menempatkannya dalam sepasang register (vA, vA+1). Referensi ke kelas yang berisi field ini ada di register vB.\n(vA, vA+1) = vB.bidang</item>
+		<item>Membaca referensi objek dari kolom instance dan menempatkannya di register vA. Referensi ke kelas yang berisi field ini ada di register vB.\nvA = vB.bidang</item>
+		<item>Membaca nilai boolean dari kolom instance dan menempatkannya di register vA. Referensi ke kelas yang berisi field ini ada di register vB.\nvA = vB.bidang</item>
+		<item>Membaca nilai byte (integer) dari kolom instance dan menempatkannya di register vA. Referensi ke kelas yang berisi field ini ada di register vB.\nvA = vB.bidang</item>
+		<item>Membaca nilai char dari kolom instance dan menempatkannya di register vA. Referensi ke kelas yang berisi field ini ada di register vB.\nvA = vB.bidang</item>
+		<item>Membaca nilai pendek (integer) dari kolom instance dan menempatkannya di register vA. Referensi ke kelas yang berisi field ini ada di register vB.\nvA = vB.bidang</item>
+		<item>Menempatkan nilai dari register vA ke dalam kolom instance. Referensi ke kelas yang berisi field ini ada di register vB.\nvB.bidang = vA</item>
+		<item>Menempatkan nilai ganda/panjang dari pasangan register (vA, vA+1) ke dalam kolom instance. Referensi ke kelas yang berisi field ini ada di register vB.\nvB.bidang = (vA, vA+1)</item>
+		<item>Menempatkan referensi ke objek dari register vA ke dalam kolom instance. Referensi ke kelas yang berisi field ini ada di register vB.\nvB.bidang = vA</item>
+		<item>Menempatkan nilai boolean dari register vA ke dalam kolom instance. Referensi ke kelas yang berisi field ini ada di register vB.\nvB.bidang = vA</item>
+		<item>Menetapkan nilai byte (integer) dari bidang Boolean yang ditentukan dalam instance yang direferensikan oleh register vB sama dengan nilai register vA, yaitu:\nvB.bidang = vA</item>
+		<item>Menetapkan nilai char (karakter) dari bidang Boolean yang ditentukan dalam instance yang direferensikan oleh register vB sama dengan nilai register vA, yaitu:\nvB.bidang = vA</item>
+		<item>Menetapkan nilai pendek (integer) dari bidang Boolean yang ditentukan dalam instance yang direferensikan oleh register vB sama dengan nilai register vA, yaitu:\nvB.bidang = vA</item>
+		<item>Membaca nilai dari bidang statis dan menempatkannya di register vAA. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Membaca nilai ganda/panjang dari bidang statis dan menempatkannya dalam sepasang register vAA, vAA+1. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Membaca referensi objek dari bidang statis dan menempatkannya di register vAA. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Membaca nilai boolean dari bidang statis dan menempatkannya di register vAA. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Membaca nilai byte (integer) dari bidang statis dan menempatkannya di register vAA. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Membaca nilai char dari bidang statis dan menempatkannya di register vAA. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Membaca nilai pendek (integer) dari bidang statis dan menempatkannya di register vAA. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Menempatkan nilai dari register vAA ke dalam bidang (bidang statis). Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Menempatkan nilai ganda/panjang dari sepasang register vAA, vAA+1 ke dalam bidang (bidang statis). Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Menempatkan referensi ke objek dari register vAA ke dalam bidang (bidang statis). Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Menempatkan nilai boolean dari register vAA ke dalam bidang (bidang statis). Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Menempatkan nilai byte (integer) dari register vAA ke dalam bidang (bidang statis). Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Menempatkan nilai char dari register vAA ke dalam bidang statis. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Menempatkan nilai pendek (integer) dari register vAA ke dalam bidang statis. Register yang berisi referensi ke kelas yang berisi field ini tidak digunakan.</item>
+		<item>Memanggil (menjalankan) metode virtual dengan parameter. Parameter ditunjukkan dalam kurung kurawal. Parameter pertama (register v2) berisi referensi ke kelas yang berisi metode yang dipanggil, parameter kedua (isi register v3) diteruskan ke metode yang dipanggil.</item>
+		<item>Memanggil (menjalankan) metode virtual dengan parameter langsung dari kelas induk.</item>
+		<item>Memanggil (menjalankan) metode dengan parameter tanpa izin dari metode virtual.</item>
+		<item>Memanggil (menjalankan) metode statis dengan parameter. Parameter ditunjukkan dalam kurung kurawal. Parameter (isi register v3) diteruskan ke metode yang dipanggil. Kelas yang berisi metode yang dipanggil ditunjukkan setelah kurung kurawal.</item>
+		<item>Memanggil (menjalankan) metode antarmuka dengan parameter.</item>
+		<item>Memanggil (menjalankan) metode virtual dengan parameter, tetapi parameter tersebut harus terdapat dalam register dengan nomor secara berurutan.</item>
+		<item>Memanggil (menjalankan) metode virtual dengan parameter langsung dari kelas induk, tetapi parameter tersebut harus terdapat dalam register dengan nomor urut.</item>
+		<item>Memanggil (menjalankan) metode dengan parameter tanpa izin metode virtual, tetapi parameter tersebut harus terkandung dalam register bernomor urut.</item>
+		<item>Memanggil (menjalankan) metode statis dengan parameter, tetapi parameter tersebut harus terkandung dalam register dengan nomor urut.</item>
+		<item>Memanggil (menjalankan) metode antarmuka dengan parameter, tetapi parameter tersebut harus terkandung dalam register bernomor urut.</item>
+		<item>Menghitung vA = -vB untuk nilai bertipe integer.</item>
+		<item>Menghitung vA = ~vB untuk nilai integer.\nvA = ~vB</item>
+		<item>Menghitung (vA, vA+1) = -(vB, vB+1) untuk nilai bertipe panjang (integer).</item>
+		<item>Menghitung (vA, vA+1) = ~(vB, vB+1) untuk nilai bertipe panjang (integer).</item>
+		<item>Menghitung vA = -vB untuk nilai float.</item>
+		<item>Menghitung (vA, vA+1) = -(vB, vB+1) untuk nilai ganda (floating point).</item>
+		<item>Mengonversi bilangan bulat dari vB menjadi long dan menyimpannya dalam pasangan register vA, vA+1.\n(vA, vA+1) = (panjang) vB</item>
+		<item>Mengonversi bilangan bulat dari vB menjadi float dan menyimpannya di register vA.\nvA = (mengambang) vB</item>
+		<item>Mengonversi bilangan bulat dari vB menjadi ganda (floating point) dan menyimpannya dalam pasangan register vA, vA+1.\n(vA, vA+1) = (ganda) vB</item>
+		<item>Mengonversi nilai panjang (integer) dari vB, vB+1 menjadi integer (integer) dan menyimpannya di register vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Mengonversi nilai panjang (integer) dari vB, vB+1 menjadi float (floating point) dan menyimpannya di register vA.\nvA = (mengambang) (vB, vB+1)</item>
+		<item>Mengonversi nilai panjang (integer) dari vB, vB+1 menjadi double (floating point) dan menyimpannya dalam pasangan register vA, vA+1.\n(vA, vA+1) = (ganda) (vB, vB+1)</item>
+		<item>Mengonversi nilai float (floating point) dari vB menjadi nilai integer (integer) dan menyimpannya di register vA.\nvA = (int)vB</item>
+		<item>Mengonversi nilai float (floating point) dari vB menjadi nilai panjang (integer) dan menyimpannya dalam pasangan register vA, vA+1.\n(vA, vA+1) = (panjang) vB</item>
+		<item>Mengonversi nilai float (floating point) dari vB menjadi nilai double (floating point) dan menyimpannya dalam pasangan register vA, vA+1.\n(vA, vA+1) = (ganda) vB</item>
+		<item>Mengonversi nilai ganda (floating point) dari vB, vB+1 menjadi nilai integer (integer) dan menyimpannya di register vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Mengonversi nilai ganda (floating point) dari vB, vB+1 menjadi nilai panjang (integer) dan menyimpannya dalam pasangan register vA, vA+1.\n(vA, vA+1) = (panjang) (vB, vB+1)</item>
+		<item>Mengonversi nilai ganda (floating point) dari vB, vB+1 menjadi nilai float (floating point) dan menyimpannya di register vA.\nvA = (mengambang) (vB, vB+1)</item>
+		<item>Mengonversi nilai integer dari vB menjadi nilai byte dan menyimpannya di register vA.\nvA = (bita) vB</item>
+		<item>Mengonversi nilai integer dari vB menjadi nilai char dan menyimpannya di register vA.\nvA = (karakter)vB</item>
+		<item>Mengonversi nilai integer dari vB menjadi nilai pendek dan menyimpannya di register vA.\nvA = (pendek) vB</item>
+		<item>Menghitung vBB + vCC dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB + vCC</item>
+		<item>Menghitung vBB - vCC dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB - vCC</item>
+		<item>Menghitung vBB * vCC dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB * vCC</item>
+		<item>Menghitung vBB/vCC dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB/vCC</item>
+		<item>Menghitung vBB % vCC dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB% vCC</item>
+		<item>Menghitung vBB &amp; vCC (logis AND) dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB &amp; vCC</item>
+		<item>Menghitung vBB | vCC (logis OR) dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB | vCC</item>
+		<item>Menghitung vBB^vCC (eksklusif OR) dan menyimpan hasilnya dalam register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB ^ vCC</item>
+		<item>Menggeser vBB ke kiri sebanyak jumlah bit yang ditentukan oleh vCC dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB</item>
+		<item>Menggeser vBB ke kanan sesuai jumlah bit yang ditentukan oleh vCC dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB >> vCC</item>
+		<item>Menggeser vBB tanpa mempertahankan tanda ke kanan sesuai jumlah bit yang ditentukan oleh vCC, dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB >>> vCC</item>
+		<item>Menghitung (vBB, vBB+1) + (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) - (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) * (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) / (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) % (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) &amp; (vCC, vCC+1) (logis AND) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) | (vCC, vCC+1) (logis OR) dan menyimpan hasilnya dalam sepasang register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) ^ (vCC, vCC+1) (eksklusif AND) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Menggeser vBB, vBB+1 ke kiri sesuai jumlah bit yang ditentukan oleh vCC, dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1)</item>
+		<item>Menggeser vBB, vBB+1 ke kanan sesuai jumlah bit yang ditentukan oleh vCC, dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Menggeser vBB, vBB+1 ke kanan tanpa mempertahankan tanda sejumlah bit yang ditentukan oleh vCC, dan menyimpan hasilnya dalam sepasang register vAA, vA+1. Semua nilai berbentuk panjang (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Menghitung vBB + vCC dan menyimpan hasilnya di register vAA. Semua nilai mengambang.\nvAA = vBB + vCC</item>
+		<item>Menghitung vBB - vCC dan menyimpan hasilnya di register vAA. Semua nilai mengambang.\nvAA = vBB - vCC</item>
+		<item>Menghitung vBB * vCC dan menyimpan hasilnya di register vAA. Semua nilai mengambang.\nvAA = vBB * vCC</item>
+		<item>Menghitung vBB/vCC dan menyimpan hasilnya di register vAA. Semua nilai mengambang.\nvAA = vBB/vCC</item>
+		<item>Menghitung vBB % vCC dan menyimpan hasilnya di register vAA. Semua nilai mengambang.\nvAA = vBB% vCC</item>
+		<item>Menghitung (vBB, vBB+1) + (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai bersifat ganda (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) - (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai bersifat ganda (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) * (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai bersifat ganda (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) / (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai bersifat ganda (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Menghitung (vBB, vBB+1) % (vCC, vCC+1) dan menyimpan hasilnya dalam pasangan register vAA, vAA+1. Semua nilai bersifat ganda (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Menghitung vA + vB dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vA + vB</item>
+		<item>Menghitung vA - vB dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vA - vB</item>
+		<item>Menghitung vA*vB dan menyimpan hasilnya dalam register vA. Semua nilai adalah bilangan bulat.\nvA = vA * vB</item>
+		<item>Menghitung vA/vB dan menyimpan hasilnya dalam register vA. Semua nilai adalah bilangan bulat.\nvA = vA/vB</item>
+		<item>Menghitung vA % vB dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vA %vB</item>
+		<item>Menghitung vA &amp; vB (logis AND) dan menyimpan hasilnya dalam register vA. Semua nilai adalah bilangan bulat.\nvA = vA &amp; vB</item>
+		<item>Menghitung vA | vB (logis OR) dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vA | vB</item>
+		<item>Menghitung vA^vB (eksklusif OR) dan menyimpan hasilnya dalam register vA. Semua nilai adalah bilangan bulat.\nvA = vA^vB</item>
+		<item>Menggeser vA ke kiri sebanyak bit yang ditentukan oleh vB dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vA</item>
+		<item>Menggeser vA ke kanan sesuai jumlah bit yang ditentukan oleh vB dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vA >> vB</item>
+		<item>Menggeser vA tanpa mempertahankan tandanya ke kanan sebanyak jumlah bit yang ditentukan oleh vB, dan menyimpan hasilnya dalam register vA. Semua nilai adalah bilangan bulat.\nvA = vA >>> vB</item>
+		<item>Menghitung (vA, vA+1) + (vB, vB+1) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) - (vB, vB+1) dan menyimpan hasilnya dalam sepasang register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) * (vB, vB+1) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) / (vB, vB+1) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) % (vB, vB+1) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) &amp; (vB, vB+1) (logis AND) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) | (vB, vB+1) (logis OR) dan menyimpan hasilnya dalam sepasang register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) &amp; (vB, vB+1) (eksklusif OR) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Menggeser vA, vA+1 ke kiri sebanyak jumlah bit yang ditentukan oleh vB, dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1)</item>
+		<item>Menggeser vA, vA+1 ke kanan sebanyak jumlah bit yang ditentukan oleh vB, dan menyimpan hasilnya pada pasangan register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Menggeser vA, vA+1 ke kanan tanpa mempertahankan tanda sebanyak digit yang ditentukan oleh vB, dan menyimpan hasilnya dalam sepasang register vA, vA+1. Semua nilai berbentuk panjang (integer).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Menghitung vA + vB dan menyimpan hasilnya di register vA. Semua nilai mengambang.\nvA = vA + vB</item>
+		<item>Menghitung vA - vB dan menyimpan hasilnya di register vA. Semua nilai mengambang.\nvA = vA - vB</item>
+		<item>Menghitung vA*vB dan menyimpan hasilnya dalam register vA. Semua nilai mengambang.\nvA = vA * vB</item>
+		<item>Menghitung vA/vB dan menyimpan hasilnya dalam register vA. Semua nilai mengambang.\nvA = vA/vB</item>
+		<item>Menghitung vA % vB dan menyimpan hasilnya di register vA. Semua nilai mengambang.\nvA = vA %vB</item>
+		<item>Menghitung (vA, vA+1) + (vB, vB+1) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai bersifat ganda (floating point).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) - (vB, vB+1) dan menyimpan hasilnya dalam sepasang register vA, vA+1. Semua nilai bersifat ganda (floating point).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) * (vB, vB+1) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai bersifat ganda (floating point).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) / (vB, vB+1) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai bersifat ganda (floating point).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Menghitung (vA, vA+1) % (vB, vB+1) dan menyimpan hasilnya dalam pasangan register vA, vA+1. Semua nilai bersifat ganda (floating point).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Menghitung vB + 0xFFFF dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vB + 0xFFFF</item>
+		<item>Menghitung 0xFFFF - vB dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = 0xFFFF - vB</item>
+		<item>Menghitung vB * 0xFFFF dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vB * 0xFFFF</item>
+		<item>Menghitung vB / 0xFFFF dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vB / 0xFFFF</item>
+		<item>Menghitung vB % 0xFFFF dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vB % 0xFFFF</item>
+		<item>Menghitung vB &amp; 0xFFFF (logis AND) dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vB &amp; 0xFFFF</item>
+		<item>Menghitung vB | 0xFFFF (logis OR) dan menyimpan hasilnya di register vA. Semua nilai adalah bilangan bulat.\nvA = vB | 0xFFFF</item>
+		<item>Menghitung vB^0xFFFF (eksklusif OR) dan menyimpan hasilnya dalam register vA. Semua nilai adalah bilangan bulat.\nvA = vB ^ 0xFFFF</item>
+		<item>Menghitung vBB + 0xFF dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB + 0xFF</item>
+		<item>Menghitung 0xFF - vBB dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = 0xFF - vBB</item>
+		<item>Menghitung vBB * 0xFF dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB * 0xFF</item>
+		<item>Menghitung vBB/0xFF dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB / 0xFF</item>
+		<item>Menghitung vBB % 0xFF dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB% 0xFF</item>
+		<item>Menghitung vBB &amp; 0xFF (logis AND) dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB &amp; 0xFF</item>
+		<item>Menghitung vBB | 0xFF (logis OR) dan menyimpan hasilnya di register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB | 0xFF</item>
+		<item>Menghitung vBB^0xFF (eksklusif OR) dan menyimpan hasilnya dalam register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB ^ 0xFF</item>
+		<item>Menggeser vBB ke kiri sebanyak jumlah bit yang ditentukan oleh 0xFF dan menyimpan hasilnya dalam register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB</item>
+		<item>Menggeser vBB ke kanan dengan jumlah bit yang ditentukan oleh 0xFF dan menyimpan hasilnya dalam register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB >> 0xFF</item>
+		<item>Secara sinyal menggeser vBB ke kanan dengan jumlah bit yang ditentukan oleh 0xFF dan menyimpan hasilnya dalam register vAA. Semua nilai adalah bilangan bulat.\nvAA = vBB >>> 0xFF</item>
+		<item>Memanggil (menjalankan) metode tanda tangan polimorfik dengan parameter. Hadir dalam file Dex sejak versi 038.</item>
+		<item>Memanggil (menjalankan) metode tanda tangan polimorfik dengan parameter, tetapi parameter tersebut harus terkandung dalam register bernomor urut. Hadir dalam file Dex sejak versi 038.</item>
+		<item>Mengizinkan (mulai) memanggil situs dengan parameter. Hadir dalam file Dex sejak versi 038.</item>
+		<item>Mengizinkan (memulai) pemanggilan situs dengan parameter, tetapi parameter tersebut harus terdapat dalam register dengan nomor secara berurutan. Hadir dalam file Dex sejak versi 038.</item>
+		<item>Menempatkan referensi ke pegangan metode di register vAA. Hadir dalam file Dex sejak versi 039.</item>
+		<item>Menempatkan referensi ke prototipe metode dalam register vAA. Hadir dalam file Dex sejak versi 039.</item>
+	</string-array>
     <string-array name="copy_variants">
         <item>Ganti nama</item>
         <item>Ganti nama file saja</item>

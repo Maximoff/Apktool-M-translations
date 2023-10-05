@@ -78,6 +78,8 @@
     <string name="checksums_original">Подмена контрольных сумм из оригинала</string>
     <string name="clear">Очистить</string>
     <string name="no_data">данные отсутствуют</string>
+    <string name="monochrome">Чёрно-белое</string>
+    <string name="smali_help">Справка по Smali</string>
 
     <string name="go_back">Перейти в родительский каталог</string>
     <string name="sort">Метод сортировки</string>
@@ -516,6 +518,8 @@
     <string name="keep_modified_time_summary">Пытаться сохранить время изменения файлов и папок, если это возможно</string>
     <string name="open_apk">Открывать файлы apk</string>
     <string name="open_apk_summary">Открывать в программе файлы apk из других приложений</string>
+    <string name="imgs_backup">Сохранять оригинал изображения</string>
+    <string name="imgs_backup_summary">Сохранять оригинал изображения при обработке функциями \"%1$s\", \"%2$s\" и \"%3$s\"</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>

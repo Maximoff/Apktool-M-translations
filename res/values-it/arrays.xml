@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Registri</item>
+		<item>Valori letterali</item>
+		<item>Tipi di dati primitivi</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA è un registro a 4 bit con l\'intervallo di valori v0 - v15\nvAA è un registro a 8 bit con un intervallo di valori compreso tra v0 e v255\nvAAAA è un registro a 16 bit con un intervallo di valori compreso tra v0 e v65535</item>
+		<item>Vengono utilizzati 0xF, 0xFF, ecc. per rappresentare valori letterali. Come i registri, il numero F viene utilizzato per rappresentare un intervallo di valori, ad esempio:\nL\'intervallo dei valori 0xF è rappresentato da [-0x8, 0x7]\nL\'intervallo di valori di 0xFF è rappresentato da [-0x80, 0x7F]</item>
+		<item>V - vuoto, Z - booleano, B - byte\nC - carattere, S - corto, I - int\nJ - lungo, F - galleggiante, D - doppio\nvoid: può essere utilizzato solo per i tipi restituiti\nbooleano: memorizza il valore vero o falso\nbyte: memorizza un intero da -128 a 127 e occupa 1 byte\nbreve: memorizza un numero intero compreso tra -32768 e 32767 e occupa 2 byte\nint: memorizza un intero da -2147483648 a 2147483647 e occupa 4 byte\nlong: memorizza un intero da -9223372036854775808 a 9223372036854775807 e occupa 8 byte\ndouble: memorizza un numero in virgola mobile da ±4,9*10³²⁴ a ±1,7976931348623157*10³⁰⁸ e occupa 8 byte. Un punto viene utilizzato come separatore decimale nei valori letterali frazionari.\nfloat: memorizza un numero in virgola mobile da -3,4*10³⁸ a 3,4*10³⁸ e occupa 4 byte\nchar: memorizza un singolo carattere nella codifica UTF-16 e occupa 2 byte, quindi l\'intervallo di valori memorizzati va da 0 a 65535.</item>
+		<item>Nessuna azione.</item>
+		<item>Sposta il valore del registro vB nel registro vA.</item>
+		<item>Sposta il valore del registro vBBBB nel registro vAA.</item>
+		<item>Sposta il valore del registro vBBBB nel registro vAAAA.</item>
+		<item>Sposta il valore lungo/doppio della coppia di registri (vB, vB+1) nella coppia di registri vA, vA+1.</item>
+		<item>Sposta il valore lungo/doppio di una coppia di registri (vBBBB, vBBBB+1) in una coppia di registri vAA, vAA+1.</item>
+		<item>Sposta il valore lungo/doppio di una coppia di registri (vBBBB, vBBBB+1) in una coppia di registri vAAAA, vAAAA+1.</item>
+		<item>Sposta un riferimento a un oggetto dal registro vB al registro vA.</item>
+		<item>Sposta un riferimento a un oggetto dal registro vBBBB al registro vAA.</item>
+		<item>Sposta un riferimento a un oggetto dal registro vBBBB al registro vAAAA.</item>
+		<item>Sposta il valore restituito dal metodo precedentemente chiamato nel registro vAA.</item>
+		<item>Sposta il valore long/double restituito dal metodo precedentemente chiamato nella coppia di registri vAA, vAA+1.</item>
+		<item>Sposta il riferimento all\'oggetto restituito dal metodo chiamato in precedenza nel registro vAA.</item>
+		<item>Sposta il riferimento all\'oggetto escluso emesso durante la chiamata al metodo (durante l\'esecuzione) nel registro vAA.</item>
+		<item>Restituzione senza valore di restituzione.</item>
+		<item>Ritorna restituendo il valore dal registro vAA.</item>
+		<item>Ritorna restituendo un valore double/long in una coppia di registri vAA, vAA+1.</item>
+		<item>Ritorna restituendo il valore del riferimento all\'oggetto dal registro vAA.</item>
+		<item>Inserisce una costante a 4 bit nel registro vA.</item>
+		<item>Inserisce una costante a 16 bit nel registro vAA.</item>
+		<item>Inserisce una costante intera nel registro vAA.</item>
+		<item>Inserisce una costante a 16 bit nei bit superiori del registro vAA. Utilizzato per inizializzare i valori float (virgola mobile).</item>
+		<item>Inserisce una costante intera a 16 bit nella coppia di registri vAA, vAA+1, convertendo la costante intera in una costante lunga.</item>
+		<item>Inserisce una costante intera a 32 bit nella coppia di registri vAA, vAA+1, convertendo la costante intera in una costante lunga.</item>
+		<item>Inserisce una costante a 64 bit nella coppia di registri vAA, vAA+1.</item>
+		<item>Inserisce una costante a 16 bit nei primi 16 bit della coppia di registri vAA, vAA+1. Utilizzato per inizializzare valori doppi (virgola mobile).</item>
+		<item>Inserisce un riferimento alla stringa specificata nel registro vAA.</item>
+		<item>Inserisce un riferimento alla stringa specificata nel registro vAA.</item>
+		<item>Inserisce un riferimento alla costante di stringa (string) identificata da string_id nel registro vAA.</item>
+		<item>Ottiene il monitoraggio dell\'oggetto a cui fa riferimento il registro vAA.</item>
+		<item>Rilascia il monitoraggio oggetto a cui fa riferimento il registro vAA.</item>
+		<item>Controlla se un riferimento a un oggetto contenuto nel registro vAA può essere trasmesso alla classe identificata da type_id. Se non può, genera un\'eccezione ClassCastException, altrimenti continua l\'esecuzione.</item>
+		<item>Controlla se il contenuto del registro vB è un\'istanza della classe identificata da type_id. Imposta il registro vA su un valore diverso da zero se presente, 0 in caso contrario.\nvA = vB tipo di istanza? 10</item>
+		<item>Determina il numero di elementi dell\'array dal registro vB e inserisce il valore nel registro vA.\nvA = vB.lunghezza</item>
+		<item>Crea un\'istanza di un tipo di oggetto e inserisce un riferimento all\'istanza creata nel registro vAA.</item>
+		<item>Crea un nuovo array di variabili type_id con la dimensione degli elementi del registro vB e inserisce un riferimento all\'array nel registro vA.</item>
+		<item>Crea un nuovo array di dati di tipo type_id e lo riempie con parametri (ovvero, non sono consentiti array long/double, ma sono consentiti tipi di riferimento). È possibile ottenere un riferimento all\'array appena creato utilizzando l\'istruzione move-result-object immediatamente successiva a questa istruzione (se ne deve essere utilizzata una).</item>
+		<item>Crea un nuovo array di dati di tipo type_id e lo riempie con un intervallo di parametri (ovvero, nessun array long/double, ma i tipi di riferimento sono accettabili). È possibile ottenere un riferimento all\'array appena creato utilizzando l\'istruzione move-result-object immediatamente successiva a questa istruzione (se ne deve essere utilizzata una).</item>
+		<item>Riempie l\'array a cui si fa riferimento nel registro vAA con dati statici. La posizione dei dati è la somma della posizione dell\'istruzione attuale e dell\'offset.</item>
+		<item>Genera un oggetto eccezione. Un riferimento all\'oggetto eccezione nel registro vAA.</item>
+		<item>Passa incondizionatamente a un offset breve (intero) a 8 bit.</item>
+		<item>Salto incondizionato all\'offset a 16 bit.</item>
+		<item>Salto incondizionato all\'offset a 32 bit.</item>
+		<item>Implementa l\'operatore Switch quando le costanti di controllo sono vicine tra loro (di fila). L\'istruzione utilizza una tabella degli indici. L\'offset dell\'istruzione per un caso particolare è determinato dall\'indice vAA. Se l\'indice vAA va oltre la tabella, l\'esecuzione continua con l\'istruzione successiva (impostazione predefinita).</item>
+		<item>Implementa l\'operatore Switch in caso di tabella sparsa. L\'istruzione utilizza una tabella che specifica gli offset per ciascuna costante. Se nella tabella non viene trovata alcuna corrispondenza, viene eseguita l\'istruzione successiva (caso predefinito).</item>
+		<item>Confronta i valori float (virgola mobile) in vBB e vCC e inserisce il valore intero nel registro vAA:\nvAA = vBB &lt; vCC ? sì: 1, no: -1, uguale: 0</item>
+		<item>Confronta i valori float (virgola mobile) in vBB e vCC e inserisce il valore intero nel registro vAA:\nvAA = vBB &lt; vCC ? sì: 1, no: -1, uguale: 0</item>
+		<item>Confronta i valori doppi (virgola mobile) in vBB e vCC e inserisce il valore intero nel registro vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? sì\nsì: 1, no: -1, uguale: 0</item>
+		<item>Confronta i valori doppi (virgola mobile) in vBB e vCC e inserisce il valore intero nel registro vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? sì: 1, no: -1, uguale: 0</item>
+		<item>Confronta i valori lunghi (interi) in vBB e vCC e inserisce il valore intero (intero) nel registro vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? sì: 1, no: -1, uguale: 0</item>
+		<item>Salta all\'etichetta specificata se vA == vB. vA e vB contengono valori interi.\n(eq è l\'abbreviazione di Uguale)</item>
+		<item>Salta all\'etichetta specificata se vA != vB. vA e vB contengono valori interi.\n(ne è l\'abbreviazione di Not Equals)</item>
+		<item>Salta all\'etichetta specificata se vA &lt; vB. vA e vB contengono valori interi.\n(è l\'abbreviazione di Meno di)</item>
+		<item>Salta all\'etichetta specificata se vA &lt;= vB. vA e vB contengono valori interi.\n(le è l\'abbreviazione di Minore o Uguale/Meno o uguale)</item>
+		<item>Salta all\'etichetta specificata se vA > vB. vA e vB contengono valori interi.\n(gt è l\'abbreviazione di Maggiore di/Più di)</item>
+		<item>Salta all\'etichetta specificata se vA >= vB. vA e vB contengono valori interi.\n(ge è l\'abbreviazione di Maggiore o Uguale)</item>
+		<item>Passa all\'etichetta specificata se vAA == 0. vAA contiene un valore intero.\n(eqz è l\'abbreviazione di Uguale a Zero)</item>
+		<item>Passa all\'etichetta specificata se vAA != 0. vAA contiene un valore intero.\n(nez è l\'abbreviazione di Non uguale a zero)</item>
+		<item>Passa all\'etichetta specificata se vAA &lt; 0. vAA contiene un valore intero.\n(ltz è l\'abbreviazione di Meno di zero)</item>
+		<item>Passa all\'etichetta specificata se vAA &lt;= 0. vAA contiene un valore intero.\n(lez è l\'abbreviazione di Minore o Uguale a Zero/Meno o uguale a zero)</item>
+		<item>Passa all\'etichetta specificata se vAA > 0. vAA contiene un valore intero.\n(gtz è l\'abbreviazione di Maggiore di Zero)</item>
+		<item>Passa all\'etichetta specificata se vAA >= 0. vAA contiene un valore intero.\n(gez è l\'abbreviazione di Maggiore o uguale a zero)</item>
+		<item>Ottiene un valore intero nell\'indice contenuto in vCC dall\'array a cui fa riferimento vBB e lo inserisce nel registro vAA.\nvAA = vBB[vCC]</item>
+		<item>Ottiene, in corrispondenza dell\'indice contenuto in vCC, dall\'array referenziato in vBB, un valore double/long e lo inserisce nella coppia di registri vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Riceve, all\'indice contenuto in vCC, dall\'array referenziato in vBB, un riferimento all\'oggetto e lo inserisce nel registro vAA.\nvAA = vBB[vCC]</item>
+		<item>Ottiene, in corrispondenza dell\'indice contenuto in vCC, dall\'array referenziato in vBB, un valore booleano e lo inserisce nel registro vAA.\nvAA = vBB[vCC]</item>
+		<item>Recupera, in corrispondenza dell\'indice contenuto in vCC, dall\'array referenziato in vBB, un valore byte (intero) e lo inserisce nel registro vAA.\nvAA = vBB[vCC]</item>
+		<item>Recupera, in corrispondenza dell\'indice contenuto in vCC, dall\'array referenziato in vBB, un valore char e lo inserisce nel registro vAA.\nvAA = vBB[vCC]</item>
+		<item>Recupera, in corrispondenza dell\'indice contenuto in vCC, dall\'array referenziato in vBB, un valore breve (intero) e lo inserisce nel registro vAA.\nvAA = vBB[vCC]</item>
+		<item>Inserisce il valore intero da vAA nell\'array a cui fa riferimento vBB con l\'elemento contenente il registro vCC.\nvBB[vCC] = vAA</item>
+		<item>Inserisce un valore double/long dalla coppia di registri vAA, vAA+1 nell\'array a cui fa riferimento vBB, con l\'elemento contenente il registro vCC.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Inserisce un riferimento a un oggetto da vAA nell\'array a cui fa riferimento vBB con un elemento con il registro vCC.\nvBB[vCC] = vAA</item>
+		<item>Inserisce il valore booleano da vAA nell\'array a cui fa riferimento vBB con l\'elemento contenente il registro vCC.\nvBB[vCC] = vAA</item>
+		<item>Inserisce il valore byte (intero) da vAA nell\'array a cui fa riferimento vBB con l\'elemento contenente il registro vCC.\nvBB[vCC] = vAA</item>
+		<item>Inserisce il valore char (carattere) da vAA nell\'array a cui fa riferimento vBB l\'elemento con registro vCC.\nvBB[vCC] = vAA</item>
+		<item>Inserisce il valore breve (intero) da vAA nell\'array a cui fa riferimento vBB con l\'elemento contenente il registro vCC.\nvBB[vCC] = vAA</item>
+		<item>Legge il valore dal campo istanza e lo inserisce nel registro vA. Il riferimento alla classe contenente questo campo è nel registro vB.\nvA = vB.campo</item>
+		<item>Legge un valore double/long da un campo di istanza e lo inserisce in una coppia di registri (vA, vA+1). Il riferimento alla classe contenente questo campo è nel registro vB.\n(vA, vA+1) = vB.campo</item>
+		<item>Legge un riferimento a un oggetto da un campo di istanza e lo inserisce nel registro vA. Il riferimento alla classe contenente questo campo è nel registro vB.\nvA = vB.campo</item>
+		<item>Legge un valore booleano dal campo istanza e lo inserisce nel registro vA. Il riferimento alla classe contenente questo campo è nel registro vB.\nvA = vB.campo</item>
+		<item>Legge un valore byte (intero) da un campo di istanza e lo inserisce nel registro vA. Il riferimento alla classe contenente questo campo è nel registro vB.\nvA = vB.campo</item>
+		<item>Legge un valore char da un campo di istanza e lo inserisce nel registro vA. Il riferimento alla classe contenente questo campo è nel registro vB.\nvA = vB.campo</item>
+		<item>Legge un valore breve (intero) da un campo di istanza e lo inserisce nel registro vA. Il riferimento alla classe contenente questo campo è nel registro vB.\nvA = vB.campo</item>
+		<item>Inserisce il valore dal registro vA nel campo dell\'istanza. Il riferimento alla classe contenente questo campo è nel registro vB.\nvB.campo = vA</item>
+		<item>Inserisce un valore double/long da una coppia di registri (vA, vA+1) in un campo di istanza. Il riferimento alla classe contenente questo campo è nel registro vB.\nvB.campo = (vA, vA+1)</item>
+		<item>Inserisce un riferimento a un oggetto dal registro vA nel campo dell\'istanza. Il riferimento alla classe contenente questo campo è nel registro vB.\nvB.campo = vA</item>
+		<item>Inserisce il valore booleano dal registro vA nel campo dell\'istanza. Il riferimento alla classe contenente questo campo è nel registro vB.\nvB.campo = vA</item>
+		<item>Imposta il valore del byte (intero) del campo booleano specificato nell\'istanza a cui fa riferimento il registro vB uguale al valore del registro vA, ovvero:\nvB.campo = vA</item>
+		<item>Imposta il valore char (carattere) del campo booleano specificato nell\'istanza a cui fa riferimento il registro vB uguale al valore del registro vA, ovvero:\nvB.campo = vA</item>
+		<item>Imposta il valore breve (intero) del campo booleano specificato nell\'istanza a cui fa riferimento il registro vB uguale al valore del registro vA, ovvero:\nvB.campo = vA</item>
+		<item>Legge un valore da un campo statico e lo inserisce nel registro vAA. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Legge un valore double/long da un campo statico e lo inserisce in una coppia di registri vAA, vAA+1. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Legge un riferimento a un oggetto da un campo statico e lo inserisce nel registro vAA. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Legge un valore booleano da un campo statico e lo inserisce nel registro vAA. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Legge un valore byte (intero) da un campo statico e lo inserisce nel registro vAA. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Legge un valore char da un campo statico e lo inserisce nel registro vAA. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Legge un valore breve (intero) da un campo statico e lo inserisce nel registro vAA. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Inserisce il valore dal registro vAA in un campo (campo statico). Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Inserisce un valore double/long da una coppia di registri vAA, vAA+1 in un campo (campo statico). Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Inserisce un riferimento a un oggetto dal registro vAA in un campo (campo statico). Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Inserisce il valore booleano dal registro vAA in un campo (campo statico). Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Inserisce un valore byte (intero) dal registro vAA in un campo (campo statico). Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Inserisce il valore char dal registro vAA in un campo statico. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Inserisce il valore breve (intero) dal registro vAA in un campo statico. Il registro contenente il riferimento alla classe contenente questo campo non viene utilizzato.</item>
+		<item>Chiama (esegue) un metodo virtuale con parametri. I parametri sono indicati tra parentesi graffe. Il primo parametro (registro v2) contiene un riferimento alla classe contenente il metodo chiamato, il secondo parametro (il contenuto del registro v3) viene passato al metodo chiamato.</item>
+		<item>Chiama (esegue) un metodo virtuale con parametri direttamente dalla classe genitore.</item>
+		<item>Chiama (esegue) un metodo con parametri senza le autorizzazioni del metodo virtuale.</item>
+		<item>Chiama (esegue) un metodo statico con parametri. I parametri sono indicati tra parentesi graffe. Il parametro (il contenuto del registro v3) viene passato al metodo chiamato. La classe contenente il metodo chiamato è indicata dopo le parentesi graffe.</item>
+		<item>Chiama (esegue) un metodo di interfaccia con parametri.</item>
+		<item>Chiama (esegue) un metodo virtuale con parametri, ma i parametri devono essere contenuti in registri con numeri in ordine.</item>
+		<item>Chiama (esegue) un metodo virtuale con parametri direttamente dalla classe genitore, ma i parametri devono essere contenuti in registri con numeri sequenziali.</item>
+		<item>Chiama (esegue) un metodo con parametri senza autorizzazioni del metodo virtuale, ma i parametri devono essere contenuti in registri numerati in sequenza.</item>
+		<item>Chiama (esegue) un metodo statico con parametri, ma i parametri devono essere contenuti in registri con numeri sequenziali.</item>
+		<item>Chiama (esegue) un metodo di interfaccia con parametri, ma i parametri devono essere contenuti in registri numerati in sequenza.</item>
+		<item>Calcola vA = -vB per valori di tipo intero.</item>
+		<item>Calcola vA = ~vB per valori interi.\nvA = ~vB</item>
+		<item>Calcola (vA, vA+1) = -(vB, vB+1) per valori di tipo long (intero).</item>
+		<item>Calcola (vA, vA+1) = ~(vB, vB+1) per valori di tipo long (intero).</item>
+		<item>Calcola vA = -vB per valori float.</item>
+		<item>Calcola (vA, vA+1) = -(vB, vB+1) per valori doppi (virgola mobile).</item>
+		<item>Converte un numero intero da vB a long e lo memorizza nella coppia di registri vA, vA+1.\n(vA, vA+1) = (lungo) vB</item>
+		<item>Converte un numero intero da vB a float e lo memorizza nel registro vA.\nvA = (flottante) vB</item>
+		<item>Converte un numero intero da vB in un valore double (virgola mobile) e lo memorizza in una coppia di registri vA, vA+1.\n(vA, vA+1) = (doppio) vB</item>
+		<item>Converte un valore lungo (intero) da vB, vB+1 in un intero (intero) e lo memorizza nel registro vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Converte un valore lungo (intero) da vB, vB+1 in un valore float (virgola mobile) e lo memorizza nel registro vA.\nvA = (virgola mobile) (vB, vB+1)</item>
+		<item>Converte un valore lungo (intero) da vB, vB+1 in un valore double (virgola mobile) e lo memorizza in una coppia di registri vA, vA+1.\n(vA, vA+1) = (doppio) (vB, vB+1)</item>
+		<item>Converte un valore float (virgola mobile) da vB in un valore intero (intero) e lo memorizza nel registro vA.\nvA = (int)vB</item>
+		<item>Converte un valore float (virgola mobile) da vB in un valore long (intero) e lo memorizza nella coppia di registri vA, vA+1.\n(vA, vA+1) = (lungo) vB</item>
+		<item>Converte un valore float (virgola mobile) da vB in un valore double (virgola mobile) e lo memorizza nella coppia di registri vA, vA+1.\n(vA, vA+1) = (doppio) vB</item>
+		<item>Converte un valore double (virgola mobile) da vB, vB+1 in un valore intero (intero) e lo memorizza nel registro vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Converte un valore double (virgola mobile) da vB, vB+1 in un valore long (intero) e lo memorizza in una coppia di registri vA, vA+1.\n(vA, vA+1) = (lungo) (vB, vB+1)</item>
+		<item>Converte un valore double (virgola mobile) da vB, vB+1 in un valore float (virgola mobile) e lo memorizza nel registro vA.\nvA = (virgola mobile) (vB, vB+1)</item>
+		<item>Converte un valore intero da vB in un valore byte e lo memorizza nel registro vA.\nvA = (byte) vB</item>
+		<item>Converte un valore intero da vB in un valore char e lo memorizza nel registro vA.\nvA = (carattere)vB</item>
+		<item>Converte un valore intero da vB in un valore breve e lo memorizza nel registro vA.\nvA = (corto) vB</item>
+		<item>Calcola vBB + vCC e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB + vCC</item>
+		<item>Calcola vBB - vCC e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB - vCC</item>
+		<item>Calcola vBB * vCC e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB * vCC</item>
+		<item>Calcola vBB/vCC e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB/vCC</item>
+		<item>Calcola vBB % vCC e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB% vCC</item>
+		<item>Calcola vBB e vCC (AND logico) e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB e vCC</item>
+		<item>Calcola vBB | vCC (OR logico) e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB | vCC</item>
+		<item>Calcola vBB ^ vCC (OR esclusivo) e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB ^ vCC</item>
+		<item>Sposta vBB a sinistra del numero di bit specificati da vCC e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Sposta vBB a destra del numero di bit specificati da vCC e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB >> vCC</item>
+		<item>Sposta vBB senza preservare il segno a destra del numero di bit specificati da vCC e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB >>> vCC</item>
+		<item>Calcola (vBB, vBB+1) + (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) - (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) * (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) / (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) % (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) e (vCC, vCC+1) (AND logico) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) | (vCC, vCC+1) (OR logico) e memorizza il risultato in una coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) ^ (vCC, vCC+1) (AND esclusivo) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Sposta vBB, vBB+1 a sinistra del numero di bit specificati da vCC e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Sposta vBB, vBB+1 a destra del numero di bit specificati da vCC e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Sposta vBB, vBB+1 a destra senza preservare il segno del numero di bit specificati da vCC e memorizza il risultato in una coppia di registri vAA, vA+1. Tutti i valori sono lunghi (interi).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Calcola vBB + vCC e memorizza il risultato nel registro vAA. Tutti i valori sono float.\nvAA = vBB + vCC</item>
+		<item>Calcola vBB - vCC e memorizza il risultato nel registro vAA. Tutti i valori sono float.\nvAA = vBB - vCC</item>
+		<item>Calcola vBB * vCC e memorizza il risultato nel registro vAA. Tutti i valori sono float.\nvAA = vBB * vCC</item>
+		<item>Calcola vBB/vCC e memorizza il risultato nel registro vAA. Tutti i valori sono float.\nvAA = vBB/vCC</item>
+		<item>Calcola vBB % vCC e memorizza il risultato nel registro vAA. Tutti i valori sono float.\nvAA = vBB% vCC</item>
+		<item>Calcola (vBB, vBB+1) + (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono doppi (virgola mobile).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) - (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono doppi (virgola mobile).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) * (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono doppi (virgola mobile).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) / (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono doppi (virgola mobile).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calcola (vBB, vBB+1) % (vCC, vCC+1) e memorizza il risultato nella coppia di registri vAA, vAA+1. Tutti i valori sono doppi (virgola mobile).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Calcola vA + vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA + vB</item>
+		<item>Calcola vA - vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA - vB</item>
+		<item>Calcola vA * vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA * vB</item>
+		<item>Calcola vA / vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA / vB</item>
+		<item>Calcola vA % vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA% vB</item>
+		<item>Calcola vA e vB (AND logico) e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA &amp; vB</item>
+		<item>Calcola vA | vB (OR logico) e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA | vB</item>
+		<item>Calcola vA ^ vB (OR esclusivo) e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA ^ vB</item>
+		<item>Sposta vA a sinistra del numero di bit specificati da vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA &lt;&lt;vB</item>
+		<item>Sposta vA a destra del numero di bit specificati da vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA >> vB</item>
+		<item>Sposta vA senza preservare il segno verso destra del numero di bit specificati da vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vA >>> vB</item>
+		<item>Calcola (vA, vA+1) + (vB, vB+1) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) - (vB, vB+1) e memorizza il risultato in una coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) * (vB, vB+1) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) / (vB, vB+1) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) % (vB, vB+1) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) e (vB, vB+1) (AND logico) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) | (vB, vB+1) (OR logico) e memorizza il risultato in una coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) e (vB, vB+1) (OR esclusivo) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Sposta vA, vA+1 a sinistra del numero di bit specificati da vB e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Sposta vA, vA+1 a destra del numero di bit specificati da vB e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Sposta vA, vA+1 a destra senza preservare il segno del numero di cifre specificato da vB e memorizza il risultato in una coppia di registri vA, vA+1. Tutti i valori sono lunghi (interi).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Calcola vA + vB e memorizza il risultato nel registro vA. Tutti i valori sono float.\nvA = vA + vB</item>
+		<item>Calcola vA - vB e memorizza il risultato nel registro vA. Tutti i valori sono float.\nvA = vA - vB</item>
+		<item>Calcola vA * vB e memorizza il risultato nel registro vA. Tutti i valori sono float.\nvA = vA * vB</item>
+		<item>Calcola vA / vB e memorizza il risultato nel registro vA. Tutti i valori sono float.\nvA = vA / vB</item>
+		<item>Calcola vA % vB e memorizza il risultato nel registro vA. Tutti i valori sono float.\nvA = vA% vB</item>
+		<item>Calcola (vA, vA+1) + (vB, vB+1) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono doppi (virgola mobile).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) - (vB, vB+1) e memorizza il risultato in una coppia di registri vA, vA+1. Tutti i valori sono doppi (virgola mobile).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) * (vB, vB+1) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono doppi (virgola mobile).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) / (vB, vB+1) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono doppi (virgola mobile).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calcola (vA, vA+1) % (vB, vB+1) e memorizza il risultato nella coppia di registri vA, vA+1. Tutti i valori sono doppi (virgola mobile).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Calcola vB + 0xFFFF e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vB + 0xFFFF</item>
+		<item>Calcola 0xFFFF - vB e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = 0xFFFF - vB</item>
+		<item>Calcola vB * 0xFFFF e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vB * 0xFFFF</item>
+		<item>Calcola vB / 0xFFFF e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vB / 0xFFFF</item>
+		<item>Calcola vB % 0xFFFF e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vB % 0xFFFF</item>
+		<item>Calcola vB e 0xFFFF (AND logico) e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vB &amp; 0xFFFF</item>
+		<item>Calcola vB | 0xFFFF (OR logico) e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vB | 0xFFFF</item>
+		<item>Calcola vB ^ 0xFFFF (OR esclusivo) e memorizza il risultato nel registro vA. Tutti i valori sono interi.\nvA = vB ^ 0xFFFF</item>
+		<item>Calcola vBB + 0xFF e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB + 0xFF</item>
+		<item>Calcola 0xFF - vBB e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = 0xFF - vBB</item>
+		<item>Calcola vBB * 0xFF e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB * 0xFF</item>
+		<item>Calcola vBB / 0xFF e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB / 0xFF</item>
+		<item>Calcola vBB % 0xFF e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB% 0xFF</item>
+		<item>Calcola vBB e 0xFF (AND logico) e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB e 0xFF</item>
+		<item>Calcola vBB | 0xFF (OR logico) e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB | 0xFF</item>
+		<item>Calcola vBB ^ 0xFF (OR esclusivo) e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB ^ 0xFF</item>
+		<item>Sposta vBB a sinistra del numero di bit specificato da 0xFF e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Sposta vBB a destra del numero di bit specificati da 0xFF e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB >> 0xFF</item>
+		<item>Sposta in modo significativo vBB a destra del numero di bit specificati da 0xFF e memorizza il risultato nel registro vAA. Tutti i valori sono interi.\nvAA = vBB >>> 0xFF</item>
+		<item>Chiama (esegue) un metodo di firma polimorfica con parametri. Presente nei file Dex dalla versione 038.</item>
+		<item>Chiama (esegue) un metodo di firma polimorfica con parametri, ma i parametri devono essere contenuti in registri numerati in sequenza. Presente nei file Dex dalla versione 038.</item>
+		<item>Consente (avvia) di chiamare un sito con parametri. Presente nei file Dex dalla versione 038.</item>
+		<item>Permette (avvia) di chiamare un sito con parametri, ma i parametri devono essere contenuti in registri con numeri in ordine. Presente nei file Dex dalla versione 038.</item>
+		<item>Inserisce un riferimento a un handle di metodo nel registro vAA. Presente nei file Dex dalla versione 039.</item>
+		<item>Inserisce un riferimento al prototipo del metodo nel registro vAA. Presente nei file Dex dalla versione 039.</item>
+	</string-array>
     <string-array name="copy_variants">
         <item>Rinomina</item>
 		<item>Rename files only</item>

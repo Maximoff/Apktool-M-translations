@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Registrele</item>
+		<item>Valori literale</item>
+		<item>Tipuri de date primitive</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA este un registru de 4 biți cu intervalul de valori v0 - v15\nvAA este un registru de 8 biți cu un interval de valori v0 - v255\nvAAAA este un registru de 16 biți cu un interval de valori de v0 - v65535</item>
+		<item>Sunt utilizate 0xF, 0xFF etc. pentru a reprezenta valori literale. Ca și registrele, numărul F este folosit pentru a reprezenta un interval de valori, de exemplu:\nIntervalul valorilor 0xF este reprezentat de [-0x8, 0x7]\nGama de valori ale lui 0xFF este reprezentată de [-0x80, 0x7F]</item>
+		<item>V - void, Z - boolean, B - octet\nC - char, S - scurt, I - int\nJ - lung, F - plutitor, D - dublu\nvoid: poate fi utilizat numai pentru tipurile de returnare\nboolean: stochează valoarea adevărată sau falsă\noctet: stochează un număr întreg de la -128 la 127 și ocupă 1 octet\nscurt: stochează un număr întreg de la -32768 la 32767 și ia 2 octeți\nint: stochează un număr întreg de la -2147483648 la 2147483647 și ocupă 4 octeți\nlung: stochează un număr întreg de la -9223372036854775808 la 9223372036854775807 și ocupă 8 octeți\ndublu: stochează un număr în virgulă mobilă de la ±4,9*10³²⁴ la ±1,7976931348623157*10³⁰⁸ și ocupă 8 octeți. Un punct este folosit ca separator zecimal în literalele fracționale.\nfloat: stochează un număr în virgulă mobilă de la -3,4*10³⁸ la 3,4*10³⁸ și ocupă 4 octeți\nchar: stochează un singur caracter în codificarea UTF-16 și ocupă 2 octeți, astfel încât intervalul de valori stocate este de la 0 la 65535.</item>
+		<item>Fara actiune.</item>
+		<item>Mută valoarea registrului vB în registrul vA.</item>
+		<item>Mută valoarea registrului vBBBB în registrul vAA.</item>
+		<item>Mută valoarea registrului vBBBB în registrul vAAAA.</item>
+		<item>Mută valoarea lungă/dublă a perechii de registre (vB, vB+1) în perechea de registre vA, vA+1.</item>
+		<item>Mută valoarea lungă/dublă a unei perechi de registre (vBBBB, vBBBB+1) la o pereche de registre vAA, vAA+1.</item>
+		<item>Mută valoarea lungă/dublă a unei perechi de registre (vBBBB, vBBBB+1) la o pereche de registre vAAAA, vAAAA+1.</item>
+		<item>Mută o referință de obiect din registrul vB în registrul vA.</item>
+		<item>Mută o referință de obiect din registrul vBBBB în registrul vAA.</item>
+		<item>Mută o referință de obiect din registrul vBBBB în registrul vAAAA.</item>
+		<item>Mută valoarea returnată a metodei numite anterior în registrul vAA.</item>
+		<item>Mută valoarea lungă/dublă returnată de metoda numită anterior în perechea de registre vAA, vAA+1.</item>
+		<item>Mută referința de obiect returnată de metoda numită anterior în registrul vAA.</item>
+		<item>Mută referința la obiectul exclus emis în timpul apelului de metodă (în timpul execuției) în registrul vAA.</item>
+		<item>Returnare fără valoare de returnare.</item>
+		<item>Reveniți prin returnarea valorii din registrul vAA.</item>
+		<item>Reveniți returnând o valoare dublă/lungă într-o pereche de registre vAA, vAA+1.</item>
+		<item>Reveniți prin returnarea valorii referinței obiectului din registrul vAA.</item>
+		<item>Plasează o constantă de 4 biți în registrul vA.</item>
+		<item>Plasează o constantă de 16 biți în registrul vAA.</item>
+		<item>Plasează o constantă întreagă în registrul vAA.</item>
+		<item>Plasează o constantă de 16 biți în biții superiori ai registrului vAA. Folosit pentru a inițializa valorile flotante (virgulă mobilă).</item>
+		<item>Plasează o constantă întreagă de 16 biți în perechea de registre vAA, vAA+1, transformând constanta întreagă într-o constantă lungă.</item>
+		<item>Plasează o constantă întreagă de 32 de biți în perechea de registre vAA, vAA+1, transformând constanta întreagă într-o constantă lungă.</item>
+		<item>Plasează o constantă de 64 de biți în perechea de registre vAA, vAA+1.</item>
+		<item>Plasează o constantă de 16 biți în primii 16 biți ai perechii de registre vAA, vAA+1. Folosit pentru a inițializa valori duble (în virgulă mobilă).</item>
+		<item>Plasează o referință la șirul specificat în registrul vAA.</item>
+		<item>Plasează o referință la șirul specificat în registrul vAA.</item>
+		<item>Plasează o referință la constanta șir (șir) identificată prin string_id în registrul vAA.</item>
+		<item>Obține monitorul obiectului referit de registrul vAA.</item>
+		<item>Eliberează monitorul de obiect la care face referire registrul vAA.</item>
+		<item>Verifică dacă o referință de obiect conținută în registrul vAA poate fi turnată în clasa identificată prin type_id. Aruncă o ClassCastException dacă nu poate, în caz contrar continuă execuția.</item>
+		<item>Verifică dacă conținutul registrului vB este o instanță a clasei identificată prin type_id. Setează registrul vA la non-zero dacă este prezent, 0 dacă nu.\nvA = vB instanceOf tip ? 10</item>
+		<item>Determină numărul de elemente de matrice din registrul vB și plasează valoarea în registrul vA.\nvA = vB.lungime</item>
+		<item>Creează o instanță a unui tip de obiect și plasează o referință la instanța creată în registrul vAA.</item>
+		<item>Creează o nouă matrice de variabile type_id cu dimensiunea elementelor registrului vB și plasează o referință la matrice în registrul vA.</item>
+		<item>Creează o nouă matrice de date de tip type_id și o completează cu parametri (adică nu sunt matrice lungi/duble, dar tipurile de referință sunt permise). O referință la matricea nou creată poate fi obținută folosind instrucțiunea mutare-rezultat-obiect imediat după această instrucțiune (dacă se va folosi una).</item>
+		<item>Creează o nouă matrice de date de tip type_id și o completează cu o gamă de parametri (adică nu matrice lungi/duble, dar tipurile de referință sunt acceptabile). O referință la matricea nou creată poate fi obținută folosind instrucțiunea mutare-rezultat-obiect imediat după această instrucțiune (dacă se va folosi una).</item>
+		<item>Completează matricea la care se face referire în registrul vAA cu date statice. Locația datelor este suma poziției instrucțiunii prezente și a decalajului.</item>
+		<item>Aruncă un obiect excepție. O referire la obiectul de excepție din registrul vAA.</item>
+		<item>Salt necondiționat la un offset scurt (întreg) de 8 biți.</item>
+		<item>Salt necondiționat la offset de 16 biți.</item>
+		<item>Salt necondiționat la offset de 32 de biți.</item>
+		<item>Implementează operatorul Switch atunci când constantele de control sunt aproape una de alta (în rând). Instrucțiunea folosește un tabel index. Offset-ul instrucțiunii pentru un anumit caz este determinat de indicele vAA. Dacă indexul vAA depășește tabelul, execuția continuă cu următoarea instrucțiune (implicit).</item>
+		<item>Implementează operatorul Switch în cazul unui tabel rară. Instrucțiunea folosește un tabel care specifică decalaje pentru fiecare constantă. Dacă nu se găsesc potriviri în tabel, atunci următoarea instrucțiune este executată (cazul implicit).</item>
+		<item>Compară valorile float (virgula mobilă) în vBB și vCC și plasează valoarea întreagă în registrul vAA:\nvAA = vBB &lt; vCC ? da: 1, nu: -1, egal: 0</item>
+		<item>Compară valorile float (virgula mobilă) în vBB și vCC și plasează valoarea întreagă în registrul vAA:\nvAA = vBB &lt; vCC ? da: 1, nu: -1, egal: 0</item>
+		<item>Compară valorile duble (virgulă mobilă) în vBB și vCC și plasează valoarea întreagă în registrul vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nda: 1, nu: -1, egal: 0</item>
+		<item>Compară valorile duble (virgulă mobilă) în vBB și vCC și plasează valoarea întreagă în registrul vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? da: 1, nu: -1, egal: 0</item>
+		<item>Compară valorile lungi (întregi) în vBB și vCC și plasează valoarea întregi (întregi) în registrul vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? da: 1, nu: -1, egal: 0</item>
+		<item>Salt la eticheta specificată dacă vA == vB. vA și vB conțin valori întregi.\n(eq este prescurtarea de la Equals)</item>
+		<item>Salt la eticheta specificată dacă vA != vB. vA și vB conțin valori întregi.\n(ne este prescurtarea de la Not Equals)</item>
+		<item>Trece la eticheta specificată dacă vA &lt; vB. vA și vB conțin valori întregi.\n(Este prescurtarea de la Less Than)</item>
+		<item>Trece la eticheta specificată dacă vA &lt;= vB. vA și vB conțin valori întregi.\n(le este o abreviere pentru Less than or Equal/Less or equal)</item>
+		<item>Trece la eticheta specificată dacă vA > vB. vA și vB conțin valori întregi.\n(gt este prescurtarea pentru Greater Than/More Than)</item>
+		<item>Trece la eticheta specificată dacă vA >= vB. vA și vB conțin valori întregi.\n(ge este prescurtarea pentru Mai mare decât sau egal)</item>
+		<item>Trece la eticheta specificată dacă vAA == 0. vAA conține o valoare întreagă.\n(eqz este prescurtarea pentru Equals to Zero)</item>
+		<item>Salt la eticheta specificată dacă vAA != 0. vAA conține o valoare întreagă.\n(nez este prescurtarea de la Not Equals to Zero)</item>
+		<item>Trece la eticheta specificată dacă vAA &lt; 0. vAA conține o valoare întreagă.\n(ltz este prescurtarea de la Less Than Zero)</item>
+		<item>Trece la eticheta specificată dacă vAA &lt;= 0. vAA conține o valoare întreagă.\n(lez este o abreviere pentru Mai puțin sau egal cu zero/mai puțin sau egal cu zero)</item>
+		<item>Trece la eticheta specificată dacă vAA > 0. vAA conține o valoare întreagă.\n(gtz este prescurtarea de la Greater Than Zero)</item>
+		<item>Trece la eticheta specificată dacă vAA >= 0. vAA conține o valoare întreagă.\n(gez este o abreviere pentru Mai mare sau egal cu zero)</item>
+		<item>Obține o valoare întreagă la indexul conținut în vCC din matricea referită în vBB și o plasează în registrul vAA.\nvAA = vBB[vCC]</item>
+		<item>Obține, la indexul conținut în vCC, din tabloul referit în vBB, o valoare dublă/long și o plasează în perechea de registre vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Primește, la indexul conținut în vCC, din matricea referită în vBB, o referință la obiect și îl plasează în registrul vAA.\nvAA = vBB[vCC]</item>
+		<item>Obține, la indexul conținut în vCC, din tabloul referit în vBB, o valoare booleană și o plasează în registrul vAA.\nvAA = vBB[vCC]</item>
+		<item>Preia, la indexul conținut în vCC, din tabloul referit în vBB, o valoare de octet (întreg) și îl plasează în registrul vAA.\nvAA = vBB[vCC]</item>
+		<item>Preia, la indexul conținut în vCC, din tabloul referit în vBB, o valoare char și o plasează în registrul vAA.\nvAA = vBB[vCC]</item>
+		<item>Preia, la indexul conținut în vCC, din tabloul referit în vBB, o valoare scurtă (întreg) și o plasează în registrul vAA.\nvAA = vBB[vCC]</item>
+		<item>Plasează valoarea întreagă din vAA în matricea referită în vBB cu elementul care conține registrul vCC.\nvBB[vCC] = vAA</item>
+		<item>Plasează o valoare dublă/lungă din perechea de registre vAA, vAA+1 în matricea referită în vBB, elementul care conține registrul vCC.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Plasează o referință la un obiect din vAA în matricea referită în vBB cu un element cu registrul vCC.\nvBB[vCC] = vAA</item>
+		<item>Plasează valoarea booleană din vAA în matricea referită de vBB cu elementul care conține registrul vCC.\nvBB[vCC] = vAA</item>
+		<item>Plasează valoarea octetului (întreg) din vAA în matricea referită în vBB cu elementul care conține registrul vCC.\nvBB[vCC] = vAA</item>
+		<item>Plasează valoarea caracterului (caracterului) din vAA în matricea referită în vBB prin element cu registrul vCC.\nvBB[vCC] = vAA</item>
+		<item>Plasează valoarea scurtă (întreg) din vAA în matricea referită în vBB cu elementul care conține registrul vCC.\nvBB[vCC] = vAA</item>
+		<item>Citește valoarea din câmpul instanței și o plasează în registrul vA. Referința la clasa care conține acest câmp se află în registrul vB.\nvA = vB.câmp</item>
+		<item>Citește o valoare dublă/lungă dintr-un câmp de instanță și o plasează într-o pereche de registre (vA, vA+1). Referința la clasa care conține acest câmp se află în registrul vB.\n(vA, vA+1) = vB.câmp</item>
+		<item>Citește o referință de obiect dintr-un câmp de instanță și o plasează în registrul vA. Referința la clasa care conține acest câmp se află în registrul vB.\nvA = vB.câmp</item>
+		<item>Citește o valoare booleană din câmpul instanței și o plasează în registrul vA. Referința la clasa care conține acest câmp se află în registrul vB.\nvA = vB.câmp</item>
+		<item>Citește o valoare de octet (întreg) dintr-un câmp de instanță și îl plasează în registrul vA. Referința la clasa care conține acest câmp se află în registrul vB.\nvA = vB.câmp</item>
+		<item>Citește o valoare char dintr-un câmp de instanță și o plasează în registrul vA. Referința la clasa care conține acest câmp se află în registrul vB.\nvA = vB.câmp</item>
+		<item>Citește o valoare scurtă (întreg) dintr-un câmp de instanță și o plasează în registrul vA. Referința la clasa care conține acest câmp se află în registrul vB.\nvA = vB.câmp</item>
+		<item>Plasează valoarea din registrul vA în câmpul instanței. Referința la clasa care conține acest câmp se află în registrul vB.\nvB.câmp = vA</item>
+		<item>Plasează o valoare dublă/lungă dintr-o pereche de registre (vA, vA+1) într-un câmp de instanță. Referința la clasa care conține acest câmp se află în registrul vB.\nvB.field = (vA, vA+1)</item>
+		<item>Plasează o referință la un obiect din registrul vA în câmpul instanței. Referința la clasa care conține acest câmp se află în registrul vB.\nvB.câmp = vA</item>
+		<item>Plasează valoarea booleană din registrul vA în câmpul instanței. Referința la clasa care conține acest câmp se află în registrul vB.\nvB.câmp = vA</item>
+		<item>Setează valoarea octetului (întreg) a câmpului boolean specificat în instanța la care face referire registrul vB egală cu valoarea registrului vA, adică:\nvB.câmp = vA</item>
+		<item>Setează valoarea caracterului (caracterului) a câmpului boolean specificat în instanța referită de registrul vB egală cu valoarea registrului vA, adică:\nvB.câmp = vA</item>
+		<item>Setează valoarea scurtă (întreg) a câmpului boolean specificat în instanța la care face referire registrul vB egală cu valoarea registrului vA, adică:\nvB.câmp = vA</item>
+		<item>Citește o valoare dintr-un câmp static și o plasează în registrul vAA. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Citește o valoare dublă/lungă dintr-un câmp static și o plasează într-o pereche de registre vAA, vAA+1. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Citește o referință de obiect dintr-un câmp static și o plasează în registrul vAA. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Citește o valoare booleană dintr-un câmp static și o plasează în registrul vAA. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Citește o valoare de octet (întreg) dintr-un câmp static și îl plasează în registrul vAA. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Citește o valoare char dintr-un câmp static și o plasează în registrul vAA. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Citește o valoare scurtă (întreg) dintr-un câmp static și o plasează în registrul vAA. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Plasează valoarea din registrul vAA într-un câmp (câmp static). Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Plasează o valoare dublă/lungă dintr-o pereche de registre vAA, vAA+1 într-un câmp (câmp static). Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Plasează o referință la un obiect din registrul vAA într-un câmp (câmp static). Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Plasează valoarea booleană din registrul vAA într-un câmp (câmp static). Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Plasează o valoare de octet (întreg) din registrul vAA într-un câmp (câmp static). Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Plasează valoarea char din registrul vAA într-un câmp static. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Plasează valoarea scurtă (întreg) din registrul vAA într-un câmp static. Registrul care conține referința la clasa care conține acest câmp nu este utilizat.</item>
+		<item>Apelează (rulează) o metodă virtuală cu parametri. Parametrii sunt indicați în acolade. Primul parametru (registrul v2) conține o referință la clasa care conține metoda apelată, al doilea parametru (conținutul registrului v3) este transmis metodei apelate.</item>
+		<item>Apelează (rulează) o metodă virtuală cu parametri direct din clasa părinte.</item>
+		<item>Apelează (rulează) o metodă cu parametri fără permisiunile metodei virtuale.</item>
+		<item>Apelează (rulează) o metodă statică cu parametri. Parametrii sunt indicați în acolade. Parametrul (conținutul registrului v3) este transmis metodei apelate. Clasa care conține metoda apelată este indicată după acolade.</item>
+		<item>Apelează (rulează) o metodă de interfață cu parametri.</item>
+		<item>Apelează (rulează) o metodă virtuală cu parametri, dar parametrii trebuie să fie cuprinsi în registre cu numere în ordine.</item>
+		<item>Apelează (rulează) o metodă virtuală cu parametri direct din clasa părinte, dar parametrii trebuie să fie cuprinsi în registre cu numere secvențiale.</item>
+		<item>Apelează (rulează) o metodă cu parametri fără permisiuni de metodă virtuală, dar parametrii trebuie să fie conținuți în registre numerotate secvenţial.</item>
+		<item>Apelează (rulează) o metodă statică cu parametri, dar parametrii trebuie să fie conținuti în registre cu numere secvențiale.</item>
+		<item>Apelează (rulează) o metodă de interfață cu parametri, dar parametrii trebuie să fie conținuti în registre numerotate secvențial.</item>
+		<item>Calculează vA = -vB pentru valori de tip întreg.</item>
+		<item>Calculează vA = ~vB pentru valori întregi.\nvA = ~vB</item>
+		<item>Calculează (vA, vA+1) = -(vB, vB+1) pentru valorile de tip lung (întreg).</item>
+		<item>Calculează (vA, vA+1) = ~(vB, vB+1) pentru valori de tip lung (întreg).</item>
+		<item>Calculează vA = -vB pentru valorile flotante.</item>
+		<item>Calculează (vA, vA+1) = -(vB, vB+1) pentru valori duble (în virgulă mobilă).</item>
+		<item>Convertește un număr întreg din vB într-un lung și îl stochează în perechea de registre vA, vA+1.\n(vA, vA+1) = (lung) vB</item>
+		<item>Convertește un număr întreg din vB într-un float și îl stochează în registrul vA.\nvA = (plutitor) vB</item>
+		<item>Convertește un număr întreg din vB într-un dublu (virgula mobilă) și îl stochează într-o pereche de registre vA, vA+1.\n(vA, vA+1) = (dublu) vB</item>
+		<item>Convertește o valoare lungă (întreg) din vB, vB+1 într-un întreg (întreg) și o stochează în registrul vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Convertește o valoare lungă (întreg) din vB, vB+1 într-o valoare mobilă (virgula mobilă) și o stochează în registrul vA.\nvA = (float) (vB, vB+1)</item>
+		<item>Convertește o valoare lungă (întreg) din vB, vB+1 într-o valoare dublă (virgula mobilă) și o stochează într-o pereche de registre vA, vA+1.\n(vA, vA+1) = (dublu) (vB, vB+1)</item>
+		<item>Convertește o valoare flotantă (în virgulă mobilă) din vB într-o valoare întreagă (întreg) și o stochează în registrul vA.\nvA = (int)vB</item>
+		<item>Convertește o valoare flotantă (în virgulă mobilă) din vB într-o valoare lungă (întreg) și o stochează în perechea de registre vA, vA+1.\n(vA, vA+1) = (lung) vB</item>
+		<item>Convertește o valoare flotantă (în virgulă mobilă) din vB într-o valoare dublă (în virgulă mobilă) și o stochează în perechea de registre vA, vA+1.\n(vA, vA+1) = (dublu) vB</item>
+		<item>Convertește o valoare dublă (în virgulă mobilă) din vB, vB+1 într-o valoare întreagă (întreg) și o stochează în registrul vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Convertește o valoare dublă (în virgulă mobilă) din vB, vB+1 într-o valoare lungă (întreg) și o stochează într-o pereche de registre vA, vA+1.\n(vA, vA+1) = (lung) (vB, vB+1)</item>
+		<item>Convertește o valoare dublă (virgulă mobilă) din vB, vB+1 într-o valoare flotantă (virgula mobilă) și o stochează în registrul vA.\nvA = (float) (vB, vB+1)</item>
+		<item>Convertește o valoare întreagă din vB într-o valoare octet și o stochează în registrul vA.\nvA = (octet) vB</item>
+		<item>Convertește o valoare întreagă din vB într-o valoare char și o stochează în registrul vA.\nvA = (car)vB</item>
+		<item>Convertește o valoare întreagă din vB într-o valoare scurtă și o stochează în registrul vA.\nvA = (scurt) vB</item>
+		<item>Calculează vBB + vCC și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB + vCC</item>
+		<item>Calculează vBB - vCC și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB - vCC</item>
+		<item>Calculează vBB * vCC și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB * vCC</item>
+		<item>Calculează vBB / vCC și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB / vCC</item>
+		<item>Calculează vBB % vCC și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB % vCC</item>
+		<item>Calculează vBB și vCC (ȘI logic) și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB și vCC</item>
+		<item>Calculează vBB | vCC (SAU logic) și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB | vCC</item>
+		<item>Calculează vBB ^ vCC (SAU exclusiv) și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB ^ vCC</item>
+		<item>Deplasează vBB la stânga cu numărul de biți specificat de vCC și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Deplasează vBB la dreapta cu numărul de biți specificat de vCC și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB >> vCC</item>
+		<item>Mută vBB fără a păstra semnul la dreapta cu numărul de biți specificat de vCC și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB >>> vCC</item>
+		<item>Calculează (vBB, vBB+1) + (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) - (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) * (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) / (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) % (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) și (vCC, vCC+1) (ȘI logic) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) și (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) | (vCC, vCC+1) (SAU logic) și stochează rezultatul într-o pereche de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) ^ (vCC, vCC+1) (ȘI exclusiv) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Deplasează vBB, vBB+1 la stânga cu numărul de biți specificat de vCC și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Deplasează vBB, vBB+1 la dreapta cu numărul de biți specificat de vCC și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Deplasează vBB, vBB+1 la dreapta fără a păstra semnul cu numărul de biți specificat de vCC și stochează rezultatul într-o pereche de registre vAA, vA+1. Toate valorile sunt lungi (întregi).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Calculează vBB + vCC și stochează rezultatul în registrul vAA. Toate valorile sunt flotante.\nvAA = vBB + vCC</item>
+		<item>Calculează vBB - vCC și stochează rezultatul în registrul vAA. Toate valorile sunt flotante.\nvAA = vBB - vCC</item>
+		<item>Calculează vBB * vCC și stochează rezultatul în registrul vAA. Toate valorile sunt flotante.\nvAA = vBB * vCC</item>
+		<item>Calculează vBB / vCC și stochează rezultatul în registrul vAA. Toate valorile sunt flotante.\nvAA = vBB / vCC</item>
+		<item>Calculează vBB % vCC și stochează rezultatul în registrul vAA. Toate valorile sunt flotante.\nvAA = vBB % vCC</item>
+		<item>Calculează (vBB, vBB+1) + (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt duble (virgula mobilă).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) - (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt duble (virgula mobilă).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) * (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt duble (virgula mobilă).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) / (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt duble (virgula mobilă).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calculează (vBB, vBB+1) % (vCC, vCC+1) și stochează rezultatul în perechea de registre vAA, vAA+1. Toate valorile sunt duble (virgula mobilă).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Calculează vA + vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA + vB</item>
+		<item>Calculează vA - vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA - vB</item>
+		<item>Calculează vA * vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA * vB</item>
+		<item>Calculează vA / vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA / vB</item>
+		<item>Calculează vA % vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA % vB</item>
+		<item>Calculează vA și vB (ȘI logic) și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA și vB</item>
+		<item>Calculează vA | vB (SAU logic) și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA | vB</item>
+		<item>Calculează vA ^ vB (SAU exclusiv) și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA ^ vB</item>
+		<item>Deplasează vA la stânga cu numărul de biți specificat de vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA &lt;&lt; vB</item>
+		<item>Deplasează vA la dreapta cu numărul de biți specificat de vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA >> vB</item>
+		<item>Mută vA fără a-și păstra semnul la dreapta cu numărul de biți specificat de vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vA >>> vB</item>
+		<item>Calculează (vA, vA+1) + (vB, vB+1) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) - (vB, vB+1) și stochează rezultatul într-o pereche de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) * (vB, vB+1) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) / (vB, vB+1) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) % (vB, vB+1) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) și (vB, vB+1) (ȘI logic) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) și (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) | (vB, vB+1) (SAU logic) și stochează rezultatul într-o pereche de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) și (vB, vB+1) (exclusiv OR) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Deplasează vA, vA+1 la stânga cu numărul de biți specificat de vB și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Deplasează vA, vA+1 la dreapta cu numărul de biți specificat de vB și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Mută vA, vA+1 la dreapta fără a păstra semnul după numărul de cifre specificat de vB și stochează rezultatul într-o pereche de registre vA, vA+1. Toate valorile sunt lungi (întregi).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Calculează vA + vB și stochează rezultatul în registrul vA. Toate valorile sunt flotante.\nvA = vA + vB</item>
+		<item>Calculează vA - vB și stochează rezultatul în registrul vA. Toate valorile sunt flotante.\nvA = vA - vB</item>
+		<item>Calculează vA * vB și stochează rezultatul în registrul vA. Toate valorile sunt flotante.\nvA = vA * vB</item>
+		<item>Calculează vA / vB și stochează rezultatul în registrul vA. Toate valorile sunt flotante.\nvA = vA / vB</item>
+		<item>Calculează vA % vB și stochează rezultatul în registrul vA. Toate valorile sunt flotante.\nvA = vA % vB</item>
+		<item>Calculează (vA, vA+1) + (vB, vB+1) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt duble (virgula mobilă).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) - (vB, vB+1) și stochează rezultatul într-o pereche de registre vA, vA+1. Toate valorile sunt duble (virgula mobilă).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) * (vB, vB+1) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt duble (virgula mobilă).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) / (vB, vB+1) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt duble (virgula mobilă).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calculează (vA, vA+1) % (vB, vB+1) și stochează rezultatul în perechea de registre vA, vA+1. Toate valorile sunt duble (virgula mobilă).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Calculează vB + 0xFFFF și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vB + 0xFFFF</item>
+		<item>Calculează 0xFFFF - vB și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = 0xFFFF - vB</item>
+		<item>Calculează vB * 0xFFFF și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vB * 0xFFFF</item>
+		<item>Calculează vB / 0xFFFF și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vB / 0xFFFF</item>
+		<item>Calculează vB % 0xFFFF și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vB % 0xFFFF</item>
+		<item>Calculează vB și 0xFFFF (ȘI logic) și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vB &amp; 0xFFFF</item>
+		<item>Calculează vB | 0xFFFF (SAU logic) și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vB | 0xFFFF</item>
+		<item>Calculează vB ^ 0xFFFF (SAU exclusiv) și stochează rezultatul în registrul vA. Toate valorile sunt întregi.\nvA = vB ^ 0xFFFF</item>
+		<item>Calculează vBB + 0xFF și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB + 0xFF</item>
+		<item>Calculează 0xFF - vBB și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = 0xFF - vBB</item>
+		<item>Calculează vBB * 0xFF și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB * 0xFF</item>
+		<item>Calculează vBB / 0xFF și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB / 0xFF</item>
+		<item>Calculează vBB % 0xFF și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB % 0xFF</item>
+		<item>Calculează vBB și 0xFF (ȘI logic) și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB și 0xFF</item>
+		<item>Calculează vBB | 0xFF (SAU logic) și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB | 0xFF</item>
+		<item>Calculează vBB ^ 0xFF (SAU exclusiv) și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB ^ 0xFF</item>
+		<item>Deplasează vBB la stânga cu numărul de biți specificat de 0xFF și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Deplasează vBB la dreapta cu numărul de biți specificat de 0xFF și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB >> 0xFF</item>
+		<item>Semnal mută vBB la dreapta cu numărul de biți specificat de 0xFF și stochează rezultatul în registrul vAA. Toate valorile sunt întregi.\nvAA = vBB >>> 0xFF</item>
+		<item>Apelează (rulează) o metodă de semnătură polimorfă cu parametri. Prezent în fișierele Dex începând cu versiunea 038.</item>
+		<item>Apelează (rulează) o metodă de semnătură polimorfă cu parametri, dar parametrii trebuie să fie conținuti în registre numerotate secvenţial. Prezent în fișierele Dex începând cu versiunea 038.</item>
+		<item>Permite (începe) apelarea unui site cu parametri. Prezent în fișierele Dex începând cu versiunea 038.</item>
+		<item>Permite (începe) apelarea unui site cu parametri, dar parametrii trebuie să fie cuprinsi în registre cu numere în ordine. Prezent în fișierele Dex începând cu versiunea 038.</item>
+		<item>Plasează o referință la un handle de metodă în registrul vAA. Prezent în fișierele Dex începând cu versiunea 039.</item>
+		<item>Plasează o referință la prototipul metodei în registrul vAA. Prezent în fișierele Dex începând cu versiunea 039.</item>
+	</string-array>
 	<string-array name="copy_variants">
         <item>Redenumeşte</item>
 		<item>Rename files only</item>

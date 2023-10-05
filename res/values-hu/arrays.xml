@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Regiszterek</item>
+		<item>Szó szerinti értékek</item>
+		<item>Primitív adattípusok</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>A vA egy 4 bites regiszter v0 - v15 értéktartománnyal\nA vAA egy 8 bites regiszter, amelynek értéktartománya v0 - v255\nA vAAAA egy 16 bites regiszter, amelynek értéktartománya v0 - v65535</item>
+		<item>0xF, 0xFF stb. szó szerinti értékek megjelenítésére. A regiszterekhez hasonlóan az F szám értéktartományt jelöl, például:\nA 0xF értékek tartományát a [-0x8, 0x7] jelenti\nA 0xFF értéktartományát a [-0x80, 0x7F] jelképezi</item>
+		<item>V - érvénytelen, Z - logikai érték, B - bájt\nC - char, S - rövid, I - int\nJ - hosszú, F - úszó, D - dupla\nérvénytelen: csak visszatérési típusokhoz használható\nlogikai érték: a true vagy false értéket tárolja\nbájt: -128 és 127 közötti egész számot tárol, és 1 bájtot foglal el\nrövid: -32768 és 32767 közötti egész számot tárol, és 2 bájtot vesz fel\nint: -2147483648 és 2147483647 közötti egész számot tárol, és 4 bájtot foglal el\nhosszú: -9223372036854775808 és 9223372036854775807 közötti egész számot tárol, és 8 bájtot foglal el\ndouble: ±4,9*10³²⁴ és ±1,7976931348623157*10³⁰⁸ közötti lebegőpontos számot tárol, és 8 bájtot foglal el. A tört literálokban tizedes elválasztóként egy pontot használnak.\nfloat: -3,4*10³⁸ és 3.4*10³⁸ közötti lebegőpontos számot tárol, és 4 bájtot foglal el\nchar: egyetlen karaktert tárol UTF-16 kódolásban, és 2 bájtot foglal el, így a tárolt értékek tartománya 0 és 65535 között van.</item>
+		<item>Nincs művelet.</item>
+		<item>A vB regiszter értékét áthelyezi a vA regiszterbe.</item>
+		<item>A vBBBB regiszter értékét áthelyezi a vAA regiszterbe.</item>
+		<item>A vBBBB regiszter értékét áthelyezi a vAAAA regiszterbe.</item>
+		<item>A regiszterpár hosszú/dupla értékét (vB, vB+1) áthelyezi a vA, vA+1 regiszterpárba.</item>
+		<item>Egy regiszterpár hosszú/dupla értékét (vBBBB, vBBBB+1) áthelyezi egy vAA, vAA+1 regiszterpárba.</item>
+		<item>Egy regiszterpár hosszú/dupla értékét (vBBBB, vBBBB+1) áthelyezi egy vAAAA, vAAAA+1 regiszterpárba.</item>
+		<item>Objektumhivatkozást helyez át a vB-regiszterből a vA-regiszterbe.</item>
+		<item>Objektumhivatkozást helyez át a vBBBB regiszterből a vAA regiszterbe.</item>
+		<item>Objektumhivatkozást helyez át a vBBBB regiszterből a vAAAA regiszterbe.</item>
+		<item>A korábban meghívott metódus visszatérési értékét áthelyezi a vAA regiszterbe.</item>
+		<item>Az előzőleg meghívott metódus által visszaadott long/doupla értéket áthelyezi a vAA, vAA+1 regiszterpárba.</item>
+		<item>A korábban meghívott metódus által visszaadott objektumhivatkozást áthelyezi a vAA regiszterbe.</item>
+		<item>A metódushívás során (végrehajtás közben) kiadott, kizárt objektumra mutató hivatkozást áthelyezi a vAA regiszterbe.</item>
+		<item>Visszatérési érték nélkül.</item>
+		<item>A vAA regiszter értékének visszaadásával térjen vissza.</item>
+		<item>Visszatérés dupla/hosszú érték visszaadásával egy vAA, vAA+1 regiszterpárba.</item>
+		<item>Visszatérés az objektumhivatkozás értékének visszaadásával a vAA regiszterből.</item>
+		<item>4 bites konstanst helyez el a vA regiszterbe.</item>
+		<item>16 bites konstanst helyez el a vAA regiszterbe.</item>
+		<item>Egész konstanst helyez el a vAA regiszterbe.</item>
+		<item>16 bites konstanst helyez el a vAA regiszter felső bitjeibe. A lebegőpontos (lebegőpontos) értékek inicializálására szolgál.</item>
+		<item>Egy 16 bites egész szám állandót helyez el a vAA, vAA+1 regiszterpárba, és az egész állandót hosszú konstanssá alakítja.</item>
+		<item>Egy 32 bites egész szám állandót helyez el a vAA, vAA+1 regiszterpárba, és az egész állandót hosszú konstanssá alakítja.</item>
+		<item>64 bites konstanst helyez el a vAA, vAA+1 regiszterpárba.</item>
+		<item>Egy 16 bites konstanst helyez el a vAA, vAA+1 regiszterpár felső 16 bitjébe. Dupla (lebegőpontos) értékek inicializálására szolgál.</item>
+		<item>Hivatkozást helyez el a megadott karakterláncra a vAA regiszterben.</item>
+		<item>Hivatkozást helyez el a megadott karakterláncra a vAA regiszterben.</item>
+		<item>Hivatkozást helyez el a string_id által azonosított string állandóra (karakterláncra) a vAA regiszterbe.</item>
+		<item>Lekéri az objektumfigyelőt, amelyre a vAA regiszter hivatkozik.</item>
+		<item>Felszabadítja a vAA regiszter által hivatkozott objektumfigyelőt.</item>
+		<item>Ellenőrzi, hogy a vAA regiszterben található objektumhivatkozás leadható-e a type_id által azonosított osztályba. ClassCastException kivételt dob, ha nem tud, ellenkező esetben folytatja a végrehajtást.</item>
+		<item>Ellenőrzi, hogy a vB regiszter tartalma a type_id által azonosított osztály példánya-e. A vA regisztert nem nullára állítja, ha van, 0-ra, ha nincs.\nvA = vB példányOf típusú ? 10</item>
+		<item>Meghatározza a tömbelemek számát a vB regiszterből, és az értéket a vA regiszterbe helyezi.\nvA = vB.hossz</item>
+		<item>Létrehoz egy objektumtípus példányát, és hivatkozást helyez el a létrehozott példányra a vAA-regiszterben.</item>
+		<item>Létrehoz egy új type_id változók tömbjét a vB regiszterelemek méretével, és hivatkozást helyez el a tömbre a vA regiszterben.</item>
+		<item>Létrehoz egy type_id típusú új adattömböt, és kitölti paraméterekkel (azaz nincs hosszú/dupla tömb, de a hivatkozási típusok megengedettek). Az újonnan létrehozott tömbre való hivatkozást az utasítást közvetlenül követő move-result-object utasítással kaphatjuk meg (ha használni kell).</item>
+		<item>Létrehoz egy type_id típusú új adattömböt, és kitölti egy sor paraméterrel (vagyis nem long/double tömbök, de a referenciatípusok elfogadhatók). Az újonnan létrehozott tömbre való hivatkozást az utasítást közvetlenül követő move-result-object utasítással kaphatjuk meg (ha használni kell).</item>
+		<item>Statikus adatokkal tölti fel a vAA regiszterben hivatkozott tömböt. Az adathely az aktuális utasítás pozíciójának és az eltolásnak az összege.</item>
+		<item>Kivétel objektumot dob. Hivatkozás a kivételobjektumra a vAA regiszterben.</item>
+		<item>Feltétel nélkül ugorjon egy rövid (egész) 8 bites eltolásra.</item>
+		<item>Feltétel nélküli ugrás 16 bites eltolásra.</item>
+		<item>Feltétel nélküli ugrás 32 bites eltolásra.</item>
+		<item>A Switch operátort akkor valósítja meg, ha a vezérlőállandók közel vannak egymáshoz (egy sorban). Az utasítás indextáblát használ. Az utasításeltolást egy adott esetre a vAA index határozza meg. Ha a vAA index túllép a táblán, a végrehajtás a következő utasítással folytatódik (alapértelmezett).</item>
+		<item>Ritka táblázat esetén megvalósítja a Switch operátort. Az utasítás egy táblázatot használ, amely minden konstanshoz megadja az eltolásokat. Ha nem található egyezés a táblában, akkor a következő utasítás kerül végrehajtásra (alapértelmezett kis- és nagybetű).</item>
+		<item>Összehasonlítja a lebegőpontos (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = vBB &lt; vCC ? igen: 1, nem: -1, egyenlő: 0</item>
+		<item>Összehasonlítja a lebegőpontos (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = vBB &lt; vCC ? igen: 1, nem: -1, egyenlő: 0</item>
+		<item>Összehasonlítja a dupla (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nigen: 1, nem: -1, egyenlő: 0</item>
+		<item>Összehasonlítja a dupla (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = (vBB, vBB+1) > (vCC, vCC+1)? igen: 1, nem: -1, egyenlő: 0</item>
+		<item>Összehasonlítja a hosszú (egész) értékeket a vBB-ben és a vCC-ben, és elhelyezi az egész (egész) értéket a vAA-regiszterben:\nvAA = (vBB, vBB+1) > (vCC, vCC+1)? igen: 1, nem: -1, egyenlő: 0</item>
+		<item>A megadott címkére ugrik, ha vA == vB. vA és vB egész értékeket tartalmaz.\n(az eq az egyenlő rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vA != vB. vA és vB egész értékeket tartalmaz.\n(ne a Not Equals rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vA &lt; vB. vA és vB egész értékeket tartalmaz.\n(A kevesebb, mint a rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vA &lt;= vB. vA és vB egész értékeket tartalmaz.\n(le a Kisebb vagy egyenlő/Kisebb vagy egyenlő rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vA > vB. vA és vB egész értékeket tartalmaz.\n(a gt a Greater Than/More Than rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vA >= vB. vA és vB egész értékeket tartalmaz.\n(ge a nagyobb mint vagy egyenlő rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vAA == 0. A vAA egész értéket tartalmaz.\n(eqz az egyenlő a nullával rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vAA != 0. A vAA egész értéket tartalmaz.\n(a nez a nem egyenlő a nullával rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vAA &lt; 0. A vAA egész értéket tartalmaz.\n(az ltz a Less Than Zero rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vAA &lt;= 0. A vAA egész értéket tartalmaz.\n(lez a Less, mint vagy egyenlő a nullával/Kisebb vagy egyenlő nullával, rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vAA > 0. A vAA egész értéket tartalmaz.\n(a gtz a nagyobb, mint nulla rövidítése)</item>
+		<item>A megadott címkére ugrik, ha vAA >= 0. A vAA egész értéket tartalmaz.\n(a gez a nullánál nagyobb vagy egyenlő a nullával való rövidítése)</item>
+		<item>Egész számot kap a vCC-ben található indexben a vBB-ben hivatkozott tömbből, és elhelyezi a vAA-regiszterben.\nvAA = vBB[vCC]</item>
+		<item>A vCC-ben található indexnél a vBB-ben hivatkozott tömbből dupla/hosszú értéket kap, és a vAA, vAA+1 regiszterpárba helyezi.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>A vCC-ben található indexen a vBB-ben hivatkozott tömbből kap egy hivatkozást az objektumra, és elhelyezi a vAA-regiszterben.\nvAA = vBB[vCC]</item>
+		<item>A vCC-ben található indexnél a vBB-ben hivatkozott tömbből logikai értéket kap, és elhelyezi a vAA-regiszterben.\nvAA = vBB[vCC]</item>
+		<item>A vCC-ben található indexen lekér egy bájt (egész) értéket a vBB-ben hivatkozott tömbből, és elhelyezi a vAA regiszterben.\nvAA = vBB[vCC]</item>
+		<item>A vCC-ben található indexnél a vBB-ben hivatkozott tömbből lekér egy char értéket, és elhelyezi a vAA regiszterben.\nvAA = vBB[vCC]</item>
+		<item>A vCC-ben található indexnél a vBB-ben hivatkozott tömbből lekér egy rövid (egész) értéket, és elhelyezi a vAA regiszterben.\nvAA = vBB[vCC]</item>
+		<item>A vAA-ból származó egész számot a vBB-ben hivatkozott tömbbe helyezi a vCC-regisztert tartalmazó elemmel.\nvBB[vCC] = vAA</item>
+		<item>Dupla/hosszú értéket helyez el a vAA, vAA+1 regiszterpárból a vBB-ben hivatkozott tömbbe, a vCC regisztert tartalmazó elemmel.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Hivatkozást helyez el egy objektumra a vAA-ból a vBB-ben hivatkozott tömbbe egy vCC-regiszterrel rendelkező elemmel.\nvBB[vCC] = vAA</item>
+		<item>A vAA logikai értéket a vBB által hivatkozott tömbbe helyezi a vCC regisztert tartalmazó elemmel.\nvBB[vCC] = vAA</item>
+		<item>A vAA-ból származó bájt (egész) értéket a vBB-ben hivatkozott tömbbe helyezi a vCC regisztert tartalmazó elemmel.\nvBB[vCC] = vAA</item>
+		<item>Elhelyezi a vAA karakter (karakter) értékét a vBB-ben hivatkozott tömbbe a vCC regiszterrel rendelkező elemenként.\nvBB[vCC] = vAA</item>
+		<item>A vAA rövid (egész) értékét a vBB-ben hivatkozott tömbbe helyezi a vCC regisztert tartalmazó elemmel.\nvBB[vCC] = vAA</item>
+		<item>Beolvassa az értéket a példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
+		<item>Dupla/hosszú értéket olvas be egy példánymezőből, és egy regiszterpárba helyezi (vA, vA+1). Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\n(vA, vA+1) = vB.mező</item>
+		<item>Beolvas egy objektumhivatkozást egy példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
+		<item>Kiolvas egy logikai értéket a példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
+		<item>Beolvas egy bájt (egész szám) értéket egy példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
+		<item>Egy char értéket beolvas egy példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
+		<item>Kiolvas egy rövid (egész) értéket egy példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
+		<item>A vA regiszter értékeit a példánymezőbe helyezi. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = vA</item>
+		<item>Dupla/hosszú értéket helyez el egy regiszterpárból (vA, vA+1) egy példánymezőbe. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = (vA, vA+1)</item>
+		<item>Hivatkozást helyez el egy objektumra a vA regiszterből a példánymezőbe. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = vA</item>
+		<item>Elhelyezi a logikai értéket a vA regiszterből a példánymezőbe. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = vA</item>
+		<item>A vB regiszter által hivatkozott példányban a megadott logikai mező bájt (egész) értékét egyenlőnek állítja be a vA regiszter értékével, azaz:\nvB.field = vA</item>
+		<item>A vB regiszter által hivatkozott példányban a megadott logikai mező char (karakter) értékét egyenlővé állítja a vA regiszter értékével, azaz:\nvB.field = vA</item>
+		<item>A vB regiszter által hivatkozott példányban a megadott logikai mező rövid (egész) értékét a vA regiszter értékével egyenlőnek állítja be, azaz:\nvB.field = vA</item>
+		<item>Kiolvas egy értéket egy statikus mezőből, és elhelyezi a vAA regiszterben. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Kiolvas egy dupla/hosszú értéket egy statikus mezőből, és egy vAA, vAA+1 regiszterpárba helyezi. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Beolvas egy objektum hivatkozást egy statikus mezőből, és elhelyezi a vAA regiszterben. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Kiolvas egy logikai értéket egy statikus mezőből, és elhelyezi a vAA regiszterben. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Kiolvas egy bájt (egész szám) értéket egy statikus mezőből, és elhelyezi a vAA regiszterben. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Kiolvas egy char értéket egy statikus mezőből, és elhelyezi a vAA regiszterben. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Kiolvas egy rövid (egész) értéket egy statikus mezőből, és elhelyezi a vAA regiszterben. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>A vAA-regiszter értékeit egy mezőbe (statikus mezőbe) helyezi. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Dupla/hosszú értéket helyez el egy vAA, vAA+1 regiszterpárból egy mezőbe (statikus mező). Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Hivatkozást helyez el egy objektumra a vAA regiszterből egy mezőbe (statikus mező). Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>A logikai értéket a vAA regiszterből egy mezőbe (statikus mezőbe) helyezi. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Egy bájt (egész) értéket helyez el a vAA regiszterből egy mezőbe (statikus mező). Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>A char értéket a vAA regiszterből egy statikus mezőbe helyezi. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>A vAA regiszterből származó rövid (egész) értéket egy statikus mezőbe helyezi. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
+		<item>Meghív (lefuttat) egy virtuális metódust paraméterekkel. A paramétereket kapcsos zárójelek jelzik. Az első paraméter (register v2) hivatkozást tartalmaz a meghívott metódust tartalmazó osztályra, a második paraméter (a v3 regiszter tartalma) átadásra kerül a meghívott metódusnak.</item>
+		<item>Közvetlenül a szülőosztályból hív meg (lefuttat) egy virtuális metódust paraméterekkel.</item>
+		<item>Meghív (lefuttat) egy metódust paraméterekkel a virtuális metódus engedélyei nélkül.</item>
+		<item>Meghív (lefuttat) egy statikus metódust paraméterekkel. A paramétereket kapcsos zárójelek jelzik. A paraméter (a v3 regiszter tartalma) átadásra kerül a hívott metódusnak. A hívott metódust tartalmazó osztályt a kapcsos zárójelek után jelöljük.</item>
+		<item>Meghív (lefuttat) egy interfész metódust paraméterekkel.</item>
+		<item>Meghív (lefuttat) egy virtuális metódust paraméterekkel, de a paramétereknek sorszámmal ellátott regiszterekben kell szerepelniük.</item>
+		<item>Egy virtuális metódust hív (futtat) paraméterekkel közvetlenül a szülőosztályból, de a paramétereknek sorszámú regiszterekben kell szerepelniük.</item>
+		<item>Virtuális metódusengedélyek nélküli paraméterekkel rendelkező metódust hív (lefuttat), de a paramétereknek szekvenciálisan sorszámozott regiszterekben kell szerepelniük.</item>
+		<item>Meghív (lefuttat) egy statikus metódust paraméterekkel, de a paramétereknek sorszámú regiszterekben kell szerepelniük.</item>
+		<item>Meghív (lefuttat) egy interfész metódust paraméterekkel, de a paramétereknek szekvenciálisan sorszámozott regiszterekben kell szerepelniük.</item>
+		<item>Kiszámítja a vA = -vB értéket az egész típusú értékekhez.</item>
+		<item>Kiszámítja a vA = ~vB egész értékeket.\nvA = ~vB</item>
+		<item>Kiszámítja (vA, vA+1) = -(vB, vB+1) a long (egész) típusú értékekhez.</item>
+		<item>Kiszámítja (vA, vA+1) = ~(vB, vB+1) long (egész szám) típusú értékekhez.</item>
+		<item>Kiszámítja a vA = -vB lebegőértékeket.</item>
+		<item>Kiszámítja a (vA, vA+1) = -(vB, vB+1) dupla (lebegőpontos) értékeket.</item>
+		<item>Egy egész számot vB-ből hosszúvá alakít, és a vA, vA+1 regiszterpárban tárolja.\n(vA, vA+1) = (hosszú) vB</item>
+		<item>Egy egész számot vB-ből lebegőpontossá alakít, és eltárolja a vA regiszterben.\nvA = (lebegő) vB</item>
+		<item>Egy egész számot vB-ből duplává alakít (lebegőpontos), és egy vA, vA+1 regiszterpárban tárolja.\n(vA, vA+1) = (kettős) vB</item>
+		<item>A vB, vB+1 hosszú (egész) értéket egész számmá (egész számmá) alakítja, és eltárolja a vA regiszterben.\nvA = (int) (vB, vB+1)</item>
+		<item>A vB, vB+1 hosszú (egész) értéket lebegőponttá alakítja át, és eltárolja a vA regiszterben.\nvA = (lebegés) (vB, vB+1)</item>
+		<item>Egy hosszú (egész) értéket vB, vB+1 értékből duplává (lebegőpontossá) alakít, és vA, vA+1 regiszterpárban tárolja.\n(vA, vA+1) = (dupla) (vB, vB+1)</item>
+		<item>A lebegőpontos (lebegőpontos) értéket vB-ből egész (egész) értékké alakítja, és eltárolja a vA regiszterben.\nvA = (int)vB</item>
+		<item>A lebegőpontos (lebegőpontos) értéket vB-ből hosszú (egész) értékké alakítja, és a vA, vA+1 regiszterpárban tárolja.\n(vA, vA+1) = (hosszú) vB</item>
+		<item>A lebegőpontos (lebegőpontos) értéket vB-ből dupla (lebegőpontos) értékké alakítja, és a vA, vA+1 regiszterpárban tárolja.\n(vA, vA+1) = (kettős) vB</item>
+		<item>A dupla (lebegőpontos) értéket vB, vB+1 értékből egész (egész) értékké alakítja, és eltárolja a vA regiszterben.\nvA = (int) (vB, vB+1)</item>
+		<item>A dupla (lebegőpontos) értéket vB, vB+1 értékből hosszú (egész) értékké alakítja, és egy vA, vA+1 regiszterpárban tárolja.\n(vA, vA+1) = (hosszú) (vB, vB+1)</item>
+		<item>Dupla (lebegőpontos) értéket vB, vB+1 értékről lebegőpontos (lebegőpontos) értékké alakít át, és eltárolja a vA regiszterben.\nvA = (lebegés) (vB, vB+1)</item>
+		<item>A vB egész értéket bájt értékké alakítja, és eltárolja a vA regiszterben.\nvA = (byte) vB</item>
+		<item>A vB egész értéket char értékké alakítja, és eltárolja a vA regiszterben.\nvA = (char)vB</item>
+		<item>Egy egész értéket vB-ből rövid értékké alakít, és eltárolja a vA regiszterben.\nvA = (rövid) vB</item>
+		<item>Kiszámítja a vBB + vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB + vCC</item>
+		<item>Kiszámítja a vBB - vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB - vCC</item>
+		<item>Kiszámítja a vBB * vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB * vCC</item>
+		<item>Kiszámítja a vBB / vCC-t, és eltárolja az eredményt a vAA regiszterben. Minden érték egész szám.\nvAA = vBB / vCC</item>
+		<item>Kiszámítja a vBB % vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB % vCC</item>
+		<item>Kiszámítja a vBB és vCC (logikai ÉS), az eredményt pedig a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB és vCC</item>
+		<item>Kiszámítja a vBB | vCC (logikai VAGY), és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB | vCC</item>
+		<item>Kiszámítja a vBB ^ vCC-t (kizárólagos VAGY), és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB ^ vCC</item>
+		<item>A vBB-t balra tolja a vCC által megadott bitszámmal, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>A vBB-t jobbra tolja a vCC által megadott bitszámmal, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB >> vCC</item>
+		<item>Előjel megőrzése nélkül jobbra tolja a vBB-t a vCC által meghatározott bitszámmal, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB >>> vCC</item>
+		<item>Kiszámítja (vBB, vBB+1) + (vCC, vCC+1), és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) - (vCC, vCC+1) és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) * (vCC, vCC+1), és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) / (vCC, vCC+1) és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) % (vCC, vCC+1) és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) &amp; (vCC, vCC+1) (logikai ÉS), és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Számít (vBB, vBB+1) | (vCC, vCC+1) (logikai VAGY), és az eredményt egy vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) ^ (vCC, vCC+1) (kizárólag ÉS), és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>A vBB-t, vBB+1-et balra tolja a vCC által megadott bitszámmal, és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>A vBB, vBB+1 jobbra tolja a vCC által megadott bitszámmal, és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>A vBB, vBB+1 jobbra tolja az előjel megőrzése nélkül a vCC által megadott bitszámmal, és az eredményt egy vAA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Kiszámítja a vBB + vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték lebegő.\nvAA = vBB + vCC</item>
+		<item>Kiszámítja a vBB - vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték lebegő.\nvAA = vBB - vCC</item>
+		<item>Kiszámítja a vBB * vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték lebegő.\nvAA = vBB * vCC</item>
+		<item>Kiszámítja a vBB / vCC-t, és eltárolja az eredményt a vAA regiszterben. Minden érték lebegő.\nvAA = vBB / vCC</item>
+		<item>Kiszámítja a vBB % vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték lebegő.\nvAA = vBB % vCC</item>
+		<item>Kiszámítja (vBB, vBB+1) + (vCC, vCC+1), és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték dupla (lebegőpont).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) - (vCC, vCC+1) és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték dupla (lebegőpont).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) * (vCC, vCC+1), és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték dupla (lebegőpont).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) / (vCC, vCC+1) és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték dupla (lebegőpont).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) % (vCC, vCC+1) és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték dupla (lebegőpont).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Kiszámolja a vA + vB-t, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA + vB</item>
+		<item>Kiszámítja a vA - vB-t, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA - vB</item>
+		<item>Kiszámítja a vA * vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA * vB</item>
+		<item>Kiszámítja a vA / vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA / vB</item>
+		<item>Kiszámítja a vA % vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA % vB</item>
+		<item>Kiszámítja a vA és vB értékeket (logikai ÉS), és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA és vB</item>
+		<item>Kiszámítja vA | vB (logikai VAGY), és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA | vB</item>
+		<item>Kiszámítja a vA ^ vB-t (kizárólagos VAGY), és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA ^ vB</item>
+		<item>A vA-t balra tolja a vB által megadott számú bittel, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA &lt;&lt; vB</item>
+		<item>A vA-t jobbra tolja a vB által megadott számú bittel, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA >> vB</item>
+		<item>A vA-t anélkül, hogy megőrizné előjelét, jobbra tolja a vB által megadott bitszámmal, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA >>> vB</item>
+		<item>Kiszámítja (vA, vA+1) + (vB, vB+1), és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) - (vB, vB+1), és eltárolja az eredményt egy vA, vA+1 regiszterpárban. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) * (vB, vB+1), és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) / (vB, vB+1) és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) % (vB, vB+1), és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) &amp; (vB, vB+1) (logikai ÉS), és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) | (vB, vB+1) (logikai VAGY), és az eredményt egy vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) &amp; (vB, vB+1) (kizárólagos VAGY), és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>A vA-t, vA+1-et balra tolja a vB által megadott bitszámmal, és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>A vA, vA+1 jobbra tolja a vB által megadott bitszámmal, és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>A vA, vA+1 jobbra tolja az előjel megőrzése nélkül a vB által megadott számjegyek számával, és az eredményt vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Kiszámolja a vA + vB-t, és az eredményt a vA regiszterben tárolja. Minden érték lebegő.\nvA = vA + vB</item>
+		<item>Kiszámítja a vA - vB-t, és az eredményt a vA regiszterben tárolja. Minden érték lebegő.\nvA = vA - vB</item>
+		<item>Kiszámítja a vA * vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték lebegő.\nvA = vA * vB</item>
+		<item>Kiszámítja a vA / vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték lebegő.\nvA = vA / vB</item>
+		<item>Kiszámítja a vA % vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték lebegő.\nvA = vA % vB</item>
+		<item>Kiszámítja (vA, vA+1) + (vB, vB+1), és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték dupla (lebegőpont).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) - (vB, vB+1), és eltárolja az eredményt egy vA, vA+1 regiszterpárban. Minden érték dupla (lebegőpont).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) * (vB, vB+1), és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték dupla (lebegőpont).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) / (vB, vB+1) és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték dupla (lebegőpont).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) % (vB, vB+1), és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték dupla (lebegőpont).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Kiszámítja a vB + 0xFFFF értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB + 0xFFFF</item>
+		<item>Kiszámítja a 0xFFFF - vB értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = 0xFFFF - vB</item>
+		<item>Kiszámítja a vB * 0xFFFF értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB * 0xFFFF</item>
+		<item>Kiszámítja a vB / 0xFFFF értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB / 0xFFFF</item>
+		<item>Kiszámítja a vB % 0xFFFF értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB % 0xFFFF</item>
+		<item>Kiszámítja a vB &amp; 0xFFFF (logikai ÉS) értéket, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vB és 0xFFFF</item>
+		<item>Kiszámítja vB | 0xFFFF (logikai VAGY), és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB | 0xFFFF</item>
+		<item>Kiszámítja a vB ^ 0xFFFF (kizárólagos VAGY) értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB ^ 0xFFFF</item>
+		<item>Kiszámítja a vBB + 0xFF értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB + 0xFF</item>
+		<item>Kiszámítja a 0xFF - vBB értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = 0xFF - vBB</item>
+		<item>Kiszámítja a vBB * 0xFF értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB * 0xFF</item>
+		<item>Kiszámítja a vBB / 0xFF értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB / 0xFF</item>
+		<item>Kiszámítja a vBB % 0xFF értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB % 0xFF</item>
+		<item>Kiszámítja a vBB &amp; 0xFF (logikai ÉS) értéket, és eltárolja az eredményt a vAA regiszterben. Minden érték egész szám.\nvAA = vBB és 0xFF</item>
+		<item>Kiszámítja a vBB | 0xFF (logikai VAGY), és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB | 0xFF</item>
+		<item>Kiszámítja a vBB ^ 0xFF (kizárólagos VAGY) értéket, és eltárolja az eredményt a vAA regiszterben. Minden érték egész szám.\nvAA = vBB ^ 0xFF</item>
+		<item>A vBB-t balra tolja a 0xFF által megadott bitszámmal, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>A vBB-t jobbra tolja a 0xFF által megadott bitek számával, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB >> 0xFF</item>
+		<item>A vBB-t a 0xFF által megadott bitszámmal jobbra tolja, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB >>> 0xFF</item>
+		<item>Meghív (lefuttat) egy polimorf aláírási metódust paraméterekkel. A 038-as verzió óta jelen van a Dex-fájlokban.</item>
+		<item>Meghív (lefuttat) egy polimorf aláírási metódust paraméterekkel, de a paramétereknek szekvenciálisan sorszámozott regiszterekben kell szerepelniük. A 038-as verzió óta jelen van a Dex-fájlokban.</item>
+		<item>Lehetővé teszi (elkezdi) a webhely hívását paraméterekkel. A 038-as verzió óta jelen van a Dex-fájlokban.</item>
+		<item>Lehetővé teszi (elkezdi) a telephely hívását paraméterekkel, de a paramétereket a regiszterekben kell tartalmazni számokkal. A 038-as verzió óta jelen van a Dex-fájlokban.</item>
+		<item>Hivatkozást helyez el egy metódusleíróra a vAA regiszterben. A 039-es verzió óta jelen van a Dex-fájlokban.</item>
+		<item>Hivatkozást helyez el a metódus prototípusára a vAA regiszterben. A 039-es verzió óta jelen van a Dex-fájlokban.</item>
+	</string-array>
 	<string-array name="copy_variants">
         <item>Átnevezés</item>
 		<item>Csak a fájlok átnevezése</item>

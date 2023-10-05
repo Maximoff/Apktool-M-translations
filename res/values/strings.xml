@@ -84,6 +84,8 @@
     <string name="checksums_original">Replacing checksums from the original</string>
     <string name="clear">Clear</string>
     <string name="no_data">no data available</string>
+    <string name="monochrome">Monochrome</string>
+    <string name="smali_help">Smali Help</string>
 
     <string name="go_back">Back to parent directory</string>
     <string name="sort">Sort Method</string>
@@ -526,6 +528,8 @@
     <string name="keep_modified_time_summary">Trying to keep file and folder modification times if possible</string>
     <string name="open_apk">Open apk files</string>
     <string name="open_apk_summary">Open apk files from other applications in the program</string>
+    <string name="imgs_backup">Save the original image</string>
+    <string name="imgs_backup_summary">Save the original image when processing with the functions \"%1$s\", \"%2$s\" and \"%3$s\"</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>

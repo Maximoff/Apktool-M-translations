@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Regjistrat</item>
+		<item>Vlerat letrare</item>
+		<item>Llojet primitive të të dhënave</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA është një regjistër 4-bitësh me diapazonin e vlerave v0 - v15\nvAA është një regjistër 8-bit me një gamë vlerash v0 - v255\nvAAAA është një regjistër 16-bitësh me një gamë vlerash nga v0 - v65535</item>
+		<item>Përdoren 0xF, 0xFF, etj. për të përfaqësuar vlerat letrare. Ashtu si regjistrat, numri F përdoret për të përfaqësuar një varg vlerash, për shembull:\nGama e vlerave 0xF përfaqësohet nga [-0x8, 0x7]\nGama e vlerave 0xFF përfaqësohet nga [-0x80, 0x7F]</item>
+		<item>V - void, Z - boolean, B - bajt\nC - char, S - shkurt, I - int\nJ - e gjatë, F - noton, D - e dyfishtë\nvoid: mund të përdoret vetëm për llojet e kthimit\nboolean: ruan vlerën true ose false\nbyte: ruan një numër të plotë nga -128 në 127 dhe zë 1 bajt\nshkurt: ruan një numër të plotë nga -32768 në 32767 dhe merr 2 bajt\nint: ruan një numër të plotë nga -2147483648 në 2147483647 dhe zë 4 bajt\ni gjatë: ruan një numër të plotë nga -9223372036854775808 në 9223372036854775807 dhe zë 8 bajt\ndyfish: ruan një numër me pikë lundruese nga ±4,9*10³²4 në ±1,7976931348623157*10³⁰8 dhe zë 8 bajt. Një pikë përdoret si ndarës dhjetore në literale thyesore.\nfloat: ruan një numër me pikë lundruese nga -3,4*10³8 në 3,4*10³8 dhe zë 4 bajt\nchar: ruan një karakter të vetëm në kodimin UTF-16 dhe zë 2 bajt, kështu që diapazoni i vlerave të ruajtura është nga 0 në 65535.</item>
+		<item>Asnjë veprim.</item>
+		<item>Zhvendos vlerën e regjistrit vB në regjistrimin vA.</item>
+		<item>Zhvendos vlerën e regjistrit vBBBB në regjistrin vAA.</item>
+		<item>Zhvendos vlerën e regjistrit vBBBB në regjistrin vAAAA.</item>
+		<item>Zhvendos vlerën e gjatë/dyfishtë të çiftit të regjistrave (vB, vB+1) në çiftin e regjistrit vA, vA+1.</item>
+		<item>Zhvendos vlerën e gjatë/dyfishtë të një çifti regjistrash (vBBBB, vBBBB+1) në një çift regjistrash vAA, vAA+1.</item>
+		<item>Zhvendos vlerën e gjatë/dyfishtë të një çifti regjistrash (vBBBB, vBBBB+1) në një çift regjistrash vAAAA, vAAAA+1.</item>
+		<item>Zhvendos një referencë objekti nga regjistri vB në regjistrin vA.</item>
+		<item>Zhvendos një referencë objekti nga regjistri vBBBB në regjistrin vAA.</item>
+		<item>Zhvendos një referencë objekti nga regjistri vBBBB në regjistrin vAAAA.</item>
+		<item>Zhvendos vlerën e kthyer të metodës së thirrur më parë në regjistrin vAA.</item>
+		<item>Zhvendos vlerën e gjatë/dyfishtë e kthyer nga metoda e thirrur më parë në çiftin e regjistrave vAA, vAA+1.</item>
+		<item>Zhvendos referencën e objektit të kthyer nga metoda e thirrur më parë në regjistrin vAA.</item>
+		<item>Zhvendos referencën në objektin e përjashtuar të lëshuar gjatë thirrjes së metodës (gjatë ekzekutimit) në regjistrin vAA.</item>
+		<item>Kthimi pa vlerë kthimi.</item>
+		<item>Ktheni duke e kthyer vlerën nga regjistri vAA.</item>
+		<item>Kthehu duke kthyer një vlerë të dyfishtë/gjatë në një çift regjistrash vAA, vAA+1.</item>
+		<item>Ktheni duke kthyer vlerën e referencës së objektit nga regjistri vAA.</item>
+		<item>Vendos një konstante 4-bit në regjistrin vA.</item>
+		<item>Vendos një konstante 16-bit në regjistrin vAA.</item>
+		<item>Vendos një konstante numër të plotë në regjistrin vAA.</item>
+		<item>Vendos një konstante 16-bit në pjesët e sipërme të regjistrit vAA. Përdoret për të inicializuar vlerat float (pikë lundruese).</item>
+		<item>Vendos një konstante të plotë 16-bit në çiftin e regjistrave vAA, vAA+1, duke e kthyer konstantën e numrit të plotë në një konstante të gjatë.</item>
+		<item>Vendos një konstante të plotë 32-bit në çiftin e regjistrave vAA, vAA+1, duke e kthyer konstantën e numrit të plotë në një konstante të gjatë.</item>
+		<item>Vendos një konstante 64-bit në çiftin e regjistrave vAA, vAA+1.</item>
+		<item>Vendos një konstante 16-bitësh në 16-bitët e sipërm të çiftit të regjistrave vAA, vAA+1. Përdoret për të inicializuar vlerat e dyfishta (pikë lundruese).</item>
+		<item>Vendos një referencë për vargun e specifikuar në regjistrin vAA.</item>
+		<item>Vendos një referencë për vargun e specifikuar në regjistrin vAA.</item>
+		<item>Vendos një referencë për konstantën e vargut (string) të identifikuar nga string_id në regjistrin vAA.</item>
+		<item>Merr monitorin e objektit të referuar nga regjistri vAA.</item>
+		<item>Lëshon monitorin e objektit të referuar nga regjistri vAA.</item>
+		<item>Kontrollon nëse një referencë objekti e përfshirë në regjistrin vAA mund të transferohet në klasën e identifikuar nga type_id. Hedh një ClassCastException nëse nuk mundet, përndryshe vazhdon ekzekutimi.</item>
+		<item>Kontrollon nëse përmbajtja e regjistrit vB është një shembull i klasës së identifikuar nga type_id. Vendos regjistrin vA në jo zero nëse është i pranishëm, 0 nëse jo.\nvA = vB shembull i llojit ? 10</item>
+		<item>Përcakton numrin e elementeve të grupit nga regjistri vB dhe vendos vlerën në regjistrin vA.\nvA = vB.gjatësia</item>
+		<item>Krijon një shembull të një lloji objekti dhe vendos një referencë për shembullin e krijuar në regjistrin vAA.</item>
+		<item>Krijon një grup të ri variablash type_id me madhësinë e elementeve të regjistrit vB dhe vendos një referencë për grupin në regjistrin vA.</item>
+		<item>Krijon një grup të ri të dhënash të tipit type_id dhe e plotëson atë me parametra (d.m.th., nuk ka vargje të gjata/dyshe, por lejohen llojet e referencës). Një referencë për grupin e krijuar rishtazi mund të merret duke përdorur deklaratën lëvizje-rezultat-objekt menjëherë pas kësaj deklarate (nëse do të përdoret një).</item>
+		<item>Krijon një grup të ri të dhënash të tipit type_id dhe e plotëson atë me një sërë parametrash (d.m.th., nuk ka vargje të gjata/dyshe, por llojet e referencës janë të pranueshme). Një referencë për grupin e krijuar rishtazi mund të merret duke përdorur deklaratën lëvizje-rezultat-objekt menjëherë pas kësaj deklarate (nëse do të përdoret një).</item>
+		<item>Plotëson grupin e referuar në regjistrin vAA me të dhëna statike. Vendndodhja e të dhënave është shuma e pozicionit të instruksionit aktual dhe kompensimit.</item>
+		<item>Hedh një objekt përjashtimi. Një referencë për objektin e përjashtimit në regjistrin VAA.</item>
+		<item>Kërceni pa kushte në një zhvendosje të shkurtër (numër të plotë) 8-bit.</item>
+		<item>Kërcim i pakushtëzuar në kompensimin 16-bit.</item>
+		<item>Kërcim i pakushtëzuar në kompensimin 32-bit.</item>
+		<item>Zbaton operatorin Switch kur konstantat e kontrollit janë afër njëra-tjetrës (në një rresht). Udhëzimi përdor një tabelë indeksi. Kompensimi i udhëzimeve për një rast të veçantë përcaktohet nga indeksi vAA. Nëse indeksi vAA shkon përtej tabelës, ekzekutimi vazhdon me deklaratën tjetër (default).</item>
+		<item>Zbaton operatorin Switch në rast të një tabele të rrallë. Instruksioni përdor një tabelë që specifikon kompensimet për secilën konstante. Nëse nuk gjenden përputhje në tabelë, atëherë ekzekutohet deklarata tjetër (rasti i parazgjedhur).</item>
+		<item>Krahason vlerat float (pikë lundruese) në vBB dhe vCC dhe vendos vlerën e plotë në regjistrin vAA:\nvAA = vBB &lt; vCC ? po: 1, jo: -1, e barabartë: 0</item>
+		<item>Krahason vlerat float (pikë lundruese) në vBB dhe vCC dhe vendos vlerën e plotë në regjistrin vAA:\nvAA = vBB &lt; vCC ? po: 1, jo: -1, e barabartë: 0</item>
+		<item>Krahason vlerat e dyfishta (pikë lundruese) në vBB dhe vCC dhe vendos vlerën e numrit të plotë në regjistrin vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\npo: 1, jo: -1, e barabartë: 0</item>
+		<item>Krahason vlerat e dyfishta (pikë lundruese) në vBB dhe vCC dhe vendos vlerën e numrit të plotë në regjistrin vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? po: 1, jo: -1, e barabartë: 0</item>
+		<item>Krahason vlerat e gjata (integer) në vBB dhe vCC dhe vendos vlerën e numrit të plotë (integer) në regjistrin vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? po: 1, jo: -1, e barabartë: 0</item>
+		<item>Kërcen në etiketën e specifikuar nëse vA == vB. vA dhe vB përmbajnë vlera të plota.\n(eq është shkurtesë për të barabartë)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vA != vB. vA dhe vB përmbajnë vlera të plota.\n(ne është shkurtim për Jo të barabartë)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vA &lt; vB. vA dhe vB përmbajnë vlera të plota.\n(është shkurtim i më pak se)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vA &lt;= vB. vA dhe vB përmbajnë vlera të plota.\n(le është një shkurtim për më pak se ose i barabartë / më pak ose i barabartë)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vA > vB. vA dhe vB përmbajnë vlera të plota.\n(gt është shkurtesë për më të madhe se/më shumë se)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vA >= vB. vA dhe vB përmbajnë vlera të plota.\n(ge është shkurtim i më i madh ose i barabartë)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vAA == 0. vAA përmban një vlerë të plotë.\n(eqz është shkurtim për Baraz me Zero)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vAA != 0. vAA përmban një vlerë të plotë.\n(nez është shkurtim për Jo e barabartë me Zero)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vAA &lt; 0. vAA përmban një vlerë të plotë.\n(ltz është shkurtim i më pak se zero)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vAA &lt;= 0. vAA përmban një vlerë të plotë.\n(lez është një shkurtesë për më pak ose e barabartë me zero / më pak ose e barabartë me zero)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vAA > 0. vAA përmban një vlerë të plotë.\n(gtz është shkurtim i më i madh se zero)</item>
+		<item>Kërcen në etiketën e specifikuar nëse vAA >= 0. vAA përmban një vlerë të plotë.\n(gez është një shkurtim për më i madh ose i barabartë me zero)</item>
+		<item>Merr një vlerë të plotë në indeksin e përfshirë në vCC nga grupi i referuar në vBB dhe e vendos atë në regjistrin vAA.\nvAA = vBB[vCC]</item>
+		<item>Merr, në indeksin e përfshirë në vCC, nga grupi i referuar në vBB, një vlerë të dyfishtë/të gjatë dhe e vendos atë në çiftin e regjistrave vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Merr, në indeksin e përfshirë në vCC, nga grupi i referuar në vBB, një referencë për objektin dhe e vendos atë në regjistrin vAA.\nvAA = vBB[vCC]</item>
+		<item>Merr, në indeksin e përfshirë në vCC, nga grupi i referuar në vBB, një vlerë boolean dhe e vendos atë në regjistrin vAA.\nvAA = vBB[vCC]</item>
+		<item>Merr, në indeksin e përfshirë në vCC, nga grupi i referuar në vBB, një vlerë bajt (integer) dhe e vendos atë në regjistrin vAA.\nvAA = vBB[vCC]</item>
+		<item>Merr, në indeksin e përfshirë në vCC, nga grupi i referuar në vBB, një vlerë char dhe e vendos atë në regjistrin vAA.\nvAA = vBB[vCC]</item>
+		<item>Merr, në indeksin e përfshirë në vCC, nga grupi i referuar në vBB, një vlerë të shkurtër (integer) dhe e vendos atë në regjistrin vAA.\nvAA = vBB[vCC]</item>
+		<item>Vendos vlerën e numrit të plotë nga vAA në grupin e referuar në vBB me elementin që përmban regjistrin vCC.\nvBB[vCC] = vAA</item>
+		<item>Vendos një vlerë të dyfishtë/gjatë nga çifti i regjistrave vAA, vAA+1 në grupin e referuar në vBB, me elementin që përmban regjistrin vCC.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Vendos një referencë për një objekt nga vAA në grupin e referuar në vBB me një element me regjistrin vCC.\nvBB[vCC] = vAA</item>
+		<item>Vendos vlerën boolean nga vAA në grupin e referuar nga vBB me elementin që përmban regjistrin vCC.\nvBB[vCC] = vAA</item>
+		<item>Vendos vlerën e bajtit (numrit të plotë) nga vAA në grupin e referuar në vBB me elementin që përmban regjistrin vCC.\nvBB[vCC] = vAA</item>
+		<item>Vendos vlerën e karakterit (karakterit) nga vAA në grupin e referuar në vBB sipas elementit me regjistrin vCC.\nvBB[vCC] = vAA</item>
+		<item>Vendos vlerën e shkurtër (të plotë) nga vAA në grupin e referuar në vBB me elementin që përmban regjistrin vCC.\nvBB[vCC] = vAA</item>
+		<item>Lexon vlerën nga fusha e shembullit dhe e vendos atë në regjistrin vA. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvA = vB.fushë</item>
+		<item>Lexon një vlerë të dyfishtë/gjatë nga një fushë shembulli dhe e vendos atë në një çift regjistrash (vA, vA+1). Referenca për klasën që përmban këtë fushë është në regjistrin vB.\n(vA, vA+1) = vB.fushë</item>
+		<item>Lexon një referencë objekti nga një fushë shembulli dhe e vendos atë në regjistrin vA. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvA = vB.fushë</item>
+		<item>Lexon një vlerë boolean nga fusha e shembullit dhe e vendos atë në regjistrin vA. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvA = vB.fushë</item>
+		<item>Lexon një vlerë bajt (integer) nga një fushë shembulli dhe e vendos atë në regjistrin vA. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvA = vB.fushë</item>
+		<item>Lexon një vlerë char nga një fushë shembulli dhe e vendos atë në regjistrin vA. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvA = vB.fushë</item>
+		<item>Lexon një vlerë të shkurtër (numër të plotë) nga një fushë shembulli dhe e vendos atë në regjistrin vA. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvA = vB.fushë</item>
+		<item>Vendos vlerën nga regjistri vA në fushën e shembullit. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvB.fushë = vA</item>
+		<item>Vendos një vlerë të dyfishtë/gjatë nga një çift regjistrash (vA, vA+1) në një fushë shembulli. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvB.fushë = (vA, vA+1)</item>
+		<item>Vendos një referencë për një objekt nga regjistri vA në fushën e shembullit. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvB.fushë = vA</item>
+		<item>Vendos vlerën boolean nga regjistri vA në fushën e shembullit. Referenca për klasën që përmban këtë fushë është në regjistrin vB.\nvB.fushë = vA</item>
+		<item>Vendos vlerën e bajtit (integer) të fushës së specifikuar Boolean në instancën e referuar nga regjistri vB të barabartë me vlerën e regjistrit vA, që është:\nvB.fushë = vA</item>
+		<item>Vendos vlerën e karakterit (karakterit) të fushës së specifikuar Boolean në shembullin e referuar nga regjistri vB të barabartë me vlerën e regjistrit vA, që është:\nvB.fushë = vA</item>
+		<item>Vendos vlerën e shkurtër (të plotë) të fushës së specifikuar Boolean në shembullin e referuar nga regjistri vB të barabartë me vlerën e regjistrit vA, që është:\nvB.fushë = vA</item>
+		<item>Lexon një vlerë nga një fushë statike dhe e vendos atë në regjistrin vAA. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Lexon një vlerë të dyfishtë/të gjatë nga një fushë statike dhe e vendos atë në një çift regjistrash vAA, vAA+1. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Lexon një referencë objekti nga një fushë statike dhe e vendos atë në regjistrin vAA. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Lexon një vlerë boolean nga një fushë statike dhe e vendos atë në regjistrin vAA. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Lexon një vlerë bajt (integer) nga një fushë statike dhe e vendos atë në regjistrin vAA. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Lexon një vlerë char nga një fushë statike dhe e vendos atë në regjistrin vAA. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Lexon një vlerë të shkurtër (numër të plotë) nga një fushë statike dhe e vendos atë në regjistrin vAA. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Vendos vlerën nga regjistri vAA në një fushë (fushë statike). Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Vendos një vlerë të dyfishtë/gjatë nga një çift regjistrash vAA, vAA+1 në një fushë (fushë statike). Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Vendos një referencë për një objekt nga regjistri vAA në një fushë (fushë statike). Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Vendos vlerën boolean nga regjistri vAA në një fushë (fushë statike). Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Vendos një vlerë bajt (numër të plotë) nga regjistri vAA në një fushë (fushë statike). Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Vendos vlerën char nga regjistri vAA në një fushë statike. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Vendos vlerën e shkurtër (të plotë) nga regjistri vAA në një fushë statike. Regjistri që përmban referencën për klasën që përmban këtë fushë nuk përdoret.</item>
+		<item>Thërret (drejton) një metodë virtuale me parametra. Parametrat tregohen në mbajtëset kaçurrelë. Parametri i parë (regjistri v2) përmban një referencë për klasën që përmban metodën e thirrur, parametri i dytë (përmbajtja e regjistrit v3) i kalohet metodës së thirrur.</item>
+		<item>Thërret (drejton) një metodë virtuale me parametra direkt nga klasa prind.</item>
+		<item>Thërret (drejton) një metodë me parametra pa lejet e metodës virtuale.</item>
+		<item>Thërret (drejton) një metodë statike me parametra. Parametrat tregohen në mbajtëset kaçurrelë. Parametri (përmbajtja e regjistrit v3) i kalohet metodës së thirrur. Klasa që përmban metodën e thirrur tregohet pas kllapave kaçurrelë.</item>
+		<item>Thërret (drejton) një metodë ndërfaqeje me parametra.</item>
+		<item>Thërret (drejton) një metodë virtuale me parametra, por parametrat duhet të përmbahen në regjistra me numra të renditur.</item>
+		<item>Thërret (drejton) një metodë virtuale me parametra direkt nga klasa mëmë, por parametrat duhet të përmbahen në regjistra me numra sekuencialë.</item>
+		<item>Thërret (drejton) një metodë me parametra pa leje të metodës virtuale, por parametrat duhet të përmbahen në regjistra të numëruar në mënyrë sekuenciale.</item>
+		<item>Thërret (drejton) një metodë statike me parametra, por parametrat duhet të përmbahen në regjistra me numra sekuencialë.</item>
+		<item>Thërret (drejton) një metodë ndërfaqeje me parametra, por parametrat duhet të përmbahen në regjistra të numëruar në mënyrë sekuenciale.</item>
+		<item>Llogarit vA = -vB për vlerat e tipit numër të plotë.</item>
+		<item>Llogarit vA = ~vB për vlerat e plota.\nvA = ~ vB</item>
+		<item>Llogarit (vA, vA+1) = -(vB, vB+1) për vlerat e tipit long (integer).</item>
+		<item>Llogarit (vA, vA+1) = ~(vB, vB+1) për vlerat e tipit long (integer).</item>
+		<item>Llogarit vA = -vB për vlerat float.</item>
+		<item>Llogarit (vA, vA+1) = -(vB, vB+1) për vlerat e dyfishta (pikë lundruese).</item>
+		<item>Konverton një numër të plotë nga vB në një të gjatë dhe e ruan atë në çiftin e regjistrave vA, vA+1.\n(vA, vA+1) = (i gjatë) vB</item>
+		<item>Konverton një numër të plotë nga vB në një float dhe e ruan atë në regjistrin vA.\nvA = (lundrues) vB</item>
+		<item>Konverton një numër të plotë nga vB në një dyfish (pikë lundruese) dhe e ruan atë në një çift regjistrash vA, vA+1.\n(vA, vA+1) = (dyfish) vB</item>
+		<item>Konverton një vlerë të gjatë (integer) nga vB, vB+1 në një numër të plotë (integer) dhe e ruan atë në regjistrin vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Konverton një vlerë të gjatë (të plotë) nga vB, vB+1 në një float (pikë lundruese) dhe e ruan atë në regjistrin vA.\nvA = (lundrues) (vB, vB+1)</item>
+		<item>Konverton një vlerë të gjatë (numër të plotë) nga vB, vB+1 në një të dyfishtë (pikë lundruese) dhe e ruan atë në një çift regjistrash vA, vA+1.\n(vA, vA+1) = (dyfish) (vB, vB+1)</item>
+		<item>Konverton një vlerë float (pikë lundruese) nga vB në një vlerë të plotë (integer) dhe e ruan atë në regjistrin vA.\nvA = (int)vB</item>
+		<item>Konverton një vlerë float (pikë lundruese) nga vB në një vlerë të gjatë (numër të plotë) dhe e ruan atë në çiftin e regjistrave vA, vA+1.\n(vA, vA+1) = (i gjatë) vB</item>
+		<item>Konverton një vlerë float (pikë lundruese) nga vB në një vlerë të dyfishtë (pikë lundruese) dhe e ruan atë në çiftin e regjistrave vA, vA+1.\n(vA, vA+1) = (dyfish) vB</item>
+		<item>Konverton një vlerë të dyfishtë (pikë lundruese) nga vB, vB+1 në një vlerë të plotë (integer) dhe e ruan atë në regjistrin vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Konverton një vlerë të dyfishtë (pikë lundruese) nga vB, vB+1 në një vlerë të gjatë (numër të plotë) dhe e ruan atë në një çift regjistrash vA, vA+1.\n(vA, vA+1) = (i gjatë) (vB, vB+1)</item>
+		<item>Konverton një vlerë të dyfishtë (pikë lundruese) nga vB, vB+1 në një vlerë float (pikë lundruese) dhe e ruan atë në regjistrin vA.\nvA = (lundrues) (vB, vB+1)</item>
+		<item>Konverton një vlerë të plotë nga vB në një vlerë bajt dhe e ruan atë në regjistrin vA.\nvA = (byte) vB</item>
+		<item>Konverton një vlerë të plotë nga vB në një vlerë char dhe e ruan atë në regjistrin vA.\nvA = (char)vB</item>
+		<item>Konverton një vlerë të plotë nga vB në një vlerë të shkurtër dhe e ruan atë në regjistrin vA.\nvA = (i shkurtër) vB</item>
+		<item>Llogarit vBB + vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB + vCC</item>
+		<item>Llogarit vBB - vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB - vCC</item>
+		<item>Llogarit vBB * vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB * vCC</item>
+		<item>Llogarit vBB / vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB / vCC</item>
+		<item>Llogarit vBB % vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB % vCC</item>
+		<item>Llogarit vBB &amp; vCC (logjike DHE) dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB &amp; vCC</item>
+		<item>Llogarit vBB | vCC (OR logjike) dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB | vCC</item>
+		<item>Llogarit vBB ^ vCC (ekskluzive OR) dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB ^ vCC</item>
+		<item>Zhvendos vBB majtas nga numri i biteve të specifikuara nga vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Zhvendos vBB djathtas sipas numrit të biteve të specifikuar nga vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB >> vCC</item>
+		<item>Zhvendos vBB pa ruajtur shenjën djathtas me numrin e biteve të specifikuar nga vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB >>> vCC</item>
+		<item>Llogarit (vBB, vBB+1) + (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) - (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) * (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) / (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) % (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) &amp; (vCC, vCC+1) (logjike DHE) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) | (vCC, vCC+1) (OR logjike) dhe ruan rezultatin në një palë regjistrash vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) ^ (vCC, vCC+1) (ekskluzive AND) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Zhvendos vBB, vBB+1 majtas sipas numrit të biteve të specifikuar nga vCC dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Zhvendos vBB, vBB+1 djathtas sipas numrit të biteve të specifikuar nga vCC dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Zhvendos vBB, vBB+1 djathtas pa e ruajtur shenjën sipas numrit të biteve të përcaktuar nga vCC dhe ruan rezultatin në një palë regjistrash vAA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Llogarit vBB + vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë notuese.\nvAA = vBB + vCC</item>
+		<item>Llogarit vBB - vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë notuese.\nvAA = vBB - vCC</item>
+		<item>Llogarit vBB * vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë notuese.\nvAA = vBB * vCC</item>
+		<item>Llogarit vBB / vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë notuese.\nvAA = vBB / vCC</item>
+		<item>Llogarit vBB % vCC dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë notuese.\nvAA = vBB % vCC</item>
+		<item>Llogarit (vBB, vBB+1) + (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) - (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) * (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) / (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Llogarit (vBB, vBB+1) % (vCC, vCC+1) dhe ruan rezultatin në çiftin e regjistrave vAA, vAA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Llogarit vA + vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA + vB</item>
+		<item>Llogarit vA - vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA - vB</item>
+		<item>Llogarit vA * vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA * vB</item>
+		<item>Llogarit vA / vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA / vB</item>
+		<item>Llogarit vA % vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA % vB</item>
+		<item>Llogarit vA &amp; vB (logjike DHE) dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA &amp; vB</item>
+		<item>Llogarit vA | vB (OR logjike) dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA | vB</item>
+		<item>Llogarit vA ^ vB (ekskluzive OR) dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA ^ vB</item>
+		<item>Zhvendos vA majtas me numrin e biteve të specifikuar nga vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA &lt;&lt; vB</item>
+		<item>Zhvendos vA djathtas me numrin e biteve të specifikuar nga vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA >> vB</item>
+		<item>Zhvendos vA pa e ruajtur shenjën e saj djathtas me numrin e biteve të specifikuar nga vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vA >>> vB</item>
+		<item>Llogarit (vA, vA+1) + (vB, vB+1) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) - (vB, vB+1) dhe ruan rezultatin në një çift regjistrash vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) * (vB, vB+1) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) / (vB, vB+1) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) % (vB, vB+1) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) &amp; (vB, vB+1) (logjike DHE) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) | (vB, vB+1) (OR logjike) dhe ruan rezultatin në një palë regjistrash vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) &amp; (vB, vB+1) (ekskluzive OR) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Zhvendos vA, vA+1 majtas me numrin e biteve të specifikuar nga vB dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Zhvendos vA, vA+1 djathtas me numrin e biteve të specifikuar nga vB dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Zhvendos vA, vA+1 djathtas pa e ruajtur shenjën me numrin e shifrave të përcaktuara nga vB dhe ruan rezultatin në një palë regjistrash vA, vA+1. Të gjitha vlerat janë të gjata (numër i plotë).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Llogarit vA + vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë notuese.\nvA = vA + vB</item>
+		<item>Llogarit vA - vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë notuese.\nvA = vA - vB</item>
+		<item>Llogarit vA * vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë notuese.\nvA = vA * vB</item>
+		<item>Llogarit vA / vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë notuese.\nvA = vA / vB</item>
+		<item>Llogarit vA % vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë notuese.\nvA = vA % vB</item>
+		<item>Llogarit (vA, vA+1) + (vB, vB+1) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) - (vB, vB+1) dhe ruan rezultatin në një çift regjistrash vA, vA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) * (vB, vB+1) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) / (vB, vB+1) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Llogarit (vA, vA+1) % (vB, vB+1) dhe ruan rezultatin në çiftin e regjistrave vA, vA+1. Të gjitha vlerat janë të dyfishta (pikë lundruese).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Llogarit vB + 0xFFFF dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vB + 0xFFFF</item>
+		<item>Llogarit 0xFFFF - vB dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = 0xFFFF - vB</item>
+		<item>Llogarit vB * 0xFFFF dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vB * 0xFFFF</item>
+		<item>Llogarit vB / 0xFFFF dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vB / 0xFFFF</item>
+		<item>Llogarit vB % 0xFFFF dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vB % 0xFFFF</item>
+		<item>Llogarit vB &amp; 0xFFFF (logjike DHE) dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vB &amp; 0xFFFF</item>
+		<item>Llogarit vB | 0xFFFF (OR logjike) dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vB | 0xFFFF</item>
+		<item>Llogarit vB ^ 0xFFFF (ekskluzive OR) dhe ruan rezultatin në regjistrin vA. Të gjitha vlerat janë numër i plotë.\nvA = vB ^ 0xFFFF</item>
+		<item>Llogarit vBB + 0xFF dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB + 0xFF</item>
+		<item>Llogarit 0xFF - vBB dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = 0xFF - vBB</item>
+		<item>Llogarit vBB * 0xFF dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB * 0xFF</item>
+		<item>Llogarit vBB / 0xFF dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB / 0xFF</item>
+		<item>Llogarit vBB % 0xFF dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB % 0xFF</item>
+		<item>Llogarit vBB &amp; 0xFF (logjike DHE) dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB &amp; 0xFF</item>
+		<item>Llogarit vBB | 0xFF (OR logjike) dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB | 0xFF</item>
+		<item>Llogarit vBB ^ 0xFF (ekskluzive OR) dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB ^ 0xFF</item>
+		<item>Zhvendos vBB majtas nga numri i biteve të specifikuar nga 0xFF dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Zhvendos vBB djathtas me numrin e biteve të specifikuar nga 0xFF dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB >> 0xFF</item>
+		<item>Zhvendos me sinjal vBB djathtas me numrin e biteve të specifikuar nga 0xFF dhe ruan rezultatin në regjistrin vAA. Të gjitha vlerat janë numër i plotë.\nvAA = vBB >>> 0xFF</item>
+		<item>Thërret (drejton) një metodë nënshkrimi polimorfik me parametra. I pranishëm në skedarët Dex që nga versioni 038.</item>
+		<item>Thërret (drejton) një metodë nënshkrimi polimorfik me parametra, por parametrat duhet të përmbahen në regjistra të numëruar në mënyrë sekuenciale. I pranishëm në skedarët Dex që nga versioni 038.</item>
+		<item>Lejon (fillon) thirrjen e një sajti me parametra. I pranishëm në skedarët Dex që nga versioni 038.</item>
+		<item>Lejon (fillon) thirrjen e një siti me parametra, por parametrat duhet të përmbahen në regjistra me numra të renditur. I pranishëm në skedarët Dex që nga versioni 038.</item>
+		<item>Vendos një referencë për një dorezë të metodës në regjistrin vAA. I pranishëm në skedarët Dex që nga versioni 039.</item>
+		<item>Vendos një referencë për prototipin e metodës në regjistrin vAA. I pranishëm në skedarët Dex që nga versioni 039.</item>
+	</string-array>
     <string-array name="copy_variants">
         <item>Riemërtoni</item>
         <item>Riemërtoni vetëm skedarët</item>

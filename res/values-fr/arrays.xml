@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Registres</item>
+		<item>Valeurs littérales</item>
+		<item>Types de données primitifs</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA est un registre de 4 bits avec la plage de valeurs v0 - v15\nvAA est un registre de 8 bits avec une plage de valeurs de v0 à v255\nvAAAA est un registre 16 bits avec une plage de valeurs de v0 à v65535</item>
+		<item>0xF, 0xFF, etc. sont utilisés. pour représenter des valeurs littérales. Comme les registres, le nombre F est utilisé pour représenter une plage de valeurs, par exemple :\nLa plage de valeurs 0xF est représentée par [-0x8, 0x7]\nLa plage de valeurs de 0xFF est représentée par [-0x80, 0x7F]</item>
+		<item>V - vide, Z - booléen, B - octet\nC - char, S - court, I - int\nJ - long, F - flottant, D - double\nvoid : ne peut être utilisé que pour les types de retour\nbooléen : stocke la valeur vrai ou faux\noctet : stocke un entier de -128 à 127 et occupe 1 octet\ncourt : stocke un entier de -32768 à 32767 et prend 2 octets\nint : stocke un entier de -2147483648 à 2147483647 et occupe 4 octets\nlong : stocke un entier de -9223372036854775808 à 9223372036854775807 et occupe 8 octets\ndouble : stocke un nombre à virgule flottante de ±4,9*10³²⁴ à ±1,7976931348623157*10³⁰⁸ et occupe 8 octets. Un point est utilisé comme séparateur décimal dans les littéraux fractionnaires.\nfloat : stocke un nombre à virgule flottante de -3,4*10³⁸ à 3,4*10³⁸ et occupe 4 octets\nchar : stocke un seul caractère en codage UTF-16 et occupe 2 octets, donc la plage des valeurs stockées est de 0 à 65535.</item>
+		<item>Pas d\'action.</item>
+		<item>Déplace la valeur du registre vB vers le registre vA.</item>
+		<item>Déplace la valeur du registre vBBBB vers le registre vAA.</item>
+		<item>Déplace la valeur du registre vBBBB vers le registre vAAAA.</item>
+		<item>Déplace la valeur longue/double de la paire de registres (vB, vB+1) vers la paire de registres vA, vA+1.</item>
+		<item>Déplace la valeur longue/double d\'une paire de registres (vBBBB, vBBBB+1) vers une paire de registres vAA, vAA+1.</item>
+		<item>Déplace la valeur longue/double d\'une paire de registres (vBBBB, vBBBB+1) vers une paire de registres vAAAA, vAAAA+1.</item>
+		<item>Déplace une référence d\'objet du registre vB vers le registre vA.</item>
+		<item>Déplace une référence d\'objet du registre vBBBB vers le registre vAA.</item>
+		<item>Déplace une référence d\'objet du registre vBBBB vers le registre vAAAA.</item>
+		<item>Déplace la valeur de retour de la méthode précédemment appelée dans le registre vAA.</item>
+		<item>Déplace la valeur longue/double renvoyée par la méthode précédemment appelée dans la paire de registres vAA, vAA+1.</item>
+		<item>Déplace la référence d\'objet renvoyée par la méthode précédemment appelée dans le registre vAA.</item>
+		<item>Déplace la référence à l\'objet exclu émis lors de l\'appel de méthode (pendant l\'exécution) vers le registre vAA.</item>
+		<item>Retour sans valeur de retour.</item>
+		<item>Retournez en renvoyant la valeur du registre vAA.</item>
+		<item>Retournez en renvoyant une valeur double/longue dans une paire de registres vAA, vAA+1.</item>
+		<item>Renvoie en renvoyant la valeur de la référence d\'objet du registre vAA.</item>
+		<item>Place une constante de 4 bits dans le registre vA.</item>
+		<item>Place une constante de 16 bits dans le registre vAA.</item>
+		<item>Place une constante entière dans le registre vAA.</item>
+		<item>Place une constante de 16 bits dans les bits supérieurs du registre vAA. Utilisé pour initialiser les valeurs float (virgule flottante).</item>
+		<item>Place une constante entière de 16 bits dans la paire de registres vAA, vAA+1, convertissant la constante entière en une constante longue.</item>
+		<item>Place une constante entière de 32 bits dans la paire de registres vAA, vAA+1, convertissant la constante entière en une constante longue.</item>
+		<item>Place une constante de 64 bits dans la paire de registres vAA, vAA+1.</item>
+		<item>Place une constante de 16 bits dans les 16 premiers bits de la paire de registres vAA, vAA+1. Utilisé pour initialiser des valeurs doubles (à virgule flottante).</item>
+		<item>Place une référence à la chaîne spécifiée dans le registre vAA.</item>
+		<item>Place une référence à la chaîne spécifiée dans le registre vAA.</item>
+		<item>Place une référence à la constante chaîne (string) identifiée par string_id dans le registre vAA.</item>
+		<item>Obtient le moniteur d\'objets référencé par le registre vAA.</item>
+		<item>Libère le moniteur d\'objets référencé par le registre vAA.</item>
+		<item>Vérifie si une référence d\'objet contenue dans le registre vAA peut être convertie en classe identifiée par type_id. Lève une ClassCastException s’il ne le peut pas, sinon continue l’exécution.</item>
+		<item>Vérifie si le contenu du registre vB est une instance de la classe identifiée par type_id. Définit le registre vA sur une valeur non nulle s\'il est présent, 0 sinon.\nvA = vB instanceOf type ? dix</item>
+		<item>Détermine le nombre d\'éléments du tableau du registre vB et place la valeur dans le registre vA.\nvA = vB.longueur</item>
+		<item>Crée une instance d\'un type d\'objet et place une référence à l\'instance créée dans le registre vAA.</item>
+		<item>Crée un nouveau tableau de variables type_id avec la taille des éléments du registre vB et place une référence au tableau dans le registre vA.</item>
+		<item>Crée un nouveau tableau de données de type type_id et le remplit de paramètres (c\'est-à-dire pas de tableaux longs/doubles, mais les types référence sont autorisés). Une référence au tableau nouvellement créé peut être obtenue en utilisant l\'instruction move-result-object qui suit immédiatement cette instruction (si elle doit être utilisée).</item>
+		<item>Crée un nouveau tableau de données de type type_id et le remplit avec une plage de paramètres (c\'est-à-dire pas de tableaux longs/doubles, mais les types référence sont acceptables). Une référence au tableau nouvellement créé peut être obtenue en utilisant l\'instruction move-result-object qui suit immédiatement cette instruction (si elle doit être utilisée).</item>
+		<item>Remplit le tableau référencé dans le registre vAA avec des données statiques. L\'emplacement des données est la somme de la position de l\'instruction actuelle et du décalage.</item>
+		<item>Lève un objet d\'exception. Une référence à l’objet d’exception dans le registre vAA.</item>
+		<item>Passer sans condition à un décalage court (entier) de 8 bits.</item>
+		<item>Saut inconditionnel vers un décalage de 16 bits.</item>
+		<item>Saut inconditionnel vers un décalage de 32 bits.</item>
+		<item>Implémente l\'opérateur Switch lorsque les constantes de contrôle sont proches les unes des autres (dans une rangée). L\'instruction utilise une table d\'index. Le décalage d\'instruction pour un cas particulier est déterminé par l\'index vAA. Si l\'index vAA dépasse la table, l\'exécution continue avec l\'instruction suivante (par défaut).</item>
+		<item>Implémente l\'opérateur Switch dans le cas d\'une table clairsemée. L\'instruction utilise un tableau qui spécifie les décalages pour chaque constante. Si aucune correspondance n\'est trouvée dans le tableau, l\'instruction suivante est exécutée (cas par défaut).</item>
+		<item>Compare les valeurs float (virgule flottante) dans vBB et vCC et place la valeur entière dans le registre vAA :\nvAA = vBB &lt; vCC ? oui : 1, non : -1, égal : 0</item>
+		<item>Compare les valeurs float (virgule flottante) dans vBB et vCC et place la valeur entière dans le registre vAA :\nvAA = vBB &lt; vCC ? oui : 1, non : -1, égal : 0</item>
+		<item>Compare les valeurs doubles (à virgule flottante) dans vBB et vCC et place la valeur entière dans le registre vAA :\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? oui\noui : 1, non : -1, égal : 0</item>
+		<item>Compare les valeurs doubles (à virgule flottante) dans vBB et vCC et place la valeur entière dans le registre vAA :\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? oui : 1, non : -1, égal : 0</item>
+		<item>Compare les valeurs longues (entières) dans vBB et vCC et place la valeur entière (entière) dans le registre vAA :\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? oui : 1, non : -1, égal : 0</item>
+		<item>Passe à l\'étiquette spécifiée si vA == vB. vA et vB contiennent des valeurs entières.\n(eq est l\'abréviation de Equals)</item>
+		<item>Saute à l\'étiquette spécifiée si vA != vB. vA et vB contiennent des valeurs entières.\n(ne est l\'abréviation de Not Equals)</item>
+		<item>Saute à l\'étiquette spécifiée si vA &lt; vB. vA et vB contiennent des valeurs entières.\n(c\'est l\'abréviation de Less Than)</item>
+		<item>Passe à l\'étiquette spécifiée si vA &lt;= vB. vA et vB contiennent des valeurs entières.\n(le est une abréviation pour Inférieur ou Égal/Inférieur ou égal)</item>
+		<item>Passe à l\'étiquette spécifiée si vA > vB. vA et vB contiennent des valeurs entières.\n(gt est l\'abréviation de Greater Than/More Than)</item>
+		<item>Passe à l\'étiquette spécifiée si vA >= vB. vA et vB contiennent des valeurs entières.\n(ge est l\'abréviation de Supérieur ou Égal)</item>
+		<item>Saute à l\'étiquette spécifiée si vAA == 0. vAA contient une valeur entière.\n(eqz est l\'abréviation de Equals to Zero)</item>
+		<item>Saute à l\'étiquette spécifiée si vAA != 0. vAA contient une valeur entière.\n(nez est l\'abréviation de Not Equals to Zero)</item>
+		<item>Passe à l\'étiquette spécifiée si vAA &lt; 0. vAA contient une valeur entière.\n(ltz est l\'abréviation de Less Than Zero)</item>
+		<item>Passe à l\'étiquette spécifiée si vAA &lt;= 0. vAA contient une valeur entière.\n(lez est l\'abréviation de Inférieur ou égal à zéro/Inférieur ou égal à zéro)</item>
+		<item>Passe à l\'étiquette spécifiée si vAA > 0. vAA contient une valeur entière.\n(gtz est l\'abréviation de Supérieur à Zéro)</item>
+		<item>Passe à l\'étiquette spécifiée si vAA >= 0. vAA contient une valeur entière.\n(gez est l\'abréviation de Supérieur ou Égal à Zéro)</item>
+		<item>Obtient une valeur entière à l\'index contenu dans vCC à partir du tableau référencé dans vBB et la place dans le registre vAA.\nvAA = vBB[vCC]</item>
+		<item>Récupère, à l\'index contenu dans vCC, du tableau référencé dans vBB, une valeur double/longue et la place dans la paire de registres vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Reçoit, à l\'index contenu dans vCC, du tableau référencé dans vBB, une référence à l\'objet et la place dans le registre vAA.\nvAA = vBB[vCC]</item>
+		<item>Récupère, à l\'index contenu dans vCC, du tableau référencé dans vBB, une valeur booléenne et la place dans le registre vAA.\nvAA = vBB[vCC]</item>
+		<item>Récupère, à l\'index contenu dans vCC, du tableau référencé dans vBB, une valeur d\'octet (entier) et la place dans le registre vAA.\nvAA = vBB[vCC]</item>
+		<item>Récupère, à l\'index contenu dans vCC, du tableau référencé dans vBB, une valeur char et la place dans le registre vAA.\nvAA = vBB[vCC]</item>
+		<item>Récupère, à l\'index contenu dans vCC, du tableau référencé dans vBB, une valeur courte (entière) et la place dans le registre vAA.\nvAA = vBB[vCC]</item>
+		<item>Place la valeur entière de vAA dans le tableau référencé dans vBB avec l\'élément contenant le registre vCC.\nvBB[vCC] = vAA</item>
+		<item>Place une valeur double/longue de la paire de registres vAA, vAA+1 dans le tableau référencé dans vBB, avec l\'élément contenant le registre vCC.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Place une référence à un objet de vAA dans le tableau référencé dans vBB avec un élément avec le registre vCC.\nvBB[vCC] = vAA</item>
+		<item>Place la valeur booléenne de vAA dans le tableau référencé par vBB avec l\'élément contenant le registre vCC.\nvBB[vCC] = vAA</item>
+		<item>Place la valeur d\'octet (entier) de vAA dans le tableau référencé dans vBB avec l\'élément contenant le registre vCC.\nvBB[vCC] = vAA</item>
+		<item>Place la valeur char (caractère) de vAA dans le tableau référencé dans vBB par élément avec le registre vCC.\nvBB[vCC] = vAA</item>
+		<item>Place la valeur courte (entière) de vAA dans le tableau référencé dans vBB avec l\'élément contenant le registre vCC.\nvBB[vCC] = vAA</item>
+		<item>Lit la valeur du champ d\'instance et la place dans le registre vA. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvA = vB.champ</item>
+		<item>Lit une valeur double/longue à partir d\'un champ d\'instance et la place dans une paire de registres (vA, vA+1). La référence à la classe contenant ce champ se trouve dans le registre vB.\n(vA, vA+1) = vB.champ</item>
+		<item>Lit une référence d\'objet à partir d\'un champ d\'instance et la place dans le registre vA. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvA = vB.champ</item>
+		<item>Lit une valeur booléenne dans le champ d\'instance et la place dans le registre vA. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvA = vB.champ</item>
+		<item>Lit une valeur d\'octet (entier) à partir d\'un champ d\'instance et la place dans le registre vA. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvA = vB.champ</item>
+		<item>Lit une valeur char à partir d’un champ d’instance et la place dans le registre vA. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvA = vB.champ</item>
+		<item>Lit une valeur courte (entière) à partir d\'un champ d\'instance et la place dans le registre vA. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvA = vB.champ</item>
+		<item>Place la valeur du registre vA dans le champ d\'instance. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvB.champ = vA</item>
+		<item>Place une valeur double/longue d\'une paire de registres (vA, vA+1) dans un champ d\'instance. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvB.champ = (vA, vA+1)</item>
+		<item>Place une référence à un objet du registre vA dans le champ d\'instance. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvB.champ = vA</item>
+		<item>Place la valeur booléenne du registre vA dans le champ d\'instance. La référence à la classe contenant ce champ se trouve dans le registre vB.\nvB.champ = vA</item>
+		<item>Définit la valeur d\'octet (entier) du champ booléen spécifié dans l\'instance référencée par le registre vB égale à la valeur du registre vA, c\'est-à-dire :\nvB.champ = vA</item>
+		<item>Définit la valeur char (caractère) du champ booléen spécifié dans l\'instance référencée par le registre vB égale à la valeur du registre vA, c\'est-à-dire :\nvB.champ = vA</item>
+		<item>Définit la valeur courte (entière) du champ booléen spécifié dans l\'instance référencée par le registre vB égale à la valeur du registre vA, c\'est-à-dire :\nvB.champ = vA</item>
+		<item>Lit une valeur dans un champ statique et la place dans le registre vAA. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Lit une valeur double/longue à partir d\'un champ statique et la place dans une paire de registres vAA, vAA+1. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Lit une référence d\'objet à partir d\'un champ statique et la place dans le registre vAA. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Lit une valeur booléenne à partir d\'un champ statique et la place dans le registre vAA. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Lit une valeur d\'octet (entier) à partir d\'un champ statique et la place dans le registre vAA. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Lit une valeur char à partir d’un champ statique et la place dans le registre vAA. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Lit une valeur courte (entière) à partir d\'un champ statique et la place dans le registre vAA. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Place la valeur du registre vAA dans un champ (champ statique). Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Place une valeur double/longue d\'une paire de registres vAA, vAA+1 dans un champ (champ statique). Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Place une référence à un objet du registre vAA dans un champ (champ statique). Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Place la valeur booléenne du registre vAA dans un champ (champ statique). Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Place une valeur d\'octet (entier) du registre vAA dans un champ (champ statique). Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Place la valeur char du registre vAA dans un champ statique. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Place la valeur courte (entière) du registre vAA dans un champ statique. Le registre contenant la référence à la classe contenant ce champ n\'est pas utilisé.</item>
+		<item>Appelle (exécute) une méthode virtuelle avec des paramètres. Les paramètres sont indiqués entre accolades. Le premier paramètre (registre v2) contient une référence à la classe contenant la méthode appelée, le deuxième paramètre (le contenu du registre v3) est passé à la méthode appelée.</item>
+		<item>Appelle (exécute) une méthode virtuelle avec des paramètres directement à partir de la classe parent.</item>
+		<item>Appelle (exécute) une méthode avec des paramètres sans les autorisations de la méthode virtuelle.</item>
+		<item>Appelle (exécute) une méthode statique avec des paramètres. Les paramètres sont indiqués entre accolades. Le paramètre (le contenu du registre v3) est transmis à la méthode appelée. La classe contenant la méthode appelée est indiquée après les accolades.</item>
+		<item>Appelle (exécute) une méthode d\'interface avec des paramètres.</item>
+		<item>Appelle (exécute) une méthode virtuelle avec des paramètres, mais les paramètres doivent être contenus dans des registres avec des nombres dans l\'ordre.</item>
+		<item>Appelle (exécute) une méthode virtuelle avec des paramètres directement à partir de la classe parent, mais les paramètres doivent être contenus dans des registres avec des numéros séquentiels.</item>
+		<item>Appelle (exécute) une méthode avec des paramètres sans autorisations de méthode virtuelle, mais les paramètres doivent être contenus dans des registres numérotés séquentiellement.</item>
+		<item>Appelle (exécute) une méthode statique avec des paramètres, mais les paramètres doivent être contenus dans des registres avec des numéros séquentiels.</item>
+		<item>Appelle (exécute) une méthode d\'interface avec des paramètres, mais les paramètres doivent être contenus dans des registres numérotés séquentiellement.</item>
+		<item>Calcule vA = -vB pour les valeurs de type entier.</item>
+		<item>Calcule vA = ~vB pour les valeurs entières.\nvA = ~vB</item>
+		<item>Calcule (vA, vA+1) = -(vB, vB+1) pour les valeurs de type long (entier).</item>
+		<item>Calcule (vA, vA+1) = ~(vB, vB+1) pour les valeurs de type long (entier).</item>
+		<item>Calcule vA = -vB pour les valeurs flottantes.</item>
+		<item>Calcule (vA, vA+1) = -(vB, vB+1) pour les valeurs doubles (à virgule flottante).</item>
+		<item>Convertit un entier de vB en un nombre long et le stocke dans la paire de registres vA, vA+1.\n(vA, vA+1) = (long) vB</item>
+		<item>Convertit un entier de vB en float et le stocke dans le registre vA.\nvA = (flottant) vB</item>
+		<item>Convertit un entier de vB en double (virgule flottante) et le stocke dans une paire de registres vA, vA+1.\n(vA, vA+1) = (double) vB</item>
+		<item>Convertit une valeur longue (entière) de vB, vB+1 en un entier (entier) et la stocke dans le registre vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Convertit une valeur longue (entière) de vB, vB+1 en float (virgule flottante) et la stocke dans le registre vA.\nvA = (flottant) (vB, vB+1)</item>
+		<item>Convertit une valeur longue (entière) de vB, vB+1 en double (virgule flottante) et la stocke dans une paire de registres vA, vA+1.\n(vA, vA+1) = (double) (vB, vB+1)</item>
+		<item>Convertit une valeur float (virgule flottante) de vB en valeur entière (entier) et la stocke dans le registre vA.\nvA = (int)vB</item>
+		<item>Convertit une valeur flottante (à virgule flottante) de vB en une valeur longue (entière) et la stocke dans la paire de registres vA, vA+1.\n(vA, vA+1) = (long) vB</item>
+		<item>Convertit une valeur flottante (à virgule flottante) de vB en une valeur double (à virgule flottante) et la stocke dans la paire de registres vA, vA+1.\n(vA, vA+1) = (double) vB</item>
+		<item>Convertit une valeur double (à virgule flottante) de vB, vB+1 en une valeur entière (entière) et la stocke dans le registre vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Convertit une valeur double (à virgule flottante) de vB, vB+1 en une valeur longue (entière) et la stocke dans une paire de registres vA, vA+1.\n(vA, vA+1) = (long) (vB, vB+1)</item>
+		<item>Convertit une valeur double (à virgule flottante) de vB, vB+1 en une valeur flottante (à virgule flottante) et la stocke dans le registre vA.\nvA = (flottant) (vB, vB+1)</item>
+		<item>Convertit une valeur entière de vB en valeur d\'octet et la stocke dans le registre vA.\nvA = (octet) vB</item>
+		<item>Convertit une valeur entière de vB en valeur char et la stocke dans le registre vA.\nvA = (caractère)vB</item>
+		<item>Convertit une valeur entière de vB en une valeur courte et la stocke dans le registre vA.\nvA = (court) vB</item>
+		<item>Calcule vBB + vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB + vCC</item>
+		<item>Calcule vBB - vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB - vCC</item>
+		<item>Calcule vBB * vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB * vCC</item>
+		<item>Calcule vBB / vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB / vCC</item>
+		<item>Calcule vBB % vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB % vCC</item>
+		<item>Calcule vBB &amp; vCC (AND logique) et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB et vCC</item>
+		<item>Calcule vBB | vCC (OU logique) et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB | vCC</item>
+		<item>Calcule vBB ^ vCC (OU exclusif) et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB ^ vCC</item>
+		<item>Décale vBB vers la gauche du nombre de bits spécifié par vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Décale vBB vers la droite du nombre de bits spécifié par vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB >> vCC</item>
+		<item>Décale vBB sans conserver le signe vers la droite du nombre de bits spécifié par vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB >>> vCC</item>
+		<item>Calcule (vBB, vBB+1) + (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) - (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) * (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) / (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) % (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) &amp; (vCC, vCC+1) (ET logique) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Calculs (vBB, vBB+1) | (vCC, vCC+1) (OU logique) et stocke le résultat dans une paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) ^ (vCC, vCC+1) (ET exclusif) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Décale vBB, vBB+1 vers la gauche du nombre de bits spécifié par vCC et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Décale vBB, vBB+1 vers la droite du nombre de bits spécifié par vCC et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Décale vBB, vBB+1 vers la droite sans conserver le signe du nombre de bits spécifié par vCC, et stocke le résultat dans une paire de registres vAA, vA+1. Toutes les valeurs sont longues (entier).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Calcule vBB + vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont flottantes.\nvAA = vBB + vCC</item>
+		<item>Calcule vBB - vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont flottantes.\nvAA = vBB - vCC</item>
+		<item>Calcule vBB * vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont flottantes.\nvAA = vBB * vCC</item>
+		<item>Calcule vBB / vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont flottantes.\nvAA = vBB / vCC</item>
+		<item>Calcule vBB % vCC et stocke le résultat dans le registre vAA. Toutes les valeurs sont flottantes.\nvAA = vBB % vCC</item>
+		<item>Calcule (vBB, vBB+1) + (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) - (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) * (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) / (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calcule (vBB, vBB+1) % (vCC, vCC+1) et stocke le résultat dans la paire de registres vAA, vAA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Calcule vA + vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA + vB</item>
+		<item>Calcule vA - vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA - vB</item>
+		<item>Calcule vA * vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA * vB</item>
+		<item>Calcule vA / vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA / vB</item>
+		<item>Calcule vA % vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nVA = VA % VB</item>
+		<item>Calcule vA et vB (ET logique) et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA et vB</item>
+		<item>Calcule vA | vB (OU logique) et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nVA = VA | vB</item>
+		<item>Calcule vA ^ vB (OU exclusif) et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA ^ vB</item>
+		<item>Décale vA vers la gauche du nombre de bits spécifié par vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA &lt;&lt; vB</item>
+		<item>Décale vA vers la droite du nombre de bits spécifié par vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA >> vB</item>
+		<item>Décale vA sans conserver son signe vers la droite du nombre de bits spécifié par vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vA >>> vB</item>
+		<item>Calcule (vA, vA+1) + (vB, vB+1) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) - (vB, vB+1) et stocke le résultat dans une paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) * (vB, vB+1) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) / (vB, vB+1) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) % (vB, vB+1) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) &amp; (vB, vB+1) (ET logique) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) | (vB, vB+1) (OU logique) et stocke le résultat dans une paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) &amp; (vB, vB+1) (OU exclusif) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Décale vA, vA+1 vers la gauche du nombre de bits spécifié par vB et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Décale vA, vA+1 vers la droite du nombre de bits spécifié par vB et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Décale vA, vA+1 vers la droite sans conserver le signe du nombre de chiffres spécifié par vB, et stocke le résultat dans une paire de registres vA, vA+1. Toutes les valeurs sont longues (entier).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Calcule vA + vB et stocke le résultat dans le registre vA. Toutes les valeurs sont flottantes.\nvA = vA + vB</item>
+		<item>Calcule vA - vB et stocke le résultat dans le registre vA. Toutes les valeurs sont flottantes.\nvA = vA - vB</item>
+		<item>Calcule vA * vB et stocke le résultat dans le registre vA. Toutes les valeurs sont flottantes.\nvA = vA * vB</item>
+		<item>Calcule vA / vB et stocke le résultat dans le registre vA. Toutes les valeurs sont flottantes.\nvA = vA / vB</item>
+		<item>Calcule vA % vB et stocke le résultat dans le registre vA. Toutes les valeurs sont flottantes.\nVA = VA % VB</item>
+		<item>Calcule (vA, vA+1) + (vB, vB+1) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) - (vB, vB+1) et stocke le résultat dans une paire de registres vA, vA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) * (vB, vB+1) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) / (vB, vB+1) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calcule (vA, vA+1) % (vB, vB+1) et stocke le résultat dans la paire de registres vA, vA+1. Toutes les valeurs sont doubles (virgule flottante).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Calcule vB + 0xFFFF et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vB + 0xFFFF</item>
+		<item>Calcule 0xFFFF - vB et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = 0xFFFF - vB</item>
+		<item>Calcule vB * 0xFFFF et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vB * 0xFFFF</item>
+		<item>Calcule vB / 0xFFFF et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vB / 0xFFFF</item>
+		<item>Calcule vB % 0xFFFF et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vB % 0xFFFF</item>
+		<item>Calcule vB &amp; 0xFFFF (AND logique) et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vB &amp; 0xFFFF</item>
+		<item>Calcule vB | 0xFFFF (OU logique) et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vB | 0xFFFF</item>
+		<item>Calcule vB ^ 0xFFFF (OU exclusif) et stocke le résultat dans le registre vA. Toutes les valeurs sont entières.\nvA = vB ^ 0xFFFF</item>
+		<item>Calcule vBB + 0xFF et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB + 0xFF</item>
+		<item>Calcule 0xFF - vBB et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = 0xFF - vBB</item>
+		<item>Calcule vBB * 0xFF et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB * 0xFF</item>
+		<item>Calcule vBB / 0xFF et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB / 0xFF</item>
+		<item>Calcule vBB % 0xFF et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB % 0xFF</item>
+		<item>Calcule vBB &amp; 0xFF (AND logique) et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB &amp; 0xFF</item>
+		<item>Calcule vBB | 0xFF (OU logique) et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB | 0xFF</item>
+		<item>Calcule vBB ^ 0xFF (OU exclusif) et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB ^ 0xFF</item>
+		<item>Décale vBB vers la gauche du nombre de bits spécifié par 0xFF et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Décale vBB vers la droite du nombre de bits spécifié par 0xFF et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB >> 0xFF</item>
+		<item>Décale signalement vBB vers la droite du nombre de bits spécifié par 0xFF et stocke le résultat dans le registre vAA. Toutes les valeurs sont entières.\nvAA = vBB >>> 0xFF</item>
+		<item>Appelle (exécute) une méthode de signature polymorphe avec des paramètres. Présent dans les fichiers Dex depuis la version 038.</item>
+		<item>Appelle (exécute) une méthode de signature polymorphe avec des paramètres, mais les paramètres doivent être contenus dans des registres numérotés séquentiellement. Présent dans les fichiers Dex depuis la version 038.</item>
+		<item>Permet (démarre) d\'appeler un site avec des paramètres. Présent dans les fichiers Dex depuis la version 038.</item>
+		<item>Permet (démarre) d\'appeler un site avec des paramètres, mais les paramètres doivent être contenus dans des registres avec des numéros dans l\'ordre. Présent dans les fichiers Dex depuis la version 038.</item>
+		<item>Place une référence à un handle de méthode dans le registre vAA. Présent dans les fichiers Dex depuis la version 039.</item>
+		<item>Place une référence au prototype de méthode dans le registre vAA. Présent dans les fichiers Dex depuis la version 039.</item>
+	</string-array>
     <string-array name="copy_variants">
         <item>Renomme</item>
         <item>Renomme just les fichiers</item>

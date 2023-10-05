@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Kayıtlar</item>
+		<item>Değişmez değerler</item>
+		<item>İlkel veri türleri</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA, v0 - v15 değer aralığına sahip 4 bitlik bir kayıttır\nvAA, v0 - v255 değer aralığına sahip 8 bitlik bir kayıttır\nvAAAA, v0 - v65535 değer aralığına sahip 16 bitlik bir kayıttır</item>
+		<item>0xF, 0xFF vb. kullanılır. gerçek değerleri temsil etmek için. Kayıtlar gibi, F sayısı da bir değer aralığını temsil etmek için kullanılır, örneğin:\n0xF değerlerinin aralığı [-0x8, 0x7] ile temsil edilir\n0xFF\'nin değer aralığı [-0x80, 0x7F] ile temsil edilir</item>
+		<item>V - geçersiz, Z - boole, B - bayt\nC - karakter, S - kısa, I - int\nJ - uzun, F - kayan nokta, D - çift\nvoid: yalnızca dönüş türleri için kullanılabilir\nboolean: true veya false değerini saklar\nbayt: -128\'den 127\'ye kadar bir tamsayıyı saklar ve 1 bayt kaplar\nkısa: -32768\'den 32767\'ye kadar bir tamsayıyı saklar ve 2 bayt alır\nint: -2147483648\'den 2147483647\'ye kadar bir tamsayıyı saklar ve 4 bayt kaplar\nuzun: -9223372036854775808 ila 9223372036854775807 arasında bir tamsayıyı saklar ve 8 bayt kaplar\ndouble: ±4,9*10³²⁴ ila ±1,7976931348623157*10³⁰⁸ arasında bir kayan nokta sayısını saklar ve 8 bayt kaplar. Kesirli değişmezlerde ondalık ayırıcı olarak nokta kullanılır.\nfloat: -3,4*10³⁸ ila 3,4*10³⁸ arasında kayan nokta sayısını saklar ve 4 bayt kaplar\nchar: UTF-16 kodlamasında tek bir karakteri saklar ve 2 bayt kaplar, dolayısıyla saklanan değerlerin aralığı 0 ila 65535 arasındadır.</item>
+		<item>Hiçbir eylem.</item>
+		<item>vB kaydının değerini vA kaydına taşır.</item>
+		<item>vBBBB kaydının değerini vAA kaydına taşır.</item>
+		<item>vBBBB kaydının değerini vAAAA kaydına taşır.</item>
+		<item>Kayıt çiftinin (vB, vB+1) uzun/çift değerini, vA, vA+1 kayıt çiftine taşır.</item>
+		<item>Bir kayıt çiftinin (vBBBB, vBBBB+1) uzun/çift değerini bir kayıt çifti vAA, vAA+1\'e taşır.</item>
+		<item>Bir kayıt çiftinin (vBBBB, vBBBB+1) uzun/çift değerini bir vAAAA, vAAAA+1 kayıt çiftine taşır.</item>
+		<item>Bir nesne referansını vB kaydından vA kaydına taşır.</item>
+		<item>Bir nesne referansını vBBBB kaydından vAA kaydına taşır.</item>
+		<item>Bir nesne referansını vBBBB kaydından vAAAA kaydına taşır.</item>
+		<item>Daha önce çağrılan yöntemin dönüş değerini vAA kaydına taşır.</item>
+		<item>Daha önce çağrılan yöntemin döndürdüğü long/double değerini vAA, vAA+1 kayıt çiftine taşır.</item>
+		<item>Daha önce çağrılan yöntem tarafından döndürülen nesne referansını vAA kaydına taşır.</item>
+		<item>Yöntem çağrısı sırasında (yürütme sırasında) hariç tutulan nesneye yapılan referansı vAA kaydına taşır.</item>
+		<item>Dönüş değeri olmayan dönüş.</item>
+		<item>Değeri vAA kaydından döndürerek geri dönün.</item>
+		<item>Bir çift/uzun değeri bir çift vAA, vAA+1 kaydına döndürerek geri dönün.</item>
+		<item>vAA kaydından nesne referansının değerini döndürerek geri dönün.</item>
+		<item>vA kaydına 4 bitlik bir sabit yerleştirir.</item>
+		<item>vAA kaydına 16 bitlik bir sabit yerleştirir.</item>
+		<item>vAA kaydına bir tamsayı sabiti yerleştirir.</item>
+		<item>vAA kaydının üst bitlerine 16 bitlik bir sabit yerleştirir. Kayan nokta (kayan nokta) değerlerini başlatmak için kullanılır.</item>
+		<item>vAA, vAA+1 kayıt çiftine 16 bitlik bir tamsayı sabiti yerleştirir ve tamsayı sabitini uzun bir sabite dönüştürür.</item>
+		<item>vAA, vAA+1 kayıt çiftine 32 bitlik bir tamsayı sabiti yerleştirir ve tamsayı sabitini uzun bir sabite dönüştürür.</item>
+		<item>vAA, vAA+1 kayıt çiftine 64 bitlik bir sabit yerleştirir.</item>
+		<item>vAA, vAA+1 kayıt çiftinin ilk 16 bitine 16 bitlik bir sabit yerleştirir. Çift (kayan nokta) değerleri başlatmak için kullanılır.</item>
+		<item>vAA kaydında belirtilen dizeye bir başvuru yerleştirir.</item>
+		<item>vAA kaydında belirtilen dizeye bir başvuru yerleştirir.</item>
+		<item>vAA kaydına string_id tarafından tanımlanan dize sabitine (string) bir referans yerleştirir.</item>
+		<item>vAA kaydı tarafından başvurulan nesne monitörünü alır.</item>
+		<item>vAA kaydı tarafından başvurulan nesne monitörünü serbest bırakır.</item>
+		<item>vAA kaydında bulunan bir nesne referansının type_id tarafından tanımlanan sınıfa aktarılıp aktarılamayacağını kontrol eder. Başarısız olursa ClassCastException atar, aksi takdirde yürütmeye devam eder.</item>
+		<item>VB kaydının içeriğinin type_id tarafından tanımlanan sınıfın bir örneği olup olmadığını kontrol eder. vA kaydını sıfırdan farklı bir değere, yoksa 0\'a ayarlar.\nvA = vB örneğinin türü ? 10</item>
+		<item>VB kaydındaki dizi öğelerinin sayısını belirler ve değeri vA kaydına yerleştirir.\nvA = vB.uzunluk</item>
+		<item>Bir nesne türünün bir örneğini oluşturur ve oluşturulan örneğe bir referansı vAA kaydına yerleştirir.</item>
+		<item>Register vB öğelerinin boyutunda yeni bir type_id değişkenleri dizisi oluşturur ve vA yazmacındaki diziye bir başvuru yerleştirir.</item>
+		<item>type_id türünde yeni bir veri dizisi oluşturur ve bunu parametrelerle doldurur (yani uzun/çift dizilere izin verilmez, ancak referans türlerine izin verilir). Yeni oluşturulan diziye bir referans, bu ifadenin hemen ardından gelen move-result-object ifadesi kullanılarak elde edilebilir (eğer kullanılacaksa).</item>
+		<item>type_id türünde yeni bir veri dizisi oluşturur ve bunu bir dizi parametreyle doldurur (yani, uzun/çift diziler yoktur ancak referans türleri kabul edilebilir). Yeni oluşturulan diziye bir referans, bu ifadenin hemen ardından gelen move-result-object ifadesi kullanılarak elde edilebilir (eğer kullanılacaksa).</item>
+		<item>vAA kaydında başvurulan diziyi statik verilerle doldurur. Veri konumu, mevcut talimatın konumu ve uzaklığın toplamıdır.</item>
+		<item>Bir istisna nesnesi atar. vAA kaydındaki istisna nesnesine bir referans.</item>
+		<item>Koşulsuz olarak kısa (tamsayı) 8 bitlik ofsete atlayın.</item>
+		<item>16 bitlik ofsete koşulsuz atlama.</item>
+		<item>32 bitlik ofsete koşulsuz geçiş.</item>
+		<item>Kontrol sabitleri birbirine yakın olduğunda (arka arkaya) Switch operatörünü uygular. Talimat bir indeks tablosu kullanır. Belirli bir durum için talimat ofseti vAA indeksi tarafından belirlenir. Eğer vAA dizini tablonun dışına çıkarsa yürütme sonraki ifadeyle (varsayılan) devam eder.</item>
+		<item>Seyrek tablo durumunda Switch operatörünü uygular. Talimat, her sabit için uzaklıkları belirten bir tablo kullanır. Tabloda hiçbir eşleşme bulunamazsa, sonraki ifade yürütülür (varsayılan durum).</item>
+		<item>VBB ve vCC\'deki float (kayan nokta) değerlerini karşılaştırır ve tamsayı değerini vAA kaydına yerleştirir:\nvAA = vBB &lt; vCC ? evet: 1, hayır: -1, eşit: 0</item>
+		<item>VBB ve vCC\'deki float (kayan nokta) değerlerini karşılaştırır ve tamsayı değerini vAA kaydına yerleştirir:\nvAA = vBB &lt; vCC ? evet: 1, hayır: -1, eşit: 0</item>
+		<item>vBB ve vCC\'deki double (kayan nokta) değerlerini karşılaştırır ve tamsayı değerini vAA kaydına yerleştirir:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? sen\nevet: 1, hayır: -1, eşit: 0</item>
+		<item>vBB ve vCC\'deki double (kayan nokta) değerlerini karşılaştırır ve tamsayı değerini vAA kaydına yerleştirir:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? evet: 1, hayır: -1, eşit: 0</item>
+		<item>vBB ve vCC\'deki long (tamsayı) değerleri karşılaştırır ve tamsayı (tamsayı) değerini vAA kaydına yerleştirir:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? evet: 1, hayır: -1, eşit: 0</item>
+		<item>vA == vB ise belirtilen etikete atlar. vA ve vB tam sayı değerleri içerir.\n(eq Eşittir kelimesinin kısaltmasıdır)</item>
+		<item>vA != vB ise belirtilen etikete atlar. vA ve vB tam sayı değerleri içerir.\n(ne Eşit Değil\'in kısaltmasıdır)</item>
+		<item>vA &lt; vB ise belirtilen etikete atlar. vA ve vB tam sayı değerleri içerir.\n(Küçüktür\'ün kısaltmasıdır)</item>
+		<item>vA &lt;= vB ise belirtilen etikete atlar. vA ve vB tam sayı değerleri içerir.\n(le, Küçüktür veya Eşittir/Küçük veya eşittirin kısaltmasıdır)</item>
+		<item>vA > vB ise belirtilen etikete atlar. vA ve vB tam sayı değerleri içerir.\n(gt Büyüktür/Daha Fazla\'nın kısaltmasıdır)</item>
+		<item>vA >= vB ise belirtilen etikete atlar. vA ve vB tam sayı değerleri içerir.\n(ge, Büyük veya Eşit\'in kısaltmasıdır)</item>
+		<item>vAA == 0 ise belirtilen etikete atlar. vAA bir tamsayı değeri içerir.\n(eqz Sıfıra Eşittir ifadesinin kısaltmasıdır)</item>
+		<item>vAA != 0 ise belirtilen etikete atlar. vAA bir tamsayı değeri içerir.\n(nez, Sıfıra Eşit Değil\'in kısaltmasıdır)</item>
+		<item>vAA &lt; 0 ise belirtilen etikete atlar. vAA bir tamsayı değeri içerir.\n(ltz, Sıfırdan Az ifadesinin kısaltmasıdır)</item>
+		<item>vAA &lt;= 0 ise belirtilen etikete atlar. vAA bir tamsayı değeri içerir.\n(lez, Küçüktür veya Eşit to Sıfır/Küçük veya sıfıra eşittir ifadesinin kısaltmasıdır)</item>
+		<item>vAA > 0 ise belirtilen etikete atlar. vAA bir tamsayı değeri içerir.\n(gtz Sıfırdan Büyük ifadesinin kısaltmasıdır)</item>
+		<item>vAA >= 0 ise belirtilen etikete atlar. vAA bir tamsayı değeri içerir.\n(gez, Büyüktür veya Sıfıra Eşit\'in kısaltmasıdır)</item>
+		<item>vBB\'de başvurulan diziden vCC\'nin içerdiği indekste bir tamsayı değeri alır ve bunu vAA kaydına yerleştirir.\nvAA = vBB[vCC]</item>
+		<item>vBB\'de başvurulan diziden, vCC\'nin içerdiği indekste bir double/long değeri alır ve bunu vAA, vAA+1 kayıt çiftine yerleştirir.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>vBB\'de referans verilen diziden, vCC\'nin içerdiği indekste nesneye bir referans alır ve onu vAA kaydına yerleştirir.\nvAA = vBB[vCC]</item>
+		<item>vBB\'de başvurulan diziden, vCC\'nin içerdiği indekste bir boole değeri alır ve bunu vAA kaydına yerleştirir.\nvAA = vBB[vCC]</item>
+		<item>vBB\'de başvurulan diziden, vCC\'de bulunan indekste bir bayt (tamsayı) değeri alır ve bunu vAA kaydına yerleştirir.\nvAA = vBB[vCC]</item>
+		<item>vBB\'de başvurulan diziden vCC\'de bulunan dizinden bir char değeri alır ve bunu vAA kaydına yerleştirir.\nvAA = vBB[vCC]</item>
+		<item>vBB\'de başvurulan diziden vCC\'de bulunan indekste kısa (tamsayı) bir değer alır ve bunu vAA kaydına yerleştirir.\nvAA = vBB[vCC]</item>
+		<item>vAA\'daki tamsayı değerini, vCC kaydını içeren öğeyle birlikte vBB\'de başvurulan diziye yerleştirir.\nvBB[vCC] = vAA</item>
+		<item>vCC kaydını içeren öğeyle birlikte vBB\'de başvurulan diziye vAA, vAA+1 kayıt çiftinden çift/uzun bir değer yerleştirir.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>vCC kaydına sahip bir öğe ile vBB\'de başvurulan diziye, vAA\'daki bir nesneye bir başvuru yerleştirir.\nvBB[vCC] = vAA</item>
+		<item>vAA\'dan gelen boole değerini, vCC kaydını içeren öğeyle birlikte vBB tarafından başvurulan diziye yerleştirir.\nvBB[vCC] = vAA</item>
+		<item>Bayt (tamsayı) değerini vAA\'dan, vCC kaydını içeren öğeyle birlikte vBB\'de başvurulan diziye yerleştirir.\nvBB[vCC] = vAA</item>
+		<item>vAA\'daki char (karakter) değerini, vCC yazmacına sahip öğe tarafından vBB\'de başvurulan diziye yerleştirir.\nvBB[vCC] = vAA</item>
+		<item>vAA\'daki kısa (tamsayı) değeri, vCC kaydını içeren öğeyle birlikte vBB\'de başvurulan diziye yerleştirir.\nvBB[vCC] = vAA</item>
+		<item>Örnek alanındaki değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
+		<item>Bir örnek alanından double/long değerini okur ve onu bir çift kayda (vA, vA+1) yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\n(vA, vA+1) = vB.alanı</item>
+		<item>Örnek alanından bir nesne referansını okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
+		<item>Örnek alanından bir boole değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
+		<item>Örnek alanından bir bayt (tamsayı) değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
+		<item>Örnek alanından bir char değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
+		<item>Örnek alanından kısa (tamsayı) bir değer okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
+		<item>Değeri vA kaydından örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.alanı = vA</item>
+		<item>Bir kayıt çiftinden (vA, vA+1) bir çift/uzun değeri örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.alanı = (vA, vA+1)</item>
+		<item>vA kaydındaki bir nesneye referansı örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.alanı = vA</item>
+		<item>Boolean değerini vA kaydından örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.alanı = vA</item>
+		<item>vB kaydı tarafından başvurulan örnekteki belirtilen Boolean alanının bayt (tamsayı) değerini, vA kaydının değerine eşit olarak ayarlar; yani:\nvB.alanı = vA</item>
+		<item>vB kaydı tarafından başvurulan örnekteki belirtilen Boolean alanının char (karakter) değerini, vA kaydının değerine eşit olarak ayarlar; yani:\nvB.alanı = vA</item>
+		<item>vB kaydı tarafından başvurulan örnekteki belirtilen Boolean alanının kısa (tamsayı) değerini, vA kaydının değerine eşit olarak ayarlar; yani:\nvB.alanı = vA</item>
+		<item>Statik bir alandan bir değer okur ve onu vAA kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Statik bir alandan double/long değerini okur ve onu bir çift vAA, vAA+1 kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Statik bir alandan bir nesne referansını okur ve bunu vAA kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Statik bir alandan bir boole değeri okur ve bunu vAA kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Statik bir alandan bir bayt (tamsayı) değeri okur ve bunu vAA kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Statik bir alandan bir char değeri okur ve bunu vAA kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Statik bir alandan kısa (tamsayı) bir değer okur ve onu vAA kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>vAA kaydındaki değeri bir alana (statik alan) yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Bir çift vAA, vAA+1 kaydından bir çift/uzun değeri bir alana (statik alan) yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>vAA kaydındaki bir nesneye referansı bir alana (statik alan) yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Boolean değerini vAA kaydından bir alana (statik alan) yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>vAA kaydından bir bayt (tamsayı) değerini bir alana (statik alan) yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>vAA kaydındaki char değerini statik bir alana yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>vAA kaydındaki kısa (tamsayı) değeri statik bir alana yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
+		<item>Parametrelerle sanal bir yöntemi çağırır (çalıştırır). Parametreler süslü parantezlerle belirtilmiştir. İlk parametre (kayıt v2) çağrılan yöntemi içeren sınıfa bir referans içerir, ikinci parametre (kayıt v3\'ün içeriği) çağrılan yönteme iletilir.</item>
+		<item>Doğrudan üst sınıftan parametreler içeren sanal bir yöntemi çağırır (çalıştırır).</item>
+		<item>Sanal yöntemin izinleri olmadan parametrelere sahip bir yöntemi çağırır (çalıştırır).</item>
+		<item>Parametrelerle statik bir yöntemi çağırır (çalıştırır). Parametreler süslü parantezlerle belirtilmiştir. Parametre (v3 kaydının içeriği) çağrılan yönteme iletilir. Çağrılan yöntemi içeren sınıf küme parantezlerinden sonra gösterilir.</item>
+		<item>Parametrelerle bir arayüz yöntemini çağırır (çalıştırır).</item>
+		<item>Parametreli bir sanal yöntemi çağırır (çalıştırır), ancak parametrelerin sırayla sayılar içeren kayıtlarda bulunması gerekir.</item>
+		<item>Doğrudan üst sınıftan parametreler içeren sanal bir yöntemi çağırır (çalıştırır), ancak parametrelerin sıralı sayılara sahip kayıtlarda bulunması gerekir.</item>
+		<item>Sanal yöntem izinleri olmayan parametrelere sahip bir yöntemi çağırır (çalıştırır), ancak parametrelerin sıralı olarak numaralandırılmış kayıtlarda bulunması gerekir.</item>
+		<item>Parametrelerle statik bir yöntemi çağırır (çalıştırır), ancak parametrelerin sıralı sayılara sahip kayıtlarda bulunması gerekir.</item>
+		<item>Parametreli bir arayüz yöntemini çağırır (çalıştırır), ancak parametrelerin sıralı olarak numaralandırılmış kayıtlarda bulunması gerekir.</item>
+		<item>Tamsayı tipindeki değerler için vA = -vB\'yi hesaplar.</item>
+		<item>Tam sayı değerleri için vA = ~vB\'yi hesaplar.\nvA = ~vB</item>
+		<item>Long (integer) türündeki değerler için (vA, vA+1) = -(vB, vB+1) değerini hesaplar.</item>
+		<item>Long (integer) türündeki değerler için (vA, vA+1) = ~(vB, vB+1) değerini hesaplar.</item>
+		<item>Float değerleri için vA = -vB\'yi hesaplar.</item>
+		<item>Double (kayan nokta) değerleri için (vA, vA+1) = -(vB, vB+1) değerini hesaplar.</item>
+		<item>Bir tam sayıyı vB\'den uzun sayıya dönüştürür ve onu vA, vA+1 kayıt çiftinde saklar.\n(vA, vA+1) = (uzun) vB</item>
+		<item>Bir tamsayıyı vB\'den kayan noktaya dönüştürür ve bunu vA kaydında saklar.\nvA = (değişken) vB</item>
+		<item>Bir tamsayıyı vB\'den double\'a (kayan nokta) dönüştürür ve bunu vA, vA+1 kayıt çiftinde saklar.\n(vA, vA+1) = (çift) vB</item>
+		<item>Uzun (tam sayı) bir değeri vB, vB+1\'den bir tam sayıya (tam sayı) dönüştürür ve bunu vA kaydında saklar.\nvA = (int) (vB, vB+1)</item>
+		<item>Uzun (tamsayı) bir değeri vB, vB+1\'den kayan noktaya (kayan nokta) dönüştürür ve bunu vA kaydında saklar.\nvA = (değişken) (vB, vB+1)</item>
+		<item>Uzun (tamsayı) bir değeri vB, vB+1\'den double\'a (kayan nokta) dönüştürür ve bunu vA, vA+1 kayıt çiftinde saklar.\n(vA, vA+1) = (çift) (vB, vB+1)</item>
+		<item>Bir kayan nokta (kayan nokta) değerini vB\'den bir tam sayı (tamsayı) değerine dönüştürür ve bunu vA kaydında saklar.\nvA = (int)vB</item>
+		<item>Bir kayan nokta (kayan nokta) değerini vB\'den uzun (tamsayı) bir değere dönüştürür ve bunu vA, vA+1 kayıt çiftinde saklar.\n(vA, vA+1) = (uzun) vB</item>
+		<item>Bir kayan nokta (kayan nokta) değerini vB\'den çift (kayan nokta) değerine dönüştürür ve bunu vA, vA+1 kayıt çiftinde saklar.\n(vA, vA+1) = (çift) vB</item>
+		<item>Bir double (kayan nokta) değerini vB, vB+1\'den bir tamsayı (tamsayı) değerine dönüştürür ve bunu vA kaydında saklar.\nvA = (int) (vB, vB+1)</item>
+		<item>Double (kayan nokta) değerini vB, vB+1\'den uzun (tamsayı) değere dönüştürür ve bunu vA, vA+1 kayıt çiftinde saklar.\n(vA, vA+1) = (uzun) (vB, vB+1)</item>
+		<item>Bir double (kayan nokta) değerini vB, vB+1\'den kayan nokta (kayan nokta) değerine dönüştürür ve bunu vA kaydında saklar.\nvA = (değişken) (vB, vB+1)</item>
+		<item>Bir tamsayı değerini vB\'den bayt değerine dönüştürür ve bunu vA kaydında saklar.\nvA = (bayt) vB</item>
+		<item>Bir tamsayı değerini vB\'den bir karakter değerine dönüştürür ve bunu vA kaydında saklar.\nvA = (karakter)vB</item>
+		<item>Bir tamsayı değerini vB\'den kısa bir değere dönüştürür ve bunu vA kaydında saklar.\nvA = (kısa) vB</item>
+		<item>vBB + vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB + vCC</item>
+		<item>VBB - vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB - vCC</item>
+		<item>vBB * vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB * vCC</item>
+		<item>VBB / vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB / vCC</item>
+		<item>vBB % vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB % vCC</item>
+		<item>vBB ve vCC\'yi (mantıksal AND) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB ve vCC</item>
+		<item>vBB\'yi hesaplar | vCC (mantıksal VEYA) ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB | vCC</item>
+		<item>vBB ^ vCC\'yi (özel OR) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB ^ vCC</item>
+		<item>vBB\'yi, vCC tarafından belirtilen bit sayısı kadar sola kaydırır ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>VBB\'yi, vCC tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB >> vCC</item>
+		<item>VBB\'yi, işareti korumadan, vCC tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu, vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB >>> vCC</item>
+		<item>(vBB, vBB+1) + (vCC, vCC+1)\'i hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) - (vCC, vCC+1)\'i hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) * (vCC, vCC+1)\'i hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) / (vCC, vCC+1)\'i hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) %\'sini (vCC, vCC+1) hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) ve (vCC, vCC+1) (mantıksal AND) hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Hesaplamalar (vBB, vBB+1) | (vCC, vCC+1) (mantıksal VEYA) ve sonucu bir çift vAA, vAA+1 kaydında saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) ^ (vCC, vCC+1) (exclusive AND) değerini hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>vBB, vBB+1\'i vCC tarafından belirtilen bit sayısı kadar sola kaydırır ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>vBB, vBB+1\'i, vCC tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu, vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>vBB, vBB+1\'i, vCC tarafından belirtilen bit sayısı kadar işareti korumadan sağa kaydırır ve sonucu, vAA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>vBB + vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler değişkendir.\nvAA = vBB + vCC</item>
+		<item>VBB - vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler değişkendir.\nvAA = vBB - vCC</item>
+		<item>vBB * vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler değişkendir.\nvAA = vBB * vCC</item>
+		<item>VBB / vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler değişkendir.\nvAA = vBB / vCC</item>
+		<item>vBB % vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler değişkendir.\nvAA = vBB % vCC</item>
+		<item>(vBB, vBB+1) + (vCC, vCC+1)\'i hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) - (vCC, vCC+1)\'i hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) * (vCC, vCC+1)\'i hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) / (vCC, vCC+1)\'i hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) %\'sini (vCC, vCC+1) hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>vA + vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA + vB</item>
+		<item>vA - vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA - vB</item>
+		<item>vA * vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA * vB</item>
+		<item>vA / vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA / vB</item>
+		<item>vA % vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA % vB</item>
+		<item>vA &amp; vB\'yi (mantıksal AND) hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA &amp; vB</item>
+		<item>vA\'yı hesaplar | vB (mantıksal VEYA) ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA | vB</item>
+		<item>vA ^ vB\'yi (özel OR) hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA ^ vB</item>
+		<item>vA\'yı, vB tarafından belirtilen bit sayısı kadar sola kaydırır ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA &lt;&lt; vB</item>
+		<item>vA\'yı, vB tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA >> vB</item>
+		<item>vA\'yı işaretini korumadan vB tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vA >>> vB</item>
+		<item>(vA, vA+1) + (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>(vA, vA+1) - (vB, vB+1)\'i hesaplar ve sonucu bir çift vA, vA+1 kaydında saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>(vA, vA+1) * (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>(vA, vA+1) / (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>(vA, vA+1) % (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>(vA, vA+1) &amp; (vB, vB+1)\'i (mantıksal AND) hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Hesaplar (vA, vA+1) | (vB, vB+1) (mantıksal OR) ve sonucu bir çift vA, vA+1 kaydında saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>(vA, vA+1) &amp; (vB, vB+1)\'i (hariç OR) hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>vA, vA+1\'i vB tarafından belirtilen bit sayısı kadar sola kaydırır ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>vA, vA+1\'i vB tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>vA, vA+1\'i, vB tarafından belirtilen basamak sayısı kadar işareti korumadan sağa kaydırır ve sonucu, vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>vA + vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler değişkendir.\nvA = vA + vB</item>
+		<item>vA - vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler değişkendir.\nvA = vA - vB</item>
+		<item>vA * vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler değişkendir.\nvA = vA * vB</item>
+		<item>vA / vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler değişkendir.\nvA = vA / vB</item>
+		<item>vA % vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler değişkendir.\nvA = vA % vB</item>
+		<item>(vA, vA+1) + (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>(vA, vA+1) - (vB, vB+1)\'i hesaplar ve sonucu bir çift vA, vA+1 kaydında saklar. Tüm değerler çifttir (kayan nokta).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>(vA, vA+1) * (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>(vA, vA+1) / (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>(vA, vA+1) % (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler çifttir (kayan nokta).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>vB + 0xFFFF\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB + 0xFFFF</item>
+		<item>0xFFFF - vB\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = 0xFFFF - vB</item>
+		<item>vB * 0xFFFF\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB * 0xFFFF</item>
+		<item>vB / 0xFFFF\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB / 0xFFFF</item>
+		<item>vB % 0xFFFF\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB % 0xFFFF</item>
+		<item>vB &amp; 0xFFFF\'yi (mantıksal VE) hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB ve 0xFFFF</item>
+		<item>vB\'yi hesaplar | 0xFFFF (mantıksal VEYA) ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB | 0xFFFF</item>
+		<item>vB ^ 0xFFFF\'yi (özel VEYA) hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB ^ 0xFFFF</item>
+		<item>vBB + 0xFF\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB + 0xFF</item>
+		<item>0xFF - vBB\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = 0xFF - vBB</item>
+		<item>vBB * 0xFF\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB * 0xFF</item>
+		<item>vBB / 0xFF\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB / 0xFF</item>
+		<item>vBB % 0xFF\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB % 0xFF</item>
+		<item>vBB ve 0xFF\'yi (mantıksal VE) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB ve 0xFF</item>
+		<item>vBB\'yi hesaplar | 0xFF (mantıksal VEYA) ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB | 0xFF</item>
+		<item>vBB ^ 0xFF\'yi (özel VEYA) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB ^ 0xFF</item>
+		<item>vBB\'yi 0xFF ile belirtilen bit sayısı kadar sola kaydırır ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>vBB\'yi 0xFF ile belirtilen bit sayısı kadar sağa kaydırır ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB >> 0xFF</item>
+		<item>VBB\'yi sinyal olarak 0xFF tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB >>> 0xFF</item>
+		<item>Parametrelerle polimorfik bir imza yöntemini çağırır (çalıştırır). Sürüm 038\'den beri Dex dosyalarında mevcuttur.</item>
+		<item>Parametrelerle polimorfik bir imza yöntemini çağırır (çalıştırır), ancak parametrelerin sıralı olarak numaralandırılmış kayıtlarda bulunması gerekir. Sürüm 038\'den beri Dex dosyalarında mevcuttur.</item>
+		<item>Bir sitenin parametrelerle çağrılmasına izin verir (başlatır). Sürüm 038\'den beri Dex dosyalarında mevcuttur.</item>
+		<item>Bir sitenin parametrelerle çağrılmasına izin verir (başlatır), ancak parametrelerin sırayla numaralarla birlikte kayıtlarda bulunması gerekir. Sürüm 038\'den beri Dex dosyalarında mevcuttur.</item>
+		<item>vAA kaydındaki bir yöntem tanıtıcısına başvuru yerleştirir. Sürüm 039\'dan beri Dex dosyalarında mevcut.</item>
+		<item>vAA kaydındaki yöntem prototipine bir referans yerleştirir. Sürüm 039\'dan beri Dex dosyalarında mevcut.</item>
+	</string-array>
     <string-array name="copy_variants">
         <item>Yeniden Adlandır</item>
 		<item>Rename files only</item>

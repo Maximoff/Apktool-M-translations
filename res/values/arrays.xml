@@ -1,5 +1,465 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Registers</item>
+		<item>Literal values</item>
+		<item>Primitive data types</item>
+	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA is a 4-bit register with the value range v0 - v15\nvAA is an 8-bit register with a value range of v0 - v255\nvAAAA is a 16-bit register with a value range of v0 - v65535</item>
+		<item>0xF, 0xFF, etc. are used. to represent literal values. Like registers, the number F is used to represent a range of values, for example:\nThe range of 0xF values is represented by [-0x8, 0x7]\nThe range of values of 0xFF is represented by [-0x80, 0x7F]</item>
+		<item>V - void, Z - boolean, B - byte\nC - char, S - short, I - int\nJ - long, F - float, D - double\nvoid: can only be used for return types\nboolean: stores the value true or false\nbyte: stores an integer from -128 to 127 and occupies 1 byte\nshort: stores an integer from -32768 to 32767 and takes 2 bytes\nint: stores an integer from -2147483648 to 2147483647 and occupies 4 bytes\nlong: stores an integer from -9223372036854775808 to 9223372036854775807 and occupies 8 bytes\ndouble: stores a floating point number from ±4.9*10³²⁴ to ±1.7976931348623157*10³⁰⁸ and occupies 8 bytes. A dot is used as the decimal separator in fractional literals.\nfloat: stores a floating point number from -3.4*10³⁸ to 3.4*10³⁸ and occupies 4 bytes\nchar: stores a single character in UTF-16 encoding and occupies 2 bytes, so the range of stored values is from 0 to 65535.</item>
+		<item>No action.</item>
+		<item>Moves the value of register vB to register vA.</item>
+		<item>Moves the value of the vBBBB register to the vAA register.</item>
+		<item>Moves the value of the vBBBB register to the vAAAA register.</item>
+		<item>Moves the long/double value of register pair (vB, vB+1) to register pair vA, vA+1.</item>
+		<item>Moves the long/double value of a register pair (vBBBB, vBBBB+1) to a register pair vAA, vAA+1.</item>
+		<item>Moves the long/double value of a register pair (vBBBB, vBBBB+1) to a register pair vAAAA, vAAAA+1.</item>
+		<item>Moves an object reference from the vB register to the vA register.</item>
+		<item>Moves an object reference from the vBBBB register to the vAA register.</item>
+		<item>Moves an object reference from the vBBBB register to the vAAAA register.</item>
+		<item>Moves the return value of the previously called method into the vAA register.</item>
+		<item>Moves the long/double value returned by the previously called method into the register pair vAA, vAA+1.</item>
+		<item>Moves the object reference returned by the previously called method into the vAA register.</item>
+		<item>Moves the reference to the excluded object issued during the method call (during execution) to the vAA register.</item>
+		<item>Return with no return value.</item>
+		<item>Return by returning the value from the vAA register.</item>
+		<item>Return by returning a double/long value into a pair of registers vAA, vAA+1.</item>
+		<item>Return by returning the value of the object reference from the vAA register.</item>
+		<item>Places a 4-bit constant into the vA register.</item>
+		<item>Places a 16-bit constant into the vAA register.</item>
+		<item>Places an integer constant into the vAA register.</item>
+		<item>Places a 16-bit constant into the upper bits of the vAA register. Used to initialize float (floating point) values.</item>
+		<item>Places a 16-bit integer constant into the register pair vAA, vAA+1, converting the integer constant to a long constant.</item>
+		<item>Places a 32-bit integer constant into the register pair vAA, vAA+1, converting the integer constant to a long constant.</item>
+		<item>Places a 64-bit constant into the register pair vAA, vAA+1.</item>
+		<item>Places a 16-bit constant into the top 16-bits of the register pair vAA, vAA+1. Used to initialize double (floating point) values.</item>
+		<item>Places a reference to the specified string in the vAA register.</item>
+		<item>Places a reference to the specified string in the vAA register.</item>
+		<item>Places a reference to the string constant (string) identified by string_id into the vAA register.</item>
+		<item>Gets the object monitor referenced by the vAA register.</item>
+		<item>Releases the object monitor referenced by the vAA register.</item>
+		<item>Checks whether an object reference contained in the vAA register can be cast to the class identified by type_id. Throws a ClassCastException if it cannot, otherwise continues execution.</item>
+		<item>Checks whether the contents of the vB register is an instance of the class identified by type_id. Sets register vA to non-zero if present, 0 if not.\nvA = vB instanceOf type ? 10</item>
+		<item>Determines the number of array elements from the vB register and places the value in the vA register.\nvA = vB.length</item>
+		<item>Creates an instance of an object type and places a reference to the created instance in the vAA register.</item>
+		<item>Creates a new array of type_id variables with the size of register vB elements and places a reference to the array in register vA.</item>
+		<item>Creates a new data array of type type_id and fills it with parameters (that is, no long/double arrays, but reference types are allowed). A reference to the newly created array can be obtained using the move-result-object statement immediately following this statement (if one is to be used).</item>
+		<item>Creates a new data array of type type_id and fills it with a range of parameters (that is, no long/double arrays, but reference types are acceptable). A reference to the newly created array can be obtained using the move-result-object statement immediately following this statement (if one is to be used).</item>
+		<item>Fills the array referenced in the vAA register with static data. The data location is the sum of the position of the present instruction and the offset.</item>
+		<item>Throws an exception object. A reference to the exception object in the vAA register.</item>
+		<item>Unconditionally jump to a short (integer) 8-bit offset.</item>
+		<item>Unconditional jump to 16-bit offset.</item>
+		<item>Unconditional jump to 32-bit offset.</item>
+		<item>Implements the Switch operator when the control constants are close to each other (in a row). The instruction uses an index table. The instruction offset for a particular case is determined by the vAA index. If the vAA index goes beyond the table, execution continues with the next statement (default).</item>
+		<item>Implements the Switch operator in case of a sparse table. The instruction uses a table that specifies offsets for each constant. If no matches are found in the table, then the next statement is executed (default case).</item>
+		<item>Compares the float (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = vBB &lt; vCC ? yes: 1, no: -1, equal: 0</item>
+		<item>Compares the float (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = vBB &lt; vCC ? yes: 1, no: -1, equal: 0</item>
+		<item>Compares the double (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nyes: 1, no: -1, equal: 0</item>
+		<item>Compares the double (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? yes: 1, no: -1, equal: 0</item>
+		<item>Compares the long (integer) values in vBB and vCC and places the integer (integer) value in the vAA register:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? yes: 1, no: -1, equal: 0</item>
+		<item>Jumps to the specified label if vA == vB. vA and vB contain integer values.\n(eq is short for Equals)</item>
+		<item>Jumps to the specified label if vA != vB. vA and vB contain integer values.\n(ne is short for Not Equals)</item>
+		<item>Jumps to the specified label if vA &lt; vB. vA and vB contain integer values.\n(lt is short for Less Than)</item>
+		<item>Jumps to the specified label if vA &lt;= vB. vA and vB contain integer values.\n(le is an abbreviation for Less than or Equal/Less or equal)</item>
+		<item>Jumps to the specified label if vA > vB. vA and vB contain integer values.\n(gt is short for Greater Than/More Than)</item>
+		<item>Jumps to the specified label if vA >= vB. vA and vB contain integer values.\n(ge is short for Greater than or Equal)</item>
+		<item>Jumps to the specified label if vAA == 0. vAA contains an integer value.\n(eqz is short for Equals to Zero)</item>
+		<item>Jumps to the specified label if vAA != 0. vAA contains an integer value.\n(nez is short for Not Equals to Zero)</item>
+		<item>Jumps to the specified label if vAA &lt; 0. vAA contains an integer value.\n(ltz is short for Less Than Zero)</item>
+		<item>Jumps to the specified label if vAA &lt;= 0. vAA contains an integer value.\n(lez is an abbreviation for Less than or Equal to Zero/Less or equal to zero)</item>
+		<item>Jumps to the specified label if vAA > 0. vAA contains an integer value.\n(gtz is short for Greater Than Zero)</item>
+		<item>Jumps to the specified label if vAA >= 0. vAA contains an integer value.\n(gez is an abbreviation for Greater than or Equal to Zero)</item>
+		<item>Gets an integer value at the index contained in vCC from the array referenced in vBB and places it in the vAA register.\nvAA = vBB[vCC]</item>
+		<item>Gets, at the index contained in vCC, from the array referenced in vBB, a double/long value and places it in the register pair vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Receives, at the index contained in vCC, from the array referenced in vBB, a reference to the object and places it in the vAA register.\nvAA = vBB[vCC]</item>
+		<item>Gets, at the index contained in vCC, from the array referenced in vBB, a boolean value and places it in the vAA register.\nvAA = vBB[vCC]</item>
+		<item>Retrieves, at the index contained in vCC, from the array referenced in vBB, a byte (integer) value and places it in the vAA register.\nvAA = vBB[vCC]</item>
+		<item>Retrieves, at the index contained in vCC, from the array referenced in vBB, a char value and places it in the vAA register.\nvAA = vBB[vCC]</item>
+		<item>Retrieves, at the index contained in vCC, from the array referenced in vBB, a short (integer) value and places it in the vAA register.\nvAA = vBB[vCC]</item>
+		<item>Places the integer value from vAA into the array referenced in vBB with the element containing the vCC register.\nvBB[vCC] = vAA</item>
+		<item>Places a double/long value from the register pair vAA, vAA+1 into the array referenced in vBB, with the element containing the vCC register.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Places a reference to an object from vAA into the array referenced in vBB with an element with the vCC register.\nvBB[vCC] = vAA</item>
+		<item>Places the boolean value from vAA into the array referenced by vBB with the element containing the vCC register.\nvBB[vCC] = vAA</item>
+		<item>Places the byte (integer) value from vAA into the array referenced in vBB with the element containing the register vCC.\nvBB[vCC] = vAA</item>
+		<item>Places the char (character) value from vAA into the array referenced in vBB by element with register vCC.\nvBB[vCC] = vAA</item>
+		<item>Places the short (integer) value from vAA into the array referenced in vBB with the element containing the vCC register.\nvBB[vCC] = vAA</item>
+		<item>Reads the value from the instance field and places it in the vA register. The reference to the class containing this field is in the vB register.\nvA = vB.field</item>
+		<item>Reads a double/long value from an instance field and places it in a pair of registers (vA, vA+1). The reference to the class containing this field is in the vB register.\n(vA, vA+1) = vB.field</item>
+		<item>Reads an object reference from an instance field and places it in the vA register. The reference to the class containing this field is in the vB register.\nvA = vB.field</item>
+		<item>Reads a boolean value from the instance field and places it in the vA register. The reference to the class containing this field is in the vB register.\nvA = vB.field</item>
+		<item>Reads a byte (integer) value from an instance field and places it in the vA register. The reference to the class containing this field is in the vB register.\nvA = vB.field</item>
+		<item>Reads a char value from an instance field and places it in the vA register. The reference to the class containing this field is in the vB register.\nvA = vB.field</item>
+		<item>Reads a short (integer) value from an instance field and places it in the vA register. The reference to the class containing this field is in the vB register.\nvA = vB.field</item>
+		<item>Places the value from the vA register into the instance field. The reference to the class containing this field is in the vB register.\nvB.field = vA</item>
+		<item>Places a double/long value from a register pair (vA, vA+1) into an instance field. The reference to the class containing this field is in the vB register.\nvB.field = (vA, vA+1)</item>
+		<item>Places a reference to an object from the vA register into the instance field. The reference to the class containing this field is in the vB register.\nvB.field = vA</item>
+		<item>Places the boolean value from the vA register into the instance field. The reference to the class containing this field is in the vB register.\nvB.field = vA</item>
+		<item>Sets the byte (integer) value of the specified Boolean field in the instance referenced by register vB equal to the value of register vA, that is:\nvB.field = vA</item>
+		<item>Sets the char (character) value of the specified Boolean field in the instance referenced by register vB equal to the value of register vA, that is:\nvB.field = vA</item>
+		<item>Sets the short (integer) value of the specified Boolean field in the instance referenced by register vB equal to the value of register vA, that is:\nvB.field = vA</item>
+		<item>Reads a value from a static field and places it in the vAA register. The register containing the reference to the class containing this field is not used.</item>
+		<item>Reads a double/long value from a static field and places it in a pair of registers vAA, vAA+1. The register containing the reference to the class containing this field is not used.</item>
+		<item>Reads an object reference from a static field and places it in the vAA register. The register containing the reference to the class containing this field is not used.</item>
+		<item>Reads a boolean value from a static field and places it in the vAA register. The register containing the reference to the class containing this field is not used.</item>
+		<item>Reads a byte (integer) value from a static field and places it in the vAA register. The register containing the reference to the class containing this field is not used.</item>
+		<item>Reads a char value from a static field and places it in the vAA register. The register containing the reference to the class containing this field is not used.</item>
+		<item>Reads a short (integer) value from a static field and places it in the vAA register. The register containing the reference to the class containing this field is not used.</item>
+		<item>Places the value from the vAA register into a field (static field). The register containing the reference to the class containing this field is not used.</item>
+		<item>Places a double/long value from a pair of registers vAA, vAA+1 into a field (static field). The register containing the reference to the class containing this field is not used.</item>
+		<item>Places a reference to an object from the vAA register into a field (static field). The register containing the reference to the class containing this field is not used.</item>
+		<item>Places the boolean value from the vAA register into a field (static field). The register containing the reference to the class containing this field is not used.</item>
+		<item>Places a byte (integer) value from the vAA register into a field (static field). The register containing the reference to the class containing this field is not used.</item>
+		<item>Places the char value from the vAA register into a static field. The register containing the reference to the class containing this field is not used.</item>
+		<item>Places the short (integer) value from the vAA register into a static field. The register containing the reference to the class containing this field is not used.</item>
+		<item>Calls (runs) a virtual method with parameters. Parameters are indicated in curly braces. The first parameter (register v2) contains a reference to the class containing the called method, the second parameter (the contents of register v3) is passed to the called method.</item>
+		<item>Calls (runs) a virtual method with parameters directly from the parent class.</item>
+		<item>Calls (runs) a method with parameters without the permissions of the virtual method.</item>
+		<item>Calls (runs) a static method with parameters. Parameters are indicated in curly braces. The parameter (the contents of register v3) is passed to the called method. The class containing the called method is indicated after the curly braces.</item>
+		<item>Calls (runs) an interface method with parameters.</item>
+		<item>Calls (runs) a virtual method with parameters, but the parameters must be contained in registers with numbers in order.</item>
+		<item>Calls (runs) a virtual method with parameters directly from the parent class, but the parameters must be contained in registers with sequential numbers.</item>
+		<item>Calls (runs) a method with parameters without virtual method permissions, but the parameters must be contained in sequentially numbered registers.</item>
+		<item>Calls (runs) a static method with parameters, but the parameters must be contained in registers with sequential numbers.</item>
+		<item>Calls (runs) an interface method with parameters, but the parameters must be contained in sequentially numbered registers.</item>
+		<item>Calculates vA = -vB for values of type integer.</item>
+		<item>Calculates vA = ~vB for integer values.\nvA = ~vB</item>
+		<item>Calculates (vA, vA+1) = -(vB, vB+1) for values of type long (integer).</item>
+		<item>Calculates (vA, vA+1) = ~(vB, vB+1) for values of type long (integer).</item>
+		<item>Calculates vA = -vB for float values.</item>
+		<item>Calculates (vA, vA+1) = -(vB, vB+1) for double (floating point) values.</item>
+		<item>Converts an integer from vB to a long and stores it in the register pair vA, vA+1.\n(vA, vA+1) = (long) vB</item>
+		<item>Converts an integer from vB to a float and stores it in the vA register.\nvA = (float) vB</item>
+		<item>Converts an integer from vB to a double (floating point) and stores it in a register pair vA, vA+1.\n(vA, vA+1) = (double) vB</item>
+		<item>Converts a long (integer) value from vB, vB+1 to an integer (integer) and stores it in the vA register.\nvA = (int) (vB, vB+1)</item>
+		<item>Converts a long (integer) value from vB, vB+1 to a float (floating point) and stores it in the vA register.\nvA = (float) (vB, vB+1)</item>
+		<item>Converts a long (integer) value from vB, vB+1 to a double (floating point) and stores it in a register pair vA, vA+1.\n(vA, vA+1) = (double) (vB, vB+1)</item>
+		<item>Converts a float (floating point) value from vB to an integer (integer) value and stores it in the vA register.\nvA = (int)vB</item>
+		<item>Converts a float (floating point) value from vB to a long (integer) value and stores it in the register pair vA, vA+1.\n(vA, vA+1) = (long) vB</item>
+		<item>Converts a float (floating point) value from vB to a double (floating point) value and stores it in the register pair vA, vA+1.\n(vA, vA+1) = (double) vB</item>
+		<item>Converts a double (floating point) value from vB, vB+1 to an integer (integer) value and stores it in the vA register.\nvA = (int) (vB, vB+1)</item>
+		<item>Converts a double (floating point) value from vB, vB+1 to a long (integer) value and stores it in a register pair vA, vA+1.\n(vA, vA+1) = (long) (vB, vB+1)</item>
+		<item>Converts a double (floating point) value from vB, vB+1 to a float (floating point) value and stores it in the vA register.\nvA = (float) (vB, vB+1)</item>
+		<item>Converts an integer value from vB to a byte value and stores it in the vA register.\nvA = (byte) vB</item>
+		<item>Converts an integer value from vB to a char value and stores it in the vA register.\nvA = (char)vB</item>
+		<item>Converts an integer value from vB to a short value and stores it in the vA register.\nvA = (short) vB</item>
+		<item>Calculates vBB + vCC and stores the result in the vAA register. All values are integer.\nvAA = vBB + vCC</item>
+		<item>Calculates vBB - vCC and stores the result in the vAA register. All values are integer.\nvAA = vBB - vCC</item>
+		<item>Calculates vBB * vCC and stores the result in the vAA register. All values are integer.\nvAA = vBB * vCC</item>
+		<item>Calculates vBB / vCC and stores the result in the vAA register. All values are integer.\nvAA = vBB / vCC</item>
+		<item>Calculates vBB % vCC and stores the result in the vAA register. All values are integer.\nvAA = vBB % vCC</item>
+		<item>Calculates vBB &amp; vCC (logical AND) and stores the result in the vAA register. All values are integer.\nvAA = vBB &amp; vCC</item>
+		<item>Calculates vBB | vCC (logical OR) and stores the result in the vAA register. All values are integer.\nvAA = vBB | vCC</item>
+		<item>Computes vBB ^ vCC (exclusive OR) and stores the result in the vAA register. All values are integer.\nvAA = vBB ^ vCC</item>
+		<item>Shifts vBB left by the number of bits specified by vCC and stores the result in the vAA register. All values are integer.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Shifts vBB to the right by the number of bits specified by vCC and stores the result in the vAA register. All values are integer.\nvAA = vBB >> vCC</item>
+		<item>Shifts vBB without preserving sign to the right by the number of bits specified by vCC, and stores the result in the vAA register. All values are integer.\nvAA = vBB >>> vCC</item>
+		<item>Computes (vBB, vBB+1) + (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) - (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) * (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) / (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) % (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) &amp; (vCC, vCC+1) (logical AND) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) | (vCC, vCC+1) (logical OR) and stores the result in a pair of registers vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) ^ (vCC, vCC+1) (exclusive AND) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Shifts vBB, vBB+1 to the left by the number of bits specified by vCC, and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Shifts vBB, vBB+1 to the right by the number of bits specified by vCC, and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Shifts vBB, vBB+1 to the right without preserving the sign by the number of bits specified by vCC, and stores the result in a pair of registers vAA, vA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Calculates vBB + vCC and stores the result in the vAA register. All values are float.\nvAA = vBB + vCC</item>
+		<item>Calculates vBB - vCC and stores the result in the vAA register. All values are float.\nvAA = vBB - vCC</item>
+		<item>Calculates vBB * vCC and stores the result in the vAA register. All values are float.\nvAA = vBB * vCC</item>
+		<item>Calculates vBB / vCC and stores the result in the vAA register. All values are float.\nvAA = vBB / vCC</item>
+		<item>Calculates vBB % vCC and stores the result in the vAA register. All values are float.\nvAA = vBB % vCC</item>
+		<item>Computes (vBB, vBB+1) + (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) - (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) * (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) / (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) % (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Computes vA + vB and stores the result in the vA register. All values are integer.\nvA = vA + vB</item>
+		<item>Calculates vA - vB and stores the result in the vA register. All values are integer.\nvA = vA - vB</item>
+		<item>Calculates vA * vB and stores the result in the vA register. All values are integer.\nvA = vA * vB</item>
+		<item>Calculates vA / vB and stores the result in the vA register. All values are integer.\nvA = vA / vB</item>
+		<item>Calculates vA % vB and stores the result in the vA register. All values are integer.\nvA = vA % vB</item>
+		<item>Computes vA &amp; vB (logical AND) and stores the result in the vA register. All values are integer.\nvA = vA &amp; vB</item>
+		<item>Calculates vA | vB (logical OR) and stores the result in the vA register. All values are integer.\nvA = vA | vB</item>
+		<item>Computes vA ^ vB (exclusive OR) and stores the result in the vA register. All values are integer.\nvA = vA ^ vB</item>
+		<item>Shifts vA to the left by the number of bits specified by vB and stores the result in the vA register. All values are integer.\nvA = vA &lt;&lt; vB</item>
+		<item>Shifts vA to the right by the number of bits specified by vB and stores the result in the vA register. All values are integer.\nvA = vA >> vB</item>
+		<item>Shifts vA without preserving its sign to the right by the number of bits specified by vB, and stores the result in the vA register. All values are integer.\nvA = vA >>> vB</item>
+		<item>Computes (vA, vA+1) + (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) - (vB, vB+1) and stores the result in a pair of registers vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Computes (vA, vA+1) * (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) / (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) % (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Computes (vA, vA+1) &amp; (vB, vB+1) (logical AND) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) | (vB, vB+1) (logical OR) and stores the result in a pair of registers vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Computes (vA, vA+1) &amp; (vB, vB+1) (exclusive OR) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Shifts vA, vA+1 to the left by the number of bits specified by vB, and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Shifts vA, vA+1 to the right by the number of bits specified by vB, and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Shifts vA, vA+1 to the right without preserving the sign by the number of digits specified by vB, and stores the result in a pair of registers vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Computes vA + vB and stores the result in the vA register. All values are float.\nvA = vA + vB</item>
+		<item>Calculates vA - vB and stores the result in the vA register. All values are float.\nvA = vA - vB</item>
+		<item>Calculates vA * vB and stores the result in the vA register. All values are float.\nvA = vA * vB</item>
+		<item>Calculates vA / vB and stores the result in the vA register. All values are float.\nvA = vA / vB</item>
+		<item>Calculates vA % vB and stores the result in the vA register. All values are float.\nvA = vA % vB</item>
+		<item>Computes (vA, vA+1) + (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are double (floating point).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) - (vB, vB+1) and stores the result in a pair of registers vA, vA+1. All values are double (floating point).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Computes (vA, vA+1) * (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are double (floating point).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) / (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are double (floating point).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) % (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are double (floating point).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Computes vB + 0xFFFF and stores the result in the vA register. All values are integer.\nvA = vB + 0xFFFF</item>
+		<item>Computes 0xFFFF - vB and stores the result in the vA register. All values are integer.\nvA = 0xFFFF - vB</item>
+		<item>Computes vB * 0xFFFF and stores the result in the vA register. All values are integer.\nvA = vB * 0xFFFF</item>
+		<item>Calculates vB / 0xFFFF and stores the result in the vA register. All values are integer.\nvA = vB / 0xFFFF</item>
+		<item>Computes vB % 0xFFFF and stores the result in the vA register. All values are integer.\nvA = vB % 0xFFFF</item>
+		<item>Computes vB &amp; 0xFFFF (logical AND) and stores the result in the vA register. All values are integer.\nvA = vB &amp; 0xFFFF</item>
+		<item>Calculates vB | 0xFFFF (logical OR) and stores the result in the vA register. All values are integer.\nvA = vB | 0xFFFF</item>
+		<item>Computes vB ^ 0xFFFF (exclusive OR) and stores the result in the vA register. All values are integer.\nvA = vB ^ 0xFFFF</item>
+		<item>Computes vBB + 0xFF and stores the result in the vAA register. All values are integer.\nvAA = vBB + 0xFF</item>
+		<item>Calculates 0xFF - vBB and stores the result in the vAA register. All values are integer.\nvAA = 0xFF - vBB</item>
+		<item>Computes vBB * 0xFF and stores the result in the vAA register. All values are integer.\nvAA = vBB * 0xFF</item>
+		<item>Calculates vBB / 0xFF and stores the result in the vAA register. All values are integer.\nvAA = vBB / 0xFF</item>
+		<item>Computes vBB % 0xFF and stores the result in the vAA register. All values are integer.\nvAA = vBB % 0xFF</item>
+		<item>Computes vBB &amp; 0xFF (logical AND) and stores the result in the vAA register. All values are integer.\nvAA = vBB &amp; 0xFF</item>
+		<item>Calculates vBB | 0xFF (logical OR) and stores the result in the vAA register. All values are integer.\nvAA = vBB | 0xFF</item>
+		<item>Computes vBB ^ 0xFF (exclusive OR) and stores the result in the vAA register. All values are integer.\nvAA = vBB ^ 0xFF</item>
+		<item>Shifts vBB left by the number of bits specified by 0xFF and stores the result in the vAA register. All values are integer.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Shifts vBB to the right by the number of bits specified by 0xFF and stores the result in the vAA register. All values are integer.\nvAA = vBB >> 0xFF</item>
+		<item>Signally shifts vBB to the right by the number of bits specified by 0xFF and stores the result in the vAA register. All values are integer.\nvAA = vBB >>> 0xFF</item>
+		<item>Calls (runs) a polymorphic signature method with parameters. Present in Dex files since version 038.</item>
+		<item>Calls (runs) a polymorphic signature method with parameters, but the parameters must be contained in sequentially numbered registers. Present in Dex files since version 038.</item>
+		<item>Allows (starts) calling a site with parameters. Present in Dex files since version 038.</item>
+		<item>Allows (starts) calling a site with parameters, but the parameters must be contained in registers with numbers in order. Present in Dex files since version 038.</item>
+		<item>Places a reference to a method handle in the vAA register. Present in Dex files since version 039.</item>
+		<item>Places a reference to the method prototype in the vAA register. Present in Dex files since version 039.</item>
+	</string-array>
 	<string-array name="copy_variants">
         <item>Rename</item>
 		<item>Rename files only</item>

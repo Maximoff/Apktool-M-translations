@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>레지스터</item>
+		<item>리터럴 값</item>
+		<item>기본 데이터 유형</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA는 값 범위가 v0 - v15인 4비트 레지스터입니다.\nvAA는 값 범위가 v0 - v255인 8비트 레지스터입니다.\nvAAAA는 값 범위가 v0 - v65535인 16비트 레지스터입니다.</item>
+		<item>0xF, 0xFF 등이 사용됩니다. 리터럴 값을 나타냅니다. 레지스터와 마찬가지로 숫자 F는 값의 범위를 나타내는 데 사용됩니다. 예를 들면 다음과 같습니다.\n0xF 값의 범위는 [-0x8, 0x7]로 표현됩니다.\n0xFF 값의 범위는 [-0x80, 0x7F]로 표현됩니다.</item>
+		<item>V - 공백, Z - 부울, B - 바이트\nC - 문자, S - 짧음, I - 정수\nJ - 롱, F - 플로트, D - 더블\nvoid: 반환 유형에만 사용할 수 있습니다.\n부울: true 또는 false 값을 저장합니다.\nbyte : -128부터 127까지의 정수를 저장하며 1byte를 차지한다.\nshort: -32768부터 32767까지의 정수를 저장하고 2바이트를 사용합니다.\nint: -2147483648부터 2147483647까지의 정수를 저장하며 4바이트를 차지한다.\nlong: -9223372036854775808부터 9223372036854775807까지의 정수를 저장하며 8바이트를 차지합니다.\ndouble: ±4.9*10²⁴ ~ ±1.7976931348623157*10³⁰⁸ 범위의 부동 소수점 숫자를 저장하며 8바이트를 차지합니다. 점은 분수 리터럴에서 소수 구분 기호로 사용됩니다.\nfloat: -3.4*10³⁸부터 3.4*10³⁸까지의 부동 소수점 숫자를 저장하고 4바이트를 차지합니다.\nchar: UTF-16 인코딩으로 단일 문자를 저장하며 2바이트를 차지하므로 저장되는 값의 범위는 0~65535이다.</item>
+		<item>조치 없음.</item>
+		<item>vB 레지스터의 값을 vA 레지스터로 이동합니다.</item>
+		<item>vBBBB 레지스터의 값을 vAA 레지스터로 이동합니다.</item>
+		<item>vBBBB 레지스터의 값을 vAAAA 레지스터로 이동합니다.</item>
+		<item>레지스터 쌍(vB, vB+1)의 long/double 값을 레지스터 쌍 vA, vA+1로 이동합니다.</item>
+		<item>레지스터 쌍(vBBBB, vBBBB+1)의 long/double 값을 레지스터 쌍 vAA, vAA+1로 이동합니다.</item>
+		<item>레지스터 쌍(vBBBB, vBBBB+1)의 long/double 값을 레지스터 쌍 vAAAA, vAAAA+1로 이동합니다.</item>
+		<item>vB 레지스터에서 vA 레지스터로 개체 참조를 이동합니다.</item>
+		<item>vBBBB 레지스터에서 vAA 레지스터로 개체 참조를 이동합니다.</item>
+		<item>vBBBB 레지스터에서 vAAAA 레지스터로 개체 참조를 이동합니다.</item>
+		<item>이전에 호출한 메서드의 반환 값을 vAA 레지스터로 이동합니다.</item>
+		<item>이전에 호출한 메서드에서 반환된 long/double 값을 레지스터 쌍 vAA, vAA+1로 이동합니다.</item>
+		<item>이전에 호출한 메서드에서 반환된 개체 참조를 vAA 레지스터로 이동합니다.</item>
+		<item>메소드 호출 중(실행 중) 발행된 제외된 객체에 대한 참조를 vAA 레지스터로 이동합니다.</item>
+		<item>반환값 없이 반환됩니다.</item>
+		<item>vAA 레지스터에서 값을 반환하여 반환합니다.</item>
+		<item>double/long 값을 vAA, vAA+1 레지스터 쌍으로 반환하여 반환합니다.</item>
+		<item>vAA 레지스터에서 객체 참조 값을 반환하여 반환합니다.</item>
+		<item>vA 레지스터에 4비트 상수를 배치합니다.</item>
+		<item>vAA 레지스터에 16비트 상수를 배치합니다.</item>
+		<item>vAA 레지스터에 정수 상수를 배치합니다.</item>
+		<item>vAA 레지스터의 상위 비트에 16비트 상수를 배치합니다. 부동 소수점 값을 초기화하는 데 사용됩니다.</item>
+		<item>16비트 정수 상수를 레지스터 쌍 vAA, vAA+1에 배치하여 정수 상수를 긴 상수로 변환합니다.</item>
+		<item>32비트 정수 상수를 레지스터 쌍 vAA, vAA+1에 배치하여 정수 상수를 긴 상수로 변환합니다.</item>
+		<item>64비트 상수를 레지스터 쌍 vAA, vAA+1에 배치합니다.</item>
+		<item>16비트 상수를 레지스터 쌍 vAA, vAA+1의 상위 16비트에 배치합니다. 이중(부동 소수점) 값을 초기화하는 데 사용됩니다.</item>
+		<item>vAA 레지스터에 지정된 문자열에 대한 참조를 배치합니다.</item>
+		<item>vAA 레지스터에 지정된 문자열에 대한 참조를 배치합니다.</item>
+		<item>string_id로 식별된 문자열 상수(문자열)에 대한 참조를 vAA 레지스터에 배치합니다.</item>
+		<item>vAA 레지스터에서 참조하는 개체 모니터를 가져옵니다.</item>
+		<item>vAA 레지스터가 참조하는 개체 모니터를 해제합니다.</item>
+		<item>vAA 레지스터에 포함된 개체 참조를 type_id로 식별된 클래스로 캐스팅할 수 있는지 확인합니다. 처리할 수 없으면 ClassCastException을 발생시키고 그렇지 않으면 실행을 계속합니다.</item>
+		<item>vB 레지스터의 내용이 type_id로 식별되는 클래스의 인스턴스인지 확인합니다. 레지스터 vA가 있으면 0이 아닌 값으로 설정하고, 없으면 0으로 설정합니다.\nvA = vB 인스턴스오브 유형 ? 10</item>
+		<item>vB 레지스터에서 배열 요소의 수를 결정하고 값을 vA 레지스터에 배치합니다.\nvA = vB.길이</item>
+		<item>객체 유형의 인스턴스를 생성하고 vAA 레지스터에 생성된 인스턴스에 대한 참조를 배치합니다.</item>
+		<item>레지스터 vB 요소의 크기로 type_id 변수의 새 배열을 생성하고 레지스터 vA에 배열에 대한 참조를 배치합니다.</item>
+		<item>type_id 유형의 새 데이터 배열을 생성하고 이를 매개변수로 채웁니다(즉, long/double 배열은 안 되지만 참조 유형은 허용됩니다). 새로 생성된 배열에 대한 참조는 이 명령문 바로 다음에 나오는 move-result-object 명령문을 사용하여 얻을 수 있습니다(사용할 경우).</item>
+		<item>type_id 유형의 새 데이터 배열을 생성하고 이를 다양한 매개변수로 채웁니다(즉, long/double 배열은 안 되지만 참조 유형은 허용됨). 새로 생성된 배열에 대한 참조는 이 명령문 바로 다음에 나오는 move-result-object 명령문을 사용하여 얻을 수 있습니다(사용할 경우).</item>
+		<item>vAA 레지스터에서 참조되는 배열을 정적 데이터로 채웁니다. 데이터 위치는 현재 명령어의 위치와 오프셋의 합입니다.</item>
+		<item>예외 개체를 발생시킵니다. vAA 레지스터의 예외 개체에 대한 참조입니다.</item>
+		<item>무조건 짧은(정수) 8비트 오프셋으로 점프합니다.</item>
+		<item>16비트 오프셋으로 무조건 점프합니다.</item>
+		<item>32비트 오프셋으로 무조건 점프합니다.</item>
+		<item>제어 상수가 서로 가까울 때(연속으로) Switch 연산자를 구현합니다. 명령어는 인덱스 테이블을 사용합니다. 특정 사례에 대한 명령어 오프셋은 vAA 인덱스에 의해 결정됩니다. vAA 인덱스가 테이블을 벗어나면 다음 문으로 실행이 계속됩니다(기본값).</item>
+		<item>희소 테이블의 경우 Switch 연산자를 구현합니다. 이 명령어는 각 상수에 대한 오프셋을 지정하는 테이블을 사용합니다. 테이블에서 일치하는 항목이 없으면 다음 문이 실행됩니다(기본 사례).</item>
+		<item>vBB와 vCC의 float(부동 소수점) 값을 비교하고 vAA 레지스터에 정수 값을 배치합니다.\nvAA = vBB &lt; vCC ? 예: 1, 아니요: -1, 같음: 0</item>
+		<item>vBB와 vCC의 float(부동 소수점) 값을 비교하고 vAA 레지스터에 정수 값을 배치합니다.\nvAA = vBB &lt; vCC ? 예: 1, 아니요: -1, 같음: 0</item>
+		<item>vBB와 vCC의 double(부동 소수점) 값을 비교하고 vAA 레지스터에 정수 값을 배치합니다.\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? 와이\n예: 1, 아니요: -1, 같음: 0</item>
+		<item>vBB와 vCC의 double(부동 소수점) 값을 비교하고 vAA 레지스터에 정수 값을 배치합니다.\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? 예: 1, 아니요: -1, 같음: 0</item>
+		<item>vBB와 vCC의 long(정수) 값을 비교하고 vAA 레지스터에 정수(정수) 값을 배치합니다.\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? 예: 1, 아니요: -1, 같음: 0</item>
+		<item>vA == vB인 경우 지정된 레이블로 이동합니다. vA 및 vB에는 정수 값이 포함됩니다.\n(eq는 Equals의 약자입니다)</item>
+		<item>vA != vB인 경우 지정된 레이블로 이동합니다. vA 및 vB에는 정수 값이 포함됩니다.\n(ne은 같지 않음의 약어입니다)</item>
+		<item>vA &lt; vB인 경우 지정된 레이블로 이동합니다. vA 및 vB에는 정수 값이 포함됩니다.\n(Less Than의 줄임말입니다)</item>
+		<item>vA인 경우 지정된 레이블로 점프합니다.</item>
+		<item>vA > vB인 경우 지정된 레이블로 이동합니다. vA 및 vB에는 정수 값이 포함됩니다.\n(gt는 Greater Than/More Than의 약어입니다.)</item>
+		<item>vA >= vB인 경우 지정된 레이블로 이동합니다. vA 및 vB에는 정수 값이 포함됩니다.\n(ge는 크거나 같음의 약어입니다)</item>
+		<item>vAA == 0인 경우 지정된 레이블로 이동합니다. vAA에는 정수 값이 포함됩니다.\n(eqz는 Equals to Zero의 약어입니다)</item>
+		<item>vAA != 0인 경우 지정된 레이블로 이동합니다. vAA에는 정수 값이 포함됩니다.\n(nez는 Not Equals to Zero의 약어입니다)</item>
+		<item>vAA &lt; 0인 경우 지정된 레이블로 이동합니다. vAA에는 정수 값이 포함됩니다.\n(ltz는 Less Than Zero의 약어입니다)</item>
+		<item>vAA인 경우 지정된 레이블로 이동합니다.</item>
+		<item>vAA > 0인 경우 지정된 레이블로 이동합니다. vAA에는 정수 값이 포함됩니다.\n(gtz는 Greater Than Zero의 약어입니다)</item>
+		<item>vAA >= 0인 경우 지정된 레이블로 이동합니다. vAA에는 정수 값이 포함됩니다.\n(gez는 Greater Than or Equal to Zero의 약어입니다.)</item>
+		<item>vBB에서 참조되는 배열에서 vCC에 포함된 인덱스의 정수 값을 가져와서 vAA 레지스터에 배치합니다.\nvAA = vBB[vCC]</item>
+		<item>vCC에 포함된 인덱스에서 vBB에서 참조되는 배열로부터 double/long 값을 가져와서 레지스터 쌍 vAA, vAA+1에 배치합니다.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>vCC에 포함된 인덱스에서 vBB에서 참조되는 배열로부터 개체에 대한 참조를 수신하고 이를 vAA 레지스터에 배치합니다.\nvAA = vBB[vCC]</item>
+		<item>vCC에 포함된 인덱스에서 vBB에서 참조되는 배열에서 부울 값을 가져와 vAA 레지스터에 배치합니다.\nvAA = vBB[vCC]</item>
+		<item>vCC에 포함된 인덱스에서 vBB에서 참조되는 배열에서 바이트(정수) 값을 검색하여 vAA 레지스터에 배치합니다.\nvAA = vBB[vCC]</item>
+		<item>vBB에서 참조하는 배열에서 vCC에 포함된 인덱스에서 char 값을 검색하여 vAA 레지스터에 배치합니다.\nvAA = vBB[vCC]</item>
+		<item>vCC에 포함된 인덱스에서 vBB에서 참조되는 배열에서 짧은(정수) 값을 검색하여 vAA 레지스터에 배치합니다.\nvAA = vBB[vCC]</item>
+		<item>vAA의 정수 값을 vCC 레지스터가 포함된 요소와 함께 vBB에서 참조되는 배열에 배치합니다.\nvBB[vCC] = vAA</item>
+		<item>레지스터 쌍 vAA, vAA+1의 double/long 값을 vCC 레지스터를 포함하는 요소와 함께 vBB에서 참조되는 배열에 배치합니다.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>vAA의 개체에 대한 참조를 vCC 레지스터가 있는 요소와 함께 vBB에서 참조되는 배열에 배치합니다.\nvBB[vCC] = vAA</item>
+		<item>vAA의 부울 값을 vCC 레지스터가 포함된 요소와 함께 vBB가 참조하는 배열에 배치합니다.\nvBB[vCC] = vAA</item>
+		<item>vAA의 바이트(정수) 값을 vCC 레지스터가 포함된 요소와 함께 vBB에서 참조되는 배열에 배치합니다.\nvBB[vCC] = vAA</item>
+		<item>vAA의 char(문자) 값을 vCC 레지스터가 있는 요소에 의해 vBB에서 참조되는 배열에 배치합니다.\nvBB[vCC] = vAA</item>
+		<item>vCC 레지스터를 포함하는 요소가 있는 vBB에서 참조되는 배열에 vAA의 짧은(정수) 값을 배치합니다.\nvBB[vCC] = vAA</item>
+		<item>인스턴스 필드에서 값을 읽고 이를 vA 레지스터에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvA = vB.필드</item>
+		<item>인스턴스 필드에서 double/long 값을 읽고 이를 레지스터 쌍(vA, vA+1)에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\n(vA, vA+1) = vB.필드</item>
+		<item>인스턴스 필드에서 개체 참조를 읽고 이를 vA 레지스터에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvA = vB.필드</item>
+		<item>인스턴스 필드에서 부울 값을 읽고 이를 vA 레지스터에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvA = vB.필드</item>
+		<item>인스턴스 필드에서 바이트(정수) 값을 읽고 이를 vA 레지스터에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvA = vB.필드</item>
+		<item>인스턴스 필드에서 char 값을 읽고 이를 vA 레지스터에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvA = vB.필드</item>
+		<item>인스턴스 필드에서 짧은(정수) 값을 읽고 이를 vA 레지스터에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvA = vB.필드</item>
+		<item>vA 레지스터의 값을 인스턴스 필드에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvB.필드 = vA</item>
+		<item>레지스터 쌍(vA, vA+1)의 double/long 값을 인스턴스 필드에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvB.필드 = (vA, vA+1)</item>
+		<item>vA 레지스터의 개체에 대한 참조를 인스턴스 필드에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvB.필드 = vA</item>
+		<item>vA 레지스터의 부울 값을 인스턴스 필드에 배치합니다. 이 필드를 포함하는 클래스에 대한 참조는 vB 레지스터에 있습니다.\nvB.필드 = vA</item>
+		<item>레지스터 vB가 참조하는 인스턴스의 지정된 부울 필드의 바이트(정수) 값을 레지스터 vA의 값과 동일하게 설정합니다. 즉:\nvB.필드 = vA</item>
+		<item>레지스터 vB가 참조하는 인스턴스에 있는 지정된 부울 필드의 char(문자) 값을 레지스터 vA의 값과 동일하게 설정합니다. 즉, 다음과 같습니다.\nvB.필드 = vA</item>
+		<item>레지스터 vB가 참조하는 인스턴스에서 지정된 부울 필드의 짧은(정수) 값을 레지스터 vA의 값과 동일하게 설정합니다. 즉:\nvB.필드 = vA</item>
+		<item>정적 필드에서 값을 읽고 이를 vAA 레지스터에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>정적 필드에서 double/long 값을 읽고 이를 vAA, vAA+1 레지스터 쌍에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>정적 필드에서 개체 참조를 읽고 이를 vAA 레지스터에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>정적 필드에서 부울 값을 읽고 이를 vAA 레지스터에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>정적 필드에서 바이트(정수) 값을 읽고 이를 vAA 레지스터에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>정적 필드에서 char 값을 읽고 이를 vAA 레지스터에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>정적 필드에서 짧은(정수) 값을 읽고 이를 vAA 레지스터에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>vAA 레지스터의 값을 필드(정적 필드)에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>vAA, vAA+1 레지스터 쌍의 double/long 값을 필드(정적 필드)에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>vAA 레지스터의 개체에 대한 참조를 필드(정적 필드)에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>vAA 레지스터의 부울 값을 필드(정적 필드)에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>vAA 레지스터의 바이트(정수) 값을 필드(정적 필드)에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>vAA 레지스터의 char 값을 정적 필드에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>vAA 레지스터의 짧은(정수) 값을 정적 필드에 배치합니다. 이 필드가 포함된 클래스에 대한 참조가 포함된 레지스터는 사용되지 않습니다.</item>
+		<item>매개변수를 사용하여 가상 메소드를 호출(실행)합니다. 매개변수는 중괄호 안에 표시됩니다. 첫 번째 매개변수(레지스터 v2)에는 호출된 메서드가 포함된 클래스에 대한 참조가 포함되어 있고, 두 번째 매개변수(레지스터 v3의 내용)는 호출된 메서드에 전달됩니다.</item>
+		<item>상위 클래스에서 직접 매개변수를 사용하여 가상 메소드를 호출(실행)합니다.</item>
+		<item>가상 메소드의 권한 없이 매개변수를 사용하여 메소드를 호출(실행)합니다.</item>
+		<item>매개변수를 사용하여 정적 메소드를 호출(실행)합니다. 매개변수는 중괄호 안에 표시됩니다. 매개변수(레지스터 v3의 내용)가 호출된 메소드에 전달됩니다. 호출된 메서드를 포함하는 클래스는 중괄호 뒤에 표시됩니다.</item>
+		<item>매개변수를 사용하여 인터페이스 메소드를 호출(실행)합니다.</item>
+		<item>매개변수를 사용하여 가상 메소드를 호출(실행)하지만 매개변수는 숫자와 함께 레지스터에 순서대로 포함되어야 합니다.</item>
+		<item>상위 클래스에서 직접 매개변수를 사용하여 가상 메소드를 호출(실행)하지만 매개변수는 일련번호가 있는 레지스터에 포함되어야 합니다.</item>
+		<item>가상 메서드 권한 없이 매개변수가 있는 메서드를 호출(실행)하지만 매개변수는 순차적으로 번호가 매겨진 레지스터에 포함되어야 합니다.</item>
+		<item>매개변수를 사용하여 정적 메소드를 호출(실행)하지만 매개변수는 일련번호가 있는 레지스터에 포함되어야 합니다.</item>
+		<item>매개변수가 있는 인터페이스 메소드를 호출(실행)하지만 매개변수는 순차적으로 번호가 매겨진 레지스터에 포함되어야 합니다.</item>
+		<item>정수 유형의 값에 대해 vA = -vB를 계산합니다.</item>
+		<item>정수 값에 대해 vA = ~vB를 계산합니다.\nvA = ~vB</item>
+		<item>long(정수) 유형의 값에 대해 (vA, vA+1) = -(vB, vB+1)을 계산합니다.</item>
+		<item>long(정수) 유형의 값에 대해 (vA, vA+1) = ~(vB, vB+1)을 계산합니다.</item>
+		<item>부동 소수점 값에 대해 vA = -vB를 계산합니다.</item>
+		<item>double(부동 소수점) 값에 대해 (vA, vA+1) = -(vB, vB+1)을 계산합니다.</item>
+		<item>vB의 정수를 long으로 변환하고 이를 레지스터 쌍 vA, vA+1에 저장합니다.\n(vA, vA+1) = (긴) vB</item>
+		<item>vB의 정수를 부동 소수점으로 변환하여 vA 레지스터에 저장합니다.\nvA = (부동) vB</item>
+		<item>vB의 정수를 double(부동 소수점)로 변환하고 이를 레지스터 쌍 vA, vA+1에 저장합니다.\n(vA, vA+1) = (이중) vB</item>
+		<item>vB, vB+1의 긴(정수) 값을 정수(정수)로 변환하여 vA 레지스터에 저장합니다.\nvA = (정수) (vB, vB+1)</item>
+		<item>vB, vB+1의 long(정수) 값을 float(부동 소수점)로 변환하고 이를 vA 레지스터에 저장합니다.\nvA = (부동 소수점) (vB, vB+1)</item>
+		<item>vB, vB+1의 long(정수) 값을 double(부동 소수점)로 변환하고 이를 레지스터 쌍 vA, vA+1에 저장합니다.\n(vA, vA+1) = (이중) (vB, vB+1)</item>
+		<item>vB의 float(부동 소수점) 값을 정수(integer) 값으로 변환하여 vA 레지스터에 저장합니다.\nvA = (int)vB</item>
+		<item>vB의 float(부동 소수점) 값을 long(정수) 값으로 변환하고 이를 레지스터 쌍 vA, vA+1에 저장합니다.\n(vA, vA+1) = (긴) vB</item>
+		<item>vB의 부동(부동 소수점) 값을 double(부동 소수점) 값으로 변환하고 이를 레지스터 쌍 vA, vA+1에 저장합니다.\n(vA, vA+1) = (이중) vB</item>
+		<item>vB, vB+1의 double(부동 소수점) 값을 정수(정수) 값으로 변환하여 vA 레지스터에 저장합니다.\nvA = (정수) (vB, vB+1)</item>
+		<item>vB, vB+1의 double(부동 소수점) 값을 long(정수) 값으로 변환하고 이를 레지스터 쌍 vA, vA+1에 저장합니다.\n(vA, vA+1) = (롱) (vB, vB+1)</item>
+		<item>vB, vB+1의 double(부동 소수점) 값을 부동(부동 소수점) 값으로 변환하고 이를 vA 레지스터에 저장합니다.\nvA = (부동 소수점) (vB, vB+1)</item>
+		<item>vB의 정수 값을 바이트 값으로 변환하고 이를 vA 레지스터에 저장합니다.\nvA = (바이트) vB</item>
+		<item>vB의 정수 값을 char 값으로 변환하고 이를 vA 레지스터에 저장합니다.\nvA = (문자)vB</item>
+		<item>vB의 정수 값을 짧은 값으로 변환하고 이를 vA 레지스터에 저장합니다.\nvA = (짧은) vB</item>
+		<item>vBB + vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB + vCC</item>
+		<item>vBB - vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB - vCC</item>
+		<item>vBB * vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB * vCC</item>
+		<item>vBB/vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB / vCC</item>
+		<item>vBB % vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB % vCC</item>
+		<item>vBB 및 vCC(논리적 AND)를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB &amp; vCC</item>
+		<item>vBB를 계산합니다 | vCC(논리적 OR)를 수행하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB | vCC</item>
+		<item>vBB ^ vCC(배타적 OR)를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB ^ vCC</item>
+		<item>vCC에 지정된 비트 수만큼 왼쪽으로 vBB를 이동하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB</item>
+		<item>vCC에 지정된 비트 수만큼 vBB를 오른쪽으로 이동하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB >> vCC</item>
+		<item>vCC에서 지정한 비트 수만큼 부호를 유지하지 않고 vBB를 오른쪽으로 이동하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB >>> vCC</item>
+		<item>(vBB, vBB+1) + (vCC, vCC+1)을 계산하고 그 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) - (vCC, vCC+1)을 계산하고 그 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) * (vCC, vCC+1)을 계산하고 그 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) / (vCC, vCC+1)을 계산하고 그 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1)%(vCC, vCC+1)을 계산하고 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) &amp; (vCC, vCC+1)(논리적 AND)을 계산하고 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>계산(vBB, vBB+1) | (vCC, vCC+1) (논리적 OR) 결과를 레지스터 vAA, vAA+1 쌍에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) ^ (vCC, vCC+1)(배타적 AND)을 계산하고 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>vBB, vBB+1을 vCC에서 지정한 비트 수만큼 왼쪽으로 이동하고 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1)</item>
+		<item>vBB, vBB+1을 vCC에서 지정한 비트 수만큼 오른쪽으로 이동하고 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>vCC에 지정된 비트 수만큼 부호를 유지하지 않고 vBB, vBB+1을 오른쪽으로 이동하고 결과를 vAA, vA+1 레지스터 쌍에 저장합니다. 모든 값은 길다(정수).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>vBB + vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvAA = vBB + vCC</item>
+		<item>vBB - vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvAA = vBB - vCC</item>
+		<item>vBB * vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvAA = vBB * vCC</item>
+		<item>vBB/vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvAA = vBB / vCC</item>
+		<item>vBB % vCC를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvAA = vBB % vCC</item>
+		<item>(vBB, vBB+1) + (vCC, vCC+1)을 계산하고 그 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) - (vCC, vCC+1)을 계산하고 그 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) * (vCC, vCC+1)을 계산하고 그 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) / (vCC, vCC+1)을 계산하고 그 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1)%(vCC, vCC+1)을 계산하고 결과를 레지스터 쌍 vAA, vAA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>vA + vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA + vB</item>
+		<item>vA - vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA - vB</item>
+		<item>vA * vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA * vB</item>
+		<item>vA/vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA / vB</item>
+		<item>vA % vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA % vB</item>
+		<item>vA 및 vB(논리적 AND)를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA &amp; vB</item>
+		<item>vA를 계산합니다 | vB(논리적 OR)를 수행하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA | vB</item>
+		<item>vA ^ vB(배타적 OR)를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA ^ vB</item>
+		<item>vB에서 지정한 비트 수만큼 왼쪽으로 vA를 이동하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA</item>
+		<item>vB에서 지정한 비트 수만큼 vA를 오른쪽으로 이동하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA >> vB</item>
+		<item>vB에서 지정한 비트 수만큼 부호를 유지하지 않고 vA를 오른쪽으로 이동하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vA >>> vB</item>
+		<item>(vA, vA+1) + (vB, vB+1)을 계산하고 그 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>(vA, vA+1) - (vB, vB+1)을 계산하고 결과를 레지스터 vA, vA+1 쌍에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>(vA, vA+1) * (vB, vB+1)을 계산하고 그 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>(vA, vA+1) / (vB, vB+1)을 계산하고 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>(vA, vA+1) % (vB, vB+1)을 계산하고 그 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>(vA, vA+1) &amp; (vB, vB+1)(논리적 AND)을 계산하고 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>(vA, vA+1) 계산 | (vB, vB+1) (논리적 OR) 결과를 레지스터 vA, vA+1 쌍에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>(vA, vA+1) &amp; (vB, vB+1)(배타적 OR)을 계산하고 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>vA, vA+1을 vB에서 지정한 비트 수만큼 왼쪽으로 이동하고 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1)</item>
+		<item>vA, vA+1을 vB에서 지정한 비트 수만큼 오른쪽으로 이동하고 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>vB에서 지정한 자릿수만큼 부호를 유지하지 않고 vA, vA+1을 오른쪽으로 이동하고 그 결과를 한 쌍의 레지스터 vA, vA+1에 저장합니다. 모든 값은 길다(정수).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>vA + vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvA = vA + vB</item>
+		<item>vA - vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvA = vA - vB</item>
+		<item>vA * vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvA = vA * vB</item>
+		<item>vA/vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvA = vA / vB</item>
+		<item>vA % vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 부동 소수점입니다.\nvA = vA % vB</item>
+		<item>(vA, vA+1) + (vB, vB+1)을 계산하고 그 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>(vA, vA+1) - (vB, vB+1)을 계산하고 결과를 레지스터 vA, vA+1 쌍에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>(vA, vA+1) * (vB, vB+1)을 계산하고 그 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>(vA, vA+1) / (vB, vB+1)을 계산하고 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>(vA, vA+1) % (vB, vB+1)을 계산하고 그 결과를 레지스터 쌍 vA, vA+1에 저장합니다. 모든 값은 double(부동 소수점)입니다.\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>vB + 0xFFFF를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vB + 0xFFFF</item>
+		<item>0xFFFF - vB를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = 0xFFFF - vB</item>
+		<item>vB * 0xFFFF를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vB * 0xFFFF</item>
+		<item>vB / 0xFFFF를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vB / 0xFFFF</item>
+		<item>vB % 0xFFFF를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vB % 0xFFFF</item>
+		<item>vB &amp; 0xFFFF(논리적 AND)를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vB &amp; 0xFFFF</item>
+		<item>vB를 계산합니다 | 0xFFFF(논리적 OR)이며 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vB | 0xFFFF</item>
+		<item>vB ^ 0xFFFF(배타적 OR)를 계산하고 결과를 vA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvA = vB ^ 0xFFFF</item>
+		<item>vBB + 0xFF를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB + 0xFF</item>
+		<item>0xFF - vBB를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = 0xFF - vBB</item>
+		<item>vBB * 0xFF를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB * 0xFF</item>
+		<item>vBB / 0xFF를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB / 0xFF</item>
+		<item>vBB % 0xFF를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB % 0xFF</item>
+		<item>vBB &amp; 0xFF(논리적 AND)를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB &amp; 0xFF</item>
+		<item>vBB를 계산합니다 | 0xFF(논리적 OR)이며 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB | 0xFF</item>
+		<item>vBB ^ 0xFF(배타적 OR)를 계산하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB ^ 0xFF</item>
+		<item>0xFF에 지정된 비트 수만큼 vBB를 왼쪽으로 이동하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB</item>
+		<item>0xFF에 지정된 비트 수만큼 vBB를 오른쪽으로 이동하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB >> 0xFF</item>
+		<item>0xFF에 지정된 비트 수만큼 vBB를 오른쪽으로 신호 이동하고 결과를 vAA 레지스터에 저장합니다. 모든 값은 정수입니다.\nvAA = vBB >>> 0xFF</item>
+		<item>매개변수를 사용하여 다형성 서명 메소드를 호출(실행)합니다. 버전 038부터 Dex 파일에 존재합니다.</item>
+		<item>매개변수를 사용하여 다형성 서명 메소드를 호출(실행)하지만 매개변수는 순차적으로 번호가 매겨진 레지스터에 포함되어야 합니다. 버전 038부터 Dex 파일에 존재합니다.</item>
+		<item>매개변수가 있는 사이트 호출을 허용(시작)합니다. 버전 038부터 Dex 파일에 존재합니다.</item>
+		<item>매개변수가 있는 사이트 호출을 허용(시작)하지만 매개변수는 순서대로 숫자와 함께 레지스터에 포함되어야 합니다. 버전 038부터 Dex 파일에 존재합니다.</item>
+		<item>vAA 레지스터에 메서드 핸들에 대한 참조를 배치합니다. 버전 039부터 Dex 파일에 존재합니다.</item>
+		<item>vAA 레지스터에 메서드 프로토타입에 대한 참조를 배치합니다. 버전 039부터 Dex 파일에 존재합니다.</item>
+	</string-array>
     <string-array name="copy_variants">
         <item>이름 바꾸기</item>
         <item>파일 이름만 변경</item>

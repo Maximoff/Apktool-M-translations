@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Registry</item>
+		<item>Doslovné hodnoty</item>
+		<item>Primitivní datové typy</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA je 4bitový registr s rozsahem hodnot v0 - v15\nvAA je 8bitový registr s rozsahem hodnot v0 - v255\nvAAAA je 16bitový registr s rozsahem hodnot v0 - v65535</item>
+		<item>0xF, 0xFF atd. se používají. reprezentovat doslovné hodnoty. Stejně jako registry se číslo F používá k reprezentaci rozsahu hodnot, například:\nRozsah hodnot 0xF je reprezentován [-0x8, 0x7]\nRozsah hodnot 0xFF je reprezentován [-0x80, 0x7F]</item>
+		<item>V - void, Z - boolean, B - byte\nC - char, S - krátký, I - int\nJ - dlouhý, F - plovoucí, D - dvojitý\nvoid: lze použít pouze pro návratové typy\nboolean: ukládá hodnotu true nebo false\nbyte: ukládá celé číslo od -128 do 127 a zabírá 1 bajt\nshort: uloží celé číslo od -32768 do 32767 a zabere 2 bajty\nint: ukládá celé číslo od -2147483648 do 2147483647 a zabírá 4 bajty\nlong: ukládá celé číslo od -9223372036854775808 do 9223372036854775807 a zabírá 8 bajtů\ndouble: ukládá číslo s pohyblivou řádovou čárkou od ±4,9*10³²⁴ do ±1,7976931348623157*10³⁰⁸ a zabírá 8 bajtů. Tečka se používá jako oddělovač desetinných míst ve zlomkových literálech.\nfloat: ukládá číslo s pohyblivou řádovou čárkou od -3,4*10³⁸ do 3,4*10³⁸ a zabere 4 bajty\nchar: ukládá jeden znak v kódování UTF-16 a zabírá 2 bajty, takže rozsah uložených hodnot je od 0 do 65535.</item>
+		<item>Žádná akce.</item>
+		<item>Přesune hodnotu registru vB do registru vA.</item>
+		<item>Přesune hodnotu registru vBBBB do registru vAA.</item>
+		<item>Přesune hodnotu registru vBBBB do registru vAAAA.</item>
+		<item>Přesune hodnotu long/double páru registrů (vB, vB+1) na pár registrů vA, vA+1.</item>
+		<item>Přesune hodnotu long/double páru registrů (vBBBB, vBBBB+1) na pár registrů vAA, vAA+1.</item>
+		<item>Přesune hodnotu long/double páru registrů (vBBBB, vBBBB+1) na pár registrů vAAAA, vAAAA+1.</item>
+		<item>Přesune odkaz na objekt z registru vB do registru vA.</item>
+		<item>Přesune odkaz na objekt z registru vBBBB do registru vAA.</item>
+		<item>Přesune odkaz na objekt z registru vBBBB do registru vAAAA.</item>
+		<item>Přesune návratovou hodnotu dříve volané metody do registru vAA.</item>
+		<item>Přesune hodnotu long/double vrácenou dříve volanou metodou do dvojice registrů vAA, vAA+1.</item>
+		<item>Přesune odkaz na objekt vrácený dříve volanou metodou do registru vAA.</item>
+		<item>Přesune odkaz na vyloučený objekt vydaný během volání metody (během provádění) do registru vAA.</item>
+		<item>Návrat bez návratové hodnoty.</item>
+		<item>Návrat vrácením hodnoty z registru vAA.</item>
+		<item>Návrat vrácením hodnoty double/long do dvojice registrů vAA, vAA+1.</item>
+		<item>Návrat vrácením hodnoty odkazu na objekt z registru vAA.</item>
+		<item>Umístí 4bitovou konstantu do registru vA.</item>
+		<item>Umístí 16bitovou konstantu do registru vAA.</item>
+		<item>Umístí celočíselnou konstantu do registru vAA.</item>
+		<item>Umístí 16bitovou konstantu do horních bitů registru vAA. Používá se k inicializaci hodnot s plovoucí desetinnou čárkou.</item>
+		<item>Umístí 16bitovou celočíselnou konstantu do registrového páru vAA, vAA+1 a převede celočíselnou konstantu na dlouhou konstantu.</item>
+		<item>Umístí 32bitovou celočíselnou konstantu do registrového páru vAA, vAA+1 a převede celočíselnou konstantu na dlouhou konstantu.</item>
+		<item>Umístí 64bitovou konstantu do dvojice registrů vAA, vAA+1.</item>
+		<item>Umístí 16bitovou konstantu do horních 16 bitů dvojice registrů vAA, vAA+1. Používá se k inicializaci dvojitých hodnot (s plovoucí desetinnou čárkou).</item>
+		<item>Umístí odkaz na zadaný řetězec do registru vAA.</item>
+		<item>Umístí odkaz na zadaný řetězec do registru vAA.</item>
+		<item>Umístí odkaz na řetězcovou konstantu (řetězec) identifikovanou pomocí string_id do registru vAA.</item>
+		<item>Získá monitor objektu, na který odkazuje registr vAA.</item>
+		<item>Uvolní objektový monitor, na který odkazuje registr vAA.</item>
+		<item>Zkontroluje, zda lze odkaz na objekt obsažený v registru vAA přetypovat na třídu identifikovanou type_id. Vyvolá výjimku ClassCastException, pokud nemůže, jinak pokračuje v provádění.</item>
+		<item>Zkontroluje, zda obsah registru vB je instancí třídy identifikované type_id. Nastaví registr vA na nenulový, pokud je přítomen, na 0, pokud není.\nvA = vB instanceOf typu ? 10</item>
+		<item>Určuje počet prvků pole z registru vB a umístí hodnotu do registru vA.\nvA = vB.délka</item>
+		<item>Vytvoří instanci typu objektu a umístí odkaz na vytvořenou instanci do registru vAA.</item>
+		<item>Vytvoří nové pole proměnných type_id s velikostí prvků registru vB a umístí odkaz na pole do registru vA.</item>
+		<item>Vytvoří nové datové pole typu type_id a naplní je parametry (tj. žádná dlouhá/dvojitá pole, ale referenční typy jsou povoleny). Odkaz na nově vytvořené pole lze získat pomocí příkazu move-result-object bezprostředně za tímto příkazem (pokud se má nějaký použít).</item>
+		<item>Vytvoří nové datové pole typu type_id a naplní jej řadou parametrů (tj. žádná dlouhá/dvojitá pole, ale referenční typy jsou přijatelné). Odkaz na nově vytvořené pole lze získat pomocí příkazu move-result-object bezprostředně za tímto příkazem (pokud se má nějaký použít).</item>
+		<item>Vyplní pole odkazované v registru vAA statickými daty. Umístění dat je součtem pozice současné instrukce a offsetu.</item>
+		<item>Vyvolá objekt výjimky. Odkaz na objekt výjimky v registru vAA.</item>
+		<item>Bezpodmínečně skok na krátký (celočíselný) 8bitový offset.</item>
+		<item>Bezpodmínečný skok na 16bitový offset.</item>
+		<item>Bezpodmínečný skok na 32bitový offset.</item>
+		<item>Implementuje operátor Switch, když jsou řídicí konstanty blízko sebe (v řadě). Instrukce používá indexovou tabulku. Offset instrukce pro konkrétní případ je určen indexem vAA. Pokud index vAA přesahuje tabulku, provádění pokračuje dalším příkazem (výchozí).</item>
+		<item>Implementuje operátor Switch v případě řídké tabulky. Instrukce používá tabulku, která specifikuje offsety pro každou konstantu. Pokud nejsou v tabulce nalezeny žádné shody, provede se další příkaz (výchozí případ).</item>
+		<item>Porovná plovoucí (plovoucí desetinnou čárku) hodnoty ve vBB a vCC a umístí celočíselnou hodnotu do registru vAA:\nvAA = vBB &lt; vCC ? ano: 1, ne: -1, rovno: 0</item>
+		<item>Porovná plovoucí (plovoucí desetinnou čárku) hodnoty ve vBB a vCC a umístí celočíselnou hodnotu do registru vAA:\nvAA = vBB &lt; vCC ? ano: 1, ne: -1, rovno: 0</item>
+		<item>Porovná hodnoty double (s plovoucí desetinnou čárkou) ve vBB a vCC a uloží celočíselnou hodnotu do registru vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nano: 1, ne: -1, rovno: 0</item>
+		<item>Porovná hodnoty double (s plovoucí desetinnou čárkou) ve vBB a vCC a uloží celočíselnou hodnotu do registru vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ano: 1, ne: -1, rovno: 0</item>
+		<item>Porovná dlouhé (celé) hodnoty ve vBB a vCC a umístí celočíselnou (celé) hodnotu do registru vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ano: 1, ne: -1, rovno: 0</item>
+		<item>Přeskočí na zadaný štítek, pokud vA == vB. vA a vB obsahují celočíselné hodnoty.\n(eq je zkratka pro Equals)</item>
+		<item>Přeskočí na zadaný štítek, pokud vA != vB. vA a vB obsahují celočíselné hodnoty.\n(ne je zkratka pro Nerovná se)</item>
+		<item>Přeskočí na zadaný štítek, pokud vA &lt; vB. vA a vB obsahují celočíselné hodnoty.\n(Je to zkratka pro Méně než)</item>
+		<item>Přeskočí na zadaný štítek, pokud vA &lt;= vB. vA a vB obsahují celočíselné hodnoty.\n(le je zkratka pro menší nebo rovno/menší nebo rovno)</item>
+		<item>Přeskočí na zadaný štítek, pokud vA > vB. vA a vB obsahují celočíselné hodnoty.\n(gt je zkratka pro větší než/více než)</item>
+		<item>Přeskočí na zadaný štítek, pokud vA >= vB. vA a vB obsahují celočíselné hodnoty.\n(ge je zkratka pro větší nebo rovno)</item>
+		<item>Přeskočí na zadaný štítek, pokud vAA == 0. vAA obsahuje celočíselnou hodnotu.\n(eqz je zkratka pro Equals to Zero)</item>
+		<item>Přeskočí na zadaný štítek, pokud vAA != 0. vAA obsahuje celočíselnou hodnotu.\n(nez je zkratka pro Nerovná se nule)</item>
+		<item>Přeskočí na zadaný štítek, pokud vAA &lt; 0. vAA obsahuje celočíselnou hodnotu.\n(ltz je zkratka pro Less Than Zero)</item>
+		<item>Přeskočí na zadaný štítek, pokud vAA &lt;= 0. vAA obsahuje celočíselnou hodnotu.\n(lez je zkratka pro menší než nebo rovno nule/menší nebo rovno nule)</item>
+		<item>Přeskočí na zadaný štítek, pokud vAA > 0. vAA obsahuje celočíselnou hodnotu.\n(gtz je zkratka pro Greater Than Zero)</item>
+		<item>Přeskočí na zadaný štítek, pokud vAA >= 0. vAA obsahuje celočíselnou hodnotu.\n(gez je zkratka pro větší než nebo rovno nule)</item>
+		<item>Získá celočíselnou hodnotu v indexu obsaženém ve vCC z pole odkazovaného ve vBB a umístí ji do registru vAA.\nvAA = vBB[vCC]</item>
+		<item>Získá v indexu obsaženém ve vCC z pole odkazovaného ve vBB hodnotu double/long a umístí ji do dvojice registrů vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Přijme v indexu obsaženém ve vCC z pole odkazovaného ve vBB odkaz na objekt a umístí jej do registru vAA.\nvAA = vBB[vCC]</item>
+		<item>Získá v indexu obsaženém ve vCC z pole odkazovaného ve vBB booleovskou hodnotu a umístí ji do registru vAA.\nvAA = vBB[vCC]</item>
+		<item>Načte v indexu obsaženém ve vCC z pole odkazovaného ve vBB hodnotu bajtu (celé číslo) a umístí ji do registru vAA.\nvAA = vBB[vCC]</item>
+		<item>Načte v indexu obsaženém ve vCC z pole odkazovaného ve vBB hodnotu znaku a umístí ji do registru vAA.\nvAA = vBB[vCC]</item>
+		<item>Načte v indexu obsaženém ve vCC z pole odkazovaného ve vBB krátkou (celočíselnou) hodnotu a umístí ji do registru vAA.\nvAA = vBB[vCC]</item>
+		<item>Umístí celočíselnou hodnotu z vAA do pole odkazovaného ve vBB s prvkem obsahujícím registr vCC.\nvBB[vCC] = vAA</item>
+		<item>Umístí hodnotu double/long z páru registrů vAA, vAA+1 do pole odkazovaného ve vBB s prvkem obsahujícím registr vCC.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Umístí odkaz na objekt z vAA do pole odkazovaného ve vBB s prvkem s registrem vCC.\nvBB[vCC] = vAA</item>
+		<item>Umístí booleovskou hodnotu z vAA do pole, na které odkazuje vBB s prvkem obsahujícím registr vCC.\nvBB[vCC] = vAA</item>
+		<item>Umístí hodnotu bajtu (celé číslo) z vAA do pole odkazovaného ve vBB s prvkem obsahujícím registr vCC.\nvBB[vCC] = vAA</item>
+		<item>Umístí hodnotu znaku (znaku) z vAA do pole odkazovaného ve vBB podle prvku s registrem vCC.\nvBB[vCC] = vAA</item>
+		<item>Umístí krátkou (celočíselnou) hodnotu z vAA do pole odkazovaného ve vBB s prvkem obsahujícím registr vCC.\nvBB[vCC] = vAA</item>
+		<item>Přečte hodnotu z pole instance a umístí ji do registru vA. Odkaz na třídu obsahující toto pole je v registru vB.\nvA = vB.pole</item>
+		<item>Přečte hodnotu double/long z pole instance a umístí ji do dvojice registrů (vA, vA+1). Odkaz na třídu obsahující toto pole je v registru vB.\n(vA, vA+1) = vB.pole</item>
+		<item>Přečte odkaz na objekt z pole instance a umístí jej do registru vA. Odkaz na třídu obsahující toto pole je v registru vB.\nvA = vB.pole</item>
+		<item>Přečte booleovskou hodnotu z pole instance a umístí ji do registru vA. Odkaz na třídu obsahující toto pole je v registru vB.\nvA = vB.pole</item>
+		<item>Přečte hodnotu bajtu (celé číslo) z pole instance a umístí ji do registru vA. Odkaz na třídu obsahující toto pole je v registru vB.\nvA = vB.pole</item>
+		<item>Přečte hodnotu char z pole instance a umístí ji do registru vA. Odkaz na třídu obsahující toto pole je v registru vB.\nvA = vB.pole</item>
+		<item>Přečte krátkou (celočíselnou) hodnotu z pole instance a umístí ji do registru vA. Odkaz na třídu obsahující toto pole je v registru vB.\nvA = vB.pole</item>
+		<item>Umístí hodnotu z registru vA do pole instance. Odkaz na třídu obsahující toto pole je v registru vB.\nvB.field = vA</item>
+		<item>Umístí hodnotu double/long z páru registrů (vA, vA+1) do pole instance. Odkaz na třídu obsahující toto pole je v registru vB.\nvB.field = (vA, vA+1)</item>
+		<item>Umístí odkaz na objekt z registru vA do pole instance. Odkaz na třídu obsahující toto pole je v registru vB.\nvB.field = vA</item>
+		<item>Umístí booleovskou hodnotu z registru vA do pole instance. Odkaz na třídu obsahující toto pole je v registru vB.\nvB.field = vA</item>
+		<item>Nastaví hodnotu bajtu (celého čísla) zadaného booleovského pole v instanci, na kterou odkazuje registr vB, na hodnotu registru vA, to znamená:\nvB.field = vA</item>
+		<item>Nastaví hodnotu znaku (znaku) zadaného booleovského pole v instanci, na kterou odkazuje registr vB, na hodnotu registru vA, tedy:\nvB.field = vA</item>
+		<item>Nastaví krátkou (celočíselnou) hodnotu zadaného booleovského pole v instanci, na kterou odkazuje registr vB, na hodnotu registru vA, tj.\nvB.field = vA</item>
+		<item>Přečte hodnotu ze statického pole a umístí ji do registru vAA. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Čte hodnotu double/long ze statického pole a umístí ji do dvojice registrů vAA, vAA+1. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Načte odkaz na objekt ze statického pole a umístí jej do registru vAA. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Načte booleovskou hodnotu ze statického pole a umístí ji do registru vAA. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Přečte hodnotu bajtu (celé číslo) ze statického pole a umístí ji do registru vAA. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Přečte hodnotu znaku ze statického pole a umístí ji do registru vAA. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Přečte krátkou (celočíselnou) hodnotu ze statického pole a umístí ji do registru vAA. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Umístí hodnotu z registru vAA do pole (statické pole). Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Umístí hodnotu double/long z dvojice registrů vAA, vAA+1 do pole (statické pole). Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Umístí odkaz na objekt z registru vAA do pole (statické pole). Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Umístí booleovskou hodnotu z registru vAA do pole (statické pole). Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Umístí bajtovou (celočíselnou) hodnotu z registru vAA do pole (statické pole). Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Umístí hodnotu char z registru vAA do statického pole. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Umístí krátkou (celočíselnou) hodnotu z registru vAA do statického pole. Registr obsahující odkaz na třídu obsahující toto pole se nepoužívá.</item>
+		<item>Zavolá (spustí) virtuální metodu s parametry. Parametry jsou uvedeny ve složených závorkách. První parametr (registr v2) obsahuje odkaz na třídu obsahující volanou metodu, druhý parametr (obsah registru v3) je předán volané metodě.</item>
+		<item>Volá (spouští) virtuální metodu s parametry přímo z nadřazené třídy.</item>
+		<item>Volá (spouští) metodu s parametry bez oprávnění virtuální metody.</item>
+		<item>Volá (spouští) statickou metodu s parametry. Parametry jsou uvedeny ve složených závorkách. Parametr (obsah registru v3) je předán volané metodě. Třída obsahující volanou metodu je uvedena za složenými závorkami.</item>
+		<item>Volá (spouští) metodu rozhraní s parametry.</item>
+		<item>Volá (spouští) virtuální metodu s parametry, ale parametry musí být obsaženy v registrech s čísly v pořadí.</item>
+		<item>Volá (spouští) virtuální metodu s parametry přímo z nadřazené třídy, ale parametry musí být obsaženy v registrech s pořadovými čísly.</item>
+		<item>Volá (spouští) metodu s parametry bez oprávnění virtuální metody, ale parametry musí být obsaženy v sekvenčně číslovaných registrech.</item>
+		<item>Volá (spouští) statickou metodu s parametry, ale parametry musí být obsaženy v registrech s pořadovými čísly.</item>
+		<item>Volá (spouští) metodu rozhraní s parametry, ale parametry musí být obsaženy v sekvenčně číslovaných registrech.</item>
+		<item>Vypočítá vA = -vB pro hodnoty typu integer.</item>
+		<item>Vypočítá vA = ~vB pro celočíselné hodnoty.\nvA = ~vB</item>
+		<item>Vypočítá (vA, vA+1) = -(vB, vB+1) pro hodnoty typu long (integer).</item>
+		<item>Vypočítá (vA, vA+1) = ~(vB, vB+1) pro hodnoty typu long (integer).</item>
+		<item>Vypočítá vA = -vB pro plovoucí hodnoty.</item>
+		<item>Vypočítá (vA, vA+1) = -(vB, vB+1) pro dvojnásobek (s plovoucí desetinnou čárkou).</item>
+		<item>Převede celé číslo z vB na dlouhé a uloží je do dvojice registrů vA, vA+1.\n(vA, vA+1) = (dlouhá) vB</item>
+		<item>Převede celé číslo z vB na float a uloží je do registru vA.\nvA = (plovoucí) vB</item>
+		<item>Převede celé číslo z vB na double (s plovoucí desetinnou čárkou) a uloží je do registrového páru vA, vA+1.\n(vA, vA+1) = (dvojitý) vB</item>
+		<item>Převede dlouhou (integer) hodnotu z vB, vB+1 na integer (integer) a uloží ji do registru vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Převede dlouhou (celočíselnou) hodnotu z vB, vB+1 na float (s plovoucí desetinnou čárkou) a uloží ji do registru vA.\nvA = (float) (vB, vB+1)</item>
+		<item>Převede dlouhou (celočíselnou) hodnotu z vB, vB+1 na double (s plovoucí desetinnou čárkou) a uloží ji do registrového páru vA, vA+1.\n(vA, vA+1) = (double) (vB, vB+1)</item>
+		<item>Převede hodnotu s plovoucí desetinnou čárkou z vB na celočíselnou (celé) hodnotu a uloží ji do registru vA.\nvA = (int)vB</item>
+		<item>Převede hodnotu s plovoucí desetinnou čárkou z vB na dlouhou (celočíselnou) hodnotu a uloží ji do dvojice registrů vA, vA+1.\n(vA, vA+1) = (dlouhá) vB</item>
+		<item>Převede plovoucí (plovoucí desetinnou čárku) hodnotu z vB na dvojnásobnou (plovoucí desetinnou čárku) a uloží ji do registrového páru vA, vA+1.\n(vA, vA+1) = (dvojitý) vB</item>
+		<item>Převede dvojitou (plovoucí desetinnou čárku) hodnotu z vB, vB+1 na celočíselnou (celočíselnou) hodnotu a uloží ji do registru vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Převede dvojitou hodnotu (s plovoucí desetinnou čárkou) z vB, vB+1 na dlouhou (celočíselnou) hodnotu a uloží ji do dvojice registrů vA, vA+1.\n(vA, vA+1) = (dlouhá) (vB, vB+1)</item>
+		<item>Převede dvojitou (plovoucí desetinnou čárku) hodnotu z vB, vB+1 na plovoucí (plovoucí desetinnou čárku) hodnotu a uloží ji do registru vA.\nvA = (float) (vB, vB+1)</item>
+		<item>Převede celočíselnou hodnotu z vB na bajtovou hodnotu a uloží ji do registru vA.\nvA = (bajt) vB</item>
+		<item>Převede celočíselnou hodnotu z vB na hodnotu char a uloží ji do registru vA.\nvA = (char)vB</item>
+		<item>Převede celočíselnou hodnotu z vB na krátkou hodnotu a uloží ji do registru vA.\nvA = (krátké) vB</item>
+		<item>Vypočítá vBB + vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB + vCC</item>
+		<item>Vypočítá vBB - vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB - vCC</item>
+		<item>Vypočítá vBB * vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB * vCC</item>
+		<item>Vypočítá vBB / vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB / vCC</item>
+		<item>Vypočítá vBB % vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB % vCC</item>
+		<item>Vypočítá vBB &amp; vCC (logický AND) a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB a vCC</item>
+		<item>Vypočítá vBB | vCC (logické OR) a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB | vCC</item>
+		<item>Vypočítá vBB ^ vCC (exkluzivní OR) a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB ^ vCC</item>
+		<item>Posune vBB doleva o počet bitů určený vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Posune vBB doprava o počet bitů určený vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB >> vCC</item>
+		<item>Posune vBB bez zachování znaménka doprava o počet bitů určený vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB >>> vCC</item>
+		<item>Vypočítá (vBB, vBB+1) + (vCC, vCC+1) a uloží výsledek do páru registrů vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) - (vCC, vCC+1) a uloží výsledek do registrového páru vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) * (vCC, vCC+1) a uloží výsledek do páru registrů vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) / (vCC, vCC+1) a uloží výsledek do registrového páru vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) % (vCC, vCC+1) a uloží výsledek do registrového páru vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) &amp; (vCC, vCC+1) (logický AND) a uloží výsledek do dvojice registrů vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Počítá (vBB, vBB+1) | (vCC, vCC+1) (logické OR) a uloží výsledek do dvojice registrů vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) ^ (vCC, vCC+1) (exkluzivní AND) a uloží výsledek do páru registrů vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Posune vBB, vBB+1 doleva o počet bitů určený vCC a uloží výsledek do registrového páru vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Posune vBB, vBB+1 doprava o počet bitů určený vCC a uloží výsledek do páru registrů vAA, vAA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Posune vBB, vBB+1 doprava bez zachování znaménka o počet bitů určený vCC a uloží výsledek do dvojice registrů vAA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Vypočítá vBB + vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou plovoucí.\nvAA = vBB + vCC</item>
+		<item>Vypočítá vBB - vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou plovoucí.\nvAA = vBB - vCC</item>
+		<item>Vypočítá vBB * vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou plovoucí.\nvAA = vBB * vCC</item>
+		<item>Vypočítá vBB / vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou plovoucí.\nvAA = vBB / vCC</item>
+		<item>Vypočítá vBB % vCC a uloží výsledek do registru vAA. Všechny hodnoty jsou plovoucí.\nvAA = vBB % vCC</item>
+		<item>Vypočítá (vBB, vBB+1) + (vCC, vCC+1) a uloží výsledek do páru registrů vAA, vAA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) - (vCC, vCC+1) a uloží výsledek do registrového páru vAA, vAA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) * (vCC, vCC+1) a uloží výsledek do páru registrů vAA, vAA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) / (vCC, vCC+1) a uloží výsledek do registrového páru vAA, vAA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Vypočítá (vBB, vBB+1) % (vCC, vCC+1) a uloží výsledek do registrového páru vAA, vAA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Vypočítá vA + vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA + vB</item>
+		<item>Vypočítá vA - vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA - vB</item>
+		<item>Vypočítá vA * vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA * vB</item>
+		<item>Vypočítá vA / vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA / vB</item>
+		<item>Vypočítá vA % vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA % vB</item>
+		<item>Vypočítá vA &amp; vB (logický AND) a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA &amp; vB</item>
+		<item>Vypočítá vA | vB (logické OR) a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA | vB</item>
+		<item>Vypočítá vA ^ vB (exkluzivní OR) a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA ^ vB</item>
+		<item>Posune vA doleva o počet bitů určený vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA &lt;&lt; vB</item>
+		<item>Posune vA doprava o počet bitů určený vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA >> vB</item>
+		<item>Posune vA bez zachování jeho znaménka doprava o počet bitů určený vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vA >>> vB</item>
+		<item>Vypočítá (vA, vA+1) + (vB, vB+1) a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) - (vB, vB+1) a uloží výsledek do dvojice registrů vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) * (vB, vB+1) a uloží výsledek do páru registrů vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) / (vB, vB+1) a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) % (vB, vB+1) a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) &amp; (vB, vB+1) (logický AND) a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) | (vB, vB+1) (logické OR) a výsledek uloží do dvojice registrů vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) &amp; (vB, vB+1) (exkluzivní OR) a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Posune vA, vA+1 doleva o počet bitů určený vB a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Posune vA, vA+1 doprava o počet bitů určený vB a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Posune vA, vA+1 doprava bez zachování znaménka o počet číslic určený vB a uloží výsledek do dvojice registrů vA, vA+1. Všechny hodnoty jsou dlouhé (integer).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Vypočítá vA + vB a uloží výsledek do registru vA. Všechny hodnoty jsou plovoucí.\nvA = vA + vB</item>
+		<item>Vypočítá vA - vB a uloží výsledek do registru vA. Všechny hodnoty jsou plovoucí.\nvA = vA - vB</item>
+		<item>Vypočítá vA * vB a uloží výsledek do registru vA. Všechny hodnoty jsou plovoucí.\nvA = vA * vB</item>
+		<item>Vypočítá vA / vB a uloží výsledek do registru vA. Všechny hodnoty jsou plovoucí.\nvA = vA / vB</item>
+		<item>Vypočítá vA % vB a uloží výsledek do registru vA. Všechny hodnoty jsou plovoucí.\nvA = vA % vB</item>
+		<item>Vypočítá (vA, vA+1) + (vB, vB+1) a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) - (vB, vB+1) a uloží výsledek do dvojice registrů vA, vA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) * (vB, vB+1) a uloží výsledek do páru registrů vA, vA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) / (vB, vB+1) a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Vypočítá (vA, vA+1) % (vB, vB+1) a uloží výsledek do registrového páru vA, vA+1. Všechny hodnoty jsou dvojité (s plovoucí desetinnou čárkou).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Vypočítá vB + 0xFFFF a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vB + 0xFFFF</item>
+		<item>Vypočítá 0xFFFF - vB a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = 0xFFFF - vB</item>
+		<item>Vypočítá vB * 0xFFFF a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vB * 0xFFFF</item>
+		<item>Vypočítá vB / 0xFFFF a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vB / 0xFFFF</item>
+		<item>Vypočítá vB % 0xFFFF a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vB % 0xFFFF</item>
+		<item>Vypočítá vB &amp; 0xFFFF (logický AND) a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vB &amp; 0xFFFF</item>
+		<item>Počítá vB | 0xFFFF (logické OR) a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vB | 0xFFFF</item>
+		<item>Vypočítá vB ^ 0xFFFF (exkluzivní OR) a uloží výsledek do registru vA. Všechny hodnoty jsou celá čísla.\nvA = vB ^ 0xFFFF</item>
+		<item>Vypočítá vBB + 0xFF a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB + 0xFF</item>
+		<item>Vypočítá 0xFF - vBB a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = 0xFF - vBB</item>
+		<item>Vypočítá vBB * 0xFF a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB * 0xFF</item>
+		<item>Vypočítá vBB / 0xFF a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB / 0xFF</item>
+		<item>Vypočítá vBB % 0xFF a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB % 0xFF</item>
+		<item>Vypočítá vBB &amp; 0xFF (logický AND) a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB &amp; 0xFF</item>
+		<item>Vypočítá vBB | 0xFF (logické OR) a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB | 0xFF</item>
+		<item>Vypočítá vBB ^ 0xFF (exkluzivní OR) a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB ^ 0xFF</item>
+		<item>Posune vBB doleva o počet bitů určený 0xFF a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Posune vBB doprava o počet bitů určený 0xFF a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB >> 0xFF</item>
+		<item>Signál posune vBB doprava o počet bitů určený 0xFF a uloží výsledek do registru vAA. Všechny hodnoty jsou celá čísla.\nvAA = vBB >>> 0xFF</item>
+		<item>Volá (spouští) metodu polymorfního podpisu s parametry. Přítomno v souborech Dex od verze 038.</item>
+		<item>Volá (spouští) metodu polymorfního podpisu s parametry, ale parametry musí být obsaženy v sekvenčně číslovaných registrech. Přítomno v souborech Dex od verze 038.</item>
+		<item>Umožňuje (spouští) volání webu s parametry. Přítomno v souborech Dex od verze 038.</item>
+		<item>Umožňuje (spouští) volání webu s parametry, ale parametry musí být obsaženy v registrech s čísly v pořadí. Přítomno v souborech Dex od verze 038.</item>
+		<item>Umístí odkaz na popisovač metody do registru vAA. Přítomno v souborech Dex od verze 039.</item>
+		<item>Umístí odkaz na prototyp metody do registru vAA. Přítomno v souborech Dex od verze 039.</item>
+	</string-array>
     <string-array name="sort">
         <item>Název</item>
         <item>Name reverse</item>

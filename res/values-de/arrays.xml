@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Registriert</item>
+		<item>Literale Werte</item>
+		<item>Primitive Datentypen</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA ist ein 4-Bit-Register mit dem Wertebereich v0 - v15\nvAA ist ein 8-Bit-Register mit einem Wertebereich von v0 – v255\nvAAAA ist ein 16-Bit-Register mit einem Wertebereich von v0 – v65535</item>
+		<item>0xF, 0xFF usw. werden verwendet. um Literalwerte darzustellen. Wie bei Registern wird die Zahl F zur Darstellung eines Wertebereichs verwendet, zum Beispiel:\nDer Bereich der 0xF-Werte wird durch [-0x8, 0x7] dargestellt.\nDer Wertebereich von 0xFF wird dargestellt durch [-0x80, 0x7F]</item>
+		<item>V – leer, Z – boolesch, B – Byte\nC – char, S – short, I – int\nJ – lang, F – schwebend, D – doppelt\nvoid: kann nur für Rückgabetypen verwendet werden\nboolean: speichert den Wert true oder false\nByte: Speichert eine Ganzzahl von -128 bis 127 und belegt 1 Byte\nkurz: speichert eine Ganzzahl von -32768 bis 32767 und benötigt 2 Bytes\nint: speichert eine Ganzzahl von -2147483648 bis 2147483647 und belegt 4 Bytes\nlong: speichert eine Ganzzahl von -9223372036854775808 bis 9223372036854775807 und belegt 8 Bytes\ndouble: speichert eine Gleitkommazahl von ±4,9*10³²⁴ bis ±1,7976931348623157*10³⁰⁸ und belegt 8 Bytes. Als Dezimaltrennzeichen wird in Bruchliteralen ein Punkt verwendet.\nfloat: speichert eine Gleitkommazahl von -3,4*10³⁸ bis 3,4*10³⁸ und belegt 4 Bytes\nchar: speichert ein einzelnes Zeichen in UTF-16-Codierung und belegt 2 Bytes, sodass der Bereich der gespeicherten Werte zwischen 0 und 65535 liegt.</item>
+		<item>Keine Aktion.</item>
+		<item>Verschiebt den Wert des Registers vB in das Register vA.</item>
+		<item>Verschiebt den Wert des vBBBB-Registers in das vAA-Register.</item>
+		<item>Verschiebt den Wert des vBBBB-Registers in das vAAAA-Register.</item>
+		<item>Verschiebt den Long/Double-Wert des Registerpaars (vB, vB+1) in das Registerpaar vA, vA+1.</item>
+		<item>Verschiebt den Long/Double-Wert eines Registerpaars (vBBBB, vBBBB+1) in ein Registerpaar vAA, vAA+1.</item>
+		<item>Verschiebt den Long/Double-Wert eines Registerpaars (vBBBB, vBBBB+1) in ein Registerpaar vAAAA, vAAAA+1.</item>
+		<item>Verschiebt eine Objektreferenz vom vB-Register in das vA-Register.</item>
+		<item>Verschiebt eine Objektreferenz vom vBBBB-Register in das vAA-Register.</item>
+		<item>Verschiebt eine Objektreferenz vom vBBBB-Register in das vAAAA-Register.</item>
+		<item>Verschiebt den Rückgabewert der zuvor aufgerufenen Methode in das vAA-Register.</item>
+		<item>Verschiebt den von der zuvor aufgerufenen Methode zurückgegebenen Long-/Double-Wert in das Registerpaar vAA, vAA+1.</item>
+		<item>Verschiebt die von der zuvor aufgerufenen Methode zurückgegebene Objektreferenz in das vAA-Register.</item>
+		<item>Verschiebt den Verweis auf das ausgeschlossene Objekt, der während des Methodenaufrufs (während der Ausführung) ausgegeben wurde, in das vAA-Register.</item>
+		<item>Rückgabe ohne Rückgabewert.</item>
+		<item>Rückkehr durch Rückgabe des Werts aus dem vAA-Register.</item>
+		<item>Kehren Sie zurück, indem Sie einen Double/Long-Wert in ein Registerpaar vAA, vAA+1 zurückgeben.</item>
+		<item>Rückkehr durch Rückgabe des Werts der Objektreferenz aus dem vAA-Register.</item>
+		<item>Platziert eine 4-Bit-Konstante im vA-Register.</item>
+		<item>Platziert eine 16-Bit-Konstante im vAA-Register.</item>
+		<item>Fügt eine ganzzahlige Konstante in das vAA-Register ein.</item>
+		<item>Platziert eine 16-Bit-Konstante in den oberen Bits des vAA-Registers. Wird zum Initialisieren von Float-Werten (Gleitkommawerten) verwendet.</item>
+		<item>Platziert eine 16-Bit-Ganzzahlkonstante in das Registerpaar vAA, vAA+1 und wandelt die Ganzzahlkonstante in eine lange Konstante um.</item>
+		<item>Platziert eine 32-Bit-Ganzzahlkonstante in das Registerpaar vAA, vAA+1 und wandelt die Ganzzahlkonstante in eine lange Konstante um.</item>
+		<item>Platziert eine 64-Bit-Konstante im Registerpaar vAA, vAA+1.</item>
+		<item>Platziert eine 16-Bit-Konstante in den oberen 16 Bits des Registerpaars vAA, vAA+1. Wird zum Initialisieren von Double-Werten (Gleitkommawerten) verwendet.</item>
+		<item>Platziert einen Verweis auf die angegebene Zeichenfolge im vAA-Register.</item>
+		<item>Platziert einen Verweis auf die angegebene Zeichenfolge im vAA-Register.</item>
+		<item>Platziert einen Verweis auf die durch string_id identifizierte Zeichenfolgenkonstante (Zeichenfolge) im vAA-Register.</item>
+		<item>Ruft den Objektmonitor ab, auf den das vAA-Register verweist.</item>
+		<item>Gibt den Objektmonitor frei, auf den das vAA-Register verweist.</item>
+		<item>Überprüft, ob eine im vAA-Register enthaltene Objektreferenz in die durch type_id identifizierte Klasse umgewandelt werden kann. Löst eine ClassCastException aus, wenn dies nicht möglich ist, andernfalls wird die Ausführung fortgesetzt.</item>
+		<item>Überprüft, ob der Inhalt des vB-Registers eine Instanz der durch type_id identifizierten Klasse ist. Setzt das Register vA auf ungleich Null, falls vorhanden, auf 0, wenn nicht.\nvA = vB-Instanztyp? 10</item>
+		<item>Bestimmt die Anzahl der Array-Elemente aus dem vB-Register und legt den Wert im vA-Register ab.\nvA = vB.Länge</item>
+		<item>Erstellt eine Instanz eines Objekttyps und platziert einen Verweis auf die erstellte Instanz im vAA-Register.</item>
+		<item>Erstellt ein neues Array von type_id-Variablen mit der Größe der Register-vB-Elemente und platziert einen Verweis auf das Array im Register vA.</item>
+		<item>Erstellt ein neues Datenarray vom Typ type_id und füllt es mit Parametern (d. h. keine Long-/Double-Arrays, aber Referenztypen sind erlaubt). Eine Referenz auf das neu erstellte Array kann mithilfe der Anweisung „move-result-object“ direkt nach dieser Anweisung abgerufen werden (sofern eine solche verwendet werden soll).</item>
+		<item>Erstellt ein neues Datenarray vom Typ type_id und füllt es mit einer Reihe von Parametern (d. h. keine langen/doppelten Arrays, aber Referenztypen sind akzeptabel). Eine Referenz auf das neu erstellte Array kann mithilfe der Anweisung „move-result-object“ direkt nach dieser Anweisung abgerufen werden (sofern eine solche verwendet werden soll).</item>
+		<item>Füllt das im vAA-Register referenzierte Array mit statischen Daten. Der Datenort ist die Summe aus der Position des aktuellen Befehls und dem Offset.</item>
+		<item>Löst ein Ausnahmeobjekt aus. Ein Verweis auf das Ausnahmeobjekt im vAA-Register.</item>
+		<item>Springe bedingungslos zu einem kurzen (ganzzahligen) 8-Bit-Offset.</item>
+		<item>Unbedingter Sprung zum 16-Bit-Offset.</item>
+		<item>Unbedingter Sprung zum 32-Bit-Offset.</item>
+		<item>Implementiert den Switch-Operator, wenn die Steuerkonstanten nahe beieinander liegen (in einer Reihe). Die Anweisung verwendet eine Indextabelle. Der Befehlsoffset für einen bestimmten Fall wird durch den vAA-Index bestimmt. Wenn der vAA-Index über die Tabelle hinausgeht, wird die Ausführung mit der nächsten Anweisung fortgesetzt (Standard).</item>
+		<item>Implementiert den Switch-Operator im Falle einer Tabelle mit geringer Dichte. Die Anweisung verwendet eine Tabelle, die Offsets für jede Konstante angibt. Wenn in der Tabelle keine Übereinstimmungen gefunden werden, wird die nächste Anweisung ausgeführt (Standardfall).</item>
+		<item>Vergleicht die Float-Werte (Gleitkommawerte) in vBB und vCC und legt den ganzzahligen Wert im vAA-Register ab:\nvAA = vBB &lt; vCC ? ja: 1, nein: -1, gleich: 0</item>
+		<item>Vergleicht die Float-Werte (Gleitkommawerte) in vBB und vCC und legt den ganzzahligen Wert im vAA-Register ab:\nvAA = vBB &lt; vCC ? ja: 1, nein: -1, gleich: 0</item>
+		<item>Vergleicht die Double-Werte (Gleitkommawerte) in vBB und vCC und platziert den ganzzahligen Wert im vAA-Register:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? j\nja: 1, nein: -1, gleich: 0</item>
+		<item>Vergleicht die Double-Werte (Gleitkommawerte) in vBB und vCC und platziert den ganzzahligen Wert im vAA-Register:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ja: 1, nein: -1, gleich: 0</item>
+		<item>Vergleicht die langen (ganzzahligen) Werte in vBB und vCC und platziert den ganzzahligen (ganzzahligen) Wert im vAA-Register:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ja: 1, nein: -1, gleich: 0</item>
+		<item>Springt zum angegebenen Label, wenn vA == vB. vA und vB enthalten ganzzahlige Werte.\n(eq ist die Abkürzung für Equals)</item>
+		<item>Springt zum angegebenen Label, wenn vA != vB. vA und vB enthalten ganzzahlige Werte.\n(ne ist die Abkürzung für Not Equals)</item>
+		<item>Springt zum angegebenen Label, wenn vA &lt; vB. vA und vB enthalten ganzzahlige Werte.\n(Es ist die Abkürzung für Less Than)</item>
+		<item>Springt zum angegebenen Label, wenn vA &lt;= vB. vA und vB enthalten ganzzahlige Werte.\n(le ist eine Abkürzung für Less than or Equal/Less or equal)</item>
+		<item>Springt zum angegebenen Label, wenn vA > vB. vA und vB enthalten ganzzahlige Werte.\n(gt ist die Abkürzung für Greater Than/More Than)</item>
+		<item>Springt zum angegebenen Label, wenn vA >= vB. vA und vB enthalten ganzzahlige Werte.\n(ge ist die Abkürzung für Greater than or Equal)</item>
+		<item>Springt zum angegebenen Label, wenn vAA == 0. vAA enthält einen ganzzahligen Wert.\n(eqz ist die Abkürzung für Equals to Zero)</item>
+		<item>Springt zum angegebenen Label, wenn vAA != 0. vAA enthält einen ganzzahligen Wert.\n(nez ist die Abkürzung für Not Equals to Zero)</item>
+		<item>Springt zum angegebenen Label, wenn vAA &lt; 0. vAA enthält einen ganzzahligen Wert.\n(ltz ist die Abkürzung für Less Than Zero)</item>
+		<item>Springt zum angegebenen Label, wenn vAA &lt;= 0. vAA enthält einen ganzzahligen Wert.\n(lez ist eine Abkürzung für Less than or Equal to Zero/Less or equal to Zero)</item>
+		<item>Springt zum angegebenen Label, wenn vAA > 0. vAA enthält einen ganzzahligen Wert.\n(gtz ist die Abkürzung für Greater Than Zero)</item>
+		<item>Springt zum angegebenen Label, wenn vAA >= 0. vAA enthält einen ganzzahligen Wert.\n(gez ist eine Abkürzung für Greater than or Equal to Zero)</item>
+		<item>Ruft einen ganzzahligen Wert am in vCC enthaltenen Index aus dem in vBB referenzierten Array ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
+		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen Double/Long-Wert ab und platziert ihn im Registerpaar vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Empfängt am in vCC enthaltenen Index von dem in vBB referenzierten Array eine Referenz auf das Objekt und platziert es im vAA-Register.\nvAA = vBB[vCC]</item>
+		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen booleschen Wert ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
+		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen Bytewert (Ganzzahl) ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
+		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen char-Wert ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
+		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen kurzen (ganzzahligen) Wert ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
+		<item>Platziert den ganzzahligen Wert von vAA in dem in vBB referenzierten Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
+		<item>Platziert einen Double/Long-Wert aus dem Registerpaar vAA, vAA+1 in das in vBB referenzierte Array, wobei das Element das vCC-Register enthält.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Platziert einen Verweis auf ein Objekt von vAA in das Array, auf das in vBB mit einem Element im vCC-Register verwiesen wird.\nvBB[vCC] = vAA</item>
+		<item>Platziert den booleschen Wert von vAA in dem von vBB referenzierten Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
+		<item>Platziert den Bytewert (Ganzzahlwert) von vAA in dem in vBB referenzierten Array mit dem Element, das das Register vCC enthält.\nvBB[vCC] = vAA</item>
+		<item>Platziert den char-Wert (Zeichen) von vAA in dem Array, auf das in vBB durch das Element mit dem Register vCC verwiesen wird.\nvBB[vCC] = vAA</item>
+		<item>Platziert den kurzen (ganzzahligen) Wert von vAA in dem in vBB referenzierten Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
+		<item>Liest den Wert aus dem Instanzfeld und legt ihn im vA-Register ab. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
+		<item>Liest einen Double/Long-Wert aus einem Instanzfeld und platziert ihn in einem Registerpaar (vA, vA+1). Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\n(vA, vA+1) = vB.field</item>
+		<item>Liest eine Objektreferenz aus einem Instanzfeld und platziert sie im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
+		<item>Liest einen booleschen Wert aus dem Instanzfeld und platziert ihn im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
+		<item>Liest einen Bytewert (Ganzzahlwert) aus einem Instanzfeld und platziert ihn im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
+		<item>Liest einen char-Wert aus einem Instanzfeld und platziert ihn im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
+		<item>Liest einen kurzen (ganzzahligen) Wert aus einem Instanzfeld und platziert ihn im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
+		<item>Platziert den Wert aus dem vA-Register im Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvB.field = vA</item>
+		<item>Platziert einen Double/Long-Wert aus einem Registerpaar (vA, vA+1) in ein Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvB.field = (vA, vA+1)</item>
+		<item>Platziert einen Verweis auf ein Objekt aus dem vA-Register in das Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvB.field = vA</item>
+		<item>Platziert den booleschen Wert aus dem vA-Register im Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvB.field = vA</item>
+		<item>Setzt den Bytewert (Ganzzahlwert) des angegebenen booleschen Felds in der durch Register vB referenzierten Instanz gleich dem Wert von Register vA, d. h.:\nvB.field = vA</item>
+		<item>Setzt den char-Wert (Zeichen) des angegebenen booleschen Felds in der durch Register vB referenzierten Instanz gleich dem Wert von Register vA, d. h.:\nvB.field = vA</item>
+		<item>Setzt den kurzen (ganzzahligen) Wert des angegebenen booleschen Felds in der durch Register vB referenzierten Instanz gleich dem Wert von Register vA, d. h.:\nvB.field = vA</item>
+		<item>Liest einen Wert aus einem statischen Feld und platziert ihn im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Liest einen Double/Long-Wert aus einem statischen Feld und platziert ihn in einem Registerpaar vAA, vAA+1. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Liest eine Objektreferenz aus einem statischen Feld und platziert sie im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Liest einen booleschen Wert aus einem statischen Feld und platziert ihn im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Liest einen Bytewert (Ganzzahlwert) aus einem statischen Feld und platziert ihn im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Liest einen char-Wert aus einem statischen Feld und platziert ihn im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Liest einen kurzen (ganzzahligen) Wert aus einem statischen Feld und legt ihn im vAA-Register ab. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Platziert den Wert aus dem vAA-Register in einem Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Platziert einen Double/Long-Wert aus einem Registerpaar vAA, vAA+1 in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Platziert einen Verweis auf ein Objekt aus dem vAA-Register in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Platziert den booleschen Wert aus dem vAA-Register in einem Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Platziert einen Bytewert (Ganzzahlwert) aus dem vAA-Register in einem Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Platziert den char-Wert aus dem vAA-Register in einem statischen Feld. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Platziert den kurzen (ganzzahligen) Wert aus dem vAA-Register in einem statischen Feld. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Ruft eine virtuelle Methode mit Parametern auf (führt sie aus). Parameter werden in geschweiften Klammern angegeben. Der erste Parameter (Register v2) enthält eine Referenz auf die Klasse, die die aufgerufene Methode enthält, der zweite Parameter (der Inhalt von Register v3) wird an die aufgerufene Methode übergeben.</item>
+		<item>Ruft eine virtuelle Methode mit Parametern direkt aus der übergeordneten Klasse auf (führt sie aus).</item>
+		<item>Ruft eine Methode mit Parametern auf (führt sie aus), ohne über die Berechtigungen der virtuellen Methode zu verfügen.</item>
+		<item>Ruft eine statische Methode mit Parametern auf (führt sie aus). Parameter werden in geschweiften Klammern angegeben. Der Parameter (der Inhalt von Register v3) wird an die aufgerufene Methode übergeben. Hinter den geschweiften Klammern wird die Klasse angegeben, die die aufgerufene Methode enthält.</item>
+		<item>Ruft eine Schnittstellenmethode mit Parametern auf (führt sie aus).</item>
+		<item>Ruft eine virtuelle Methode mit Parametern auf (führt sie aus), aber die Parameter müssen in der Reihenfolge der Nummern in Registern enthalten sein.</item>
+		<item>Ruft eine virtuelle Methode mit Parametern direkt aus der übergeordneten Klasse auf (führt sie aus), die Parameter müssen jedoch in Registern mit fortlaufenden Nummern enthalten sein.</item>
+		<item>Ruft eine Methode mit Parametern ohne virtuelle Methodenberechtigungen auf (führt sie aus), die Parameter müssen jedoch in fortlaufend nummerierten Registern enthalten sein.</item>
+		<item>Ruft eine statische Methode mit Parametern auf (führt sie aus), die Parameter müssen jedoch in Registern mit fortlaufenden Nummern enthalten sein.</item>
+		<item>Ruft eine Schnittstellenmethode mit Parametern auf (führt sie aus), die Parameter müssen jedoch in fortlaufend nummerierten Registern enthalten sein.</item>
+		<item>Berechnet vA = -vB für Werte vom Typ Ganzzahl.</item>
+		<item>Berechnet vA = ~vB für ganzzahlige Werte.\nvA = ~vB</item>
+		<item>Berechnet (vA, vA+1) = -(vB, vB+1) für Werte vom Typ long (integer).</item>
+		<item>Berechnet (vA, vA+1) = ~(vB, vB+1) für Werte vom Typ long (integer).</item>
+		<item>Berechnet vA = -vB für Float-Werte.</item>
+		<item>Berechnet (vA, vA+1) = -(vB, vB+1) für doppelte (Gleitkomma-)Werte.</item>
+		<item>Konvertiert eine Ganzzahl von vB in eine lange Zahl und speichert sie im Registerpaar vA, vA+1.\n(vA, vA+1) = (lang) vB</item>
+		<item>Konvertiert eine Ganzzahl von vB in eine Gleitkommazahl und speichert sie im vA-Register.\nvA = (float) vB</item>
+		<item>Konvertiert eine Ganzzahl von vB in einen Double (Gleitkomma) und speichert sie in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (doppelt) vB</item>
+		<item>Konvertiert einen langen (ganzzahligen) Wert von vB, vB+1 in eine ganze Zahl (Ganzzahl) und speichert ihn im vA-Register.\nvA = (int) (vB, vB+1)</item>
+		<item>Konvertiert einen langen (ganzzahligen) Wert von vB, vB+1 in einen Float (Gleitkomma) und speichert ihn im vA-Register.\nvA = (float) (vB, vB+1)</item>
+		<item>Konvertiert einen langen (ganzzahligen) Wert von vB, vB+1 in einen Double-Wert (Gleitkomma) und speichert ihn in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (doppelt) (vB, vB+1)</item>
+		<item>Konvertiert einen Float-Wert (Gleitkommawert) von vB in einen Integer-Wert (Ganzzahl) und speichert ihn im vA-Register.\nvA = (int)vB</item>
+		<item>Konvertiert einen Float-Wert (Gleitkommawert) von vB in einen Long-Wert (Ganzzahl) und speichert ihn im Registerpaar vA, vA+1.\n(vA, vA+1) = (lang) vB</item>
+		<item>Wandelt einen Float-Wert (Gleitkommawert) von vB in einen Double-Wert (Gleitkommawert) um und speichert ihn im Registerpaar vA, vA+1.\n(vA, vA+1) = (doppelt) vB</item>
+		<item>Konvertiert einen Double-Wert (Gleitkommawert) von vB, vB+1 in einen ganzzahligen Wert (Ganzzahl) und speichert ihn im vA-Register.\nvA = (int) (vB, vB+1)</item>
+		<item>Konvertiert einen Double-Wert (Gleitkommawert) von vB, vB+1 in einen Long-Wert (Ganzzahl) und speichert ihn in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (lang) (vB, vB+1)</item>
+		<item>Konvertiert einen Double-Wert (Gleitkommawert) von vB, vB+1 in einen Float-Wert (Gleitkommawert) und speichert ihn im vA-Register.\nvA = (float) (vB, vB+1)</item>
+		<item>Konvertiert einen ganzzahligen Wert von vB in einen Bytewert und speichert ihn im vA-Register.\nvA = (Byte) vB</item>
+		<item>Konvertiert einen ganzzahligen Wert von vB in einen char-Wert und speichert ihn im vA-Register.\nvA = (char)vB</item>
+		<item>Konvertiert einen ganzzahligen Wert von vB in einen kurzen Wert und speichert ihn im vA-Register.\nvA = (kurz) vB</item>
+		<item>Berechnet vBB + vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB + vCC</item>
+		<item>Berechnet vBB - vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB – vCC</item>
+		<item>Berechnet vBB * vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB * vCC</item>
+		<item>Berechnet vBB / vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB / vCC</item>
+		<item>Berechnet vBB % vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB % vCC</item>
+		<item>Berechnet vBB und vCC (logisches UND) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB &amp; vCC</item>
+		<item>Berechnet vBB | vCC (logisches ODER) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB | vCC</item>
+		<item>Berechnet vBB ^ vCC (exklusives ODER) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB ^ vCC</item>
+		<item>Verschiebt vBB um die durch vCC angegebene Anzahl von Bits nach links und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Verschiebt vBB um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB >> vCC</item>
+		<item>Verschiebt vBB ohne Beibehaltung des Vorzeichens um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB >>> vCC</item>
+		<item>Berechnet (vBB, vBB+1) + (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) - (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) – (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) * (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) / (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) % (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) &amp; (vCC, vCC+1) (logisches UND) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) | (vCC, vCC+1) (logisches ODER) und speichert das Ergebnis in einem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) ^ (vCC, vCC+1) (exklusives UND) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Verschiebt vBB, vBB+1 um die durch vCC angegebene Anzahl von Bits nach links und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Verschiebt vBB, vBB+1 um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Verschiebt vBB, vBB+1 ohne Beibehaltung des Vorzeichens um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis in einem Registerpaar vAA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Berechnet vBB + vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB + vCC</item>
+		<item>Berechnet vBB - vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB – vCC</item>
+		<item>Berechnet vBB * vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB * vCC</item>
+		<item>Berechnet vBB / vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB / vCC</item>
+		<item>Berechnet vBB % vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB % vCC</item>
+		<item>Berechnet (vBB, vBB+1) + (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) - (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) – (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) * (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) / (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) % (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Berechnet vA + vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA + vB</item>
+		<item>Berechnet vA - vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA - vB</item>
+		<item>Berechnet vA * vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA * vB</item>
+		<item>Berechnet vA / vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA / vB</item>
+		<item>Berechnet vA % vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA % vB</item>
+		<item>Berechnet vA und vB (logisches UND) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA &amp; vB</item>
+		<item>Berechnet vA | vB (logisches ODER) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA | vB</item>
+		<item>Berechnet vA ^ vB (exklusives ODER) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA ^ vB</item>
+		<item>Verschiebt vA um die durch vB angegebene Anzahl von Bits nach links und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA &lt;&lt; vB</item>
+		<item>Verschiebt vA um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA >> vB</item>
+		<item>Verschiebt vA ohne Beibehaltung seines Vorzeichens um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA >>> vB</item>
+		<item>Berechnet (vA, vA+1) + (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) - (vB, vB+1) und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) * (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) / (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) % (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) &amp; (vB, vB+1) (logisches UND) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) | (vB, vB+1) (logisches ODER) und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) &amp; (vB, vB+1) (exklusives ODER) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Verschiebt vA, vA+1 um die durch vB angegebene Anzahl von Bits nach links und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Verschiebt vA, vA+1 um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Verschiebt vA, vA+1 ohne Beibehaltung des Vorzeichens um die durch vB angegebene Anzahl von Stellen nach rechts und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Berechnet vA + vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA + vB</item>
+		<item>Berechnet vA - vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA - vB</item>
+		<item>Berechnet vA * vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA * vB</item>
+		<item>Berechnet vA / vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA / vB</item>
+		<item>Berechnet vA % vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA % vB</item>
+		<item>Berechnet (vA, vA+1) + (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) - (vB, vB+1) und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) * (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) / (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) % (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Berechnet vB + 0xFFFF und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB + 0xFFFF</item>
+		<item>Berechnet 0xFFFF - vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = 0xFFFF - vB</item>
+		<item>Berechnet vB * 0xFFFF und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB * 0xFFFF</item>
+		<item>Berechnet vB / 0xFFFF und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB / 0xFFFF</item>
+		<item>Berechnet vB % 0xFFFF und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB % 0xFFFF</item>
+		<item>Berechnet vB &amp; 0xFFFF (logisches UND) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB &amp; 0xFFFF</item>
+		<item>Berechnet vB | 0xFFFF (logisches ODER) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB | 0xFFFF</item>
+		<item>Berechnet vB ^ 0xFFFF (exklusives ODER) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB ^ 0xFFFF</item>
+		<item>Berechnet vBB + 0xFF und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB + 0xFF</item>
+		<item>Berechnet 0xFF - vBB und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = 0xFF - vBB</item>
+		<item>Berechnet vBB * 0xFF und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB * 0xFF</item>
+		<item>Berechnet vBB / 0xFF und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB / 0xFF</item>
+		<item>Berechnet vBB % 0xFF und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB % 0xFF</item>
+		<item>Berechnet vBB und 0xFF (logisches UND) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB &amp; 0xFF</item>
+		<item>Berechnet vBB | 0xFF (logisches ODER) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB | 0xFF</item>
+		<item>Berechnet vBB ^ 0xFF (exklusives ODER) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB ^ 0xFF</item>
+		<item>Verschiebt vBB um die durch 0xFF angegebene Anzahl von Bits nach links und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Verschiebt vBB um die durch 0xFF angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB >> 0xFF</item>
+		<item>Verschiebt vBB signalmäßig um die durch 0xFF angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB >>> 0xFF</item>
+		<item>Ruft eine polymorphe Signaturmethode mit Parametern auf (führt sie aus). In Dex-Dateien seit Version 038 vorhanden.</item>
+		<item>Ruft eine polymorphe Signaturmethode mit Parametern auf (führt sie aus), die Parameter müssen jedoch in fortlaufend nummerierten Registern enthalten sein. In Dex-Dateien seit Version 038 vorhanden.</item>
+		<item>Ermöglicht (startet) den Aufruf einer Site mit Parametern. In Dex-Dateien seit Version 038 vorhanden.</item>
+		<item>Ermöglicht (startet) den Aufruf einer Site mit Parametern, die Parameter müssen jedoch in der Reihenfolge der Nummern in Registern enthalten sein. In Dex-Dateien seit Version 038 vorhanden.</item>
+		<item>Platziert einen Verweis auf ein Methodenhandle im vAA-Register. In Dex-Dateien seit Version 039 vorhanden.</item>
+		<item>Platziert einen Verweis auf den Methodenprototyp im vAA-Register. In Dex-Dateien seit Version 039 vorhanden.</item>
+	</string-array>
 	<string-array name="sort">
         <item>Name</item>
         <item>Name umgekehrt</item>

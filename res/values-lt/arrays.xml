@@ -1,5 +1,239 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="smali_help_names">
+		<item>Registrai</item>
+		<item>Pažodinės vertybės</item>
+		<item>Primityvūs duomenų tipai</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA yra 4 bitų registras, kurio verčių diapazonas yra v0–v15\nvAA yra 8 bitų registras, kurio verčių diapazonas yra nuo v0 iki v255\nvAAAA yra 16 bitų registras, kurio verčių diapazonas yra nuo v0 iki v65535</item>
+		<item>Naudojami 0xF, 0xFF ir kt. reprezentuoti tiesiogines vertybes. Kaip ir registrai, skaičius F naudojamas reikšmių diapazonui pavaizduoti, pavyzdžiui:\n0xF reikšmių diapazonas pavaizduotas [-0x8, 0x7]\n0xFF reikšmių diapazonas pavaizduotas [-0x80, 0x7F]</item>
+		<item>V – tuščias, Z – loginis, B – baitas\nC - char, S - trumpas, I - tarpinis\nJ – ilgas, F – plūduriuojantis, D – dvigubas\nnegaliojantis: gali būti naudojamas tik grąžinimo tipams\nloginis: išsaugo reikšmę true arba false\nbaitas: išsaugo sveikąjį skaičių nuo -128 iki 127 ir užima 1 baitą\ntrumpas: išsaugo sveikąjį skaičių nuo -32768 iki 32767 ir užima 2 baitus\nint: išsaugo sveikąjį skaičių nuo -2147483648 iki 2147483647 ir užima 4 baitus\nilgas: išsaugo sveikąjį skaičių nuo -9223372036854775808 iki 9223372036854775807 ir užima 8 baitus\ndouble: išsaugo slankaus kablelio skaičių nuo ±4,9*10³²⁴ iki ±1,7976931348623157*10³⁰⁸ ir užima 8 baitus. Taškas naudojamas kaip dešimtainis skyriklis trupmeniniuose literaluose.\nfloat: išsaugo slankiojo kablelio skaičių nuo -3,4*10³⁸ iki 3,4*10³⁸ ir užima 4 baitus\nchar: saugo vieną simbolį UTF-16 koduotėje ir užima 2 baitus, todėl saugomų reikšmių diapazonas yra nuo 0 iki 65535.</item>
+		<item>Jokių veiksmų.</item>
+		<item>Perkelia vB registro reikšmę į vA registrą.</item>
+		<item>Perkelia vBBBB registro reikšmę į vAA registrą.</item>
+		<item>Perkelia vBBBB registro reikšmę į vAAAA registrą.</item>
+		<item>Perkelia ilgąją / dvigubą registrų poros reikšmę (vB, vB+1) į registrų porą vA, vA+1.</item>
+		<item>Perkelia ilgąją / dvigubą registrų poros reikšmę (vBBBB, vBBBB+1) į registrų porą vAA, vAA+1.</item>
+		<item>Perkelia ilgą / dvigubą registrų poros reikšmę (vBBBB, vBBBB+1) į registrų porą vAAAA, vAAAA+1.</item>
+		<item>Perkelia objekto nuorodą iš vB registro į vA registrą.</item>
+		<item>Perkelia objekto nuorodą iš vBBBB registro į vAA registrą.</item>
+		<item>Perkelia objekto nuorodą iš vBBBB registro į vAAAA registrą.</item>
+		<item>Perkelia anksčiau iškviesto metodo grąžinamąją reikšmę į vAA registrą.</item>
+		<item>Perkelia ilgą / dvigubą reikšmę, grąžintą anksčiau iškviestu metodu, į registrų porą vAA, vAA+1.</item>
+		<item>Perkelia objekto nuorodą, grąžintą anksčiau iškviestu metodu, į vAA registrą.</item>
+		<item>Perkelia metodo iškvietimo metu (vykdymo metu) pateiktą nuorodą į neįtrauktą objektą į vAA registrą.</item>
+		<item>Grąžinti be grąžinimo vertės.</item>
+		<item>Grąžinkite grąžindami vertę iš vAA registro.</item>
+		<item>Grąžinkite grąžindami dvigubą / ilgą reikšmę į registrų porą vAA, vAA+1.</item>
+		<item>Grąžinkite grąžindami objekto nuorodos reikšmę iš vAA registro.</item>
+		<item>Įdeda 4 bitų konstantą į vA registrą.</item>
+		<item>Įdeda 16 bitų konstantą į vAA registrą.</item>
+		<item>Įdeda sveikųjų skaičių konstantą į vAA registrą.</item>
+		<item>Įdeda 16 bitų konstantą į viršutinius vAA registro bitus. Naudojamas slankiosioms (slankiojo kablelio) reikšmėms inicijuoti.</item>
+		<item>Įdeda 16 bitų sveikųjų skaičių konstantą į registrų porą vAA, vAA+1, paversdama sveikojo skaičiaus konstantą į ilgą konstantą.</item>
+		<item>Įtraukia 32 bitų sveikųjų skaičių konstantą į registrų porą vAA, vAA+1, paversdama sveikojo skaičiaus konstantą į ilgą konstantą.</item>
+		<item>Įdeda 64 bitų konstantą į registrų porą vAA, vAA+1.</item>
+		<item>Įdeda 16 bitų konstantą į viršutinius 16 bitų registrų poros vAA, vAA+1. Naudojamas dviguboms (slankiojo kablelio) reikšmėms inicijuoti.</item>
+		<item>Įdeda nuorodą į nurodytą eilutę vAA registre.</item>
+		<item>Įdeda nuorodą į nurodytą eilutę vAA registre.</item>
+		<item>Į vAA registrą įdeda nuorodą į eilutės konstantą (eilą), identifikuotą string_id.</item>
+		<item>Gauna objekto monitorių, nurodytą vAA registre.</item>
+		<item>Išleidžia objektų monitorių, nurodytą vAA registre.</item>
+		<item>Patikrina, ar objekto nuoroda, esanti vAA registre, gali būti perduodama į klasę, identifikuotą tipo_id. Jei negali, meta ClassCastException, kitaip vykdymas tęsiamas.</item>
+		<item>Patikrina, ar vB registro turinys yra tipo_id identifikuotos klasės egzempliorius. Nustato registrą vA į nulį, jei yra, 0, jei ne.\nvA = vB egzemplioriusOf tipo ? 10</item>
+		<item>Nustato masyvo elementų skaičių iš vB registro ir įdeda reikšmę į vA registrą.\nvA = vB.ilgis</item>
+		<item>Sukuria objekto tipo egzempliorių ir įdeda nuorodą į sukurtą egzempliorių vAA registre.</item>
+		<item>Sukuria naują tipo_id kintamųjų masyvą su registro vB elementų dydžiu ir įdeda nuorodą į masyvą registre vA.</item>
+		<item>Sukuria naują tipo_id tipo duomenų masyvą ir užpildo jį parametrais (ty nėra ilgų / dvigubų masyvų, bet leidžiami nuorodų tipai). Nuorodą į naujai sukurtą masyvą galima gauti naudojant teiginį move-result-object iš karto po šio teiginio (jei jis turi būti naudojamas).</item>
+		<item>Sukuria naują tipo_id tipo duomenų masyvą ir užpildo jį parametrų diapazonu (ty nėra ilgų / dvigubų masyvų, tačiau nuorodų tipai yra priimtini). Nuorodą į naujai sukurtą masyvą galima gauti naudojant teiginį move-result-object iš karto po šio teiginio (jei jis turi būti naudojamas).</item>
+		<item>Pripildo vAA registre nurodytą masyvą statiniais duomenimis. Duomenų vieta yra šios instrukcijos padėties ir poslinkio suma.</item>
+		<item>Išmeta išimties objektą. Nuoroda į išimties objektą vAA registre.</item>
+		<item>Besąlygiškai pereikite prie trumpo (sveiko skaičiaus) 8 bitų poslinkio.</item>
+		<item>Besąlyginis šuolis į 16 bitų poslinkį.</item>
+		<item>Besąlyginis šuolis į 32 bitų poslinkį.</item>
+		<item>Įgyvendina Switch operatorių, kai valdymo konstantos yra arti viena kitos (iš eilės). Instrukcijoje naudojama rodyklės lentelė. Instrukcijų poslinkis konkrečiam atvejui nustatomas pagal vAA indeksą. Jei vAA indeksas viršija lentelę, vykdymas tęsiamas su kitu sakiniu (numatytasis).</item>
+		<item>Įgyvendina Switch operatorių, jei lentelė yra reta. Instrukcijoje naudojama lentelė, kurioje nurodomi kiekvienos konstantos poslinkiai. Jei lentelėje nerandama atitikmenų, tada vykdomas kitas sakinys (numatytasis atvejis).</item>
+		<item>Palygina vBB ir vCC slankiojo kablelio reikšmes ir įdeda sveikąjį skaičių į vAA registrą:\nvAA = vBB &lt; vCC ? taip: 1, ne: -1, lygus: 0</item>
+		<item>Palygina vBB ir vCC slankiojo kablelio reikšmes ir įdeda sveikąjį skaičių į vAA registrą:\nvAA = vBB &lt; vCC ? taip: 1, ne: -1, lygus: 0</item>
+		<item>Palygina dvigubas (slankiojo kablelio) reikšmes vBB ir vCC ir įdeda sveikąjį skaičių į vAA registrą:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\ntaip: 1, ne: -1, lygus: 0</item>
+		<item>Palygina dvigubas (slankiojo kablelio) reikšmes vBB ir vCC ir įdeda sveikąjį skaičių į vAA registrą:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? taip: 1, ne: -1, lygus: 0</item>
+		<item>Palygina ilgas (sveikasis) reikšmes vBB ir vCC ir įdeda sveikojo skaičiaus (sveiko skaičiaus) reikšmę vAA registre:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? taip: 1, ne: -1, lygus: 0</item>
+		<item>Peršoka į nurodytą etiketę, jei vA == vB. vA ir vB yra sveikųjų skaičių reikšmės.\n(eq yra lygus trumpinys)</item>
+		<item>Peršoka į nurodytą etiketę, jei vA != vB. vA ir vB yra sveikųjų skaičių reikšmės.\n(ne yra ne lygus trumpinys)</item>
+		<item>Peršoka į nurodytą etiketę, jei vA &lt; vB. vA ir vB yra sveikųjų skaičių reikšmės.\n(tai yra trumpinys „Mažiau nei“)</item>
+		<item>Peršoka į nurodytą etiketę, jei vA &lt;= vB. vA ir vB yra sveikųjų skaičių reikšmės.\n(le yra Mažiau nei arba Lygus/Mažiau arba lygus santrumpa)</item>
+		<item>Peršoka į nurodytą etiketę, jei vA > vB. vA ir vB yra sveikųjų skaičių reikšmės.\n(gt yra Didesnis nei/Daugiau nei trumpinys)</item>
+		<item>Peršoka į nurodytą etiketę, jei vA >= vB. vA ir vB yra sveikųjų skaičių reikšmės.\n(ge yra didesnis nei arba lygus trumpinys)</item>
+		<item>Peršoka į nurodytą etiketę, jei vAA == 0. vAA yra sveikasis skaičius.\n(eqz yra lygus nuliui trumpinys)</item>
+		<item>Peršoka į nurodytą etiketę, jei vAA != 0. vAA yra sveikasis skaičius.\n(nez yra nelygybės nuliui trumpinys)</item>
+		<item>Peršoka prie nurodytos etiketės, jei vAA &lt; 0. vAA yra sveikasis skaičius.\n(ltz yra „Mažiau nei nulis“ trumpinys)</item>
+		<item>Peršoka į nurodytą etiketę, jei vAA &lt;= 0. vAA yra sveikasis skaičius.\n(lez yra santrumpa, reiškianti mažiau nei arba lygi nuliui/mažiau arba lygi nuliui)</item>
+		<item>Peršoka į nurodytą etiketę, jei vAA > 0. vAA yra sveikasis skaičius.\n(gtz yra Greater Than Zero trumpinys)</item>
+		<item>Peršoka prie nurodytos etiketės, jei vAA >= 0. vAA yra sveikasis skaičius.\n(gez yra santrumpa, reiškianti Didesnis nei nulis arba lygus nuliui)</item>
+		<item>Gauna sveikojo skaičiaus reikšmę vCC esančiame indekse iš masyvo, nurodyto vBB, ir įkelia jį į vAA registrą.\nvAA = vBB[vCC]</item>
+		<item>VCC esančiame indekse iš masyvo, nurodyto vBB, gauna dvigubą / ilgą reikšmę ir įkelia ją į registrų porą vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>VCC esančiame indekse iš masyvo, nurodyto vBB, gauna nuorodą į objektą ir įkelia jį į vAA registrą.\nvAA = vBB[vCC]</item>
+		<item>VCC esančiame indekse iš vBB nurodyto masyvo gauna loginę reikšmę ir įkelia ją į vAA registrą.\nvAA = vBB[vCC]</item>
+		<item>VCC esančiame indekse iš vBB nurodyto masyvo nuskaito baito (sveiko skaičiaus) reikšmę ir įkelia ją į vAA registrą.\nvAA = vBB[vCC]</item>
+		<item>VCC esančiame indekse iš masyvo, nurodyto vBB, nuskaito char reikšmę ir įkelia ją į vAA registrą.\nvAA = vBB[vCC]</item>
+		<item>Iš vBB nurodytos masyvo vCC esančiame indekse nuskaito trumpą (sveikąjį skaičių) reikšmę ir įkelia ją į vAA registrą.\nvAA = vBB[vCC]</item>
+		<item>Įdeda sveikojo skaičiaus reikšmę iš vAA į masyvą, nurodytą vBB su elementu, kuriame yra vCC registras.\nvBB[vCC] = vAA</item>
+		<item>Įdeda dvigubą / ilgą reikšmę iš registrų poros vAA, vAA+1 į masyvą, nurodytą vBB, su elementu, kuriame yra vCC registras.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Įdeda nuorodą į objektą iš vAA į masyvą, nurodytą vBB su elementu su vCC registru.\nvBB[vCC] = vAA</item>
+		<item>Įdeda loginę reikšmę iš vAA į vBB nurodytą masyvą su elementu, kuriame yra vCC registras.\nvBB[vCC] = vAA</item>
+		<item>Įdeda baito (sveiko skaičiaus) reikšmę iš vAA į masyvą, nurodytą vBB su elementu, kuriame yra registras vCC.\nvBB[vCC] = vAA</item>
+		<item>Įdeda simbolio (simbolio) reikšmę iš vAA į masyvą, nurodytą vBB pagal elementą su registru vCC.\nvBB[vCC] = vAA</item>
+		<item>Įdeda trumpą (sveikąjį skaičių) reikšmę iš vAA į masyvą, nurodytą vBB su elementu, kuriame yra vCC registras.\nvBB[vCC] = vAA</item>
+		<item>Nuskaito reikšmę iš egzemplioriaus lauko ir įdeda į vA registrą. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvA = vB.laukas</item>
+		<item>Nuskaito dvigubą / ilgą reikšmę iš egzemplioriaus lauko ir įdeda ją į registrų porą (vA, vA+1). Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\n(vA, vA+1) = vB.laukas</item>
+		<item>Nuskaito objekto nuorodą iš egzemplioriaus lauko ir įdeda ją į vA registrą. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvA = vB.laukas</item>
+		<item>Nuskaito loginę reikšmę iš egzemplioriaus lauko ir įdeda ją į vA registrą. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvA = vB.laukas</item>
+		<item>Nuskaito baito (sveiko skaičiaus) reikšmę iš egzemplioriaus lauko ir įdeda ją į vA registrą. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvA = vB.laukas</item>
+		<item>Nuskaito char reikšmę iš egzemplioriaus lauko ir įdeda ją į vA registrą. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvA = vB.laukas</item>
+		<item>Nuskaito trumpą (sveikąjį skaičių) reikšmę iš egzemplioriaus lauko ir įdeda ją į vA registrą. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvA = vB.laukas</item>
+		<item>Įkelia reikšmę iš vA registro į egzemplioriaus lauką. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvB.laukas = vA</item>
+		<item>Į egzemplioriaus lauką įdeda dvigubą / ilgą reikšmę iš registrų poros (vA, vA+1). Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvB.field = (vA, vA+1)</item>
+		<item>Į egzemplioriaus lauką įdeda nuorodą į objektą iš vA registro. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvB.laukas = vA</item>
+		<item>Į egzemplioriaus lauką įdeda loginę reikšmę iš vA registro. Nuoroda į klasę, kurioje yra šis laukas, yra vB registre.\nvB.laukas = vA</item>
+		<item>Nustato nurodyto Būlio lauko baito (sveiko skaičiaus) reikšmę egzemplioriuje, kurį nurodo registras vB, lygią registro vA reikšmei, tai yra:\nvB.laukas = vA</item>
+		<item>Nustato nurodyto Būlio lauko simbolio (simbolio) reikšmę egzemplioriuje, kurį nurodo registras vB, lygią registro vA reikšmei, tai yra:\nvB.laukas = vA</item>
+		<item>Nustato trumpą (sveikąjį skaičių) nurodyto Būlio lauko reikšmę egzemplioriuje, kurį nurodo registras vB, lygią registro vA reikšmei, tai yra:\nvB.laukas = vA</item>
+		<item>Nuskaito reikšmę iš statinio lauko ir įkelia ją į vAA registrą. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Nuskaito dvigubą / ilgą reikšmę iš statinio lauko ir įdeda ją į registrų porą vAA, vAA+1. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Nuskaito objekto nuorodą iš statinio lauko ir įdeda ją į vAA registrą. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Nuskaito loginę reikšmę iš statinio lauko ir įdeda ją į vAA registrą. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Nuskaito baito (sveiko skaičiaus) reikšmę iš statinio lauko ir įkelia ją į vAA registrą. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Nuskaito char reikšmę iš statinio lauko ir įdeda ją į vAA registrą. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Nuskaito trumpą (sveikąjį skaičių) reikšmę iš statinio lauko ir įdeda ją į vAA registrą. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Įveda reikšmę iš vAA registro į lauką (statinį lauką). Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Į lauką (statinį lauką) įdeda dvigubą / ilgą reikšmę iš registrų poros vAA, vAA+1. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Įveda nuorodą į objektą iš vAA registro į lauką (statinį lauką). Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Įveda loginę reikšmę iš vAA registro į lauką (statinį lauką). Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Įveda baito (sveiko skaičiaus) reikšmę iš vAA registro į lauką (statinį lauką). Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Įkelia char reikšmę iš vAA registro į statinį lauką. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Įtraukia trumpą (sveikąjį skaičių) reikšmę iš vAA registro į statinį lauką. Registras, kuriame yra nuoroda į klasę, kurioje yra šis laukas, nenaudojamas.</item>
+		<item>Iškviečia (paleidžia) virtualų metodą su parametrais. Parametrai nurodyti riestiniuose skliaustuose. Pirmame parametre (registro v2) yra nuoroda į klasę, kurioje yra iškviestas metodas, antrasis parametras (registro v3 turinys) perduodamas iškviestam metodui.</item>
+		<item>Iškviečia (paleidžia) virtualų metodą su parametrais tiesiai iš pagrindinės klasės.</item>
+		<item>Iškviečia (paleidžia) metodą su parametrais be virtualaus metodo leidimų.</item>
+		<item>Iškviečia (paleidžia) statinį metodą su parametrais. Parametrai nurodyti riestiniuose skliaustuose. Parametras (v3 registro turinys) perduodamas iškviestam metodui. Klasė, kurioje yra vadinamasis metodas, nurodyta po riestiniais skliaustais.</item>
+		<item>Iškviečia (paleidžia) sąsajos metodą su parametrais.</item>
+		<item>Iškviečia (paleidžia) virtualų metodą su parametrais, tačiau parametrai turi būti registruose su skaičiais eilės tvarka.</item>
+		<item>Iškviečia (paleidžia) virtualų metodą su parametrais tiesiai iš pirminės klasės, tačiau parametrai turi būti registruose su eilės numeriais.</item>
+		<item>Iškviečia (vykdo) metodą su parametrais be virtualaus metodo teisių, tačiau parametrai turi būti nuosekliai sunumeruotuose registruose.</item>
+		<item>Iškviečia (vykdo) statinį metodą su parametrais, tačiau parametrai turi būti registruose su eilės numeriais.</item>
+		<item>Iškviečia (paleidžia) sąsajos metodą su parametrais, tačiau parametrai turi būti nuosekliai sunumeruotuose registruose.</item>
+		<item>Skaičiuoja vA = -vB sveikojo skaičiaus vertėms.</item>
+		<item>Skaičiuoja vA = ~vB sveikosioms reikšmėms.\nvA = ~ vB</item>
+		<item>Skaičiuoja (vA, vA+1) = -(vB, vB+1) ilgo tipo reikšmėms (sveikasis skaičius).</item>
+		<item>Skaičiuoja (vA, vA+1) = ~(vB, vB+1) ilgo tipo (sveikasis skaičius) vertėms.</item>
+		<item>Skaičiuoja vA = -vB slankiosioms reikšmėms.</item>
+		<item>Skaičiuoja (vA, vA+1) = -(vB, vB+1) dviguboms (slankiojo kablelio) reikšmėms.</item>
+		<item>Paverčia sveikąjį skaičių iš vB į ilgą ir išsaugo jį registrų poroje vA, vA+1.\n(vA, vA+1) = (ilgas) vB</item>
+		<item>Konvertuoja sveikąjį skaičių iš vB į plūduriuojančią reikšmę ir išsaugo jį vA registre.\nvA = (plūduriuoti) vB</item>
+		<item>Konvertuoja sveikąjį skaičių iš vB į dvigubą (slankiojo kablelio) ir išsaugo jį registrų poroje vA, vA+1.\n(vA, vA+1) = (dvigubas) vB</item>
+		<item>Konvertuoja ilgą (sveikąjį skaičių) reikšmę iš vB, vB+1 į sveikąjį skaičių (sveikąjį skaičių) ir išsaugo ją vA registre.\nvA = (int) (vB, vB+1)</item>
+		<item>Konvertuoja ilgą (sveikąjį skaičių) reikšmę iš vB, vB+1 į slankiąją (slankiojo taško) reikšmę ir išsaugo ją vA registre.\nvA = (plūduriuoti) (vB, vB+1)</item>
+		<item>Konvertuoja ilgą (sveikąjį skaičių) reikšmę iš vB, vB+1 į dvigubą (slankiojo kablelio) ir išsaugo ją registrų poroje vA, vA+1.\n(vA, vA+1) = (dvigubas) (vB, vB+1)</item>
+		<item>Konvertuoja slankiąją (slankiojo kablelio) reikšmę iš vB į sveikąjį skaičių (sveikąjį skaičių) ir išsaugo ją vA registre.\nvA = (int)vB</item>
+		<item>Konvertuoja slankiąją (slankiojo kablelio) reikšmę iš vB į ilgą (sveikąjį skaičių) ir išsaugo ją registrų poroje vA, vA+1.\n(vA, vA+1) = (ilgas) vB</item>
+		<item>Konvertuoja slankiąją (slankiojo kablelio) reikšmę iš vB į dvigubą (slankiojo kablelio) reikšmę ir išsaugo ją registrų poroje vA, vA+1.\n(vA, vA+1) = (dvigubas) vB</item>
+		<item>Konvertuoja dvigubą (slankiojo kablelio) reikšmę iš vB, vB+1 į sveikąjį skaičių (sveikąjį skaičių) ir išsaugo ją vA registre.\nvA = (int) (vB, vB+1)</item>
+		<item>Konvertuoja dvigubą (slankiojo kablelio) reikšmę iš vB, vB+1 į ilgą (sveikąjį skaičių) ir išsaugo ją registrų poroje vA, vA+1.\n(vA, vA+1) = (ilgas) (vB, vB+1)</item>
+		<item>Konvertuoja dvigubą (slankiojo kablelio) reikšmę iš vB, vB+1 į slankiąją (slankiojo kablelio) reikšmę ir išsaugo ją vA registre.\nvA = (plūduriuoti) (vB, vB+1)</item>
+		<item>Konvertuoja sveikojo skaičiaus reikšmę iš vB į baitų reikšmę ir išsaugo ją vA registre.\nvA = (baitas) vB</item>
+		<item>Konvertuoja sveikojo skaičiaus reikšmę iš vB į char reikšmę ir išsaugo ją vA registre.\nvA = (char)vB</item>
+		<item>Konvertuoja sveikojo skaičiaus reikšmę iš vB į trumpąją reikšmę ir išsaugo ją vA registre.\nvA = (trumpas) vB</item>
+		<item>Apskaičiuoja vBB + vCC ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB + vCC</item>
+		<item>Apskaičiuoja vBB - vCC ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB - vCC</item>
+		<item>Apskaičiuoja vBB * vCC ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB * vCC</item>
+		<item>Apskaičiuoja vBB / vCC ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB / vCC</item>
+		<item>Apskaičiuoja vBB % vCC ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB % vCC</item>
+		<item>Apskaičiuoja vBB ir vCC (loginis AND) ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB ir vCC</item>
+		<item>Apskaičiuoja vBB | vCC (loginis ARBA) ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB | vCC</item>
+		<item>Apskaičiuoja vBB ^ vCC (išskirtinis OR) ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB ^ vCC</item>
+		<item>Perkelia vBB į kairę pagal vCC nurodytą bitų skaičių ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Perkelia vBB į dešinę pagal vCC nurodytą bitų skaičių ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB >> vCC</item>
+		<item>Perkelia vBB neišsaugodamas ženklo į dešinę iki vCC nurodyto bitų skaičiaus ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB >>> vCC</item>
+		<item>Apskaičiuoja (vBB, vBB+1) + (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) - (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) – (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) * (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) / (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) % (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) &amp; (vCC, vCC+1) (loginis AND) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) | (vCC, vCC+1) (loginis ARBA) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) ^ (vCC, vCC+1) (išskirtinis AND) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Perkelia vBB, vBB+1 į kairę pagal vCC nurodytą bitų skaičių ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Perkelia vBB, vBB+1 į dešinę pagal vCC nurodytą bitų skaičių ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Perkelia vBB, vBB+1 į dešinę, neišsaugodamas ženklo vCC nurodytu bitų skaičiumi, o rezultatą išsaugo registrų poroje vAA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Apskaičiuoja vBB + vCC ir išsaugo rezultatą vAA registre. Visos vertės yra plūduriuojančios.\nvAA = vBB + vCC</item>
+		<item>Apskaičiuoja vBB - vCC ir išsaugo rezultatą vAA registre. Visos vertės yra plūduriuojančios.\nvAA = vBB - vCC</item>
+		<item>Apskaičiuoja vBB * vCC ir išsaugo rezultatą vAA registre. Visos vertės yra plūduriuojančios.\nvAA = vBB * vCC</item>
+		<item>Apskaičiuoja vBB / vCC ir išsaugo rezultatą vAA registre. Visos vertės yra plūduriuojančios.\nvAA = vBB / vCC</item>
+		<item>Apskaičiuoja vBB % vCC ir išsaugo rezultatą vAA registre. Visos vertės yra plūduriuojančios.\nvAA = vBB % vCC</item>
+		<item>Apskaičiuoja (vBB, vBB+1) + (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) - (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vAA, vAA+1) = (vBB, vBB+1) – (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) * (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) / (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Apskaičiuoja (vBB, vBB+1) % (vCC, vCC+1) ir išsaugo rezultatą registrų poroje vAA, vAA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Apskaičiuoja vA + vB ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA + vB</item>
+		<item>Apskaičiuoja vA - vB ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA - vB</item>
+		<item>Apskaičiuoja vA * vB ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA * vB</item>
+		<item>Apskaičiuoja vA / vB ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA / vB</item>
+		<item>Apskaičiuoja vA % vB ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA % vB</item>
+		<item>Apskaičiuoja vA ir vB (loginis IR) ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA ir vB</item>
+		<item>Apskaičiuoja vA | vB (loginis ARBA) ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA | vB</item>
+		<item>Apskaičiuoja vA ^ vB (išskirtinis ARBA) ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA ^ vB</item>
+		<item>Perkelia vA į kairę pagal vB nurodytą bitų skaičių ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA &lt;&lt; vB</item>
+		<item>Perkelia vA į dešinę pagal vB nurodytą bitų skaičių ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA >> vB</item>
+		<item>Perkelia vA neišsaugodamas savo ženklo į dešinę vB nurodytu bitų skaičiumi, o rezultatą išsaugo vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vA >>> vB</item>
+		<item>Apskaičiuoja (vA, vA+1) + (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) - (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) – (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) * (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) / (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) % (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) &amp; (vB, vB+1) (loginis IR) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) | (vB, vB+1) (loginis ARBA) ir išsaugo rezultatą poroje vA, vA+1 registrų. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) &amp; (vB, vB+1) (išskirtinis ARBA) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Perkelia vA, vA+1 į kairę pagal vB nurodytą bitų skaičių, o rezultatą išsaugo registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Perkelia vA, vA+1 į dešinę pagal vB nurodytą bitų skaičių, o rezultatą išsaugo registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Perkelia vA, vA+1 į dešinę, neišsaugodamas ženklo vB nurodytu skaitmenų skaičiumi, o rezultatą išsaugo registrų poroje vA, vA+1. Visos reikšmės yra ilgos (sveikasis skaičius).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Apskaičiuoja vA + vB ir išsaugo rezultatą vA registre. Visos vertės yra plūduriuojančios.\nvA = vA + vB</item>
+		<item>Apskaičiuoja vA - vB ir išsaugo rezultatą vA registre. Visos vertės yra plūduriuojančios.\nvA = vA - vB</item>
+		<item>Apskaičiuoja vA * vB ir išsaugo rezultatą vA registre. Visos vertės yra plūduriuojančios.\nvA = vA * vB</item>
+		<item>Apskaičiuoja vA / vB ir išsaugo rezultatą vA registre. Visos vertės yra plūduriuojančios.\nvA = vA / vB</item>
+		<item>Apskaičiuoja vA % vB ir išsaugo rezultatą vA registre. Visos vertės yra plūduriuojančios.\nvA = vA % vB</item>
+		<item>Apskaičiuoja (vA, vA+1) + (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) - (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vA, vA+1) = (vA, vA+1) – (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) * (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) / (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Apskaičiuoja (vA, vA+1) % (vB, vB+1) ir išsaugo rezultatą registrų poroje vA, vA+1. Visos vertės yra dvigubos (slankiojo kablelio).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Apskaičiuoja vB + 0xFFFF ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vB + 0xFFFF</item>
+		<item>Apskaičiuoja 0xFFFF - vB ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = 0xFFFF – vB</item>
+		<item>Apskaičiuoja vB * 0xFFFF ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vB * 0xFFFF</item>
+		<item>Apskaičiuoja vB / 0xFFFF ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vB / 0xFFFF</item>
+		<item>Apskaičiuoja vB % 0xFFFF ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vB % 0xFFFF</item>
+		<item>Apskaičiuoja vB &amp; 0xFFFF (loginis IR) ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vB ir 0xFFFF</item>
+		<item>Apskaičiuoja vB | 0xFFFF (loginis ARBA) ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vB | 0xFFFF</item>
+		<item>Apskaičiuoja vB ^ 0xFFFF (išskirtinis ARBA) ir išsaugo rezultatą vA registre. Visos reikšmės yra sveikieji skaičiai.\nvA = vB ^ 0xFFFF</item>
+		<item>Apskaičiuoja vBB + 0xFF ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB + 0xFF</item>
+		<item>Apskaičiuoja 0xFF - vBB ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = 0xFF - vBB</item>
+		<item>Apskaičiuoja vBB * 0xFF ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB * 0xFF</item>
+		<item>Apskaičiuoja vBB / 0xFF ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB / 0xFF</item>
+		<item>Apskaičiuoja vBB % 0xFF ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB % 0xFF</item>
+		<item>Apskaičiuoja vBB &amp; 0xFF (loginis IR) ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB ir 0xFF</item>
+		<item>Apskaičiuoja vBB | 0xFF (loginis ARBA) ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB | 0xFF</item>
+		<item>Apskaičiuoja vBB ^ 0xFF (išskirtinis ARBA) ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB ^ 0xFF</item>
+		<item>Perkelia vBB į kairę 0xFF nurodytu bitų skaičiumi ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Perkelia vBB į dešinę 0xFF nurodytu bitų skaičiumi ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB >> 0xFF</item>
+		<item>Signaliai perkelia vBB į dešinę 0xFF nurodytu bitų skaičiumi ir išsaugo rezultatą vAA registre. Visos reikšmės yra sveikieji skaičiai.\nvAA = vBB >>> 0xFF</item>
+		<item>Iškviečia (paleidžia) polimorfinio parašo metodą su parametrais. Pateikiama Dex failuose nuo 038 versijos.</item>
+		<item>Iškviečia (paleidžia) polimorfinio parašo metodą su parametrais, tačiau parametrai turi būti nuosekliai sunumeruotuose registruose. Pateikiama Dex failuose nuo 038 versijos.</item>
+		<item>Leidžia (pradeda) iškviesti svetainę su parametrais. Pateikiama Dex failuose nuo 038 versijos.</item>
+		<item>Leidžia (pradeda) iškviesti svetainę su parametrais, tačiau parametrai turi būti registruose su numeriais eilės tvarka. Pateikiama Dex failuose nuo 038 versijos.</item>
+		<item>Įdeda nuorodą į metodo rankenėlę vAA registre. Pateikiama Dex failuose nuo 039 versijos.</item>
+		<item>Įdeda nuorodą į metodo prototipą vAA registre. Pateikiama Dex failuose nuo 039 versijos.</item>
+	</string-array>
     <string-array name="copy_variants">
         <item>Pervardyti</item>
 		<item>Rename files only</item>
