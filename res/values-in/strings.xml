@@ -77,6 +77,8 @@
     <string name="checksums_original">Mengganti checksum dari yang asli</string>
     <string name="clear">Hapus</string>
     <string name="no_data">tidak ada data yang tersedia</string>
+	<string name="monochrome">Monochrome</string>
+	<string name="smali_help">Bantuan Smali</string>
     
     <string name="go_back">Kembali ke folder induk</string>
     <string name="sort">Urutkan metode</string>
@@ -519,6 +521,8 @@
     <string name="keep_modified_time_summary">Mencoba menjaga waktu modifikasi file dan folder jika memungkinkan</string>
     <string name="open_apk">Buka file apk</string>
     <string name="open_apk_summary">Buka file apk dari aplikasi lain dalam program</string>
+	<string name="imgs_backup">Simpan gambar asli</string>
+	<string name="imgs_backup_summary">Simpan gambar asli ketika memproses dengan fungsi \"%1$s\", \"%2$s\" dan \"%3$s\"</string>
     
     <string name="key_type">Jenis Kunci:</string>
     <string name="key_path">Jenis Jalur:</string>
