@@ -135,8 +135,8 @@
 	<string name="mapp_name">Emri i aplikacionit</string>
 	<string name="edit">Redakto</string>
 	<string name="ex_match">Përputhje e saktë</string>
-	<string name="lower_case">shkronja të vogla</string>
-	<string name="upper_case">ME SHKRONJA KAPITALE</string>
+	<string name="lower_case">Me shkronja të vogla</string>
+	<string name="upper_case">Me shkronja të mëdha</string>
 	<string name="server">Serveri</string>
 	<string name="methods_count">Numri i metodave</string>
 	<string name="strings_count">Numri i vargjeve</string>
@@ -216,7 +216,7 @@
 	<string name="return_smali">Kthehu në Smali</string>
 	<string name="format">Rreshtoni kodin</string>
 	<string name="find_next">Tjetra</string>
-	<string name="find_prev">Prev</string>
+	<string name="find_prev">Përpara</string>
 	<string name="find_all">Të gjitha</string>
 	<string name="find">Kërko</string>
 	<string name="replace">Zëvendësoni</string>
