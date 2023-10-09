@@ -199,8 +199,8 @@
 	<string name="time_spent">Времени затрачено: %s</string>
 	<string name="owner">Владелец</string>
 	<string name="group">Группа</string>
-	<string name="enc_res">Зашифровать ресурсы</string>
-	<string name="enc_success">Ресурсы зашифрованы, файл сохранён как \"%s\"</string>
+	<string name="enc_res">Обфусцировать ресурсы</string>
+	<string name="enc_success">Ресурсы обфусцированы, файл сохранён как \"%s\"</string>
 	<string name="bookmarks">Закладки</string>
 	<string name="bookmark_add">Добавить в закладки</string>
 	<string name="bookmark_remove">Удалить из закладок</string>
@@ -519,7 +519,7 @@
     <string name="open_apk">Открывать файлы apk</string>
     <string name="open_apk_summary">Открывать в программе файлы apk из других приложений</string>
     <string name="imgs_backup">Сохранять оригинал изображения</string>
-    <string name="imgs_backup_summary">Сохранять оригинал изображения при обработке функциями \"%1$s\", \"%2$s\" и \"%3$s\"</string>
+    <string name="imgs_backup_summary">Сохранять оригинал изображения при обработке функциями \"%1$s\", \"%2$s\", \"%3$s\" и \"%4$s\"</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>
@@ -755,6 +755,7 @@
 	<string name="mtr_del_array">Удалить массив</string>
 	<string name="mtr_sure">Вы уверены?</string>
 	<string name="mtr_trans_smali">Перевод smali</string>
+    <string name="mtr_trans_xml">Перевод xml</string>
 	<string name="mtr_no_trans">Строка не нуждается в переводе!</string>
     <string name="mtr_first_notrans">Сначала не переведённые</string>
 	

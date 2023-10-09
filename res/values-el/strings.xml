@@ -799,5 +799,5 @@
     <string name="monochrome">Μονόχρωμη</string>
     <string name="smali_help">Βοήθεια Smali</string>
     <string name="imgs_backup">Αποθήκευση της Αρχικής εικόνας</string>
-    <string name="imgs_backup_summary">Αποθήκευση της Αρχικής εικόνας κατά την επεξεργασία με τις λειτουργίες \"%1$s\", \"%2$s\" και \"%3$s\"</string>
+    <string name="imgs_backup_summary">Αποθήκευση της Αρχικής εικόνας κατά την επεξεργασία με τις λειτουργίες \"%1$s\", \"%2$s\", \"%3$s\" και \"%4$s\"</string>
 </resources>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Apktool M</string>
-	<string name="click_once_more">종료하려면 뒤로 한 번 더 누르십시오!</string>
+	<string name="click_once_more">종료하려먼 한 번 더 누르세요</string>
+	<string name="click_once_more2">창을 닫으시려먼 한 번 더 누르세요</string>
 	<string name="all_files_saved">모든 파일이 저장됨!</string>
 	<string name="storage_error">저장소에 대한 응용 프로그램 액세스를 허용합니다!</string>
 	<string name="jks">Keystore(JKS)</string>
@@ -62,6 +63,7 @@
 	<string name="kill_sign_advanced">개선된 방법</string>
 	<string name="kill_sign_orig">무결성을 확인하려면 원본 APK를 추가하세요.</string>
 	<string name="kill_sign_exists">후크가 이미 추가되었습니다.</string>
+	<string name="monochrome">단색화</string>
 	<string name="go_back">상위 디렉터리로 돌아가기</string>
 	<string name="sort">정렬 방법</string>
 	<string name="sorting">정렬</string>
@@ -141,7 +143,6 @@
 	<string name="types_count">유형 수</string>
 	<string name="protos_count">속성 수</string>
 	<string name="mime_type">마임 유형</string>
-	<string name="monochrome">단색화</string>
 	<string name="pngquant">PngQuant (이미지 압축)</string>
 	<string name="mark_file">파일 표시</string>
 	<string name="create_logcat">LogCat 파일 생성</string>
@@ -500,7 +501,7 @@
 	<string name="open_apk">APK 파일 열기</string>
 	<string name="open_apk_summary">다른 앱으로 APK 파일을 엽니다.</string>
 	<string name="imgs_backup">원본 이미지 저장</string>
-	<string name="imgs_backup_summary">다음 기능으로 처리할때 원본 이미지 저장 : \"%1$s\", \"%2$s\", \"%3$s\"</string>
+	<string name="imgs_backup_summary">다음 기능으로 처리할때 원본 이미지 저장 : \"%1$s\", \"%2$s\", \"%3$s\", \"%4$s\"</string>
 	<string name="key_type">키 유형:</string>
 	<string name="key_path">키 경로:</string>
 	<string name="cert_path">인증서 경로:</string>

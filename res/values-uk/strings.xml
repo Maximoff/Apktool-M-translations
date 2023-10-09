@@ -507,7 +507,7 @@
     <string name="open_apk">Відкривати файли apk</string>
     <string name="open_apk_summary">Відкривати в програмі файли apk з інших додатків</string>
     <string name="imgs_backup">Зберігати оригінал зображення</string>
-    <string name="imgs_backup_summary">Зберігати оригінал зображення під час опрацювання функціями \"%1$s\", \"%2$s\" та \"%3$s\"</string>
+    <string name="imgs_backup_summary">Зберігати оригінал зображення під час опрацювання функціями \"%1$s\", \"%2$s\", \"%3$s\" та \"%4$s\"</string>
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Шлях до ключа:</string>
     <string name="cert_path">Шлях до сертифіката:</string>

@@ -209,8 +209,8 @@
 	<string name="time_spent">Time spent: %s</string>
 	<string name="owner">Owner</string>
 	<string name="group">Group</string>
-	<string name="enc_res">Encrypt resources</string>
-	<string name="enc_success">The resources are encrypted, the file is saved as \"%s\"</string>
+	<string name="enc_res">Obfuscate resources</string>
+	<string name="enc_success">Resources are obfuscated, the file is saved as \"%s\"</string>
 	<string name="bookmarks">Bookmarks</string>
 	<string name="bookmark_add">Add to bookmarks</string>
 	<string name="bookmark_remove">Remove from bookmarks</string>
@@ -529,7 +529,7 @@
     <string name="open_apk">Open apk files</string>
     <string name="open_apk_summary">Open apk files from other applications in the program</string>
     <string name="imgs_backup">Save the original image</string>
-    <string name="imgs_backup_summary">Save the original image when processing with the functions \"%1$s\", \"%2$s\" and \"%3$s\"</string>
+    <string name="imgs_backup_summary">Save the original image when processing with the functions \"%1$s\", \"%2$s\", \"%3$s\" and \"%4$s\"</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>
@@ -771,6 +771,7 @@
 	<string name="mtr_del_array">Delete array</string>
 	<string name="mtr_sure">Are you sure?</string>
 	<string name="mtr_trans_smali">Translate smali</string>
+    <string name="mtr_trans_xml">Translate xml</string>
 	<string name="mtr_no_trans">The string does not need to be translated!</string>
     <string name="mtr_first_notrans">Not translated at first</string>
 	

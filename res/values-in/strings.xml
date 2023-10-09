@@ -522,7 +522,7 @@
     <string name="open_apk">Buka file apk</string>
     <string name="open_apk_summary">Buka file apk dari aplikasi lain dalam program</string>
 	<string name="imgs_backup">Simpan gambar asli</string>
-	<string name="imgs_backup_summary">Simpan gambar asli ketika memproses dengan fungsi \"%1$s\", \"%2$s\" dan \"%3$s\"</string>
+	<string name="imgs_backup_summary">Simpan gambar asli ketika memproses dengan fungsi \"%1$s\", \"%2$s\", \"%3$s\" dan \"%4$s\"</string>
     
     <string name="key_type">Jenis Kunci:</string>
     <string name="key_path">Jenis Jalur:</string>
