@@ -270,6 +270,8 @@
     <string name="delete">Delete</string>
 	<string name="send">Send</string>
 	<string name="complete">Complete</string>
+    <string name="complete_msg">Completed, original(s) saved in \"%s\"</string>
+    <string name="complete_msg2">Completed, file(s) saved to \"%s\"</string>
 	<string name="success">Success</string>
 	<string name="successf">Success: %s</string>
 	<string name="success_of">Successful %1$d out of %2$d!</string>

@@ -260,6 +260,8 @@
     <string name="delete">Удалить</string>
 	<string name="send">Отправить</string>
 	<string name="complete">Завершено</string>
+    <string name="complete_msg">Завершено, оригинал(ы) сохранены в \"%s\"</string>
+    <string name="complete_msg2">Завершено, файл(ы) сохранены в \"%s\"</string>
 	<string name="success">Успешно</string>
 	<string name="successf">Успешно: %s</string>
 	<string name="success_of">Успешно %1$d из %2$d!</string>
