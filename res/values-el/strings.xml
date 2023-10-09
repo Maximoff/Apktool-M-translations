@@ -444,20 +444,21 @@
     <string name="mtr_create">Δημιουργία</string>
     <string name="mtr_create_dict">Δημιουργία λεξικού</string>
     <string name="mtr_del_array">Διαγραφή πίνακα</string>
-    <string name="mtr_fix_tr">Σωστή μετάφραση</string>
+    <string name="mtr_fix_tr">Ακριβής μετάφραση</string>
     <string name="mtr_google">Google</string>
     <string name="mtr_google_web">Google Web</string>
-    <string name="mtr_hide_trans">Απόκρυψη μεταφρασμένου</string>
-    <string name="mtr_info">Εάν ο πόρος συμβολοσειράς υπάρχει ήδη, θα αντικατασταθεί. Εάν δεν υπάρχει τέτοιος κατάλογος, θα δημιουργηθεί. Το όνομα του καταλόγου πρέπει να ξεκινά με \"τιμές\".</string>
+    <string name="mtr_hide_trans">Απόκρυψη μεταφρασμένων</string>
+    <string name="mtr_info">Εάν ο πόρος συμβολοσειράς υπάρχει ήδη, θα αντικατασταθεί. Εάν δεν υπάρχει τέτοιος κατάλογος, θα δημιουργηθεί. Το όνομα του καταλόγου πρέπει να ξεκινά με \"values\".</string>
     <string name="mtr_invalid_res">μη έγκυρη απάντηση διακομιστή</string>
     <string name="mtr_line_num">Αριθμοί γραμμών</string>
     <string name="mtr_net_err">σφάλμα δικτύου</string>
     <string name="mtr_no_trans">Η συμβολοσειρά δεν χρειάζεται να μεταφραστεί!</string>
     <string name="mtr_not_work">ο μεταφραστής %s δεν λειτουργεί προσωρινά!</string>
-    <string name="mtr_old_layout">Παλιά διάταξη</string>
+    <string name="mtr_old_layout">Παλαιά διάταξη</string>
     <string name="mtr_only_tr">Αποθήκευση μόνο μεταφρασμένων συμβολοσειρών</string>
-    <string name="mtr_properties">"Εργο: %1$s
-Συνολικές γλώσσες: %2$s
+    <string name="mtr_properties">"Εργασία: %1$s
+
+Σύνολο τοπικής: %2$s
 Τρέχουσα γλώσσα: %3$s
 Μέγεθος: %4$s
 Σύνολο συμβ/σειρών: %5$s
@@ -472,7 +473,7 @@
     <string name="mtr_sure_continue">Η μετάφραση θα χαθεί, θέλετε να συνεχίσετε;</string>
     <string name="mtr_tlang">Γλώσσα-στόχος</string>
     <string name="mtr_trans_smali">Μετάφραση smali</string>
-    <string name="mtr_translating">Μετάφραση: %1$d εκτός %2$d...</string>
+    <string name="mtr_translating">Μετάφραση: %1$d από %2$d...</string>
     <string name="mtr_unformatted">μη μορφοποιημένη συμβολοσειρά</string>
     <string name="mtr_yandex">Yandex</string>
     <string name="mtranslation">Μετάφραση</string>
@@ -529,7 +530,7 @@
     <string name="path_app">Διαδρομή</string>
     <string name="pause">Παύση</string>
     <string name="perm_description">Περιγραφές για άδειες</string>
-    <string name="perm_description_summary">Προσθέστε περιγραφές για δικαιώματα στο AndroidManifest.xml (εάν υπάρχουν)</string>
+    <string name="perm_description_summary">Προσθέστε περιγραφές για άδειες στο AndroidManifest.xml (εάν υπάρχουν)</string>
     <string name="permissions">Άδειες</string>
     <string name="pk8">pk8+x509.pem</string>
     <string name="pkcs12">Keystore (PKCS12)</string>
@@ -561,7 +562,7 @@
 {EXT} - αρχική επέκταση αρχείου.
 {DATE} - ημερομηνία σε %1$s μορφή.
 {TIME} - ώρα σε %2$s μορφή.
-{0} - αριθμός ξεκινά από το 0."</string>
+{0} - αριθμός αρχίζει από 0."</string>
     <string name="repeat">Επανάληψη</string>
     <string name="replace">Αντικατάσταση</string>
     <string name="replace_adaptive">αντικατάσταση προσαρμοσμένου εικονίδιου</string>
