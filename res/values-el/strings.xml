@@ -205,8 +205,8 @@
     <string name="editor_xml_format">Μορφοποίηση XML</string>
     <string name="editor_xml_format_summary">Επιλογή μορφοποίησης XML για τη στοίχιση κώδικα</string>
     <string name="empty">Κενό</string>
-    <string name="enc_res">Κρυπτογράφηση πόρων</string>
-    <string name="enc_success">Οι πόροι είναι κρυπτογραφημένοι, το αρχείο αποθηκεύεται ως \"%s\"</string>
+    <string name="enc_res">Ασαφείς πόροι</string>
+    <string name="enc_success">Οι πόροι είναι ασαφείς, το αρχείο αποθηκεύεται ως \"%s\"</string>
     <string name="encoding">Κωδικοποίηση</string>
     <string name="encript_notice">Μετά την κρυπτογράφηση των πόρων, η εφαρμογή ενδέχεται να μην λειτουργεί εν μέρει ή εντελώς!</string>
     <string name="enter_man">Εσαγωγή χειροκίνητα</string>
@@ -376,11 +376,12 @@
     <string name="mcheck_update_summary">Ελεγχος ενημέρωσης τώρα</string>
     <string name="mcleaning">Καθαρισμός αρχείων σε \"%s\"</string>
     <string name="mcleaning_manifest">Καθαρισμός \"AndroidManifest.xml\"</string>
-    <string name="mcolor_properties">"Εργο: %1$s
+    <string name="mcolor_properties">"Εργασία: %1$s
+
 Τρέχων διαδρομή: %2$s
 Μέγεθος: %3$s
 Σύνολο χρωμάτων: %4$s
-Επεξεργασμένα χρώματα: %5$s"</string>
+Επεξεργ/να χρώματα: %5$s"</string>
     <string name="mcompress">Συμπίεση</string>
     <string name="mcompression">Συμπίεση</string>
     <string name="mdebug_rm">αφαίρεση \"android:debuggable\"</string>
@@ -473,6 +474,7 @@
     <string name="mtr_sure_continue">Η μετάφραση θα χαθεί, θέλετε να συνεχίσετε;</string>
     <string name="mtr_tlang">Γλώσσα-στόχος</string>
     <string name="mtr_trans_smali">Μετάφραση smali</string>
+    <string name="mtr_trans_xml">Μετάφραση xml</string>
     <string name="mtr_translating">Μετάφραση: %1$d από %2$d...</string>
     <string name="mtr_unformatted">μη μορφοποιημένη συμβολοσειρά</string>
     <string name="mtr_yandex">Yandex</string>
