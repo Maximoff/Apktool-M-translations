@@ -192,8 +192,8 @@
     <string name="time_spent">Використано часу: %s</string>
     <string name="owner">Власник</string>
     <string name="group">Група</string>
-    <string name="enc_res">Зашифрувати ресурси</string>
-    <string name="enc_success">Ресурси зашифровано, файл збережено як \"%s\"</string>
+    <string name="enc_res">Обфускувати ресурси</string>
+    <string name="enc_success">Ресурси обфусковано, файл збережено як \"%s\"</string>
     <string name="bookmarks">Закладки</string>
     <string name="bookmark_add">Додати в закладки</string>
     <string name="bookmark_remove">Вилучити з закладок</string>
@@ -733,6 +733,7 @@
     <string name="mtr_del_array">Видалити масив</string>
     <string name="mtr_sure">Ви впевнені?</string>
     <string name="mtr_trans_smali">Переклад smali</string>
+    <string name="mtr_trans_xml">Переклад xml</string>
     <string name="mtr_no_trans">Рядок не потребує перекладу!</string>
     <string name="mtr_first_notrans">Спочатку не перекладені</string>
     <string name="attention">Увага!</string>
