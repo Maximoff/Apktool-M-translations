@@ -5,12 +5,12 @@
     <string name="click_once_more2">Klik sekali lagi untuk menutup</string>
     <string name="all_files_saved">Semua file tersimpan!</string>
     <string name="storage_error">Berikan akses aplikasi ke penyimpanan!</string>
-    
+
     <string name="jks">Keystore(JKS)</string>
     <string name="pkcs12">Keystore(PKCS12)</string>
     <string name="bks">Keystore(BKS)</string>
     <string name="pk8">pk8+x509.pem</string>
-    
+
     <string name="base64">Base64: %s</string>
     <string name="base64_sign">Base64 dari tanda tangan: %s</string>
     <string name="base64_cert">Base64 dari sertifikat: %s</string>
@@ -25,11 +25,11 @@
     <string name="app_is_killed">Sistem menghentikan proses aplikasi di latar belakang! Tambahkan aplikasi ke pengecualian pengoptimal sistem! Untuk informasi lebih lanjut, kunjungi https://dontkillmyapp.com</string>
     <string name="editor_state_str">L:%1$d[%2$d], C:%3$d[%4$d], %5$s</string>
     <string name="editor_state_str2">L:%1$d[%2$d], C:%3$d[%4$d], S:%5$d[%6$d-%7$d], %8$s</string>
-    
+
     <string name="close_cur">Tutup</string>
     <string name="close_others">Tutup lainnya</string>
     <string name="close_all">Tutup semua</string>
-    
+
     <string name="open_files">Buka file</string>
     <string name="close_files">Tutup file</string>
     <string name="list_files">Daftar file yang terbuka</string>
@@ -77,9 +77,9 @@
     <string name="checksums_original">Mengganti checksum dari yang asli</string>
     <string name="clear">Hapus</string>
     <string name="no_data">tidak ada data yang tersedia</string>
-	<string name="monochrome">Monochrome</string>
-	<string name="smali_help">Bantuan Smali</string>
-    
+    <string name="monochrome">Monochrome</string>
+    <string name="smali_help">Bantuan Smali</string>
+
     <string name="go_back">Kembali ke folder induk</string>
     <string name="sort">Urutkan metode</string>
     <string name="sorting">Menyusun</string>
@@ -174,7 +174,7 @@
     <string name="encript_notice">Setelah mengenkripsi sumber, aplikasi mungkin akan gagal berfungsi sebagian atau seluruhnya!</string>
     <string name="res_added">Menambahkan sumber \"%s\"</string>
     <string name="res_removed">Menghapus sumber \"%s\"</string>
-    
+
     <string name="files">File</string>
     <string name="apps">Aplikasi</string>
     <string name="errors">Kesalahan</string>
@@ -214,7 +214,7 @@
     <string name="option_enabled">Opsi \"%s\" diaktifkan</string>
     <string name="no_media">buat file \".nomedia\"</string>
     <string name="compare_sign">Bandingkan tanda tangan</string>
-    
+
     <string name="text">%1$s</string>
     <string name="exit">Keluar</string>
     <string name="save">Simpan</string>
@@ -262,7 +262,9 @@
     <string name="rename">Ganti nama</string> 
     <string name="delete">Hapus</string>
     <string name="send">Kirim</string>
-    <string name="complete">Lengkap</string>
+    <string name="complete">Selesai</string>
+    <string name="complete_msg">Selesai, dokumen asli disimpan ke \"%s\"</string>
+    <string name="complete_msg2">Selesai, file disimpan ke \"%s\"</string>
     <string name="success">Berhasil</string>
     <string name="successf">Berhasil: %s</string>
     <string name="success_of">Berhasil %1$d dari %2$d!</string>
@@ -310,7 +312,7 @@
     <string name="shortcut_exists">Pintasan sudah ada</string>
     <string name="lib_set">Set perpustakaan</string>
     <string name="act_launch">Aktivitas untuk diluncurkan</string>
-    
+
     <string name="verify_run_title">Memverifikasi tanda tangan</string>
     <string name="cert_no">SERTIFIKAT №%1$d%2$s</string>
     <string name="cert_type">Jenis Sertifikat: %s</string>
@@ -339,7 +341,7 @@
     <string name="err_mismatched_certs">Paket memiliki sertifikat yang tidak cocok pada entri \"%s\", abaikan!</string>
     <string name="err_failed_read">Gagal membaca \"%1$s\" di \"%2$s\"</string>
     <string name="err_encex">Pengecualian pengkodean: %s</string>
-    
+
     <string name="light_theme">Tema Terang</string>
     <string name="light_theme_summary">Pilih antara tema terang atau tema gelap untuk antarmuka pengguna.</string>
     <string name="output_directory">Folder keluaran</string>
@@ -366,7 +368,7 @@
     <string name="compress_level">Tingkat kompresi</string>
     <string name="file_filter">Filter file</string>
     <string name="file_filter_help">Gunakan templat jalur dan/atau nama file, misalnya: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Jangan gunakan ekspresi biasa.</string>
-    
+
     <string name="backup">Cadangkan</string>
     <string name="restore">Pulihkan</string>
     <string name="application">Aplikasi</string>
@@ -521,16 +523,16 @@
     <string name="keep_modified_time_summary">Mencoba menjaga waktu modifikasi file dan folder jika memungkinkan</string>
     <string name="open_apk">Buka file apk</string>
     <string name="open_apk_summary">Buka file apk dari aplikasi lain dalam program</string>
-	<string name="imgs_backup">Simpan gambar asli</string>
-	<string name="imgs_backup_summary">Simpan gambar asli ketika memproses dengan fungsi \"%1$s\", \"%2$s\", \"%3$s\" dan \"%4$s\"</string>
-    
+    <string name="imgs_backup">Simpan gambar asli</string>
+    <string name="imgs_backup_summary">Simpan gambar asli ketika memproses dengan fungsi \"%1$s\", \"%2$s\" dan \"%3$s\"</string>
+
     <string name="key_type">Jenis Kunci:</string>
     <string name="key_path">Jenis Jalur:</string>
     <string name="cert_path">Jalur Sertifikat:</string>
     <string name="key_alias">Nama Samaran:</string>
     <string name="store_pass">Kata Sandi Keystore:</string>
     <string name="key_pass">Kata Sandi Kunci Pribadi:</string>
-    
+
     <string name="verify_cert_count">Jumlah tanda tangan: %d.</string>
     <string name="verify_success">Verifikasi berhasil.</string>
     <string name="verify_fail">Verifikasi gagal.</string>
@@ -551,14 +553,14 @@
     <string name="analysis_all_smali">Analisis semua smali</string>
     <string name="analysis_all_smali_summary">Analisis Semua file smali saat meluncurkan dan mengatur proyek utama.</string>
     <string name="create_and_use">Buat dan gunakan</string>
-    
+
     <string name="please_update_your_android">Perbarui sistem Android Anda ke versi 4.3 atau yang lebih baru!</string>
-    
+
     <string name="mselect">Pilih</string>
     <string name="mselect_all">Pilih semua</string>
     <string name="mselect_inv">Pembalikan</string>
     <string name="mselect_to">Pilih untuk ini</string>
-    
+
     <string name="mantisplit">Anti-terpisah</string>
     <string name="mmerge">Gabungkan</string>
     <string name="mprepare">Persiapan...</string>
@@ -570,15 +572,15 @@
     <string name="mprocessed">File yang diproses: %d</string>
     <string name="mcleaning">Membersihkan file dalam \"%s\"</string>
     <string name="mcleaning_manifest">Membersihkan \"AndroidManifest.xml\"</string>
-    
+
     <string name="mextract_zip">Ekstrak di sini</string>
     <string name="mextract_zip_to">Ekstrak ke \"%s\"</string>
     <string name="mplease_wait">Silakan tunggu...</string>
-    
+
     <string name="split">Pisahkan</string>
     <string name="mcompress">Kompres</string>
     <string name="mcompression">Kompresi</string>
-    
+
     <string name="mupdate_pref">Pembaruan program</string>
     <string name="mupdate_pref_summary">Perbarui pengaturan</string>
     <string name="mauto_update">Periksa pembaruan</string>
@@ -647,7 +649,7 @@
     <string name="aicon_size_summary">Ukuran ikon adaptif atau vector untuk pengeditan cepat</string>
     <string name="github">File untuk diterjemahkan</string>
     <string name="github_summary">Sumber untuk menerjemahkan program di GitHub</string>
-    
+
     <string name="search_call">Temukan panggilan</string>
     <string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
     <string name="search_call_put">Temukan panggilan yang dimasukkan</string>
@@ -689,7 +691,7 @@
     <string name="reset_files">Atur ulang file</string>
     <string name="reset_settings">Atur ulang pengaturan</string>
     <string name="reset_remind">Atur ulang pengingat</string>
-    
+
     <string name="mapp_quickedit">Edit cepat</string>
     <string name="replace_adaptive">ganti ikon adaptif</string>
     <string name="mapp_icon">Ikon aplikasi</string>
@@ -766,7 +768,7 @@
     <string name="mtr_trans_smali">Terjemahkan smali</string>
     <string name="mtr_no_trans">String tidak perlu diterjemahkan!</string>
     <string name="mtr_first_notrans">Tidak diterjemahkan pada awalnya</string>
-    
+
     <string name="attention">Perhatian!</string>
     <string name="repeat">Ulangi</string>
     <string name="down_for">Unduh untuk %s</string>
@@ -790,11 +792,11 @@
     <string name="heap_info">Memori yang digunakan: %1$dMB.\nMemori yang tersedia: %2$dMB.\nUkuran tumpukan: %3$dMB.</string>
     <string name="scoped_storage">Penyimpanan yang Dicakup</string>
     <string name="restore_set_dialog">Ingin memulihkan pengaturan Anda?  Pengaturan saat ini akan ditimpa!</string>
-    
+
     <string name="scoped_storage_title">Perubahan Android 11 R</string>
     <string name="scoped_storage_msg">Android 11 memperkenalkan cara pengelolaan file baru yang disebut "Penyimpanan Cakupan". Anda harus memberikan izin khusus!</string>
     <string name="rename_help">{NAME} - nama file asli tanpa ekstensi.\n{EXT} - ekstensi file asli.\n{DATE} - tanggal dalam format "%1$s".\n{TIME} - waktu dalam format "%2$s".\n{0} - angka yang dimulai dari "0".</string>
-    
+
     <string name="license_agreement">Perjanjian lisensi</string>
     <string name="license_accept">Terima</string>
     <string name="license_refuse">Jangan terima</string>

@@ -731,6 +731,7 @@
 	<string name="mtr_del_array">배열 삭제</string>
 	<string name="mtr_sure">확실합니까?</string>
 	<string name="mtr_trans_smali">smali 번역</string>
+	<string name="mtr_trans_xml">xml 번역</string>
 	<string name="mtr_no_trans">문자열은 번역할 필요가 없습니다!</string>
 	<string name="mtr_first_notrans">처음에는 번역되지 않음</string>
 	<string name="attention">주의!</string>
