@@ -532,6 +532,10 @@
     <string name="open_apk_summary">Open apk files from other applications in the program</string>
     <string name="imgs_backup">Save the original image</string>
     <string name="imgs_backup_summary">Save the original image when processing with the functions \"%1$s\", \"%2$s\", \"%3$s\" and \"%4$s\"</string>
+    <string name="drawer_width">Drawer width</string>
+    <string name="drawer_width_summary">Drawer width in percentage</string>
+    <string name="double_exit">Double tap to exit</string>
+    <string name="double_exit_summary">Press \"Back\" twice to exit the application</string>
 
     <string name="key_type">Key Type:</string>
     <string name="key_path">Key Path:</string>

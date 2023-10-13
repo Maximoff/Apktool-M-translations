@@ -522,6 +522,10 @@
     <string name="open_apk_summary">Открывать в программе файлы apk из других приложений</string>
     <string name="imgs_backup">Сохранять оригинал изображения</string>
     <string name="imgs_backup_summary">Сохранять оригинал изображения при обработке функциями \"%1$s\", \"%2$s\", \"%3$s\" и \"%4$s\"</string>
+    <string name="drawer_width">Ширина файлов</string>
+    <string name="drawer_width_summary">Ширина файлов в процентах</string>
+    <string name="double_exit">Двойное нажатие для выхода</string>
+    <string name="double_exit_summary">Дважды нажать \"Назад\" для выхода из приложения</string>
 
     <string name="key_type">Тип ключа:</string>
     <string name="key_path">Путь к ключу:</string>
