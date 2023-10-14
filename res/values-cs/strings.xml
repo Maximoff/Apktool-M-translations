@@ -1,39 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="app_name">Apktool M</string>
-    <string name="click_once_more">Pro opuštění stiskněte ještě jednou!</string>
-    <string name="all_files_saved">Všechny soubory byly uloženy!</string>
+	<string name="app_name">Apktool M</string>
+	<string name="click_once_more">Pro opuštění stiskněte ještě jednou!</string>
+	<string name="all_files_saved">Všechny soubory byly uloženy!</string>
 	<string name="storage_error">Povolte aplikaci přístup k úložišti!</string>
-
-    <string name="jks">Keystore(JKS)</string>
-    <string name="pkcs12">Keystore(PKCS12)</string>
-    <string name="bks">Keystore(BKS)</string>
-    <string name="pk8">pk8+x509.pem</string>
-
-    <string name="yes">Ano</string>
-    <string name="no">Ne</string>
-    <string name="ok">Ok</string>
-    <string name="cancel">Zrušit</string>
+	<string name="jks">Keystore(JKS)</string>
+	<string name="pkcs12">Keystore(PKCS12)</string>
+	<string name="bks">Keystore(BKS)</string>
+	<string name="pk8">pk8+x509.pem</string>
+	<string name="yes">Ano</string>
+	<string name="no">Ne</string>
+	<string name="ok">Ok</string>
+	<string name="cancel">Zrušit</string>
 	<string name="go_to">Jít do</string>
 	<string name="clear_history">Vymazat historii vyhledávání?</string>
-
-    <string name="close_cur">Zavřít</string>
-    <string name="close_others">Zavřít ostatní</string>
-    <string name="close_all">Zavřít vše</string>
-
-    <string name="go_back">Zpět na nadřazený adresář</string>
-    <string name="sort">Metoda třídění</string>
-    <string name="new_file">Nový soubor</string>
-    <string name="new_dir">Nový adresář</string>
+	<string name="close_cur">Zavřít</string>
+	<string name="close_others">Zavřít ostatní</string>
+	<string name="close_all">Zavřít vše</string>
+	<string name="go_back">Zpět na nadřazený adresář</string>
+	<string name="sort">Metoda třídění</string>
+	<string name="new_file">Nový soubor</string>
+	<string name="new_dir">Nový adresář</string>
 	<string name="main_project">Nastavit jako hlavní projekt</string>
 	<string name="smali_snalysis">Smali analýza</string>
 	<string name="smali_snalysis_desc">Kanál pro analýzu Smali</string>
 	<string name="failed_open">Nelze otevřít \"%s\"!</string>
 	<string name="filesc">soubory</string>
-    <string name="foldersc">dirs</string>
+	<string name="foldersc">dirs</string>
 	<string name="total_filesc">Celkem souborů</string>
-    <string name="total_foldersc">Celkem dirs</string>
+	<string name="total_foldersc">Celkem dirs</string>
 	<string name="properties">Vlastnosti</string>
 	<string name="modified">Poslední modifikace</string>
 	<string name="size_label">Velikost</string>
@@ -47,7 +42,6 @@
 	<string name="not_match">neodpovídá</string>
 	<string name="name">Název</string>
 	<string name="paste">Vložit</string>
-
 	<string name="files">Soubory</string>
 	<string name="apps">Aplikace</string>
 	<string name="errors">Chyby</string>
@@ -69,44 +63,43 @@
 	<string name="launch_fail">Spuštění selhalo!</string>
 	<string name="install_success">Úspěch instalace! Spustit tuto aplikaci?</string>
 	<string name="install_fail">Instalace selhala! Kód chyby: %d</string>
-
-    <string name="text">%1$s</string>
-    <string name="exit">Ukončit</string>
-    <string name="save">Uložit</string>
-    <string name="undo">Vrátit</string>
-    <string name="redo">Předělat</string>
+	<string name="text">%1$s</string>
+	<string name="exit">Ukončit</string>
+	<string name="save">Uložit</string>
+	<string name="undo">Vrátit</string>
+	<string name="redo">Předělat</string>
 	<string name="open">Otevřít</string>
 	<string name="open_in">Otevřít v...</string>
 	<string name="open_in_editor">Otevřít v editoru</string>
 	<string name="view_content">Zobrazit obsah</string>
-    <string name="edit_mode">Režim úpravy</string>
-    <string name="scan_mode">Režim navigace</string>
-    <string name="translate_java">Přeložit do jazyka Java</string>
-    <string name="return_smali">Vraťte se do Smali</string>
-    <string name="format">Srovnat kód</string>
+	<string name="edit_mode">Režim úpravy</string>
+	<string name="scan_mode">Režim navigace</string>
+	<string name="translate_java">Přeložit do jazyka Java</string>
+	<string name="return_smali">Vraťte se do Smali</string>
+	<string name="format">Srovnat kód</string>
 	<string name="find_next">Další</string>
 	<string name="find_prev">Předchozí</string>
 	<string name="find_all">Všechno</string>
-    <string name="find">Vyhledávání</string>
+	<string name="find">Vyhledávání</string>
 	<string name="replace">Nahradit</string>
-    <string name="go_to_line">Přejít na řádek</string>
+	<string name="go_to_line">Přejít na řádek</string>
 	<string name="save_file">Uložit soubor</string>
 	<string name="save_file_msg">Některé soubory neuloženy, uložit je?</string>
-    <string name="settings">Nastavení</string>
+	<string name="settings">Nastavení</string>
 	<string name="decompile">Dekompilovat</string>
-    <string name="decompile_res">Dekompilovat resources</string>
-    <string name="decompile_dex">Dekompilovat classes*.dex</string>
-    <string name="install">Nainstalovat</string>
+	<string name="decompile_res">Dekompilovat resources</string>
+	<string name="decompile_dex">Dekompilovat classes*.dex</string>
+	<string name="install">Nainstalovat</string>
 	<string name="install_sign">Podepsat a nainstalovat</string>
 	<string name="install_anyway">Nainstalujte přesto</string>
 	<string name="split_install">Instalace...</string>
 	<string name="split_install_toast">Instalace pokračuje na pozadí</string>
-    <string name="verify">Ověřit podpis</string>
-    <string name="translate">Přeložit</string>
-    <string name="import_framework">Importovat jako framework</string>
-    <string name="sign">Podepsat</string> 
-    <string name="rename">Přejmenovat</string> 
-    <string name="delete">Odstranit</string>
+	<string name="verify">Ověřit podpis</string>
+	<string name="translate">Přeložit</string>
+	<string name="import_framework">Importovat jako framework</string>
+	<string name="sign">Podepsat</string>
+	<string name="rename">Přejmenovat</string>
+	<string name="delete">Odstranit</string>
 	<string name="send">Poslat</string>
 	<string name="complete">Kompletní</string>
 	<string name="success">Úspěch</string>
@@ -118,23 +111,22 @@
 	<string name="copy_here">Kopírovat \"%s\" sem?</string>
 	<string name="move_here">Přesunout \"%s\" sem?</string>
 	<string name="file_not_found">Soubor \"%s\" nebyl nalezen!</string>
-    <string name="copy_path">Kopírovat cestu</string> 
-    <string name="build_copy_file">Kopírování \"%1$s\"...</string>
+	<string name="copy_path">Kopírovat cestu</string>
+	<string name="build_copy_file">Kopírování \"%1$s\"...</string>
 	<string name="jaxp_not_support">K ověření XML vyžadována podpora JAXP 1.5</string>
 	<string name="report_error">Nahlašte tuto aplikaci vývojářům Apktool pro opravu: https://github.com/iBotPeaches/Apktool/issues/1728</string>
 	<string name="decoding_shared_library">Dekódování Sdílené Knihovny \(%1$s\), pkgId: %2$d</string>
 	<string name="unknown_skip_bytes">Detekována neznámá data. Přeskakování: %d byte\(s\)</string>
 	<string name="using_apktool">Using Apktool M %1$s on %2$s</string>
-    <string name="build_run_title">Kompilace...</string>
-    <string name="sign_done">Podpis je dokončen a výstupní soubor je ‘%1$s’.</string>
-    <string name="verify_v1_success">V1 ověření podpisu uspělo.</string>
-    <string name="verify_v1_fail">V1 ověření podpisu selhalo.</string>
-    <string name="verify_v2_success">V2 ověření podpisu uspělo.</string>
-    <string name="verify_v2_fail">V2 ověření podpisu selhalo.</string>
-    <string name="decode_run_title">Dekompilace...</string>
-    <string name="sign_run_title">Podepisování...</string>
-	
-    <string name="verify_run_title">Ověřování podpisu...</string>
+	<string name="build_run_title">Kompilace...</string>
+	<string name="sign_done">Podpis je dokončen a výstupní soubor je ‘%1$s’.</string>
+	<string name="verify_v1_success">V1 ověření podpisu uspělo.</string>
+	<string name="verify_v1_fail">V1 ověření podpisu selhalo.</string>
+	<string name="verify_v2_success">V2 ověření podpisu uspělo.</string>
+	<string name="verify_v2_fail">V2 ověření podpisu selhalo.</string>
+	<string name="decode_run_title">Dekompilace...</string>
+	<string name="sign_run_title">Podepisování...</string>
+	<string name="verify_run_title">Ověřování podpisu...</string>
 	<string name="cert_no">CERTIFICATE №%d</string>
 	<string name="cert_type">Typ Certifikátu: %s</string>
 	<string name="cert_version">Certificate Version: %d</string>
@@ -161,7 +153,6 @@
 	<string name="err_mismatched_certs">Balíček má při vstupu neshodné certifikáty \"%s\", ignorování!</string>
 	<string name="err_failed_read">Nepodařilo se přečíst \"%1$s\" in \"%2$s\"</string>
 	<string name="err_encex">Výjimka kódování: %s</string>
-	
 	<string name="light_theme">Světlý motiv</string>
 	<string name="light_theme_summary">Vyberte si mezi světlým a tmavým motivem pro uživatelské rozhraní.</string>
 	<string name="output_directory">Výstupní adresář</string>
@@ -186,33 +177,32 @@
 	<string name="whole_words">Celá slova</string>
 	<string name="not_found">Nic nalezeno!</string>
 	<string name="compress_level">Kompresní úroveň</string>
-
-    <string name="application">Aplikace</string>
-    <string name="application_summary">Nakonfigurujte nastavení globální aplikace</string>
-    <string name="editor">Editor</string>
-    <string name="editor_summary">Nakonfigurujte editor</string>
-    <string name="signature">Podpis</string>
-    <string name="signature_summary">Konfigurace nastavení podpisu.</string>
-    <string name="build_and_decode">Stavět &amp; Dekódovat</string>
-    <string name="build_and_decode_summary">Nakonfigurovat Stavbu &amp; Dekódovat nastavení.</string>
-    <string name="font_size">Velikost písma editoru</string>
-    <string name="font_size_summary">Určení výchozí velikosti písma editoru.</string>
-    <string name="font_size_title">Editor velikosti písma:</string>
-    <string name="debug_mode">Nastavit apk jako laditelný</string>
-    <string name="debug_mode_summary">Nastaví android:debuggable na \"true\" v kompilovaném manifestu v APK</string>
-    <string name="verbose_mode">Podrobné</string>
-    <string name="verbose_mode_summary">Povolit podrobný režim</string>
-    <string name="copyOriginalFiles">Původní shoda</string>
-    <string name="copyOriginalFiles_summary">Původní podpis a manifest jsou zachovány.</string>
-    <string name="mBakdeb">Napsat informace o ladění</string>
-    <string name="mBakdeb_summary">Napište informace o ladění (.local, .param, .line atd.)</string>
+	<string name="application">Aplikace</string>
+	<string name="application_summary">Nakonfigurujte nastavení globální aplikace</string>
+	<string name="editor">Editor</string>
+	<string name="editor_summary">Nakonfigurujte editor</string>
+	<string name="signature">Podpis</string>
+	<string name="signature_summary">Konfigurace nastavení podpisu.</string>
+	<string name="build_and_decode">Stavět &amp; Dekódovat</string>
+	<string name="build_and_decode_summary">Nakonfigurovat Stavbu &amp; Dekódovat nastavení.</string>
+	<string name="font_size">Velikost písma editoru</string>
+	<string name="font_size_summary">Určení výchozí velikosti písma editoru.</string>
+	<string name="font_size_title">Editor velikosti písma:</string>
+	<string name="debug_mode">Nastavit apk jako laditelný</string>
+	<string name="debug_mode_summary">Nastaví android:debuggable na \"true\" v kompilovaném manifestu v APK</string>
+	<string name="verbose_mode">Podrobné</string>
+	<string name="verbose_mode_summary">Povolit podrobný režim</string>
+	<string name="copyOriginalFiles">Původní shoda</string>
+	<string name="copyOriginalFiles_summary">Původní podpis a manifest jsou zachovány.</string>
+	<string name="mBakdeb">Napsat informace o ladění</string>
+	<string name="mBakdeb_summary">Napište informace o ladění (.local, .param, .line atd.)</string>
 	<string name="default_signature_file">Výchozí podpis</string>
-    <string name="custom_signature_file">vlastní soubor podpisu</string>
-    <string name="custom_signature_file_summary">Použít vlastní soubor podpisu</string>
-    <string name="signature_file">Signature file</string>
+	<string name="custom_signature_file">vlastní soubor podpisu</string>
+	<string name="custom_signature_file_summary">Použít vlastní soubor podpisu</string>
+	<string name="signature_file">Signature file</string>
 	<string name="sel_signature_file">Výběr souboru podpisu</string>
-    <string name="signature_file_summary">The setting file (pk8 file or keystore file). If it is a pk8 file, will automatically generate an x509.pem file with the same name (for example, testkey.pk8 corresponds to testkey.x509.pem).</string>
-    <string name="signature_file_missing">Signature file \'%1$s\' not found, using default signature!</string>
+	<string name="signature_file_summary">The setting file (pk8 file or keystore file). If it is a pk8 file, will automatically generate an x509.pem file with the same name (for example, testkey.pk8 corresponds to testkey.x509.pem).</string>
+	<string name="signature_file_missing">Signature file \'%1$s\' not found, using default signature!</string>
 	<string name="load_signature_file_fail">Nelze načíst podpisový soubor \'%1$s\'.</string>
 	<string name="enter_password">Zadejte heslo:</string>
 	<string name="about">O aplikaci</string>
@@ -239,11 +229,11 @@
 	<string name="show_errors">Zobrazit chyby</string>
 	<string name="show_errors_summary">Zobrazit chyby projektu</string>
 	<string name="auto_save">Automatické ukládání</string>
-    <string name="auto_save_summary">Automatické ukládání textu v editoru</string>
-    <string name="auto_save_title">Automatické ukládání:</string>
+	<string name="auto_save_summary">Automatické ukládání textu v editoru</string>
+	<string name="auto_save_title">Automatické ukládání:</string>
 	<string name="app_fontsz">Velikost písma</string>
-    <string name="app_fontsz_summary">Velikost písma aplikace</string>
-    <string name="app_fontsz_title">Velikost písma:</string>
+	<string name="app_fontsz_summary">Velikost písma aplikace</string>
+	<string name="app_fontsz_title">Velikost písma:</string>
 	<string name="screen_on">Nevypínat obrazovku</string>
 	<string name="screen_on_summary">Udržet obrazovku vždy zapnutou</string>
 	<string name="editor_cs">Barevné schéma</string>
@@ -259,40 +249,35 @@
 	<string name="dont_work_aapt2">To nefunguje s aapt2</string>
 	<string name="drawer_fullscreen">Seznam souborů na celou obrazovku</string>
 	<string name="drawer_fullscreen_summary">Správce souborů bude zabírat celou obrazovku</string>
-
-    <string name="key_type">Typ Klíče:</string>
-    <string name="key_path">Cesta Klíče:</string>
-    <string name="cert_path">Cert Path:</string>
-    <string name="key_alias">Alias:</string>
-    <string name="store_pass">Keystore Password:</string>
-    <string name="key_pass">Private Key Password:</string>
-
-    <string name="verify_cert_count">Počet podpisů: %d.</string>
-    <string name="verify_success">Úspěšné ověření.</string>
-    <string name="verify_fail">Ověření se nezdařilo.</string>
-    <string name="verify_log_cert">%1$s Jedinečný rozlišující název: %2$s.</string>
-    <string name="verify_log_keySize">%1$s Velikost Klíče(v bitech): %2$s.</string>
-    <string name="verify_log_key_algorithm">%1$s Key algorithm: %2$s.</string>
-    <string name="verify_jar">JAR podpisovač %1$s: %2$s</string>
-    <string name="date">Vilidity Date:</string>
-    <string name="common_name">Běžný název:</string>
-    <string name="organization_unit">Organizační jednotka@</string>
-    <string name="organization_name">Název organizace:</string>
-    <string name="locality_name">Název lokality:</string>
-    <string name="state_name">Název státu:</string>
-    <string name="country">Stát@</string>
-    <string name="gen_key_title">Vytvořte soubor klíče</string>
-    <string name="gen_key_summary">Klepnutím vytvoříte soubor klíče.</string>
-    <string name="analysis_all_smali">Analýza všech smali</string>
-    <string name="analysis_all_smali_summary">Analýza všech souborů smali při spuštění a nastavení hlavního projektu.</string>
-    <string name="create_and_use">Vytvořit a použít</string>
-    
-    <string name="please_update_your_android">Aktualizujte svůj systém Android na 4.3 nebo novější</string>
-	
+	<string name="key_type">Typ Klíče:</string>
+	<string name="key_path">Cesta Klíče:</string>
+	<string name="cert_path">Cert Path:</string>
+	<string name="key_alias">Alias:</string>
+	<string name="store_pass">Keystore Password:</string>
+	<string name="key_pass">Private Key Password:</string>
+	<string name="verify_cert_count">Počet podpisů: %d.</string>
+	<string name="verify_success">Úspěšné ověření.</string>
+	<string name="verify_fail">Ověření se nezdařilo.</string>
+	<string name="verify_log_cert">%1$s Jedinečný rozlišující název: %2$s.</string>
+	<string name="verify_log_keySize">%1$s Velikost Klíče(v bitech): %2$s.</string>
+	<string name="verify_log_key_algorithm">%1$s Key algorithm: %2$s.</string>
+	<string name="verify_jar">JAR podpisovač %1$s: %2$s</string>
+	<string name="date">Vilidity Date:</string>
+	<string name="common_name">Běžný název:</string>
+	<string name="organization_unit">Organizační jednotka@</string>
+	<string name="organization_name">Název organizace:</string>
+	<string name="locality_name">Název lokality:</string>
+	<string name="state_name">Název státu:</string>
+	<string name="country">Stát@</string>
+	<string name="gen_key_title">Vytvořte soubor klíče</string>
+	<string name="gen_key_summary">Klepnutím vytvoříte soubor klíče.</string>
+	<string name="analysis_all_smali">Analýza všech smali</string>
+	<string name="analysis_all_smali_summary">Analýza všech souborů smali při spuštění a nastavení hlavního projektu.</string>
+	<string name="create_and_use">Vytvořit a použít</string>
+	<string name="please_update_your_android">Aktualizujte svůj systém Android na 4.3 nebo novější</string>
 	<string name="mselect">Vybrat</string>
 	<string name="mselect_all">Vybrat vše</string>
 	<string name="mselect_inv">Inversion</string>
-	
 	<string name="mantisplit">Antirozděl</string>
 	<string name="mmerge">Spojit</string>
 	<string name="mprepare">Příprava...</string>
@@ -302,15 +287,12 @@
 	<string name="mprocessed">Zpracované soubory: %d</string>
 	<string name="mcleaning">Čištění souborů v \"%s\"</string>
 	<string name="mcleaning_manifest">Čištění \"AndroidManifest.xml\"</string>
-	
 	<string name="mextract_zip">Extrahovat zde</string>
 	<string name="mextract_zip_to">Extrahovat do \"%s\"</string>
 	<string name="mplease_wait">Prosím, čekejte...</string>
-	
 	<string name="split">Split</string>
 	<string name="mcompress">Komprimovat</string>
 	<string name="mcompression">Komprese</string>
-	
 	<string name="mupdate_pref">Aktualizace programu</string>
 	<string name="mupdate_pref_summary">Aktualizace nastavení</string>
 	<string name="mauto_update">Vyhledat aktualizace</string>
@@ -331,7 +313,6 @@
 	<string name="mplugin_installed_summary">Klepnutím odeberete plugin</string>
 	<string name="mplugin_not_installed">UnApkm plugin není nainstalován</string>
 	<string name="mplugin_not_installed_summary">Klikněte pro stažení pluginu</string>
-	
 	<string name="search_files">Vyhledávání</string>
 	<string name="search_result">Výsledek hledání</string>
 	<string name="search_hint">Sem zadejte text</string>
@@ -344,7 +325,6 @@
 	<string name="search_sen2">Case sensitive</string>
 	<string name="minfo">Info</string>
 	<string name="search_info">Vyhledávání obsahu se provádí v souborech s následujícími příponami: %s.\nSupported multi-line search.</string>
-	
 	<string name="mapp_quickedit">Rychlé úpravy</string>
 	<string name="replace_adaptive">nahradit adaptivní ikonu</string>
 	<string name="mapp_icon">Ikona aplikace</string>
@@ -364,9 +344,7 @@
 	<string name="mzipalign">ZipAlign</string>
 	<string name="mshow_more_options">Více</string>
 	<string name="gplay">Google Play</string>
-	
 	<string name="attention">Upozornění!</string>
 	<string name="plugin_modif">UnApkm plugin je podepsán podpisem někoho jiného. Plugin byl asi modifikován. Je velmi doporučeno abyste odstranili ten plugin a stáhli původní soubor ze stránky vývojáře. Kliknutím na \"Nepřipomínat\" pokračujete používat ten plugin na svou zodpovědnost a risk!</string>
 	<string name="not_remind">Nepřipomínat</string>
-	
 </resources>

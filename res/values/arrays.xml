@@ -460,6 +460,18 @@
 		<item>Places a reference to a method handle in the vAA register. Present in Dex files since version 039.</item>
 		<item>Places a reference to the method prototype in the vAA register. Present in Dex files since version 039.</item>
 	</string-array>
+    <string-array name="jadx_sets">
+        <item>Fallback mode</item>
+        <item>Deobfuscation</item>
+        <item>Escape Unicode</item>
+        <item>Show inconsistent code</item>
+    </string-array>
+	<string-array name="jadx_sets_keys">
+        <item>jadx_fallback</item>
+        <item>jadx_deobfuscation</item>
+        <item>jadx_unicode</item>
+        <item>jadx_inconsistent</item>
+    </string-array>
 	<string-array name="copy_variants">
         <item>Rename</item>
 		<item>Rename files only</item>

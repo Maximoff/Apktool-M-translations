@@ -8,7 +8,6 @@
 	<string name="pkcs12">Keystore(PKCS12)</string>
 	<string name="bks">Keystore(BKS)</string>
 	<string name="pk8">pk8+x509.pem</string>
-	<string name="beta">β</string>
 	<string name="base64">Base64: %s</string>
 	<string name="yes">نعم</string>
 	<string name="no">لا</string>
@@ -436,8 +435,7 @@
 	<string name="minfo">معلومات</string>
 	<string name="mauto">Auto</string>
 	<string name="permissions">أذونات</string>
-	<string name="search_info">"يتم إجراء عمليات البحث عن المحتوى في الملفات التي لها الملحقات التالية: %s.
-البحث متعدد الأسطر المعتمد."</string>
+	<string name="search_info">يتم إجراء عمليات البحث عن المحتوى في الملفات التي لها الملحقات التالية: %s.\nالبحث متعدد الأسطر المعتمد.</string>
 	<string name="preview">معاينة</string>
 	<string name="previewf">معاينة \"%s\"</string>
 	<string name="completed_success">إكمال العملية بنجاح!</string>
@@ -450,11 +448,7 @@
 	<string name="colors_editor">محرر الألوان</string>
 	<string name="invert_color">عكس اللون</string>
 	<string name="copy_value">نسخ القيمة</string>
-	<string name="mcolor_properties">"المشروع:%1$s
-الدليل الحالي:%2$s
-الحجم:%3$s
-إجمالي الألوان:%4$s
-الألوان المعدلة:%5$s"</string>
+	<string name="mcolor_properties">المشروع:%1$s\nالدليل الحالي:%2$s\nالحجم:%3$s\nإجمالي الألوان:%4$s\nالألوان المعدلة:%5$s</string>
 	<string name="enter_man">إدخال يدوياً</string>
 	<string name="show_orig">إظهار النسخة الأصلية</string>
 	<string name="overcompress">ضغط جميع الملفات</string>
@@ -511,12 +505,7 @@
 	<string name="mtr_invalid_res">استجابة الخادم غير صالح</string>
 	<string name="mtr_translating">الترجمة: %1$d من %2$d...</string>
 	<string name="mtr_success_count">تم تحويل سلاسل %d بنجاح</string>
-	<string name="mtr_properties">"المشروع: %1$s
-إجمالي عمليات الترجمة: %2$s
-الترجمة الحالية: %3$s
-الحجم: %4$s
-إجمالي السلاسل: %5$s
-السلاسل المترجمة: %6$s"</string>
+	<string name="mtr_properties">المشروع: %1$s\nإجمالي عمليات الترجمة: %2$s\nالترجمة الحالية: %3$s\nالحجم: %4$s\nإجمالي السلاسل: %5$s\nالسلاسل المترجمة: %6$s</string>
 	<string name="mtr_service">خدمة الترجمة</string>
 	<string name="mtr_google">Google</string>
 	<string name="mtr_bing">Bing</string>
@@ -538,9 +527,7 @@
 	<string name="down_for">تحميل ل%s</string>
 	<string name="file_download">تنزيل الملف: %s</string>
 	<string name="download_success">%s تم تنزيل الملف بنجاح!</string>
-	<string name="load_binaries">"قد لا تتوافق الثنائيات المضمنة في aapt/aapt2 مع النظام الخاص بك. يمكنك تحديثها الآن أو القيام بذلك لاحقا في الإعدادات. مطلوب اتصال بالإنترنت للتنزيل.
-
-هل تريد التنزيل الآن؟"</string>
+	<string name="load_binaries">قد لا تتوافق الثنائيات المضمنة في aapt/aapt2 مع النظام الخاص بك. يمكنك تحديثها الآن أو القيام بذلك لاحقا في الإعدادات. مطلوب اتصال بالإنترنت للتنزيل.\n\nهل تريد التنزيل الآن؟</string>
 	<string name="plugin_modif">يتم توقيع البرنامج المساعد UnApkm من قبل توقيع شخص آخر. ربما تم تعديل البرنامج المساعد. من المستحسن جداً إزالة البرنامج المساعد وتحميل الملف الأصلي من موقع المطور. بالنقر فوق \"لا تذكر\" يمكنك الاستمرار في استخدام البرنامج المساعد المعدلة على مسؤوليتك الخاصة والمخاطر!</string>
 	<string name="not_remind">لا أذكر</string>
 	<string name="mpatcher">MPatcher</string>
@@ -551,23 +538,15 @@
 	<string name="telegram_summary">قناة تيليجرام مع التحديثات</string>
 	<string name="report_descr">يرجى وصف أفعالك بإيجاز والتي حدث الخطأ بعدها</string>
 	<string name="optimize_battery">تحسين أداء البطارية</string>
-	<string name="optimization_notice">"For the program to work in the background (when it is minimized), it is advisable to add it to the exceptions of the system optimizer. The application will only run in the background if you run it yourself!
-
-Do you want to do this?"</string>
+	<string name="optimization_notice">For the program to work in the background (when it is minimized), it is advisable to add it to the exceptions of the system optimizer. The application will only run in the background if you run it yourself!\n\nDo you want to do this?</string>
 	<string name="heap_help">To fix the OOM error, increase the size of the heap memory.&lt;br>&lt;br>To increase the size of the heap memory, &lt;b>you need root privileges&lt;/b>!&lt;br>&lt;br>You need to open the file &lt;b>/system/build.prop&lt;/b> and add/change the line in it &lt;b>dalvik.vm.heapsize = 512m&lt;/b> (512m is the heap size in megabytes).&lt;br>&lt;br>&lt;small>This operation can be done using Apktool M only if the /system partition will be remounted with write permission, otherwise you need to use other tools.&lt;br>&lt;br>Sometimes there are two such lines in the file, one of them needs to be deleted.&lt;/small></string>
 	<string name="heap_memory">Heap memory</string>
-	<string name="heap_info">"Used memory: %1$dMB.
-Available memory: %2$dMB.
-Heap size: %3$dMB."</string>
+	<string name="heap_info">Used memory: %1$dMB.\nAvailable memory: %2$dMB.\nHeap size: %3$dMB.</string>
 	<string name="scoped_storage">Scoped Storage</string>
 	<string name="restore_set_dialog">هل تريد استعادة الإعدادات؟ سيتم الكتابة فوق الإعدادات الحالية!</string>
 	<string name="scoped_storage_title">تغييرات أندرويد 11 R</string>
 	<string name="scoped_storage_msg">يقدم Android 11 طريقة جديدة لإدارة الملفات تسمى \"Scoped Storage\". تحتاج إلى منح إذن خاص!</string>
-	<string name="rename_help">"{NAME} - original file name without extension.
-{EXT} - original file extension.
-{DATE} - date in %1$s format.
-{TIME} - time in %2$s format.
-{0} - number starting from 0."</string>
+	<string name="rename_help">{NAME} - original file name without extension.\n{EXT} - original file extension.\n{DATE} - date in %1$s format.\n{TIME} - time in %2$s format.\n{0} - number starting from 0.</string>
 	<string name="license_agreement">اتفاقية الترخيص</string>
 	<string name="license_accept">قبول</string>
 	<string name="license_refuse">لا تقبل</string>

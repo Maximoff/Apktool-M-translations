@@ -234,6 +234,12 @@
 		<item>Помещает ссылку на дескриптор метода в регистр vAA. Присутствует в файлах Dex, начиная с версии 039.</item>
 		<item>Помещает ссылку на прототип метода в регистр vAA, Присутствует в файлах Dex, начиная с версии 039.</item>
 	</string-array>
+    <string-array name="jadx_sets">
+        <item>Fallback режим</item>
+        <item>Деобфускация</item>
+        <item>Экранировать юникод</item>
+        <item>Показать противоречивый код</item>
+    </string-array>
 	<string-array name="copy_variants">
         <item>Переименовать</item>
 		<item>Переименовать только файлы</item>

@@ -421,7 +421,6 @@
 	<string name="split_install">Installation...</string>
 	<string name="split_install_toast">Die InstaInstallation wird im Hintergrund fortgesetzt</string>
 	<string name="state_name">Bundesland</string>
-	<string name="status_bar_notification_info_overflow">999+</string>
 	<string name="storage_error">Gewähre der App Zugriff auf den Speicher!</string>
 	<string name="store_pass">Keystore-Passwort:</string>
 	<string name="string_exists">Ein String mit dem gleichen Namen existiert bereits!</string>
