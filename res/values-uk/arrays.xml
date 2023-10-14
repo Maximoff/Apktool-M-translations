@@ -234,6 +234,12 @@
 		<item>Поміщає посилання на дескриптор методу регістра vAA. Є у файлах Dex, починаючи з версії 039.</item>
 		<item>Поміщає посилання на прототип методу регістра vAA, Присутня у файлах Dex, починаючи з версії 039.</item>
 	</string-array>
+	<string-array name="jadx_sets">
+        	<item>Запасний режим</item>
+        	<item>Деобфускація</item>
+        	<item>Екранувати юнікод</item>
+        	<item>Показати суперечливий код</item>
+        </string-array>
 	<string-array name="copy_variants">
 		<item>Перейменувати</item>
 		<item>Перейменувати лише файли</item>
