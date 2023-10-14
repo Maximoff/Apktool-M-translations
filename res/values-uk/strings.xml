@@ -512,6 +512,8 @@
 	<string name="drawer_width_summary">Ширина файлів у відсотках</string>
 	<string name="double_exit">Подвійне натискання, щоб вийти</string>
 	<string name="double_exit_summary">Двічі натиснути \"Назад\", щоб вийти з додатку</string>
+	<string name="jadx_settings">Налаштування JADX</string>
+	<string name="jadx_settings_summary">Налаштування перед перегляду java-коду</string>
 	<string name="key_type">Тип ключа:</string>
 	<string name="key_path">Шлях до ключа:</string>
 	<string name="cert_path">Шлях до сертифіката:</string>
