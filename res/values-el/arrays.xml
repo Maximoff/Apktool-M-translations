@@ -342,6 +342,12 @@
         <item>Προεπιλογή</item>
         <item>Νέος</item>
     </string-array>
+    <string-array name="jadx_sets">
+        <item>Λειτουργία εφεδρείας</item>
+        <item>Deobfuscation</item>
+        <item>Διαφυγή Unicode</item>
+        <item>Εμφάνιση ασυνεπούς κώδικα</item>
+    </string-array>
     <string-array name="bing_translator_codes">
         <item>auto-detect</item>
         <item>az</item>
