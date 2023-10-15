@@ -64,6 +64,7 @@
 	<string name="kill_sign_orig">무결성을 확인하려면 원본 APK를 추가하세요.</string>
 	<string name="kill_sign_exists">후크가 이미 추가되었습니다.</string>
 	<string name="monochrome">단색화</string>
+	<string name="smali_help">Smali 코드 도움말</string>
 	<string name="go_back">상위 디렉터리로 돌아가기</string>
 	<string name="sort">정렬 방법</string>
 	<string name="sorting">정렬</string>
@@ -211,7 +212,7 @@
 	<string name="view_content">내용 보기</string>
 	<string name="edit_mode">편집 모드</string>
 	<string name="scan_mode">탐색 모드</string>
-	<string name="translate_java">Java로 번역</string>
+	<string name="translate_java">Java 코드로 보기</string>
 	<string name="return_smali">Smail로 돌아가기</string>
 	<string name="format">코드 정렬</string>
 	<string name="find_next">다음</string>
@@ -453,7 +454,7 @@
 	<string name="buffer_size_summary">바이트 버퍼 크기(KB)</string>
 	<string name="fast_scroll">빠른 스크롤</string>
 	<string name="fast_scroll_summary">편집기에서 빠른 스크롤</string>
-	<string name="show_exit">\"종료\" 버튼 표시</string>
+	<string name="show_exit">종료 버튼 표시</string>
 	<string name="show_exit_summary">하단 패널에 종료 버튼 표시</string>
 	<string name="show_line_numbers_summary">줄 번호 표시</string>
 	<string name="fix_line_numbers">줄 번호 수정</string>
@@ -502,6 +503,12 @@
 	<string name="open_apk_summary">다른 앱으로 APK 파일을 엽니다.</string>
 	<string name="imgs_backup">원본 이미지 저장</string>
 	<string name="imgs_backup_summary">다음 기능으로 처리할때 원본 이미지 저장 : \"%1$s\", \"%2$s\", \"%3$s\", \"%4$s\"</string>
+	<string name="drawer_width">파일 창 너비</string>
+	<string name="drawer_width_summary">파일 창의 나비를 퍼센트로 설정</string>
+	<string name="double_exit">두번 눌러서 종료</string>
+	<string name="double_exit_summary">뒤로가기를 두번 누르면 앱을 종료합니다</string>
+	<string name="jadx_settings">JADX 설정</string>
+	<string name="jadx_settings_summary">Java 코드 미리보기 설정</string>
 	<string name="key_type">키 유형:</string>
 	<string name="key_path">키 경로:</string>
 	<string name="cert_path">인증서 경로:</string>
@@ -610,8 +617,8 @@
 	<string name="add_nsc_summary">빌드 시 일반 허용 네트워크 보안 구성 추가</string>
 	<string name="add_nsc_ex">존재하는 경우 변경 안 함</string>
 	<string name="add_nsc_ex_summary">이미 추가된 네트워크 보안 구성 변경 안 함</string>
-	<string name="dont_reset_cpb">붙여넣기 버튼을 재설정하지 마세요</string>
-	<string name="dont_reset_cpb_summary">파일 복사 시 붙여넣기 버튼은 길게 눌러야만 재설정됩니다</string>
+	<string name="dont_reset_cpb">붙여넣기 버튼 리셋 금지</string>
+	<string name="dont_reset_cpb_summary">설정하면 파일 복사후 붙여넣기 버튼이 초기화되지 않습니다</string>
 	<string name="build_toout">출력 디렉터리로 빌드</string>
 	<string name="build_toout_summary">프로젝트를 빌드할 때 APK는 출력 디렉터리에 저장됩니다</string>
 	<string name="aicon_size">적응형 아이콘 크기</string>

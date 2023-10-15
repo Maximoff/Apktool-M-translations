@@ -234,6 +234,12 @@
 		<item>Coloca una referencia a un identificador de método en el registro vAA. Presente en archivos Dex desde la versión 039.</item>
 		<item>Coloca una referencia al prototipo del método en el registro vAA. Presente en archivos Dex desde la versión 039.</item>
 	</string-array>
+    <string-array name="jadx_sets">
+		<item>Respaldo</item>
+		<item>Deobfuscación</item>
+		<item>Escapar Unicode</item>
+		<item>Mostrar código inconsistente</item>
+	</string-array>
 	<string-array name="copy_variants">
 		<item>Renombrar</item>
 		<item>Solo cambiar el nombre de los archivos</item>

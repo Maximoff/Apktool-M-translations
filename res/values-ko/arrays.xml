@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>레지스터</item>
 		<item>리터럴 값</item>
 		<item>기본 데이터 유형</item>
@@ -234,118 +234,124 @@
 		<item>vAA 레지스터에 메서드 핸들에 대한 참조를 배치합니다. 버전 039부터 Dex 파일에 존재합니다.</item>
 		<item>vAA 레지스터에 메서드 프로토타입에 대한 참조를 배치합니다. 버전 039부터 Dex 파일에 존재합니다.</item>
 	</string-array>
-    <string-array name="copy_variants">
-        <item>이름 바꾸기</item>
-        <item>파일 이름만 변경</item>
-        <item>바꾸기</item>
-        <item>건너뛰기</item>
-    </string-array>
-    <string-array name="menu_pos">
-        <item>왼쪽</item>
-        <item>오른쪽</item>
-    </string-array>
-    <string-array name="checksum_names">
-        <item>모두 대문자</item>
-        <item>콜론으로 구분</item>
-    </string-array>
-    <string-array name="refresh_res">
-        <item>새 리소스 추가 (파일만 해당)</item>
-        <item>누락된 리소스 삭제</item>
-    </string-array>
-    <string-array name="sort">
-        <item>이름</item>
-        <item>이름 역순</item>
-        <item>유형</item>
-        <item>유형 역순</item>
-        <item>크기</item>
-        <item>크기 역순</item>
-        <item>시간</item>
-        <item>시간 역순</item>
-    </string-array>
-    <string-array name="color_var">
-        <item>HEX 색상</item>
-        <item>Smali 코드</item>
-        <item>A,R,G,B</item>
-    </string-array>
-    <string-array name="format">
-        <item>@string/jks</item>
-        <item>@string/pkcs12</item>
-        <item>@string/bks</item>
-        <item>@string/pk8</item>
-    </string-array>
-    <string-array name="resDecodeMode">
-        <item>디컴파일 안 함</item>
-        <item>주 디렉터리로 디컴파일</item>
-        <item>별도의 디렉터리로 디컴파일</item>
-    </string-array>
-    <string-array name="converter_items">
-        <item>텍스트 &lt;-> Base64</item>
-        <item>텍스트 &lt;-> Unicode</item>
-        <item>텍스트 &lt;-> URL 인코딩</item>
-        <item>텍스트 &lt;-> MD5</item>
-        <item>텍스트 &lt;-> SHA-1</item>
-        <item>텍스트 &lt;-> SHA-224</item>
-        <item>텍스트 &lt;-> SHA-256</item>
-        <item>텍스트 &lt;-> SHA-384</item>
-        <item>텍스트 &lt;-> SHA-512</item>
-        <item>텍스트 &lt;-> Array (UTF-8)</item>
-        <item>텍스트 &lt;-> Array (UTF-16)</item>
-        <item>텍스트 &lt;-> Array (UTF-16LE)</item>
-        <item>텍스트 &lt;-> Array (UTF-16BE)</item>
-        <item>텍스트 &lt;-> Array (US-ASCII)</item>
-        <item>텍스트 &lt;-> Array (ISO-8859-1)</item>
-        <item>텍스트 &lt;-> 배열 (CP1251)</item>
-        <item>10진수 &lt;-> 2진수</item>
-        <item>10진수 &lt;-> 8진수</item>
-        <item>10진수 &lt;-> 16진수</item>
-        <item>10진수 &lt;-> 16진수 (0x0)</item>
-        <item>10진수 &lt;-> 16진수 (0x00000000)</item>
-        <item>부동 &lt;-> 2진수</item>
-        <item>부동 &lt;-> 8진수</item>
-        <item>부동 &lt;-> 16진수</item>
-        <item>부동 &lt;-> 16진수(0x0)</item>
-        <item>부동 &lt;-> 16진수(0x00000000)</item>
-        <item>색상 &lt;-> Smali</item>
-        <item>색상 &lt;-> 10진수</item>
-        <item>색상 &lt;-> A,R,G,B</item>
-    </string-array>
-    <string-array name="installLocation">
-        <item>설정 안 함</item>
-        <item>자동</item>
-        <item>내부만</item>
-        <item>선호하는 외부</item>
-    </string-array>
-    <string-array name="xml_format_variants">
-        <item>기본값</item>
-        <item>Apktool</item>
-        <item>Android Studio</item>
-        <item>간단한 요령</item>
-    </string-array>
-    <string-array name="orientation_variants">
-        <item>기본값</item>
-        <item>가로</item>
-        <item>세로</item>
-    </string-array>
-    <string-array name="auto_save_variants">
-        <item>끄기</item>
-        <item>15초</item>
-        <item>30초</item>
-        <item>1분</item>
-        <item>5분</item>
-    </string-array>
-    <string-array name="to_vector_values">
-        <item>조정된 이미지(낮은 품질)</item>
-        <item>고품질 이미지(큰 크기)</item>
-        <item>SVG로 변환</item>
-    </string-array>
-    <string-array name="backup_values">
-        <item>설정</item>
-        <item>북마크</item>
-        <item>기록 검색/교체</item>
-        <item>사전</item>
-    </string-array>
-    <string-array name="editor_themes">
-        <item>기본값</item>
-        <item>새 테마</item>
-    </string-array>
+	<string-array name="jadx_sets">
+		<item>대체 모드</item>
+		<item>난독화 해제</item>
+		<item>유니코드 이스케이프</item>
+		<item>일관되지 않은 코드 보기</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>이름 바꾸기</item>
+		<item>파일 이름만 변경</item>
+		<item>바꾸기</item>
+		<item>건너뛰기</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>왼쪽</item>
+		<item>오른쪽</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>모두 대문자</item>
+		<item>콜론으로 구분</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>새 리소스 추가 (파일만 해당)</item>
+		<item>누락된 리소스 삭제</item>
+	</string-array>
+	<string-array name="sort">
+		<item>이름</item>
+		<item>이름 역순</item>
+		<item>유형</item>
+		<item>유형 역순</item>
+		<item>크기</item>
+		<item>크기 역순</item>
+		<item>시간</item>
+		<item>시간 역순</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>HEX 색상</item>
+		<item>Smali 코드</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>디컴파일 안 함</item>
+		<item>주 디렉터리로 디컴파일</item>
+		<item>별도의 디렉터리로 디컴파일</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>텍스트 &lt;-> Base64</item>
+		<item>텍스트 &lt;-> Unicode</item>
+		<item>텍스트 &lt;-> URL 인코딩</item>
+		<item>텍스트 &lt;-> MD5</item>
+		<item>텍스트 &lt;-> SHA-1</item>
+		<item>텍스트 &lt;-> SHA-224</item>
+		<item>텍스트 &lt;-> SHA-256</item>
+		<item>텍스트 &lt;-> SHA-384</item>
+		<item>텍스트 &lt;-> SHA-512</item>
+		<item>텍스트 &lt;-> Array (UTF-8)</item>
+		<item>텍스트 &lt;-> Array (UTF-16)</item>
+		<item>텍스트 &lt;-> Array (UTF-16LE)</item>
+		<item>텍스트 &lt;-> Array (UTF-16BE)</item>
+		<item>텍스트 &lt;-> Array (US-ASCII)</item>
+		<item>텍스트 &lt;-> Array (ISO-8859-1)</item>
+		<item>텍스트 &lt;-> 배열 (CP1251)</item>
+		<item>10진수 &lt;-> 2진수</item>
+		<item>10진수 &lt;-> 8진수</item>
+		<item>10진수 &lt;-> 16진수</item>
+		<item>10진수 &lt;-> 16진수 (0x0)</item>
+		<item>10진수 &lt;-> 16진수 (0x00000000)</item>
+		<item>부동 &lt;-> 2진수</item>
+		<item>부동 &lt;-> 8진수</item>
+		<item>부동 &lt;-> 16진수</item>
+		<item>부동 &lt;-> 16진수(0x0)</item>
+		<item>부동 &lt;-> 16진수(0x00000000)</item>
+		<item>색상 &lt;-> Smali</item>
+		<item>색상 &lt;-> 10진수</item>
+		<item>색상 &lt;-> A,R,G,B</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>설정 안 함</item>
+		<item>자동</item>
+		<item>내부만</item>
+		<item>선호하는 외부</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>기본값</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>간단한 요령</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>기본값</item>
+		<item>가로</item>
+		<item>세로</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>끄기</item>
+		<item>15초</item>
+		<item>30초</item>
+		<item>1분</item>
+		<item>5분</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>조정된 이미지(낮은 품질)</item>
+		<item>고품질 이미지(큰 크기)</item>
+		<item>SVG로 변환</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>설정</item>
+		<item>북마크</item>
+		<item>기록 검색/교체</item>
+		<item>사전</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>기본값</item>
+		<item>새 테마</item>
+	</string-array>
 </resources>
