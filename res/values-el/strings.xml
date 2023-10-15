@@ -779,4 +779,6 @@
         <string name="drawer_width_summary">Πλάτος παραθύρου σε ποσοστό</string>
         <string name="double_exit">Διπλό πάτημα για Έξοδο</string>
         <string name="double_exit_summary">Πατήστε \"Πίσω\" δύο φορές για Έξοδο από την εφαρμογή.</string>
+        <string name="jadx_settings">Ρυθμίσεις JADX</string>
+	<string name="jadx_settings_summary">Ρυθμίσεις προβολής κώδικα Java</string>
 </resources>
