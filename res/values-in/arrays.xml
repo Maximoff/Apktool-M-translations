@@ -234,28 +234,30 @@
 		<item>Menempatkan referensi ke pegangan metode di register vAA. Hadir dalam file Dex sejak versi 039.</item>
 		<item>Menempatkan referensi ke prototipe metode dalam register vAA. Hadir dalam file Dex sejak versi 039.</item>
 	</string-array>
+    <string-array name="jadx_sets">
+        <item>Mode mundur</item>
+        <item>Deobfuscation</item>
+        <item>Melarikan diri dari Unicode</item>
+        <item>Tampilkan kode yang tidak konsisten</item>
+    </string-array>
     <string-array name="copy_variants">
         <item>Ganti nama</item>
         <item>Ganti nama file saja</item>
         <item>Ganti</item>
         <item>Lewati</item>
     </string-array>
-    
     <string-array name="menu_pos">
         <item>Kiri</item>
         <item>Kanan</item>
     </string-array>
-    
     <string-array name="checksum_names">
         <item>Semua huruf besar</item>
         <item>Pisahkan dengan titik dua</item>
     </string-array>
-    
     <string-array name="refresh_res">
         <item>Tambahkan sumber baru (hanya file)</item>
         <item>Hapus sumber yang hilang</item>
     </string-array>
-    
     <string-array name="sort">
         <item>Nama</item>
         <item>Nama terbalik</item>
@@ -266,13 +268,11 @@
         <item>Waktu</item>
         <item>Waktu terbalik</item>
     </string-array>
-    
     <string-array name="color_var">
         <item>Warna HEX</item>
         <item>Kode Smali</item>
         <item>A,R,G,B</item>
     </string-array>
-    
     <string-array name="quantity_items">
         <item>nol</item>
         <item>satu</item>
@@ -281,13 +281,11 @@
         <item>banyak</item>
         <item>lebih</item>
     </string-array>
-    
     <string-array name="resDecodeMode">
         <item>Jangan dekompilasi</item>
         <item>Dekompilasi ke folder utama</item>
         <item>Dekompilasi ke folder terpisah</item>
     </string-array>
-    
     <string-array name="converter_items">
         <item>Teks &lt;-> Base64</item>
         <item>Teks &lt;-> Unicode</item>
@@ -319,27 +317,23 @@
         <item>Warna &lt;-> Desimal</item>
         <item>Warna &lt;-> A,R,G,B</item>
     </string-array>
-    
     <string-array name="installLocation">
         <item>Tidak diatur</item>
         <item>Otomatis</item>
         <item>Hanya internal</item>
         <item>Eksternal pilihan</item>
     </string-array>
-    
     <string-array name="xml_format_variants">
         <item>Default</item>
         <item>Apktool</item> 
         <item>Android Studio</item>
         <item>Trik Sederhana</item>
     </string-array>
-    
     <string-array name="orientation_variants">
         <item>Default</item>
         <item>Lanskap</item> 
         <item>Potret</item>
     </string-array>
-    
     <string-array name="auto_save_variants">
         <item>Mati</item>
         <item>15 detik</item> 
@@ -347,25 +341,21 @@
         <item>1 menit</item> 
         <item>5 menit</item>
     </string-array>
-    
     <string-array name="to_vector_values">
         <item>Gambar yang disesuaikan (kualitas di bawah)</item>
         <item>Gambar berkualitas tinggi (ukuran lebih besar)</item>
         <item>Konversi ke SVG</item>
     </string-array>
-    
     <string-array name="backup_values">
         <item>Pengaturan</item>
         <item>Bookmark</item>
         <item>Cari/ganti riwayat</item>
         <item>Kamus</item>
     </string-array>
-    
     <string-array name="editor_themes">
         <item>Default</item>
         <item>Baru</item> 
     </string-array>
-    
     <string-array name="bing_translator_names">
         <item>Otomatis</item>
         <item>Azerbaijan (Latin)</item>
@@ -458,7 +448,6 @@
         <item>Pashto</item>
         <item>Tigrinya</item>
     </string-array>
-    
     <string-array name="google_translator_names">
         <item>Otomatis</item>
         <item>Afrikaans</item>
@@ -572,7 +561,6 @@
         <item>Turkmenistan</item>
         <item>Uigur</item>
     </string-array>
-    
     <string-array name="yandex_translator_names">
         <item>Otomatis</item>
         <item>Afrikaans</item>

@@ -66,7 +66,7 @@
 	<string name="kill_sign_by_orig">Mengambil tanda tangan dari dokumen asli yang telah ditentukan</string>
 	<string name="compare_text">Bandingkan teks</string>
 	<string name="files_identical">Berkas-berkasnya identik!</string>
-	<string name="delete_files_cm">Hapus file setelah kompresi</string>
+	<string name="delete_files_cm">Hapus file setelah di kompres</string>
 	<string name="dec_indent">Kurangi indentasi</string>
 	<string name="inc_indent">Tingkatkan indentasi</string>
 	<string name="search_class">Cari class \"%s\"</string>
@@ -514,11 +514,13 @@
 	<string name="open_apk">Buka file apk</string>
 	<string name="open_apk_summary">Buka file apk dari aplikasi lain dalam program</string>
 	<string name="imgs_backup">Simpan gambar asli</string>
-	<string name="imgs_backup_summary">Simpan gambar asli ketika memproses dengan fungsi \"%1$s\", \"%2$s\" dan \"%3$s\"</string>
+	<string name="imgs_backup_summary">Simpan gambar asli ketika memproses dengan fungsi \"%1$s\", \"%2$s\", \"%3$s\" dan \"%4$s\"</string>
 	<string name="drawer_width">Lebar laci</string>
 	<string name="drawer_width_summary">Lebar laci dalam persentase</string>
 	<string name="double_exit">Ketuk dua kali untuk keluar</string>
 	<string name="double_exit_summary">Tekan \"Kembali\" dua kali untuk keluar dari aplikasi</string>
+	<string name="jadx_settings">Pengaturan JADX</string>
+	<string name="jadx_settings_summary">Pengaturan pratinjau kode Java</string>
 	<string name="key_type">Jenis Kunci:</string>
 	<string name="key_path">Jenis Jalur:</string>
 	<string name="cert_path">Jalur Sertifikat:</string>

@@ -773,12 +773,12 @@
 	<string name="smali_help">Βοήθεια Smali</string>
 	<string name="imgs_backup">Αποθήκευση της Αρχικής εικόνας</string>
 	<string name="imgs_backup_summary">Αποθήκευση της Αρχικής εικόνας κατά την επεξεργασία με τις λειτουργίες \"%1$s\", \"%2$s\", \"%3$s\" και \"%4$s\"</string>
-        <string name="complete_msg">Ολοκληρώθηκε, το πρωτότυπο(α) αποθηκεύτηκε σε \"%s\"</string>
-        <string name="complete_msg2">Ολοκληρώθηκε, το αρχείο(α) αποθηκεύτηκε σε \"%s\"</string>
-        <string name="drawer_width">Πλάτος παραθύρου</string>
-        <string name="drawer_width_summary">Πλάτος παραθύρου σε ποσοστό</string>
-        <string name="double_exit">Διπλό πάτημα για Έξοδο</string>
-        <string name="double_exit_summary">Πατήστε \"Πίσω\" δύο φορές για Έξοδο από την εφαρμογή.</string>
-        <string name="jadx_settings">Ρυθμίσεις JADX</string>
+	<string name="complete_msg">Ολοκληρώθηκε, το πρωτότυπο(α) αποθηκεύτηκε σε \"%s\"</string>
+	<string name="complete_msg2">Ολοκληρώθηκε, το αρχείο(α) αποθηκεύτηκε σε \"%s\"</string>
+	<string name="drawer_width">Πλάτος παραθύρου</string>
+	<string name="drawer_width_summary">Πλάτος παραθύρου σε ποσοστό</string>
+	<string name="double_exit">Διπλό πάτημα για Έξοδο</string>
+	<string name="double_exit_summary">Πατήστε \"Πίσω\" δύο φορές για Έξοδο από την εφαρμογή.</string>
+	<string name="jadx_settings">Ρυθμίσεις JADX</string>
 	<string name="jadx_settings_summary">Ρυθμίσεις προβολής κώδικα Java</string>
 </resources>
