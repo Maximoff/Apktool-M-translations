@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<plurals name="need_dex">
+		<item quantity="one">需要 %1$d dex</item>
+		<item quantity="other">需要 %1$d dex</item>
+	</plurals>
+</resources>
