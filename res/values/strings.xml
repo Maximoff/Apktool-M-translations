@@ -22,6 +22,7 @@
 	<string name="ok">Ok</string>
 	<string name="cancel">Cancel</string>
 	<string name="go_to">Go to</string>
+	<string name="new_dict">New Dictionary</string>
 	<string name="clear_history">Clear search history?</string>
 	<string name="refresh_res">Refresh resources</string>
 	<string name="added_res">Added resources: %d</string>
@@ -167,6 +168,8 @@
 	<string name="aapts33_warn">Be prepared that files for SDK 33 may be slow and unstable!</string>
 	<string name="aapt2_dens">Set screen density</string>
 	<string name="aapt2_configs">Set configurations</string>
+	<string name="label_den">Screen density: \"%s\"</string>
+	<string name="label_config">Configuration: \"%s\"</string>
 	<string name="aapt2_dens_info">&lt;b>Comma separated&lt;/b> list of the screen densities that the APK will be optimized for. All the resources that would be unused on devices of the given densities will be removed from the APK.</string>
 	<string name="aapt2_configs_info">&lt;b>Comma separated&lt;/b> list of configurations to include. The default is all configurations.</string>
 	<string name="accessibility_service_name">Current activity</string>
@@ -525,7 +528,7 @@
 	<string name="drawer_width_summary">Drawer width in percentage</string>
 	<string name="double_exit">Double tap to exit</string>
 	<string name="double_exit_summary">Press \"Back\" twice to exit the application</string>
-    <string name="jadx_settings">JADX settings</string>
+	<string name="jadx_settings">JADX settings</string>
 	<string name="jadx_settings_summary">Java code preview settings</string>
 	<string name="key_type">Key Type:</string>
 	<string name="key_path">Key Path:</string>
