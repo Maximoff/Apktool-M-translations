@@ -14,6 +14,7 @@
 	<string name="ok">Ок</string>
 	<string name="cancel">Отмена</string>
 	<string name="go_to">Перейти</string>
+	<string name="new_dict">Новый словарь</string>
 	<string name="base64_sign">Base64 подписи: %s</string>
 	<string name="base64_cert">Base64 сертификата: %s</string>
 	<string name="clear_history">Очистить историю поиска?</string>
@@ -158,6 +159,8 @@
 	<string name="aapts33_warn">Будьте готовы, что файлы для SDK 33 могут работать медленно и не стабильно!</string>
 	<string name="aapt2_dens">Задать плотность экрана</string>
 	<string name="aapt2_configs">Задать конфигурации</string>
+	<string name="label_den">Плотность экрана: \"%s\"</string>
+	<string name="label_config">Конфигурация: \"%s\"</string>
 	<string name="aapt2_dens_info">Список плотностей экрана, под которые будет оптимизирован APK, &lt;b>разделённый запятыми&lt;/b>. Все ресурсы, которые не использовались бы на устройствах с указанной плотностью, будут удалены из APK.</string>
 	<string name="aapt2_configs_info">Список конфигураций, которые необходимо включить, &lt;b>через запятую&lt;/b>. По умолчанию - все конфигурации.</string>
 	<string name="accessibility_service_name">Текущая активность</string>
@@ -514,7 +517,7 @@
 	<string name="drawer_width_summary">Ширина файлов в процентах</string>
 	<string name="double_exit">Двойное нажатие для выхода</string>
 	<string name="double_exit_summary">Дважды нажать \"Назад\" для выхода из приложения</string>
-    <string name="jadx_settings">Настройки JADX</string>
+	<string name="jadx_settings">Настройки JADX</string>
 	<string name="jadx_settings_summary">Настройки предпросмотра java-кода</string>
 	<string name="key_type">Тип ключа:</string>
 	<string name="key_path">Путь к ключу:</string>
