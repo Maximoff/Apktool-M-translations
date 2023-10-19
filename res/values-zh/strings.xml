@@ -781,6 +781,9 @@
 	<string name="drawer_width_summary">抽屉宽度百分比</string>
 	<string name="double_exit">双击退出</string>
 	<string name="double_exit_summary">按两次“返回”退出应用程序</string>
-    <string name="jadx_settings">JADX 设置</string>
+	<string name="jadx_settings">JADX 设置</string>
 	<string name="jadx_settings_summary">Java 代码预览设置</string>
+	<string name="new_dict">新建词典</string>
+	<string name="label_den">屏幕密度：\"%s\"</string>
+	<string name="label_config">配置：\"%s\"</string>
 </resources>
