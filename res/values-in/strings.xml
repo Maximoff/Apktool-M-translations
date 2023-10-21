@@ -16,6 +16,7 @@
 	<string name="no">Tidak</string>
 	<string name="ok">Ok</string>
 	<string name="cancel">Batal</string>
+	<string name="new_dict">Kamus Baru</string>
 	<string name="go_to">Pergi ke</string>
 	<string name="clear_history">Hapus riwayat pencarian?</string>
 	<string name="refresh_res">Segarkan sumber</string>
@@ -161,6 +162,8 @@
 	<string name="aapts33_warn">Bersiaplah karena file untuk SDK 33 mungkin lambat dan tidak stabil!</string>
 	<string name="aapt2_dens">Atur kepadatan layar</string>
 	<string name="aapt2_configs">Atur konfigurasi</string>
+	<string name="label_den">Kepadatan layar: \"%s\"</string>
+	<string name="label_config">Konfigurasi: \"%s\"</string>
 	<string name="aapt2_dens_info">&lt;b>Koma dipisahkan&lt;/b> daftar kepadatan layar yang akan dioptimalkan untuk APK. Semua sumber yang tidak terpakai pada perangkat dengan kepadatan tertentu akan dihapus dari APK.</string>
 	<string name="aapt2_configs_info">&lt;b>Koma dipisahkan&lt;/b> daftar konfigurasi yang akan disertakan. Standarnya adalah semua konfigurasi.</string>
 	<string name="accessibility_service_name">Aktivitas saat ini</string>
@@ -752,6 +755,7 @@
 	<string name="mtr_del_array">Hapus array</string>
 	<string name="mtr_sure">Apakah Anda yakin?</string>
 	<string name="mtr_trans_smali">Terjemahkan smali</string>
+	<string name="mtr_trans_xml">Terjemahkan xml</string>
 	<string name="mtr_no_trans">String tidak perlu diterjemahkan!</string>
 	<string name="mtr_first_notrans">Tidak diterjemahkan pada awalnya</string>
 	<string name="attention">Perhatian!</string>
