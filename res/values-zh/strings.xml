@@ -786,4 +786,6 @@
 	<string name="new_dict">新建词典</string>
 	<string name="label_den">屏幕密度：\"%s\"</string>
 	<string name="label_config">配置：\"%s\"</string>
+	<string name="axml_prop">文件：%1$s\n大小：%2$s\n总行数：%3$s\n已修改行数：%4$s</string>
+	<string name="strings_edit">字符串编辑器</string>
 </resources>
