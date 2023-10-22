@@ -155,7 +155,7 @@
 	<string name="lower_case">lowercase</string>
 	<string name="upper_case">UPPERCASE</string>
 	<string name="server">Server</string>
-    <string name="strings_edit">Strings editor</string>
+    <string name="strings_edit">Lines editor</string>
 	<string name="methods_count">Number of methods</string>
 	<string name="strings_count">Number of strings</string>
 	<string name="class_count">Number of classes</string>

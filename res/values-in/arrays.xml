@@ -236,7 +236,7 @@
 	</string-array>
     <string-array name="jadx_sets">
         <item>Mode mundur</item>
-        <item>Deobfuscation</item>
+        <item>Membingungkan</item>
         <item>Melarikan diri dari Unicode</item>
         <item>Tampilkan kode yang tidak konsisten</item>
     </string-array>
@@ -272,14 +272,6 @@
         <item>Warna HEX</item>
         <item>Kode Smali</item>
         <item>A,R,G,B</item>
-    </string-array>
-    <string-array name="quantity_items">
-        <item>nol</item>
-        <item>satu</item>
-        <item>dua</item>
-        <item>sedikit</item>
-        <item>banyak</item>
-        <item>lebih</item>
     </string-array>
     <string-array name="resDecodeMode">
         <item>Jangan dekompilasi</item>

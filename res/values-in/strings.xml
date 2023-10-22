@@ -51,7 +51,8 @@
 	<string name="originalf">Asli: %s</string>
 	<string name="soeditor">Editor perpustakaan</string>
 	<string name="file_changed">File diubah, simpan perubahan?</string>
-	<string name="so_prop">File: %1$s\nUkuran: %2$s\nJenis: %3$s\nTotal baris: %4$s\nBaris yang diubah: %5$s</string>
+	<string name="so_prop">File: %1$s\nUkuran: %2$s\nJenis: %3$s\nTotal baris: %4$s\nBaris yang dimodifikasi: %5$s</string>
+	<string name="axml_prop">File: %1$s\nUkuran: %2$s\nTotal baris: %3$s\nBaris yang dimodifikasi: %4$s</string>
 	<string name="base64_decode">Dekode Base64</string>
 	<string name="accessibility_info">Untuk Android 13+, izin khusus perlu diberikan untuk mengaktifkan layanan aksesibilitas. Untuk melakukannya, buka informasi sistem tentang aplikasi dan pada menu di bagian atas (titik tiga) berikan izin. Menu ini mungkin tidak akan muncul sampai Anda mengklik layanan aksesibilitas.</string>
 	<string name="total">Total</string>
@@ -148,6 +149,7 @@
 	<string name="lower_case">huruf kecil</string>
 	<string name="upper_case">HURUF BESAR</string>
 	<string name="server">Server</string>
+	<string name="strings_edit">Editor strings</string>
 	<string name="methods_count">Jumlah methods</string>
 	<string name="strings_count">Jumlah strings</string>
 	<string name="class_count">Jumlah classes</string>
@@ -169,7 +171,7 @@
 	<string name="accessibility_service_name">Aktivitas saat ini</string>
 	<string name="accessibility_service_description">Layanan untuk mendapatkan informasi tentang aktivitas yang sedang berjalan. Layanan ini tidak mengumpulkan data pribadi apa pun.</string>
 	<string name="accessibility_service_toast">Aktifkan layanan Apktool M</string>
-	<string name="encript_notice">Setelah mengenkripsi sumber, aplikasi mungkin akan gagal berfungsi sebagian atau seluruhnya!</string>
+	<string name="encript_notice">Setelah sumber kebingungan, aplikasi mungkin sebagian atau seluruhnya gagal berfungsi!</string>
 	<string name="res_added">Menambahkan sumber \"%s\"</string>
 	<string name="res_removed">Menghapus sumber \"%s\"</string>
 	<string name="files">File</string>
