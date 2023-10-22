@@ -56,7 +56,8 @@
 	<string name="originalf">Original: %s</string>
 	<string name="soeditor">Library editor</string>
 	<string name="file_changed">File changed, save changes?</string>
-	<string name="so_prop">File: %1$s\nSize: %2$s\nType: %3$s\nTotal lines: %4$s\nLines changed: %5$s</string>
+	<string name="so_prop">File: %1$s\nSize: %2$s\nType: %3$s\nTotal lines: %4$s\nModified lines: %5$s</string>
+    <string name="axml_prop">File: %1$s\nSize: %2$s\nTotal lines: %3$s\nModified lines: %4$s</string>
 	<string name="base64_decode">Decode Base64</string>
 	<string name="accessibility_info">For Android 13+, a special permission needs to be granted to enable the accessibility service. To do this, open the system information about the application and in the menu at the top (three dots) give permission. This menu may not appear until you click on the accessibility service.</string>
 	<string name="total">Total</string>
@@ -154,6 +155,7 @@
 	<string name="lower_case">lowercase</string>
 	<string name="upper_case">UPPERCASE</string>
 	<string name="server">Server</string>
+    <string name="strings_edit">Strings editor</string>
 	<string name="methods_count">Number of methods</string>
 	<string name="strings_count">Number of strings</string>
 	<string name="class_count">Number of classes</string>
