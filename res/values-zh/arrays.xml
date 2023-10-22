@@ -234,9 +234,15 @@
 		<item>将对方法句柄的引用放置在 vAA 寄存器中。自版本 039 以来存在于 Dex 文件中。</item>
 		<item>在 vAA 寄存器中放置对方法原型的引用。自版本 039 以来存在于 Dex 文件中。</item>
 	</string-array>
+    <string-array name="jadx_sets">
+        <item>回退模式</item>
+        <item>反混淆</item>
+        <item>转义Unicode</item>
+        <item>显示不一致的代码</item>
+    </string-array>
 	<string-array name="copy_variants">
 		<item>改名</item>
-		<item>Rename files only</item>
+		<item>仅重命名文件</item>
 		<item>替换</item>
 		<item>跳过</item>
 	</string-array>
@@ -244,6 +250,14 @@
 		<item>左侧</item>
 		<item>右侧</item>
 	</string-array>
+	<string-array name="checksum_names">
+        <item>全部大写</item>
+        <item>用冒号分隔</item>
+    </string-array>
+	<string-array name="refresh_res">
+        <item>添加新资源（仅限文件）</item>
+        <item>删除丢失的资源</item>
+    </string-array>
 	<string-array name="sort">
 		<item>名称</item>
 		<item>名称（倒序）</item>
@@ -254,6 +268,11 @@
 		<item>修改时间</item>
 		<item>修改时间（倒序）</item>
 	</string-array>
+	<string-array name="color_var">
+        <item>十六进制颜色</item>
+        <item>Smali 代码</item>
+        <item>A,R,G,B</item>
+    </string-array>
 	<string-array name="format">
 		<item>@string/jks</item>
 		<item>@string/pkcs12</item>
@@ -287,20 +306,31 @@
 		<item>十进制 &lt;-&gt; 十六进制</item>
 		<item>十进制 &lt;-&gt; 十六进制（0x0）</item>
 		<item>十进制 &lt;-&gt; 十六进制（0x00000000）</item>
-		<item>Float &lt;-> Binary</item>
-		<item>Float &lt;-> Octal</item>
-		<item>Float &lt;-> Hex</item>
-		<item>Float &lt;-> Hex (0x0)</item>
-		<item>Float &lt;-> Hex (0x00000000)</item>
-		<item>Color &lt;-> Smali</item>
-		<item>Color &lt;-> Decimal</item>
-        <item>Color &lt;-> A,R,G,B</item>
+		<item>浮点数 &lt;-> 二进制</item>
+		<item>浮点数 &lt;-> 八进制</item>
+		<item>浮点数 &lt;-> 十六进制</item>
+		<item>浮点数 &lt;-> 十六进制（0x0）</item>
+		<item>浮点数 &lt;-> 十六进制（0x00000000）</item>
+		<item>颜色 &lt;-> Smali</item>
+		<item>颜色 &lt;-> 十进制</item>
+        <item>颜色 &lt;-> A,R,G,B</item>
 	</string-array>
 	<string-array name="installLocation">
-		<item>末设置</item>
+		<item>未设置</item>
 		<item>自动</item>
 		<item>仅限内部</item>
 		<item>首选外部</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>默认</item>
+		<item>Apktool</item> 
+		<item>Android Studio</item>
+		<item>Simple Trick</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>默认</item>
+		<item>横屏</item> 
+		<item>竖屏</item>
 	</string-array>
 	<string-array name="auto_save_variants">
 		<item>关闭</item>
@@ -312,7 +342,7 @@
 	<string-array name="to_vector_values">
 		<item>自适应图像（质量较低）</item>
 		<item>高质量图像（更大尺寸）</item>
-		<item>Convert to SVG</item>
+		<item>转换为SVG</item>
 	</string-array>
 	<string-array name="backup_values">
 		<item>设置</item>
