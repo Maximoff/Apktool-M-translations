@@ -566,7 +566,6 @@
 	<string name="mtr_trans_smali">翻译 smali</string>
 	<string name="filef">文件：%s</string>
 	<string name="dirf">目录：%s</string>
-
 	<string name="click_once_more2">再次单击以关闭</string>
 	<string name="base64_sign">签名的Base64：%s</string>
 	<string name="base64_cert">证书的Base64：%s</string>
