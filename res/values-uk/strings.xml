@@ -52,6 +52,7 @@
 	<string name="soeditor">Редактор бібліотек</string>
 	<string name="file_changed">Файл змінено, зберегти зміни?</string>
 	<string name="so_prop">Файл: %1$s\nРозмір: %2$s\nТип: %3$s\nВсього рядків: %4$s\nЗмінено рядків: %5$s</string>
+	<string name="strings_edit">Редактор рядків</string>
 	<string name="base64_decode">Декодувати Base64</string>
 	<string name="accessibility_info">Для Android 13+ необхідно видати спеціальний дозвіл, щоб увімкнути службу спеціальних можливостей. Для цього потрібно відкрити системну інформацію про додаток і в меню зверху (три крапки) видати дозвіл. Можливо, це меню не з\'явиться, поки ви не натиснете на службу спеціальних можливостей.</string>
 	<string name="total">Всього</string>
@@ -148,6 +149,7 @@
 	<string name="lower_case">рядкові</string>
 	<string name="upper_case">ПРОПИСНІ</string>
 	<string name="server">Сервер</string>
+	<string name="axml_prop">Файл: %1$s\nРозмір: %2$s\nУсього рядків: %3$s\nЗмінено рядків: %4$s</string>
 	<string name="methods_count">Кількість методів</string>
 	<string name="strings_count">Кількість рядків</string>
 	<string name="class_count">Кількість класів</string>
