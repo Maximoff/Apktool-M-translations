@@ -15,6 +15,7 @@
 	<string name="cancel">Скасувати</string>
 	<string name="go_to">Перейти</string>
 	<string name="new_dict">Новий словник</string>
+	<string name="type">Тип: %s</string>
 	<string name="base64_sign">Base64 підпису: %s</string>
 	<string name="base64_cert">Base64 сертифікату: %s</string>
 	<string name="clear_history">Очистити історію пошуку?</string>
@@ -166,7 +167,7 @@
 	<string name="accessibility_service_name">Поточна активність</string>
 	<string name="accessibility_service_description">Сервіс для отримання інформація про запущені активності. Сервіс не збирає ніяких особистих даних.</string>
 	<string name="accessibility_service_toast">Активуйте службу Apktool M</string>
-	<string name="encript_notice">Після шифрування ресурсів додаток може частково або повністю не працювати!</string>
+	<string name="encript_notice">Після обфускації ресурсів додаток може частково або повністю не працювати!</string>
 	<string name="res_added">Добавлено ресурс \"%s\"</string>
 	<string name="res_removed">Видалено ресурс \"%s\"</string>
 	<string name="files">Файли</string>
