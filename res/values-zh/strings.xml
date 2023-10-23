@@ -659,7 +659,7 @@
 	<string name="accessibility_service_name">当前 Activity</string>
 	<string name="accessibility_service_description">用于获取正在运行的 Activity 信息的相关服务。该服务不收集任何个人数据。</string>
 	<string name="accessibility_service_toast">激活 Apktool M 服务</string>
-	<string name="encript_notice">加密资源后，应用程序可能部分或完全无法工作！</string>
+	<string name="encript_notice">混淆资源后，应用程序可能部分或完全无法工作！</string>
 	<string name="res_added">已添加资源“%s”</string>
 	<string name="res_removed">已移除资源“%s”</string>
 	<string name="name_filter">名称筛选器</string>
@@ -787,4 +787,5 @@
 	<string name="label_config">配置：\"%s\"</string>
 	<string name="axml_prop">文件：%1$s\n大小：%2$s\n总行数：%3$s\n已修改行数：%4$s</string>
 	<string name="strings_edit">字符串编辑器</string>
+	<string name="type">类型：%s</string>
 </resources>
