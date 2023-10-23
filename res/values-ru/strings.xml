@@ -15,6 +15,7 @@
 	<string name="cancel">Отмена</string>
 	<string name="go_to">Перейти</string>
 	<string name="new_dict">Новый словарь</string>
+    <string name="type">Тип: %s</string>
 	<string name="base64_sign">Base64 подписи: %s</string>
 	<string name="base64_cert">Base64 сертификата: %s</string>
 	<string name="clear_history">Очистить историю поиска?</string>
