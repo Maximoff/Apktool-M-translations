@@ -137,6 +137,7 @@
 	<string name="lower_case">소문자</string>
 	<string name="upper_case">대문자</string>
 	<string name="server">서버</string>
+	<string name="strings_edit">줄편집</string>
 	<string name="methods_count">메소드 수</string>
 	<string name="strings_count">문자열 수</string>
 	<string name="class_count">클래스 수</string>

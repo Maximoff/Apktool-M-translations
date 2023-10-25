@@ -59,6 +59,8 @@
 	<string name="file_changed">File changed, save changes?</string>
 	<string name="so_prop">File: %1$s\nSize: %2$s\nType: %3$s\nTotal lines: %4$s\nModified lines: %5$s</string>
     <string name="axml_prop">File: %1$s\nSize: %2$s\nTotal lines: %3$s\nModified lines: %4$s</string>
+    <string name="axml_info_ref">There should be a resource ID in hexadecimal (HEX) format! Don\'t use strings!</string>
+    <string name="axml_info_hex">The value must be in hexadecimal format (HEX)!</string>
 	<string name="base64_decode">Decode Base64</string>
 	<string name="accessibility_info">For Android 13+, a special permission needs to be granted to enable the accessibility service. To do this, open the system information about the application and in the menu at the top (three dots) give permission. This menu may not appear until you click on the accessibility service.</string>
 	<string name="total">Total</string>

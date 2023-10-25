@@ -777,4 +777,8 @@
 	<string name="license_accept">Прийняти</string>
 	<string name="license_refuse">Відмовитися</string>
 	<string name="send_log">Надсилання логу розробнику</string>
+	<string name="axml_info_ref">Тут повинен бути ID ресурсу у шістнадцятковому форматі (HEX)! Не використовуйте рядки!</string>
+	<string name="axml_info_hex">Значення повинно бути у шістнадцятковому форматі (HEX)!</string>
+	<string name="complete_msg">Завершено, оригінал(и) збережено в \"%s\"</string>
+	<string name="complete_msg2">Завершено, файл(и) збережено в %s</string>
 </resources>
