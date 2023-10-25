@@ -788,4 +788,6 @@
 	<string name="axml_prop">文件：%1$s\n大小：%2$s\n总行数：%3$s\n已修改行数：%4$s</string>
 	<string name="strings_edit">字符串编辑器</string>
 	<string name="type">类型：%s</string>
+	<string name="axml_info_ref">资源 ID 应该是一个十六进制（HEX）格式！不要使用字符串！</string>
+	<string name="axml_info_hex">该值必须采用十六进制（HEX）格式！</string>
 </resources>
