@@ -52,10 +52,15 @@
 	<string name="soeditor">Editor perpustakaan</string>
 	<string name="file_changed">File diubah, simpan perubahan?</string>
 	<string name="so_prop">File: %1$s\nUkuran: %2$s\nJenis: %3$s\nTotal baris: %4$s\nBaris yang dimodifikasi: %5$s</string>
+	<string name="so_info">Agar penyuntingan berhasil, panjang baris sebelum penyuntingan harus sesuai dengan panjang baris setelah penyuntingan. Jika panjangnya tidak sesuai, maka, baris tersebut akan disorot dalam warna merah. Cobalah untuk menghindari penyuntingan baris dengan karakter yang aneh! Meskipun semua persyaratan terpenuhi, tidak ada jaminan 100% bahwa perpustakaan akan tetap beroperasi setelah pengeditan; jangan lupa untuk membuat cadangan!</string>
 	<string name="axml_prop">File: %1$s\nUkuran: %2$s\nTotal baris: %3$s\nBaris yang dimodifikasi: %4$s</string>
+	<string name="axml_info_ref">Harus ada sumber ID dalam format heksadesimal (HEX)! Jangan gunakan string!</string>
+	<string name="axml_info_hex">Nilai harus dalam format heksadesimal (HEX)!</string>
 	<string name="base64_decode">Dekode Base64</string>
 	<string name="accessibility_info">Untuk Android 13+, izin khusus perlu diberikan untuk mengaktifkan layanan aksesibilitas. Untuk melakukannya, buka informasi sistem tentang aplikasi dan pada menu di bagian atas (titik tiga) berikan izin. Menu ini mungkin tidak akan muncul sampai Anda mengklik layanan aksesibilitas.</string>
 	<string name="total">Total</string>
+	<string name="ignore_indent">Abaikan lekukan</string>
+	<string name="file_nw">File ini tidak dapat ditulis!</string>
 	<string name="dexs_info">Informasi Dex</string>
 	<string name="dex_limit_info">Jumlah maksimum metode/bidang dalam dex: %d</string>
 	<string name="hide">Sembunyikan</string>
@@ -149,7 +154,7 @@
 	<string name="lower_case">huruf kecil</string>
 	<string name="upper_case">HURUF BESAR</string>
 	<string name="server">Server</string>
-	<string name="strings_edit">Editor strings</string>
+	<string name="strings_edit">Editor baris</string>
 	<string name="methods_count">Jumlah methods</string>
 	<string name="strings_count">Jumlah strings</string>
 	<string name="class_count">Jumlah classes</string>

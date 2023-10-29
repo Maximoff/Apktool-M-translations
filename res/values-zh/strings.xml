@@ -790,4 +790,7 @@
 	<string name="type">类型：%s</string>
 	<string name="axml_info_ref">资源 ID 应该是一个十六进制（HEX）格式！不要使用字符串！</string>
 	<string name="axml_info_hex">该值必须采用十六进制（HEX）格式！</string>
+	<string name="so_info">若要成功编辑，编辑前与编辑后的行长度必须完全匹配。如果长度不匹配，则此类行将以红色突出显示。尽量避免编辑带有奇怪字符的行！即使满足了所有条件，也不能 100% 保证库在编辑后仍能正常运行；不要忘记备份哦！</string>
+	<string name="ignore_indent">忽略缩进</string>
+	<string name="file_nw">文件不可写！</string>
 </resources>
