@@ -177,7 +177,7 @@
 	<string name="replace_to_archive">استبدال</string>
 	<string name="skip_to_archive">تخطى</string>
 	<string name="signature_scheme">نظام التوقيع: %s</string>
-	<string name="editor_prop_dialog">الاسم: %1$مسار s: %2$s الحجم: %3$s</string>
+	<string name="editor_prop_dialog">الاسم: %1$s\nالمسار: %2$s\nالحجم: %3$s</string>
 	<string name="dex2jar">Dex2Jar</string>
 	<string name="jar2dex">Jar2Dex</string>
 	<string name="encoding">ترميز</string>
@@ -214,7 +214,7 @@
 	<string name="output_directory">دليل الإخراج</string>
 	<string name="set_as_output_directory">تعيين كـ دليل إخراج</string>
 	<string name="output_directory_summary">قم بتعيين دليل الإخراج للتطبيقات المثبتة.</string>
-	<string name="output_directory_not_extsts">مجلد الإخراج \"%1$ s\" غير موجود ولا يمكن إنشاؤه!</string>
+	<string name="output_directory_not_extsts">مجلد الإخراج \"%1$s\" غير موجود ولا يمكن إنشاؤه!</string>
 	<string name="output_directory_not_set">يجب عليك تعيين مجلد الإخراج أولاً!</string>
 	<string name="not_directory">\"%1$s\" ليس دليلاً!</string>
 	<string name="compile_project">ترجمة هذا المشروع</string>
