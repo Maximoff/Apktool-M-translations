@@ -234,6 +234,11 @@
 		<item>Помещает ссылку на дескриптор метода в регистр vAA. Присутствует в файлах Dex, начиная с версии 039.</item>
 		<item>Помещает ссылку на прототип метода в регистр vAA, Присутствует в файлах Dex, начиная с версии 039.</item>
 	</string-array>
+    <string-array name="app_theme">
+        <item>Светлая</item>
+        <item>Тёмная</item>
+        <item>Чёрная</item>
+    </string-array>
     <string-array name="jadx_sets">
         <item>Fallback режим</item>
         <item>Деобфускация</item>

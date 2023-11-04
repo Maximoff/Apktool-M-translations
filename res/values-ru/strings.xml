@@ -342,6 +342,8 @@
 	<string name="restore">Восстановление</string>
 	<string name="light_theme">Светлая тема</string>
 	<string name="light_theme_summary">Выберите между светлой темой и темной темой для пользовательского интерфейса.</string>
+    <string name="app_theme">Тема приложения</string>
+    <string name="app_theme_summary">Выбор цветовой схемы интерфейса</string>
 	<string name="output_directory">Выходной каталог</string>
 	<string name="set_as_output_directory">Установить как выходной каталог</string>
 	<string name="output_directory_summary">Установите выходной каталог по умолчанию</string>

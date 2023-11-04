@@ -352,6 +352,8 @@
 	<string name="err_encex">Encoding exception: %s</string>
 	<string name="light_theme">Light Theme</string>
 	<string name="light_theme_summary">Choose between a light theme and a dark theme for the user interface.</string>
+    <string name="app_theme">Application theme</string>
+    <string name="app_theme_summary">Selecting an interface color scheme</string>
 	<string name="output_directory">Output directory</string>
 	<string name="set_as_output_directory">Set as output directory</string>
 	<string name="output_directory_summary">Set the default output directory</string>

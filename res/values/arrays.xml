@@ -460,6 +460,16 @@
 		<item>Places a reference to a method handle in the vAA register. Present in Dex files since version 039.</item>
 		<item>Places a reference to the method prototype in the vAA register. Present in Dex files since version 039.</item>
 	</string-array>
+    <string-array name="app_theme">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Black</item>
+    </string-array>
+    <string-array name="app_theme_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
     <string-array name="jadx_sets">
         <item>Fallback mode</item>
         <item>Deobfuscation</item>
