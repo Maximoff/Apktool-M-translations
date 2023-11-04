@@ -154,7 +154,7 @@
 	<string name="lower_case">huruf kecil</string>
 	<string name="upper_case">HURUF BESAR</string>
 	<string name="server">Server</string>
-	<string name="strings_edit">Editor baris</string>
+	<string name="strings_edit">Editor strings</string>
 	<string name="methods_count">Jumlah methods</string>
 	<string name="strings_count">Jumlah strings</string>
 	<string name="class_count">Jumlah classes</string>
@@ -345,6 +345,8 @@
 	<string name="err_encex">Pengecualian pengkodean: %s</string>
 	<string name="light_theme">Tema Terang</string>
 	<string name="light_theme_summary">Pilih antara tema terang atau tema gelap untuk antarmuka pengguna.</string>
+	<string name="app_theme">Tema aplikasi</string>
+	<string name="app_theme_summary">Pilih skema warna antarmuka</string>
 	<string name="output_directory">Folder keluaran</string>
 	<string name="set_as_output_directory">Tetapkan sebagai folder keluaran</string>
 	<string name="output_directory_summary">Atur folder keluaran default</string>

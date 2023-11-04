@@ -234,6 +234,11 @@
 		<item>Menempatkan referensi ke pegangan metode di register vAA. Hadir dalam file Dex sejak versi 039.</item>
 		<item>Menempatkan referensi ke prototipe metode dalam register vAA. Hadir dalam file Dex sejak versi 039.</item>
 	</string-array>
+    <string-array name="app_theme">
+        <item>Terang</item>
+        <item>Gelap</item>
+        <item>Hitam</item>
+    </string-array>
     <string-array name="jadx_sets">
         <item>Mode mundur</item>
         <item>Membingungkan</item>
