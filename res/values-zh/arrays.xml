@@ -234,6 +234,11 @@
 		<item>将对方法句柄的引用放置在 vAA 寄存器中。自版本 039 以来存在于 Dex 文件中。</item>
 		<item>在 vAA 寄存器中放置对方法原型的引用。自版本 039 以来存在于 Dex 文件中。</item>
 	</string-array>
+	<string-array name="app_theme">
+		<item>浅色</item>
+		<item>深色</item>
+		<item>纯黑</item>
+	</string-array>
 	<string-array name="jadx_sets">
 		<item>回退模式</item>
 		<item>反混淆</item>
