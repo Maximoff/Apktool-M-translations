@@ -234,6 +234,11 @@
 		<item>Поміщає посилання на дескриптор методу регістра vAA. Є у файлах Dex, починаючи з версії 039.</item>
 		<item>Поміщає посилання на прототип методу регістра vAA, Присутня у файлах Dex, починаючи з версії 039.</item>
 	</string-array>
+	<string-array name="app_theme">
+        	<item>Світла</item>
+        	<item>Темна</item>
+        	<item>Чорна</item>
+        </string-array>
 	<string-array name="jadx_sets">
         	<item>Запасний режим</item>
         	<item>Деобфускація</item>
