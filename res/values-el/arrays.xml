@@ -342,6 +342,11 @@
 		<item>Προεπιλογή</item>
 		<item>Νέος</item>
 	</string-array>
+        <string-array name="app_theme">
+                <item>Φωτεινό</item>
+		<item>Σκοτεινό</item>
+                <item>Μαύρο</item>
+	</string-array>
 	<string-array name="jadx_sets">
 		<item>Λειτουργία εφεδρείας</item>
 		<item>Deobfuscation</item>
