@@ -324,6 +324,8 @@
 	<string name="err_encex">인코딩 예외: %s</string>
 	<string name="light_theme">라이트 테마</string>
 	<string name="light_theme_summary">UI에 라이트 테마와 다크 테마 중에서 선택합니다.</string>
+	<string name="app_theme">테마</string>
+	<string name="app_theme_summary">인터페이스 테마 설장</string>
 	<string name="output_directory">출력 디렉터리</string>
 	<string name="set_as_output_directory">출력 디렉터리로 설정</string>
 	<string name="output_directory_summary">기본 출력 디렉터리로 설정</string>

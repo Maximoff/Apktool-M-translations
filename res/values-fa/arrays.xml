@@ -234,41 +234,85 @@
 		<item>ارجاع به دسته متد را در ثبات vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 		<item>ارجاع به نمونه اولیه روش را در ثبات vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 	</string-array>
+	<string-array name="app_theme">
+        <item>روشن</item>
+        <item>تاریک</item>
+        <item>سیاه</item>
+    </string-array>
+    <string-array name="jadx_sets">
+        <item>حالت بازگشتی</item>
+        <item>رفع ابهام</item>
+        <item>خروج از یونیکد</item>
+        <item>نمایش کد متناقض</item>
+    </string-array>
 	<string-array name="copy_variants">
-		<item>تغییر نام</item>
-		<item>Rename files only</item>
-		<item>جایگزینی</item>
-		<item>انکار</item>
-	</string-array>
+        <item>تغییر نام</item>
+		<item>فقط تغییر نام فایل ها</item>
+        <item>جایگزین کردن</item>
+        <item>جهش</item>
+    </string-array>
 	<string-array name="menu_pos">
-		<item>چپ</item>
-		<item>راست</item>
-	</string-array>
-	<string-array name="sort">
-		<item>نام</item>
-		<item>نام برعکس</item>
-		<item>قالب</item>
-		<item>قالب برعکس</item>
-		<item>حجم</item>
-		<item>حجم برعکس</item>
-		<item>تاریخ</item>
-		<item>تاریخ برعکس</item>
+        <item>چپ</item>
+        <item>راست</item>
+    </string-array>
+	<string-array name="checksum_names">
+        <item>همه حروف بزرگ</item>
+        <item>جدا سازی با دونقطه</item>
+    </string-array>
+	<string-array name="refresh_res">
+        <item>افزودن منابع جدید (فقط فایل ها)</item>
+        <item>حذف منابع از دست رفته</item>
+    </string-array>
+    <string-array name="sort">
+        <item>نام</item>
+        <item>نام معکوس</item>
+        <item>نوع</item>
+        <item>نوع معکوس</item>
+        <item>اندازه</item>
+        <item>اندازه معکوس</item>
+        <item>زمان</item>
+        <item>زمان معکوس</item>
+    </string-array>
+	<string-array name="resDecodeMode">
+		<item>دیکامپایل نشود</item>
+		<item>دیکامپایل در مسیر اصلی</item>
+		<item>دیکامپایل در یک مسیر جداگانه</item>
 	</string-array>
 	<string-array name="installLocation">
-		<item>بدون تغییر</item>
-		<item>خودکار</item>
-		<item>فقط داخلی</item>
-		<item>فقط خارجی</item>
+		<item>تنظیم نشده</item>
+        <item>خودکار</item>
+        <item>فقط داخلی</item>
+        <item>ترجیحاً خارجی</item>
+    </string-array>
+	<string-array name="xml_format_variants">
+		<item>پیش‌فرض</item>
+		<item>ترفند ساده</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>پیش‌فرض</item>
+		<item>افقی</item> 
+		<item>عمودی</item>
 	</string-array>
 	<string-array name="auto_save_variants">
 		<item>خاموش</item>
-		<item>15 ثانیه</item>
+		<item>15 ثانیه</item> 
 		<item>30 ثانیه</item>
-		<item>1 دقیقه</item>
+		<item>1 دقیقه</item> 
 		<item>5 دقیقه</item>
 	</string-array>
+	<string-array name="to_vector_values">
+		<item>تصویر تطبیقی (کیفیت پایین)</item>
+		<item>تصویر با کیفیت بالا (اندازه بزرگتر)</item>
+		<item>تبدیل به SVG</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>تنظیمات</item>
+		<item>نشانک ها</item>
+        <item>جستجو/جایگزینی تاریخچه</item>
+		<item>واژه‌نامه‌ها</item>
+    </string-array>
 	<string-array name="editor_themes">
-		<item>پیشفرض</item>
-		<item>جدید</item>
+		<item>پیش‌فرض</item>
+		<item>جدید</item> 
 	</string-array>
 </resources>
