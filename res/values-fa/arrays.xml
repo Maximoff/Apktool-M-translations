@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="smali_help_names">
-		<item>ثبت می کند</item>
-		<item>ارزش های تحت اللفظی</item>
+		<item>ثبت ها</item>
+		<item>مقادیر لفظی</item>
 		<item>انواع داده های اولیه</item>
 	</string-array>
 	<string-array name="smali_help_values" formatted="false">
@@ -234,7 +234,7 @@
 		<item>ارجاع به دسته متد را در ثبات vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 		<item>ارجاع به نمونه اولیه روش را در ثبات vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 	</string-array>
-	<string-array name="app_theme">
+    <string-array name="app_theme">
         <item>روشن</item>
         <item>تاریک</item>
         <item>سیاه</item>

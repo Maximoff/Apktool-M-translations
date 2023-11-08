@@ -70,6 +70,7 @@
 	<string name="dexs_info">Dex information</string>
 	<string name="dex_limit_info">Max number of methods/fields in dex: %d</string>
 	<string name="hide">Hide</string>
+    <string name="data_unchanged">the data has not changed</string>
 	<string name="unsupported_android">Unsupported in your Android version!</string>
 	<string name="reset_fab">Reset floating button position?</string>
 	<string name="kill_sign">Remove signature verification</string>
