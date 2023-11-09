@@ -541,6 +541,8 @@
 	<string name="double_exit_summary">Press \"Back\" twice to exit the application</string>
 	<string name="jadx_settings">JADX settings</string>
 	<string name="jadx_settings_summary">Java code preview settings</string>
+    <string name="faq">FAQ</string>
+	<string name="faq_summary">Help for using the program</string>
 	<string name="key_type">Key Type:</string>
 	<string name="key_path">Key Path:</string>
 	<string name="cert_path">Cert Path:</string>
