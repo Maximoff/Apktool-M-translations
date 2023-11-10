@@ -787,4 +787,6 @@
 	<string name="app_theme">Тема додатку</string>
         <string name="app_theme_summary">Вибір колірної схеми інтерфейсу</string>
 	<string name="data_unchanged">дані не змінилися</string>
+	<string name="faq">Довідка</string>
+        <string name="faq_summary">Довідка щодо використання програми</string>
 </resources>
