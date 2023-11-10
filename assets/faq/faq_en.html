@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -52,6 +51,13 @@
         }
     
         .black .answer_text {
+            border: 1px solid #424242;
+            background: #222222;
+        }
+    
+        .black .question_title {
+            border: 1px solid #424242;
+            background: #424242;
             background: #111111;
         }
         
@@ -350,7 +356,7 @@
                     <summary class="question_title">  Debugging mode  </summary>
                     <div class="answer_text">  Writes <code>
                             &lt;application /&gt;
-                        </code>the attribute value in the manifest in the tag <code>android:debuggable</code><code>true</code>.    Notifies the system that it is a debug application. Allows you to extend access to logging of this application. Interaction with the functionality of this function is possible only with the help of special tools (such as Android Studio, as well as debugging at the ADB level, etc.). This option does not apply to Logcat - the number of debug entries in the system log will not change if this parameter is changed.    <p>To specify such an application as the current one for debugging, select it in the "System Settings" For developers " Debugging Application "(the paths may differ).</p>
+                        </code> the attribute value in the manifest in the tag <code>android:debuggable</code> to <code>true</code>.    Notifies the system that it is a debug application. Allows you to extend access to logging of this application. Interaction with the functionality of this function is possible only with the help of special tools (such as Android Studio, as well as debugging at the ADB level, etc.). This option does not apply to Logcat - the number of debug entries in the system log will not change if this parameter is changed.    <p>To specify such an application as the current one for debugging, select it in the "System Settings" For developers " Debugging Application "(the paths may differ).</p>
                     </div>
                 </details>
                 <details class="details_block">
