@@ -659,6 +659,8 @@
 	<string name="aicon_size_summary">Adaptive or vector icon size for quick edit</string>
 	<string name="github">Files for translation</string>
 	<string name="github_summary">Resources for translating the program on GitHub</string>
+    <string name="keep_broken">Keep broken resources</string>
+	<string name="keep_broken_summary">Use this if there was an error when decompiling resources, but you still want to decompile them, even with errors</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>
