@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Поширені запитання щодо програми Apktool M</title>
+    <style>
+        .light {
+            background-color: #ffffff;
+        }
+    
+	    .dark {
+            background-color: #303030;
+        }
+    
+        .black {
+            background-color: #000000;
+        }
+        
+        .light .section_title, .light .content_text, .light .answer_text {
+            color: #424242;
+        }
+    
+        .light .content_text {
+            background: #ddebf7;
+        }
+    
+        .light .answer_text {
+            background: #dddddd;
+        }
+    
+	    .dark .section_title, .dark .content_text, .dark .answer_text {
+            color: #bdbdbd;
+        }
+    
+        .dark .content_text {
+            background: #081e22;
+        }
+    
+        .dark .answer_text {
+            background: #222222;
+        }
+    
+        .black .section_title, .black .content_text, .black .answer_text {
+            color: #ffffff;
+        }
+    
+        .black .content_text {
+            background: #222222;
+        }
+    
+        .black .answer_text {
+            border: 1px solid #424242;
+            background: #222222;
+        }
+    
+        .black .question_title {
+            border: 1px solid #424242;
+            background: #424242;
+            background: #111111;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        .section_title {
+            border: none;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .content_text {
+            border: 1px solid #c0c6d2;
+            border-radius: 3px;
+            padding: 6px;
+            background: #ddebf7;
+        }
+        
+        a:active,
+        a:hover,
+        a {
+            text-decoration: none;
+            color: #2196F3;
+        }
+        
+        .details_block {
+            margin-bottom: 10px;
+            border-radius: 3px;
+            overflow: auto;
+        }
+        
+        .question_title {
+            border: 1px solid #2196F3;
+            padding: 6px;
+            background: #2196F3;
+            color: #ffffff;
+        }
+        
+        .answer_text {
+            border: 1px solid #2196F3;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 6px;
+        }
+        
+        .warning_text {
+            color: red;
+        }
+    </style>
+</head>
+<body class="light">
+    <section class="section_zero">
+        <div class="section_title">
+            Зміст
+        </div>
+        <div class="content_text">
+            <li><a href="https://4pda.to/forum/index.php?showtopic=1002506&view=findpost&p=116526321"><b>Оновлювальна довідка на 4PDA</b></a></li>
+            <li><a href="#section_one">Швидке редагування</a></li>
+            <li><a href="#section_two">Повне редагування - декомпіляція та збирання</a></li>
+            <li><a href="#section_three">Переклад додатків</a></li>
+            <li><a href="#section_four">Функція "Антиспліт"</a></li>
+            <li><a href="#section_five">Створення користувацького підпису</a></li>
+            <li><a href="#section_six">Менеджер файлів</a></li>
+            <li><a href="#section_seven">Різне</a></li>
+            <li><a href="#section_eight">MPatcher</a></li>
+        </div>
+    </section>
+    <section id="section_one">
+        <div class="section_title">
+            Швидке редагування
+        </div>
+        <details class="details_block">
+            <summary class="question_title">Що таке швидке редагування?</summary>
+            <div class="answer_text">
+                Це редагування деяких основних даних додатків без необхідності декомпілювання та перезбирання.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Для чого використовується швидке редагування?</summary>
+            <div class="answer_text">
+                <li>Для перегляду інформації про додаток (apk), його дозволи та пріоритетне місце встановлення (не плутати з реальним місцем встановлення);</li>
+                <li>Для зміни назви додатка;</li>
+                <li>Для зміни імені пакета додатка (клонування додатка);</li>
+                <li>Для заміни як векторних (генерується автоматично), адаптивних, так і звичайних растрових іконок в додатках;</li>
+                <li>Для задання пріоритетного місця встановлення додатка;</li>
+                <li>Для зміни мінімальної чи цільової версії SDK;</li>
+                <li>Для адаптації додатка для Android TV;</li>
+                <li>Для видалення з Маніфесту: <code>android:isSplitRequired, android:debuggable, android:testOnly</code>.
+                </li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Для чого потрібен пункт "Дозволи"?
+            </summary>
+            <div class="answer_text">
+                Для перегляду дозволів додатка, а також для їх увімкнення або вимкнення.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи можливо конвертувати зображення у вектор?
+            </summary>
+            <div class="answer_text">
+                Так.<br>
+Підтримуються формати PNG, Jpeg, Webp, Svg.<br>
+Перетворення відбувається за типом <u>{старе ім'я файлу}_vector.xml</u><br>
+Під час конвертації є можливість покращити/погіршити якість зображення.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи можливо конвертувати зображення svg у VectorDrawable?
+            </summary>
+            <div class="answer_text">
+                Так.<br>
+Доступно в попередньому перегляді контурів SVG/VectorDrawable (не компільованих)<br>
+<u>Примітка:</u> svg повинен мати просту й адекватну структуру, інакше парсер може не опрацювати належним чином, і доведеться його нормалізувати вручну, щоб він відпрацював, як слід.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи можливо перетворити растрові (bitmap) зображення у VectorDrawable?
+            </summary>
+            <div class="answer_text">
+                Так.<br>
+Не панацея, може мати сильну похибку в трасуванні - залежить від складності геометрії вихідного зображення.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як замінити іконку додатка?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Підготуйте потрібну іконку, бажано в форматі png і розміром не більше 192x192px.
+                    </li>
+                    <li>Виберіть потрібний додаток → Швидке редагування.</li>
+                    <li>У верхньому куті ліворуч є іконка встановленого додатка та її назва.</li>
+                    <li>Натискайте на іконку та вибирайте раніше підготовлену іконку.</li>
+                    <li>Якщо потрібно, ставите потрібні позначки параметрів: "замінити адаптивну іконку" "якісна іконка (більший розмір)".</li>
+                    <li>Виберіть також файл підпису, якщо раніше не встановлювали.</li>
+                    <li>Натисніть "Зберегти".</li>
+                </ol>
+                Готовий файл буде в тій самій теці, поруч з вибраним додатком із позначкою mod у кінці.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як витягти іконку додатка?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Виберіть потрібний додаток → Швидке редагування.</li>
+                    <li>Утримання на іконці.</li>
+                </ol>
+                Витягнута іконка буде в тій же теці, поруч з вибраним додатком.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як змінити мінімальну та цільову версію SDK?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Виберіть потрібний додаток → Швидке редагування.</li>
+                    <li>У потрібних параметрах "Мінімальна версія SDK" або "Цільова версія SDK" виконайте потрібні зміни.</li>
+                    <li>Натисніть "Зберегти".</li>
+                </ol>
+                Готовий файл буде в тій самій теці, поруч з вибраним додатком із позначкою mod у кінці.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як змінити ім'я додатка?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Виберіть потрібний додаток → Швидке редагування.</li>
+                    <li>Поміняйте ім'я додатка на потрібне.</li>
+                    <li>Виберіть файл підпису, якщо раніше не встановлювали.</li>
+                    <li>Натисніть "Зберегти".</li>
+                </ol>
+                Готовий файл буде поруч з вибраним додатком із позначкою mod у кінці.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чому неможливо поміняти "Ім'я додатка"? (Пункт неактивний.)
+            </summary>
+            <div class="answer_text">
+                Ймовірно тому, що мінімальна версія sdk додатка вища, ніж версія вашої системи.
+                За таких умов редагування обмежене.<br>
+Спочатку потрібно знизити мінімальну версію sdk, а потім редагувати все інше.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як змінити ім'я пакета додатка?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Виберіть потрібний додаток → "Швидке редагування".</li>
+                    <li>Поміняйте ім'я пакета.</li>
+                    <li>Виберіть файл підпису, якщо раніше не встановлювали.</li>
+                    <li>Натисніть "Зберегти".</li>
+                </ol>
+                Готовий файл буде поруч з вибраним додатком із позначкою mod у кінці.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як зробити клон APK в цій програмі?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Виберіть потрібний додаток → "Швидке редагування".</li>
+                    <li>Поміняйте ім'я пакета, наприклад, додавши або видаливши останні літери в імені.</li>
+                    <li>Виберіть файл підпису, якщо раніше не встановлювали.</li>
+                    <li>Натисніть "Зберегти".</li>
+                </ol>
+                Готовий файл буде поруч з вибраним додатком із позначкою mod у кінці.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як відбувається клонування додатка при швидкому редагуванні?
+            </summary>
+            <div class="answer_text">
+                Програма під час швидкого редагування змінює AndroidManifest.xml і resources.arsc.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як адаптувати додаток для Android TV?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Виберіть потрібний додаток → "Швидке редагування".</li>
+                    <li>Поставте знизу позначку "адаптувати для Android TV".</li>
+                    <li>Виберіть файл підпису, якщо раніше не встановлювали.</li>
+                    <li>Натисніть "Зберегти".</li>
+                </ol>
+                Готовий файл буде поруч з вибраним додатком із позначкою mod у кінці. Як банер використається іконка додатка.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Що робити, якщо після швидкого редагування додаток не встановлюється?
+            </summary>
+            <div class="answer_text">
+                Перевірте, можливо ви просто не підписали пакет?<br>
+У швидкому редагуванні виберіть підпис.
+                Стандартно вибрано "Не підписувати", якщо ви підписом до цього не користувалися.
+            </div>
+        </details>
+    </section>
+    <section id="section_two">
+        <div class="section_title">
+            Повне редагування - декомпіляція та збирання
+        </div>
+        <details class="details_block">
+            <summary class="question_title">
+                Що таке декомпіляція і для чого вона потрібна?
+            </summary>
+            <div class="answer_text">
+                decompile arsc+dex - переклад бінарного (двійкового) коду на зрозумілий людині.
+                Потрібно у випадках редагування ресурсів додатка (resources.arsc) і асемблера Smali (коду).
+                А також для функцій, які вимагають цієї декомпіляції - для доступу до інформації, застосування патчів, перекладу...
+                <p><em>Для роботи рекомпіляції потрібна наявність бінарників aapt's.
+                        Запит на встановлення з'являється під час першого запуску програми.
+                        Якщо ви цього не зробили, завантаження здійснюється в Налаштування » Збірка та декомпіляція » Замінити інструменти » Завантажити для ... »</em></p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як декомпілювати додаток?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Виберіть потрібний додаток.</li>
+                    <li>Натисніть на нього.</li>
+                    <li>Відкриється спливаюче меню.</li>
+                    <li>Виберіть пункт "Декомпілювати".</li>
+                    <li>Позначте пункти, котрі потрібно декомпілювати:</li>
+                    <ul>
+                        <li>"Декомпілювати ресурси"</li>
+                        <li>"Декомпілювати classes.dex" чи "Декомпілювати всі "*.dex""<br>
+<em>(Пункт "всі *.dex" відповідає за декси у вкладених теках: наприклад, в assets, mthook і т.д.)</em>
+                        </li>
+                        <li>А також, якщо потрібно і "Декомпіляцію додаткових ресурсів" з вибором місця куди можна декомпілювати.</li>
+                    </ul>
+                </ol>
+                Після успішної декомпіляції буде звукове і діалогове сповіщення, якщо воно заздалегідь було ввімкнуто в Налаштуваннях.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як, навпаки, компілювати додаток?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Усередині проекту натиснути на напис "Зібрати проект" над вікном провідника.</li>
+                    <li>У вікні збирання необхідно вибрати інструмент збирання ресурсів - aapt або aapt2.</li>
+                    <li>Також можна вказати автоматичне підписування, якщо це потрібно.</li>
+                </ol>
+                Лог зображається в режимі реального часу. Можна відстежувати етапи та зауваження, помилки під час збирання.<br>
+По завершенню лог зупиниться (це буде видно).<br>
+Після успішної компіляції буде звукове і діалогове сповіщення, якщо воно заздалегідь було ввімкнуте в Налаштуваннях.<br>
+Внизу також буде пропозиція відразу встановити зібраний додаток.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Куди зберігається додаток після збирання?
+            </summary>
+            <div class="answer_text">
+                У теку з розібраним додатком. В корінь проекту (поруч з apktool.json).
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи можлива одночасна декомпіляція декількох файлів?
+            </summary>
+            <div class="answer_text">
+                Так, але краще не декомпілювати кілька поспіль, оскільки під час одночасної декомпіляції може не вистачити пам'яті.<br><br>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Як це зробити?
+                    </summary>
+                    <div class="answer_text">
+                        Виділяєте кілька файлів і після довгого натискання, відкриється меню.<br>
+<u>Увага!</u> Це працює для однотипних файлів.
+                        Якщо виділено щось, крім apk, то пунктів не буде в меню.
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як змінити теку, в яку будуть зберігатися APK?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Налаштування → "Збірка та декомпіляція" → "Встановіть стандартний вихідний каталог"
+                    </li>
+                    <li>Перейдіть у потрібну теку, натисніть на смугу "шлях" - Встановити як вихідний каталог.</li>
+                    <li>Задати вихідний каталог можливо ще безпосередньо у менеджері файлів.</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Що таке пункт "Вихідний каталог"?
+            </summary>
+            <div class="answer_text">
+                Це директорія, в яку будуть експортовані/витягнуті apk для подальшої роботи з меню "Додатки".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як замінювати ресурси у файлі ".apk"?
+            </summary>
+            <div class="answer_text">
+                Спочатку необхідно декомпіляція, а після копіювання/вставляння файлів і збирання.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Що робити, якщо додаток не збирається, хоча все зроблено без помилок, або взагалі нічого не змінювалось в apk, а просто перекомпілювалось?
+            </summary>
+            <div class="answer_text">
+                Перемкніть версію aapt.<br>
+Подивіться лог на наявність рівня події Warning.
+                <br>
+Загалом, дивіться лог - там має вказуватися причина.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Яка сумісність із проектами Apktool?
+            </summary>
+            <div class="answer_text">
+                Apktool M дає змогу збирати проекти, розібрані через звичайний Apktool.<br>
+Перед збиранням Apktool M перетворює .yml на .json.<br>
+Відомості про процес можна відстежувати за логом.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи може Apktool M працювати із системними додатками?
+            </summary>
+            <div class="answer_text">
+                Так, це можливо.<br><br>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Як це зробити?
+                    </summary>
+                    <div class="answer_text">
+                        Перед операціями з такими apk, необхідно імпортувати apk-фреймворки через пункт у контекстному меню цього apk. Імпорт виконується на всіх таких apk.
+                        
+                        <p>Базовий шлях: /system/framework/..</p>
+                        
+                        Вони також можуть перебувати в /system/vendor/framework і т.д. суміжних директоріях.
+                        Якщо ці директорії існують (рідкісне явище).<br><br>
+Приклад фреймворків:<br>
+                        <img width="100%" alt="" align="center" class="image" src="data:image/webp;base64,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" />
+                        <p>Після цього декомпілювати й компілювати як звичайний apk. Для збереження оригінальних META-INF і маніфесту, налаштуваннях декомпіляції увімкніть перемикач "Зберегти оригінал".</p>
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Пояснення пунктів у розділі "Збірка та декомпіляція"
+            </summary>
+            <div class="answer_text">
+                <details class="details_block">
+                    <summary class="question_title">
+                        Вихідний каталог
+                    </summary>
+                    <div class="answer_text">
+                        Шлях, за яким експортуватимуться/витягуватимуться встановлені додатки з вкладки "Додатки".
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Використовувати aapt2
+                    </summary>
+                    <div class="answer_text">
+                        Додає в пункт вибору версії aapt другу версію інструменту перед збиранням.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Інформація налагодження
+                    </summary>
+                    <div class="answer_text">
+                        <p>Під час збирання у файлах Smali зберігаються налагоджувальні дані, такі як <code>.line, .param</code> тощо.</p>
+                        
+                        <u>Примітка:</u><br>
+Ці дані потрібні виключно для можливості налагодження роботи додатка в режимі debuggable. А також для вузькоспрямованого налагодження падіння Smali в журналі Logcat (рідкісне явище, може допомогти як якір на рядок, що викликає падіння). На виконання коду вони не впливають.
+                        Ці дані також можуть допомогти при редагуванні асемблера Smali як орієнтири тощо (для модоробів).
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Режим налагодження
+                    </summary>
+                    <div class="answer_text">
+                        Записує в маніфесті в тезі
+<code>
+&lt;application /&gt;
+</code> атрибут <code>android:debuggable</code> значенням <code>true</code>.
+                        
+                        Оголошує системі, що це debug-додаток. Дає змогу розширити доступ до логгування цього додатка. Взаємодія з працездатністю цієї функції можлива лише за допомогою спеціальних інструментів (такі є в Android Studio, а також налагодження на рівні ADB, тощо). Це не належить до журналу Logcat - кількість налагодження в системний журнал не змінюється при зміні цього параметра.
+                        
+                        <p>Для вказівки такого додатка як поточного для налагодження - виберіть його в "Системні налаштування » Для розробників » Додаток для налагодження" (шляхи можуть відрізнятися).</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Детальний лог
+                    </summary>
+                    <div class="answer_text">
+                        Під час збирання виводиться у лог остаточний статус кожного з файлів після його компіляції. Не включайте, якщо немає потреби.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Зберегти оригінал
+                    </summary>
+                    <div class="answer_text">
+                        Дає змогу зберегти вихідний META-INF і хеш маніфесту завдяки дотриманню вихідних хешів ресурсів.<br>
+Цей режим дає змогу редагувати тільки Smali - під час спроби зібрати відредагований файл у res/..., його буде видалено в кінцевому apk, тому що він не відповідає вихідному хешу (модифікований).
+                        <p>
+                                <span class="warning_text"><em>Питання потребує уточнення.</em></span></p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Аналіз всіх smali
+                    </summary>
+                    <div class="answer_text">
+                        Форсує аналіз файлів у Smali.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Добавляти "APKTOOL_DUMMY"
+                    </summary>
+                    <div class="answer_text">
+                        <p>Типово ID ресурсів всередині resources.arsc виставляються за арифметичною прогресією. У деяких випадках вона може бути порушена - деякі місця всередині типів значень можуть бути не заповнені (є незайнятими).</p>
+                        <p>На ці місця встановлюються з заглушки APKTOOL_DUMMY для відновлення цілісності прогресії.
+                            Ці рядки не використовуються і ні на що не впливають.</p>
+                        <u>Невелике зауваження:</u><br>
+                        <p>Якщо видалити об'єкт ресурсу з res/values/public.xml, то під час збирання він спробує знайти таке вільне місце і встановити в ньому свій ID. Якщо вільних місць немає, він додасться в кінці списку об'єктів зі своєї категорії. Не рекомендується це робити з ID об'єктів, які вказані в Smali, - це спричинить падіння, тому що вказаний за ID ресурс було переміщено (його більше не існує як такого).</p>
+                        <p>Видалення public.xml цілком змусить Apktool створити прогресію з нуля - тоді APKTOOL_DUMMY не буде ніде встановлений, тому що немає вільних місць між початковим і замикаючим ID.</p>
+                        <p>Потреба в APKTOOL_DUMMY визначається виключно самим користувачем. Також це може знадобитися, якщо декомпільований проект має специфічну структуру серед ID (зокрема, через нестандартні атрибути та/або обфускацію).</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Форматувати HTML
+                    </summary>
+                    <div class="answer_text">
+                        Вміст усіх файлів .html і .htm (?) буде відформатовано відповідно до синтаксису XML.
+                        Це може порушити вихідне зображення сторінки HTML. Встановлюється тільки в разі потреби.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Видаляти теку "build"
+                    </summary>
+                    <div class="answer_text">
+                        <p>Під час збирання файли DEX і ARSC кешуються в теку build. Якщо ви не змінювали ресурси після попередньої збірки та знову зібрали apk - .arsc не буде створено знову, а підхопиться з кешованого екземпляра, тому що його хеш ідентичний (не модифікований). Це також стосується Smali (файлів DEX). Прискорює збирання apk завдяки пропуску повторної компіляції.</p>
+                        <p>Видалення теки супроводжується лише звільненням простору. Після чого в процесі наступної збірки, .dex і .arsc будуть знову створені "з нуля" і тека створиться. Активування пункту дає змогу автоматично видаляти теку після успішного збирання. Активуйте якщо бажаєте.</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Все у вихідний каталог
+                    </summary>
+                    <div class="answer_text">
+                        Усі успішно скомпільовані apk будуть автоматично перенесені в зазначений вище вихідний каталог.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Управління фреймворками
+                    </summary>
+                    <div class="answer_text">
+                        Дає змогу керувати фреймами, імпортованими ззовні.
+                        Кнопка скидання очищає список і самі файли локально, а також відновлює res-framework.apk (ID 1) з Apktool M.
+                    </div>
+                </details>
+            </div>
+        </details>
+    </section>
+    <section id="section_three">
+        <div class="section_title">
+            Переклад додатків
+        </div>
+        <details class="details_block">
+            <summary class="question_title">
+                Скільки підтримується мов для перекладу?
+            </summary>
+            <div class="answer_text">
+                Більше ніж сто мов.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Які опції містяться в перекладачі?
+            </summary>
+            <div class="answer_text">
+                <li>Автоматичний переклад вибраних рядків у ресурсах (strings, arrays, plurals) і smali;</li>
+                <li>Ручний переклад у ресурсах (strings, arrays, plurals) і smali;</li>
+                <li>Виправлення перекладу;</li>
+                <li>Онлайн переклад з вибором сервісів перекладу;</li>
+                <li>Офлайн переклад;</li>
+                <li>Підтримування словників;</li>
+                <li>Створення власних словників з присутнього перекладу;</li>
+                <li>Підтримування словників з MT Manager'а;</li>
+                <li>Об'єднання мов.</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Скільки у програмі сервісів для онлайн перекладу?
+            </summary>
+            <div class="answer_text">
+                Три: Яндекс, Google, Bing.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Не можете знайти функцію перекладу додатка.
+                Як увімкнути перекладач та перекласти додаток (strings.xml) на українську мову?
+            </summary>
+            <div class="answer_text">
+                Ця функція доступна тільки, коли додаток декомпільовано.
+                <ol>
+                    <li>Декомпілюйте ресурси потрібного apk.</li>
+                    <li>Перейдіть у теку з декомпільованими файлами.</li>
+                    <li>Відкрийте меню менеджера файлів (воно відкривається натисканням на смугу адреси) і виберіть пункт "Перекладач".</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як виконати переклад додатка в автоматичному режимі?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Декомпілюйте ресурси потрібного apk.</li>
+                    <li>Перейдіть у теку з декомпільованими файлами.</li>
+                    <li>Відкрийте меню менеджера файлів (воно відкривається натисканням на смугу адреси) й виберіть пункт "Перекладач", далі вгорі праворуч натисніть на три крапки й виберіть пункт "Автопереклад".</li>
+                    <li>У меню, що відкрилося, виберіть потрібний сервіс перекладу, наприклад, Яндекс.</li>
+                    <li>У пункті "Початкова мова" можна залишити автоматичний вибір "Визначити мову". "Кінцева мова" - вибираємо потрібну.
+                        Стандартно пропонується мова, яка встановлена у системі.</li>
+                    <li>Знизу поставте потрібні позначки "Пропустити перекладені рядки" чи "Виправляти переклад".</li>
+                    <li>Виберіть потрібні рядки, виділіть.</li>
+                    <li>Натисніть пункт "Перекласти". Будуть перекладені рядки в res/values/strings.</li>
+                    <li>Після закінчення перекладу знову натисніть вгорі праворуч на три крапки та виберіть пункт "Зберегти".
+                    </li>
+                    <li>Зберіть проект (додаток).</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як виконати переклад smali додатка в автоматичному режимі?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Декомпілюйте потрібний apk.</li>
+                    <li>Перейдіть у теку з декомпільованими файлами.</li>
+                    <li>Відкрийте меню менеджера файлів (воно відкривається натисканням на смугу адреси) й виберіть пункт "Переклад smali", далі вгорі праворуч натисніть на три крапки й виберіть пункт "Автопереклад".</li>
+                    <li>У меню, що відкрилося, виберіть потрібний сервіс перекладу, наприклад, Яндекс.</li>
+                    <li>У пункті "Початкова мова" можна залишити автоматичний вибір "Визначити мову". "Кінцева мова" - вибираємо потрібну.
+                        Стандартно пропонується мова, яка встановлена у системі.</li>
+                    <li>Виберіть потрібні рядки, виділіть.</li>
+                    <li>Знизу поставте потрібні позначки "Пропустити перекладені рядки" чи "Виправляти переклад".</li>
+                    <li>Натисніть пункт "Перекласти".</li>
+                    <li>Після закінчення перекладу знову натисніть вгорі праворуч на три крапки та виберіть пункт "Зберегти".
+                    </li>
+                    <li>Зберіть проект (додаток).</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                В "Автоперекладі" є функція "Виправляти переклад". Для чого вона потрібна?
+            </summary>
+            <div class="answer_text">
+                Для пропуску рядків, які перекладати не потрібно: <code>true, false, %1$d/%2$d</code>, тепер ще й векторну графіку, референси та інше, а також виправляє трохи рядки після автоперекладу.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як виконати переклад додатка в ручному режимі?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Декомпілюйте потрібний apk.</li>
+                    <li>Перейдіть у теку з декомпільованими файлами.</li>
+                    <li>Відкрийте меню менеджера файлів (воно відкривається натисканням на смугу адреси) й виберіть пункт "Переклад smali" і вручну виправіть потрібні рядки.</li>
+                    <li>Натисніть вгорі праворуч на три крапки та виберіть пункт "Зберегти".</li>
+                    <li>Зберіть проект (додаток).</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як виконати об'єднання мов, якщо в типових рядках додатка, що перекладається, відсутні необхідні, але є в інших?
+            </summary>
+            <div class="answer_text">
+                Після потрібного перекладу додатка, зайдіть в меню перекладача, виберіть пункт "Додати, Додати з" і додайте рядки, яких не вистачає, з іншої локалі.
+                Звісно, потім перекладаємо і їх, якщо треба.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Який формат словників підтримується в Apktool M?
+            </summary>
+            <div class="answer_text">
+                *.amd і *.mtd
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як створити свій словник із перекладеного файлу?
+            </summary>
+            <div class="answer_text">
+                Відкрийте перекладач, у меню виберіть "Створити словник", виберіть джерело (не перекладені рядки) і цільовий ресурс (ваш файл перекладу) у теці проекту, збережіть.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як користуватися збереженим словником?
+            </summary>
+            <div class="answer_text">
+                Під час наступного перекладу він з'явиться у виборі сервісу перекладу.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Де взяти готовий словник для офлайн перекладу?
+            </summary>
+            <div class="answer_text">
+                У темі <a href="https://4pda.to/forum/index.php?showtopic=548542&view=findpost&p=29447386&anchor=Spoil-29447386-6">MT Manager'а.</a><br>
+Скопіюйте його за адресою "Вихідний каталог/dictionary" (стандартно це "Apktool_M/dictionary" у внутрішній пам'яті), або ж просто імпортуйте, натиснувши на файл словника в програмі та додайте його.<br>
+Після цього словник з'явиться в перекладачі, у сервісах автоперекладу.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Після перекладу проект не збирається. Видає помилку.
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Видаліть не валідні рядки, які зазвичай вказані в лозі помилки збірки.</li>
+                    <li>Для збирання використайте aapt1, якщо не збирається в aapt2 і в ньому немає помилок про не валідні рядки перекладу.</li>
+                    <li>Можливо, у додатку стоїть захист за підписом.</li>
+                </ol>
+            </div>
+        </details>
+    </section>
+    <section id="section_four">
+        <div class="section_title">
+            Функція "Антиспліт"
+        </div>
+        <details class="details_block">
+            <summary class="question_title">
+                Що таке Антиспліт?
+            </summary>
+            <div class="answer_text">
+                Це злиття Android App Bundle (спліт) в один інсталяційний файл, а також установлення і витягнення таких файлів.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як зібрати зі сплітів apk? Де знаходиться ця опція?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>У контекстному меню "Антиспліт".
+                        Викликається натисканням на apks/xapk.</li>
+                    <li>У контекстному меню "Антиспліт".
+                        Викликається натисканням по групі заздалегідь вибраних/виділених apk.</li>
+                </ol>
+                Далі виберіть потрібний інструмент компіляції: aapt2 або aapt, якщо першим не збирається додаток.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи можливо зібрати apk зі встановленого спліту?
+            </summary>
+            <div class="answer_text">
+                Так.<br>
+Виділіть встановлений додаток у списку додатків і утриманням викликайте пункт "Антиспліт".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Де міститься зібраний файл?
+            </summary>
+            <div class="answer_text">
+                apk міститься стандартно в робочій теці: внутрішня_пам'ять/Apktool_M.<br>
+<small><i>В кінці збірки буде кнопка "Встановити", але якщо довго її утримувати, то відкриється тека з файлом.</i></small>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Покрокова інструкція, як конвертувати Apks в Apk за допомогою Apktool M.
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Виберіть потрібний файл (Apks) і натисніть на нього.</li>
+                    <li>Потім у меню, що з'явилося, виберіть пункт "Антиспліт".</li>
+                    <li>Потім натисніть на кнопку "Антиспліт" (заздалегідь переконайтеся, що всі файли, тобто всі позначки було вибрано).</li>
+                    <li>Після цього виберіть потрібний інструмент (aapt2 або aapt, якщо додаток не компілюється) і натисніть кнопку "Вибрати".</li>
+                    <li>Дочекайтеся завершення всього процесу.</li>
+                </ol>
+                Тепер Apks перетворився на Apk, і тепер можна працювати з ним, як зі звичайним Apk файлом.
+            </div>
+        </details>
+    </section>
+    <section id="section_five">
+        <div class="section_title">
+            Створення користувацького підпису
+        </div>
+        <details class="details_block">
+            <summary class="question_title">
+                Як створити свій підпис?
+            </summary>
+            <div class="answer_text">
+                <p>Перейдіть в "Налаштування" → "Підпис", виберіть пункт "Створити ключ".</p>
+                <li><small><i>У налаштуваннях підпису можна задати ім'я RSA/SF файлів, а також ім'я творця для підпису V1</i></small></li><br>
+                У відкритому меню заповніть рядки:
+                <p><u>Алгоритм підпису:</u><br>
+Різниця у довжині хешу сертифіката (після підпису apk).
+                    Оптимальним є SHA256withRSA.
+                    Залишіть типово.
+                    MD5 вважається небезпечним.
+                    Детальні відмінності можна знайти в Інтернеті.</p>
+                <p><u>Тип:</u><br>
+Вказується тип сховища.
+                    Типово JKS (також може бути відомий як .keystore).
+                    Детальні відмінності можна знайти в Інтернеті.</p>
+                <p><u>Шлях до ключа:</u><br>
+Вихідне розташування сховища для ключа.
+                    Ім'я файлу підставляється автоматично, в кінці можна змінити за бажання.</p>
+                <p><u>Псевдонім:</u><br>
+Псевдонім для ключа.
+                    Вказується під час імпортування/експлуатації.</p>
+                <p><u>Пароль сховища і ключа:</u><br>
+Пароль для захисту сховища і безпосередньо ключа перед імпортом/експлуатацією.
+                    Для зручності можна зробити ідентичними.</p>
+                <p><u>Розмір ключа:</u><br>
+Визначає кількість бітів (довжини) сигнатури ключа для його зчитування. Типово 2048.
+                    Збільшення розміру збільшує його криптостійкість, але при цьому його складніше аналізувати (повільніше).
+                    Задається за інформативною геометричною прогресією (2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, і так далі).</p>
+                <p><u>Термін дії:</u><br>
+Час від дати створення, за яким спливає дійсність ключа. Вказується у роках.</p>
+                <p><u>Наступні дані потрібні для інформування про власника підпису. Вказуйте за бажанням:</u><br>
+Ім'я, посада, організація, місто, область/штат, країна.</p>
+                <p>Кнопка "Зберегти" завершує створення і розміщує сховище ключа за вказаним раніше шляхом.</p>
+                <p>Кнопка "Створити та використовувати" додатково імпортує кінцевий файл на місце користувацького підпису.</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи є можливість конвертувати сховища jks/keystore у pk8+x509.pem?
+            </summary>
+            <div class="answer_text">
+                Так, це можливо.
+            </div>
+        </details>
+    </section>
+    <section id="section_six">
+        <div class="section_title">
+            Менеджер файлів
+        </div>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи є в Apktool повноцінний менеджер файлів?
+            </summary>
+            <div class="answer_text">
+                Так.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як зайти в меню менеджера файлів?
+            </summary>
+            <div class="answer_text">
+                Меню відкривається натисканням по смузі адреси.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Які функції в ньому є?
+            </summary>
+            <div class="answer_text">
+                <li>видалення файлів;</li>
+                <li>копіювання;</li>
+                <li>перейменування, включно з пакетним;</li>
+                <li>створення списку файлів;</li>
+                <li>архівування;</li>
+                <li>властивості файлів і тек;</li>
+                <li>повноцінний пошук;</li>
+                <li>закладки;</li>
+                <li>історія останніх відкритих файлів;</li>
+                <li>діалог властивостей apk/apks файлів - це окрема тема;</li>
+                <li>попередній перегляд векторних xml/svg, а також перетворення зображень у вектор;</li>
+                <li>попередній перегляд шрифтів ttf/otf;</li>
+                <li>пакетні операції з виділеними apk, або зображеннями, за довгим натисканням;</li>
+                <li>у теках проекту, у властивостях файлів ресурсів, є їхній ID з public.xml (якщо є).</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як викликати контекстне меню під час перегляду файлів?
+            </summary>
+            <div class="answer_text">
+                Утримання безпосередньо на файлі.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Які пункти доступні в контекстному меню?
+            </summary>
+            <div class="answer_text">
+                <li>Надіслати файл(и)...</li>
+                <li>Відкрити в...</li>
+                <li>Видалити</li>
+                <li>Перейменувати</li>
+                <li>Стиснути</li>
+                <li>Витягти сюди</li>
+                <li>Витягти в "Ім'я файлу"</li>
+                <li>Переглянути вміст</li>
+                <li>Властивості</li>
+                <li>Копіювати</li>
+                <li>Вирізати</li>
+                <li>MPatcher</li>
+                <li>Вибрати</li>
+                <li>Вибрати все</li>
+                <li>Копіювати ім'я</li>
+                <li>Копіювати шлях</li>
+                <li>Додати в закладки</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як виділити файл/теку?
+            </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Утриманням безпосередньо на файлі/теці або натисканням на іконку.</li>
+                    <li>Після виділення файлу/теки натисканням на іконку, можна, утриманням на іконці іншого файлу, виділити файли "від і до".</li>
+                    <li>Швидко виділити все можливо також натисканням на іконку пункту знизу (..)</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як перейменувати файли?
+            </summary>
+            <div class="answer_text">
+                Після утримання файлу з'явиться діалог перейменування.<br>
+У цьому ж діалозі після утримання "Авто" можливо перейменувати в автоматичному режимі, використовуючи шаблони.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як редагувати файл зовнішнім редактором, безпосередньо з програми?
+            </summary>
+            <div class="answer_text">
+                Утримання на файлі → у висувному контекстному меню вибрати пункт "Відкрити в...".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як створити архів файлів?
+            </summary>
+            <div class="answer_text">
+                Вибрати пункт "Стиснути" в контекстному меню.
+                Під час архівації файлів їх можна додати до вже наявного архіву.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи можливо в архівах (зокрема і в apk) видалити або замінити файли/теки без розбирання/збирання?
+            </summary>
+            <div class="answer_text">
+                Так.<br>
+                <ol>
+                    <li>Утримуйте архів/.apk та у висувному меню виберіть "Переглянути вміст".</li>
+                    <li>Утриманням виділіть потрібне для видалення чи витягнення.</li>
+                </ol>
+                Після потрібних маніпуляцій файл буде автоматично перезібраний і підписаний.<br>
+Оригінал збережеться поруч із розширенням .bak.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як у розібраному APK замінити файл або теку на вже відредаговану?
+            </summary>
+            <div class="answer_text">
+                Утримуйте на потрібному файлі та в контекстному меню виберіть "Витягти сюди"...<br>
+Якщо ви хочете, наприклад, замінити картинку в теці drawable, треба додавати із заміною в apk теку res, в якій розташована тека drawable, в якій безпосередньо картинка.<br>
+                <p>
+                    <span class="warning_text">Тобто важливо зберігати структуру каталогів!</span>
+                </p>
+                Після потрібних дій, назад заархівуйте файл із розширенням apk.<br>
+Підпишіть.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи є в Apktool M повноцінний пошук?
+            </summary>
+            <div class="answer_text">
+                Так.<br>
+Є як пошук за файлами, ім'ям файлів, пошук за текстом у файлах, так і за встановленими додатками.<br>
+Ручне введення адреси викликається утриманням на адресі.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи є в програмі пошук за регулярними виразами?
+            </summary>
+            <div class="answer_text">
+                Так.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як розпочати користуватися пошуком?
+            </summary>
+            <div class="answer_text">
+                Натиснути на значок лупи знизу.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Немає пошуку в теках. Тільки в файлі.
+            </summary>
+            <div class="answer_text">
+                Треба не утримувати теку, а зайти в цю теку, там буде пошук, потім натиснути на лупу і з'явиться меню пошуку.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи зберігаються всі результати пошуку і як їх знайти?
+            </summary>
+            <div class="answer_text">
+                Так. Історія пошуку зберігається.<br>
+З'являється пункт у меню провідника (натисніть на адресі вгорі), або утримуйте значок пошуку на панелі знизу, якщо її ввімкнуто.<br>
+Також є можливість шукати безпосередньо в результатах пошуку.<br>
+Якщо нічого не шукали, то цього пункту немає.
+            </div>
+        </details>
+    </section>
+    <section id="section_seven">
+        <div class="section_title">
+            Різне
+        </div>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи є в Apktool функція клонування?
+            </summary>
+            <div class="answer_text">
+                Так.<br>
+Для цього потрібна повна декомпіляція додатка.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як ще можливо клонувати додаток?
+            </summary>
+            <div class="answer_text">
+                Скористатися патчем у програмі MPatcher.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як вилучити зайві мови з додатка, крім uk, en?
+            </summary>
+            <div class="answer_text">
+                У контекстному меню виберіть пункт "Оптимізувати (aapt2).<br>
+У налаштуваннях цього пункту поставте позначку на "Задати конфігурації" і пропишіть мову, яку потрібно залишити, наприклад - "uk, uk-rUA".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як видалити всі мови, крім української та англійської?
+            </summary>
+            <div class="answer_text">
+                За аналогією з видаленням усіх мов, крім української та англійської.<br>
+У пункті "Задати конфігурації" пропишіть мови, які необхідно залишити, наприклад, "uk, uk-rUA, en, en-rGB".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як побачити список встановлених додатків?
+            </summary>
+            <div class="answer_text">
+                Вгорі праворуч - вкладка "Додатки".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як відредагувати весь Маніфест у додатку?
+            </summary>
+            <div class="answer_text">
+                Весь маніфест редагується після декомпіляції ресурсів.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи є вбудований конвертер величин?
+            </summary>
+            <div class="answer_text">
+                <p>Так.</p>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Як туди зайти?
+                    </summary>
+                    <div class="answer_text">
+                        Головний екран → Три крапки у верхньому правому куті → Конвертер.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">
+                        Які підтримуються величини?
+                    </summary>
+                    <div class="answer_text">
+                        <li>Текст ↔ SHA-384</li>
+                        <li>Текст ↔ SHA-224</li>
+                        <li>Текст ↔ SHA-256</li>
+                        <li>Текст ↔ SHA-512</li>
+                        <li>Текст ↔ SHA-1</li>
+                        <li>Текст ↔ MD5</li>
+                        <li>Текст ↔ URL кодування</li>
+                        <li>Текст ↔ Юнікод</li>
+                        <li>Текст ↔ Base64</li>
+                        <li>Текст ↔ Масив (US-ASCII)</li>
+                        <li>Текст ↔ Масив (UTF-16LE)</li>
+                        <li>Текст ↔ Масив (UTF-16BE)</li>
+                        <li>Текст ↔ Масив (UTF-8)</li>
+                        <li>Текст ↔ Масив (CP1251)</li>
+                        <li>Текст ↔ Масив (ISO-8859-1)</li>
+                        <li>Десятковий ↔ Вісімковий</li>
+                        <li>Десятковий ↔ Двійковий</li>
+                        <li>Колір ↔ Smali</li>
+                        <li>Десятковий ↔ Hex (0x0)</li>
+                        <li>Десятковий ↔ Hex (0x00000000)</li>
+                        <li>Десятковий ↔ Hex</li>
+                        <li>Плаваючий ↔ Двійковий</li>
+                        <li>Плаваючий ↔ Десятковий</li>
+                        <li>Плаваючий ↔ Hex</li>
+                        <li>Плаваючий ↔ Hex (0x0)</li>
+                        <li>Плаваючий ↔ Hex (0x00000000)</li>
+                        <p><u>Зверніть увагу!</u></p>
+                        Усі шифрування, що мають зворотну сумісність, можливо конвертувати зворотно.
+                        Робиться це в нижньому вікні введення.
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як оновлювати Apktool M?
+            </summary>
+            <div class="answer_text">
+                Головний екран → Три крапки у верхньому правому куті → "Налаштування" → "Оновлення програми" увімкніть пункт "Перевіряти оновлення".<br>
+Нижче виберіть пункт "Частота перевірки оновлень".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як завантажити оновлення?
+            </summary>
+            <div class="answer_text">
+                Безпосередньо з Apktool M чи завантажити через браузер.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Куди зберігається файл оновлення?
+            </summary>
+            <div class="answer_text">
+                У внутрішню пам'ять у теку "Download".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи можливо вимкнути перевірку оновлень?
+            </summary>
+            <div class="answer_text">
+                Так можливо.
+                <p>Головний екран → Три крапки у верхньому правому куті → "Налаштування" → "Оновлення програми" вимкніть пункт "Перевіряти оновлення".</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як відновити з резерву? Якщо пункт відновлення не активний...
+            </summary>
+            <div class="answer_text">
+                Щоб відновити, необхідно спочатку зберегти.<br>
+Файл резерву повинен знаходитися за шляхом:/внутрішня_пам'ять/Apktool_M.backup", якщо його немає - пункт не активний.
+            </div>
+        </details>
+    </section>
+    <section id="section_eight">
+        <div class="section_title">
+            MPatcher
+        </div>
+        <details class="details_block">
+            <summary class="question_title">
+                Що таке MPatcher?
+            </summary>
+            <div class="answer_text">
+                Це програма для запуску, створення, імпорту, експорту скриптів і патчів, написаних на Shell, інтегрована в Apktool M.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Чи є окрема тема на Форумі?
+            </summary>
+            <div class="answer_text">
+                Так: <a href="https://4pda.to/forum/index.php?showtopic=1018077">MPatcher</a>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">
+                Як викликати MPatcher?
+            </summary>
+            <div class="answer_text">
+                Утримуйте на файлі й в контекстному меню, що відкрилося, виберіть пункт "MPatcher".<br>
+Це вкаже цільовий apk.
+                
+                <p>Для вибору цільового проекту - вище "Зібрати проект" є висувне меню, там пункт MPatcher.</p>
+            </div>
+        </details>
+    </section>
+    <script type="text/javascript">(function(){window.location.search.substring(1).split("&").forEach(function(a){a=a.split("=");"theme"==a[0]&&document.body.setAttribute("class",a[1])});})();</script>
+</body>
+</html>
