@@ -231,7 +231,7 @@
         </details>
         <details class="details_block">
             <summary class="question_title">  How do I clone an app during quick editing?  </summary>
-            <div class="answer_text">  The program changes the following parameters during quick editing: AndroidManifest.xml and resources. arsc.  </div>
+            <div class="answer_text">  The program changes the following parameters during quick editing: AndroidManifest.xml and resources.arsc.  </div>
         </details>
         <details class="details_block">
             <summary class="question_title">  How do I adapt the app for Android TV?  </summary>
@@ -376,7 +376,7 @@
                 <details class="details_block">
                     <summary class="question_title">  Add "APKTOOL_DUMMY"  </summary>
                     <div class="answer_text">
-                        <p>By default, the resource IDs inside resources. arsc are set in arithmetic progression. In some cases, it may be broken – some places inside the value types may not be filled in (they are unoccupied).</p>
+                        <p>By default, the resource IDs inside resources.arsc are set in arithmetic progression. In some cases, it may be broken – some places inside the value types may not be filled in (they are unoccupied).</p>
                         <p>These places are set from the APKTOOL_DUMMY stub to restore the integrity of the progression.  These lines are not used by anyone and do not affect anything.</p>
                         <u>A small note:</u><br>
                         <p>If you delete a resource object from res/values/public.xml, then during the build, it will try to find such a free space and set its ID in it. If there are no available places, it will be added at the end of the list of items in its category. It is not recommended to do this with object IDs that are specified in Smali – this will cause a crash, because the resource specified by ID was moved (it no longer exists as such).</p>
@@ -415,8 +415,8 @@
         <details class="details_block">
             <summary class="question_title">  What options are available in Yandex. Translate?  </summary>
             <div class="answer_text">
-                <li>Automatic translation of selected strings in resources (strings, arrays,plurals) and smali,;</li>
-                <li>Manual translation in resources (strings, arrays,plurals) and smali;</li>
+                <li>Automatic translation of selected strings in resources (strings, arrays, plurals) and smali,;</li>
+                <li>Manual translation in resources (strings, arrays, plurals) and smali;</li>
                 <li>Correction of the translation;</li>
                 <li>Online translation with a choice of several translation services;</li>
                 <li>Offline translation;</li>

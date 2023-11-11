@@ -245,7 +245,7 @@
 	<string name="save_file">Simpan file</string>
 	<string name="save_file_msg">Ada beberapa file yang tidak tersimpan, ingin menyimpannya?</string>
 	<string name="settings">Pengaturan</string>
-	<string name="build_dex">Bangun dex</string>
+	<string name="build_dex">Build dex</string>
 	<string name="decompile">Dekompilasi</string>
 	<string name="decompile_res">Dekompilasi sumber</string>
 	<string name="decompile_dex">Dekompilasi classes*.dex</string>
@@ -294,7 +294,7 @@
 	<string name="verify_v2_fail">Verifikasi tanda tangan V2 gagal.</string>
 	<string name="decode_run_title">Mendekompilasi...</string>
 	<string name="sign_run_title">Menandatangani...</string>
-	<string name="not_sign">Jangan menandatangani</string>
+	<string name="not_sign">Jangan tanda tangani</string>
 	<string name="to_vector">Konversi ke Vector</string>
 	<string name="to_svg">Konversi ke SVG</string>
 	<string name="to_xml">Konversi ke XML</string>
@@ -347,11 +347,11 @@
 	<string name="light_theme_summary">Pilih antara tema terang atau tema gelap untuk antarmuka pengguna.</string>
 	<string name="app_theme">Tema aplikasi</string>
 	<string name="app_theme_summary">Pilih skema warna antarmuka</string>
-	<string name="output_directory">Folder keluaran</string>
-	<string name="set_as_output_directory">Tetapkan sebagai folder keluaran</string>
-	<string name="output_directory_summary">Atur folder keluaran default</string>
-	<string name="output_directory_not_extsts">Folder keluaran \'%1$s\' tidak ada dan tidak dapat dibuat!</string>
-	<string name="output_directory_not_set">Anda harus mengatur folder keluaran terlebih dahulu!</string>
+	<string name="output_directory">Folder output</string>
+	<string name="set_as_output_directory">Tetapkan sebagai folder output</string>
+	<string name="output_directory_summary">Atur folder output default</string>
+	<string name="output_directory_not_extsts">Folder output \'%1$s\' tidak ada dan tidak dapat dibuat!</string>
+	<string name="output_directory_not_set">Anda harus mengatur folder output terlebih dahulu!</string>
 	<string name="not_directory">\'%1$s\' bukan folder!</string>
 	<string name="compile_project">Kompilasi proyek ini</string>
 	<string name="no_open">Tidak ada file yang terbuka!</string>
@@ -379,8 +379,8 @@
 	<string name="editor_summary">Konfigurasi editor.</string>
 	<string name="signature">Tanda tangan</string>
 	<string name="signature_summary">Konfigurasi pengaturan tanda tangan.</string>
-	<string name="build_and_decode">Pembangunan &amp; Pemecahan kode</string>
-	<string name="build_and_decode_summary">Konfigurasi pengaturan Pembangunan &amp; Pemecahan kode.</string>
+	<string name="build_and_decode">Build &amp; Pemecahan kode</string>
+	<string name="build_and_decode_summary">Konfigurasi pengaturan Build &amp; Pemecahan kode.</string>
 	<string name="font_size">Ukuran font editor</string>
 	<string name="font_size_summary">Tentukan ukuran font default editor</string>
 	<string name="font_size_title">Ukuran font editor:</string>
@@ -423,8 +423,8 @@
 	<string name="round_icons_summary">Ikon penjelajah bulat</string>
 	<string name="hidden_files">File yang tersembunyi</string>
 	<string name="hidden_files_summary">Tampilkan file dan folder yang tersembunyi</string>
-	<string name="atod_set">Semua yang ada di folder keluaran</string>
-	<string name="atod_set_summary">Dekompilasi semuanya ke folder keluaran</string>
+	<string name="atod_set">Semua yang ada di folder output</string>
+	<string name="atod_set_summary">Dekompilasi semuanya ke folder output</string>
 	<string name="show_errors">Tampilkan kesalahan</string>
 	<string name="show_errors_summary">Tampilkan kesalahan proyek</string>
 	<string name="auto_save">Simpan otomatis</string>
@@ -438,7 +438,7 @@
 	<string name="editor_cs">Skema warna</string>
 	<string name="editor_cs_summary">Skema warna editor</string>
 	<string name="use_aapt2">Gunakan aapt2</string>
-	<string name="use_aapt2_summary">Gunakan aapt2 untuk membangun</string>
+	<string name="use_aapt2_summary">Gunakan aapt2 untuk membuild</string>
 	<string name="check_install">Verifikasi apk</string>
 	<string name="check_install_summary">Verifikasi file apk sebelum menginstal</string>
 	<string name="editor_non_printing">Karakter yang tidak dapat dicetak</string>
@@ -460,8 +460,8 @@
 	<string name="use_v3_sign_summary">Gunakan skema tanda tangan v3 (Android 9.0+)</string>
 	<string name="use_v4_sign">Tanda tangan v4</string>
 	<string name="use_v4_sign_summary">Gunakan skema tanda tangan v4 (Android 11+)</string>
-	<string name="delete_build">Hapus folder \"bangun\".</string>
-	<string name="delete_build_summary">Hapus folder \"bangun\" setelah kompilasi</string>
+	<string name="delete_build">Hapus folder \"build\".</string>
+	<string name="delete_build_summary">Hapus folder \"build\" setelah kompilasi</string>
 	<string name="fix_drawer">Perbaiki file</string>
 	<string name="fix_drawer_summary">Jangan menutup pengelola file dengan mengusap</string>
 	<string name="dont_notify">Jangan beri tahu jika sedang berjalan</string>
@@ -497,7 +497,7 @@
 	<string name="refreshing">Segarkan dengan sebuah gerakan</string>
 	<string name="refreshing_summary">Tarik ke bawah untuk menyegarkan daftar file</string>
 	<string name="suffix">Akhiran untuk apk</string>
-	<string name="suffix_summary">Akhiran untuk nama file keluaran</string>
+	<string name="suffix_summary">Akhiran untuk nama file output</string>
 	<string name="perm_description">Keterangan untuk izin</string>
 	<string name="perm_description_summary">Tambahkan keterangan untuk izin ke AndroidManifest.xml (jika tersedia)</string>
 	<string name="description_type">Jenis keterangan</string>
@@ -533,6 +533,8 @@
 	<string name="double_exit_summary">Tekan \"Kembali\" dua kali untuk keluar dari aplikasi</string>
 	<string name="jadx_settings">Pengaturan JADX</string>
 	<string name="jadx_settings_summary">Pengaturan pratinjau kode Java</string>
+	<string name="faq">FAQ</string>
+	<string name="faq_summary">Bantuan untuk menggunakan program ini</string>
 	<string name="key_type">Jenis Kunci:</string>
 	<string name="key_path">Jenis Jalur:</string>
 	<string name="cert_path">Jalur Sertifikat:</string>
@@ -564,7 +566,7 @@
 	<string name="mselect_all">Pilih semua</string>
 	<string name="mselect_inv">Pembalikan</string>
 	<string name="mselect_to">Pilih untuk ini</string>
-	<string name="mantisplit">Anti-terpisah</string>
+	<string name="mantisplit">Antisplit</string>
 	<string name="mmerge">Gabungkan</string>
 	<string name="mprepare">Persiapan...</string>
 	<string name="mbase_dir">Folder dasar: \"%s\"</string>
@@ -608,7 +610,7 @@
 	<string name="mtool_repl">Penggantian alat</string>
 	<string name="mtool_repl_summary">Penggantian aapt, aapt2</string>
 	<string name="build_notification">Pemberitahuan</string>
-	<string name="build_notification_summary">Kirim pemberitahuan setelah selesai membangun dan mendekompilasi</string>
+	<string name="build_notification_summary">Kirim pemberitahuan setelah selesai membuild dan mendekompilasi</string>
 	<string name="ongoing_notification">Pemberitahuan di tempat kerja</string>
 	<string name="ongoing_notification_summary">Tampilkan pemberitahuan selama pembuatan dan dekompilasi</string>
 	<string name="format_html">Format HTML</string>
@@ -643,8 +645,8 @@
 	<string name="add_nsc_ex_summary">Jangan ubah konfigurasi keamanan jaringan yang sudah ditambahkan</string>
 	<string name="dont_reset_cpb">Jangan atur ulang tombol tempel</string>
 	<string name="dont_reset_cpb_summary">Tombol tempel saat menyalin file hanya akan diatur ulang dengan menekannya secara lama</string>
-	<string name="build_toout">Bangun ke folder keluaran</string>
-	<string name="build_toout_summary">Saat membuat proyek, APK disimpan ke folder keluaran</string>
+	<string name="build_toout">Build ke folder output</string>
+	<string name="build_toout_summary">Saat membuat proyek, APK disimpan ke folder output</string>
 	<string name="aicon_size">Ukuran ikon adaptif</string>
 	<string name="aicon_size_summary">Ukuran ikon adaptif atau vector untuk pengeditan cepat</string>
 	<string name="github">File untuk diterjemahkan</string>
