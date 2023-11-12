@@ -786,4 +786,7 @@
         <string name="file_nw">Το αρχείο δεν είναι εγγράψιμο!</string>
         <string name="app_theme">Θέμα εφαρμογής</string>
         <string name="app_theme_summary">Επιλογή χρωματικού σχήματος διεπαφής</string>
+        <string name="data_unchanged">τα δεδομένα δεν έχουν αλλάξει</string>
+        <string name="keep_broken">Διατήρηση εσφαλμένων πόρων</string>
+        <string name="keep_broken_summary">Χρησιμοποιήστε το αν υπήρξε σφάλμα κατά την απομεταγλώττιση των πόρων, αλλά εξακολουθείτε να θέλετε να τους αποσυμπιέσετε, ακόμα και με σφάλματα</string>
 </resources>
