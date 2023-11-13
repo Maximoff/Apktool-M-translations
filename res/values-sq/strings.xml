@@ -231,11 +231,11 @@
 	<string name="decompile_dex">Dekompilimi i klasave*.dex</string>
 	<string name="decompile_all_dex">Dekompiloni të gjitha \"*.dex\"</string>
 	<string name="decompile_multi_res">Dekompilimi i burimeve shtesë</string>
-	<string name="install">Instaloni</string>
+	<string name="install">Instaloje</string>
 	<string name="install_session">Instaloni duke përdorur sesionin</string>
 	<string name="install_del">Fshi dhe instalo</string>
 	<string name="install_sign">Nënshkruani dhe instaloni</string>
-	<string name="install_anyway">Instaloni gjithsesi</string>
+	<string name="install_anyway">Instaloje gjithsesi</string>
 	<string name="split_install">Instalimi...</string>
 	<string name="split_install_toast">Instalimi vazhdon në sfond</string>
 	<string name="verify">Verifiko nënshkrimin</string>
