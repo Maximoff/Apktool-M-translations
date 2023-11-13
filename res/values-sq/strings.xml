@@ -327,10 +327,10 @@
 	<string name="set_as_output_directory">Cakto si direktori dalëse</string>
 	<string name="output_directory_summary">Vendosni direktorinë e paracaktuar të daljes</string>
 	<string name="output_directory_not_extsts">Drejtoria dalëse \'%1$s\' nuk ekziston dhe nuk mund të krijohet!</string>
-	<string name="output_directory_not_set">Së pari duhet të vendosni direktoriumin e daljes!</string>
+	<string name="output_directory_not_set">Së pari duhet të vendosni direktorië daljes!</string>
 	<string name="not_directory">\'%1$s\' nuk është një drejtori!</string>
 	<string name="compile_project">Përpiloni këtë projekt</string>
-	<string name="no_open">Nuk ka skedarë të hapur!</string>
+	<string name="no_open">Nuk ka skedarë për të hapur!</string>
 	<string name="copy_success">E kopjuar!</string>
 	<string name="deletion">Fshirja %s</string>
 	<string name="extract">Ekstrakt</string>
@@ -529,7 +529,7 @@
 	<string name="create_and_use">Krijo dhe përdor</string>
 	<string name="please_update_your_android">Ju lutemi përditësoni sistemin tuaj Android në 4.3 ose më vonë!</string>
 	<string name="mselect">Zgjidhni</string>
-	<string name="mselect_all">Selektoj të gjitha</string>
+	<string name="mselect_all">Selekto të gjitha</string>
 	<string name="mselect_inv">Përmbysja</string>
 	<string name="mselect_to">Zgjidhni për këtë</string>
 	<string name="mantisplit">Antindarje</string>
@@ -545,7 +545,7 @@
 	<string name="mcleaning_manifest">Pastrimi i \"AndroidManifest.xml\"</string>
 	<string name="mextract_zip">Nxirre ketu</string>
 	<string name="mextract_zip_to">Ekstrakt në \"%s\"</string>
-	<string name="mplease_wait">Te lutem prit...</string>
+	<string name="mplease_wait">Te lutem prisni...</string>
 	<string name="split">Ndarë</string>
 	<string name="mcompress">Kompresoni</string>
 	<string name="mcompression">Kompresimi</string>
@@ -667,7 +667,7 @@
 	<string name="mapp_minsdk">Versioni Min SDK</string>
 	<string name="mapp_targetsdk">Versioni i synuar SDK</string>
 	<string name="mapp_down_plugin">Dëshironi të shkarkoni shtojcën e deshifrimit apkm?</string>
-	<string name="mapk_damage">Skedari apk është dëm!</string>
+	<string name="mapk_damage">Skedari apk është dëmtuar!</string>
 	<string name="mapk_nosign">Skedari APK nuk është nënshkruar!</string>
 	<string name="mapk_sign_fail">Nënshkrimi APK nuk përputhet me nënshkrimin e aplikacionit të instaluar!</string>
 	<string name="mapk_version_low">Versioni apk (%1$s) është më i ulët se versioni i aplikacionit të instaluar (%2$s)!</string>
@@ -762,4 +762,6 @@
 	<string name="license_accept">Pranoje</string>
 	<string name="license_refuse">Mos pranoni</string>
 	<string name="send_log">Dërgoni një regjistër te zhvilluesi</string>
+	<string name="keep_broken">Mbani burime të prishura</string>
+	<string name="keep_broken_summary">Përdoreni këtë nëse ka pasur një gabim gjatë dekompilimit të burimeve, por ju ende dëshironi t'i dekompiloni ato, edhe me gabime</string>
 </resources>
