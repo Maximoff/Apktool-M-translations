@@ -10,7 +10,7 @@
 	<string name="accessibility_service_description">Υπηρεσία λήψης πληροφοριών σχετικά με την εκτέλεση δραστηριοτήτων. Η υπηρεσία δεν συλλέγει προσωπικά δεδομένα.</string>
 	<string name="accessibility_service_name">Υπηρεσία προσβασιμότητας</string>
 	<string name="accessibility_service_toast">Ενεργοποίηση της υπηρεσίας Apktool M</string>
-	<string name="act_launch">Δραστηριότητα για εκκίνηση</string>
+	<string name="act_launch">Ενέργεια για εκκίνηση</string>
 	<string name="act_list">Λίστα δραστηριοτήτων</string>
 	<string name="add_dummy">Προσθήκη \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Προσθήκη ελλιπών πόρων κατά την Απομεταγλώττιση</string>
@@ -86,7 +86,7 @@
 	<string name="clear_history">Εκκαθαριση ιστορικου αναζητησης?</string>
 	<string name="clear_preview">Καθαρισμός cache μικρ/φιών</string>
 	<string name="clear_preview_summary">Το διάστημα για τον καθαρισμό παλιών μικρογραφιών είναι σε ημέρες</string>
-	<string name="click_once_more">Πατήστε ξανά πίσω για έξοδο!</string>
+	<string name="click_once_more">Ξαναπατήστε πίσω για Έξοδο!</string>
 	<string name="close_all">Κλείσιμο όλων</string>
 	<string name="close_cur">Κλείσιμο</string>
 	<string name="close_files">Κλείσιμο αρχείων</string>
@@ -145,7 +145,7 @@
 	<string name="decompile_all_dex">Απομεταγλώττιση όλων των \"*.dex\"</string>
 	<string name="decompile_dex">Απομεταγλώττιση classes*.dex</string>
 	<string name="decompile_multi_res">Απομεταγλώττιση πρόσθετων πόρων</string>
-	<string name="decompile_res">Απομεταγλώττιση πόρων</string>
+	<string name="decompile_res">Απομεταγλ. πόρων</string>
 	<string name="default_key">Προεπιλεγμένο κλειδί</string>
 	<string name="default_key_summary">Προεπιλεγμένο κλειδί υπογραφής</string>
 	<string name="default_signature_file">Προεπιλεγμένη υπογραφή</string>
@@ -171,7 +171,7 @@
 	<string name="download_success">%s το αρχείο λήφθηκε με επιτυχία!</string>
 	<string name="drawer_fullscreen">Λίστα αρχείων πλήρους οθόνης</string>
 	<string name="drawer_fullscreen_summary">Ο διαχειριστής αρχείων θα καταλαμβάνει πλήρη οθόνη</string>
-	<string name="dummy_file">Αντικατάσταση με ένα εικονικό</string>
+	<string name="dummy_file">Αντικατ. με ένα εικονικό</string>
 	<string name="edit">Επεξεργασία</string>
 	<string name="edit_mode">Λειτουργία επεξεργασίας</string>
 	<string name="editor">Επεξεργαστής</string>
@@ -288,14 +288,14 @@
 	<string name="import_scheme">Εισαγωγή ως συνδυασμός χρωμάτων</string>
 	<string name="import_scheme_confirm">Εισαγωγή \"%s\" ως χρωματικός συνδυασμός επεξεργαστή;</string>
 	<string name="inst_date">Ημερ/νία εγκατάστασης</string>
-	<string name="inst_update">Τελευταία ενημέρωση</string>
+	<string name="inst_update">Ενημερώθηκε</string>
 	<string name="inst_ver">Εγκατεστημένη έκδοση</string>
 	<string name="install">Εγκατάσταση</string>
 	<string name="install_anyway">Εγκατάσταση ούτως ή άλλως</string>
 	<string name="install_del">Διαγραφή και εγκατάσταση</string>
 	<string name="install_fail">Η εγκατάσταση απέτυχε! Κωδικός λάθους: %d</string>
 	<string name="install_session">Εγκατάσταση με χρήση συνεδρίας</string>
-	<string name="install_sign">Υπογραφή και εγκατάσταση</string>
+	<string name="install_sign">Υπογραφή &amp; εγκατ/ση</string>
 	<string name="install_success">Επιτυχία εγκατάστασης! Εκκίνηση αυτής της εφαρμογής;</string>
 	<string name="installer">Εγκαταστάτης</string>
 	<string name="internal">Εσωτερική μνήμη</string>
@@ -343,7 +343,7 @@
 	<string name="mapp_cn">Όνομα Κατασκευής</string>
 	<string name="mapp_down_plugin">Θέλετε να κατεβάσετε το πρόσθετο αποκρυπτογράφησης apkm;</string>
 	<string name="mapp_icon">Εικονίδιο εφαρμογής</string>
-	<string name="mapp_inLocation">Τοποθεσία εγκατάστασης</string>
+	<string name="mapp_inLocation">Θέση εγκατ/σης</string>
 	<string name="mapp_label">Όνομα εφαρμογής</string>
 	<string name="mapp_minsdk">Ελάχιστη έκδοση SDK</string>
 	<string name="mapp_name">Ονομα εφαρμογής</string>
@@ -381,7 +381,7 @@
 	<string name="mlong">Μακρύ</string>
 	<string name="mmerge">Συγχώνευση</string>
 	<string name="mmerge_json">Συγχώνευση αρχείων \"apktool.json\".</string>
-	<string name="modified">Τελευταία τροποποίηση</string>
+	<string name="modified">Τροποποιήθηκε</string>
 	<string name="mopen_site">Άνοιγμα ιστότοπου</string>
 	<string name="mopen_site_summary">Άνοιγμα σελίδας ενημέρωσης</string>
 	<string name="moptimize">Βελτιστοποίηση</string>
@@ -413,7 +413,7 @@
 	<string name="mselect">Επιλογή</string>
 	<string name="mselect_all">Επιλογή όλων</string>
 	<string name="mselect_inv">Αναστροφή</string>
-	<string name="mselect_to">Επιλέξτε σε αυτό</string>
+	<string name="mselect_to">Επιλέξτε έως αυτό</string>
 	<string name="mshort">Μικρό</string>
 	<string name="mshow_more_options">Περισσότερα</string>
 	<string name="msplit_rm">αφαίρεση \"android:isSplitRequired\"</string>
@@ -421,7 +421,7 @@
 	<string name="mtool_repl">Αντικατάσταση εργαλείου</string>
 	<string name="mtool_repl_summary">Αντικατάσταση aapt, aapt2</string>
 	<string name="mtr_add_dict">Προσθήκη λεξικού</string>
-	<string name="mtr_added">%d προστέθηκαν συμβ/σειρές!</string>
+	<string name="mtr_added">%d συμβ/σειρές προστέθηκαν!</string>
 	<string name="mtr_auto">Αυτόματη μετάφραση</string>
 	<string name="mtr_bing">Bing</string>
 	<string name="mtr_combine">Συνδυασμός αν υπάρχει</string>
@@ -441,7 +441,7 @@
 	<string name="mtr_not_work">ο μεταφραστής %s δεν λειτουργεί προσωρινά!</string>
 	<string name="mtr_old_layout">Παλαιά διάταξη</string>
 	<string name="mtr_only_tr">Αποθήκευση μόνο μεταφρασμένων συμβολοσειρών</string>
-	<string name="mtr_properties">Εργασία: %1$s\n\nΣύνολο τοπικής: %2$s\nΤρέχουσα γλώσσα: %3$s\nΜέγεθος: %4$s\nΣύνολο συμβ/σειρών: %5$s\nΜεταφρασμένες συμβ/σειρές: %6$s</string>
+	<string name="mtr_properties">Εργασία: %1$s\n\nΣύνολο γλωσσών: %2$s\nΤρέχουσα γλώσσα: %3$s\nΜέγεθος: %4$s\nΣύνολο συμβ/σειρών: %5$s\nΜεταφρασμένες συμβ/σειρές: %6$s</string>
 	<string name="mtr_quantity">Ποσότητα</string>
 	<string name="mtr_save_to_dict">Αποθήκευση στο λεξικό</string>
 	<string name="mtr_service">Μεταφραστική υπηρεσία</string>
@@ -461,7 +461,7 @@
 	<string name="mupdate_4pda">Θέμα στο 4PDA.RU</string>
 	<string name="mupdate_4pda_summary">Θέμα συζήτησης εφαρμογής</string>
 	<string name="mupdate_down">Λήψη</string>
-	<string name="mupdate_error">Σφάλμα κατά τον έλεγχο για ενημερώσεις! Προσπαθησε αργοτερα!</string>
+	<string name="mupdate_error">Σφάλμα κατά τον έλεγχο για ενημερώσεις! Προσπαθήστε αργοτερα!</string>
 	<string name="mupdate_get">Ενημέρωση τώρα</string>
 	<string name="mupdate_inbrowser">Ανοιγμα σε πρόγραμμα περιήγησης</string>
 	<string name="mupdate_message">&lt;b>Νέα έκδοση:&lt;/b> %1$s&lt;br>&lt;br>&lt;b>Ημερομηνία:&lt;/b> %2$s&lt;br>&lt;br>&lt;b>Μέγεθος:&lt;/b> %3$s&lt;br>&lt;br>&lt;b>Καταγραφή αλλαγών:&lt;/b>&lt;br>%4$s</string>
@@ -474,10 +474,10 @@
 	<string name="new_dir">Νέος Κατάλογος</string>
 	<string name="new_file">Νέο αρχείο</string>
 	<string name="no">Οχι</string>
-	<string name="no_media">δημιουργήστε αρχείο \".nomedia\".</string>
-	<string name="no_open">Χωρίς ανοιχτά αρχεία!</string>
+	<string name="no_media">δημιουργία αρχείου \".nomedia\".</string>
+	<string name="no_open">Δεν υπάρχουν ανοιχτά αρχεία!</string>
 	<string name="not_directory">\'%1$s\' δεν είναι κατάλογος!</string>
-	<string name="not_found">Δεν βρέθηκε τίποτα!</string>
+	<string name="not_found">Τίποτα δεν βρέθηκε!</string>
 	<string name="not_match">δεν ταιριάζουν</string>
 	<string name="not_remind">Χωρίς υπενθύμιση</string>
 	<string name="not_sign">Χωρίς υπογραφή</string>
@@ -495,14 +495,14 @@
 	<string name="optimize_battery">Βελτιστοπ/ση μπαταρίας</string>
 	<string name="option_enabled">Η \"%s\" επιλογή είναι ενεργοποιημένη</string>
 	<string name="organization_name">Ονομα Οργανισμού:</string>
-	<string name="organization_unit">Μονάδα Οργανισμού:</string>
+	<string name="organization_unit">Διαμέρισμα Οργανισμού:</string>
 	<string name="output_directory">Κατάλογος εξόδου</string>
 	<string name="output_directory_not_extsts">Ο Κατάλογος εξόδου \'%1$s\' δεν υπάρχει και δεν μπορεί να δημιουργηθεί!</string>
 	<string name="output_directory_not_set">Πρέπει πρώτα να ορίσετε τον κατάλογο εξόδου!</string>
-	<string name="output_directory_summary">Ορισμός προεπιλεγμέμου κατάλογου εξόδου.</string>
+	<string name="output_directory_summary">Ορισμός προεπιλεγμένου κατάλογου εξόδου.</string>
 	<string name="overcompress">υπερσυμπίεση όλων των αρχείων</string>
 	<string name="overwrite_apk">Αντικατάσταση αρχείων</string>
-	<string name="overwrite_apk_summary">Αντικατάσταση αρχείων και φακέλων</string>
+	<string name="overwrite_apk_summary">Αντικατάσταση αρχείων &amp; φακέλων</string>
 	<string name="owner">Κάτοχος</string>
 	<string name="paste">Επικόλληση</string>
 	<string name="path_app">Διαδρομή</string>
@@ -574,8 +574,8 @@
 	<string name="scrollbar_left_summary">Γραμμή κύλισης στις λίστες στα αριστερά</string>
 	<string name="search_call">Αναζήτηση κλήσεων</string>
 	<string name="search_files">Αναζήτηση αρχείων</string>
-	<string name="search_hint">Εισάγετε κείμενο εδώ</string>
-	<string name="search_info">Οι αναζητήσεις περιεχομένου πραγματοποιούνται σε αρχεία με τις ακόλουθες επεκτάσεις: %s.\nΥποστηρίζεται αναζήτηση πολλαπλών γραμμών.</string>
+	<string name="search_hint">Εισάγετε το κείμενο εδώ</string>
+	<string name="search_info">Οι αναζητήσεις περιεχομένου πραγματοποιούνται σε αρχεία με τις ακόλουθες επεκτάσεις: %s.\n\nΥποστηρίζεται αναζήτηση πολλαπλών γραμμών.</string>
 	<string name="search_inres">στα αποτελέσματα αναζήτησης</string>
 	<string name="search_loop">Κάντε μια αναζήτηση</string>
 	<string name="search_name">με όνομα αρχείου</string>
@@ -593,7 +593,7 @@
 	<string name="selected">επιλεγμένα</string>
 	<string name="send">Αποστολή</string>
 	<string name="send_log">Στείλτε ένα αρχείο καταγραφής στον προγραμματιστή</string>
-	<string name="server">Server</string>
+	<string name="server">Διακομιστής</string>
 	<string name="set_as_output_directory">Ορισμός ως Κατάλογος εξόδου</string>
 	<string name="set_enl">Τιμή του \"android:extractNativeLibs\":</string>
 	<string name="sets_nf">Δεν βρέθηκαν σύνολα βιβλιοθήκης!</string>
@@ -791,4 +791,17 @@
         <string name="keep_broken_summary">Χρησιμοποιήστε το αν υπήρξε σφάλμα κατά την απομεταγλώττιση των πόρων, αλλά εξακολουθείτε να θέλετε να τους αποσυμπιέσετε, ακόμα και με σφάλματα</string>
         <string name="faq">Συχνές Ερωτήσεις</string>
 	<string name="faq_summary">Βοήθεια για τη χρήση του προγράμματος</string>
+        <string name="add_media">Προσθήκη στη Συλλογή Πολυμέσων</string>
+        <string name="axml_info_hex">Η τιμή πρέπει να είναι σε δεκαεξαδική μορφή (HEX)!</string>
+        <string name="axml_info_ref">Θα πρέπει να υπάρχει ID πόρου σε δεκαεξαδική μορφή (HEX)! Μην χρησιμοποιείτε συμβολοσειρές!</string>
+        <string name="axml_prop">Αρχείο: %1$s\nΜέγεθος: %2$s\nΣύνολο γραμμών: %3$s\nΤροποποιημένες: %4$s</string>
+        <string name="csize_label">Συμπιεσμένο μέγεθος</string>
+        <string name="kill_sign_by_orig">Πάρτε μια υπογραφή από το προεπιλεγμένο πρωτότυπο</string>
+        <string name="label_config">Διαμόρφωση: \"%s\"</string>
+        <string name="label_den">Πυκνότητα οθόνης: \"%s\"</string>
+        <string name="msui_rm">αφαίρεση "android:sharedUserId\"</string>
+        <string name="new_dict">Νέο Λεξικό</string>
+        <string name="strings_edit">Επεξεργ. γραμμών</string>
+        <string name="topmenu_toast">Τώρα ξέρετε ότι υπάρχει ένα μενού εδώ!</string>
+        <string name="type">Τύπος: %s</string>
 </resources>
