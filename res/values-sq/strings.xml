@@ -768,5 +768,15 @@
 	<string name="faq_summary">Ndihmë për përdorimin e programit</string>
 	<string name="data_unchanged">të dhënat nuk kanë ndryshuar</string>
 	<string name="app_theme">Tema e aplikacionit</string>
-    <string name="app_theme_summary">Zgjedhja e një skeme ngjyrash të ndërfaqes</string>
+        <string name="app_theme_summary">Zgjedhja e një skeme ngjyrash të ndërfaqes</string>
+	<string name="so_info">Për redaktim të suksesshëm, gjatësia e rreshtit para redaktimit duhet të përputhet me gjatësinë e rreshtit pas redaktimit.  Nëse gjatësia nuk përputhet, vija të tilla do të theksohen me të kuqe.  Mundohuni të shmangni redaktimin e rreshtave me karaktere të çuditshme!  Edhe nëse plotësohen të gjitha kushtet, nuk ka asnjë garanci 100% që biblioteka të mbetet funksionale pas redaktimit;  mos harroni për kopjen rezervë!</string>
+	<string name="ignore_indent">Injoro dhëmbëzimin</string>
+        <string name="file_nw">Skedari nuk mund të shkruhet!</string>
+	<string name="axml_info_ref">Duhet të ketë një ID të burimit në formatin heksadecimal (HEX)!  Mos përdorni vargje!</string>
+        <string name="axml_info_hex">Vlera duhet të jetë në format heksadecimal (HEX)!</string>
+	<string name="type">Lloji: %s</string>
+	<string name="strings_edit">Redaktori i vargjeve</string>
+	<string name="new_dict">Fjalor i ri</string>
+	<string name="label_den">Dendësia e ekranit: \"%s\"</string>
+	<string name="label_config">Konfigurimi: \"%s\"</string>
 </resources>
