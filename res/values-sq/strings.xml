@@ -764,4 +764,9 @@
 	<string name="send_log">Dërgoni një regjistër te zhvilluesi</string>
 	<string name="keep_broken">Mbani burime të prishura</string>
 	<string name="keep_broken_summary">Përdoreni këtë nëse ka pasur një gabim gjatë dekompilimit të burimeve, por ju ende dëshironi t'i dekompiloni ato, edhe me gabime</string>
+	<string name="faq">FAQ</string>
+	<string name="faq_summary">Ndihmë për përdorimin e programit</string>
+	<string name="data_unchanged">të dhënat nuk kanë ndryshuar</string>
+	<string name="app_theme">Tema e aplikacionit</string>
+    <string name="app_theme_summary">Zgjedhja e një skeme ngjyrash të ndërfaqes</string>
 </resources>
