@@ -779,4 +779,10 @@
 	<string name="new_dict">Fjalor i ri</string>
 	<string name="label_den">Dendësia e ekranit: \"%s\"</string>
 	<string name="label_config">Konfigurimi: \"%s\"</string>
+	<string name="complete_msg">I përfunduar, origjinali(et) i ruajtur në \"%s\"</string>
+        <string name="complete_msg2">Përfunduar, skedari(et) u ruajtën në \"%s\"</string>
+	<string name="monochrome">Njëngjyrëshe</string>
+        <string name="smali_help">Ndihmë Smali</string>
+	<string name="imgs_backup">Ruani imazhin origjinal</string>
+        <string name="imgs_backup_summary">Ruani imazhin origjinal kur përpunoni me funksionet \"%1$s\", \"%2$s\" dhe \"%3$s\"</string>
 </resources>
