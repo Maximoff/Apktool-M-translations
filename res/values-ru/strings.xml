@@ -74,6 +74,10 @@
 	<string name="kill_sign_by_orig">Взять подпись из указанного оригинала</string>
 	<string name="kill_sign_notice">Приложение, обработанное этой функцией, не сможет работать на версиях Android ниже 5!</string>
 	<string name="compare_text">Сравнить текст</string>
+    <string name="diff_resources">Сравнить ресурсы (aapt2)</string>
+    <string name="diff_resources2">Сравнить ресурсы "%2$s" с ресурсами "%1$s"</string>
+    <string name="dump_resources">Дамп ресурсов (aapt2)</string>
+    <string name="swap">Поменять</string>
 	<string name="files_identical">Файлы идентичны!</string>
 	<string name="delete_files_cm">Удалить файлы после сжатия</string>
 	<string name="dec_indent">Уменьшить отступ</string>

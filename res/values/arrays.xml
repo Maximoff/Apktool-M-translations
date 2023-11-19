@@ -460,6 +460,30 @@
 		<item>Places a reference to a method handle in the vAA register. Present in Dex files since version 039.</item>
 		<item>Places a reference to the method prototype in the vAA register. Present in Dex files since version 039.</item>
 	</string-array>
+    <string-array name="aapt2_dump">
+        <item>badging</item>
+        <item>configurations</item>
+        <item>packagename</item>
+        <item>permissions</item>
+        <item>strings</item>
+        <item>styleparents</item>
+        <item>resources</item>
+        <item>xmlstrings</item>
+        <item>xmltree</item>
+        <item>overlayable</item>
+    </string-array>
+    <string-array name="aapt2_dump_descr">
+        <item>Print information extracted from the manifest of the APK.</item>
+        <item>Print every configuration used by a resource in the APK.</item>
+        <item>Print the package name of the APK.</item>
+        <item>Print the permissions extracted from the manifest of the APK.</item>
+        <item>Print the contents of the resource table string pool in the APK.</item>
+        <item>Print the parents of a style in an APK.</item>
+        <item>Print the contents of the resource table from the APK.</item>
+        <item>Print the string pool of a compiled xml in an APK.</item>
+        <item>Print the tree of a compiled xml in an APK.</item>
+        <item>Print the &lt;overlayable> resources of an APK.</item>
+    </string-array>
     <string-array name="app_theme">
         <item>Light</item>
         <item>Dark</item>
