@@ -791,4 +791,8 @@
         <string name="faq_summary">Довідка щодо використання програми</string>
 	<string name="keep_broken">Зберігати зламані ресурси</string>
 	<string name="keep_broken_summary">Використовуйте це, якщо виникла помилка під час декомпіляції ресурсів, але ви все одно хочете їх декомпілювати, навіть з помилками</string>
+	<string name="diff_resources">Порівняти ресурси (aapt2)</string>
+        <string name="diff_resources2">Порівняти ресурси "%2$s" з ресурсами "%1$s"</string>
+        <string name="dump_resources">Дамп ресурсів (aapt2)</string>
+        <string name="swap">Поміняти</string>
 </resources>
