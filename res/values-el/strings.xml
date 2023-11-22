@@ -134,7 +134,7 @@
 	<string name="cut">Αποκοπή</string>
 	<string name="data">Δεδομένα</string>
 	<string name="data_dir">Κατάλογος δεδομένων</string>
-	<string name="date">Ημερ/νία ισχύος:</string>
+	<string name="date">Ισχύς Ημερ/νίας:</string>
 	<string name="date_format">Μορφή ημερομηνίας</string>
 	<string name="date_format_summary">Εμφάνιση μορφής ημερ/νίας</string>
 	<string name="debug_mode">Ορισμός του apk ως αποσφαλματώσιμου</string>
@@ -467,7 +467,7 @@
 	<string name="mupdate_message">&lt;b>Νέα έκδοση:&lt;/b> %1$s&lt;br>&lt;br>&lt;b>Ημερομηνία:&lt;/b> %2$s&lt;br>&lt;br>&lt;b>Μέγεθος:&lt;/b> %3$s&lt;br>&lt;br>&lt;b>Καταγραφή αλλαγών:&lt;/b>&lt;br>%4$s</string>
 	<string name="mupdate_notf">Έχετε την πιο πρόσφατη έκδοση!</string>
 	<string name="mupdate_pref">Ενημέρωση προγράμματος</string>
-	<string name="mupdate_pref_summary">Ενημέρωση ρυθμίσεων</string>
+	<string name="mupdate_pref_summary">Ρυθμίσεις Ενημέρωσης</string>
 	<string name="mzipalign">ZipAlign</string>
 	<string name="name">Ονομα</string>
 	<string name="name_filter">Όνομα Φίλτρου</string>
@@ -804,4 +804,8 @@
         <string name="strings_edit">Επεξεργ. γραμμών</string>
         <string name="topmenu_toast">Τώρα ξέρετε ότι υπάρχει ένα μενού εδώ!</string>
         <string name="type">Τύπος: %s</string>
+        <string name="diff_resources">Σύγκριση πηγών (aapt2)</string>
+        <string name="diff_resources2">Σύγκριση πηγών \"%2$s\" με \"%1$s\"</string>
+        <string name="dump_resources">Απορριψη πηγών (aapt2)</string>
+        <string name="swap">Εναλλαγή</string>
 </resources>
