@@ -72,6 +72,10 @@
 	<string name="kill_sign_exists">Pengait sudah ditambahkan</string>
 	<string name="kill_sign_by_orig">Mengambil tanda tangan dari dokumen asli yang telah ditentukan</string>
 	<string name="compare_text">Bandingkan teks</string>
+	<string name="diff_resources">Bandingkan sumber (aapt2)</string>
+	<string name="diff_resources2">Bandingkan sumber \"%2$s\" dengan sumber \"%1$s\"</string>
+	<string name="dump_resources">Pembuangan sumber (aapt2)</string>
+	<string name="swap">Tukar</string>
 	<string name="files_identical">Berkas-berkasnya identik!</string>
 	<string name="delete_files_cm">Hapus file setelah di kompres</string>
 	<string name="dec_indent">Kurangi indentasi</string>
@@ -651,6 +655,8 @@
 	<string name="aicon_size_summary">Ukuran ikon adaptif atau vector untuk pengeditan cepat</string>
 	<string name="github">File untuk diterjemahkan</string>
 	<string name="github_summary">Sumber untuk menerjemahkan program di GitHub</string>
+	<string name="keep_broken">Simpan sumber yang rusak</string>
+	<string name="keep_broken_summary">Gunakan ini jika terjadi kesalahan saat mendekompilasi sumber, tetapi Anda masih ingin mendekompilasinya, bahkan dengan kesalahan</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>Реєстри</item>
 		<item>Літеральні значення</item>
 		<item>Примітивні типи даних</item>
@@ -235,28 +235,25 @@
 		<item>Поміщає посилання на прототип методу регістра vAA, Присутня у файлах Dex, починаючи з версії 039.</item>
 	</string-array>
 	<string-array name="aapt2_dump_descr">
-        	<item>Роздрукувати інформацію, витягнуту з маніфесту APK.</item>
-        	<item>Роздрукувати кожну конфігурацію, яка використовується ресурсами в APK.</item>
-        	<item>Роздрукувати ім'я пакета APK.</item>
-        	<item>Роздрукувати дозволи, витягнуті з маніфесту APK.</item>
-        	<item>Роздрукувати вміст пулу рядків таблиці ресурсів APK.</item>
-        	<item>Роздрукувати батьків стилів APK.</item>
-        	<item>Роздрукувати вміст таблиці ресурсів APK.</item>
-        	<item>Роздрукувати пул рядків скомпільованих XML-файлів в APK.</item>
-        	<item>Роздрукувати дерево скомпільованих XML-файлів в APK.</item>
-        	<item>Роздрукувати &lt;overlayable> ресурси APK.</item>
-    </string-array>
+		<item>Роздрукувати інформацію, витягнуту з маніфесту APK.</item>
+		<item>Роздрукувати кожну конфігурацію, яка використовується ресурсами в APK.</item>
+		<item>Роздрукувати ім\'я пакета APK.</item>
+		<item>Роздрукувати дозволи, витягнуті з маніфесту APK.</item>
+		<item>Роздрукувати вміст пулу рядків таблиці ресурсів APK.</item>
+		<item>Роздрукувати вміст таблиці ресурсів APK.</item>
+		<item>Роздрукувати &lt;overlayable> ресурси APK.</item>
+	</string-array>
 	<string-array name="app_theme">
-        	<item>Світла</item>
-        	<item>Темна</item>
-        	<item>Чорна</item>
-        </string-array>
+		<item>Світла</item>
+		<item>Темна</item>
+		<item>Чорна</item>
+	</string-array>
 	<string-array name="jadx_sets">
-        	<item>Запасний режим</item>
-        	<item>Деобфускація</item>
-        	<item>Екранувати юнікод</item>
-        	<item>Показати суперечливий код</item>
-        </string-array>
+		<item>Запасний режим</item>
+		<item>Деобфускація</item>
+		<item>Екранувати юнікод</item>
+		<item>Показати суперечливий код</item>
+	</string-array>
 	<string-array name="copy_variants">
 		<item>Перейменувати</item>
 		<item>Перейменувати лише файли</item>
@@ -308,35 +305,35 @@
 		<item>Декомпілювати в окремий каталог</item>
 	</string-array>
 	<string-array name="converter_items">
-		<item>Текст &lt;-&gt; Base64</item>
-		<item>Текст &lt;-&gt; Юнікод</item>
-		<item>Текст &lt;-&gt; URL кодування</item>
-		<item>Текст &lt;-&gt; MD5</item>
-		<item>Текст &lt;-&gt; SHA-1</item>
-		<item>Текст &lt;-&gt; SHA-224</item>
-		<item>Текст &lt;-&gt; SHA-256</item>
-		<item>Текст &lt;-&gt; SHA-384</item>
-		<item>Текст &lt;-&gt; SHA-512</item>
-		<item>Текст &lt;-&gt; Масив (UTF-8)</item>
-		<item>Текст &lt;-&gt; Масив (UTF-16)</item>
-		<item>Текст &lt;-&gt; Масив (UTF-16LE)</item>
-		<item>Текст &lt;-&gt; Масив (UTF-16BE)</item>
-		<item>Текст &lt;-&gt; Масив (US-ASCII)</item>
-		<item>Текст &lt;-&gt; Масив (ISO-8859-1)</item>
-		<item>Текст &lt;-&gt; Масив (CP1251)</item>
-		<item>Десятковий &lt;-&gt; Двійковий</item>
-		<item>Десятковий &lt;-&gt; Вісімковий</item>
-		<item>Десятковий &lt;-&gt; Hex</item>
-		<item>Десятковий &lt;-&gt; Hex (0x0)</item>
-		<item>Десятковий &lt;-&gt; Hex (0x00000000)</item>
-		<item>Плаваючий &lt;-&gt; Двійковий</item>
-		<item>Плаваючий &lt;-&gt; Десятковий</item>
-		<item>Плаваючий &lt;-&gt; Hex</item>
-		<item>Плаваючий &lt;-&gt; Hex (0x0)</item>
-		<item>Плаваючий &lt;-&gt; Hex (0x00000000)</item>
-		<item>Колір &lt;-&gt; Smali</item>
-		<item>Колір &lt;-&gt; Десятковий</item>
-		<item>Колір &lt;-&gt; A,R,G,B</item>
+		<item>Текст &lt;-> Base64</item>
+		<item>Текст &lt;-> Юнікод</item>
+		<item>Текст &lt;-> URL кодування</item>
+		<item>Текст &lt;-> MD5</item>
+		<item>Текст &lt;-> SHA-1</item>
+		<item>Текст &lt;-> SHA-224</item>
+		<item>Текст &lt;-> SHA-256</item>
+		<item>Текст &lt;-> SHA-384</item>
+		<item>Текст &lt;-> SHA-512</item>
+		<item>Текст &lt;-> Масив (UTF-8)</item>
+		<item>Текст &lt;-> Масив (UTF-16)</item>
+		<item>Текст &lt;-> Масив (UTF-16LE)</item>
+		<item>Текст &lt;-> Масив (UTF-16BE)</item>
+		<item>Текст &lt;-> Масив (US-ASCII)</item>
+		<item>Текст &lt;-> Масив (ISO-8859-1)</item>
+		<item>Текст &lt;-> Масив (CP1251)</item>
+		<item>Десятковий &lt;-> Двійковий</item>
+		<item>Десятковий &lt;-> Вісімковий</item>
+		<item>Десятковий &lt;-> Hex</item>
+		<item>Десятковий &lt;-> Hex (0x0)</item>
+		<item>Десятковий &lt;-> Hex (0x00000000)</item>
+		<item>Плаваючий &lt;-> Двійковий</item>
+		<item>Плаваючий &lt;-> Десятковий</item>
+		<item>Плаваючий &lt;-> Hex</item>
+		<item>Плаваючий &lt;-> Hex (0x0)</item>
+		<item>Плаваючий &lt;-> Hex (0x00000000)</item>
+		<item>Колір &lt;-> Smali</item>
+		<item>Колір &lt;-> Десятковий</item>
+		<item>Колір &lt;-> A,R,G,B</item>
 	</string-array>
 	<string-array name="xml_format_variants">
 		<item>Типовий</item>

@@ -81,7 +81,7 @@
 	<string name="kill_sign_notice">An application processed by this function will not be able to work on Android versions lower than 5!</string>
 	<string name="compare_text">Compare text</string>
     <string name="diff_resources">Compare resources (aapt2)</string>
-    <string name="diff_resources2">Compare resources "%2$s" with resources "%1$s"</string>
+    <string name="diff_resources2">Compare resources \"%2$s\" with resources \"%1$s\"</string>
     <string name="dump_resources">Resource dump (aapt2)</string>
     <string name="swap">Swap</string>
 	<string name="files_identical">The files are identical!</string>
