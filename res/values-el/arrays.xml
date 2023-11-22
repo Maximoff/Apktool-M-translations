@@ -353,7 +353,31 @@
 		<item>Διαφυγή Unicode</item>
 		<item>Εμφάνιση ασυνεπούς κώδικα</item>
 	</string-array>
-	<string-array name="bing_translator_codes">
+        <string-array name="aapt2_dump">
+                <item>σήμανση</item>
+                <item>διαμορφώσεις</item>
+                <item>όνομα πακέτου</item>
+                <item>άδειες</item>
+                <item>συμβ/σειρές</item>
+                <item>,</item>
+                <item>πόροι</item>
+                <item>xmlσυμβ/σειρών</item>
+                <item>xmlδενδροειδές</item>
+                <item>επικαλυπτόμενο</item>
+        </string-array>
+        <string-array name="aapt2_dump_descr">
+                <item>Εκτυπώστε Πληροφορίες που εξάγονται από το  manifest του APK.</item>
+                <item>Εκτυπώστε κάθε διαμόρφωση που χρησιμοποιείται από έναν πόρο στο APK.</item>
+                <item>Εκτυπώστε το όνομα του πακέτου του APK.</item>
+                <item>Εκτυπώστε τα δικαιώματα που εξάγονται από το manifest του APK.</item>
+                <item>Εκτυπώστε τα περιεχόμενα συμβολοσειρών του πίνακα πόρων στο APK.</item>
+                <item>Εκτύπωση των γονικών ενός στυλ σε ένα APK.</item>
+                <item>Εκτυπώστε τα περιεχόμενα του πίνακα πόρων από το APK.</item>
+                <item>Εκτύπωση των συμβολοσειρών ενός μεταγλωττισμένου xml σε ένα APK.</item>
+                <item>Εκτυπώστε το δέντρο ενός μεταγλωττισμένου xml σε ένα APK.</item>
+                <item>Εκτυπώστε το &lt;overlayable> πόρων ενός APK.</item>
+        </string-array>
+        <string-array name="bing_translator_codes">
 		<item>auto-detect</item>
 		<item>az</item>
 		<item>sq</item>
