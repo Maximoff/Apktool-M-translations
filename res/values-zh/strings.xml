@@ -795,4 +795,13 @@
 	<string name="file_nw">文件不可写！</string>
 	<string name="app_theme">程序主题</string>
 	<string name="app_theme_summary">选择界面配色方案</string>
+	<string name="data_unchanged">数据未更改</string>
+	<string name="diff_resources">比较资源（aapt2）</string>
+	<string name="diff_resources2">将资源“%2$s”与资源“%1$s”进行比较</string>
+	<string name="dump_resources">资源转储（aapt2）</string>
+	<string name="swap">交换</string>
+	<string name="faq">常见问题</string>
+	<string name="faq_summary">程序的使用帮助</string>
+	<string name="keep_broken">保留损坏的资源</string>
+	<string name="keep_broken_summary">如果在反编译资源时出现错误，但您仍然希望反编译它们（即使出现错误），那么请使用此选项</string>
 </resources>
