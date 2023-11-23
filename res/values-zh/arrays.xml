@@ -237,7 +237,6 @@
 	<string-array name="aapt2_dump_descr">
 		<item>打印从 APK 清单中提取的信息。</item>
 		<item>打印 APK 中资源使用的每个配置。</item>
-		<item>打印 APK 的软件包名称。</item>
 		<item>打印从 APK 清单中提取的权限。</item>
 		<item>打印 APK 中资源表字符串池的内容。</item>
 		<item>打印 APK 资源表的内容。</item>

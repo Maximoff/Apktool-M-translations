@@ -463,7 +463,6 @@
     <string-array name="aapt2_dump">
         <item>badging</item>
         <item>configurations</item>
-        <item>packagename</item>
         <item>permissions</item>
         <item>strings</item>
         <item>resources</item>
@@ -472,7 +471,6 @@
     <string-array name="aapt2_dump_descr">
         <item>Print information extracted from the manifest of the APK.</item>
         <item>Print every configuration used by a resource in the APK.</item>
-        <item>Print the package name of the APK.</item>
         <item>Print the permissions extracted from the manifest of the APK.</item>
         <item>Print the contents of the resource table string pool in the APK.</item>
         <item>Print the contents of the resource table from the APK.</item>

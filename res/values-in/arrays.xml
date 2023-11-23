@@ -237,7 +237,6 @@
 	<string-array name="aapt2_dump_descr">
 		<item>Cetak informasi yang diekstrak dari manifest APK.</item>
 		<item>Cetak setiap konfigurasi yang digunakan oleh sumber dalam APK.</item>
-		<item>Cetak nama paket APK.</item>
 		<item>Cetak izin yang diekstrak dari manifest APK.</item>
 		<item>Cetak isi kumpulan sumber tabel string di APK.</item>
 		<item>Cetak isi sumber tabel dari APK.</item>
