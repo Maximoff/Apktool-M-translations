@@ -460,6 +460,14 @@
 		<item>ارجاع به مدیریت روش (method) را در ثبت vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 		<item>ارجاع به نمونه اولیه روش (method) را در ثبت vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>چاپ اطلاعات استخراج شده از مانیفست APK.</item>
+		<item>چاپ هر پیکربندی استفاده شده توسط یک منبع در APK.</item>
+		<item>چاپ مجوزهای استخراج شده از مانیفست APK.</item>
+		<item>چاپ محتویات استخر رشته جدول منابع در APK چاپ کنید.</item>
+		<item>چاپ محتویات جدول منابع از APK.</item>
+		<item>چاپ منابع &lt;همپوشانی> یک APK.</item>
+	</string-array>
 	<string-array name="app_theme">
 		<item>روشن</item>
 		<item>تاریک</item>
