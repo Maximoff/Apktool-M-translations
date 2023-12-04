@@ -24,6 +24,7 @@
 	<string name="go_to">Go to</string>
 	<string name="new_dict">New Dictionary</string>
     <string name="type">Type: %s</string>
+    <string name="dex_is_full">Most likely, the allowed number of methods/fields in dex has been exceeded. Move some of the smali files to another folder or create a new one if necessary.</string>
 	<string name="clear_history">Clear search history?</string>
 	<string name="refresh_res">Refresh resources</string>
 	<string name="added_res">Added resources: %d</string>
