@@ -795,4 +795,5 @@
 	<string name="diff_resources2">Порівняти ресурси \"%2$s\" з ресурсами \"%1$s\"</string>
 	<string name="dump_resources">Дамп ресурсів (aapt2)</string>
 	<string name="swap">Поміняти</string>
+	<string name="dex_is_full">Найімовірніше, перевищено допустиму кількість методів/полів у dex. Перемістіть частину файлів smali в іншу папку або створіть нову, якщо потрібно.</string>
 </resources>
