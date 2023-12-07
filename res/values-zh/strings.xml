@@ -712,10 +712,10 @@
 	<string name="aicon_size_summary">自适应或矢量图标大小，便于快速编辑</string>
 	<string name="github">翻译文件</string>
 	<string name="github_summary">在 GitHub 上翻译程序的资源</string>
-	<string name="search_call">Find calls</string>
-	<string name="search_call_get">Find get calls</string>
-	<string name="search_call_put">Find put calls</string>
-	<string name="search_over">Find overrides</string>
+	<string name="search_call">查找调用</string>
+	<string name="search_call_get">查找 get 调用</string>
+	<string name="search_call_put">查找 put 调用</string>
+	<string name="search_over">查找重载</string>
 	<string name="search_loop">循环搜索</string>
 	<string name="reset_remind">重置提醒事项</string>
 	<string name="msui_rm">移除“android:sharedUserId”</string>
@@ -747,8 +747,8 @@
 	<string name="perm_description">权限描述</string>
 	<string name="perm_description_summary">向 AndroidManifest.xml 添加权限描述（如果可用）</string>
 	<string name="description_type">描述类型</string>
-	<string name="mshort">Short</string>
-	<string name="mlong">Long</string>
+	<string name="mshort">简短</string>
+	<string name="mlong">完整</string>
 	<string name="file_size">文件大小</string>
 	<string name="file_size_summary">显示文件大小格式</string>
 	<string name="editor_state">状态栏</string>
@@ -804,4 +804,5 @@
 	<string name="faq_summary">程序的使用帮助</string>
 	<string name="keep_broken">保留损坏的资源</string>
 	<string name="keep_broken_summary">如果在反编译资源时出现错误，但您仍然希望反编译它们（即使出现错误），那么请使用此选项</string>
+	<string name="dex_is_full">有可能 dex 中允许的方法/字段数量已超。如有必要，请将一些 Smali 文件移到另一个文件夹或创建一个新的文件夹。</string>
 </resources>
