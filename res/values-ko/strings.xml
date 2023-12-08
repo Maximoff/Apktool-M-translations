@@ -63,6 +63,7 @@
 	<string name="kill_sign_advanced">개선된 방법</string>
 	<string name="kill_sign_orig">무결성을 확인하려면 원본 APK를 추가하세요.</string>
 	<string name="kill_sign_exists">후크가 이미 추가되었습니다.</string>
+	<string name="dump_resources">리소스 덤프 (aapt2)</string>
 	<string name="monochrome">단색화</string>
 	<string name="smali_help">Smali 코드 도움말</string>
 	<string name="go_back">상위 디렉터리로 돌아가기</string>
@@ -628,6 +629,8 @@
 	<string name="aicon_size_summary">빠른 편집을 위한 적응형 또는 벡터 아이콘 크기</string>
 	<string name="github">번역용 파일</string>
 	<string name="github_summary">GitHub의 프로그램 번역을 위한 리소스</string>
+	<string name="keep_broken">손상된 리소스 유지</string>
+	<string name="keep_broken_summary">리소스를 디컴파일할 때 오류가 발생해도 계속 디컴파일하고 싶은 경우에 사용하세요.</string>
 	<string name="search_call">호출 찾기</string>
 	<string name="search_over">재정의 찾기</string>
 	<string name="search_files">파일 검색</string>
