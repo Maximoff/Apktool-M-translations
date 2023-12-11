@@ -808,4 +808,5 @@
         <string name="diff_resources2">Σύγκριση πηγών \"%2$s\" με \"%1$s\"</string>
         <string name="dump_resources">Απορριψη πηγών (aapt2)</string>
         <string name="swap">Εναλλαγή</string>
+        <string name="dex_is_full">Πιθανότατα, έχει ξεπεραστεί ο επιτρεπόμενος αριθμός μεθόδων/πεδίων στο dex. Μετακινήστε μερικά από τα αρχεία smali σε άλλο φάκελο ή δημιουργήστε έναν νέο φάκελο, αν είναι απαραίτητο.</string>
 </resources>
