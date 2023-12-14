@@ -460,14 +460,6 @@
 		<item>ارجاع به مدیریت روش (method) را در ثبت vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 		<item>ارجاع به نمونه اولیه روش (method) را در ثبت vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 	</string-array>
-	<string-array name="aapt2_dump_descr">
-		<item>چاپ اطلاعات استخراج شده از مانیفست APK.</item>
-		<item>چاپ هر پیکربندی استفاده شده توسط یک منبع در APK.</item>
-		<item>چاپ مجوزهای استخراج شده از مانیفست APK.</item>
-		<item>چاپ محتویات استخر رشته جدول منابع در APK چاپ کنید.</item>
-		<item>چاپ محتویات جدول منابع از APK.</item>
-		<item>چاپ منابع &lt;همپوشانی> یک APK.</item>
-	</string-array>
 	<string-array name="app_theme">
 		<item>روشن</item>
 		<item>تاریک</item>
@@ -504,8 +496,8 @@
 		<item>نوع معکوس</item>
 		<item>اندازه</item>
 		<item>اندازه معکوس</item>
-		<item>زمان</item>
-		<item>زمان معکوس</item>
+		<item>تاریخ</item>
+		<item>تاریخ معکوس</item>
 	</string-array>
 	<string-array name="resDecodeMode">
 		<item>دیکامپایل نشود</item>
@@ -515,8 +507,8 @@
 	<string-array name="installLocation">
 		<item>تنظیم نشده</item>
 		<item>خودکار</item>
-		<item>فقط داخلی</item>
-		<item>ترجیحاً خارجی</item>
+		<item>حافظه داخلی</item>
+		<item>حافظه خارجی</item>
 	</string-array>
 	<string-array name="xml_format_variants">
 		<item>پیش‌فرض</item>
@@ -542,11 +534,19 @@
 	<string-array name="backup_values">
 		<item>تنظیمات</item>
 		<item>نشانک ها</item>
-		<item>جستجو/جایگزینی تاریخچه</item>
+		<item>تاریخچه جستجو/جایگزینی</item>
 		<item>واژه‌نامه‌ها</item>
 	</string-array>
 	<string-array name="editor_themes">
 		<item>پیش‌فرض</item>
 		<item>جدید</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>چاپ اطلاعات استخراج شده از مانیفست APK.</item>
+		<item>چاپ هر پیکربندی استفاده شده توسط یک منبع در APK.</item>
+		<item>چاپ مجوزهای استخراج شده از مانیفست APK.</item>
+		<item>چاپ محتویات استخر رشته جدول منابع در APK چاپ کنید.</item>
+		<item>چاپ محتویات جدول منابع از APK.</item>
+		<item>چاپ منابع &lt;همپوشانی> یک APK.</item>
 	</string-array>
 </resources>
