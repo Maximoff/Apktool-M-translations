@@ -1,274 +1,560 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="smali_help_names">
-		<item>ثبت می کند</item>
-		<item>ارزش های تحت اللفظی</item>
+		<item>ثبت ها</item>
+		<item>مقادیر لفظی</item>
 		<item>انواع داده های اولیه</item>
 	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
+	</string-array>
 	<string-array name="smali_help_values" formatted="false">
-		<item>vA یک ثبات 4 بیتی با محدوده مقدار v0 - v15 است\nvAA یک ثبات 8 بیتی با محدوده مقدار v0 - v255 است\nvAAAA یک ثبات 16 بیتی با محدوده مقدار v0 - v65535 است</item>
-		<item>0xF، 0xFF و غیره استفاده می شود. برای نشان دادن مقادیر تحت اللفظی مانند رجیسترها، عدد F برای نشان دادن محدوده ای از مقادیر استفاده می شود، به عنوان مثال:\nمحدوده مقادیر 0xF با [-0x8، 0x7] نشان داده می شود.\nمحدوده مقادیر 0xFF با [-0x80، 0x7F] نشان داده می شود.</item>
-		<item>V - void، Z - بولی، B - بایت\nC - char، S - کوتاه، I - int\nJ - طولانی، F - شناور، D - دو برابر\nvoid: فقط برای انواع برگشتی قابل استفاده است\nboolean: مقدار true یا false را ذخیره می کند\nبایت: یک عدد صحیح از 128- تا 127 را ذخیره می کند و 1 بایت را اشغال می کند.\nکوتاه: یک عدد صحیح از -32768 تا 32767 را ذخیره می کند و 2 بایت می گیرد.\nint: یک عدد صحیح از -2147483648 تا 2147483647 را ذخیره می کند و 4 بایت را اشغال می کند.\nlong: یک عدد صحیح از -9223372036854775808 تا 9223372036854775807 را ذخیره می کند و 8 بایت را اشغال می کند.\ndouble: یک عدد ممیز شناور از ±4.9*10³²4 تا ±1.7976931348623157*10³⁰8 را ذخیره می کند و 8 بایت را اشغال می کند. یک نقطه به عنوان جداکننده اعشاری در لفظ کسری استفاده می شود.\nfloat: یک عدد ممیز شناور از -3.4*10³8 تا 3.4*1038 را ذخیره می کند و 4 بایت را اشغال می کند.\nchar: یک کاراکتر را در رمزگذاری UTF-16 ذخیره می کند و 2 بایت را اشغال می کند، بنابراین محدوده مقادیر ذخیره شده از 0 تا 65535 است.</item>
-		<item>هیچ اقدامی.</item>
-		<item>مقدار ثبات vB را به ثبت vA منتقل می کند.</item>
-		<item>مقدار ثبات vBBBB را به ثبات vAA منتقل می کند.</item>
-		<item>مقدار ثبات vBBBB را به ثبات vAAAA منتقل می کند.</item>
-		<item>مقدار طولانی/دوبل جفت رجیستر (vB، vB+1) را به جفت رجیستر vA، vA+1 منتقل می کند.</item>
-		<item>مقدار طولانی/دوگانه یک جفت ثبات (vBBBB، vBBBB+1) را به یک جفت ثبات vAA، vAA+1 منتقل می کند.</item>
-		<item>مقدار طولانی/دوگانه یک جفت ثبات (vBBBB، vBBBB+1) را به یک جفت ثبات vAAAA، vAAAA+1 منتقل می کند.</item>
-		<item>یک مرجع شی را از ثبات vB به ثبات vA منتقل می کند.</item>
-		<item>یک مرجع شی را از ثبات vBBBB به ثبات vAA منتقل می کند.</item>
-		<item>یک مرجع شی را از ثبات vBBBB به ثبات vAAAA منتقل می کند.</item>
-		<item>مقدار برگشتی متد قبلاً فراخوانی شده را به ثبات vAA منتقل می کند.</item>
-		<item>مقدار long/double برگردانده شده توسط متد قبلاً فراخوانی شده را به جفت ثبات vAA، vAA+1 منتقل می کند.</item>
-		<item>مرجع شی را که با روشی که قبلاً فراخوانی شده بود به رجیستر vAA منتقل می کند.</item>
-		<item>ارجاع به شیء حذف شده صادر شده در طول فراخوانی متد (در حین اجرا) را به ثبات vAA منتقل می کند.</item>
-		<item>بازگشت بدون ارزش بازگشتی</item>
-		<item>با برگرداندن مقدار از ثبات vAA برگردید.</item>
-		<item>با برگرداندن یک مقدار دوتایی/طولانی به یک جفت ثبات vAA، vAA+1 برگردید.</item>
-		<item>با برگرداندن مقدار مرجع شیء از ثبات vAA برگردید.</item>
-		<item>یک ثابت 4 بیتی را در ثبات vA قرار می دهد.</item>
-		<item>یک ثابت 16 بیتی را در ثبات vAA قرار می دهد.</item>
-		<item>یک عدد ثابت را در ثبات vAA قرار می دهد.</item>
-		<item>یک ثابت 16 بیتی را در بیت های بالای ثبات vAA قرار می دهد. برای مقداردهی اولیه مقادیر شناور (میز شناور) استفاده می شود.</item>
-		<item>یک ثابت عدد صحیح 16 بیتی را در جفت رجیستر vAA، vAA+1 قرار می دهد و ثابت عدد صحیح را به ثابت طولانی تبدیل می کند.</item>
-		<item>یک ثابت عدد صحیح 32 بیتی را در جفت رجیستر vAA، vAA+1 قرار می دهد و ثابت عدد صحیح را به ثابت طولانی تبدیل می کند.</item>
-		<item>یک ثابت 64 بیتی را در جفت رجیستر vAA، vAA+1 قرار می دهد.</item>
-		<item>یک ثابت 16 بیتی را در 16 بیت بالای جفت ثبت vAA، vAA+1 قرار می دهد. برای مقداردهی اولیه دو (میز شناور) مقادیر استفاده می شود.</item>
-		<item>ارجاع به رشته مشخص شده را در ثبات vAA قرار می دهد.</item>
-		<item>ارجاع به رشته مشخص شده را در ثبات vAA قرار می دهد.</item>
-		<item>ارجاع به ثابت رشته (رشته) شناسایی شده توسط string_id را در ثبات vAA قرار می دهد.</item>
-		<item>مانیتور شی که توسط رجیستر vAA ارجاع داده می شود را دریافت می کند.</item>
-		<item>مانیتور شی ارجاع شده توسط ثبات vAA را آزاد می کند.</item>
-		<item>بررسی می کند که آیا یک مرجع شی موجود در ثبات vAA می تواند به کلاس شناسایی شده توسط type_id فرستاده شود. اگر نتواند یک ClassCastException را پرتاب می کند، در غیر این صورت اجرا ادامه می یابد.</item>
-		<item>بررسی می کند که آیا محتوای ثبت vB نمونه ای از کلاس شناسایی شده توسط type_id است یا خیر. ثبات vA را در صورت وجود روی غیر صفر و در غیر این صورت 0 تنظیم می کند.\nvA = vB نمونه از نوع؟ 10</item>
-		<item>تعداد عناصر آرایه را از ثبات vB تعیین می کند و مقدار را در ثبات vA قرار می دهد.\nvA = vB.length</item>
-		<item>نمونه ای از نوع شی ایجاد می کند و ارجاع به نمونه ایجاد شده را در ثبات vAA قرار می دهد.</item>
-		<item>یک آرایه جدید از متغیرهای type_id با اندازه عناصر ثبات vB ایجاد می کند و یک ارجاع به آرایه در ثبات vA قرار می دهد.</item>
-		<item>یک آرایه داده جدید از نوع type_id ایجاد می کند و آن را با پارامترها پر می کند (یعنی آرایه های طولانی/دوگانه وجود ندارد، اما انواع مرجع مجاز هستند). ارجاع به آرایه جدید ایجاد شده را می توان با استفاده از دستور move-result-object بلافاصله بعد از این دستور (در صورت استفاده از یکی) بدست آورد.</item>
-		<item>یک آرایه داده جدید از نوع type_id ایجاد می کند و آن را با طیف وسیعی از پارامترها پر می کند (یعنی آرایه طولانی/دوگانه وجود ندارد، اما انواع مرجع قابل قبول هستند). ارجاع به آرایه جدید ایجاد شده را می توان با استفاده از دستور move-result-object بلافاصله بعد از این دستور (در صورت استفاده از یکی) بدست آورد.</item>
-		<item>آرایه ارجاع شده در ثبات vAA را با داده های ایستا پر می کند. مکان داده ها مجموع موقعیت دستور حاضر و افست است.</item>
-		<item>یک شی استثنا پرتاب می کند. ارجاع به شی استثنا در ثبات vAA.</item>
-		<item>پرش بدون قید و شرط به یک افست کوتاه (عدد صحیح) 8 بیتی.</item>
-		<item>پرش بدون قید و شرط به افست 16 بیتی.</item>
-		<item>پرش بدون قید و شرط به افست 32 بیتی.</item>
-		<item>عملگر Switch را زمانی که ثابت های کنترل به یکدیگر نزدیک هستند (در یک ردیف) پیاده سازی می کند. این دستورالعمل از یک جدول شاخص استفاده می کند. افست دستورالعمل برای یک مورد خاص توسط شاخص vAA تعیین می شود. اگر شاخص vAA فراتر از جدول باشد، اجرا با عبارت بعدی (پیش‌فرض) ادامه می‌یابد.</item>
-		<item>عملگر Switch را در صورت پراکندگی جدول پیاده سازی می کند. این دستورالعمل از جدولی استفاده می کند که برای هر ثابت، offset ها را مشخص می کند. اگر هیچ منطبقی در جدول یافت نشد، دستور بعدی اجرا می شود (مورد پیش فرض).</item>
-		<item>مقادیر شناور (میز شناور) را در vBB و vCC مقایسه می کند و مقدار صحیح را در ثبات vAA قرار می دهد:\nvAA = vBB &lt; vCC ? بله: 1، خیر: -1، برابر: 0</item>
-		<item>مقادیر شناور (میز شناور) را در vBB و vCC مقایسه می کند و مقدار صحیح را در ثبات vAA قرار می دهد:\nvAA = vBB &lt; vCC ? بله: 1، خیر: -1، برابر: 0</item>
-		<item>مقادیر دوگانه (میز شناور) را در vBB و vCC مقایسه می کند و مقدار صحیح را در ثبات vAA قرار می دهد:\nvAA = (vBB، vBB+1) &lt; (vCC، vCC+1) ? y\nبله: 1، خیر: -1، برابر: 0</item>
-		<item>مقادیر دوگانه (میز شناور) را در vBB و vCC مقایسه می کند و مقدار صحیح را در ثبات vAA قرار می دهد:\nvAA = (vBB، vBB+1) > (vCC، vCC+1) ? بله: 1، خیر: -1، برابر: 0</item>
-		<item>مقادیر long (integer) را در vBB و vCC مقایسه می کند و مقدار صحیح (integer) را در ثبات vAA قرار می دهد:\nvAA = (vBB، vBB+1) > (vCC، vCC+1) ? بله: 1، خیر: -1، برابر: 0</item>
-		<item>اگر vA == vB به برچسب مشخص شده می پرد. vA و vB حاوی مقادیر صحیح هستند.\n(eq مخفف برابر است)</item>
-		<item>اگر vA != vB به برچسب مشخص شده می پرد. vA و vB حاوی مقادیر صحیح هستند.\n(ne مخفف Not Equals است)</item>
-		<item>اگر vA &lt; vB به برچسب مشخص شده می پرد. vA و vB حاوی مقادیر صحیح هستند.\n(مخفف کمتر از کمتر است)</item>
-		<item>اگر vA به برچسب مشخص شده می پرد</item>
-		<item>اگر vA > vB به برچسب مشخص شده می پرد. vA و vB حاوی مقادیر صحیح هستند.\n(gt مخفف Greater Than/More Than است)</item>
-		<item>اگر vA >= vB به برچسب مشخص شده می پرد. vA و vB حاوی مقادیر صحیح هستند.\n(ge مخفف بزرگتر یا برابر است)</item>
-		<item>اگر vAA == 0 باشد، به برچسب مشخص شده می پرد. vAA حاوی یک مقدار صحیح است.\n(eqz مخفف برابر با صفر است)</item>
-		<item>اگر vAA != 0 باشد، به برچسب مشخص شده می پرد. vAA حاوی یک مقدار صحیح است.\n(nez مخفف Not Equals to Zero است)</item>
-		<item>اگر vAA &lt; 0 باشد به برچسب مشخص شده می پرد. vAA دارای یک مقدار صحیح باشد.\n(ltz مخفف Less Than Zero است)</item>
-		<item>در صورت vAA به برچسب مشخص شده می پرد</item>
-		<item>اگر vAA > 0 باشد، به برچسب مشخص شده می پرد. vAA دارای یک مقدار صحیح است.\n(gtz مخفف بزرگتر از صفر است)</item>
-		<item>اگر vAA >= 0 باشد، به برچسب مشخص شده می پرد. vAA حاوی یک مقدار صحیح است.\n(gez مخفف بزرگتر یا مساوی صفر است)</item>
-		<item>یک مقدار صحیح در شاخص موجود در vCC از آرایه ارجاع شده در vBB دریافت می کند و آن را در ثبات vAA قرار می دهد.\nvAA = vBB[vCC]</item>
-		<item>در شاخص موجود در vCC، از آرایه ارجاع شده در vBB، یک مقدار دو/طول دریافت می کند و آن را در جفت ثبات vAA، vAA+1 قرار می دهد.\n(vAA، vAA+1) = vBB[vCC]</item>
-		<item>در فهرست موجود در vCC، از آرایه ارجاع شده در vBB، ارجاعی به شی دریافت می کند و آن را در ثبات vAA قرار می دهد.\nvAA = vBB[vCC]</item>
-		<item>در شاخص موجود در vCC، از آرایه ای که در vBB ارجاع داده شده است، یک مقدار بولی دریافت می کند و آن را در ثبات vAA قرار می دهد.\nvAA = vBB[vCC]</item>
-		<item>یک مقدار بایت (عدد صحیح) را در فهرست موجود در vCC از آرایه ارجاع شده در vBB بازیابی می کند و آن را در ثبات vAA قرار می دهد.\nvAA = vBB[vCC]</item>
-		<item>در فهرست موجود در vCC، از آرایه ارجاع شده در vBB، یک مقدار char را بازیابی می کند و آن را در ثبات vAA قرار می دهد.\nvAA = vBB[vCC]</item>
-		<item>یک مقدار کوتاه (صحیح) را در فهرست موجود در vCC از آرایه ارجاع شده در vBB بازیابی می کند و آن را در ثبات vAA قرار می دهد.\nvAA = vBB[vCC]</item>
+		<item>ءvA یک ثبت 4 بیتی با محدوده مقدار v0 - v15 است\nءvAA یک ثبت 8 بیتی با محدوده مقدار v0 - v255\nءvAAAA یک ثبت 16 بیتی با محدوده مقدار v0 - v65535 است.</item>
+		<item>ء 0xF، 0xFF و غیره برای نمایش مقادیر لفظی استفاده می شود. مانند ثبت ها؛ عدد F برای نشان دادن محدوده ای از مقادیر استفاده می شود، برای مثال:\nمحدوده مقادیر 0xF با [-0x8، 0x7] نشان داده می شود\nمحدوده مقادیر 0xFF با [-0x80, 0x7F] نشان داده می شود.</item>
+		<item>V - تهی (void)، Z - boolean، B - بایت\nC - نویسه (char)، S - کوتاه (short)، I - عدد صحیح (int)\nJ - طولانی (long)، F - شناور (float)، D - دوبرابر (double)\nءvoid: فقط برای انواع برگشتی قابل استفاده است\nءمنطقی (boolean): مقدار true یا false را ذخیره می کند\nءbyte: یک عدد صحیح از -128 تا 127 را ذخیره می کند و 1 بایت را اشغال می کند\nءshort: یک عدد صحیح از -32768 تا 32767 را ذخیره می کند و 2 بایت را اشغال می‌کند\nءint: یک عدد صحیح از -2147483648 تا 2147483647 را ذخیره می کند و 4 بایت را اشغال می کند.\nءlong: یک عدد صحیح از -9223372036854775808 تا 9223372036854775807 را ذخیره می کند و 8 بایت را اشغال می کند.\nءdouble: یک عدد اعشاری از ±4.9*10³²⁴ تا ±1.7976931348623157*10³⁰⁸ را ذخیره می کند و 8 بایت را اشغال می کند. نقطه به عنوان جداکننده اعشاری در مقادیر لفظی کسری استفاده می شود.\nءfloat: یک عدد اعشاری از -3.4*10³⁸ تا 3.4*10³⁸ را ذخیره می کند و 4 بایت را اشغال می کند.\nءchar: یک نویسه را در رمزگذاری UTF-16 ذخیره می کند و 2 بایت را اشغال می کند، بنابراین محدوده مقادیر ذخیره شده از 0 تا 65535 است.</item>
+		<item>بدون عملیات.</item>
+		<item>مقدار ثبت vB را به ثبت vA منتقل می کند.</item>
+		<item>مقدار ثبت vBBBB را به ثبت vAA منتقل می کند.</item>
+		<item>مقدار ثبت vBBBB را به ثبت vAAAA منتقل می کند.</item>
+		<item>مقدار long/double یک جفت ثبت (vB، vB+1) را به یک جفت ثبت vA، vA+1 منتقل می کند.</item>
+		<item>مقدار long/double یک جفت ثبت (vBBBB، vBBBB+1) را به یک جفت ثبت vAA، vAA+1 منتقل می کند.</item>
+		<item>مقدار long/double یک جفت ثبت (vBBBB، vBBBB+1) را به یک جفت ثبت vAAAA، vAAAA+1 منتقل می کند.</item>
+		<item>یک مرجع شی را از ثبت vB به ثبت vA منتقل می کند.</item>
+		<item>یک مرجع شی را از ثبت vBBBB به ثبت vAA منتقل می کند.</item>
+		<item>یک مرجع شی را از ثبت vBBBB به ثبت vAAAA منتقل می کند.</item>
+		<item>مقدار برگشتی روش (method) قبلاً فراخوانی شده را به ثبت vAA منتقل می کند.</item>
+		<item>مقدار long/double برگردانده شده توسط روش (method) قبلاً فراخوانی شده را به جفت ثبت vAA، vAA+1 منتقل می کند.</item>
+		<item>مرجع شی برگشتی را که با روشی (متدی) که قبلاً فراخوانی شده بود به ثبت vAA منتقل می کند.</item>
+		<item>ارجاع به شیء استثناء شده صادر شده در طول فراخوانی روش (در حین اجرا) را به ثبت vAA منتقل می کند.</item>
+		<item>بازگشت بدون مقدار بازگشتی</item>
+		<item>برگشت با برگرداندن مقدار از ثبت vAA.</item>
+		<item>برگشت با برگرداندن یک مقدار double/long به یک جفت از ثبت vAA، vAA+1.</item>
+		<item>برگشت با برگرداندن مقدار مرجع شیء از ثبت vAA.</item>
+		<item>یک ثابت 4 بیتی را در ثبت vA قرار می دهد.</item>
+		<item>یک ثابت 16 بیتی را در ثبت vAA قرار می دهد.</item>
+		<item>یک ثابت عدد صحیح (integer) را در ثبت vAA قرار می دهد.</item>
+		<item>یک ثابت 16 بیتی را در بیت های بالای ثبت vAA قرار می دهد. برای مقداردهی اولیه مقادیر اعشار (میز شناور) استفاده می شود.</item>
+		<item>یک ثابت عدد صحیح 16 بیتی را در جفت ثبت vAA، vAA+1 قرار می دهد و ثابت عدد صحیح (integer) را به ثابت طولانی (long) تبدیل می کند.</item>
+		<item>یک ثابت عدد صحیح 32 بیتی را در جفت ثبت vAA، vAA+1 قرار می دهد و ثابت عدد صحیح (integer) را به ثابت طولانی (long) تبدیل می کند.</item>
+		<item>یک ثابت 64 بیتی را در جفت ثبت vAA، vAA+1 قرار می دهد.</item>
+		<item>یک ثابت 16 بیتی را در 16 بیت بالای جفت ثبت vAA، vAA+1 قرار می دهد. برای مقداردهی اولیه مقادیر double (میز شناور) استفاده می شود.</item>
+		<item>ارجاع به رشته مشخص شده را در ثبت vAA قرار می دهد.</item>
+		<item>ارجاع به رشته مشخص شده را در ثبت vAA قرار می دهد.</item>
+		<item>ارجاع به ثابت رشته (string) شناسایی شده توسط string_id را در ثبت vAA قرار می دهد.</item>
+		<item>ناظر شی که توسط ثبت vAA ارجاع داده می شود را دریافت می کند.</item>
+		<item>Releases the object monitor referenced by the vAA register.</item>
+		<item>بررسی می کند که آیا یک مرجع شی موجود در ثبت vAA می تواند به کلاس شناسایی شده توسط type_id فرستاده شود. اگر نتواند یک ClassCastException را پرتاب می کند، در غیر این صورت اجرا ادامه می یابد.</item>
+		<item>بررسی می کند که آیا محتوای ثبت vB نمونه ای از کلاس شناسایی شده توسط type_id است یا خیر. ثبت vA را در صورت وجود روی غیر صفر و در غیر این صورت 0 تنظیم می کند.\nvA = vB instanceOf type ? 10</item>
+		<item>تعداد عناصر آرایه را از ثبت vB تعیین می کند و مقدار را در ثبت vA قرار می دهد.\nvA = vB.length</item>
+		<item>نمونه ای از نوع شی ایجاد می کند و ارجاع به نمونه ایجاد شده را در ثبت vAA قرار می دهد.</item>
+		<item>یک آرایه جدید از متغیرهای type_id با اندازه عناصر ثبت vB ایجاد می کند و یک ارجاع به آرایه در ثبت vA قرار می دهد.</item>
+		<item>یک آرایه داده جدید از نوع type_id ایجاد می کند و آن را با پارامترها پر می کند (یعنی آرایه های long/double وجود ندارد، اما انواع مرجع مجاز هستند). ارجاع به آرایه جدید ایجاد شده را می توان با استفاده از دستور move-result-object بلافاصله بعد از این دستور (اگر قرار است از یکی استفاده شود) بدست آورد.</item>
+		<item>یک آرایه داده جدید از نوع type_id ایجاد می کند و آن را با محدوده ای از پارامترها پر می کند (یعنی آرایه long/double وجود ندارد، اما انواع مرجع قابل قبول هستند). ارجاع به آرایه جدید ایجاد شده را می توان با استفاده از دستور move-result-object بلافاصله بعد از این دستور (اگر قرار است از یکی استفاده شود) بدست آورد.</item>
+		<item>آرایه ارجاع شده در ثبت vAA را با اطلاعات ایستا (static data) پر می کند. مکان اطلاعات مجموع موقعیت دستور حاضر و انحراف (offset) است.</item>
+		<item>یک شی استثنا پرتاب می کند. ارجاع به شی استثنا در ثبت vAA.</item>
+		<item>پرش غیر شرطی به یک انحراف short (integer) 8 بیتی.</item>
+		<item>پرش غیر شرطی به انحراف (offset) 16 بیتی.</item>
+		<item>پرش غیر شرطی به انحراف (افست) 32 بیتی.</item>
+		<item>عملگر Switch را زمانی که ثابت های کنترل به یکدیگر نزدیک هستند (در یک ردیف) پیاده سازی می کند. دستورالعمل از یک جدول شاخص گذاری استفاده می کند. انحراف (offset) دستورالعمل برای یک مورد خاص توسط شاخص vAA تعیین می شود. اگر شاخص vAA فراتر از جدول باشد، اجرا با دستور بعدی (پیش‌فرض) ادامه می‌یابد.</item>
+		<item>عملگر Switch را در صورت پراکندگی جدول پیاده سازی می کند. این دستورالعمل از جدولی استفاده می کند که برای هر یک از ثابت ها offset ها را مشخص می کند. اگر هیچ تطبیقی در جدول یافت نشد، دستور بعدی اجرا می شود (مورد پیش فرض).</item>
+		<item>مقادیر float (میز شناور) را در vBB و vCC مقایسه می کند و مقدار صحیح را در ثبت vAA قرار می دهد.:\nvAA = vBB &lt; vCC ? بله: 1، خیر: -1، برابر: 0</item>
+		<item>مقادیر float (میز شناور) را در vBB و vCC مقایسه می کند و مقدار صحیح را در ثبت vAA قرار می دهد.:\nvAA = vBB &lt; vCC ? بله: 1، خیر: -1، برابر: 0</item>
+		<item>مقادیر double (میز شناور) را در vBB و vCC مقایسه می کند و مقدار صحیح را در ثبت vAA قرار می دهد:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nبله: 1، خیر: -1، برابر: 0</item>
+		<item>مقادیر double (میز شناور) را در vBB و vCC مقایسه می کند و مقدار صحیح را در ثبت vAA قرار می دهد:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? بله: 1، خیر: -1، برابر: 0</item>
+		<item>مقادیر long (عدد صحیح) را در vBB و vCC مقایسه می کند و مقدار صحیح (integer) را در ثبت vAA قرار می دهد:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? بله: 1، خیر: -1، برابر: 0</item>
+		<item>اگر vA == vB به برچسب مشخص شده پرش می‌کند. vA و vB حاوی مقادیر صحیح هستند.\n(ء eq مخفف Equals (برابر) است)</item>
+		<item>اگر vA != vB به برچسب مشخص شده پرش می‌کند. vA و vB حاوی مقادیر صحیح هستند.\n(ء ne مخفف Not Equals (برابر نیست) است)</item>
+		<item>اگر vA &lt; vB به برچسب مشخص شده پرش می‌کند. vA و vB حاوی مقادیر صحیح هستند.\n(ء lt مخفف Less Than (کمتر از) است)</item>
+		<item>اگر vA &lt;= vB به برچسب مشخص شده پرش می‌کند. vA و vB حاوی مقادیر صحیح هستند.\n(ء le مخفف برای Less than or Equal/Less or equal (کمتر از یا مساوی/کمتر یا مساوی)) است</item>
+		<item>اگر vA > vB به برچسب مشخص شده پرش میکند. vA و vB حاوی مقادیر صحیح هستند.\n(ء gt مخفف Greater Than/More Than (بزرگتر از/بیشتر از) است)</item>
+		<item>اگر vA >= vB به برچسب مشخص شده پرش می‌کند. vA و vB حاوی مقادیر صحیح هستند.\n(ء ge مخفف Greater than or Equal (بزرگتر از یا برابر) است)</item>
+		<item>اگر vAA == 0 باشد، به برچسب مشخص شده پرش می‌کند. vAA حاوی یک مقدار صحیح است.\n(ء eqz مخفف برابر با صفر (Equals to zero) است)</item>
+		<item>اگر vAA != 0 باشد، به برچسب مشخص شده پرش می‌کند. vAA حاوی یک مقدار صحیح است.\n(ء nez مخفف Not Equals to Zero (برابر با صفر نیست) است)</item>
+		<item>اگر vAA &lt; 0 باشد به برچسب مشخص شده پرش می‌کند. vAA حاوی یک عدد صحیح است.\n(ء ltz مخفف Less Than Zero (کمتر از صفر) است)</item>
+		<item>اگر vAA &lt;= 0 باشد، به برچسب مشخص شده پرش می‌کند. vAA حاوی یک عدد صحیح است.\n(ء lez مخفف Less than or Equal to Zero (کمتر از یا مساوی به صفر)/Less or equal to zero (کمتر یا برابر با صفر) است)</item>
+		<item>اگر vAA > 0 باشد، به برچسب مشخص شده پرش می‌کند. vAA دارای یک مقدار صحیح است.\n(ء gtz مخفف Greater Than Zero (بزرگتر از صفر) است)</item>
+		<item>اگر vAA >= 0 باشد، به برچسب مشخص شده پرش می‌کند. vAA حاوی یک مقدار صحیح است.\n(gez مخفف Greater than or Equal to Zero (بزرگتر از یا برابر با صفر) است)</item>
+		<item>یک مقدار صحیح در شاخص موجود در vCC از آرایه ارجاع شده در vBB دریافت می کند و آن را در ثبت vAA قرار می دهد.\nvAA = vBB[vCC]</item>
+		<item>در شاخص موجود در vCC، از آرایه ارجاع شده در vBB، یک مقدار double/long دریافت می کند و آن را در جفت ثبت vAA، vAA+1 قرار می دهد.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>در شاخص موجود در vCC، از آرایه ارجاع شده در vBB، یک ارجاع به شی دریافت می کند و آن را در ثبت vAA قرار می دهد.\nvAA = vBB[vCC]</item>
+		<item>در شاخص موجود در vCC، از آرایه ای که در vBB ارجاع داده شده است، یک مقدار منطقی (boolean) دریافت می کند و آن را در ثبت vAA قرار می دهد.\nvAA = vBB[vCC]</item>
+		<item>یک مقدار بایت (عدد صحیح) را در شاخص موجود در vCC از آرایه ارجاع شده در vBB بازیابی می کند و آن را در ثبت vAA قرار می دهد.\nvAA = vBB[vCC]</item>
+		<item>در شاخص موجود در vCC، از آرایه ارجاع شده در vBB، یک مقدار char را بازیابی می کند و آن را در ثبت vAA قرار می دهد.\nvAA = vBB[vCC]</item>
+		<item>یک مقدار short (integer) را در شاخص موجود در vCC از آرایه ارجاع شده در vBB بازیابی می کند و آن را در ثبت vAA قرار می دهد.\nvAA = vBB[vCC]</item>
 		<item>مقدار صحیح از vAA را در آرایه ارجاع شده در vBB با عنصر حاوی ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
-		<item>یک مقدار دوتایی/طولانی از جفت رجیستر vAA، vAA+1 را در آرایه ارجاع شده در vBB، با عنصر حاوی ثبات vCC قرار می دهد.\nvBB[vCC] = (vAA، vAA+1)</item>
-		<item>ارجاع به یک شی از vAA را در آرایه ارجاع شده در vBB با عنصری با ثبات vCC قرار می دهد.\nvBB[vCC] = vAA</item>
-		<item>مقدار بولی را از vAA در آرایه ارجاع شده توسط vBB با عنصر حاوی ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
-		<item>مقدار بایت (عدد صحیح) را از vAA در آرایه ارجاع شده در vBB با عنصر حاوی ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
-		<item>مقدار کاراکتر (کاراکتر) را از vAA در آرایه ارجاع شده در vBB توسط عنصر با ثبات vCC قرار می دهد.\nvBB[vCC] = vAA</item>
-		<item>مقدار کوتاه (صحیح) را از vAA در آرایه ارجاع شده در vBB با عنصر حاوی ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
-		<item>مقدار را از قسمت نمونه می خواند و آن را در ثبات vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvA = vB.field</item>
-		<item>یک مقدار دوتایی/طولانی را از یک فیلد نمونه می خواند و آن را در یک جفت ثبات (vA, vA+1) قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\n(vA, vA+1) = vB.field</item>
-		<item>یک مرجع شی را از یک فیلد نمونه می خواند و آن را در ثبات vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvA = vB.field</item>
-		<item>یک مقدار بولی را از فیلد نمونه می خواند و آن را در ثبات vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvA = vB.field</item>
-		<item>یک مقدار بایت (عدد صحیح) را از یک فیلد نمونه می خواند و آن را در ثبات vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvA = vB.field</item>
-		<item>یک مقدار char را از یک فیلد نمونه می خواند و آن را در ثبات vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvA = vB.field</item>
-		<item>یک مقدار کوتاه (عدد صحیح) را از یک فیلد نمونه می خواند و آن را در ثبات vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvA = vB.field</item>
-		<item>مقدار را از ثبات vA در فیلد نمونه قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvB.field = vA</item>
-		<item>یک مقدار دوتایی/طولانی از یک جفت رجیستر (vA, vA+1) را در یک فیلد نمونه قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvB.field = (vA، vA+1)</item>
-		<item>ارجاع به یک شی از ثبات vA را در فیلد نمونه قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvB.field = vA</item>
-		<item>مقدار بولی را از ثبات vA در فیلد نمونه قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبات vB است.\nvB.field = vA</item>
-		<item>مقدار بایت (عدد صحیح) فیلد بولی مشخص شده را در نمونه ارجاع شده توسط ثبات vB برابر با مقدار ثبات vA تنظیم می کند، یعنی:\nvB.field = vA</item>
-		<item>مقدار کاراکتر (کاراکتر) فیلد بولی مشخص شده را در نمونه ارجاع شده توسط ثبات vB برابر با مقدار ثبات vA تنظیم می کند، یعنی:\nvB.field = vA</item>
-		<item>مقدار کوتاه (عدد صحیح) فیلد بولی مشخص شده را در نمونه ارجاع شده توسط ثبات vB برابر با مقدار ثبات vA تنظیم می کند، یعنی:\nvB.field = vA</item>
-		<item>مقداری را از یک فیلد ثابت می خواند و آن را در ثبات vAA قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک مقدار دوتایی/طولانی را از یک فیلد ثابت می خواند و آن را در یک جفت ثبات vAA، vAA+1 قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک مرجع شی را از یک فیلد ثابت می خواند و آن را در ثبات vAA قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک مقدار بولی را از یک فیلد ثابت می خواند و آن را در ثبات vAA قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک مقدار بایت (عدد صحیح) را از یک فیلد ثابت می خواند و آن را در ثبات vAA قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک مقدار char را از یک فیلد ثابت می خواند و آن را در ثبات vAA قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک مقدار کوتاه (عدد صحیح) را از یک فیلد ثابت می خواند و آن را در ثبات vAA قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>مقدار را از ثبات vAA در یک فیلد (فیلد استاتیک) قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک مقدار دوتایی/طولانی از یک جفت ثبات vAA، vAA+1 را در یک فیلد (فیلد استاتیک) قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>ارجاع به یک شی از ثبات vAA را در یک فیلد (فیلد استاتیک) قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>مقدار بولی را از ثبات vAA در یک فیلد (فیلد استاتیک) قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک مقدار بایت (عدد صحیح) را از ثبات vAA در یک فیلد (فیلد استاتیک) قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>مقدار کاراکتر را از ثبات vAA در یک فیلد ثابت قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>مقدار کوتاه (عدد صحیح) را از ثبات vAA در یک فیلد ثابت قرار می دهد. ثبات حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
-		<item>یک متد مجازی با پارامترها را فراخوانی می کند (اجرا می کند). پارامترها در بریس های فرفری نشان داده شده اند. پارامتر اول (رجیستر v2) شامل یک مرجع به کلاس حاوی متد فراخوانی شده است، پارامتر دوم (محتویات ثبات v3) به متد فراخوانی شده ارسال می شود.</item>
-		<item>یک متد مجازی با پارامترهای مستقیماً از کلاس والد را فراخوانی می کند (اجرا می کند).</item>
-		<item>متدی را با پارامترها بدون مجوزهای متد مجازی فراخوانی می کند (اجرا می کند).</item>
-		<item>یک متد استاتیک را با پارامترها فراخوانی می کند (اجرا می کند). پارامترها در بریس های فرفری نشان داده شده اند. پارامتر (محتویات ثبات v3) به متد فراخوانی شده ارسال می شود. کلاس حاوی متد فراخوانی شده بعد از بریس های فر نشان داده می شود.</item>
-		<item>یک روش رابط را با پارامترها فراخوانی می کند (اجرا می کند).</item>
-		<item>یک متد مجازی را با پارامترها فراخوانی می کند (اجرا می کند)، اما پارامترها باید در ثبات هایی با اعداد به ترتیب موجود باشند.</item>
-		<item>یک متد مجازی با پارامترهای مستقیماً از کلاس والد را فرا می‌خواند (اجرا می‌کند)، اما پارامترها باید در ثبات‌هایی با اعداد متوالی موجود باشند.</item>
-		<item>متدی را با پارامترهای بدون مجوزهای روش مجازی فراخوانی می کند (اجرا می کند)، اما پارامترها باید در رجیسترهایی با شماره متوالی قرار گیرند.</item>
-		<item>یک متد استاتیک را با پارامترها فراخوانی می کند (اجرا می کند)، اما پارامترها باید در ثبات هایی با اعداد متوالی موجود باشند.</item>
-		<item>یک متد واسط را با پارامترها فراخوانی می کند (اجرا می کند)، اما پارامترها باید در رجیسترهایی با شماره متوالی قرار گیرند.</item>
-		<item>vA = -vB را برای مقادیر از نوع عدد صحیح محاسبه می کند.</item>
-		<item>vA = ~vB را برای مقادیر صحیح محاسبه می کند.\nvA = ~ vB</item>
-		<item>(vA، vA+1) = -(vB، vB+1) را برای مقادیر نوع long (عدد صحیح) محاسبه می کند.</item>
-		<item>(vA، vA+1) = ~(vB، vB+1) را برای مقادیر از نوع long (عدد صحیح) محاسبه می کند.</item>
-		<item>vA = -vB را برای مقادیر شناور محاسبه می کند.</item>
-		<item>(vA، vA+1) = -(vB، vB+1) را برای مقادیر دوگانه (میز شناور) محاسبه می کند.</item>
-		<item>یک عدد صحیح را از vB به طولانی تبدیل می کند و آن را در جفت ثبات vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (طولانی) vB</item>
-		<item>یک عدد صحیح را از vB به یک شناور تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (شناور) vB</item>
-		<item>یک عدد صحیح را از vB به یک مضاعف (میز شناور) تبدیل می کند و آن را در یک جفت ثبات vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (دو برابر) vB</item>
-		<item>یک مقدار طولانی (عدد صحیح) را از vB، vB+1 به یک عدد صحیح (صحیح) تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (int) (vB، vB+1)</item>
-		<item>یک مقدار طولانی (عدد صحیح) را از vB، vB+1 به یک float (میز شناور) تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (شناور) (vB، vB+1)</item>
-		<item>یک مقدار طولانی (صحیح) را از vB، vB+1 به دو (نقطه شناور) تبدیل می کند و آن را در یک جفت ثبات vA، vA+1 ذخیره می کند.\n(vA، vA+1) = (دوبل) (vB، vB+1)</item>
-		<item>یک مقدار شناور (میز شناور) را از vB به یک مقدار صحیح (صحیح) تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (int)vB</item>
-		<item>یک مقدار شناور (میز شناور) را از vB به یک مقدار طولانی (صحیح) تبدیل می کند و آن را در جفت ثبات vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (طولانی) vB</item>
-		<item>یک مقدار شناور (میز شناور) را از vB به مقدار دو برابر (میز شناور) تبدیل می کند و آن را در جفت ثبات vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (دو برابر) vB</item>
-		<item>یک مقدار دوگانه (میز شناور) را از vB، vB+1 به یک مقدار صحیح (صحیح) تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (int) (vB، vB+1)</item>
-		<item>یک مقدار دوگانه (میز شناور) را از vB، vB+1 به یک مقدار طولانی (صحیح) تبدیل می کند و آن را در یک جفت ثبات vA، vA+1 ذخیره می کند.\n(vA، vA+1) = (طولانی) (vB، vB+1)</item>
-		<item>یک مقدار دوگانه (میز شناور) را از vB، vB+1 به مقدار شناور (میز شناور) تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (شناور) (vB، vB+1)</item>
-		<item>یک مقدار صحیح را از vB به مقدار بایت تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (بایت) vB</item>
-		<item>یک مقدار صحیح را از vB به مقدار char تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (char)vB</item>
-		<item>یک مقدار صحیح را از vB به یک مقدار کوتاه تبدیل می کند و آن را در ثبات vA ذخیره می کند.\nvA = (کوتاه) vB</item>
-		<item>vBB + vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB + vCC</item>
-		<item>vBB - vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB - vCC</item>
-		<item>vBB * vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB * vCC</item>
-		<item>vBB / vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB / vCC</item>
-		<item>vBB % vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB % vCC</item>
-		<item>vBB و vCC (منطقی AND) را محاسبه می کند و نتیجه را در رجیستر vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB و vCC</item>
-		<item>محاسبه vBB | vCC (OR منطقی) و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB | vCC</item>
-		<item>vBB ^ vCC (انحصاری OR) را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB ^ vCC</item>
-		<item>vBB را با تعداد بیت های مشخص شده توسط vCC تغییر می دهد و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB</item>
-		<item>vBB را با تعداد بیت های مشخص شده توسط vCC به سمت راست منتقل می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB >> vCC</item>
-		<item>vBB را بدون حفظ علامت با تعداد بیت های مشخص شده توسط vCC به سمت راست منتقل می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB >>> vCC</item>
-		<item>(vBB، vBB+1) + (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) + (vCC، vCC+1)</item>
-		<item>(vBB, vBB+1) - (vCC, vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA, vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) - (vCC، vCC+1)</item>
-		<item>(vBB، vBB+1) * (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) * (vCC، vCC+1)</item>
-		<item>(vBB، vBB+1) / (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) / (vCC، vCC+1)</item>
-		<item>(vBB، vBB+1) % (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) % (vCC، vCC+1)</item>
-		<item>(vBB، vBB+1) و (vCC، vCC+1) (AND منطقی) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) و (vCC، vCC+1)</item>
-		<item>محاسبه (vBB، vBB+1) | (vCC, vCC+1) (OR منطقی) و نتیجه را در یک جفت ثبات vAA, vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) | (vCC، vCC+1)</item>
-		<item>(vBB، vBB+1) ^ (vCC، vCC+1) (انحصاری AND) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) ^ (vCC، vCC+1)</item>
-		<item>vBB، vBB+1 را با تعداد بیت های مشخص شده توسط vCC به سمت چپ منتقل می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1)</item>
-		<item>vBB، vBB+1 را با تعداد بیت های مشخص شده توسط vCC به سمت راست منتقل می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) >> vCC</item>
-		<item>vBB، vBB+1 را بدون حفظ علامت توسط تعداد بیت‌های مشخص شده توسط vCC به راست تغییر می‌دهد و نتیجه را در یک جفت ثبات vAA، vA+1 ذخیره می‌کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vAA، vAA+1) = (vBB، vBB+1) >>> vCC</item>
-		<item>vBB + vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر شناور هستند.\nvAA = vBB + vCC</item>
-		<item>vBB - vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر شناور هستند.\nvAA = vBB - vCC</item>
-		<item>vBB * vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر شناور هستند.\nvAA = vBB * vCC</item>
-		<item>vBB / vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر شناور هستند.\nvAA = vBB / vCC</item>
-		<item>vBB % vCC را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر شناور هستند.\nvAA = vBB % vCC</item>
-		<item>(vBB، vBB+1) + (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vAA، vAA+1) = (vBB، vBB+1) + (vCC، vCC+1)</item>
-		<item>(vBB, vBB+1) - (vCC, vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA, vAA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vAA، vAA+1) = (vBB، vBB+1) - (vCC، vCC+1)</item>
-		<item>(vBB، vBB+1) * (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vAA، vAA+1) = (vBB، vBB+1) * (vCC، vCC+1)</item>
-		<item>(vBB، vBB+1) / (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vAA، vAA+1) = (vBB، vBB+1) / (vCC، vCC+1)</item>
-		<item>(vBB، vBB+1) % (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vAA، vAA+1) = (vBB، vBB+1) % (vCC، vCC+1)</item>
-		<item>vA + vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA + vB</item>
-		<item>vA - vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA - vB</item>
-		<item>vA * vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA * vB</item>
-		<item>vA / vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA / vB</item>
-		<item>vA % vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA % vB</item>
-		<item>vA و vB (منطقی AND) را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA و vB</item>
-		<item>محاسبه vA | vB (OR منطقی) و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA | vB</item>
-		<item>vA ^ vB (انحصاری OR) را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA ^ vB</item>
-		<item>vA را با تعداد بیت های مشخص شده توسط vB به چپ منتقل می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA</item>
-		<item>vA را با تعداد بیت های مشخص شده توسط vB به سمت راست منتقل می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA >> vB</item>
-		<item>vA را بدون حفظ علامت آن به سمت راست با تعداد بیت های مشخص شده توسط vB تغییر می دهد و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA >>> vB</item>
-		<item>(vA, vA+1) + (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA، vA+1) = (vA، vA+1) + (vB، vB+1)</item>
-		<item>(vA, vA+1) - (vB, vB+1) را محاسبه می کند و نتیجه را در یک جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA، vA+1) = (vA، vA+1) - (vB، vB+1)</item>
-		<item>(vA, vA+1) * (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA، vA+1) = (vA، vA+1) * (vB، vB+1)</item>
-		<item>(vA, vA+1) / (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA، vA+1) = (vA، vA+1) / (vB، vB+1)</item>
-		<item>(vA, vA+1) % (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA، vA+1) = (vA، vA+1) % (vB، vB+1)</item>
-		<item>(vA, vA+1) &amp; (vB, vB+1) (منطقی AND) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA، vA+1) = (vA، vA+1) و (vB، vB+1)</item>
-		<item>محاسبه می کند (vA, vA+1) | (vB, vB+1) (OR منطقی) و نتیجه را در یک جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA, vA+1) = (vA, vA+1) | (vB، vB+1)</item>
-		<item>(vA, vA+1) &amp; (vB, vB+1) (انحصاری OR) را محاسبه می کند و نتیجه را در جفت ثبت vA, vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA، vA+1) = (vA، vA+1) ^ (vB، vB+1)</item>
-		<item>vA، vA+1 را با تعداد بیت‌های مشخص شده توسط vB به چپ منتقل می‌کند و نتیجه را در جفت ثبات vA، vA+1 ذخیره می‌کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA، vA+1) = (vA، vA+1)</item>
-		<item>vA، vA+1 را با تعداد بیت های مشخص شده توسط vB به سمت راست منتقل می کند و نتیجه را در جفت ثبات vA، vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
-		<item>vA، vA+1 را بدون حفظ علامت با تعداد ارقام مشخص شده توسط vB به راست جابجا می کند و نتیجه را در یک جفت ثبات vA، vA+1 ذخیره می کند. همه مقادیر طولانی هستند (عدد صحیح).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
-		<item>vA + vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر شناور هستند.\nvA = vA + vB</item>
-		<item>vA - vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر شناور هستند.\nvA = vA - vB</item>
-		<item>vA * vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر شناور هستند.\nvA = vA * vB</item>
-		<item>vA / vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر شناور هستند.\nvA = vA / vB</item>
-		<item>vA % vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر شناور هستند.\nvA = vA % vB</item>
-		<item>(vA, vA+1) + (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vA، vA+1) = (vA، vA+1) + (vB، vB+1)</item>
-		<item>(vA, vA+1) - (vB, vB+1) را محاسبه می کند و نتیجه را در یک جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vA، vA+1) = (vA، vA+1) - (vB، vB+1)</item>
-		<item>(vA, vA+1) * (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vA، vA+1) = (vA، vA+1) * (vB، vB+1)</item>
-		<item>(vA, vA+1) / (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vA، vA+1) = (vA، vA+1) / (vB، vB+1)</item>
-		<item>(vA, vA+1) % (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبات vA, vA+1 ذخیره می کند. همه مقادیر دو برابر هستند (میز شناور).\n(vA، vA+1) = (vA، vA+1) % (vB، vB+1)</item>
-		<item>vB + 0xFFFF را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB + 0xFFFF</item>
-		<item>0xFFFF - vB را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = 0xFFFF - vB</item>
-		<item>vB * 0xFFFF را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB * 0xFFFF</item>
-		<item>vB / 0xFFFF را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB / 0xFFFF</item>
-		<item>vB % 0xFFFF را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB % 0xFFFF</item>
-		<item>vB و 0xFFFF (منطقی AND) را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB و 0xFFFF</item>
-		<item>محاسبه vB | 0xFFFF (OR منطقی) و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB | 0xFFFF</item>
-		<item>vB ^ 0xFFFF (انحصاری OR) را محاسبه می کند و نتیجه را در ثبات vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB ^ 0xFFFF</item>
-		<item>vBB + 0xFF را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB + 0xFF</item>
-		<item>0xFF - vBB را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = 0xFF - vBB</item>
-		<item>vBB * 0xFF را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB * 0xFF</item>
-		<item>vBB / 0xFF را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB / 0xFF</item>
-		<item>vBB % 0xFF را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB % 0xFF</item>
-		<item>vBB و 0xFF (منطقی AND) را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB و 0xFF</item>
-		<item>محاسبه vBB | 0xFF (OR منطقی) و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB | 0xFF</item>
-		<item>vBB ^ 0xFF (انحصاری OR) را محاسبه می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB ^ 0xFF</item>
-		<item>vBB را با تعداد بیت های مشخص شده توسط 0xFF تغییر می دهد و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB</item>
-		<item>vBB را بر اساس تعداد بیت های مشخص شده توسط 0xFF به سمت راست منتقل می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB >> 0xFF</item>
-		<item>سیگنال vBB را با تعداد بیت های مشخص شده توسط 0xFF به سمت راست منتقل می کند و نتیجه را در ثبات vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB >>> 0xFF</item>
+		<item>یک مقدار double/long از جفت ثبت vAA، vAA+1 را در آرایه ارجاع شده در vBB، با عنصر حاوی ثبت vCC قرار می دهد.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>ارجاع به یک شی از vAA را در آرایه ارجاع شده در vBB با یک عنصر با ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
+		<item>مقدار منطقی (boolean) را از vAA در آرایه ارجاع شده توسط vBB با عنصر حاوی ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
+		<item>مقدار byte (عدد صحیح) را از vAA در آرایه ارجاع شده در vBB با عنصر حاوی ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
+		<item>مقدار char (نویسه) را از vAA در آرایه ارجاع شده در vBB توسط عنصر با ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
+		<item>مقدار short (صحیح) را از vAA در آرایه ارجاع شده در vBB با عنصر حاوی ثبت vCC قرار می دهد.\nvBB[vCC] = vAA</item>
+		<item>مقدار را از فیلد نمونه می خواند و آن را در ثبت vA قرار می دهد.  ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvA = vB.field</item>
+		<item>یک مقدار double/long را از یک فیلد نمونه می خواند و آن را در یک جفت ثبت (vA, vA+1) قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\n(vA, vA+1) = vB.field</item>
+		<item>یک مرجع شی را از یک فیلد نمونه می خواند و آن را در ثبت vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvA = vB.field</item>
+		<item>یک مقدار منطقی (boolean) را از فیلد نمونه می خواند و آن را در ثبت vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvA = vB.field</item>
+		<item>یک مقدار byte (عدد صحیح) را از یک فیلد نمونه می خواند و آن را در ثبت vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvA = vB.field</item>
+		<item>یک مقدار char را از یک فیلد نمونه می خواند و آن را در ثبت vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvA = vB.field</item>
+		<item>یک مقدار short (عدد صحیح) را از یک فیلد نمونه می خواند و آن را در ثبت vA قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvA = vB.field</item>
+		<item>مقدار را از ثبت vA در فیلد نمونه قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvB.field = vA</item>
+		<item>یک مقدار double/long از یک جفت ثبت (vA, vA+1) را در یک فیلد نمونه قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvB.field = (vA, vA+1)</item>
+		<item>ارجاع به یک شی از ثبت vA را در فیلد نمونه قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvB.field = vA</item>
+		<item>مقدار منطقی (boolean) را از ثبت vA در فیلد نمونه قرار می دهد. ارجاع به کلاس حاوی این فیلد در ثبت vB است.\nvB.field = vA</item>
+		<item>مقدار byte (عدد صحیح) فیلد Boolean مشخص شده را در نمونه ارجاع شده توسط ثبت vB برابر با مقدار ثبت vA تنظیم می کند، یعنی:\nvB.field = vA</item>
+		<item>مقدار char (نویسه) فیلد Boolean مشخص شده را در نمونه ارجاع شده توسط ثبت vB برابر با مقدار ثبت vA تنظیم می کند، یعنی:\nvB.field = vA</item>
+		<item>مقدار short (عدد صحیح) فیلد Boolean مشخص شده را در نمونه ارجاع شده توسط ثبت vB برابر با مقدار ثبت vA تنظیم می کند، یعنی:\nvB.field = vA</item>
+		<item>مقداری را از یک فیلد static می خواند و آن را در ثبت vAA قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک مقدار double/long را از یک فیلد static می خواند و آن را در یک جفت ثبت vAA، vAA+1 قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک مرجع شی را از یک فیلد static می خواند و آن را در ثبت vAA قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک مقدار Boolean را از یک فیلد static می خواند و آن را در ثبت vAA قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک مقدار byte (عدد صحیح) را از یک فیلد static می خواند و آن را در ثبت vAA قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک مقدار char را از یک فیلد static می خواند و آن را در ثبت vAA قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک مقدار short (عدد صحیح) را از یک فیلد static می خواند و آن را در ثبت vAA قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>مقدار را از ثبت vAA در یک فیلد (static field) قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک مقدار double/long از یک جفت ثبت vAA، vAA+1 را در یک فیلد (static field) قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>ارجاع به یک شی از ثبت vAA را در یک فیلد (static field) قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>مقدار Boolean را از ثبت vAA در یک فیلد (static field) قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک مقدار byte (عدد صحیح) را از ثبت vAA در یک فیلد (static field) قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>مقدار char را از ثبت vAA در یک فیلد static قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>مقدار short (عدد صحیح) را از ثبت vAA در یک فیلد static قرار می دهد. ثبت حاوی ارجاع به کلاس حاوی این فیلد استفاده نمی شود.</item>
+		<item>یک روش مجازی (virtual method) با پارامترها را فراخوانی می کند (اجرا می کند). پارامترها در دوابرو (curly braces) نشان داده شده اند. پارامتر اول (ثبت v2) شامل یک مرجع به کلاس حاوی روش (متد) فراخوانی شده است، پارامتر دوم (محتویات ثبت v3) به روش فراخوانی شده ارسال می شود.</item>
+		<item>یک روش مجازی (virtual method) با پارامترها را مستقیماً از کلاس والد فراخوانی می کند (اجرا می کند).</item>
+		<item>روشی را با پارامترها بدون مجوزهای روش مجازی (virtual method) فراخوانی می کند (اجرا می کند).</item>
+		<item>Calls (runs) a static method with parameters. Parameters are indicated in curly braces. The parameter (the contents of register v3) is passed to the called method. The class containing the called method is indicated after the curly braces.</item>
+		<item>Calls (runs) an interface method with parameters.</item>
+		<item>Calls (runs) a virtual method with parameters, but the parameters must be contained in registers with numbers in order.</item>
+		<item>Calls (runs) a virtual method with parameters directly from the parent class, but the parameters must be contained in registers with sequential numbers.</item>
+		<item>Calls (runs) a method with parameters without virtual method permissions, but the parameters must be contained in sequentially numbered registers.</item>
+		<item>Calls (runs) a static method with parameters, but the parameters must be contained in registers with sequential numbers.</item>
+		<item>Calls (runs) an interface method with parameters, but the parameters must be contained in sequentially numbered registers.</item>
+		<item>ء vA = -vB را برای مقادیر از نوع عدد صحیح محاسبه می کند.</item>
+		<item>ء vA = ~vB را برای مقادیر صحیح محاسبه می کند.\nvA = ~vB</item>
+		<item>ء (vA, vA+1) = -(vB, vB+1) را برای مقادیر نوع long (عدد صحیح) محاسبه می کند.</item>
+		<item>ء (vA، vA+1) = ~(vB، vB+1) را برای مقادیر نوع long (عدد صحیح) محاسبه می کند.</item>
+		<item>ء vA = -vB را برای مقادیر float محاسبه می کند.</item>
+		<item>ء (vA، vA+1) = -(vB، vB+1) را برای مقادیر double (میز شناور) محاسبه می کند.</item>
+		<item>یک integer را از vB به long تبدیل می کند و آن را در جفت ثبت vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (long) vB</item>
+		<item>یک integer را از vB به یک float تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (float) vB</item>
+		<item>یک integer (عدد صحیح) را از vB به double (میز شناور) تبدیل می کند و آن را در یک جفت ثبت vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (double) vB</item>
+		<item>یک مقدار long (عدد صحیح) را از vB، vB+1 به یک integer (عدد صحیح) تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (int) (vB, vB+1)</item>
+		<item>یک مقدار long (عدد صحیح) را از vB، vB+1 به یک float (میز شناور) تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (float) (vB, vB+1)</item>
+		<item>یک مقدار long (عدد صحیح) را از vB، vB+1 به double (ممیز شناور) تبدیل می کند و آن را در یک جفت ثبت vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (double) (vB, vB+1)</item>
+		<item>یک مقدار float (میز شناور) را از vB به یک مقدار integer (عدد صحیح) تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (int)vB</item>
+		<item>یک مقدار floar (ممیز شناور) را از vB به یک مقدار long (عدد صحیح) تبدیل می کند و آن را در جفت ثبت vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (long) vB</item>
+		<item>یک مقدار float (میز شناور) را از vB به یک مقدار double (میز شناور) تبدیل می کند و آن را در جفت ثبت vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (double) vB</item>
+		<item>یک مقدار double (میز شناور) را از vB، vB+1 به یک integer (عدد صحیح) تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (int) (vB, vB+1)</item>
+		<item>یک مقدار double (میز شناور) را از vB، vB+1 به یک مقدار long (عدد صحیح) تبدیل می کند و آن را در یک جفت ثبت vA، vA+1 ذخیره می کند.\n(vA, vA+1) = (long) (vB, vB+1)</item>
+		<item>یک مقدار double (میز شناور) را از vB، vB+1 به یک مقدار float (میز شناور) تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (float) (vB, vB+1)</item>
+		<item>یک مقدار integer را از vB به مقدار byte تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (byte) vB</item>
+		<item>یک مقدار integer را از vB به مقدار char تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (char)vB</item>
+		<item>یک مقدار integer را از vB به یک مقدار short تبدیل می کند و آن را در ثبت vA ذخیره می کند.\nvA = (short) vB</item>
+		<item>ء vBB + vCC را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB + vCC</item>
+		<item>ء vBB - vCC را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB - vCC</item>
+		<item>ء vBB * vCC را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB * vCC</item>
+		<item>ء vBB / vCC را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB / vCC</item>
+		<item>ء vBB % vCC را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB % vCC</item>
+		<item>ء vBB &amp;  vCC (AND منطقی) را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB &amp; vCC</item>
+		<item>Calculates vBB | vCC (logical OR) and stores the result in the vAA register. All values are integer.\nvAA = vBB | vCC</item>
+		<item>Computes vBB ^ vCC (exclusive OR) and stores the result in the vAA register. All values are integer.\nvAA = vBB ^ vCC</item>
+		<item>ء vBB را بر اساس تعداد بیت های مشخص شده توسط vCC به چپ منتقل می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>ء vBB را با تعداد بیت های مشخص شده توسط vCC به سمت راست منتقل می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB >> vCC</item>
+		<item>ء vBB را بدون حفظ علامت با تعداد بیت های مشخص شده توسط vCC به سمت راست منتقل می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB >>> vCC</item>
+		<item>ء (vBB، vBB+1) + (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر long (عدد صحیح) هستند.\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>ء (vBB، vBB+1) - (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA, vAA+1 ذخیره می کند. همه مقادیر long (عدد صحیح) هستند.\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>ء (vBB، vBB+1) * (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر long (عدد صحیح) هستند.\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>ء (vBB، vBB+1) / (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر long (عدد صحیح) هستند.\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>ء (vBB، vBB+1) % (vCC، vCC+1) را محاسبه می کند و نتیجه را در جفت ثبت vAA، vAA+1 ذخیره می کند. همه مقادیر long (عدد صحیح) هستند.\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) &amp; (vCC, vCC+1) (logical AND) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) | (vCC, vCC+1) (logical OR) and stores the result in a pair of registers vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) ^ (vCC, vCC+1) (exclusive AND) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Shifts vBB, vBB+1 to the left by the number of bits specified by vCC, and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Shifts vBB, vBB+1 to the right by the number of bits specified by vCC, and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Shifts vBB, vBB+1 to the right without preserving the sign by the number of bits specified by vCC, and stores the result in a pair of registers vAA, vA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Calculates vBB + vCC and stores the result in the vAA register. All values are float.\nvAA = vBB + vCC</item>
+		<item>Calculates vBB - vCC and stores the result in the vAA register. All values are float.\nvAA = vBB - vCC</item>
+		<item>Calculates vBB * vCC and stores the result in the vAA register. All values are float.\nvAA = vBB * vCC</item>
+		<item>Calculates vBB / vCC and stores the result in the vAA register. All values are float.\nvAA = vBB / vCC</item>
+		<item>Calculates vBB % vCC and stores the result in the vAA register. All values are float.\nvAA = vBB % vCC</item>
+		<item>Computes (vBB, vBB+1) + (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) - (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) * (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) / (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Calculates (vBB, vBB+1) % (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are double (floating point).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>ء vA + vB را محاسبه می کند و نتیجه را در ثبت vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vA + vB</item>
+		<item>Calculates vA - vB and stores the result in the vA register. All values are integer.\nvA = vA - vB</item>
+		<item>Calculates vA * vB and stores the result in the vA register. All values are integer.\nvA = vA * vB</item>
+		<item>Calculates vA / vB and stores the result in the vA register. All values are integer.\nvA = vA / vB</item>
+		<item>Calculates vA % vB and stores the result in the vA register. All values are integer.\nvA = vA % vB</item>
+		<item>Computes vA &amp; vB (logical AND) and stores the result in the vA register. All values are integer.\nvA = vA &amp; vB</item>
+		<item>Calculates vA | vB (logical OR) and stores the result in the vA register. All values are integer.\nvA = vA | vB</item>
+		<item>Computes vA ^ vB (exclusive OR) and stores the result in the vA register. All values are integer.\nvA = vA ^ vB</item>
+		<item>Shifts vA to the left by the number of bits specified by vB and stores the result in the vA register. All values are integer.\nvA = vA &lt;&lt; vB</item>
+		<item>Shifts vA to the right by the number of bits specified by vB and stores the result in the vA register. All values are integer.\nvA = vA >> vB</item>
+		<item>Shifts vA without preserving its sign to the right by the number of bits specified by vB, and stores the result in the vA register. All values are integer.\nvA = vA >>> vB</item>
+		<item>Computes (vA, vA+1) + (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) - (vB, vB+1) and stores the result in a pair of registers vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Computes (vA, vA+1) * (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) / (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) % (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Computes (vA, vA+1) &amp; (vB, vB+1) (logical AND) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Calculates (vA, vA+1) | (vB, vB+1) (logical OR) and stores the result in a pair of registers vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Computes (vA, vA+1) &amp; (vB, vB+1) (exclusive OR) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Shifts vA, vA+1 to the left by the number of bits specified by vB, and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Shifts vA, vA+1 to the right by the number of bits specified by vB, and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Shifts vA, vA+1 to the right without preserving the sign by the number of digits specified by vB, and stores the result in a pair of registers vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Computes vA + vB and stores the result in the vA register. All values are float.\nvA = vA + vB</item>
+		<item>Calculates vA - vB and stores the result in the vA register. All values are float.\nvA = vA - vB</item>
+		<item>Calculates vA * vB and stores the result in the vA register. All values are float.\nvA = vA * vB</item>
+		<item>Calculates vA / vB and stores the result in the vA register. All values are float.\nvA = vA / vB</item>
+		<item>Calculates vA % vB and stores the result in the vA register. All values are float.\nvA = vA % vB</item>
+		<item>ء (vA, vA+1) + (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبت vA, vA+1 ذخیره می کند. همه مقادیر double (میز شناور) هستند.\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>ء (vA, vA+1) - (vB, vB+1) را محاسبه می کند و نتیجه را در یک جفت ثبت vA, vA+1 ذخیره می کند. همه مقادیر double (میز شناور) هستند.\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>ء (vA, vA+1) * (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبت vA, vA+1 ذخیره می کند. همه مقادیر double (میز شناور) هستند.\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>ء (vA, vA+1) / (vB, vB+1) را محاسبه می کند و نتیجه را در جفت ثبت vA, vA+1 ذخیره می کند. همه مقادیر double (میز شناور) هستند.\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>ء (vA، vA+1) % (vB، vB+1) را محاسبه می کند و نتیجه را در جفت ثبت vA، vA+1 ذخیره می کند. همه مقادیر double (میز شناور) هستند.\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>ء vB + 0xFFFF را محاسبه می کند و نتیجه را در ثبت vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB + 0xFFFF</item>
+		<item>ء 0xFFFF - vB را محاسبه می کند و نتیجه را در ثبت vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = 0xFFFF - vB</item>
+		<item>ء vB * 0xFFFF را محاسبه می کند و نتیجه را در ثبت vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB * 0xFFFF</item>
+		<item>ء vB / 0xFFFF را محاسبه می کند و نتیجه را در ثبت vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB / 0xFFFF</item>
+		<item>ء vB % 0xFFFF را محاسبه می کند و نتیجه را در ثبت vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB % 0xFFFF</item>
+		<item>Computes vB &amp; 0xFFFF (logical AND) and stores the result in the vA register. All values are integer.\nvA = vB &amp; 0xFFFF</item>
+		<item>ء vB | 0xFFFF (OR منطقی) را محاسبه می کند و نتیجه را در ثبت vA ذخیره می‌کند. همه مقادیر عدد صحیح هستند.\nvA = vB | 0xFFFF</item>
+		<item>ء vB ^ 0xFFFF (OR انحصاری) را محاسبه می کند و نتیجه را در ثبت vA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvA = vB ^ 0xFFFF</item>
+		<item>ء vBB + 0xFF را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB + 0xFF</item>
+		<item>ء 0xFF - vBB را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = 0xFF - vBB</item>
+		<item>ء vBB * 0xFF را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB * 0xFF</item>
+		<item>ء vBB / 0xFF را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB / 0xFF</item>
+		<item>ء vBB % 0xFF را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB % 0xFF</item>
+		<item>ء vBB &amp; 0xFF (AND منطقی) را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB &amp; 0xFF</item>
+		<item>ء vBB |  0xFF (OR منطقی) را محاسبه می مند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB | 0xFF</item>
+		<item>ء vBB ^ 0xFF (OR انحصاری) را محاسبه می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB ^ 0xFF</item>
+		<item>ء vBB را بر اساس بیت های مشخص شده توسط 0xFF به سمت چپ منتقل می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>ء vBB را بر اساس تعداد بیت های مشخص شده توسط 0xFF به سمت راست منتقل می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB >> 0xFF</item>
+		<item>به وضوح vBB را با تعداد بیت های مشخص شده توسط 0xFF به سمت راست منتقل می کند و نتیجه را در ثبت vAA ذخیره می کند. همه مقادیر عدد صحیح هستند.\nvAA = vBB >>> 0xFF</item>
 		<item>یک روش امضای چند شکلی را با پارامترها فراخوانی می کند (اجرا می کند). از نسخه 038 در فایل های Dex موجود است.</item>
-		<item>یک روش امضای چند شکلی را با پارامترها فراخوانی می‌کند (اجرا می‌کند)، اما پارامترها باید در رجیسترهای شماره‌دار ترتیبی قرار گیرند. از نسخه 038 در فایل های Dex موجود است.</item>
-		<item>فراخوانی یک سایت با پارامترها را می دهد (شروع می کند). از نسخه 038 در فایل های Dex موجود است.</item>
-		<item>امکان فراخوانی یک سایت با پارامترها (شروع) را می دهد، اما پارامترها باید در رجیسترهایی با اعداد به ترتیب موجود باشند. از نسخه 038 در فایل های Dex موجود است.</item>
-		<item>ارجاع به دسته متد را در ثبات vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
-		<item>ارجاع به نمونه اولیه روش را در ثبات vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
+		<item>یک روش امضای چند شکلی را با پارامترها فراخوانی می‌کند (اجرا می‌کند)، اما پارامترها باید در ثبت های شماره‌دار ترتیبی قرار گیرند. از نسخه 038 در پرونده های Dex موجود است.</item>
+		<item>اجازه فراخوانی یک سایت با پارامترها را می دهد (شروع می کند). از نسخه 038 در فایل های Dex موجود است.</item>
+		<item>Allows (starts) calling a site with parameters, but the parameters must be contained in registers with numbers in order. Present in Dex files since version 038.</item>
+		<item>ارجاع به مدیریت روش (method) را در ثبت vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
+		<item>ارجاع به نمونه اولیه روش (method) را در ثبت vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 	</string-array>
+    <string-array name="app_theme">
+        <item>روشن</item>
+        <item>تاریک</item>
+        <item>سیاه</item>
+    </string-array>
+    <string-array name="jadx_sets">
+        <item>حالت بازگشتی</item>
+        <item>رفع ابهام</item>
+        <item>خروج از یونیکد</item>
+        <item>نمایش کد متناقض</item>
+    </string-array>
 	<string-array name="copy_variants">
-		<item>تغییر نام</item>
-		<item>Rename files only</item>
-		<item>جایگزینی</item>
-		<item>انکار</item>
-	</string-array>
+        <item>تغییر نام</item>
+		<item>فقط تغییر نام فایل ها</item>
+        <item>جایگزین کردن</item>
+        <item>جهش</item>
+    </string-array>
 	<string-array name="menu_pos">
-		<item>چپ</item>
-		<item>راست</item>
-	</string-array>
-	<string-array name="sort">
-		<item>نام</item>
-		<item>نام برعکس</item>
-		<item>قالب</item>
-		<item>قالب برعکس</item>
-		<item>حجم</item>
-		<item>حجم برعکس</item>
-		<item>تاریخ</item>
-		<item>تاریخ برعکس</item>
+        <item>چپ</item>
+        <item>راست</item>
+    </string-array>
+	<string-array name="checksum_names">
+        <item>همه حروف بزرگ</item>
+        <item>جدا سازی با دونقطه</item>
+    </string-array>
+	<string-array name="refresh_res">
+        <item>افزودن منابع جدید (فقط فایل ها)</item>
+        <item>حذف منابع از دست رفته</item>
+    </string-array>
+    <string-array name="sort">
+        <item>نام</item>
+        <item>نام معکوس</item>
+        <item>نوع</item>
+        <item>نوع معکوس</item>
+        <item>اندازه</item>
+        <item>اندازه معکوس</item>
+        <item>تاریخ</item>
+        <item>تاریخ معکوس</item>
+    </string-array>
+	<string-array name="resDecodeMode">
+		<item>دیکامپایل نشود</item>
+		<item>دیکامپایل در مسیر اصلی</item>
+		<item>دیکامپایل در یک مسیر جداگانه</item>
 	</string-array>
 	<string-array name="installLocation">
-		<item>بدون تغییر</item>
-		<item>خودکار</item>
-		<item>فقط داخلی</item>
-		<item>فقط خارجی</item>
+		<item>تنظیم نشده</item>
+        <item>خودکار</item>
+        <item>حافظه داخلی</item>
+        <item>حافظه خارجی</item>
+    </string-array>
+    <string-array name="xml_format_variants">
+        <item>پیشفرض</item>
+        <item>Apktool</item>
+        <item>اندروید استودیو</item>
+        <item>ترفند ساده</item>
+    </string-array>
+    <string-array name="xml_format_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+	<string-array name="orientation_variants">
+		<item>پیش‌فرض</item>
+		<item>افقی</item> 
+		<item>عمودی</item>
 	</string-array>
 	<string-array name="auto_save_variants">
 		<item>خاموش</item>
-		<item>15 ثانیه</item>
+		<item>15 ثانیه</item> 
 		<item>30 ثانیه</item>
-		<item>1 دقیقه</item>
+		<item>1 دقیقه</item> 
 		<item>5 دقیقه</item>
 	</string-array>
-	<string-array name="editor_themes">
-		<item>پیشفرض</item>
-		<item>جدید</item>
+	<string-array name="to_vector_values">
+		<item>تصویر تطبیقی (کیفیت پایین)</item>
+		<item>تصویر با کیفیت بالا (اندازه بزرگتر)</item>
+		<item>تبدیل به SVG</item>
 	</string-array>
+	<string-array name="backup_values">
+		<item>تنظیمات</item>
+		<item>نشانک ها</item>
+        <item>تاریخچه جستجو/جایگزینی</item>
+		<item>واژه‌نامه‌ها</item>
+    </string-array>
+	<string-array name="editor_themes">
+		<item>پیش‌فرض</item>
+		<item>جدید</item> 
+	</string-array>
+    <string-array name="aapt2_dump_descr">
+        <item>چاپ اطلاعات استخراج شده از مانیفست APK.</item>
+        <item>چاپ هر پیکربندی استفاده شده توسط یک منبع در APK.</item>
+        <item>چاپ مجوزهای استخراج شده از مانیفست APK.</item>
+        <item>چاپ محتویات استخر رشته جدول منابع در APK چاپ کنید.</item>
+        <item>چاپ محتویات جدول منابع از APK.</item>
+        <item>چاپ منابع &lt;همپوشانی> یک APK.</item>
+    </string-array>
 </resources>
