@@ -79,6 +79,9 @@
     <string name="diff_resources2">Сравнить ресурсы \"%2$s\" с ресурсами \"%1$s\"</string>
     <string name="dump_resources">Дамп ресурсов (aapt2)</string>
     <string name="swap">Поменять</string>
+    <string name="build_smali">Компиляция smali</string>
+    <string name="decode_smali">Декомпиляция smali</string>
+    <string name="others">Прочее</string>
 	<string name="files_identical">Файлы идентичны!</string>
 	<string name="delete_files_cm">Удалить файлы после сжатия</string>
 	<string name="dec_indent">Уменьшить отступ</string>

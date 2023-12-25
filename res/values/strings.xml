@@ -85,6 +85,9 @@
     <string name="diff_resources2">Compare resources \"%2$s\" with resources \"%1$s\"</string>
     <string name="dump_resources">Resource dump (aapt2)</string>
     <string name="swap">Swap</string>
+    <string name="build_smali">Compilation smali</string>
+    <string name="decode_smali">Decompilation smali</string>
+    <string name="others">Other</string>
 	<string name="files_identical">The files are identical!</string>
 	<string name="delete_files_cm">Delete files after compression</string>
 	<string name="dec_indent">Decrease indent</string>
