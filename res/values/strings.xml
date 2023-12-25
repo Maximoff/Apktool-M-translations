@@ -546,6 +546,8 @@
 	<string name="double_exit_summary">Press \"Back\" twice to exit the application</string>
 	<string name="jadx_settings">JADX settings</string>
 	<string name="jadx_settings_summary">Java code preview settings</string>
+    <string name="trlangs_settings">Setting up translation services</string>
+	<string name="trlangs_settings_summary">Selecting languages ​​for online translators</string>
     <string name="faq">FAQ</string>
 	<string name="faq_summary">Help for using the program</string>
 	<string name="key_type">Key Type:</string>

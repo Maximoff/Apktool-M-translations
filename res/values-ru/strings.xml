@@ -535,6 +535,8 @@
 	<string name="double_exit_summary">Дважды нажать \"Назад\" для выхода из приложения</string>
 	<string name="jadx_settings">Настройки JADX</string>
 	<string name="jadx_settings_summary">Настройки предпросмотра java-кода</string>
+    <string name="trlangs_settings">Настройка сервисов перевода</string>
+	<string name="trlangs_settings_summary">Выбор языков для онлайн переводчиков</string>
     <string name="faq">Справка</string>
     <string name="faq_summary">Справка по использованию программы</string>
 	<string name="key_type">Тип ключа:</string>
