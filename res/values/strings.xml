@@ -548,6 +548,8 @@
 	<string name="jadx_settings_summary">Java code preview settings</string>
     <string name="trlangs_settings">Setting up translation services</string>
 	<string name="trlangs_settings_summary">Selecting languages ​​for online translators</string>
+    <string name="threads_count">Number of threads</string>
+	<string name="threads_count_summary">Number of threads for multithreaded processes</string>
     <string name="faq">FAQ</string>
 	<string name="faq_summary">Help for using the program</string>
 	<string name="key_type">Key Type:</string>

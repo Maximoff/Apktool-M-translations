@@ -537,6 +537,8 @@
 	<string name="jadx_settings_summary">Настройки предпросмотра java-кода</string>
     <string name="trlangs_settings">Настройка сервисов перевода</string>
 	<string name="trlangs_settings_summary">Выбор языков для онлайн переводчиков</string>
+    <string name="threads_count">Количество потоков</string>
+	<string name="threads_count_summary">Количество потоков для многопоточных процессов</string>
     <string name="faq">Справка</string>
     <string name="faq_summary">Справка по использованию программы</string>
 	<string name="key_type">Тип ключа:</string>
