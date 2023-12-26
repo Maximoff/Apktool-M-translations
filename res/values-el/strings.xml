@@ -809,4 +809,11 @@
         <string name="dump_resources">Απορριψη πηγών (aapt2)</string>
         <string name="swap">Εναλλαγή</string>
         <string name="dex_is_full">Πιθανότατα, έχει ξεπεραστεί ο επιτρεπόμενος αριθμός μεθόδων/πεδίων στο dex. Μετακινήστε μερικά από τα αρχεία smali σε άλλο φάκελο ή δημιουργήστε έναν νέο φάκελο, αν είναι απαραίτητο.</string>
+        <string name="build_smali">Μεταγλώττιση smali</string>
+        <string name="decode_smali">Απομεταγλώττιση smali</string>
+        <string name="others">Άλλα</string>
+        <string name="threads_count">Αριθμός νημάτων</string>
+        <string name="threads_count_summary">Αριθμός νημάτων για Πολυνηματικές διεργασίες</string>
+        <string name="trlangs_settings">Ρύθμιση Μεταφραστικών Υπηρεσιών</string>
+	<string name="trlangs_settings_summary">Επιλογή γλωσσών για διαδικτυακούς μεταφραστές</string>
 </resources>
