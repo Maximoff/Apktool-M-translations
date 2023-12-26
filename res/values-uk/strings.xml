@@ -796,4 +796,11 @@
 	<string name="dump_resources">Дамп ресурсів (aapt2)</string>
 	<string name="swap">Поміняти</string>
 	<string name="dex_is_full">Найімовірніше, перевищено допустиму кількість методів/полів у dex. Перемістіть частину файлів smali в іншу папку або створіть нову, якщо потрібно.</string>
+	<string name="trlangs_settings">Налаштування сервісів перекладу</string>
+	<string name="trlangs_settings_summary">Вибір мов для онлайн перекладачів</string>
+	<string name="threads_count">Кількість потоків</string>
+	<string name="threads_count_summary">Кількість потоків для багатопотокових процесів</string>
+	<string name="build_smali">Компіляція smali</string>
+	<string name="decode_smali">Декомпіляція smali</string>
+	<string name="others">Інше</string>
 </resources>
