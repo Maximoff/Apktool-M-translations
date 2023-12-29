@@ -805,4 +805,11 @@
 	<string name="keep_broken">保留损坏的资源</string>
 	<string name="keep_broken_summary">如果在反编译资源时出现错误，但您仍然希望反编译它们（即使出现错误），那么请使用此选项</string>
 	<string name="dex_is_full">有可能 dex 中允许的方法/字段数量已超。如有必要，请将一些 Smali 文件移到另一个文件夹或创建一个新的文件夹。</string>
+	<string name="build_smali">编译 smali</string>
+	<string name="decode_smali">反编译 smali</string>
+	<string name="others">其它</string>
+	<string name="trlangs_settings">设置翻译服务</string>
+	<string name="trlangs_settings_summary">为在线翻译选择语言</string>
+	<string name="threads_count">线程数</string>
+	<string name="threads_count_summary">多线程进程的线程数</string>
 </resources>
