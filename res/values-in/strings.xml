@@ -17,6 +17,8 @@
 	<string name="ok">Ok</string>
 	<string name="cancel">Batal</string>
 	<string name="new_dict">Kamus Baru</string>
+	<string name="type">Jenis: %s</string>
+	<string name="dex_is_full">Kemungkinan besar, jumlah metode/field yang diperbolehkan dalam dex telah terlampaui. Pindahkan beberapa file smali ke folder lain atau buat yang baru jika perlu.</string>
 	<string name="go_to">Pergi ke</string>
 	<string name="clear_history">Hapus riwayat pencarian?</string>
 	<string name="refresh_res">Segarkan sumber</string>
@@ -76,6 +78,9 @@
 	<string name="diff_resources2">Bandingkan sumber \"%2$s\" dengan sumber \"%1$s\"</string>
 	<string name="dump_resources">Pembuangan sumber (aapt2)</string>
 	<string name="swap">Tukar</string>
+	<string name="build_smali">Kompilasi smali</string>
+	<string name="decode_smali">Dekompilasi smali</string>
+	<string name="others">Lainnya</string>
 	<string name="files_identical">Berkas-berkasnya identik!</string>
 	<string name="delete_files_cm">Hapus file setelah di kompres</string>
 	<string name="dec_indent">Kurangi indentasi</string>
@@ -537,6 +542,10 @@
 	<string name="double_exit_summary">Tekan \"Kembali\" dua kali untuk keluar dari aplikasi</string>
 	<string name="jadx_settings">Pengaturan JADX</string>
 	<string name="jadx_settings_summary">Pengaturan pratinjau kode Java</string>
+	<string name="trlangs_settings">Menyiapkan layanan terjemahan</string>
+	<string name="trlangs_settings_summary">Memilih bahasa untuk penerjemah online</string>
+	<string name="threads_count">Jumlah utas</string>
+	<string name="threads_count_summary">Jumlah utas untuk proses multi-utas</string>
 	<string name="faq">FAQ</string>
 	<string name="faq_summary">Bantuan untuk menggunakan program ini</string>
 	<string name="key_type">Jenis Kunci:</string>

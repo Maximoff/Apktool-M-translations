@@ -57,6 +57,8 @@
 	<string name="cloning_result">Old name: %1$s\nNew name: %2$s\nTime elapsed: %3$s</string>
 	<string name="originalf">Original: %s</string>
 	<string name="soeditor">Library editor</string>
+    <string name="packages">Resource packages</string>
+    <string name="package_info">%1$s (pkgId: %2$d%3$s)</string>
 	<string name="file_changed">File changed, save changes?</string>
 	<string name="so_prop">File: %1$s\nSize: %2$s\nType: %3$s\nTotal lines: %4$s\nModified lines: %5$s</string>
     <string name="so_info">For successful editing, the length of the line before editing must match the length of the line after editing. If the length does not match, such lines will be highlighted in red. Try to avoid editing lines with strange characters! Even if all conditions are met, there is no 100% guarantee that the library will remain operational after editing; do not forget about backup!</string>
