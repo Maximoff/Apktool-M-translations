@@ -803,4 +803,6 @@
 	<string name="build_smali">Компіляція smali</string>
 	<string name="decode_smali">Декомпіляція smali</string>
 	<string name="others">Інше</string>
+	<string name="packages">Пакети ресурсів</string>
+	<string name="package_info">%1$s (pkgId: %2$d%3$s)</string>
 </resources>
