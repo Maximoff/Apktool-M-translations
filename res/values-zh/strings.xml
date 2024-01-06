@@ -812,4 +812,5 @@
 	<string name="trlangs_settings_summary">为在线翻译选择语言</string>
 	<string name="threads_count">线程数</string>
 	<string name="threads_count_summary">多线程进程的线程数</string>
+	<string name="packages">资源包</string>
 </resources>
