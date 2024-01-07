@@ -413,8 +413,8 @@
 	<string name="mselect">Επιλογή</string>
 	<string name="mselect_all">Επιλογή όλων</string>
 	<string name="mselect_inv">Αναστροφή</string>
-	<string name="mselect_to">Επιλέξτε έως αυτό</string>
-	<string name="mshort">Μικρό</string>
+	<string name="mselect_to">Επιλογήε έως αυτό</string>
+	<string name="mshort">Σύντομο</string>
 	<string name="mshow_more_options">Περισσότερα</string>
 	<string name="msplit_rm">αφαίρεση \"android:isSplitRequired\"</string>
 	<string name="mtest_rm">αφαίρεση \"android:testOnly\"</string>
@@ -425,7 +425,7 @@
 	<string name="mtr_auto">Αυτόματη μετάφραση</string>
 	<string name="mtr_bing">Bing</string>
 	<string name="mtr_combine">Συνδυασμός αν υπάρχει</string>
-	<string name="mtr_confirmation">Είστε βέβαιοι ότι θέλετε να διαγράψετε \"%1$s/%2$s.xml\"?</string>
+	<string name="mtr_confirmation">Σίγουρα θέλετε να διαγράψετε \"%1$s/%2$s.xml\"?</string>
 	<string name="mtr_create">Δημιουργία</string>
 	<string name="mtr_create_dict">Δημιουργία λεξικού</string>
 	<string name="mtr_del_array">Διαγραφή πίνακα</string>
@@ -434,7 +434,7 @@
 	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_hide_trans">Απόκρυψη μεταφρασμένων</string>
 	<string name="mtr_info">Εάν ο πόρος συμβολοσειράς υπάρχει ήδη, θα αντικατασταθεί. Εάν δεν υπάρχει τέτοιος κατάλογος, θα δημιουργηθεί. Το όνομα του καταλόγου πρέπει να ξεκινά με \"values\".</string>
-	<string name="mtr_invalid_res">μη έγκυρη απάντηση διακομιστή</string>
+	<string name="mtr_invalid_res">άκυρη απάντηση διακομιστή</string>
 	<string name="mtr_line_num">Αριθμοί γραμμών</string>
 	<string name="mtr_net_err">σφάλμα δικτύου</string>
 	<string name="mtr_no_trans">Η συμβολοσειρά δεν χρειάζεται να μεταφραστεί!</string>
@@ -816,4 +816,7 @@
         <string name="threads_count_summary">Αριθμός νημάτων για Πολυνηματικές διεργασίες</string>
         <string name="trlangs_settings">Ρύθμιση Μεταφραστικών Υπηρεσιών</string>
 	<string name="trlangs_settings_summary">Επιλογή γλωσσών για διαδικτυακούς μεταφραστές</string>
+        <string name="packages">Πακέτα πηγών</string>
+        <string name="package_info">%1$s (pkgId: %2$d%3$s)</string>
+        <string name="types">Τύποι</string>
 </resources>
