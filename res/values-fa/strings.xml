@@ -32,7 +32,7 @@
 	<string name="enter_path">وارد کردن مسیر</string>
 	<string name="ultra_target_api">ءAPI هدف را تغییر ندهید</string>
 	<string name="error_try_again">خطا، لطفاً دوباره امتحان کنید</string>
-	<string name="miui_warn_title">ءMIUI شناسایی شد!</string>
+	<string name="miui_warn_title">بهینه ساز MIUI شناسایی شد!</string>
 	<string name="miui_warn_message">به نظر می رسد شما MIUI دارید! توصیه می کنم تنظیمات توسعه دهنده را باز کنید و بهینه سازی MIUI را غیرفعال کنید. اگر این کار را انجام ندهید، ممکن است با مشکل در عملکرد برنامه، خطا و خرابی مواجه شوید. لطفاً اگر این پیام را خواندید و به توصیه های من عمل نکردید در مورد خطاهای برنامه برای من ننویسید!</string>
 	<string name="topmenu_toast">اکنون می دانید که یک منو در اینجا وجود دارد!</string>
 	<string name="add_media">اضافه کردن به رسانه ها</string>
@@ -41,7 +41,7 @@
 	<string name="extract_icon">استخراج نماد</string>
 	<string name="comment">توضیح</string>
 	<string name="cloning">شبیه سازی</string>
-	<string name="cloning_result">نام قدیمی: %1$s\nنام جدید: %2$s\nزمان صرف شده: %3$s</string>
+	<string name="cloning_result">نام قدیمی: %1$s\nنام جدید: %2$s\nزمان سپری شده: %3$s</string>
 	<string name="originalf">اصلی: %s</string>
 	<string name="soeditor">ویرایشگر کتابخانه</string>
 	<string name="packages">بسته های منابع</string>
@@ -55,6 +55,8 @@
 	<string name="base64_decode">رمزگشایی Base64</string>
 	<string name="accessibility_info">برای اندروید ۱۳+، برای فعال کردن خدمات دسترس‌پذیری باید مجوز خاصی اعطا شود.  برای انجام این کار، اطلاعات سیستم را در مورد برنامه باز کنید و در منوی بالا (سه نقطه) اجازه دهید. این منو ممکن است تا زمانی که روی خدمات دسترسی لمس نکنید ظاهر نشود.</string>
 	<string name="total">کل</string>
+    <string name="sign_ver_info">نسخه های امضا برای نسخه های اندروید:\nنسخه ۱ - اولین گزینه امضا، تنها تا اندروید ۷.۰.\nنسخه ۲ - به اندروید ۷.۰ اضافه شد.\n\nنسخه امضا باید بر اساس حداقل نسخه اندروید مورد نیاز برای برنامه استفاده شود. اگر حداقل نسخه 30+ (اندروید ۱۱ و بالاتر) باشد، امضای نسخه ۲ لازم است.\n\nاگر جعبه \"ذخیره\" را علامت نزنید، طرح‌های انتخابی فقط این بار استفاده خواهند شد.</string>
+    <string name="sign_ver_info2">نسخه های امضا برای نسخه های اندروید:\nنسخه ۱ – اولین گزینه امضا، تنها تا اندروید ۷.۰.\nنسخه ۲ – به اندروید ۷.۰ اضافه شد.\nنسخه ۳ – به اندروید ۹.۰ اضافه شد.\nنسخه ۴ – به اندروید ۱۱ اضافه شد.\n\nنسخه امضا باید بر اساس حداقل نسخه اندروید مورد نیاز برای برنامه استفاده شود. اگر حداقل نسخه 30+ (اندروید ۱۱ و بالاتر) باشد، حداقل یک امضای نسخه ۲ لازم است. نسخه ۲ یا نسخه ۳ باید همراه با امضای نسخه ۴ استفاده شود. نسخه ۴ در حال حاضر تقریباً هرگز استفاده نمی شود.\n\nاگر جعبه \"ذخیره\" را علامت نزنید، طرح‌های انتخابی فقط این بار استفاده خواهند شد.</string>
     <string name="ignore_indent">نادیده گرفتن تورفتگی</string>
     <string name="file_nw">فایل قابل نوشتن نیست!</string>
 	<string name="dexs_info">اطلاعات Dex</string>
@@ -461,7 +463,7 @@
 	<string name="use_v2_sign_summary">استفاده از طرح امضای نسخه ۲ (اندروید ۷.۰ و بالاتر)</string>
 	<string name="use_v3_sign">امضای نسخه ۳</string>
 	<string name="use_v3_sign_summary">استفاده از طرح امضای نسخه ۳ (اندروید ۹.۰ و بالاتر)</string>
-	<string name="use_v4_sign">امضای نسخه 4</string>
+	<string name="use_v4_sign">امضای نسخه ۴</string>
 	<string name="use_v4_sign_summary">استفاده از طرح امضای نسخه ۴ (اندروید ۱۱ و بالاتر)</string>
 	<string name="delete_build">حذف پوشه \"build\"</string>
 	<string name="delete_build_summary">پس از کامپایل پوشه \"ساخت\" حذف می شود</string>
