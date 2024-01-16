@@ -318,10 +318,10 @@
 	<string name="drawer_fullscreen_summary">文件管理器将全屏显示</string>
 	<string name="rem_path">记住路径</string>
 	<string name="rem_path_summary">记住上次打开的路径</string>
-	<string name="use_v1_sign">使用V1签名</string>
-	<string name="use_v1_sign_summary">使用V1签名方案</string>
-	<string name="use_v2_sign">使用V2签名</string>
-	<string name="use_v2_sign_summary">使用V2签名方案 (Android 7.0+)</string>
+	<string name="use_v1_sign">V1 签名</string>
+	<string name="use_v1_sign_summary">使用 V1 签名方案</string>
+	<string name="use_v2_sign">V2 签名</string>
+	<string name="use_v2_sign_summary">使用 V2 签名方案 (Android 7.0+)</string>
 	<string name="delete_build">删除“build”文件夹</string>
 	<string name="delete_build_summary">编译后删除“build”文件夹</string>
 	<string name="fix_drawer">固定文件列表</string>
@@ -684,10 +684,10 @@
 	<string name="file_filter_help">使用路径和（或）文件名模板，例如：“*.smali”、“*/drawable*/*.xml”、“*/assets/*”。不使用正则表达式。</string>
 	<string name="keyboard_suggestions">键盘自动完成</string>
 	<string name="keyboard_suggestions_summary">显示键盘提示（工作不稳定，不推荐）</string>
-	<string name="use_v3_sign">使用V3签名方案</string>
-	<string name="use_v3_sign_summary">使用V3签名方案  (Android 9.0+)</string>
-	<string name="use_v4_sign">使用V4签名方案</string>
-	<string name="use_v4_sign_summary">使用V4签名方案  (Android 11+)</string>
+	<string name="use_v3_sign">V3 签名</string>
+	<string name="use_v3_sign_summary">使用 V3 签名方案 (Android 9.0+)</string>
+	<string name="use_v4_sign">V4 签名</string>
+	<string name="use_v4_sign_summary">使用 V4 签名方案 (Android 11+)</string>
 	<string name="ongoing_notification">工作时通知</string>
 	<string name="ongoing_notification_summary">在构建和反编译期间显示通知</string>
 	<string name="help_templates_text">替换模板“LABEL”、“DEFAULT_LABEL”、“VERSION”中的空格，以及模板“ARCH”、“DATE”和“TIME”中的分隔符，例如，对于下划线“_”，请使用以下格式：{LABEL_}、{DEFAULT_LABEL_}、{VERSION_}、{ARCH_}、{DATE_}、{TIME_}。该值可以是任意的。</string>
@@ -813,4 +813,7 @@
 	<string name="threads_count">线程数</string>
 	<string name="threads_count_summary">多线程进程的线程数</string>
 	<string name="packages">资源包</string>
+	<string name="types">类型</string>
+	<string name="sign_ver_info">Android 版本的签名版本：\nV1 – 第一种签名方案，仅支持到 Android 7.0；\nV2 – 支持 Android 7.0 及其以上版本；\n\n签名版本应基于应用程序所需的最低 Android 版本来使用。比如最低版本为 30+（Android 11+），则需要使用 V2 签名。\n\n如果您没有勾选“保存”复选框，则所选方案仅在本次使用。</string>
+	<string name="sign_ver_info2">Android 版本的签名版本：\nV1 – 第一种签名方案，仅支持到 Android 7.0；\nV2 – 支持 Android 7.0 及其以上版本；\nV3 – 支持 Android 9.0 及其以上版本；\nV4 – 支持 Android 11 及其以上版本；;\n\n签名版本应基于应用程序所需的最低 Android 版本来使用。比如最低版本为 30+（Android 11+），则至少需要使用 V2 签名。V2 或 V3 必须与 V4 签名一起使用。V4 版本目前几乎从未使用过。\n\n如果您没有勾选“保存”复选框，则所选方案仅在本次使用。</string>
 </resources>
