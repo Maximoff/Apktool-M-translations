@@ -413,7 +413,7 @@
 	<string name="mselect">Επιλογή</string>
 	<string name="mselect_all">Επιλογή όλων</string>
 	<string name="mselect_inv">Αναστροφή</string>
-	<string name="mselect_to">Επιλογήε έως αυτό</string>
+	<string name="mselect_to">Επιλογή έως αυτό</string>
 	<string name="mshort">Σύντομο</string>
 	<string name="mshow_more_options">Περισσότερα</string>
 	<string name="msplit_rm">αφαίρεση \"android:isSplitRequired\"</string>
@@ -819,4 +819,6 @@
         <string name="packages">Πακέτα πηγών</string>
         <string name="package_info">%1$s (pkgId: %2$d%3$s)</string>
         <string name="types">Τύποι</string>
+        <string name="sign_ver_info">Εκδόσεις υπογραφής για εκδόσεις Android:\nV1 - η πρώτη επιλογή υπογραφής, η μόνη έως το Android 7.0;\nV2 - προστέθηκε στο Android 7.0;\n\nΗ έκδοση υπογραφής θα πρέπει να χρησιμοποιείται με βάση την ελάχιστη απαιτούμενη έκδοση Android για την εφαρμογή. Αν η ελάχιστη έκδοση είναι 30+ (Android 11+), απαιτείται η υπογραφή V2.\n\nΕάν δεν επιλέξετε το πλαίσιο ελέγχου \"Αποθήκευση\", τα επιλεγμένα σχήματα θα χρησιμοποιηθούν μόνο αυτή τη φορά.</string>
+        <string name="sign_ver_info2">Εκδόσεις υπογραφής για εκδόσεις Android:\nV1 – η πρώτη επιλογή υπογραφής, η μόνη έως το Android 7.0;\nV2 – προστέθηκε στο Android 7.0;\nV3 – προστέθηκε στο Android 9.0;\nV4 – προστέθηκε στο Android 11;\n\nΗ έκδοση υπογραφής θα πρέπει να χρησιμοποιείται με βάση την ελάχιστη απαιτούμενη έκδοση Android για την εφαρμογή. Εάν η ελάχιστη έκδοση είναι 30+ (Android 11+), απαιτείται τουλάχιστον υπογραφή V2.\nΗ V2 ή V3 πρέπει να χρησιμοποιείται μαζί με την υπογραφή V4. Η έκδοση V4 δεν χρησιμοποιείται σχεδόν ποτέ.\n\nΕάν δεν επιλέξετε το πλαίσιο ελέγχου \"Αποθήκευση\", τότε τα επιλεγμένα σχήματα θα χρησιμοποιηθούν μόνο αυτή τη φορά.</string>
 </resources>
