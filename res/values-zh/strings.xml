@@ -814,6 +814,6 @@
 	<string name="threads_count_summary">多线程进程的线程数</string>
 	<string name="packages">资源包</string>
 	<string name="types">类型</string>
-	<string name="sign_ver_info">Android 版本的签名版本：\nV1 – 第一种签名方案，仅支持到 Android 7.0；\nV2 – 支持 Android 7.0 及其以上版本；\n\n签名版本应基于应用程序所需的最低 Android 版本来使用。比如最低版本为 30+（Android 11+），则需要使用 V2 签名。\n\n如果您没有勾选“保存”复选框，则所选方案仅在本次使用。</string>
-	<string name="sign_ver_info2">Android 版本的签名版本：\nV1 – 第一种签名方案，仅支持到 Android 7.0；\nV2 – 支持 Android 7.0 及其以上版本；\nV3 – 支持 Android 9.0 及其以上版本；\nV4 – 支持 Android 11 及其以上版本；;\n\n签名版本应基于应用程序所需的最低 Android 版本来使用。比如最低版本为 30+（Android 11+），则至少需要使用 V2 签名。V2 或 V3 必须与 V4 签名一起使用。V4 版本目前几乎从未使用过。\n\n如果您没有勾选“保存”复选框，则所选方案仅在本次使用。</string>
+	<string name="sign_ver_info">Android 版本的签名版本：\nV1 – 第一种签名方案，仅支持到 Android 7.0；\nV2 – 支持 Android 7.0 及其以上版本；\n\n签名版本应基于应用程序所需的最低或目标 Android 版本来使用。比如目标版本为 30+（Android 11+），则需要使用 V2 签名。\n\n如果您没有勾选“保存”复选框，则所选方案仅在本次使用。</string>
+	<string name="sign_ver_info2">Android 版本的签名版本：\nV1 – 第一种签名方案，仅支持到 Android 7.0；\nV2 – 支持 Android 7.0 及其以上版本；\nV3 – 支持 Android 9.0 及其以上版本；\nV4 – 支持 Android 11 及其以上版本；;\n\n签名版本应基于应用程序所需的最低或目标 Android 版本来使用。比如目标版本为 30+（Android 11+），则需要使用 V2 签名。V2 或 V3 必须与 V4 签名一起使用。V4 版本目前几乎从未使用过。\n\n如果您没有勾选“保存”复选框，则所选方案仅在本次使用。</string>
 </resources>
