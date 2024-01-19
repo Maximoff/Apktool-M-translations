@@ -678,6 +678,8 @@
 	<string name="github_summary">Resources for translating the program on GitHub</string>
     <string name="keep_broken">Keep broken resources</string>
 	<string name="keep_broken_summary">Use this if there was an error when decompiling resources, but you still want to decompile them, even with errors</string>
+    <string name="editor_rem_tabs">Remember open files</string>
+	<string name="editor_rem_tabs_summary">Open the last opened files in the editor when the application starts</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>

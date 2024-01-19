@@ -665,6 +665,8 @@
 	<string name="github_summary">Ресурсы для перевода программы на GitHub</string>
     <string name="keep_broken">Сохранить сломанные ресурсы</string>
 	<string name="keep_broken_summary">Используйте это, если произошла ошибка при декомпиляции ресурсов, но вы все равно хотите их декомпилировать, даже с ошибками</string>
+    <string name="editor_rem_tabs">Запоминать открытые файлы</string>
+	<string name="editor_rem_tabs_summary">Открывать в редакторе последние открытые файлы при запуске приложения</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>
