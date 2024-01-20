@@ -192,8 +192,10 @@
 	<string name="aapt2_configs">Set configurations</string>
 	<string name="label_den">Screen density: \"%s\"</string>
 	<string name="label_config">Configuration: \"%s\"</string>
+    <string name="label_libs">Library sets: \"%s\"</string>
 	<string name="aapt2_dens_info">&lt;b>Comma separated&lt;/b> list of the screen densities that the APK will be optimized for. All the resources that would be unused on devices of the given densities will be removed from the APK.</string>
 	<string name="aapt2_configs_info">&lt;b>Comma separated&lt;/b> list of configurations to include. The default is all configurations.</string>
+    <string name="aapt2_arch_info">List of architectures that must be left in the apk, &lt;b>separated by commas&lt;/b>. The default is all architectures.</string>
 	<string name="accessibility_service_name">Current activity</string>
 	<string name="accessibility_service_description">Service for getting information about running activities. The service does not collect any personal data.</string>
 	<string name="accessibility_service_toast">Activate the Apktool M service</string>

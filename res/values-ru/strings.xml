@@ -183,8 +183,10 @@
 	<string name="aapt2_configs">Задать конфигурации</string>
 	<string name="label_den">Плотность экрана: \"%s\"</string>
 	<string name="label_config">Конфигурация: \"%s\"</string>
+    <string name="label_libs">Наборы библиотек: \"%s\"</string>
 	<string name="aapt2_dens_info">Список плотностей экрана, под которые будет оптимизирован APK, &lt;b>разделённый запятыми&lt;/b>. Все ресурсы, которые не использовались бы на устройствах с указанной плотностью, будут удалены из APK.</string>
 	<string name="aapt2_configs_info">Список конфигураций, которые необходимо включить, &lt;b>через запятую&lt;/b>. По умолчанию - все конфигурации.</string>
+    <string name="aapt2_arch_info">Список архитектур, которые необходимо оставить в apk, &lt;b>через запятую&lt;/b>. По умолчанию - все архитектуры.</string>
 	<string name="accessibility_service_name">Текущая активность</string>
 	<string name="accessibility_service_description">Сервис для получения информации о запущенных активностях. Сервис не собирает никаких личных данных.</string>
 	<string name="accessibility_service_toast">Активируйте службу Apktool M</string>
