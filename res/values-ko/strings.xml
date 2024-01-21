@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<string name="trlangs_settings">번역 서비스 설정</string>
+	<string name="trlangs_settings_summary">온라인 번역 공급자 선택</string>
+	<string name="threads_count">스레드 개수</string>
+	<string name="threads_count_summary">다중 스레드 프로세스의 스레드 개수</string>
+	<string name="build_smali">smali 컴파일</string>
+	<string name="decode_smali">smali 디컴파일</string>
+	<string name="others">기타</string>
 	<string name="app_name">Apktool M</string>
 	<string name="click_once_more">종료하려먼 한 번 더 누르세요</string>
 	<string name="click_once_more2">창을 닫으시려먼 한 번 더 누르세요</string>
