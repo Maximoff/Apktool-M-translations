@@ -174,8 +174,10 @@
 	<string name="aapts33_warn">آگاه باشید که فایل های SDK 33 ممکن است کند و ناپایدار باشند!</string>
 	<string name="aapt2_dens">تنظیم تراکم صفحه نمایش</string>
 	<string name="aapt2_configs">تنظیم پیکربندی ها</string>
+	<string name="aapt2_arch_info">فهرست معماری هایی که باید در apk باقی بمانند، &lt;b>با واوک از هم جدا شوند&lt;/b>. پیش فرض تمام معماری ها است.</string>
 	<string name="label_den">تراکم صفحه: \"%s\"</string>
 	<string name="label_config">پیکربندی: \"%s\"</string>
+	<string name="label_libs">مجموعه کتابخانه: \"%s\"</string>
 	<string name="aapt2_dens_info">&lt;b>جدا شده با واوک&lt;/b> فهرست تراکم صفحه‌ای که APK برای آن بهینه‌سازی می‌شود.  تمام منابعی که در دستگاه هایی با تراکم داده شده استفاده نمی شوند از APK حذف خواهند شد.</string>
 	<string name="aapt2_configs_info">&lt;b>جدا شده با واوک&lt;/b> فهرست پیکریندی هایی که باید گنجانده شود.  پیش فرض همه پیکربندی است.</string>
 	<string name="accessibility_service_name">فعالیت فعلی</string>
