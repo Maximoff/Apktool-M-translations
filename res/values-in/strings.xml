@@ -18,6 +18,7 @@
 	<string name="cancel">Batal</string>
 	<string name="new_dict">Kamus Baru</string>
 	<string name="type">Jenis: %s</string>
+	<string name="types">Jenis</string>
 	<string name="dex_is_full">Kemungkinan besar, jumlah metode/field yang diperbolehkan dalam dex telah terlampaui. Pindahkan beberapa file smali ke folder lain atau buat yang baru jika perlu.</string>
 	<string name="go_to">Pergi ke</string>
 	<string name="clear_history">Hapus riwayat pencarian?</string>
@@ -52,6 +53,8 @@
 	<string name="cloning_result">Nama lama: %1$s\nNama baru: %2$s\nWaktu berlalu: %3$s</string>
 	<string name="originalf">Asli: %s</string>
 	<string name="soeditor">Editor perpustakaan</string>
+	<string name="packages">Sumber paket</string>
+	<string name="package_info">%1$s (pkgId: %2$d%3$s)</string>
 	<string name="file_changed">File diubah, simpan perubahan?</string>
 	<string name="so_prop">File: %1$s\nUkuran: %2$s\nJenis: %3$s\nTotal baris: %4$s\nBaris yang dimodifikasi: %5$s</string>
 	<string name="so_info">Agar penyuntingan berhasil, panjang baris sebelum penyuntingan harus sesuai dengan panjang baris setelah penyuntingan. Jika panjangnya tidak sesuai, maka, baris tersebut akan disorot dalam warna merah. Cobalah untuk menghindari penyuntingan baris dengan karakter yang aneh! Meskipun semua persyaratan terpenuhi, tidak ada jaminan 100% bahwa perpustakaan akan tetap beroperasi setelah pengeditan; jangan lupa untuk membuat cadangan!</string>
@@ -60,6 +63,8 @@
 	<string name="axml_info_hex">Nilai harus dalam format heksadesimal (HEX)!</string>
 	<string name="base64_decode">Dekode Base64</string>
 	<string name="accessibility_info">Untuk Android 13+, izin khusus perlu diberikan untuk mengaktifkan layanan aksesibilitas. Untuk melakukannya, buka informasi sistem tentang aplikasi dan pada menu di bagian atas (titik tiga) berikan izin. Menu ini mungkin tidak akan muncul sampai Anda mengklik layanan aksesibilitas.</string>
+	<string name="sign_ver_info">Versi tanda tangan untuk versi Android:\nV1 - opsi tanda tangan pertama, satu-satunya hingga Android 7.0; \nV2 - ditambahkan ke Android 7.0; \n\nVersi tanda tangan harus digunakan berdasarkan versi Android minimum yang diperlukan untuk aplikasi. Jika versi minimum adalah 30+ (Android 11+), tanda tangan V2 diperlukan.\n\nJika Anda tidak mencentang kotak centang \"Simpan\", skema yang dipilih hanya akan digunakan saat ini.</string>
+	<string name="sign_ver_info2">Versi tanda tangan untuk versi Android:\nV1 - opsi tanda tangan pertama, satu-satunya hingga Android 7.0; \nV2 - ditambahkan ke Android 7.0; \nV3 - ditambahkan ke Android 9.0; \nV4 - ditambahkan ke Android 11; \n\nVersi tanda tangan harus digunakan berdasarkan versi Android minimum/target yang diperlukan untuk aplikasi. Jika versi target adalah 30+ (Android 11+), tanda tangan V2 diperlukan. V2 atau V3 harus digunakan bersama dengan tanda tangan V4. Versi V4 saat ini hampir tidak pernah digunakan.\n\nJika Anda tidak mencentang kotak centang \"Simpan\", maka skema yang dipilih hanya akan digunakan saat ini.</string>
 	<string name="total">Total</string>
 	<string name="ignore_indent">Abaikan lekukan</string>
 	<string name="file_nw">File ini tidak dapat ditulis!</string>
@@ -180,8 +185,10 @@
 	<string name="aapt2_configs">Atur konfigurasi</string>
 	<string name="label_den">Kepadatan layar: \"%s\"</string>
 	<string name="label_config">Konfigurasi: \"%s\"</string>
+	<string name="label_libs">Set perpustakaan: \"%s\"</string>
 	<string name="aapt2_dens_info">&lt;b>Koma dipisahkan&lt;/b> daftar kepadatan layar yang akan dioptimalkan untuk APK. Semua sumber yang tidak terpakai pada perangkat dengan kepadatan tertentu akan dihapus dari APK.</string>
 	<string name="aapt2_configs_info">&lt;b>Koma dipisahkan&lt;/b> daftar konfigurasi yang akan disertakan. Standarnya adalah semua konfigurasi.</string>
+	<string name="aapt2_arch_info">Daftar arsitektur yang harus ditinggalkan di apk, &lt;b>dipisahkan dengan koma&lt;/b>. Standarnya adalah semua arsitektur.</string>
 	<string name="accessibility_service_name">Aktivitas saat ini</string>
 	<string name="accessibility_service_description">Layanan untuk mendapatkan informasi tentang aktivitas yang sedang berjalan. Layanan ini tidak mengumpulkan data pribadi apa pun.</string>
 	<string name="accessibility_service_toast">Aktifkan layanan Apktool M</string>
@@ -666,6 +673,8 @@
 	<string name="github_summary">Sumber untuk menerjemahkan program di GitHub</string>
 	<string name="keep_broken">Simpan sumber yang rusak</string>
 	<string name="keep_broken_summary">Gunakan ini jika terjadi kesalahan saat mendekompilasi sumber, tetapi Anda masih ingin mendekompilasinya, bahkan dengan kesalahan</string>
+	<string name="editor_rem_tabs">Ingat file yang terbuka</string>
+	<string name="editor_rem_tabs_summary">Buka file yang terakhir dibuka di editor saat aplikasi dimulai</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>
