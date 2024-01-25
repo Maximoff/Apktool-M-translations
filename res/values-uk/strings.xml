@@ -812,4 +812,6 @@
 	<string name="aapt2_arch_info">Список архітектур, які необхідно залишити в apk, &lt;b>через кому&lt;/b>. Стандартно – усі архітектури.</string>
 	<string name="editor_rem_tabs">Запам\'ятовувати відкриті файли</string>
 	<string name="editor_rem_tabs_summary">Відкривати в редакторі останні відкриті файли при запуску програми</string>
+	<string name="max_value">Максимальне значення</string>
+	<string name="kill_sign_rand">Випадкове ім\'я класу</string>
 </resources>
