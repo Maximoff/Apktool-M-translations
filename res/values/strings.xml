@@ -69,6 +69,7 @@
 	<string name="base64_decode">Decode Base64</string>
 	<string name="accessibility_info">For Android 13+, a special permission needs to be granted to enable the accessibility service. To do this, open the system information about the application and in the menu at the top (three dots) give permission. This menu may not appear until you click on the accessibility service.</string>
 	<string name="total">Total</string>
+    <string name="max_value">Maximum value</string>
     <string name="sign_ver_info">Signature versions for Android versions:\nV1 - the first signature option, the only one up to Android 7.0;\nV2 - added to Android 7.0;\n\nThe signature version should be used based on the minimum/target required Android version for the application. If the target version is 30+ (Android 11+), the V2 signature is required.\n\nIf you do not check the \"Save\" checkbox, then the selected schemes will be used only this time.</string>
     <string name="sign_ver_info2">Signature versions for Android versions:\nV1 – the first signature option, the only one up to Android 7.0;\nV2 – added to Android 7.0;\nV3 – added to Android 9.0;\nV4 – added to Android 11;\n\nThe signature version should be used based on the minimum/target required Android version for the application. If the target version is 30+ (Android 11+), the V2 signature is required. V2 or V3 must be used together with the V4 signature. Version V4 is currently almost never used.\n\nIf you do not check the \"Save\" checkbox, then the selected schemes will be used only this time.</string>
     <string name="ignore_indent">Ignore indentation</string>
@@ -80,6 +81,7 @@
 	<string name="unsupported_android">Unsupported in your Android version!</string>
 	<string name="reset_fab">Reset floating button position?</string>
 	<string name="kill_sign">Remove signature verification</string>
+    <string name="kill_sign_rand">Random class name</string>
 	<string name="kill_sign_advanced">Improved method</string>
 	<string name="kill_sign_orig">Add original apk to check integrity</string>
 	<string name="kill_sign_exists">The hook has already been added</string>
