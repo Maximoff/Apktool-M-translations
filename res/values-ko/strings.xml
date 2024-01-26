@@ -784,4 +784,13 @@
 	<string name="license_accept">동의</string>
 	<string name="license_refuse">동의 안 함</string>
 	<string name="send_log">개발자에게 로그 보내기</string>
+    <string name="trlangs_settings">번역 서비스 설정</string>
+    <string name="trlangs_settings_summary">온라인 번역 공급자 선택</string>
+    <string name="threads_count">스레드 개수</string>
+    <string name="threads_count_summary">다중 스레드 프로세스의 스레드 개수</string>
+    <string name="build_smali">smali 컴파일</string>
+    <string name="decode_smali">smali 디컴파일</string>
+    <string name="others">기타</string>
+    <string name="editor_rem_tabs">열린 파일 기억하기</string>
+    <string name="editor_rem_tabs_summary">앱이 재시작시 편집기에서 마지막으로 열었던 파일을 엽니다</string>
 </resources>
