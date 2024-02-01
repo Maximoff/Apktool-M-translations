@@ -820,4 +820,6 @@
 	<string name="aapt2_arch_info">apk 中必须保留的架构列表，&lt;b>以英文逗号作为分隔&lt;/b>。 默认值为所有架构。</string>
 	<string name="editor_rem_tabs">记住打开的文件</string>
 	<string name="editor_rem_tabs_summary">启动应用程序时，在编辑器中打开上次打开的文件</string>
+	<string name="max_value">最大值</string>
+	<string name="kill_sign_rand">随机类名</string>
 </resources>
