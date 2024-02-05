@@ -826,4 +826,18 @@
 	<string name="editor_rem_tabs_summary">Άνοιγμα των τελευταίων ανοιχτών αρχείων στον επεξεργαστή κατά την εκκίνηση της εφαρμογής</string>
 	<string name="kill_sign_rand">Τυχαίο όνομα κλάσης</string>
 	<string name="max_value">Μέγιστη τιμή</string>
+        <string name="package_info">%1$s (pkgId: %2$d, σύνολο πόρων: %3$d)</string>
+        <string name="package_info2">%1$s (pkgId: %2$d, σύνολο πόρων: %3$d, κύριο πακέτο)</string>
+        <string name="up">Πάνω</string>
+        <string name="down">Κάτω</string>
+        <string name="threads">Νήματα</string>
+        <string name="protection">Προστασία</string>
+        <string name="protection_info">Εντοπίστηκαν ενδείξεις προστασίας apk: %s.\n\nΛάβετε υπόψη ότι η ανίχνευση γίνεται με βάση έμμεσες ενδείξεις, οπότε ενδέχεται να πρόκειται για σφάλμα!</string>
+        <string name="main_pkg">κύριο πακέτο</string>
+        <string name="styled">στυλάτη συμβολοσειρά</string>
+        <string name="app_crashed">Υπήρξε σφάλμα στην εφαρμογή! Κάντε κλικ για να δείτε το αρχείο καταγραφής</string>
+        <string name="disable_crashes">Απενεργοποίηση εντοπισμού σφαλμάτων</string>
+        <string name="disable_crashes_summary">Χωρίς λήψη κατάρευσης του προγράμματος σε περίπτωση σφάλματος</string>
+        <string name="detect_protect">Έλεγχος προστασίας εφαρμογής</string>
+       <string name="detect_protect_summary">Προσπάθεια ανίχνευσης της προστασίας του αρχείου apk στο διάλογο λεπτομερειών</string>
 </resources>
