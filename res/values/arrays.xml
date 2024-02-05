@@ -699,6 +699,26 @@
 		<item>dd/MM/yyyy HH:mm</item>
 		<item>HH:mm yyyy/MM/dd</item> 
 		<item>HH:mm dd/MM/yyyy</item>
+        <item>yy/MM/dd HH:mm</item> 
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item> 
+		<item>HH:mm dd/MM/yy</item>
+        <item>yyyy.MM.dd HH:mm</item> 
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item> 
+		<item>HH:mm dd.MM.yyyy</item>
+        <item>yy.MM.dd HH:mm</item> 
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item> 
+		<item>HH:mm dd.MM.yy</item>
+        <item>yyyy-MM-dd HH:mm</item> 
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item> 
+		<item>HH:mm dd-MM-yyyy</item>
+        <item>yy-MM-dd HH:mm</item> 
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item> 
+		<item>HH:mm dd-MM-yy</item>
 	</string-array>
 	<string-array name="xml_format_variants">
 		<item>Default</item>

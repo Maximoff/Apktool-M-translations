@@ -54,7 +54,6 @@
 	<string name="originalf">Asli: %s</string>
 	<string name="soeditor">Editor perpustakaan</string>
 	<string name="packages">Sumber paket</string>
-	<string name="package_info">%1$s (pkgId: %2$d%3$s)</string>
 	<string name="file_changed">File diubah, simpan perubahan?</string>
 	<string name="so_prop">File: %1$s\nUkuran: %2$s\nJenis: %3$s\nTotal baris: %4$s\nBaris yang dimodifikasi: %5$s</string>
 	<string name="so_info">Agar penyuntingan berhasil, panjang baris sebelum penyuntingan harus sesuai dengan panjang baris setelah penyuntingan. Jika panjangnya tidak sesuai, maka, baris tersebut akan disorot dalam warna merah. Cobalah untuk menghindari penyuntingan baris dengan karakter yang aneh! Meskipun semua persyaratan terpenuhi, tidak ada jaminan 100% bahwa perpustakaan akan tetap beroperasi setelah pengeditan; jangan lupa untuk membuat cadangan!</string>
