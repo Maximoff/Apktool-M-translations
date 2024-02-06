@@ -307,6 +307,10 @@
 		<item>تاریخچه جستجو/جایگزینی</item>
 		<item>واژه‌نامه‌ها</item>
 	</string-array>
+	<string-array name="split_dex_items">
+		<item>بر اساس تعداد روش ها/فیلد ها</item>
+		<item>به قسمت های مساوی</item> 
+	</string-array>
 	<string-array name="editor_themes">
 		<item>پیش‌فرض</item>
 		<item>جدید</item>
