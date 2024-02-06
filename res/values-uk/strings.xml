@@ -813,4 +813,17 @@
 	<string name="editor_rem_tabs_summary">Відкривати в редакторі останні відкриті файли при запуску програми</string>
 	<string name="max_value">Максимальне значення</string>
 	<string name="kill_sign_rand">Випадкове ім\'я класу</string>
+	<string name="package_info">%1$s (pkgId: %2$d, усього ресурсів: %3$d)</string>
+	<string name="package_info2">%1$s (pkgId: %2$d, усього ресурсів: %3$d, основний пакет)</string>
+	<string name="up">Вгору</string>
+        <string name="down">Вниз</string>
+        <string name="threads">Потоки</string>
+        <string name="protection">Захист</string>
+        <string name="protection_info">Виявлено ознаки захисту apk: %s.\n\пВрахуйте, що виявлення відбувається за непрямими ознаками, тому це може бути помилкою!</string>
+        <string name="styled">стилізований рядок</string>
+        <string name="app_crashed">У додатку сталася помилка! Натисніть, щоб подивитися лог</string>
+	<string name="disable_crashes">Вимкнути збір помилок</string>
+	<string name="disable_crashes_summary">Не відловлювати падіння програми в разі помилки</string>
+	<string name="detect_protect">Перевіряти захист додатків</string>
+	<string name="detect_protect_summary">Намагатися визначити захист файлу apk у діалозі деталей</string>
 </resources>
