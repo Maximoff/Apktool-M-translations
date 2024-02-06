@@ -767,6 +767,10 @@
         <item>Search/replace history</item>
 		<item>Dictionaries</item>
     </string-array>
+    <string-array name="split_dex_items">
+		<item>by number of methods/fields</item>
+		<item>into equal parts</item> 
+	</string-array>
 	<string-array name="editor_themes">
 		<item>Default</item>
 		<item>New</item> 

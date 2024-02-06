@@ -363,6 +363,10 @@
         <item>История поиска/замены</item>
 		<item>Словари</item>
     </string-array>
+    <string-array name="split_dex_items">
+		<item>по количеству методов/полей</item>
+		<item>по равным частям</item> 
+	</string-array>
 	<string-array name="editor_themes">
 		<item>По умолчанию</item>
 		<item>Новая</item> 

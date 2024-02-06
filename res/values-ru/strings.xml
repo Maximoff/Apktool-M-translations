@@ -67,6 +67,13 @@
     <string name="up">Вверх</string>
     <string name="down">Вниз</string>
     <string name="threads">Потоки</string>
+    <string name="delete_orig">Удалить оригинал</string>
+    <string name="split_dex">Разделить dex</string>
+    <string name="split_dex_label">Разделить:</string>
+    <string name="split_dex_cnd">Количество dex:</string>
+    <string name="split_dex_cnm">Количество методов/полей:</string>
+    <string name="merge_dex">Объединить dex</string>
+    <string name="merge_dex_error">Не удастся объединить файлы, превышено допустимое количество методов/полей!</string>
     <string name="protection">Защита</string>
     <string name="protection_info">Обнаружены признаки защиты apk: %s.\n\nУчтите, что обнаружение происходит по косвенным признакам, поэтому это может быть ошибкой!</string>
     <string name="styled">стилизованная строка</string>
