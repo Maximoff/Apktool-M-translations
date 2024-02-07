@@ -353,6 +353,10 @@
 		<item>Διαφυγή Unicode</item>
 		<item>Εμφάνιση ασυνεπούς κώδικα</item>
 	</string-array>
+        <string-array name="split_dex_items">
+		<item>ανά αριθμό μεθόδων/πεδίων</item>
+		<item>σε ίσα μέρη</item> 
+	</string-array>
 	<string-array name="bing_translator_codes">
 		<item>auto-detect</item>
 		<item>az</item>
