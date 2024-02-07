@@ -839,5 +839,12 @@
         <string name="disable_crashes">Απενεργοποίηση εντοπισμού σφαλμάτων</string>
         <string name="disable_crashes_summary">Χωρίς λήψη κατάρευσης του προγράμματος σε περίπτωση σφάλματος</string>
         <string name="detect_protect">Έλεγχος προστασίας εφαρμογής</string>
-       <string name="detect_protect_summary">Προσπάθεια ανίχνευσης της προστασίας του αρχείου apk στο διάλογο λεπτομερειών</string>
+        <string name="detect_protect_summary">Προσπάθεια ανίχνευσης της προστασίας του αρχείου apk στο διάλογο λεπτομερειών</string>
+        <string name="delete_orig">Διαγραφή αρχικού</string>
+        <string name="split_dex">Διαχωρισμός dex</string>
+        <string name="split_dex_label">Διαχωρισμός:</string>
+        <string name="split_dex_cnd">Αριθμός των dex:</string>
+        <string name="split_dex_cnm">Αριθμός μεθόδων/πεδίων:</string>
+        <string name="merge_dex">Συγχώνευση dex</string>
+        <string name="merge_dex_error">Δεν θα είναι δυνατή η συγχώνευση αρχείων, ο επιτρεπόμενος αριθμός μεθόδων/πεδίων έχει ξεπεραστεί!</string>
 </resources>
