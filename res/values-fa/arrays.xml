@@ -309,7 +309,7 @@
 	</string-array>
 	<string-array name="split_dex_items">
 		<item>بر اساس تعداد روش ها/فیلد ها</item>
-		<item>به قسمت های مساوی</item> 
+		<item>به قسمت های مساوی</item>
 	</string-array>
 	<string-array name="editor_themes">
 		<item>پیش‌فرض</item>
@@ -323,10 +323,10 @@
 		<item>چاپ محتویات جدول منابع از APK.</item>
 		<item>چاپ منابع &lt;همپوشانی> یک APK.</item>
 	</string-array>
-    <string-array name="xml_format_variants">
-        <item>پیشفرض</item>
-        <item>Apktool</item>
-        <item>اندروید استودیو</item>
-        <item>ترفند ساده</item>
-    </string-array>
+	<string-array name="xml_format_variants">
+		<item>پیشفرض</item>
+		<item>Apktool</item>
+		<item>اندروید استودیو</item>
+		<item>ترفند ساده</item>
+	</string-array>
 </resources>

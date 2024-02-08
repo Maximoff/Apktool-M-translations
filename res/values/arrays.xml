@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>Registers</item>
 		<item>Literal values</item>
 		<item>Primitive data types</item>
@@ -460,86 +460,86 @@
 		<item>Places a reference to a method handle in the vAA register. Present in Dex files since version 039.</item>
 		<item>Places a reference to the method prototype in the vAA register. Present in Dex files since version 039.</item>
 	</string-array>
-    <string-array name="aapt2_dump">
-        <item>badging</item>
-        <item>configurations</item>
-        <item>permissions</item>
-        <item>strings</item>
-        <item>resources</item>
-        <item>overlayable</item>
-    </string-array>
-    <string-array name="aapt2_dump_descr">
-        <item>Print information extracted from the manifest of the APK.</item>
-        <item>Print every configuration used by a resource in the APK.</item>
-        <item>Print the permissions extracted from the manifest of the APK.</item>
-        <item>Print the contents of the resource table string pool in the APK.</item>
-        <item>Print the contents of the resource table from the APK.</item>
-        <item>Print the &lt;overlayable> resources of an APK.</item>
-    </string-array>
-    <string-array name="app_theme">
-        <item>Light</item>
-        <item>Dark</item>
-        <item>Black</item>
-    </string-array>
-    <string-array name="app_theme_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-    <string-array name="jadx_sets">
-        <item>Fallback mode</item>
-        <item>Deobfuscation</item>
-        <item>Escape Unicode</item>
-        <item>Show inconsistent code</item>
-    </string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>Print information extracted from the manifest of the APK.</item>
+		<item>Print every configuration used by a resource in the APK.</item>
+		<item>Print the permissions extracted from the manifest of the APK.</item>
+		<item>Print the contents of the resource table string pool in the APK.</item>
+		<item>Print the contents of the resource table from the APK.</item>
+		<item>Print the &lt;overlayable> resources of an APK.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Light</item>
+		<item>Dark</item>
+		<item>Black</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>Fallback mode</item>
+		<item>Deobfuscation</item>
+		<item>Escape Unicode</item>
+		<item>Show inconsistent code</item>
+	</string-array>
 	<string-array name="jadx_sets_keys">
-        <item>jadx_fallback</item>
-        <item>jadx_deobfuscation</item>
-        <item>jadx_unicode</item>
-        <item>jadx_inconsistent</item>
-    </string-array>
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
+	</string-array>
 	<string-array name="copy_variants">
-        <item>Rename</item>
+		<item>Rename</item>
 		<item>Rename files only</item>
-        <item>Replace</item>
-        <item>Skip</item>
-    </string-array>
+		<item>Replace</item>
+		<item>Skip</item>
+	</string-array>
 	<string-array name="menu_pos">
-        <item>Left</item>
-        <item>Right</item>
-    </string-array>
+		<item>Left</item>
+		<item>Right</item>
+	</string-array>
 	<string-array name="menu_pos_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="file_size">
-        <item>1 KiB = 1024 B</item>
-        <item>1 kB = 1000 B</item>
-    </string-array>
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
 	<string-array name="file_size_values">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="checksum_names">
-        <item>All uppercase</item>
-        <item>Separate with a colon</item>
-    </string-array>
+		<item>All uppercase</item>
+		<item>Separate with a colon</item>
+	</string-array>
 	<string-array name="checksum_keys">
-        <item>checksum_upper</item>
-        <item>checksum_separate</item>
-    </string-array>
-    <string-array name="tooltips_names">
-        <item>Smali</item>
-        <item>XML</item>
-    </string-array>
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
 	<string-array name="tooltips_keys">
-        <item>tooltips_smali</item>
-        <item>tooltips_xml</item>
-    </string-array>
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
 	<string-array name="refresh_res">
-        <item>Add new resources (files only)</item>
-        <item>Delete missing resources</item>
-    </string-array>
+		<item>Add new resources (files only)</item>
+		<item>Delete missing resources</item>
+	</string-array>
 	<string-array name="charsets">
 		<item>UTF-8</item>
 		<item>UTF-16</item>
@@ -549,27 +549,27 @@
 		<item>ISO-8859-1</item>
 		<item>CP1251</item>
 	</string-array>
-    <string-array name="sort">
-        <item>Name</item>
-        <item>Name reverse</item>
-        <item>Type</item>
-        <item>Type reverse</item>
-        <item>Size</item>
-        <item>Size reverse</item>
-        <item>Time</item>
-        <item>Time reverse</item>
-    </string-array>
+	<string-array name="sort">
+		<item>Name</item>
+		<item>Name reverse</item>
+		<item>Type</item>
+		<item>Type reverse</item>
+		<item>Size</item>
+		<item>Size reverse</item>
+		<item>Time</item>
+		<item>Time reverse</item>
+	</string-array>
 	<string-array name="color_var">
-        <item>HEX-color</item>
-        <item>Smali code</item>
-        <item>A,R,G,B</item>
-    </string-array>
-    <string-array name="format">
-        <item>@string/jks</item>
-        <item>@string/pkcs12</item>
-        <item>@string/bks</item>
-        <item>@string/pk8</item>
-    </string-array>
+		<item>HEX-color</item>
+		<item>Smali code</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
 	<string-array name="keys">
 		<item>editorkey</item>
 		<item>media</item>
@@ -626,22 +626,22 @@
 		<item>Float &lt;-> Hex (0x00000000)</item>
 		<item>Color &lt;-> Smali</item>
 		<item>Color &lt;-> Decimal</item>
-        <item>Color &lt;-> A,R,G,B</item>
+		<item>Color &lt;-> A,R,G,B</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Not set</item>
-        <item>Auto</item>
-        <item>Internal only</item>
-        <item>Preferred external</item>
-    </string-array>
+		<item>Auto</item>
+		<item>Internal only</item>
+		<item>Preferred external</item>
+	</string-array>
 	<string-array name="algorithmsArray">
 		<item>MD5withRSA</item>
-        <item>SHA1withRSA</item>
-        <item>SHA224withRSA</item>
-        <item>SHA256withRSA</item>
-        <item>SHA384withRSA</item>
-        <item>SHA512withRSA</item>
-    </string-array>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
 	<string-array name="entries_lang">
 		<item>Русский</item>
 		<item>Українська</item>
@@ -665,10 +665,10 @@
 		<item>한국어</item>
 		<item>Español</item>
 		<item>Bahasa Indonesia</item>
-        <item>עברית</item>
-        <item>Magyar</item>
-	</string-array> 
-	<string-array name="values_lang"> 
+		<item>עברית</item>
+		<item>Magyar</item>
+	</string-array>
+	<string-array name="values_lang">
 		<item>ru</item>
 		<item>uk</item>
 		<item>en</item>
@@ -691,69 +691,69 @@
 		<item>ko</item>
 		<item>es</item>
 		<item>in</item>
-        <item>he</item>
-        <item>hu</item>
+		<item>he</item>
+		<item>hu</item>
 	</string-array>
 	<string-array name="date_variants">
-		<item>yyyy/MM/dd HH:mm</item> 
+		<item>yyyy/MM/dd HH:mm</item>
 		<item>dd/MM/yyyy HH:mm</item>
-		<item>HH:mm yyyy/MM/dd</item> 
+		<item>HH:mm yyyy/MM/dd</item>
 		<item>HH:mm dd/MM/yyyy</item>
-        <item>yy/MM/dd HH:mm</item> 
+		<item>yy/MM/dd HH:mm</item>
 		<item>dd/MM/yy HH:mm</item>
-		<item>HH:mm yy/MM/dd</item> 
+		<item>HH:mm yy/MM/dd</item>
 		<item>HH:mm dd/MM/yy</item>
-        <item>yyyy.MM.dd HH:mm</item> 
+		<item>yyyy.MM.dd HH:mm</item>
 		<item>dd.MM.yyyy HH:mm</item>
-		<item>HH:mm yyyy.MM.dd</item> 
+		<item>HH:mm yyyy.MM.dd</item>
 		<item>HH:mm dd.MM.yyyy</item>
-        <item>yy.MM.dd HH:mm</item> 
+		<item>yy.MM.dd HH:mm</item>
 		<item>dd.MM.yy HH:mm</item>
-		<item>HH:mm yy.MM.dd</item> 
+		<item>HH:mm yy.MM.dd</item>
 		<item>HH:mm dd.MM.yy</item>
-        <item>yyyy-MM-dd HH:mm</item> 
+		<item>yyyy-MM-dd HH:mm</item>
 		<item>dd-MM-yyyy HH:mm</item>
-		<item>HH:mm yyyy-MM-dd</item> 
+		<item>HH:mm yyyy-MM-dd</item>
 		<item>HH:mm dd-MM-yyyy</item>
-        <item>yy-MM-dd HH:mm</item> 
+		<item>yy-MM-dd HH:mm</item>
 		<item>dd-MM-yy HH:mm</item>
-		<item>HH:mm yy-MM-dd</item> 
+		<item>HH:mm yy-MM-dd</item>
 		<item>HH:mm dd-MM-yy</item>
 	</string-array>
 	<string-array name="xml_format_variants">
 		<item>Default</item>
-		<item>Apktool</item> 
+		<item>Apktool</item>
 		<item>Android Studio</item>
 		<item>Simple Trick</item>
 	</string-array>
 	<string-array name="xml_format_values">
 		<item>0</item>
-		<item>1</item> 
+		<item>1</item>
 		<item>2</item>
 		<item>3</item>
 	</string-array>
 	<string-array name="orientation_variants">
 		<item>Default</item>
-		<item>Landscape</item> 
+		<item>Landscape</item>
 		<item>Portrait</item>
 	</string-array>
 	<string-array name="orientation_values">
 		<item>0</item>
-		<item>1</item> 
+		<item>1</item>
 		<item>2</item>
 	</string-array>
 	<string-array name="auto_save_variants">
 		<item>Off</item>
-		<item>15 seconds</item> 
+		<item>15 seconds</item>
 		<item>30 seconds</item>
-		<item>1 minute</item> 
+		<item>1 minute</item>
 		<item>5 minutes</item>
 	</string-array>
 	<string-array name="auto_save_values">
 		<item>0</item>
-		<item>15</item> 
+		<item>15</item>
 		<item>30</item>
-		<item>60</item> 
+		<item>60</item>
 		<item>300</item>
 	</string-array>
 	<string-array name="to_vector_values">
@@ -764,20 +764,20 @@
 	<string-array name="backup_values">
 		<item>Settings</item>
 		<item>Bookmarks</item>
-        <item>Search/replace history</item>
+		<item>Search/replace history</item>
 		<item>Dictionaries</item>
-    </string-array>
-    <string-array name="split_dex_items">
+	</string-array>
+	<string-array name="split_dex_items">
 		<item>by number of methods/fields</item>
-		<item>into equal parts</item> 
+		<item>into equal parts</item>
 	</string-array>
 	<string-array name="editor_themes">
 		<item>Default</item>
-		<item>New</item> 
+		<item>New</item>
 	</string-array>
 	<string-array name="editor_themes_values">
 		<item>default</item>
-		<item>new</item> 
+		<item>new</item>
 	</string-array>
 	<string-array name="bing_translator_codes">
 		<item>auto-detect</item>
@@ -964,232 +964,232 @@
 		<item>Tigrinya</item>
 	</string-array>
 	<string-array name="google_translator_codes">
-        <item>auto</item>
-        <item>af</item>
-        <item>sq</item>
-        <item>am</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>az</item>
-        <item>eu</item>
-        <item>be</item>
-        <item>bn</item>
-        <item>bs</item>
-        <item>bg</item>
-        <item>ca</item>
-        <item>ceb</item>
-        <item>ny</item>
-        <item>zh-cn</item>
-        <item>zh-tw</item>
-        <item>co</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>da</item>
-        <item>nl</item>
-        <item>en</item>
-        <item>eo</item>
-        <item>et</item>
-        <item>tl</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>fy</item>
-        <item>gl</item>
-        <item>ka</item>
-        <item>de</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>ht</item>
-        <item>ha</item>
-        <item>haw</item>
-        <item>iw</item>
-        <item>hi</item>
-        <item>hmn</item>
-        <item>hu</item>
-        <item>is</item>
-        <item>ig</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>it</item>
-        <item>ja</item>
-        <item>jw</item>
-        <item>kn</item>
-        <item>kk</item>
-        <item>km</item>
-        <item>ko</item>
-        <item>ku</item>
-        <item>ky</item>
-        <item>lo</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>lb</item>
-        <item>mk</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>mn</item>
-        <item>my</item>
-        <item>ne</item>
-        <item>no</item>
-        <item>ps</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>ma</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>sm</item>
-        <item>gd</item>
-        <item>sr</item>
-        <item>st</item>
-        <item>sn</item>
-        <item>sd</item>
-        <item>si</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>so</item>
-        <item>es</item>
-        <item>su</item>
-        <item>sw</item>
-        <item>sv</item>
-        <item>tg</item>
-        <item>ta</item>
-        <item>te</item>
-        <item>th</item>
-        <item>tr</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>uz</item>
-        <item>vi</item>
-        <item>cy</item>
-        <item>xh</item>
-        <item>yi</item>
-        <item>yo</item>
-        <item>zu</item>
-        <item>or</item>
-        <item>pa</item>
-        <item>rw</item>
-        <item>tt</item>
-        <item>tk</item>
-        <item>ug</item>
-    </string-array>
-    <string-array name="google_translator_names">
-        <item>Automatic</item>
-        <item>Afrikaans</item>
-        <item>Albanian</item>
-        <item>Amharic</item>
-        <item>Arabic</item>
-        <item>Armenian</item>
-        <item>Azerbaijani</item>
-        <item>Basque</item>
-        <item>Belarusian</item>
-        <item>Bengali</item>
-        <item>Bosnian</item>
-        <item>Bulgarian</item>
-        <item>Catalan</item>
-        <item>Cebuano</item>
-        <item>Chichewa</item>
-        <item>Chinese Simplified</item>
-        <item>Chinese Traditional</item>
-        <item>Corsican</item>
-        <item>Croatian</item>
-        <item>Czech</item>
-        <item>Danish</item>
-        <item>Dutch</item>
-        <item>English</item>
-        <item>Esperanto</item>
-        <item>Estonian</item>
-        <item>Filipino</item>
-        <item>Finnish</item>
-        <item>French</item>
-        <item>Frisian</item>
-        <item>Galician</item>
-        <item>Georgian</item>
-        <item>German</item>
-        <item>Greek</item>
-        <item>Gujarati</item>
-        <item>Haitian Creole</item>
-        <item>Hausa</item>
-        <item>Hawaiian</item>
-        <item>Hebrew</item>
-        <item>Hindi</item>
-        <item>Hmong</item>
-        <item>Hungarian</item>
-        <item>Icelandic</item>
-        <item>Igbo</item>
-        <item>Indonesian</item>
-        <item>Irish</item>
-        <item>Italian</item>
-        <item>Japanese</item>
-        <item>Javanese</item>
-        <item>Kannada</item>
-        <item>Kazakh</item>
-        <item>Khmer</item>
-        <item>Korean</item>
-        <item>Kurdish (Kurmanji)</item>
-        <item>Kyrgyz</item>
-        <item>Lao</item>
-        <item>Latin</item>
-        <item>Latvian</item>
-        <item>Lithuanian</item>
-        <item>Luxembourgish</item>
-        <item>Macedonian</item>
-        <item>Malagasy</item>
-        <item>Malay</item>
-        <item>Malayalam</item>
-        <item>Maltese</item>
-        <item>Maori</item>
-        <item>Marathi</item>
-        <item>Mongolian</item>
-        <item>Myanmar (Burmese)</item>
-        <item>Nepali</item>
-        <item>Norwegian</item>
-        <item>Pashto</item>
-        <item>Persian</item>
-        <item>Polish</item>
-        <item>Portuguese</item>
-        <item>Punjabi</item>
-        <item>Romanian</item>
-        <item>Russian</item>
-        <item>Samoan</item>
-        <item>Scots Gaelic</item>
-        <item>Serbian</item>
-        <item>Sesotho</item>
-        <item>Shona</item>
-        <item>Sindhi</item>
-        <item>Sinhala</item>
-        <item>Slovak</item>
-        <item>Slovenian</item>
-        <item>Somali</item>
-        <item>Spanish</item>
-        <item>Sundanese</item>
-        <item>Swahili</item>
-        <item>Swedish</item>
-        <item>Tajik</item>
-        <item>Tamil</item>
-        <item>Telugu</item>
-        <item>Thai</item>
-        <item>Turkish</item>
-        <item>Ukrainian</item>
-        <item>Urdu</item>
-        <item>Uzbek</item>
-        <item>Vietnamese</item>
-        <item>Welsh</item>
-        <item>Xhosa</item>
-        <item>Yiddish</item>
-        <item>Yoruba</item>
-        <item>Zulu</item>
-        <item>Oriya</item>
-        <item>Punjabi</item>
-        <item>Rwanda</item>
-        <item>Tatar</item>
-        <item>Turkmen</item>
-        <item>Uigur</item>
-    </string-array>
-    <string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>Automatic</item>
+		<item>Afrikaans</item>
+		<item>Albanian</item>
+		<item>Amharic</item>
+		<item>Arabic</item>
+		<item>Armenian</item>
+		<item>Azerbaijani</item>
+		<item>Basque</item>
+		<item>Belarusian</item>
+		<item>Bengali</item>
+		<item>Bosnian</item>
+		<item>Bulgarian</item>
+		<item>Catalan</item>
+		<item>Cebuano</item>
+		<item>Chichewa</item>
+		<item>Chinese Simplified</item>
+		<item>Chinese Traditional</item>
+		<item>Corsican</item>
+		<item>Croatian</item>
+		<item>Czech</item>
+		<item>Danish</item>
+		<item>Dutch</item>
+		<item>English</item>
+		<item>Esperanto</item>
+		<item>Estonian</item>
+		<item>Filipino</item>
+		<item>Finnish</item>
+		<item>French</item>
+		<item>Frisian</item>
+		<item>Galician</item>
+		<item>Georgian</item>
+		<item>German</item>
+		<item>Greek</item>
+		<item>Gujarati</item>
+		<item>Haitian Creole</item>
+		<item>Hausa</item>
+		<item>Hawaiian</item>
+		<item>Hebrew</item>
+		<item>Hindi</item>
+		<item>Hmong</item>
+		<item>Hungarian</item>
+		<item>Icelandic</item>
+		<item>Igbo</item>
+		<item>Indonesian</item>
+		<item>Irish</item>
+		<item>Italian</item>
+		<item>Japanese</item>
+		<item>Javanese</item>
+		<item>Kannada</item>
+		<item>Kazakh</item>
+		<item>Khmer</item>
+		<item>Korean</item>
+		<item>Kurdish (Kurmanji)</item>
+		<item>Kyrgyz</item>
+		<item>Lao</item>
+		<item>Latin</item>
+		<item>Latvian</item>
+		<item>Lithuanian</item>
+		<item>Luxembourgish</item>
+		<item>Macedonian</item>
+		<item>Malagasy</item>
+		<item>Malay</item>
+		<item>Malayalam</item>
+		<item>Maltese</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>Mongolian</item>
+		<item>Myanmar (Burmese)</item>
+		<item>Nepali</item>
+		<item>Norwegian</item>
+		<item>Pashto</item>
+		<item>Persian</item>
+		<item>Polish</item>
+		<item>Portuguese</item>
+		<item>Punjabi</item>
+		<item>Romanian</item>
+		<item>Russian</item>
+		<item>Samoan</item>
+		<item>Scots Gaelic</item>
+		<item>Serbian</item>
+		<item>Sesotho</item>
+		<item>Shona</item>
+		<item>Sindhi</item>
+		<item>Sinhala</item>
+		<item>Slovak</item>
+		<item>Slovenian</item>
+		<item>Somali</item>
+		<item>Spanish</item>
+		<item>Sundanese</item>
+		<item>Swahili</item>
+		<item>Swedish</item>
+		<item>Tajik</item>
+		<item>Tamil</item>
+		<item>Telugu</item>
+		<item>Thai</item>
+		<item>Turkish</item>
+		<item>Ukrainian</item>
+		<item>Urdu</item>
+		<item>Uzbek</item>
+		<item>Vietnamese</item>
+		<item>Welsh</item>
+		<item>Xhosa</item>
+		<item>Yiddish</item>
+		<item>Yoruba</item>
+		<item>Zulu</item>
+		<item>Oriya</item>
+		<item>Punjabi</item>
+		<item>Rwanda</item>
+		<item>Tatar</item>
+		<item>Turkmen</item>
+		<item>Uigur</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
 		<item>auto</item>
 		<item>af</item>
 		<item>sq</item>

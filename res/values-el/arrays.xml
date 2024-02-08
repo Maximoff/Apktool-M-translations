@@ -342,10 +342,10 @@
 		<item>Προεπιλογή</item>
 		<item>Νέος</item>
 	</string-array>
-        <string-array name="app_theme">
-                <item>Φωτεινό</item>
+	<string-array name="app_theme">
+		<item>Φωτεινό</item>
 		<item>Σκοτεινό</item>
-                <item>Μαύρο</item>
+		<item>Μαύρο</item>
 	</string-array>
 	<string-array name="jadx_sets">
 		<item>Λειτουργία εφεδρείας</item>
@@ -353,9 +353,9 @@
 		<item>Διαφυγή Unicode</item>
 		<item>Εμφάνιση ασυνεπούς κώδικα</item>
 	</string-array>
-        <string-array name="split_dex_items">
+	<string-array name="split_dex_items">
 		<item>ανά αριθμό μεθόδων/πεδίων</item>
-		<item>σε ίσα μέρη</item> 
+		<item>σε ίσα μέρη</item>
 	</string-array>
 	<string-array name="bing_translator_codes">
 		<item>auto-detect</item>

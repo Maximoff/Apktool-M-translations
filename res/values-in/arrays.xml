@@ -310,14 +310,14 @@
 		<item>Teks &lt;-> Susunan (CP1251)</item>
 		<item>Desimal &lt;-> Biner</item>
 		<item>Desimal &lt;-> Oktal</item>
-		<item>Desimal &lt;-> Hex</item>
-		<item>Desimal &lt;-> Hex (0x0)</item>
-		<item>Desimal &lt;-> Hex (0x00000000)</item>
+		<item>Desimal &lt;-> Heksa</item>
+		<item>Desimal &lt;-> Heksa (0x0)</item>
+		<item>Desimal &lt;-> Heksa (0x00000000)</item>
 		<item>Mengambang &lt;-> Biner</item>
 		<item>Mengambang &lt;-> Oktal</item>
-		<item>Mengambang &lt;-> Hex</item>
-		<item>Mengambang &lt;-> Hex (0x0)</item>
-		<item>Mengambang &lt;-> Hex (0x00000000)</item>
+		<item>Mengambang &lt;-> Heksa</item>
+		<item>Mengambang &lt;-> Heksa (0x0)</item>
+		<item>Mengambang &lt;-> Heksa (0x00000000)</item>
 		<item>Warna &lt;-> Smali</item>
 		<item>Warna &lt;-> Desimal</item>
 		<item>Warna &lt;-> A,R,G,B</item>
@@ -356,6 +356,10 @@
 		<item>Bookmark</item>
 		<item>Cari/ganti riwayat</item>
 		<item>Kamus</item>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>berdasarkan jumlah methods/fields</item>
+		<item>ke dalam bagian yang sama</item>
 	</string-array>
 	<string-array name="editor_themes">
 		<item>Default</item>

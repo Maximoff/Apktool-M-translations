@@ -365,7 +365,7 @@
 	</string-array>
 	<string-array name="split_dex_items">
 		<item>за кількістю методів/полів</item>
-		<item>за рівними частинами</item> 
+		<item>за рівними частинами</item>
 	</string-array>
 	<string-array name="editor_themes">
 		<item>Стандартна</item>

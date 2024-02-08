@@ -54,6 +54,8 @@
 	<string name="originalf">Asli: %s</string>
 	<string name="soeditor">Editor perpustakaan</string>
 	<string name="packages">Sumber paket</string>
+	<string name="package_info">%1$s (pkgId: %2$d, total sumber: %3$d)</string>
+	<string name="package_info2">%1$s (pkgId: %2$d, total sumber: %3$d, paket utama)</string>
 	<string name="file_changed">File diubah, simpan perubahan?</string>
 	<string name="so_prop">File: %1$s\nUkuran: %2$s\nJenis: %3$s\nTotal baris: %4$s\nBaris yang dimodifikasi: %5$s</string>
 	<string name="so_info">Agar penyuntingan berhasil, panjang baris sebelum penyuntingan harus sesuai dengan panjang baris setelah penyuntingan. Jika panjangnya tidak sesuai, maka, baris tersebut akan disorot dalam warna merah. Cobalah untuk menghindari penyuntingan baris dengan karakter yang aneh! Meskipun semua persyaratan terpenuhi, tidak ada jaminan 100% bahwa perpustakaan akan tetap beroperasi setelah pengeditan; jangan lupa untuk membuat cadangan!</string>
@@ -65,6 +67,22 @@
 	<string name="sign_ver_info">Versi tanda tangan untuk versi Android:\nV1 - opsi tanda tangan pertama, satu-satunya hingga Android 7.0; \nV2 - ditambahkan ke Android 7.0; \n\nVersi tanda tangan harus digunakan berdasarkan versi Android minimum yang diperlukan untuk aplikasi. Jika versi minimum adalah 30+ (Android 11+), tanda tangan V2 diperlukan.\n\nJika Anda tidak mencentang kotak centang \"Simpan\", skema yang dipilih hanya akan digunakan saat ini.</string>
 	<string name="sign_ver_info2">Versi tanda tangan untuk versi Android:\nV1 - opsi tanda tangan pertama, satu-satunya hingga Android 7.0; \nV2 - ditambahkan ke Android 7.0; \nV3 - ditambahkan ke Android 9.0; \nV4 - ditambahkan ke Android 11; \n\nVersi tanda tangan harus digunakan berdasarkan versi Android minimum/target yang diperlukan untuk aplikasi. Jika versi target adalah 30+ (Android 11+), tanda tangan V2 diperlukan. V2 atau V3 harus digunakan bersama dengan tanda tangan V4. Versi V4 saat ini hampir tidak pernah digunakan.\n\nJika Anda tidak mencentang kotak centang \"Simpan\", maka skema yang dipilih hanya akan digunakan saat ini.</string>
 	<string name="total">Total</string>
+	<string name="up">Naik</string>
+	<string name="down">Turun</string>
+	<string name="threads">Utas</string>
+	<string name="delete_orig">Hapus yang asli</string>
+	<string name="split_dex">Pisahkan dex</string>
+	<string name="split_dex_label">Pisahkan:</string>
+	<string name="split_dex_cnd">Jumlah dex:</string>
+	<string name="split_dex_cnm">Jumlah methods/fields:</string>
+	<string name="merge_dex">Gabungkan dex</string>
+	<string name="merge_dex_error">Tidak mungkin untuk menggabungkan file, jumlah methods/fields yang diizinkan telah terlampaui!</string>
+	<string name="protection">Perlindungan</string>
+	<string name="protection_info">Tanda-tanda perlindungan terdeteksi apk: %s.\n\nHarap dicatat bahwa deteksi terjadi berdasarkan tanda-tanda tidak langsung, jadi ini mungkin kesalahan!</string>
+	<string name="main_pkg">paket utama</string>
+	<string name="styled">string bergaya</string>
+	<string name="app_crashed">Ada kesalahan dalam aplikasi! Klik untuk melihat log</string>
+	<string name="max_value">Nilai maksimum</string>
 	<string name="ignore_indent">Abaikan lekukan</string>
 	<string name="file_nw">File ini tidak dapat ditulis!</string>
 	<string name="dexs_info">Informasi Dex</string>
@@ -73,6 +91,7 @@
 	<string name="unsupported_android">Tidak didukung di versi Android Anda!</string>
 	<string name="reset_fab">Atur ulang posisi tombol mengambang?</string>
 	<string name="kill_sign">Hapus verifikasi tanda tangan</string>
+	<string name="kill_sign_rand">Nama class secara acak</string>
 	<string name="kill_sign_advanced">Metode yang ditingkatkan</string>
 	<string name="kill_sign_orig">Tambahkan apk asli untuk memeriksa integritas</string>
 	<string name="kill_sign_exists">Pengait sudah ditambahkan</string>
@@ -552,6 +571,8 @@
 	<string name="trlangs_settings_summary">Memilih bahasa untuk penerjemah online</string>
 	<string name="threads_count">Jumlah utas</string>
 	<string name="threads_count_summary">Jumlah utas untuk proses multi-utas</string>
+	<string name="disable_crashes">Nonaktifkan penangkapan kesalahan</string>
+	<string name="disable_crashes_summary">Jangan sampai program macet jika terjadi kesalahan</string>
 	<string name="faq">FAQ</string>
 	<string name="faq_summary">Bantuan untuk menggunakan program ini</string>
 	<string name="key_type">Jenis Kunci:</string>
@@ -674,6 +695,8 @@
 	<string name="keep_broken_summary">Gunakan ini jika terjadi kesalahan saat mendekompilasi sumber, tetapi Anda masih ingin mendekompilasinya, bahkan dengan kesalahan</string>
 	<string name="editor_rem_tabs">Ingat file yang terbuka</string>
 	<string name="editor_rem_tabs_summary">Buka file yang terakhir dibuka di editor saat aplikasi dimulai</string>
+	<string name="detect_protect">Periksa perlindungan aplikasi</string>
+	<string name="detect_protect_summary">Mencoba menentukan perlindungan file apk dalam rincian dialog</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>

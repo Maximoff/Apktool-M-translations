@@ -73,6 +73,8 @@
     <string name="up">Up</string>
     <string name="down">Down</string>
     <string name="threads">Threads</string>
+    <string name="dex_decompile_info">This option decompiles all dex files that are in the root of the apk, but leaves dex files in subfolders untouched.</string>
+    <string name="dex_decompile_info2">This option decompiles all dex files into apk, both those located in the root and those located in subfolders.</string>
     <string name="delete_orig">Delete original</string>
     <string name="split_dex">Split dex</string>
     <string name="split_dex_label">Split:</string>
@@ -80,6 +82,7 @@
     <string name="split_dex_cnm">Number of methods/fields:</string>
     <string name="merge_dex">Merge dex</string>
     <string name="merge_dex_error">It will not be possible to merge files, the allowed number of methods/fields has been exceeded!</string>
+    <string name="redistribute_dex">Redistribute dex</string>
     <string name="protection">Protection</string>
     <string name="protection_info">Signs of protection detected apk: %s.\n\nPlease note that detection occurs based on indirect signs, so this may be an error!</string>
     <string name="main_pkg">main package</string>
