@@ -771,7 +771,7 @@
 	<string name="scoped_storage">Обмежене сховище</string>
 	<string name="restore_set_dialog">Хочете відновити налаштування? Поточні налаштування будуть перезаписані!</string>
 	<string name="rename_help">{NAME} - оригінальне ім\'я файлу без розширення.\n{EXT} - оригінальне розширення файлу.\n{DATE} - дата у форматі «%1$s».\n{TIME} - час у форматі «%2$s».\n{0} - номер, починаючи з «0».</string>
-	<string name="scoped_storage_title">Зміни в Android 11 R</string>
+	<string name="scoped_storage_title">Зміни в Android 11</string>
 	<string name="scoped_storage_msg">В Android 11 з\'явився новий спосіб управління файлами під назвою \"Scoped Storage\". Вам необхідно надати спеціальний дозвіл!</string>
 	<string name="license_agreement">Ліцензійна угода</string>
 	<string name="license_accept">Прийняти</string>
@@ -833,7 +833,7 @@
 	<string name="split_dex_cnm">Кількість методів/полів:</string>
 	<string name="merge_dex">Об\'єднати dex</string>
 	<string name="merge_dex_error">Не вдасться об\'єднати файли, перевищено допустиму кількість методів/полів!</string>
-	<string name="dex_decompile_info">Ця опція декомпілює всі файли dex, які знаходяться в корені apk, але не зачіпає файли dex у вкладених теках.</string>.
+	<string name="dex_decompile_info">Ця опція декомпілює всі файли dex, які знаходяться в корені apk, але не зачіпає файли dex у вкладених теках.</string>
 	<string name="dex_decompile_info2">Ця опція декомпілює всі файли dex в apk, як ті, що знаходяться в корені, так і ті, що знаходяться у вкладених теках.</string>
 	<string name="redistribute_dex">Перерозподілити dex</string>
 </resources>

@@ -543,7 +543,7 @@
 	<string name="heap_info">Memoria utilizzata: %1$dMB.\nMemoria disponibile: %2$dMB.\nDimensione heap: %3$dMB.</string>
 	<string name="scoped_storage">Archiviazione Con Ambito</string>
 	<string name="restore_set_dialog">Vuoi ripristinare le tue impostazioni? Le impostazioni correnti verranno sovrascritte!</string>
-	<string name="scoped_storage_title">Android 11 R cambia</string>
+	<string name="scoped_storage_title">Android 11 cambia</string>
 	<string name="scoped_storage_msg">Android 11 introduce un nuovo modo di gestione dei file chiamato \"Archiviazione con ambito\". Devi concedere un permesso speciale!</string>
 	<string name="rename_help">{NOME} - nome del file originale senza estensione.\n{EXT} - estensione del file originale.\n{DATA} - data in formato %1$s.\n{ORA} - ora in formato %2$s.\n{0} - numero a partire da 0.</string>
 	<string name="license_agreement">Contratto di licenza</string>

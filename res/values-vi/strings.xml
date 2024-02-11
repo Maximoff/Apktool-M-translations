@@ -801,7 +801,7 @@
 	<string name="heap_info">Bộ nhớ đã sử dụng: %1$dMB.\nBộ nhớ khả dụng: %2$dMB.\nKích thước heap: %3$dMB.</string>
 	<string name="scoped_storage">Bộ nhớ có phạm vi</string>
 	<string name="restore_set_dialog">Bạn muốn khôi phục cài đặt của mình? Các cài đặt hiện tại sẽ bị ghi đè!</string>
-	<string name="scoped_storage_title">Những thay đổi của Android 11 R</string>
+	<string name="scoped_storage_title">Những thay đổi của Android 11</string>
 	<string name="scoped_storage_msg">Android 11 giới thiệu một cách quản lý tệp mới có tên \"Scoped Storage\". Bạn cần phải cấp giấy phép đặc biệt!</string>
 	<string name="rename_help">{NAME} - tên tệp gốc không có phần mở rộng.\n{EXT} - phần mở rộng tệp gốc.\n{DATE} - ngày ở định dạng \"%1$s\".\n{TIME} - thời gian ở \"%2$s\" định dạng.\n{0} - số bắt đầu từ \"0\".</string>
 	<string name="license_agreement">Thỏa thuận cấp phép</string>

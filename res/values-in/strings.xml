@@ -838,7 +838,7 @@
 	<string name="heap_info">Memori yang digunakan: %1$dMB.\nMemori yang tersedia: %2$dMB.\nUkuran tumpukan: %3$dMB.</string>
 	<string name="scoped_storage">Penyimpanan yang Dicakup</string>
 	<string name="restore_set_dialog">Ingin memulihkan pengaturan Anda?  Pengaturan saat ini akan ditimpa!</string>
-	<string name="scoped_storage_title">Perubahan Android 11 R</string>
+	<string name="scoped_storage_title">Perubahan Android 11</string>
 	<string name="scoped_storage_msg">Android 11 memperkenalkan cara pengelolaan file baru yang disebut \"Penyimpanan Cakupan\". Anda harus memberikan izin khusus!</string>
 	<string name="rename_help">{NAME} - nama file asli tanpa ekstensi.\n{EXT} - ekstensi file asli.\n{DATE} - tanggal dalam format \"%1$s\".\n{TIME} - waktu dalam format \"%2$s\".\n{0} - angka yang dimulai dari \"0\".</string>
 	<string name="license_agreement">Perjanjian lisensi</string>

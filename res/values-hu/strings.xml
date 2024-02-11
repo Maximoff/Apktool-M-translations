@@ -733,7 +733,7 @@
 	<string name="heap_info">Használt memória: %1$dMB.\nElérhető memória: %2$dMB.\nHalom mérete: %3$dMB.</string>
 	<string name="scoped_storage">Meghatározott tárolás</string>
 	<string name="restore_set_dialog">Vissza szeretné állítani a beállításait? A jelenlegi beállítások felülíródnak!</string>
-	<string name="scoped_storage_title">Android 11 R változások</string>
+	<string name="scoped_storage_title">Android 11 változások</string>
 	<string name="scoped_storage_msg">Az Android 11 új fájlkezelési módot vezet be, amelyet úgy hívnak, hogy \"Scoped Storage\". Különleges engedély megadására lesz szükség!</string>
 	<string name="rename_help">{NAME} - eredeti fájlnév kiterjesztés nélkül.\n{EXT} - eredeti fájlkiterjesztés.\n{DATE} - dátum \"%1$s\" formátumban.\n{TIME} - idő \"%2$s\" formátumban.\n{0} - szám \"0\"-tól kezdve.</string>
 	<string name="license_agreement">Licencszerződés</string>

@@ -537,7 +537,7 @@
 	<string name="heap_info">Naudojama atmintis: %1$dMB.\nPasiekiama atmintis: %2$dMB.\nBendras dydis: %3$dMB.</string>
 	<string name="scoped_storage">Ribota saugykla</string>
 	<string name="restore_set_dialog">Norite atkurti parametrus? Dabartiniai parametrai bus perrašyti!</string>
-	<string name="scoped_storage_title">Android 11 R pakeitimai</string>
+	<string name="scoped_storage_title">Android 11 pakeitimai</string>
 	<string name="scoped_storage_msg">\"Android 11\" pristato naują failų valdymo būdą, vadinamą \"Aprėpties saugykla\". Jums reikia suteikti specialų leidimą!</string>
 	<string name="rename_help">{NAME} - originalus failo pavadinimas be plėtinio name {EXT} - originalus failo plėtinys {DATE} - data į %1$s format.\n{TIME} - laikas į %2$s format.\n{0} - number starting from 0.</string>
 	<string name="license_agreement">Licencijos sutartis</string>

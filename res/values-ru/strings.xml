@@ -77,6 +77,7 @@
     <string name="merge_dex">Объединить dex</string>
     <string name="merge_dex_error">Не удастся объединить файлы, превышено допустимое количество методов/полей!</string>
     <string name="redistribute_dex">Перераспределить dex</string>
+    <string name="bg_proccess_notice">В фоне выполняется процесс, если вы закроете приложение, он может быть прерван! Уверены, что хотите выйти?</string>
     <string name="protection">Защита</string>
     <string name="protection_info">Обнаружены признаки защиты apk: %s.\n\nУчтите, что обнаружение происходит по косвенным признакам, поэтому это может быть ошибкой!</string>
     <string name="styled">стилизованная строка</string>
@@ -693,6 +694,8 @@
 	<string name="editor_rem_tabs_summary">Открывать в редакторе последние открытые файлы при запуске приложения</string>
     <string name="detect_protect">Проверять защиту приложений</string>
 	<string name="detect_protect_summary">Пытаться определить защиту файла apk в диалоге деталей</string>
+    <string name="ds_display">Отображение даты и размера</string>
+	<string name="ds_display_summary">Порядок отображения даты и размера у файлов</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>
@@ -830,7 +833,7 @@
 	<string name="scoped_storage">Ограниченное хранилище</string>
 	<string name="restore_set_dialog">Хотите восстановить настройки? Текущие настройки будут перезаписаны!</string>
 	<string name="rename_help">{NAME} - оригинальное имя файла без расширения.\n{EXT} - оригинальное расширение файла.\n{DATE} - дата в формате «%1$s».\n{TIME} - время в формате «%2$s».\n{0} - номер, начиная с «0».</string>
-	<string name="scoped_storage_title">Изменения в Android 11 R</string>
+	<string name="scoped_storage_title">Изменения в Android 11</string>
 	<string name="scoped_storage_msg">В Android 11 появился новый способ управления файлами под названием \"Scoped Storage\". Вам необходимо предоставить специальное разрешение!</string>
 	<string name="license_agreement">Лицензионное соглашение</string>
 	<string name="license_accept">Принять</string>

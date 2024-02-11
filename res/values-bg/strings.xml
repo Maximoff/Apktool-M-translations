@@ -318,9 +318,7 @@
 	<string name="replace_to_archive">Замести</string>
 	<string name="skip_to_archive">Пропусни</string>
 	<string name="signature_scheme">Схема на подписа: %s</string>
-	<string name="editor_prop_dialog">"Име: %1$s
-Път: %2$s
-Размер: %3$s"</string>
+	<string name="editor_prop_dialog">Име: %1$s\nПът: %2$s\nРазмер: %3$s</string>
 	<string name="dex2jar">Dex2Jar</string>
 	<string name="jar2dex">Jar2Dex</string>
 	<string name="encoding">Кодировка</string>
@@ -365,9 +363,9 @@
 	<string name="output_directory">Изходна директория</string>
 	<string name="set_as_output_directory">Задайте като изходна директория</string>
 	<string name="output_directory_summary">Задайте изходната директория на инсталираните приложения.</string>
-	<string name="output_directory_not_extsts">"Изходната директория \'%1$s\' не съществува и не може да бъде създадена!"</string>
+	<string name="output_directory_not_extsts">Изходната директория \'%1$s\' не съществува и не може да бъде създадена!</string>
 	<string name="output_directory_not_set">Първо трябва да зададете изходната директория!</string>
-	<string name="not_directory">"\'%1$s\' не е директория!"</string>
+	<string name="not_directory">\'%1$s\' не е директория!</string>
 	<string name="compile_project">Сборка на проекта</string>
 	<string name="no_open">Няма отворени файлове!</string>
 	<string name="copy_success">Копирано!</string>
@@ -413,9 +411,9 @@
 	<string name="signature_file">Файл за подпис</string>
 	<string name="sel_signature_file">Изберете файла за подпис</string>
 	<string name="signature_file_summary">Файл с настройки (файл pk8 ​​или файл за хранилище на ключове). Ако това е pk8 файл, той автоматично ще генерира x509.pem файл със същото име (например testkey.pk8 съответства на testkey.x509.pem).</string>
-	<string name="signature_file_missing">"Файла за подпис \'%1$s\' липсва, ще се използва подпис по подразбиране!"</string>
+	<string name="signature_file_missing">Файла за подпис \'%1$s\' липсва, ще се използва подпис по подразбиране!</string>
 	<string name="signature_pass_not_set">Не е посочена парола на хранилище, използва се подпис по подразбиране!</string>
-	<string name="load_signature_file_fail">"Не може да зареди ключа за подпис \'%1$s\'."</string>
+	<string name="load_signature_file_fail">Не може да зареди ключа за подпис \'%1$s\'.</string>
 	<string name="enter_password">Въведете парола:</string>
 	<string name="about">За приложението</string>
 	<string name="about_summary">Информация за автора, полезни връзки</string>
@@ -691,8 +689,7 @@
 	<string name="minfo">Инфо</string>
 	<string name="mauto">Автоматичен</string>
 	<string name="permissions">Разрешения</string>
-	<string name="search_info">"Търсене по съдържание се извършва във файлове със следните разширения: %s.
-Поддържа се многоредово търсене."</string>
+	<string name="search_info">Търсене по съдържание се извършва във файлове със следните разширения: %s.\nПоддържа се многоредово търсене.</string>
 	<string name="preview">Визуализация</string>
 	<string name="previewf">Визуализация \"%s\"</string>
 	<string name="completed_success">Операцията завърши успешно!</string>
@@ -705,11 +702,7 @@
 	<string name="colors_editor">Цветови редактор</string>
 	<string name="invert_color">Инвертирай цвета</string>
 	<string name="copy_value">Копирай стойност</string>
-	<string name="mcolor_properties">"Проект: %1$s
-Каталог: %2$s
-Размер: %3$s
-Общо цветове: %4$s
-Променени цветове: %5$s"</string>
+	<string name="mcolor_properties">Проект: %1$s\nКаталог: %2$s\nРазмер: %3$s\nОбщо цветове: %4$s\nПроменени цветове: %5$s</string>
 	<string name="enter_man">Въведи ръчно</string>
 	<string name="show_orig">Показвай оригинала</string>
 	<string name="overcompress">прекомпресирай всички файлове</string>
@@ -770,12 +763,7 @@
 	<string name="mtr_invalid_res">грешен отговор на сървъра</string>
 	<string name="mtr_translating">Превод: %1$d от %2$d ...</string>
 	<string name="mtr_success_count">%d реда са преведени успешно</string>
-	<string name="mtr_properties">"Проект: %1$s
-Общо локализации: %2$s
-Текуща локализация: %3$s
-Размер: %4$s
-Общо редове: %5$s
-Преведени редове: %6$s"</string>
+	<string name="mtr_properties">Проект: %1$s\nОбщо локализации: %2$s\nТекуща локализация: %3$s\nРазмер: %4$s\nОбщо редове: %5$s\nПреведени редове: %6$s</string>
 	<string name="mtr_service">Преводачески сервиз</string>
 	<string name="mtr_google">Google</string>
 	<string name="mtr_google_web">Google Web</string>
@@ -806,9 +794,7 @@
 	<string name="file_download">Изтегля файла: %s</string>
 	<string name="download_success">Файла %s е успешно изтеглен!</string>
 	<string name="load_binaries2">Трябва да изтеглите aapt/aapt2 файловете! Можете да ги изтеглите сега или да го направите по-късно в настройките. За изтегляне е необходима интернет връзка. Искате ли да изтеглите сега?</string>
-	<string name="load_binaries">"Вградените бинарни файлове aapt/aapt2 може да са несъвместими с вашата система. Може да ги обновите сега или по-късно от настройките. За изтеглянето трябва Интернет.
-
-Ще ги изтеглите сега?"</string>
+	<string name="load_binaries">Вградените бинарни файлове aapt/aapt2 може да са несъвместими с вашата система. Може да ги обновите сега или по-късно от настройките. За изтеглянето трябва Интернет.\n\nЩе ги изтеглите сега?</string>
 	<string name="plugin_modif">Плъгина UnApkm е подписана от някой друг, вероятно е модифицирана. Препоръчва се деинсталиране и изтегляне оригиналния файл от сайта на разработчика. С клик върху Не напомняй, ще продължите да използвате модифицирания плъгин на свой собствен риск!</string>
 	<string name="not_remind">Не напомняй</string>
 	<string name="mpatcher">MPatcher</string>
@@ -819,23 +805,15 @@
 	<string name="telegram_summary">Телеграм-канал за обновявания</string>
 	<string name="report_descr">Моля, опишете накратко своите действия, след които възникна грешката</string>
 	<string name="optimize_battery">Оптимиз. на батерията</string>
-	<string name="optimization_notice">"За да работи във фонов режим (когато е свито) желателно е да го добавите в изключения на системния оптимизатор. Приложението ще е във фонов режим, само ако е стартирано!
-
-Ще го направите?"</string>
+	<string name="optimization_notice">За да работи във фонов режим (когато е свито) желателно е да го добавите в изключения на системния оптимизатор. Приложението ще е във фонов режим, само ако е стартирано!\n\nЩе го направите?</string>
 	<string name="heap_help">За премахване на грешка OOM следва да увеличите heap-паметта.&lt;br>&lt;br>Увеличаването на heap-паметта &lt;b>изисква root права&lt;/b>!&lt;br>&lt;br>Трябва да се отвори файла &lt;b>/system/build.prop&lt;/b> и добави/промени в него реда &lt;b>dalvik.vm.heapsize = 512m&lt;/b> (512m това е големината на heap в мегабайти).&lt;br>&lt;br>&lt;small>Тази операция може да се направи с Apktool M само ако раздела /system бъде премонтиран с разрешение за запис, иначе трябва да се използват други инструменти.&lt;br>&lt;br>Понякога във файла има два такива реда, като единия от тях трябва да се изтрие.&lt;/small></string>
 	<string name="heap_memory">Heap памет</string>
-	<string name="heap_info">"Използвана памет: %1$dMB.
-Достъпна памет: %2$dMB.
-Общо памет: %3$dMB."</string>
+	<string name="heap_info">Използвана памет: %1$dMB.\nДостъпна памет: %2$dMB.\nОбщо памет: %3$dMB.</string>
 	<string name="scoped_storage">Ограничено хранилище</string>
 	<string name="restore_set_dialog">Ще възстановите ли настройките? Текущите настройки ще се презапишат!</string>
-	<string name="scoped_storage_title">Изменения в Android 11 R</string>
+	<string name="scoped_storage_title">Изменения в Android 11</string>
 	<string name="scoped_storage_msg">В Android 11 се появи нов файлов мениджър \"Scoped Storage\". Трябва да му предоставите специално разрешение!</string>
-	<string name="rename_help">"{NAME} - оригинално име на файла без расширение.
-{EXT} - оригинално расширение на файла.
-{DATE} - дата в формат «%1$s».
-{TIME} - време в формат «%2$s».
-{0} - номер, започвайки с «0»."</string>
+	<string name="rename_help">{NAME} - оригинално име на файла без расширение.\n{EXT} - оригинално расширение на файла.\n{DATE} - дата в формат «%1$s».\n{TIME} - време в формат «%2$s».\n{0} - номер, започвайки с «0».</string>
 	<string name="license_agreement">Лицензионно споразумение</string>
 	<string name="license_accept">Приеми</string>
 	<string name="license_refuse">Откажи</string>

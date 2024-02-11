@@ -825,7 +825,7 @@
 	<string name="heap_info">حافظه استفاده شده: %1$dMB\nحافظه موجود: %2$dMB\n کل حافظه: %3$dMB</string>
 	<string name="scoped_storage">مجوز دسترسی به همه فایل ها</string>
 	<string name="restore_set_dialog">آیا می خواهید تنظیمات خود را بازیابی کنید؟  تنظیمات فعلی بازنویسی خواهد شد!</string>
-	<string name="scoped_storage_title">تغییرات اندروید ۱۱ R</string>
+	<string name="scoped_storage_title">تغییرات اندروید ۱۱</string>
 	<string name="scoped_storage_msg">اندروید ۱۱ یک روش مدیریت فایل جدید به نام \"دسترسی همه فایل ها\" را معرفی کرده است. شما باید یک مجوز ویژه اعطا کنید!</string>
 	<string name="rename_help">{NAME} - نام فایل اصلی بدون پسوند\n{EXT} - پسوند فایل اصلی.\n{DATE} - تاریخ در \"%1$s\" format.\n{TIME} - زمان در \"%2$s\" format.\n{0} - شماره شروع از \"0\".</string>
 	<string name="license_agreement">توافقنامه مجوز</string>

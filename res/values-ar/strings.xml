@@ -544,7 +544,7 @@
 	<string name="heap_info">Used memory: %1$dMB.\nAvailable memory: %2$dMB.\nHeap size: %3$dMB.</string>
 	<string name="scoped_storage">Scoped Storage</string>
 	<string name="restore_set_dialog">هل تريد استعادة الإعدادات؟ سيتم الكتابة فوق الإعدادات الحالية!</string>
-	<string name="scoped_storage_title">تغييرات أندرويد 11 R</string>
+	<string name="scoped_storage_title">تغييرات أندرويد 11</string>
 	<string name="scoped_storage_msg">يقدم Android 11 طريقة جديدة لإدارة الملفات تسمى \"Scoped Storage\". تحتاج إلى منح إذن خاص!</string>
 	<string name="rename_help">{NAME} - original file name without extension.\n{EXT} - original file extension.\n{DATE} - date in %1$s format.\n{TIME} - time in %2$s format.\n{0} - number starting from 0.</string>
 	<string name="license_agreement">اتفاقية الترخيص</string>

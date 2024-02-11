@@ -690,7 +690,7 @@
 	<string name="heap_info">Memória usada: %1$dMB.\nMemória disponível: %2$dMB.\nTamanho do heap: %3$dMB.</string>
 	<string name="scoped_storage">Armazenamento com Escopo</string>
 	<string name="restore_set_dialog">Quer restaurar suas configurações?As configurações atuais serão sobrescritas!</string>
-	<string name="scoped_storage_title">Alterações Android 11 R</string>
+	<string name="scoped_storage_title">Alterações Android 11</string>
 	<string name="scoped_storage_msg">Android 11 introduz uma nova maneira de gerenciamento de arquivos chamada \"Armazenamento com Escopo\". Você precisa conceder uma permissão especial!</string>
 	<string name="rename_help">{NOME} - Nome do arquivo original sem extensão.\n{EXT} - Extensão do arquivo original.\n{DATA} - Data no formato %1$s.\n{TEMPO} - Tempo no formato %2$s.\n{0} - número a partir de 0.</string>
 	<string name="license_agreement">Contrato de licença</string>

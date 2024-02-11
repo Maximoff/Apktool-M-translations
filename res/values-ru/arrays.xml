@@ -367,6 +367,10 @@
 		<item>по количеству методов/полей</item>
 		<item>по равным частям</item> 
 	</string-array>
+    <string-array name="ds_display_items">
+		<item>Сначала дата</item>
+		<item>Сначала размер</item> 
+	</string-array>
 	<string-array name="editor_themes">
 		<item>По умолчанию</item>
 		<item>Новая</item> 

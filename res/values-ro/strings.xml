@@ -579,7 +579,7 @@
 	<string name="heap_info">Memorie utilizată: %1$dMB.\nMemorie disponibilă: %2$dMB.\nHeap size: %3$dMB.</string>
 	<string name="scoped_storage">Restore</string>
 	<string name="restore_set_dialog">Dorești să îți restaurezi setările?  Setările actuale vor fi suprascrise!</string>
-	<string name="scoped_storage_title">Modificări în Android 11 R</string>
+	<string name="scoped_storage_title">Modificări în Android 11</string>
 	<string name="scoped_storage_msg">Android 11 introduce un nou mod de gestionare a fișierelor numit \"Scoped Storage\". Trebuie să acorzi o permisiune specială!</string>
 	<string name="rename_help">{NAME} - numele fișierului original, fără extensie.\n{EXT} - extensia originală a fișierului.\n{DATE} - dată în formatul \"%1$s\".\n{TIME} - ora în formatul \"%2$s\".\n{0} - număr început de la \"0\".</string>
 	<string name="license_agreement">Acord de licență</string>

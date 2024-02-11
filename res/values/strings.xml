@@ -83,6 +83,7 @@
     <string name="merge_dex">Merge dex</string>
     <string name="merge_dex_error">It will not be possible to merge files, the allowed number of methods/fields has been exceeded!</string>
     <string name="redistribute_dex">Redistribute dex</string>
+    <string name="bg_proccess_notice">There is a process running in the background, if you close the application it may be interrupted! Are you sure you want to go out?</string>
     <string name="protection">Protection</string>
     <string name="protection_info">Signs of protection detected apk: %s.\n\nPlease note that detection occurs based on indirect signs, so this may be an error!</string>
     <string name="main_pkg">main package</string>
@@ -707,6 +708,8 @@
 	<string name="editor_rem_tabs_summary">Open the last opened files in the editor when the application starts</string>
     <string name="detect_protect">Check application protection</string>
 	<string name="detect_protect_summary">Trying to determine the protection of the apk file in the details dialog</string>
+    <string name="ds_display">Date and size display</string>
+	<string name="ds_display_summary">Date and size display order for files</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>
@@ -848,7 +851,7 @@
 	<string name="heap_info">Used memory: %1$dMB.\nAvailable memory: %2$dMB.\nHeap size: %3$dMB.</string>
 	<string name="scoped_storage">Scoped Storage</string>
 	<string name="restore_set_dialog">Want to restore your settings?  The current settings will be overwritten!</string>
-	<string name="scoped_storage_title">Android 11 R changes</string>
+	<string name="scoped_storage_title">Android 11 changes</string>
 	<string name="scoped_storage_msg">Android 11 introduce a new file-management way called \"Scoped Storage\". You need to grant a special permission!</string>
 	<string name="rename_help">{NAME} - original file name without extension.\n{EXT} - original file extension.\n{DATE} - date in \"%1$s\" format.\n{TIME} - time in \"%2$s\" format.\n{0} - number starting from \"0\".</string>
 	<string name="license_agreement">License agreement</string>

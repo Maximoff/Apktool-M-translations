@@ -566,7 +566,7 @@
 	<string name="scan_mode">Λειτουργία πλοήγησης</string>
 	<string name="scoped_storage">Πρόσβαση Αποθήκευσης</string>
 	<string name="scoped_storage_msg">Το Android 11 εισάγει έναν νέο τρόπο διαχείρισης αρχείων που ονομάζεται \"Scoped Storage\". Πρέπει να χορηγήσετε ειδική άδεια!</string>
-	<string name="scoped_storage_title">Αλλαγές στο Android 11 R</string>
+	<string name="scoped_storage_title">Αλλαγές στο Android 11</string>
 	<string name="screen_on">Χωρίς απενεργοποίηση Οθόνης</string>
 	<string name="screen_on_summary">Παραμονή οθόνης πάντα αναμμένη</string>
 	<string name="screen_orientation">Προσανατολισμός οθόνης</string>

@@ -755,7 +755,7 @@
 	<string name="heap_info">Kujtesa e përdorur: %1$dMB.\nKujtesa e disponueshme: %2$dMB.\nMadhësia e grumbullit: %3$dMB.</string>
 	<string name="scoped_storage">Magazinimi me shtrirje</string>
 	<string name="restore_set_dialog">Dëshironi të rivendosni cilësimet tuaja? Cilësimet aktuale do të mbishkruhen!</string>
-	<string name="scoped_storage_title">Android 11 R ndryshon</string>
+	<string name="scoped_storage_title">Android 11 ndryshon</string>
 	<string name="scoped_storage_msg">Android 11 prezanton një mënyrë të re të menaxhimit të skedarëve të quajtur \"Scoped Storage\". Ju duhet të jepni një leje të veçantë!</string>
 	<string name="rename_help">{NAME} - emri origjinal i skedarit pa shtesë.\n{EXT} - zgjerimi origjinal i skedarit.\n{DATE} - data në formatin %1$s.\n{TIME} - koha në formatin %2$s.\n{0} - numër duke filluar nga 0.</string>
 	<string name="license_agreement">Marrëveshja e licencës</string>

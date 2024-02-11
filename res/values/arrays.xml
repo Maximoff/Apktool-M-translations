@@ -771,6 +771,14 @@
 		<item>by number of methods/fields</item>
 		<item>into equal parts</item>
 	</string-array>
+    <string-array name="ds_display_items">
+		<item>Date first</item>
+		<item>Size first</item> 
+	</string-array>
+    <string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item> 
+	</string-array>
 	<string-array name="editor_themes">
 		<item>Default</item>
 		<item>New</item>

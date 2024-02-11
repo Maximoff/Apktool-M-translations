@@ -772,7 +772,7 @@
 	<string name="heap_info">Mémoire utilisée : %1$dMo.\nMémoire disponible : %2$dMo.\nTaille du tas : %3$dMo.</string>
 	<string name="scoped_storage">Stockage limité</string>
 	<string name="restore_set_dialog">Vous souhaitez restaurer vos paramètres ? Les paramètres actuels seront écrasés !</string>
-	<string name="scoped_storage_title">Modifications d\'Android 11 R</string>
+	<string name="scoped_storage_title">Modifications d\'Android 11</string>
 	<string name="scoped_storage_msg">Android 11 introduit une nouvelle méthode de gestion de fichiers appelée « Scoped Storage ». Vous devez accorder une autorisation spéciale !</string>
 	<string name="rename_help">{NAME} : nom du fichier d\'origine sans extension.\n{EXT} - extension du fichier d\'origine.\n{DATE} - date au format %1$s.\n{TIME} - heure au format %2$s.\n{0} : nombre commençant à 0.</string>
 	<string name="license_agreement">Accord de licence</string>

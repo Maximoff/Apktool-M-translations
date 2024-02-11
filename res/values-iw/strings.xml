@@ -697,7 +697,7 @@
 	<string name="scan_mode">מצב ניווט</string>
 	<string name="scoped_storage">אחסון לפי טווח</string>
 	<string name="scoped_storage_msg">Android 11 מציג דרך חדשה לניהול קבצים בשם \"אחסון בהיקף\". אתה צריך לתת אישור מיוחד!</string>
-	<string name="scoped_storage_title">שינויים באנדרואיד 11 R</string>
+	<string name="scoped_storage_title">שינויים באנדרואיד 11</string>
 	<string name="screen_on">אל תכבה את המסך</string>
 	<string name="screen_on_summary">השאר את המסך דולק תמיד</string>
 	<string name="screen_orientation">כיוון המסך</string>

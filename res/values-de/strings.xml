@@ -369,7 +369,7 @@
 	<string name="save_file_msg">Einige Dateien wurden nicht gespeichert, jetzt speichern?</string>
 	<string name="scan_mode">Navigationsmodus</string>
 	<string name="scoped_storage_msg">Android 11 führt eine neue Dateiverwaltungsmethode namens \"Scoped Storage\"ein. Sie müssen eine spezielle Erlaubnis erteilen!</string>
-	<string name="scoped_storage_title">Android 11 R-Änderungen</string>
+	<string name="scoped_storage_title">Android 11 Änderungen</string>
 	<string name="screen_on">Schalte den Bildschirm nicht aus</string>
 	<string name="screen_on_summary">Bildschirm immer eingeschaltet</string>
 	<string name="search_files">Dateien suchen</string>

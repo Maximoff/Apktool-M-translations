@@ -510,6 +510,6 @@
 	<string name="heap_memory">Yığın bellek</string>
 	<string name="heap_info">Kullanılan bellek: %1$dMB.\nKullanılabilir bellek: %2$dMB.\nYığın boyutu: %3$dMB.</string>
 	<string name="scoped_storage">Kapsamlı Depolama</string>
-	<string name="scoped_storage_title">Android 11 R değişiklikleri</string>
+	<string name="scoped_storage_title">Android 11 değişiklikleri</string>
 	<string name="scoped_storage_msg">Android 11, \"Kapsamlı Depolama\" adı verilen yeni bir dosya yönetimi yöntemi sunar. Özel izin vermeniz gerekiyor!</string>
 </resources>
