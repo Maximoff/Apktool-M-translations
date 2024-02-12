@@ -367,6 +367,10 @@
 		<item>за кількістю методів/полів</item>
 		<item>за рівними частинами</item>
 	</string-array>
+	<string-array name="ds_display_items">
+		<item>Спочатку дата</item>
+		<item>Спочатку розмір</item> 
+	</string-array>
 	<string-array name="editor_themes">
 		<item>Стандартна</item>
 		<item>Нова</item>
