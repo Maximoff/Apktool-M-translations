@@ -836,4 +836,7 @@
 	<string name="dex_decompile_info">Ця опція декомпілює всі файли dex, які знаходяться в корені apk, але не зачіпає файли dex у вкладених теках.</string>
 	<string name="dex_decompile_info2">Ця опція декомпілює всі файли dex в apk, як ті, що знаходяться в корені, так і ті, що знаходяться у вкладених теках.</string>
 	<string name="redistribute_dex">Перерозподілити dex</string>
+	<string name="bg_proccess_notice">У фоні виконується процес, якщо ви закриєте програму, він може бути перерваний! Впевнені, що хочете вийти?</string>
+	<string name="ds_display">Зображення дати та розміру</string>
+	<string name="ds_display_summary">Порядок зображення дати та розміру у файлів</string>
 </resources>
