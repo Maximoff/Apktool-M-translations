@@ -59,6 +59,8 @@
 	<string name="up">بالا</string>
 	<string name="down">پایین</string>
 	<string name="threads">Threads</string>
+	<string name="dex_decompile_info">این گزینه همه فایل‌های dex را که در ریشه apk هستند تجزیه می‌کند، اما فایل‌های dex را در زیر پوشه‌ها دست نخورده باقی می‌گذارد.</string>
+        <string name="dex_decompile_info2">این گزینه همه فایل‌های dex موجود در apk را تجزیه می‌کند، هم آن‌هایی که در ریشه apk هستند و هم آنهایی که در زیر پوشه‌های apk قرار دارند.</string>
 	<string name="delete_orig">حذف اصلی</string>
 	<string name="split_dex">تقسیم dex</string>
 	<string name="split_dex_label">تقسیم:</string>
@@ -66,6 +68,8 @@
 	<string name="split_dex_cnm">تعداد روش/فیلد:</string>
 	<string name="merge_dex">ادغام dex</string>
 	<string name="merge_dex_error">امکان ادغام فایل ها وجود نخواهد داشت، از تعداد مجاز روش ها/فیلدها بیشتر شده است!</string>
+	<string name="redistribute_dex">توزیع مجدد dex</string>
+        <string name="bg_proccess_notice">یک فرآیند در پس زمینه در حال اجرا است، اگر برنامه را ببندید ممکن است قطع شود! آیا مطمئن هستید که میخواهید خارج شوید؟</string>
 	<string name="protection">حفاظت</string>
 	<string name="protection_info">نشانه‌های حفاظت apk شناسایی شده: %s.\n\nلطفاً توجه داشته باشید که تشخیص براساس علائم غیرمستقیم انجام می‌شود، بنابراین ممکن است یک خطا باشد!</string>
 	<string name="main_pkg">بسته اصلی</string>
@@ -561,6 +565,8 @@
 	<string name="trlangs_settings_summary">انتخاب زبان برای مترجمان آنلاین</string>
 	<string name="threads_count">تعداد رشته ها</string>
 	<string name="threads_count_summary">تعداد رشته ها برای پردازش های چند رشته ای</string>
+	<string name="disable_crashes">غیرفعال کردن تشخیص خطا</string>
+	<string name="disable_crashes_summary">در صورت بروز خطا از خراب شدن برنامه خودداری می کند</string>
 	<string name="faq">پرسش های متداول</string>
 	<string name="faq_summary">راهنمای استفاده از برنامه</string>
 	<string name="jadx_settings_summary">تنظیمات پیش نمایش کد جاوا</string>
@@ -684,6 +690,8 @@
 	<string name="keep_broken_summary">اگر هنگام تجزیه منابع خطایی وجود داشت، اما باز هم میخواهید آنها را حتی با وجود خطاها، تجزیه کنید. این گزینه را روشن کنید.</string>
 	<string name="editor_rem_tabs">به خاطر سپردن فایل های باز</string>
 	<string name="editor_rem_tabs_summary">زمانی که برنامه شروع به کار کرد، آخرین فایل های باز شده را در ویرایشگر باز میکند</string>
+	<string name="detect_protect">بررسی حفاظت برنامه</string>
+	<string name="detect_protect_summary">سعی میکند نوع حفاظت apk را در گفتگوی جزئیات تشخیص دهد</string>
 	<string name="search_call">یافتن فراخوانی ها</string>
 	<string name="search_call_get">یافتن فراخوانی های get</string>
 	<string name="search_call_put">یافتن فراخوانی های put</string>
@@ -832,4 +840,9 @@
 	<string name="license_accept">موافقت</string>
 	<string name="license_refuse">رد</string>
 	<string name="send_log">ارسال گزارش خرابی</string>
+	<string name="patcher_select">انتخاب پچ</string>
+        <string name="patcher_select_error">این یک پچ نیست!</string>
+        <string name="patcher_project">پروژه: \"%s\"</string>
+        <string name="patcher_patch">پچ</string>
+        <string name="patcher_patchf">پچ: \"%s\"</string>
 </resources>
