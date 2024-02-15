@@ -839,4 +839,10 @@
 	<string name="bg_proccess_notice">У фоні виконується процес, якщо ви закриєте програму, він може бути перерваний! Впевнені, що хочете вийти?</string>
 	<string name="ds_display">Зображення дати та розміру</string>
 	<string name="ds_display_summary">Порядок зображення дати та розміру у файлів</string>
+	<string name="patcher_select">Вибрати патч</string>
+	<string name="patcher_select_error">Це не патч!</string>
+	<string name="patcher_project">Проект: \"%s\"</string>
+	<string name="patcher_patch">Патч</string>
+	<string name="patcher_patchf">Патч: \"%s\"</string>
+	<string name="patcher_apk">APK: \"%s\"</string>
 </resources>
