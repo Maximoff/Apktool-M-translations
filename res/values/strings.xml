@@ -858,4 +858,11 @@
 	<string name="license_accept">Accept</string>
 	<string name="license_refuse">Do not accept</string>
 	<string name="send_log">Send a log to the developer</string>
+ 
+    <string name="patcher_select">Select patch</string>
+    <string name="patcher_select_error">This is not a patch!</string>
+    <string name="patcher_project">Project: \"%s\"</string>
+    <string name="patcher_patch">Patch</string>
+    <string name="patcher_patchf">Patch: \"%s\"</string>
+    <string name="patcher_apk">APK: \"%s\"</string>
 </resources>

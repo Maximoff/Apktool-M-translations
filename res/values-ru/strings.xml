@@ -839,4 +839,11 @@
 	<string name="license_accept">Принять</string>
 	<string name="license_refuse">Отказаться</string>
 	<string name="send_log">Отправка лога разработчику</string>
+ 
+    <string name="patcher_select">Выбрать патч</string>
+    <string name="patcher_select_error">Это не патч!</string>
+    <string name="patcher_project">Проект: \"%s\"</string>
+    <string name="patcher_patch">Патч</string>
+    <string name="patcher_patchf">Патч: \"%s\"</string>
+    <string name="patcher_apk">APK: \"%s\"</string>
 </resources>
