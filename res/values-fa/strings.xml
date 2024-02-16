@@ -640,6 +640,8 @@
 	<string name="mplugin_installed_summary">برای حذف افزونه لمس کنید</string>
 	<string name="mplugin_not_installed">افزونه UnApkm نصب نشده است</string>
 	<string name="mplugin_not_installed_summary">برای بارگیری افزونه لمس کنید</string>
+	<string name="aeplugin_installed">افزونه پشتیبانی پچ ApkEditor نصب شده است</string>
+        <string name="aeplugin_not_installed">افزونه پشتیبانی پچ ApkEditor نصب نشده است</string>
 	<string name="mupdate_4pda">انجمن 4PDA.RU</string>
 	<string name="mupdate_4pda_summary">انجمن گفتگو درباره برنامه</string>
 	<string name="mtool_repl">جایگزینی ابزار</string>
@@ -692,6 +694,8 @@
 	<string name="editor_rem_tabs_summary">زمانی که برنامه شروع به کار کرد، آخرین فایل های باز شده را در ویرایشگر باز میکند</string>
 	<string name="detect_protect">بررسی حفاظت برنامه</string>
 	<string name="detect_protect_summary">سعی میکند نوع حفاظت apk را در گفتگوی جزئیات تشخیص دهد</string>
+	<string name="ds_display">نمایش تاریخ و اندازه</string>
+	<string name="ds_display_summary">ترتیب نمایش تاریخ و اندازه برای فایل ها</string>
 	<string name="search_call">یافتن فراخوانی ها</string>
 	<string name="search_call_get">یافتن فراخوانی های get</string>
 	<string name="search_call_put">یافتن فراخوانی های put</string>
