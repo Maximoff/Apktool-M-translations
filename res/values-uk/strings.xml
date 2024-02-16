@@ -845,4 +845,6 @@
 	<string name="patcher_patch">Патч</string>
 	<string name="patcher_patchf">Патч: \"%s\"</string>
 	<string name="patcher_apk">APK: \"%s\"</string>
+	<string name="aeplugin_installed">Плагін підтримки патчів ApkEditor встановлено</string>
+	<string name="aeplugin_not_installed">Плагін підтримки патчів ApkEditor не встановлено</string>
 </resources>
