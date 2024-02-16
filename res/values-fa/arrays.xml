@@ -274,9 +274,9 @@
 		<item>تاریخ معکوس</item>
 	</string-array>
 	<string-array name="resDecodeMode">
-		<item>دیکامپایل نشود</item>
-		<item>دیکامپایل در مسیر اصلی</item>
-		<item>دیکامپایل در یک مسیر جداگانه</item>
+		<item>تجزیه نشود</item>
+		<item>تجزیه در مسیر اصلی</item>
+		<item>تجزیه در یک مسیر جداگانه</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>تنظیم نشده</item>
