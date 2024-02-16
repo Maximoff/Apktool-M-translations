@@ -644,6 +644,8 @@
 	<string name="mplugin_installed_summary">Нажмите, чтобы удалить плагин</string>
 	<string name="mplugin_not_installed">Плагин UnApkm не установлен</string>
 	<string name="mplugin_not_installed_summary">Нажмите, чтобы загрузить плагин</string>
+    <string name="aeplugin_installed">Плагин поддержки патчей ApkEditor установлен</string>
+    <string name="aeplugin_not_installed">Плагин поддержки патчей ApkEditor не установлен</string>
 	<string name="mupdate_4pda">Тема на 4PDA.RU</string>
 	<string name="mupdate_4pda_summary">Тема обсуждения приложения</string>
 	<string name="mtool_repl">Замена инструментов</string>
