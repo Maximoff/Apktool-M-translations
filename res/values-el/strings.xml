@@ -847,4 +847,12 @@
 	<string name="split_dex_cnm">Αριθμός μεθόδων/πεδίων:</string>
 	<string name="merge_dex">Συγχώνευση dex</string>
 	<string name="merge_dex_error">Δεν θα είναι δυνατή η συγχώνευση αρχείων, ο επιτρεπόμενος αριθμός μεθόδων/πεδίων έχει ξεπεραστεί!</string>
+        <string name="patcher_select">Επιλογή patch</string>
+        <string name="patcher_select_error">Αυτό δεν είναι patch!</string>
+        <string name="patcher_project">Εργασία: \"%s\"</string>
+        <string name="patcher_patch">Patch</string>
+        <string name="patcher_patchf">Patch: \"%s\"</string>
+        <string name="patcher_apk">APK: \"%s\"</string>
+        <string name="aeplugin_installed">ApkEditor patch εγκατεστημένο πρόσθετο υποστήριξης</string>
+        <string name="aeplugin_not_installed">ApkEditor patch μη εγκατεστημένο πρόσθετο υποστήριξης</string>
 </resources>
