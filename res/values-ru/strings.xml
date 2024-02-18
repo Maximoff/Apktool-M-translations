@@ -698,6 +698,8 @@
 	<string name="detect_protect_summary">Пытаться определить защиту файла apk в диалоге деталей</string>
     <string name="ds_display">Отображение даты и размера</string>
 	<string name="ds_display_summary">Порядок отображения даты и размера у файлов</string>
+    <string name="baksmali_registers">Использовать \"registers\" вместо \"locals\"</string>
+	<string name="baksmali_registers_summary">При декомпиляции до smali, использовать \"registers\" вместо \"locals\"</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>

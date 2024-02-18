@@ -712,6 +712,8 @@
 	<string name="detect_protect_summary">Trying to determine the protection of the apk file in the details dialog</string>
     <string name="ds_display">Date and size display</string>
 	<string name="ds_display_summary">Date and size display order for files</string>
+    <string name="baksmali_registers">Use \"registers\" instead of \"locals\"</string>
+	<string name="baksmali_registers_summary">When decompiling to smali, use \"registers\" instead of \"locals\"</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>
