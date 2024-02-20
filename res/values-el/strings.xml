@@ -855,4 +855,12 @@
         <string name="patcher_apk">APK: \"%s\"</string>
         <string name="aeplugin_installed">ApkEditor patch εγκατεστημένο πρόσθετο υποστήριξης</string>
         <string name="aeplugin_not_installed">ApkEditor patch μη εγκατεστημένο πρόσθετο υποστήριξης</string>
+	<string name="baksmali_registers">Χρήση \"καταχωρήσεις\" αντί \"τοπικές\"</string>
+	<string name="baksmali_registers_summary">Κατά την απομεταγλώττιση σε smali, χρήση \"καταχωρήσεις\" αντί \"τοπικές\"</string>
+	<string name="bg_proccess_notice">Υπάρχει μια διαδικασία που εκτελείται στο παρασκήνιο, εάν κλείσετε την εφαρμογή μπορεί να διακοπεί! Σίγουρα θέλετε \"Έξοδο\";</string>
+	<string name="dex_decompile_info">Αυτή η επιλογή απομεταγλωττίζει όλα τα αρχεία dex που βρίσκονται στη ρίζα του apk, αλλά αφήνει ανέγγιχτα τα αρχεία dex σε υποφακέλους.</string>
+	<string name="dex_decompile_info2">Αυτή η επιλογή απομεταγλωττίζει όλα τα αρχεία dex στο apk, τόσο εκείνα που βρίσκονται στη ρίζα όσο και εκείνα που βρίσκονται σε υποφακέλους.</string>
+	<string name="ds_display">Ένδειξη ημ/νίας και μεγέθους</string>
+	<string name="ds_display_summary">Σειρά ένδειξης ημ/νίας και μεγέθους αρχείων</string>
+	<string name="redistribute_dex">Ανακατανομή dex</string>
 </resources>
