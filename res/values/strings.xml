@@ -45,6 +45,7 @@
 	<string name="sets_nf">No library sets found!</string>
 	<string name="enter_path">Enter path</string>
 	<string name="ultra_target_api">do not change the target API</string>
+    <string name="dont_change">Don\'t change</string>
 	<string name="error_try_again">Error, please try again</string>
 	<string name="miui_warn_title">MIUI detected!</string>
 	<string name="miui_warn_message">It looks like you have MIUI! I recommend opening developer settings and disabling MIUI optimization. If you do not do this, you may have problems with the operation of the application, errors and crashes. Please do not write to me about program errors if you read this message and did not follow my advice!</string>
@@ -714,6 +715,8 @@
 	<string name="ds_display_summary">Date and size display order for files</string>
     <string name="baksmali_registers">Use \"registers\" instead of \"locals\"</string>
 	<string name="baksmali_registers_summary">When decompiling to smali, use \"registers\" instead of \"locals\"</string>
+    <string name="old_search">Old search type</string>
+	<string name="old_search_summary">Old option for displaying search results in files</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>

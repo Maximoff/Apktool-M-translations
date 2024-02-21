@@ -39,6 +39,7 @@
 	<string name="sets_nf">Наборов библиотек не найдено!</string>
 	<string name="enter_path">Ввести путь</string>
 	<string name="ultra_target_api">не менять целевой API</string>
+    <string name="dont_change">Не изменять</string>
 	<string name="error_try_again">Ошибка, попробуйте ещё раз</string>
 	<string name="miui_warn_title">Обнаружена MIUI!</string>
 	<string name="miui_warn_message">Похоже, у Вас MIUI! Я рекомендую открыть настройки разработчика и отключить оптимизацию MIUI. Если этого не сделать, у Вас могут возникнуть проблемы с работой приложения, ошибки и падения. Пожалуйста, не пишите мне об ошибках программы, если Вы прочитали это сообщение и не последовали моему совету!</string>
@@ -700,6 +701,8 @@
 	<string name="ds_display_summary">Порядок отображения даты и размера у файлов</string>
     <string name="baksmali_registers">Использовать \"registers\" вместо \"locals\"</string>
 	<string name="baksmali_registers_summary">При декомпиляции до smali, использовать \"registers\" вместо \"locals\"</string>
+    <string name="old_search">Старый вид поиска</string>
+	<string name="old_search_summary">Старый вариант отображения результатов поиска в файлах</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>
