@@ -363,6 +363,14 @@
 		<item>搜索/替换历史</item>
 		<item>字典</item>
 	</string-array>
+	<string-array name="split_dex_items">
+		<item>按方法/字段的数量</item>
+		<item>分成相等的部分</item>
+	</string-array>
+    <string-array name="ds_display_items">
+		<item>日期在前</item>
+		<item>大小在前</item> 
+	</string-array>
 	<string-array name="editor_themes">
 		<item>默认</item>
 		<item>新样式</item>
