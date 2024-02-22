@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="trlangs_settings">번역 서비스 설정</string>
-	<string name="trlangs_settings_summary">온라인 번역 공급자 선택</string>
-	<string name="threads_count">스레드 개수</string>
-	<string name="threads_count_summary">다중 스레드 프로세스의 스레드 개수</string>
-	<string name="build_smali">smali 컴파일</string>
-	<string name="decode_smali">smali 디컴파일</string>
-	<string name="others">기타</string>
 	<string name="app_name">Apktool M</string>
 	<string name="click_once_more">종료하려먼 한 번 더 누르세요</string>
 	<string name="click_once_more2">창을 닫으시려먼 한 번 더 누르세요</string>
@@ -61,16 +54,32 @@
 	<string name="base64_decode">Base64 디코딩</string>
 	<string name="accessibility_info">Android 13 이상의 경우, 접근성 서비스를 사용하려면 특별한 권한을 부여해야 합니다. 이렇게 하려면 애플리케이션에 대한 시스템 정보를 열고 상단의 메뉴(점 3개)에서 권한을 부여합니다. 이 메뉴는 접근성 서비스를 클릭할 때까지 나타나지 않을 수 있습니다.</string>
 	<string name="total">총</string>
+	<string name="ignore_indent">들여쓰기 무시</string>
+	<string name="dex_decompile_info">이 옵션은 apk 루트에 있는 모든 dex 파일을 디컴파일하지만 하위 폴더의 dex 파일은 그대로 둡니다.</string>
+	<string name="dex_decompile_info2">이 옵션은 apk 루트와 하위 폴더에 있는 모든 dex 파일을 디컴파일합니다.</string>
+	<string name="redistribute_dex">dex 재배포</string>
 	<string name="dexs_info">Dex 정보</string>
 	<string name="dex_limit_info">dex의 방법/필드의 최대 수: %d</string>
 	<string name="hide">숨기기</string>
 	<string name="unsupported_android">Android 버전에서는 지원되지 않습니다!</string>
 	<string name="reset_fab">플로팅 버튼 위치를 재설정하시겠습니까?</string>
 	<string name="kill_sign">서명 확인 제거</string>
+	<string name="kill_sign_rand">임의의 클래스 이름</string>
 	<string name="kill_sign_advanced">개선된 방법</string>
 	<string name="kill_sign_orig">무결성을 확인하려면 원본 APK를 추가하세요.</string>
 	<string name="kill_sign_exists">후크가 이미 추가되었습니다.</string>
+	<string name="kill_sign_by_orig">지정한 원본에서 서명 가져오기</string>
+	<string name="kill_sign_notice">이 기능으로 처리된 앱은 Android 5 이하 버전에서는 작동하지 않습니다.</string>
+	<string name="compare_text">텍스트 비교</string>
+	<string name="diff_resources">리소스 바교 (aapt2)</string>
+	<string name="diff_resources2">\"%2$s\" 리소스를 \"%1$s\" 리소스와 비교</string>
 	<string name="dump_resources">리소스 덤프 (aapt2)</string>
+	<string name="swap">교환</string>
+	<string name="build_smali">smali 컴파일</string>
+	<string name="decode_smali">smali 디컴파일</string>
+	<string name="others">기타</string>
+	<string name="files_identical">파일이 동일 합니다.</string>
+	<string name="checksums_original">원본에서 체크섬 교체</string>
 	<string name="monochrome">단색화</string>
 	<string name="smali_help">Smali 코드 도움말</string>
 	<string name="go_back">상위 디렉터리로 돌아가기</string>
@@ -520,6 +529,12 @@
 	<string name="double_exit_summary">뒤로가기를 두번 누르면 앱을 종료합니다</string>
 	<string name="jadx_settings">JADX 설정</string>
 	<string name="jadx_settings_summary">Java 코드 미리보기 설정</string>
+	<string name="trlangs_settings">번역 서비스 설정</string>
+	<string name="trlangs_settings_summary">온라인 번역 공급자 선택</string>
+	<string name="threads_count">스레드 개수</string>
+	<string name="threads_count_summary">다중 스레드 프로세스의 스레드 개수</string>
+	<string name="disable_crashes">오류 감지 비활성화</string>
+	<string name="disable_crashes_summary">오류 발생 시 프로그램 충돌을 감지하지 않음</string>
 	<string name="key_type">키 유형:</string>
 	<string name="key_path">키 경로:</string>
 	<string name="cert_path">인증서 경로:</string>
@@ -590,6 +605,8 @@
 	<string name="mplugin_installed_summary">플러그인을 제거하려면 클릭하십시오</string>
 	<string name="mplugin_not_installed">UnApkm 플러그인이 설치되지 않았습니다</string>
 	<string name="mplugin_not_installed_summary">플러그인을 다운로드하려면 클릭하십시오</string>
+	<string name="aeplugin_installed">ApkEditor 패치 지원 플러그인 설치됨</string>
+	<string name="aeplugin_not_installed">ApkEditor 패치 지원 플러그인이 설치되지 않았습니다</string>
 	<string name="mupdate_4pda">4PDA.RU의 주제</string>
 	<string name="mupdate_4pda_summary">앱 토론 주제</string>
 	<string name="mtool_repl">도구 교체</string>
@@ -638,6 +655,14 @@
 	<string name="github_summary">GitHub의 프로그램 번역을 위한 리소스</string>
 	<string name="keep_broken">손상된 리소스 유지</string>
 	<string name="keep_broken_summary">리소스를 디컴파일할 때 오류가 발생해도 계속 디컴파일하고 싶은 경우에 사용하세요.</string>
+	<string name="editor_rem_tabs">열린 파일 기억하기</string>
+	<string name="editor_rem_tabs_summary">앱이 재시작시 편집기에서 마지막으로 열었던 파일을 엽니다</string>
+	<string name="detect_protect">응용프로그램 보호 확인</string>
+	<string name="detect_protect_summary">세부 정보 대화 상자에서 apk 파일의 보호를 확인 합니다.</string>
+	<string name="ds_display">날짜 및 크기 표시</string>
+	<string name="ds_display_summary">파일의 날짜 및 크기 표시 순서</string>
+	<string name="baksmali_registers">\"locals\" 대신 \"registers\" 사용</string>
+	<string name="baksmali_registers_summary">smali로 디컴파일할 때 \"local\" 대신 \"register\"를 사용합니다</string>
 	<string name="search_call">호출 찾기</string>
 	<string name="search_over">재정의 찾기</string>
 	<string name="search_files">파일 검색</string>
@@ -784,13 +809,4 @@
 	<string name="license_accept">동의</string>
 	<string name="license_refuse">동의 안 함</string>
 	<string name="send_log">개발자에게 로그 보내기</string>
-    <string name="trlangs_settings">번역 서비스 설정</string>
-    <string name="trlangs_settings_summary">온라인 번역 공급자 선택</string>
-    <string name="threads_count">스레드 개수</string>
-    <string name="threads_count_summary">다중 스레드 프로세스의 스레드 개수</string>
-    <string name="build_smali">smali 컴파일</string>
-    <string name="decode_smali">smali 디컴파일</string>
-    <string name="others">기타</string>
-    <string name="editor_rem_tabs">열린 파일 기억하기</string>
-    <string name="editor_rem_tabs_summary">앱이 재시작시 편집기에서 마지막으로 열었던 파일을 엽니다</string>
 </resources>
