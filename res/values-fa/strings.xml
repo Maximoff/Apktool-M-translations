@@ -31,6 +31,7 @@
 	<string name="sets_nf">هیچ مجموعه کتابخانه ای یافت نشد!</string>
 	<string name="enter_path">وارد کردن مسیر</string>
 	<string name="ultra_target_api">ءAPI هدف را تغییر ندهید</string>
+	<string name="dont_change">تغییر نده</string>
 	<string name="error_try_again">خطا، لطفاً دوباره امتحان کنید</string>
 	<string name="miui_warn_title">بهینه ساز MIUI شناسایی شد!</string>
 	<string name="miui_warn_message">به نظر می رسد شما MIUI دارید! توصیه می کنم تنظیمات توسعه دهنده را باز کنید و بهینه سازی MIUI را غیرفعال کنید. اگر این کار را انجام ندهید، ممکن است با مشکل در عملکرد برنامه، خطا و خرابی مواجه شوید. لطفاً اگر این پیام را خواندید و به توصیه های من عمل نکردید در مورد خطاهای برنامه برای من ننویسید!</string>
@@ -58,7 +59,7 @@
 	<string name="total">کل</string>
 	<string name="up">بالا</string>
 	<string name="down">پایین</string>
-	<string name="threads">Threads</string>
+	<string name="threads">رشته ها</string>
 	<string name="dex_decompile_info">این گزینه همه فایل‌های dex را که در ریشه apk هستند تجزیه می‌کند، اما فایل‌های dex را در زیر پوشه‌ها دست نخورده باقی می‌گذارد.</string>
         <string name="dex_decompile_info2">این گزینه همه فایل‌های dex موجود در apk را تجزیه می‌کند، هم آن‌هایی که در ریشه apk هستند و هم آنهایی که در زیر پوشه‌های apk قرار دارند.</string>
 	<string name="delete_orig">حذف اصلی</string>
