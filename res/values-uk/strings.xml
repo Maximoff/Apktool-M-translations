@@ -849,4 +849,7 @@
 	<string name="aeplugin_not_installed">Плагін підтримки патчів ApkEditor не встановлено</string>
 	<string name="baksmali_registers">Використовувати \"registers\" замість \"locals\"</string>
 	<string name="baksmali_registers_summary">При декомпіляції до smali, використовувати \"registers\" замість \"locals\"</string>
+	<string name="dont_change">Не змінювати</string>
+	<string name="old_search">Старий вигляд пошуку</string>
+	<string name="old_search_summary">Старий варіант показу результатів пошуку у файлах</string>
 </resources>
