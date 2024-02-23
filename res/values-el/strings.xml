@@ -29,8 +29,8 @@
 	<string name="apk_template">Πρότυπο όνομα APK</string>
 	<string name="apk_template_summary">Υπόδειγμα για αυτόματη μετονομασία αρχείων apk</string>
 	<string name="app_disabled">Απενεργοποιημένη εφαρμογή</string>
-	<string name="app_fontsz">Μέγεθος γραμ/σειράς</string>
-	<string name="app_fontsz_summary">Μέγεθος γραμ/σειράς εφαρμογής</string>
+	<string name="app_fontsz">Μέγεθος γραμματοσειράς</string>
+	<string name="app_fontsz_summary">Μέγεθος γραμματοσειράς εφαρμογής</string>
 	<string name="app_fontsz_title">Μέγεθος γραμ/σειράς:</string>
 	<string name="app_is_killed">Το σύστημα τερμάτισε τη διαδικασία της εφαρμογής στο παρασκήνιο! Προσθέστε την εφαρμογή στις εξαιρέσεις βελτιστοποίησης συστήματος! Για περισσότερες πληροφορίες, επισκεφθείτε https://dontkillmyapp.com</string>
 	<string name="app_name">Apktool M</string>
@@ -113,7 +113,7 @@
 	<string name="copy_with_ext">Αντιγραφή χωρίς επέκταση</string>
 	<string name="copy_with_ext_summary">Αντιγραφή ονόματος αρχείου χωρίς επέκταση</string>
 	<string name="copying">Αντιγραφή</string>
-	<string name="copyOriginalFiles">Ταίριασμα αρχικού</string>
+	<string name="copyOriginalFiles">Ταίριασμα Αρχικών</string>
 	<string name="copyOriginalFiles_summary">Η αρχική υπογραφή και το manifest διατηρούνται.</string>
 	<string name="country">Χώρα:</string>
 	<string name="cp_name">Αντιγραφή ονόματος</string>
@@ -137,7 +137,7 @@
 	<string name="date">Ισχύς Ημερ/νίας:</string>
 	<string name="date_format">Μορφή ημερομηνίας</string>
 	<string name="date_format_summary">Εμφάνιση μορφής ημερ/νίας</string>
-	<string name="debug_mode">Ορισμός του apk ως αποσφαλματώσιμου</string>
+	<string name="debug_mode">Ορισμός apk ως αποσφαλματώσιμου</string>
 	<string name="debug_mode_summary">Ορίζει το android:debuggable σε \"true\" στο μεταγλωττισμένο manifest του APK</string>
 	<string name="decode_run_title">Απομεταγλώττιση...</string>
 	<string name="decoding_shared_library">Απομεταγλώττιση Κοινόχρηστης Βιβλιοθήκης %1$s, pkgId: %2$d</string>
@@ -428,7 +428,7 @@
 	<string name="mtr_confirmation">Σίγουρα θέλετε να διαγράψετε \"%1$s/%2$s.xml\"?</string>
 	<string name="mtr_create">Δημιουργία</string>
 	<string name="mtr_create_dict">Δημιουργία λεξικού</string>
-	<string name="mtr_del_array">Διαγραφή πίνακα</string>
+	<string name="mtr_del_array">Διαγραφή συστοιχίας</string>
 	<string name="mtr_fix_tr">Ακριβής μετάφραση</string>
 	<string name="mtr_google">Google</string>
 	<string name="mtr_google_web">Google Web</string>
@@ -556,7 +556,7 @@
 	<string name="root_dir">Root Κατάλογος</string>
 	<string name="round_icons">Στρογγυλά εικονίδια</string>
 	<string name="round_icons_summary">Στρογγυλά εικονίδια εξερευνητή</string>
-	<string name="save">Αποθήκευση</string>
+	<string name="save">Αποθήκ.</string>
 	<string name="save_all">Αποθήκευση όλων</string>
 	<string name="save_as">Αποθήκευση ως...</string>
 	<string name="save_file">Αποθήκευση αρχείου</string>
@@ -806,7 +806,7 @@
 	<string name="type">Τύπος: %s</string>
 	<string name="diff_resources">Σύγκριση πηγών (aapt2)</string>
 	<string name="diff_resources2">Σύγκριση πηγών \"%2$s\" με \"%1$s\"</string>
-	<string name="dump_resources">Απορριψη πηγών (aapt2)</string>
+	<string name="dump_resources">Απόρριψη πηγών (aapt2)</string>
 	<string name="swap">Εναλλαγή</string>
 	<string name="dex_is_full">Πιθανότατα, έχει ξεπεραστεί ο επιτρεπόμενος αριθμός μεθόδων/πεδίων στο dex. Μετακινήστε μερικά από τα αρχεία smali σε άλλο φάκελο ή δημιουργήστε έναν νέο φάκελο, αν είναι απαραίτητο.</string>
 	<string name="build_smali">Μεταγλώττιση smali</string>
@@ -836,7 +836,7 @@
 	<string name="main_pkg">κύριο πακέτο</string>
 	<string name="styled">στυλάτη συμβολοσειρά</string>
 	<string name="app_crashed">Υπήρξε σφάλμα στην εφαρμογή! Κάντε κλικ για να δείτε το αρχείο καταγραφής</string>
-	<string name="disable_crashes">Απενεργοποίηση εντοπισμού σφαλμάτων</string>
+	<string name="disable_crashes">Απενεργ/ση εντοπισμού σφαλμάτων</string>
 	<string name="disable_crashes_summary">Χωρίς λήψη κατάρευσης του προγράμματος σε περίπτωση σφάλματος</string>
 	<string name="detect_protect">Έλεγχος προστασίας εφαρμογής</string>
 	<string name="detect_protect_summary">Προσπάθεια ανίχνευσης της προστασίας του αρχείου apk στο διάλογο λεπτομερειών</string>
@@ -863,4 +863,7 @@
 	<string name="ds_display">Ένδειξη ημ/νίας και μεγέθους</string>
 	<string name="ds_display_summary">Σειρά ένδειξης ημ/νίας και μεγέθους αρχείων</string>
 	<string name="redistribute_dex">Ανακατανομή dex</string>
+        <string name="dont_change">Χωρίς αλλαγή</string>
+        <string name="old_search">Παλαιός Τύπος Αναζήτησης</string>
+	<string name="old_search_summary">Παλιά επιλογή για εμφάνιση αποτελεσμάτων αναζήτησης στα αρχεία</string>
 </resources>
