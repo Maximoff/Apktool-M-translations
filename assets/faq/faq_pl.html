@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="pl">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Apktool M FAQ</title>
+      <style>
+         .light {
+         background-color: #ffffff;
+         }
+         .dark {
+         background-color: #303030;
+         }
+         .black {
+         background-color: #000000;
+         }
+         .light .section_title, .light .content_text, .light .answer_text {
+         color: #424242;
+         }
+         .light .content_text {
+         background: #ddebf7;
+         }
+         .light .answer_text {
+         background: #dddddd;
+         }
+         .dark .section_title, .dark .content_text, .dark .answer_text {
+         color: #bdbdbd;
+         }
+         .dark .content_text {
+         background: #081e22;
+         }
+         .dark .answer_text {
+         background: #222222;
+         }
+         .black .section_title, .black .content_text, .black .answer_text {
+         color: #ffffff;
+         }
+         .black .content_text {
+         background: #222222;
+         }
+         .black .answer_text {
+         border: 1px solid #424242;
+         background: #222222;
+         }
+         .black .question_title {
+         border: 1px solid #424242;
+         background: #424242;
+         background: #111111;
+         }
+         section {
+         margin-bottom: 20px;
+         }
+         .section_title {
+         border: none;
+         text-align: center;
+         font-size: 1.3em;
+         font-weight: bold;
+         padding: 4px;
+         margin-bottom: 10px;
+         }
+         .content_text {
+         border: 1px solid #c0c6d2;
+         border-radius: 3px;
+         padding: 6px;
+         background: #ddebf7;
+         }
+         a:active,
+         a:hover,
+         a {
+         text-decoration: none;
+         color: #2196F3;
+         }
+         .details_block {
+         margin-bottom: 10px;
+         border-radius: 3px;
+         overflow: auto;
+         }
+         .question_title {
+         border: 1px solid #2196F3;
+         padding: 6px;
+         background: #2196F3;
+         color: #ffffff;
+         }
+         .answer_text {
+         border: 1px solid #2196F3;
+         border-bottom-left-radius: 3px;
+         border-bottom-right-radius: 3px;
+         padding: 6px;
+         }
+         .warning_text {
+         color: red;
+         }
+      </style>
+   </head>
+   <body class="light">
+      <section class="section_zero">
+         <div class="section_title"> Treść </div>
+         <div class="content_text">
+            <li><a href="https://4pda.to/forum/index.php?showtopic=1002506&amp;view=findpost&amp;p=116526321"><b>Zaktualizowano często zadawane pytania na temat 4PDA (w języku rosyjskim)</b></a></li>
+            <li><a href="#section_one">Szybka edycja</a></li>
+            <li><a href="#section_two">Pełna edycja - dekompilacja i montaż</a></li>
+            <li><a href="#section_three">Tłumaczenie aplikacji</a></li>
+            <li><a href="#section_four">Funkcja zapobiegająca podziałowi</a></li>
+            <li><a href="#section_five">Tworzenie niestandardowego podpisu</a></li>
+            <li><a href="#section_six">Menedżer plików</a></li>
+            <li><a href="#section_seven">Różny</a></li>
+            <li><a href="#section_eight">MPatcher</a></li>
+         </div>
+      </section>
+      <section id="section_one">
+         <div class="section_title"> Szybka edycja </div>
+         <details class="details_block">
+            <summary class="question_title">Co to jest szybka edycja?</summary>
+            <div class="answer_text"> Jest to edycja niektórych podstawowych danych aplikacji bez konieczności dekompilacji i odbudowy. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title">Do czego służy szybka edycja?</summary>
+            <div class="answer_text">
+               <li>aby wyświetlić informacje o aplikacji (apk), jej uprawnieniach i preferowanym miejscu instalacji (nie mylić z rzeczywistym miejscem instalacji);</li>
+               <li>aby zmienić nazwę aplikacji;</li>
+               <li>zmienić nazwę pakietu aplikacji (sklonować aplikację);</li>
+               <li>aby zastąpić w aplikacjach zarówno ikony wektorowe (generowane automatycznie), adaptacyjne, jak i zwykłe ikony rastrowe;</li>
+               <li>aby ustawić preferowaną lokalizację instalacji aplikacji;</li>
+               <li>zmienić minimalną lub docelową wersję SDK;</li>
+               <li>dostosować aplikację do Android TV;</li>
+               <li>aby usunąć go z Manifestu: <code>android:isSplitRequired, android:debuggable,
+                  android:testOnly</code>. 
+               </li>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Dlaczego potrzebuję elementu „Uprawnienia”? </summary>
+            <div class="answer_text"> Aby wyświetlić uprawnienia aplikacji oraz je włączyć lub wyłączyć. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy mogę konwertować obrazy do formatu wektorowego? </summary>
+            <div class="answer_text"> Tak. <br> Obsługiwane są formaty PNG, JPEG, Webp i Svg. <br> Konwersja odbywa się przy użyciu typu <u>{old file name}type _vector.xml</u><br> Podczas konwersji można poprawić lub obniżyć jakość obrazu. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy można przekonwertować obraz svg na VectorDrawable? </summary>
+            <div class="answer_text"> Tak. <br> Dostępne w podglądzie wielokątów SVG/VectorDrawable (nieskompilowane) <br>
+               <u>Uwaga:</u> plik svg musi mieć prostą i odpowiednią strukturę, w przeciwnym razie parser może go nie przetworzyć poprawnie i będziesz musiał go znormalizować ręcznie, aby działał poprawnie. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy można konwertować obrazy bitmapowe na VectorDrawable? </summary>
+            <div class="answer_text"> Tak. <br> To nie jest panaceum. Może mieć duży błąd w śledzeniu - zależy to od złożoności geometrii obrazu źródłowego. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zastąpić ikonę aplikacji? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Przygotuj niezbędną ikonę, żelatynowo, w formacie i rozmiarze png, najlepiej nie większym niż 192x192px. </li>
+                  <li>Wybierz żądaną aplikację → Szybka edycja.</li>
+                  <li>W lewym górnym rogu widoczna jest ikona zainstalowanej aplikacji oraz jej nazwa.</li>
+                  <li>Stuknij w samą ikonę i wybierz wcześniej przygotowaną ikonę.</li>
+                  <li>W razie potrzeby zaznacz niezbędne pola ustawień: „zamień ikonę adaptacyjną” „ikona wysokiej jakości (większy rozmiar)</li>
+                  <li>Wybierz także plik podpisu, jeśli nie instalowałeś go wcześniej.</li>
+                  <li>Kliknij „Zapisz”.</li>
+               </ol>
+               Gotowy plik będzie znajdował się w tym samym folderze, obok wybranej aplikacji, z etykietą mod na końcu. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak wyodrębnić ikonę aplikacji? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wybierz żądaną aplikację → Szybka edycja.</li>
+                  <li>Długie dotknięcie ikony.</li>
+               </ol>
+               Wyodrębniona konka będzie znajdować się w tym samym folderze, obok wybranej aplikacji. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zmienić minimalną lub docelową wersję pakietu SDK? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wybierz żądaną aplikację → Szybka edycja.</li>
+                  <li>Wprowadź niezbędne zmiany w ustawieniach „Minimalna wersja SDK” lub „Docelowa wersja SDK”.</li>
+                  <li>Kliknij „Zapisz”.</li>
+               </ol>
+               Gotowy plik będzie znajdował się w tym samym folderze, obok wybranej aplikacji, z etykietą mod na końcu. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zmienić nazwę aplikacji? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wybierz żądaną aplikację → Szybka edycja.</li>
+                  <li>Następnie zmień nazwę żądanej aplikacji na wymaganą.</li>
+                  <li>Wybierz plik podpisu, jeśli nie instalowałeś go wcześniej.</li>
+                  <li>Kliknij „Zapisz”.</li>
+               </ol>
+               Gotowy plik zostanie umieszczony obok wybranej aplikacji z zaznaczonym modem na końcu. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Dlaczego nie mogę zmienić „Nazwy aplikacji”? (Element jest nieaktywny.) </summary>
+            <div class="answer_text"> Prawdopodobnie dlatego, że minimalna wersja SDK aplikacji jest wyższa niż wersja systemu. W tych warunkach edycja jest ograniczona. <br> Najpierw musisz obniżyć minimalną wersję pakietu SDK, a następnie edytować wszystko inne. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zmienić nazwę pakietu aplikacji? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wybierz żądaną aplikację → „Szybka edycja”.</li>
+                  <li>Następnie zmień nazwę pakietu.</li>
+                  <li>Wybierz plik podpisu, jeśli nie instalowałeś go wcześniej.</li>
+                  <li>Kliknij „Zapisz”.</li>
+               </ol>
+               Gotowy plik zostanie umieszczony obok wybranej aplikacji z zaznaczonym modem na końcu. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zrobić klon apk w tej aplikacji? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wybierz żądaną aplikację → „Szybka edycja”.</li>
+                  <li>Następnie zmień nazwę pakietu, na przykład dodając lub usuwając ostatnie litery w nazwie.</li>
+                  <li>Wybierz plik podpisu, jeśli nie instalowałeś go wcześniej.</li>
+                  <li>Kliknij „Zapisz”.</li>
+               </ol>
+               Gotowy plik zostanie umieszczony obok wybranej aplikacji z zaznaczonym modem na końcu. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak sklonować aplikację podczas szybkiej edycji? </summary>
+            <div class="answer_text"> Program podczas szybkiej edycji zmienia następujące parametry: AndroidManifest.xml i Resources.arsc. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak dostosować aplikację do Android TV? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wybierz żądaną aplikację → „Szybka edycja”.</li>
+                  <li>Następnie zaznacz pole „Dostosuj do Android TV”.</li>
+                  <li>Wybierz plik podpisu, jeśli nie instalowałeś go wcześniej.</li>
+                  <li>Kliknij „Zapisz”.</li>
+               </ol>
+               Gotowy plik zostanie umieszczony obok wybranej aplikacji z zaznaczonym modem na końcu. Ikona aplikacji służy jako baner. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Co powinienem zrobić, jeśli aplikacja nie instaluje się po szybkiej edycji? </summary>
+            <div class="answer_text"> Sprawdź, czy właśnie nie podpisałeś paczki? <br> W trybie szybkiej edycji wybierz podpis. Domyślnie wybierz opcję „nie podpisuj”, jeśli wcześniej nie korzystałeś z podpisu. </div>
+         </details>
+      </section>
+      <section id="section_two">
+         <div class="section_title"> Pełna edycja - dekompilacja i montaż </div>
+         <details class="details_block">
+            <summary class="question_title"> Co to jest dekompilacja i do czego służy? </summary>
+            <div class="answer_text">
+               decompile arsc+dex-tłumaczy kod binarny na format czytelny dla człowieka. Wymagane do edycji zasobów aplikacji (resources.arsc) i asemblera Smali (kod). A także dla funkcji wymagających tej dekompilacji - dostępu do informacji, stosowania poprawek, tłumaczenia... 
+               <p><em>Rekompilacja wymaga obecności plików binarnych aapt. Żądanie instalacji pojawia się przy pierwszym uruchomieniu aplikacji. Jeśli tego nie zrobiłeś, pobieranie odbywa się w „Ustawieniach” Kompiluj i dekompiluj „Zamień narzędzia” Pobierz dla ... ”</em></p>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zdekompilować aplikację? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wybierz wymaganą aplikację.</li>
+                  <li>Kliknij to.</li>
+                  <li>Otworzy się wyskakujące menu.</li>
+                  <li>Wybierz „Dekompiluj”.</li>
+                  <li>Zaznaczamy elementy, które wymagają dekompilacji:</li>
+                  <ul>
+                     <li>„Dekompiluj zasoby”</li>
+                     <li>„Dekompilujclasses.dex” lub „Dekompiluj wszystkie pliki*.dex”. <br>
+                        <em>(Pozycja „all *.dex” odpowiada za indeksy w zagnieżdżonych folderach: np. w aktywach, mthook itp.)</em>
+                     </li>
+                     <li>A także, jeśli to konieczne, „Dekompilacja dodatkowych zasobów” z wyborem miejsca dekompilacji.</li>
+                  </ul>
+               </ol>
+               Po pomyślnej dekompilacji pojawi się powiadomienie dźwiękowe i dialogowe, jeśli zostało to wcześniej włączone w Ustawieniach. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak ponownie skompilować aplikację? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wewnątrz projektu kliknij etykietę „Utwórz projekt” nad oknem eksploratora.</li>
+                  <li>W oknie kompilacji wybierz narzędzie do kompilacji zasobów - aapt lub aapt2.</li>
+                  <li>Jeśli to konieczne, możesz także określić automatyczne podpisywanie.</li>
+               </ol>
+               Dziennik jest wyświetlany w czasie rzeczywistym. Możesz śledzić etapy, komentarze i błędy podczas procesu kompilacji. <br> Po zakończeniu dziennik zostanie zatrzymany (będzie to widoczne). <br> Po pomyślnej kompilacji pojawi się powiadomienie dźwiękowe i dialogowe, jeśli zostało to wcześniej włączone w Ustawieniach. <br> Na dole zostaniesz również poproszony o natychmiastowe zainstalowanie zbudowanej aplikacji. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Gdzie jest zapisywana aplikacja po zbudowaniu? </summary>
+            <div class="answer_text"> Do folderu ze zdemontowaną aplikacją. W katalogu głównym projektu (obok apktool.json) </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy można dekompilować wiele plików jednocześnie? </summary>
+            <div class="answer_text">
+               Tak, ale lepiej jest dekompilować kilka z rzędu, ponieważ jeśli będziesz dekompilować jednocześnie, możesz nie mieć wystarczającej ilości pamięci.<br><br>
+               <details class="details_block">
+                  <summary class="question_title"> Jak to zrobić? </summary>
+                  <div class="answer_text"> Wybierz kilka plików i naciśnij długo, aby otworzyć menu. <br>
+                     <u>Uwaga! </u> Działa to w przypadku plików tego samego typu. Jeśli wybrane zostanie coś innego niż apk, menu nie będzie zawierało żadnych pozycji. 
+                  </div>
+               </details>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zmienić folder, w którym będą zapisywane aplikacje? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Ustawienia → „Kompiluj i dekompiluj” → „Ustaw katalog wyjściowy zainstalowanych aplikacji” </li>
+                  <li>Przejdź do żądanego folderu, dotknij wiersza „ścieżka” - ustaw katalog wyjściowy.</li>
+                  <li>Możesz także ustawić folder wyjściowy bezpośrednio w menedżerze plików.</li>
+               </ol>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Co to jest pozycja „Katalog wyjściowy zainstalowanych aplikacji”? </summary>
+            <div class="answer_text"> Jest to katalog, do którego będą eksportowane/wyodrębniane pliki APK do dalszej pracy z menu Aplikacje. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zastąpić zasoby w pliku „.apk”? </summary>
+            <div class="answer_text"> Najpierw musisz zdekompilować, a następnie skopiować/wkleić pliki i zbudować. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Co powinienem zrobić, jeśli aplikacja nie chce się zbudować, chociaż wszystko zostało wykonane bez błędów lub w ogóle nic nie zmieniłem w apce, tylko ją przekompilowałem? </summary>
+            <div class="answer_text"> Zmień wersję aapt. <br>Wyświetl dziennik poziomu zdarzenia Ostrzeżenie. <br>Generalnie spójrz na logi – tam należy wskazać przyczynę. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jaka jest kompatybilność z projektami Apktool? </summary>
+            <div class="answer_text"> Apktool M pozwala budować projekty, które są analizowane za pomocą zwykłego Apktool. <br> Przed budowaniem Apktool M konwertuje plik .yml do formatu .json. <br> Informacje o procesie można śledzić za pomocą dziennika. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy Apktool M może współpracować z aplikacjami systemowymi? </summary>
+            <div class="answer_text">
+               Tak to mozliwe.<br><br>
+               <details class="details_block">
+                  <summary class="question_title"> Jak to zrobić? </summary>
+                  <div class="answer_text">
+                     Przed rozpoczęciem pracy z takimi apkami należy zaimportować struktury apk za pomocą elementu w menu kontekstowym tej apki. Import odbywa się na wszystkich takich aplikacjach. 
+                     <p>Ścieżka podstawowa: /system/framework/..</p>
+                     Mogą być również zlokalizowane w /system/vendor/framework itp. w sąsiednich katalogach. Jeśli te katalogi istnieją (rzadkie zjawisko). <br><br> Przykład frameworków:<br>
+                     <img width="100%" alt="" align="center" class="image" src="data:image/webp;base64,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" />
+                     <p>Następnie zdekompiluj i skompiluj jako zwykłą apkę. Aby zapisać oryginalny META-INF i manifest – włącz opcję „Dopasuj do oryginału” w ustawieniach dekompilacji.</p>
+                  </div>
+               </details>
+            </div>
+         </details>
+         <details class="details_block open">
+            <summary class="question_title"> Wyjaśnienie punktów w sekcji „Kompilacja i dekompilacja”. </summary>
+            <div class="answer_text">
+               <details class="details_block">
+                  <summary class="question_title"> Folder wyjściowy </summary>
+                  <div class="answer_text"> Ścieżka, do której zainstalowane aplikacje zostaną wyeksportowane/wyodrębnione z zakładki „Aplikacje”. </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Użyj aapt2 </summary>
+                  <div class="answer_text"> Dodaje drugą wersję narzędzia do elementu wyboru wersji aapt przed budowaniem. </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Debugowanie informacji </summary>
+                  <div class="answer_text">
+                     <p>Podczas budowania dane debugowania są przechowywane w plikach Smali, takich jak <code>.line, .param</code>itd.</p>
+                     <u>Uwaga:</u><br> te dane są wymagane wyłącznie do debugowania aplikacji w trybie debugowania. A także do wąsko ukierunkowanego debugowania awarii Smali w Logcat (rzadkie zjawisko, może pomóc jako kotwica w linii powodującej awarię). Nie wpływają one na wykonanie kodu. Dane te mogą być również pomocne podczas edycji asemblera Smali jako punktów odniesienia i tym podobnych (dla modelarzy). 
+                  </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Tryb debugowania </summary>
+                  <div class="answer_text">
+                     Zapisuje <code>
+                     &lt;application /&gt;
+                     </code>wartość atrybutu w manifeście w tagu <code>android:debuggable</code>do <code>true</code>. Powiadamia system, że jest to aplikacja do debugowania. Umożliwia rozszerzenie dostępu do logowania tej aplikacji. Interakcja z funkcjonalnością tej funkcji jest możliwa tylko przy pomocy specjalnych narzędzi (takich jak Android Studio, a także debugowanie na poziomie ADB itp.). Ta opcja nie dotyczy Logcat - liczba wpisów debugowania w logu systemowym nie ulegnie zmianie w przypadku zmiany tego parametru. 
+                     <p>Aby określić taką aplikację jako bieżącą do debugowania, wybierz ją w „Ustawieniach systemu” Dla programistów „Aplikacja debugowania” (ścieżki mogą się różnić).</p>
+                  </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Pełny </summary>
+                  <div class="answer_text"> Podczas kompilacji wyświetla ostateczny stan każdego z plików w dzienniku po jego skompilowaniu. Nie włączaj tej funkcji, jeśli nie musisz. </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Pasujące do oryginału </summary>
+                  <div class="answer_text">
+                     Umożliwia zapisanie oryginalnego META-INF i skrótu manifestu, respektując oryginalne skróty zasobów. <br> Ten tryb pozwala na edycję tylko Smali – jeśli spróbujesz zbudować edytowany plik w res/..., zostanie on usunięty w ostatecznej wersji apk, ponieważ nie pasuje do oryginalnego skrótu (zmodyfikowanego). 
+                     <p>
+                        <span class="warning_text"><em>To pytanie wymaga wyjaśnienia.</em></span>
+                     </p>
+                  </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Analiza wszystkich Smalisedit </summary>
+                  <div class="answer_text"> Przyspiesza analizę plików w Smali. </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Dodaj „APKTOOL_DUMMY” </summary>
+                  <div class="answer_text">
+                     <p>Domyślnie identyfikatory zasobów w pliku Resources.arsc są ustawione w postępie arytmetycznym. W niektórych przypadkach może być uszkodzony – niektóre miejsca wewnątrz typów wartości mogą nie zostać wypełnione (są wolne).</p>
+                     <p>Te miejsca są ustawiane ze stubu APKTOOL_DUMMY, aby przywrócić integralność progresji. Linie te nie są przez nikogo używane i nie mają na nic wpływu.</p>
+                     <u>Mała uwaga:</u><br>
+                     <p>Jeśli usuniesz obiekt zasobu z res/values/public.xml, to podczas kompilacji będzie on próbował znaleźć takie wolne miejsce i ustawić w nim swój identyfikator. W przypadku braku wolnych miejsc, zostanie ono dodane na końcu listy pozycji w danej kategorii. Nie zaleca się tego robić w przypadku identyfikatorów obiektów określonych w Smali – spowoduje to awarię, ponieważ zasób określony przez identyfikator został przeniesiony (jako taki już nie istnieje).</p>
+                     <p>Usunięcie go public.xml zmusi Apktool do stworzenia progresji od zera – wtedy APKTOOL_DUMMY nie zostanie nigdzie zainstalowany, ponieważ pomiędzy ID początkowym i końcowym nie ma wolnych spacji.</p>
+                     <p>O potrzebie APKTOOL_DUMMY decyduje wyłącznie użytkownik. Może to być również wymagane, jeśli zdekompilowany projekt ma specyfikację. strukturę pomiędzy identyfikatorami (w szczególności ze względu na niestandardowe atrybuty i/lub zaciemnianie).</p>
+                  </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Sformatuj HTML </summary>
+                  <div class="answer_text"> Zawartość wszystkich plików .html i. htm (?) zostanie sformatowany zgodnie ze składnią XML. Może to zakłócić wyświetlanie wyjściowej strony HTML. Jest instalowany tylko w razie potrzeby. </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Usuń folder „build”. </summary>
+                  <div class="answer_text">
+                     <p>Podczas kompilacji pliki DEX i ARSC są buforowane w folderze kompilacji. Jeśli nie zmieniłeś zasobów po poprzedniej kompilacji i ponownie zbudowałeś apk. arsc nie zostanie utworzony ponownie, ale zostanie pobrany z instancji buforowanej, ponieważ jego skrót jest identyczny (nie jest modyfikowany). Dotyczy to również Smali (pliki DEX). Przyspiesza proces tworzenia aplikacji, pomijając ponowną kompilację.</p>
+                     <p>Usunięcie folderu wiąże się jedynie ze zwolnieniem miejsca. Następnie podczas następnej kompilacji. dex i. arsc zostanie utworzony „od zera”, a folder zostanie utworzony od nowa. Aktywacja tej opcji umożliwia automatyczne usunięcie folderu po pomyślnej kompilacji. Aktywuj go, jeśli chcesz.</p>
+                  </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Wszystko do katalogu wyjściowego </summary>
+                  <div class="answer_text"> Wszystkie pomyślnie skompilowane aplikacje zostaną automatycznie przeniesione do powyższego katalogu wyjściowego. </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Zarządzanie frameworkami </summary>
+                  <div class="answer_text"> Umożliwia zarządzanie ramkami importowanymi z zewnątrz. Przycisk reset czyści listę i same pliki lokalnie, a także przywraca środowisko res. apk (ID 1) z Apktool M. </div>
+               </details>
+            </div>
+         </details>
+      </section>
+      <section id="section_three">
+         <div class="section_title"> Tłumaczenie aplikacji </div>
+         <details class="details_block">
+            <summary class="question_title"> Ile języków jest obsługiwanych w tłumaczeniu? </summary>
+            <div class="answer_text"> Ponad 100 języków. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jakie opcje są dostępne w Yandex. Tłumaczyć? </summary>
+            <div class="answer_text">
+               <li>Automatyczne tłumaczenie wybranych ciągów w zasobach (stringi, tablice, liczba mnoga) i small,;</li>
+               <li>Ręczne tłumaczenie zasobów (stringi, tablice, liczba mnoga) i small;</li>
+               <li>Korekta tłumaczenia;</li>
+               <li>Tłumaczenie online z wyborem kilku usług tłumaczeniowych;</li>
+               <li>Tłumaczenie offline;</li>
+               <li>Obsługa słownika;</li>
+               <li>Tworzenie własnych słowników na podstawie istniejącego tłumaczenia;</li>
+               <li>Wsparcie dla słowników MT Managera;</li>
+               <li>Łączenie języków.</li>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Ile usług tłumaczeniowych online jest dostępnych w aplikacji? </summary>
+            <div class="answer_text"> Trzy: Yandex, Google, Bing. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Nie mogę znaleźć funkcji tłumaczenia aplikacji. Jak włączyć Yandex. Przetłumaczyć i przetłumaczyć aplikację (strings.xml) na język rosyjski? </summary>
+            <div class="answer_text">
+               Ta funkcja jest dostępna tylko wtedy, gdy aplikacja jest zdekompilowana. 
+               <ol>
+                  <li>Dekompiluj zasoby żądanej aplikacji.</li>
+                  <li>Przejdź do folderu z zdekompilowanymi plikami.</li>
+                  <li>Otwórz menu menedżera plików (otwiera się po kliknięciu paska adresu) i wybierz „Tłumacz”.</li>
+               </ol>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak automatycznie przetłumaczyć aplikację? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Dekompiluj zasoby żądanej aplikacji.</li>
+                  <li>Przejdź do folderu z zdekompilowanymi plikami.</li>
+                  <li>Otwórz menu menedżera plików (otwiera się po kliknięciu paska adresu) i wybierz element „Tłumacz”, następnie kliknij trzy kropki w prawym górnym rogu i wybierz element „Automatyczne tłumaczenie”.</li>
+                  <li>W menu, które zostanie otwarte, wybierz żądaną usługę tłumaczeniową, na przykład Yandex.</li>
+                  <li>W pozycji „Język źródłowy” możesz pozostawić automatyczny wybór języka docelowego „Określ język” – wybierz żądany. Domyślnie sugerowany jest język zainstalowany w systemie.</li>
+                  <li>Na dole zaznacz niezbędne pola „Połącz, jeśli istnieje” lub „Zapisz tylko przetłumaczone ciągi znaków”</li>
+                  <li>Wybierz niezbędne linie i wybierz je.</li>
+                  <li>Kliknij „Tłumacz”, aby przetłumaczyć ciągi znaków w formacie res/values/strings.</li>
+                  <li>Po zakończeniu transferu kliknij ponownie trzy kropki w prawym górnym rogu i wybierz „Zapisz” </li>
+                  <li>Tworzymy nasz projekt (aplikację).</li>
+               </ol>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak automatycznie przetłumaczyć aplikację na mały? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Zdekompiluj żądaną aplikację.</li>
+                  <li>Przejdź do folderu z zdekompilowanymi plikami.</li>
+                  <li>Otwórz menu menedżera plików (otwiera się po kliknięciu paska adresu) i wybierz „małe tłumaczenie”, następnie kliknij trzy kropki w prawym górnym rogu i wybierz „Automatyczne tłumaczenie”.</li>
+                  <li>W menu, które zostanie otwarte, wybierz żądaną usługę tłumaczeniową, na przykład Yandex.</li>
+                  <li>W pozycji „Język źródłowy” możesz pozostawić automatyczny wybór języka docelowego „Określ język” – wybierz żądany. Domyślnie sugerowany jest język zainstalowany w systemie.</li>
+                  <li>Wybierz niezbędne linie i wybierz je.</li>
+                  <li>Na dole zaznacz niezbędne pola „Połącz, jeśli istnieje” lub „Zapisz tylko przetłumaczone ciągi znaków”</li>
+                  <li>Kliknij „Przetłumacz”</li>
+                  <li>Po zakończeniu transferu kliknij ponownie trzy kropki w prawym górnym rogu i wybierz „Zapisz”. </li>
+                  <li>Tworzymy nasz projekt (aplikację).</li>
+               </ol>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> W „Tłumaczeniu automatycznym” dostępna jest funkcja „poprawne tłumaczenie”. Do czego jest to używane? </summary>
+            <div class="answer_text"> Aby pominąć wiersze, których nie musisz tłumaczyć: <code>true, false, %1$d/%2$d</code>, teraz zawiera także grafikę wektorową, odniesienia itp., a także poprawia niektóre wiersze po automatycznym tłumaczeniu. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak ręcznie przetłumaczyć aplikację? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Zdekompiluj żądaną aplikację.</li>
+                  <li>Przejdź do folderu z zdekompilowanymi plikami.</li>
+                  <li>Otwórz menu menedżera plików (otwiera się po kliknięciu paska adresu), wybierz „małe tłumaczenie” i ręcznie edytuj niezbędne linie.</li>
+                  <li>W prawym górnym rogu kliknij trzy kropki i wybierz „Zapisz”</li>
+                  <li>Tworzymy nasz projekt (aplikację).</li>
+               </ol>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak mogę łączyć języki, jeśli domyślne ciągi przetłumaczonej aplikacji nie zawierają niezbędnych, ale inne tak? </summary>
+            <div class="answer_text"> Po niezbędnym tłumaczeniu aplikacji przejdź do menu tłumacza, wybierz „dodaj, dodaj z” i dodaj brakujące linie z innej lokalizacji. Oczywiście następnie je tłumaczymy, jeśli zajdzie taka potrzeba. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jaki format słownika jest obsługiwany w Apktool M? </summary>
+            <div class="answer_text"> *. am i *. mtd </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak stworzyć własny słownik z przetłumaczonego pliku? </summary>
+            <div class="answer_text"> Otwórz Yandexa. Przetłumacz, wybierz z menu opcję „Utwórz słownik”, wybierz źródło (nieprzetłumaczone ciągi znaków) i zasób docelowy (plik tłumaczenia) w folderze projektu i zapisz go. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak korzystać z zapisanego słownika? </summary>
+            <div class="answer_text"> Przy następnym dokonaniu przelewu pojawi się on w wyborze usługi tłumaczeniowej. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Gdzie mogę zdobyć gotowy słownik do tłumaczenia offline? </summary>
+            <div class="answer_text"> W <a href="https://4pda.to/forum/index.php?showtopic=548542&amp;view=findpost&amp;p=29447386&amp;anchor=Spoil-29447386-6">temacie MT Manager</a><br> Skopiuj go do "Katalogu wyjściowego/słownika" (domyślnie jest to "Apktool_M/słownik" w pamięci wewnętrznej), lub po prostu zaimportuj go klikając na plik słownika w programie i dodaj go. <br> Następnie słownik pojawi się w Yandex. Tłumacz, w usługach automatycznego tłumaczenia. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Po przeniesieniu projekt nie jest odbierany. Zwraca błąd. </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Usuń nieprawidłowe wiersze, które są zwykle określone w dzienniku błędów kompilacji.</li>
+                  <li>Aby zbudować, użyj aapt1, jeśli nie jest wbudowany w aapt2 i nie ma błędów dotyczących nieprawidłowych ciągów tłumaczeniowych.</li>
+                  <li>Aplikacja może być chroniona podpisem.</li>
+               </ol>
+            </div>
+         </details>
+      </section>
+      <section id="section_four">
+         <div class="section_title"> Funkcja zapobiegająca podziałowi </div>
+         <details class="details_block">
+            <summary class="question_title"> Co to jest antypodział? </summary>
+            <div class="answer_text"> Polega to na połączeniu pakietu aplikacji na Androida (podzieleniu) w jeden plik instalacyjny oraz zainstalowaniu i rozpakowaniu takich plików. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zbudować apkę z podziałów? Gdzie znajduje się ta opcja? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>W menu kontekstowym „Antysplit”. Wywoływane po krótkim dotknięciu apks/xapk.</li>
+                  <li>W menu kontekstowym „Antysplit”. Wywoływane przez dotknięcie grupy wstępnie wybranych/wybranych aplikacji.</li>
+               </ol>
+               Następnie wybierz niezbędne narzędzie do kompilacji: aapt2 lub aapt, jeśli aplikacja nie została zbudowana jako pierwsza. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy mogę zbudować apkę z zainstalowanego podziału? </summary>
+            <div class="answer_text"> Tak. <br> Wybieramy zainstalowaną aplikację na liście aplikacji i długim dotknięciem wywołujemy element „Antisplit”. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Gdzie znajduje się zebrany plik? </summary>
+            <div class="answer_text"> Apk znajduje się w domyślnym folderze roboczym: internal_memory/Apktool_M. <br>
+               <small><i>Na koniec kompilacji pojawi się przycisk „Zainstaluj”, ale jeśli przytrzymasz go przez dłuższy czas, otworzy się folder z plikiem.</i></small>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Instrukcje krok po kroku dotyczące konwersji plików Apks na Apki za pomocą Apktool M. </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Wybierz żądany plik (Apki) i kliknij go.</li>
+                  <li>Następnie z wyświetlonego menu wybierz opcję „Antisplit”.</li>
+                  <li>Następnie ponownie kliknij przycisk „Antisplit” (najpierw upewnij się, że wszystkie pliki, czyli wszystkie checkboxy zostały włączone).</li>
+                  <li>Następnie wybierz żądane narzędzie (aapt2 lub aapt, jeśli aplikacja nie jest skompilowana) i kliknij przycisk „Wybierz”.</li>
+                  <li>Poczekaj na zakończenie całego procesu.</li>
+               </ol>
+               Teraz Twoje Apki zamieniły się w Apk i możesz z nimi pracować jak ze zwykłym plikiem Apk. 
+            </div>
+         </details>
+      </section>
+      <section id="section_five">
+         <div class="section_title"> Tworzenie niestandardowego podpisu </div>
+         <details class="details_block">
+            <summary class="question_title"> Jak utworzyć swój podpis? </summary>
+            <div class="answer_text">
+               <p>Przejdź do „Ustawienia” → „Podpis”, wybierz „Utwórz klucz”.</p>
+               <li><small><i>W ustawieniach podpisu możesz ustawić nazwę plików RSA/SF, a także nazwę twórcy podpisu V1</i></small></li>
+               <br> W menu, które zostanie otwarte, wypełnij następujące wiersze: 
+               <p><u>Algorytm podpisu:</u><br> Różnica w długości skrótu certyfikatu (po podpisaniu apk). SHA256 z RSA jest optymalne. Domyślnie zostawiamy to. MD5 jest uważane za niepewne. Szczegółowe różnice można znaleźć w Internecie.</p>
+               <p><u>Typ:</u><br> Określa typ magazynu. Domyślnie JKS (może być również znany jako .keystore). Szczegółowe różnice można znaleźć w Internecie.</p>
+               <p><u>Ścieżka do klucza:</u><br> Wyjściowa lokalizacja przechowywania klucza. Nazwa pliku jest wprowadzana automatycznie i możesz ją na końcu zmienić, jeśli chcesz.</p>
+               <p><u>Alias:</u><br> Alias klucza. Określane podczas importu/operacji.</p>
+               <p><u>Hasło do przechowywania i klucza:</u><br> Hasło chroniące pamięć i sam klucz przed jego importem/użyciem. Dla wygody możesz uczynić je identycznymi.</p>
+               <p><u>Rozmiar klucza:</u><br> Określa liczbę bitów (długość) podpisu klucza do odczytania. Wartość domyślna to 2048. Zwiększanie rozmiaru zwiększa jego siłę kryptograficzną, ale jest trudniejszy do analizy (wolniejszy). Zestaw przy użyciu informacyjnego postępu geometrycznego (2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096 itd.)</p>
+               <p><u>Okres ważności:</u><br> Czas od daty utworzenia, kiedy wygasa autentyczność klucza. Określone w latach.</p>
+               <p><u>Aby poinformować Cię o właścicielu podpisu, wymagane są następujące informacje. Podaj według potrzeb:</u><br> imię i nazwisko, stanowisko, organizacja, miasto, region/stan, kraj.</p>
+               <p>Przycisk „Zapisz” kończy tworzenie i umieszcza magazyn kluczy we wcześniej określonej ścieżce.</p>
+               <p>Przycisk „Utwórz i użyj” dodatkowo importuje plik końcowy w miejsce podpisu użytkownika.</p>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy można przekonwertować repozytoria jks/keystore na pk8+x509.pem? </summary>
+            <div class="answer_text"> Tak to mozliwe. </div>
+         </details>
+      </section>
+      <section id="section_six">
+         <div class="section_title"> Menedżer plików </div>
+         <details class="details_block">
+            <summary class="question_title"> Czy Apktool ma pełnoprawnego menedżera plików? </summary>
+            <div class="answer_text"> Tak. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak uzyskać dostęp do menu menedżera plików? </summary>
+            <div class="answer_text"> Menu otwiera się po kliknięciu paska adresu. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jakie ma funkcje? </summary>
+            <div class="answer_text">
+               <li>usuwanie plików;</li>
+               <li>kopiowanie go;</li>
+               <li>zmiana nazwy, w tym zmiana nazwy wsadowej;</li>
+               <li>tworzenie listy plików;</li>
+               <li>archiwizacja;</li>
+               <li>właściwości plików i folderów;</li>
+               <li>pełne wyszukiwanie;</li>
+               <li>zakładki;</li>
+               <li>historia ostatnio otwieranych plików;</li>
+               <li>okno dialogowe właściwości pliku apk/apks to osobny temat;</li>
+               <li>podgląd wektorowych plików xml/svg, a także konwersja obrazów do wektora;</li>
+               <li>podgląd czcionek ttf/otf;</li>
+               <li>operacje wsadowe z wybranymi aplikacjami lub obrazami poprzez długie naciśnięcie;</li>
+               <li>w folderach projektu we właściwościach plików zasobów znajduje się ich identyfikator z public.xml (jeśli istnieje).</li>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak otworzyć menu kontekstowe podczas przeglądania plików? </summary>
+            <div class="answer_text"> Długo dotknij samego pliku. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jakie pozycje są dostępne w menu kontekstowym? </summary>
+            <div class="answer_text">
+               <li>Wyślij plik(i)...</li>
+               <li>Otwórz w...</li>
+               <li>Usunąć.</li>
+               <li>Zmień nazwę.</li>
+               <li>Ściskać.</li>
+               <li>Wypakuj tutaj.</li>
+               <li>Wyodrębnij do „Nazwy pliku”</li>
+               <li>Zobacz zawartość.</li>
+               <li>Cechy.</li>
+               <li>Kopiuj.</li>
+               <li>Cięcie.</li>
+               <li>MPatcher.</li>
+               <li>Wybierać.</li>
+               <li>Zaznacz wszystko.</li>
+               <li>Skopiuj nazwę.</li>
+               <li>Skopiuj ścieżkę.</li>
+               <li>Dodaj do zakładek.</li>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak wybrać plik/folder? </summary>
+            <div class="answer_text">
+               <ol>
+                  <li>Naciśnij długo sam plik/folder lub ikonę.</li>
+                  <li>Po wybraniu pliku/folderu poprzez długie kliknięcie na ikonę, można długo kliknąć na ikonę innego pliku, wybrać pliki „od i do”.</li>
+                  <li>Możesz także szybko wybrać wszystko, naciskając długo ikonę „wstecz” (..)</li>
+               </ol>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zmienić nazwy plików? </summary>
+            <div class="answer_text"> Długie kliknięcie pliku powoduje wyświetlenie okna dialogowego zmiany nazwy. <br> W tym samym oknie dialogowym, klikając długo „auto”, możesz zmienić jego nazwę na tryb automatyczny za pomocą szablonów. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak mogę edytować plik za pomocą zewnętrznego edytora bezpośrednio z aplikacji? </summary>
+            <div class="answer_text"> Długie naciśnięcie pliku → w wyskakującym menu kontekstowym wybierz „Otwórz w”... </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak utworzyć archiwum plików? </summary>
+            <div class="answer_text"> Z menu kontekstowego wybierz „Kompresuj”. Archiwizując pliki, możesz dodać je do istniejącego archiwum. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy mogę usunąć lub zastąpić pliki/foldery w archiwach (w tym pliki APK) bez ich demontażu/asemblowania? </summary>
+            <div class="answer_text">
+               Tak.<br>
+               <ol>
+                  <li>Naciśnij długo archiwum/.apk i wybierz „Wyświetl zawartość” z wyskakującego menu.</li>
+                  <li>Użyj długiego dotknięcia, aby wybrać, co chcesz usunąć lub wyodrębnić.</li>
+               </ol>
+               Po niezbędnych manipulacjach plik zostanie automatycznie ponownie złożony i podpisany. <br> Oryginalny plik jest zapisywany z rozszerzeniem .bak. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak mogę zastąpić plik lub folder już edytowanym w zdemontowanym pliku APK? </summary>
+            <div class="answer_text">
+               Naciśnij długo żądany plik i wybierz „Wyodrębnij tutaj” z menu kontekstowego... <br> Jeśli chcesz na przykład zastąpić obraz w folderze do rysowania, musisz dodać folder res z zamiennikiem do apk, który zawiera folder do rysowania, który z kolei zawiera obraz.<br>
+               <p>
+                  <span class="warning_text">Innymi słowy, ważne jest zachowanie struktury katalogów!</span>
+               </p>
+               Po wykonaniu niezbędnych działań zarchiwizujemy plik z rozszerzeniem apk z powrotem. <br> Podpisujemy to. 
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy Apktool M ma pełnoprawną wyszukiwarkę? </summary>
+            <div class="answer_text"> Tak. <br> Dostępne jest zarówno wyszukiwanie plików, nazwy plików, wyszukiwanie tekstowe w plikach, jak i zainstalowane aplikacje. <br> Ręczne wprowadzenie adresu jest wyzwalane przez długie naciśnięcie adresu. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy aplikacja umożliwia wyszukiwanie wyrażeń regularnych? </summary>
+            <div class="answer_text"> Tak. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zacząć korzystać z wyszukiwania? </summary>
+            <div class="answer_text"> Otwórz menu menedżera plików, klikając adres. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Nie znalazłem wyszukiwania folderów. Tylko w pliku. </summary>
+            <div class="answer_text"> Nie musisz trzymać samego folderu, ale przejdź do samego folderu, w którym będzie wyszukiwanie, następnie kliknij „strzałkę lub ścieżkę do folderu/pliku” i pojawi się menu wyszukiwania. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy wszystkie wyniki wyszukiwania są zapisywane i jak je znaleźć? </summary>
+            <div class="answer_text"> Tak. Historia wyszukiwania zostanie zapisana. <br> Pozycja pojawia się w menu Eksploratora (kliknij na adres u góry) lub po długim naciśnięciu ikony wyszukiwania w dolnym panelu, jeśli jest tam włączona. <br> Możesz także wyszukiwać w samych wynikach wyszukiwania. <br> Jeśli niczego nie szukałeś, oznacza to, że brakuje tego elementu. </div>
+         </details>
+      </section>
+      <section id="section_seven">
+         <div class="section_title"> Różny </div>
+         <details class="details_block">
+            <summary class="question_title"> Czy Apktool ma funkcję klonowania? </summary>
+            <div class="answer_text"> Tak. <br> Wymaga to pełnej dekompilacji aplikacji. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak inaczej mogę sklonować aplikację? </summary>
+            <div class="answer_text"> Użyj łatki w programie MPatcher. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak mogę usunąć niepotrzebne języki z aplikacji, z wyjątkiem ru, eng? </summary>
+            <div class="answer_text"> W menu kontekstowym wybierz element „ Optymalizuj (aapt2). <br> W ustawieniach tego elementu zaznacz pole „Ustaw konfigurację” i określ język, który musisz opuścić, w tym przypadku jest to „ru, ru-rRU” . </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak usunąć wszystkie języki z wyjątkiem rosyjskiego, ukraińskiego i angielskiego? </summary>
+            <div class="answer_text"> Podobnie do usuwania wszystkich języków z wyjątkiem rosyjskiego i angielskiego. <br> W pozycji „Ustaw konfigurację” określ języki, które chcesz pozostawić, na przykład „ru, ru-rRU, uk, ru-rUA, uk-rRU”. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak mogę wyświetlić listę zainstalowanych aplikacji? </summary>
+            <div class="answer_text"> W prawym górnym rogu - zakładka „Aplikacje”. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak edytować cały Manifest w aplikacji? </summary>
+            <div class="answer_text"> Cały manifest jest edytowany podczas dekompilacji zasobów. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy jest wbudowany konwerter wartości? </summary>
+            <div class="answer_text">
+               <p>Tak.</p>
+               <details class="details_block">
+                  <summary class="question_title"> Jak się tam dostanę? </summary>
+                  <div class="answer_text"> Ekran główny → Trzy godziny w prawym górnym rogu → Konwerter. </div>
+               </details>
+               <details class="details_block">
+                  <summary class="question_title"> Jakie wartości są obsługiwane? </summary>
+                  <div class="answer_text">
+                     <li>Tekst ↔ SHA-384</li>
+                     <li>Tekst ↔ SHA-224</li>
+                     <li>Tekst ↔ SHA-256</li>
+                     <li>Tekst ↔ SHA-512</li>
+                     <li>Tekst tekstu SHA-1</li>
+                     <li>Tekst ↔ MD5</li>
+                     <li>Tekst ↔ kodowanie URL</li>
+                     <li>Tekst ↔ Unicode</li>
+                     <li>↔ Tekst Base64</li>
+                     <li>Tekst ↔ Tablica (US-ASCII)</li>
+                     <li>Tekst ↔ Tablica (UTF-16LE)</li>
+                     <li>Tekst ↔ Tablica (UTF-16BE)</li>
+                     <li>Tekst ↔ Tablica (UTF-8)</li>
+                     <li>Tekst ↔ Tablica (CP1251)</li>
+                     <li>Tekst ↔ Tablica (ISO-8859-1)</li>
+                     <li>Dziesiętny ↔ ósemkowy</li>
+                     <li>Dziesiętny ↔ Binarny</li>
+                     <li>↔ Mały kolor</li>
+                     <li>Dziesiętny ↔ Szesnastkowy (0x0)</li>
+                     <li>Dziesiętny ↔ Szesnastkowy (0x00000000)</li>
+                     <li>Dziesiętny ↔ Szesnastkowy</li>
+                     <li>Pływakowy ↔ Binarny</li>
+                     <li>Pływający ↔ ósemkowy</li>
+                     <li>Pływak ↔ Heks</li>
+                     <li>Pływak ↔ Hex (0x0)</li>
+                     <li>Pływak ↔ Szesnastkowy (0x00000000)</li>
+                     <p><u>Proszę zanotować!</u></p>
+                     Wszystkie szyfry, które są kompatybilne wstecz, można konwertować z powrotem. Odbywa się to w dolnym oknie wejściowym. 
+                  </div>
+               </details>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak zaktualizować Apktool M? </summary>
+            <div class="answer_text"> Ekran główny → Trzy godziny w prawym górnym rogu → „Ustawienia” → „Aktualizacja programu” włącz opcję „Sprawdź dostępność aktualizacji”. <br> Poniżej możesz wybrać pozycję „Częstotliwość sprawdzania aktualizacji”. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak pobrać aktualizację? </summary>
+            <div class="answer_text"> Z samego Apktool M lub pobierz przez przeglądarkę. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Gdzie jest zapisany plik aktualizacji? </summary>
+            <div class="answer_text"> Do pamięci wewnętrznej w folderze „Pobierz”. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy mogę wyłączyć sprawdzanie aktualizacji? </summary>
+            <div class="answer_text">
+               Tak, możesz. 
+               <p>Ekran główny → Trzy godziny w prawym górnym rogu → „Ustawienia” → „Informacje o aplikacji” → „Wyłącz sprawdzanie aktualizacji”.</p>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak mogę przywrócić dane z kopii zapasowej? Mój element przywracania jest nieaktywny... </summary>
+            <div class="answer_text"> Aby odzyskać, musisz najpierw zapisać swoje konto. <br> Plik kopii zapasowej musi znajdować się w ścieżce: „/internal_memory/Apktool_M.backup”, jeżeli go nie ma, element jest nieaktywny. </div>
+         </details>
+      </section>
+      <section id="section_eight">
+         <div class="section_title"> MPatcher </div>
+         <details class="details_block">
+            <summary class="question_title"> Co to jest MPatcher? </summary>
+            <div class="answer_text"> Jest to aplikacja do uruchamiania, tworzenia, importowania, eksportowania skryptów i poprawek napisanych w Shell, zintegrowana z Apktool M. </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Czy na forum jest osobny temat? </summary>
+            <div class="answer_text"> Tak: <a href="https://4pda.to/forum/index.php?showtopic=1018077">MPatcher</a>
+            </div>
+         </details>
+         <details class="details_block">
+            <summary class="question_title"> Jak wywołać MPatchera? </summary>
+            <div class="answer_text">
+               Naciśnij długo plik i wybierz „MPatcher” z menu kontekstowego, które się otworzy. <br> Spowoduje to określenie docelowej aplikacji. 
+               <p>Aby wybrać docelowy projekt - powyżej „Buduj” znajduje się menu rozwijane, znajduje się tam pozycja MPatcher.</p>
+            </div>
+         </details>
+      </section>
+      <script type="text/javascript">(function(){window.location.search.substring(1).split("&").forEach(function(a){a=a.split("=");"theme"==a[0]&&document.body.setAttribute("class",a[1])});})();</script>
+   </body>
+</html>
