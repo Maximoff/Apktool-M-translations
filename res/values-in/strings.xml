@@ -295,7 +295,7 @@
 	<string name="verify">Verifikasi tanda tangan</string>
 	<string name="translate">Terjemahkan</string>
 	<string name="import_framework">Impor sebagai kerangka kerja</string>
-	<string name="sign">Masuk</string>
+	<string name="sign">Tanda tangani</string>
 	<string name="rename">Ganti nama</string>
 	<string name="delete">Hapus</string>
 	<string name="send">Kirim</string>
