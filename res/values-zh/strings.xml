@@ -860,4 +860,7 @@
 	<string name="patcher_patch">补丁</string>
 	<string name="patcher_patchf">补丁：“%s”</string>
 	<string name="patcher_apk">APK：“%s”</string>
+	<string name="dont_change">不更改</string>
+	<string name="old_search">旧版搜索类型</string>
+	<string name="old_search_summary">用于在文件中显示搜索结果的旧版选项</string>
 </resources>
