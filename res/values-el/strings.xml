@@ -866,4 +866,7 @@
         <string name="dont_change">Χωρίς αλλαγή</string>
         <string name="old_search">Παλαιός Τύπος Αναζήτησης</string>
 	<string name="old_search_summary">Παλιά επιλογή για εμφάνιση αποτελεσμάτων αναζήτησης στα αρχεία</string>
+        <string name="select_rows">Επιλογή σειρών</string>
+        <string name="start">Αρχή</string>
+        <string name="end">Τέλος</string>
 </resources>
