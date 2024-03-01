@@ -863,4 +863,7 @@
 	<string name="dont_change">不更改</string>
 	<string name="old_search">旧版搜索类型</string>
 	<string name="old_search_summary">用于在文件中显示搜索结果的旧版选项</string>
+	<string name="select_rows">选择行</string>
+	<string name="start">开始</string>
+	<string name="end">结束</string>
 </resources>
