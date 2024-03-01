@@ -852,4 +852,7 @@
 	<string name="dont_change">Не змінювати</string>
 	<string name="old_search">Старий вигляд пошуку</string>
 	<string name="old_search_summary">Старий варіант показу результатів пошуку у файлах</string>
+	<string name="select_rows">Вибрати рядки</string>
+	<string name="start">Початок</string>
+	<string name="end">Кінець</string>
 </resources>
