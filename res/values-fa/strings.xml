@@ -60,6 +60,9 @@
 	<string name="up">بالا</string>
 	<string name="down">پایین</string>
 	<string name="threads">رشته ها</string>
+	<string name="select_rows">انتخاب ردیف ها</string>
+        <string name="start">ابتدا</string>
+        <string name="end">انتها</string>
 	<string name="dex_decompile_info">این گزینه همه فایل‌های dex را که در ریشه apk هستند تجزیه می‌کند، اما فایل‌های dex را در زیر پوشه‌ها دست نخورده باقی می‌گذارد.</string>
         <string name="dex_decompile_info2">این گزینه همه فایل‌های dex موجود در apk را تجزیه می‌کند، هم آن‌هایی که در ریشه apk هستند و هم آنهایی که در زیر پوشه‌های apk قرار دارند.</string>
 	<string name="delete_orig">حذف اصلی</string>
@@ -595,7 +598,7 @@
 	<string name="gen_key_title">ایجاد فایل کلید</string>
 	<string name="gen_key_summary">برای ایجاد فایل کلید ضربه بزیند.</string>
 	<string name="analysis_all_smali">تجزیه و تحلیل کل smali</string>
-	<string name="analysis_all_smali_summary">تجزیه و تحلیل همه فایل های smali هنگام راه اندازی و تنظیم پروژه اصلی.</string>
+	<string name="analysis_all_smali_summary">تجزیه و تحلیل همه فایل های smali هنگام راه اندازی و تنظیم پروژه اصلی</string>
 	<string name="create_and_use">ایجاد و استفاده</string>
 	<string name="please_update_your_android">لطفا سیستم اندروید خود را به نسخه ۴.۳ یا بالاتر به روز کنید!</string>
 	<string name="mselect">انتخاب</string>
