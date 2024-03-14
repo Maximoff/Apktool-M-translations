@@ -311,6 +311,8 @@
 	<string name="success_of">Успешно %1$d из %2$d!</string>
 	<string name="copy">Копировать</string>
 	<string name="cut">Вырезать</string>
+    <string name="copy_tt">Копировать в другую вкладку</string>
+	<string name="move_tt">Переместить в другую вкладку</string>
 	<string name="copying">Копирование</string>
 	<string name="moving">Перемещение</string>
 	<string name="moving_file">Перемещение \"%s\"...</string>
@@ -622,6 +624,7 @@
 	<string name="mcleaning_manifest">Очистка \"AndroidManifest.xml\"</string>
 	<string name="mextract_zip">Извлечь сюда</string>
 	<string name="mextract_zip_to">Извлечь в \"%s\"</string>
+    <string name="mextract_zip_to2">Извлечь в другую вкладку</string>
 	<string name="mplease_wait">Пожалуйста, подождите...</string>
 	<string name="split">Сплит</string>
 	<string name="mcompress">Сжать</string>

@@ -323,6 +323,8 @@
 	<string name="success_of">Successful %1$d out of %2$d!</string>
 	<string name="copy">Copy</string>
 	<string name="cut">Cut</string>
+    <string name="copy_tt">Copy to another tab</string>
+	<string name="move_tt">Move to another tab</string>
 	<string name="copying">Copying</string>
 	<string name="moving">Moving</string>
 	<string name="moving_file">Moving \"%s\"...</string>
@@ -635,6 +637,7 @@
 	<string name="mcleaning_manifest">Cleaning \"AndroidManifest.xml\"</string>
 	<string name="mextract_zip">Extract here</string>
 	<string name="mextract_zip_to">Extract to \"%s\"</string>
+    <string name="mextract_zip_to2">Extract to another tab</string>
 	<string name="mplease_wait">Please wait...</string>
 	<string name="split">Split</string>
 	<string name="mcompress">Compress</string>
