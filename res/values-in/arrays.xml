@@ -361,6 +361,10 @@
 		<item>berdasarkan jumlah methods/fields</item>
 		<item>ke dalam bagian yang sama</item>
 	</string-array>
+	<string-array name="ds_display_items">
+		<item>Tanggal dulu</item>
+		<item>Ukuran dulu</item>
+	</string-array>
 	<string-array name="editor_themes">
 		<item>Default</item>
 		<item>Baru</item>
