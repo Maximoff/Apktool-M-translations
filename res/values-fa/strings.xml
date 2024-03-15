@@ -306,6 +306,8 @@
 	<string name="success_of">%1$d از %2$d موفقیت آمیز بود!</string>
 	<string name="copy">کپی</string>
 	<string name="cut">برش</string>
+	<string name="copy_tt">کپی در زبانه دیگری</string>
+	<string name="move_tt">انتقال به زبانه دیگری</string>
 	<string name="copying">در حال کپی</string>
 	<string name="moving">در حال انتقال</string>
 	<string name="moving_file">در حال انتقال \"%s\"...</string>
@@ -618,6 +620,7 @@
 	<string name="mcleaning_manifest">در حال پاک کردن \"AndroidManifest.xml\"</string>
 	<string name="mextract_zip">استخراج در اینجا</string>
 	<string name="mextract_zip_to">استخراج به \"%s\"</string>
+	<string name="mextract_zip_to2">استخراج به زبانه دیگری</string>
 	<string name="mplease_wait">لطفاً صبر کنید...</string>
 	<string name="split">تقسیم</string>
 	<string name="mcompress">فشرده کردن</string>
