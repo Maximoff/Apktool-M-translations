@@ -579,8 +579,6 @@
 	<string name="build_notification_summary">Dërgoni njoftim pas përfundimit të ndërtimit dhe dekompilimit</string>
 	<string name="ongoing_notification">Njoftimi në punë</string>
 	<string name="ongoing_notification_summary">Shfaq njoftimin gjatë ndërtimit dhe dekompilimit</string>
-	<string name="format_html">Formatoni HTML</string>
-	<string name="format_html_summary">Formatoni HTML në vargje gjatë dekompilimit. Mund të çojë në probleme.</string>
 	<string name="add_dummy">Shto \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Shtoni burimet që mungojnë gjatë dekompilimit</string>
 	<string name="apk_template">Shablloni i emrit APK</string>

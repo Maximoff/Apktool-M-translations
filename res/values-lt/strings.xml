@@ -399,8 +399,6 @@
 	<string name="mtool_repl_summary">Aapt, aapt2 pakeitimas</string>
 	<string name="build_notification">Pranešimai</string>
 	<string name="build_notification_summary">Siųskite pranešimą užbaigus programos surinkimą ar dekompiliavimą </string>
-	<string name="format_html">Formatuoti HTML</string>
-	<string name="format_html_summary">Formatuoti HTML į eilutes dekompiliuojant. Gali būti klaidų.</string>
 	<string name="add_dummy">Pridėti \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Pridėti trūkstamų resources kai dekompiliuojama</string>
 	<string name="apk_template">APK pavadinimo šablonas</string>

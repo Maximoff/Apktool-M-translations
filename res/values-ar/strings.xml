@@ -406,8 +406,6 @@
 	<string name="mtool_repl_summary">استبدال aapt, aapt2</string>
 	<string name="build_notification">الإشعارات</string>
 	<string name="build_notification_summary">إرسال إعلام عند اكتمال البناء والتحلل</string>
-	<string name="format_html">تنسيق HTML</string>
-	<string name="format_html_summary">تنسيق HTML في سلاسل عند فك التحويل البرمجي. يمكن أن يؤدي إلى مشاكل.</string>
 	<string name="add_dummy">أضف \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">إضافة الموارد المفقودة عند إلغاء الضغط</string>
 	<string name="apk_template">نموذج اسم APK</string>

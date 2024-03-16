@@ -431,8 +431,6 @@
 	<string name="build_notification_summary">Trimite notificare la completarea compilării</string>
 	<string name="ongoing_notification">Notification at work</string>
 	<string name="ongoing_notification_summary">Arată notificare în timpul compilării</string>
-	<string name="format_html">Formatare HTML</string>
-	<string name="format_html_summary">Formatare HTML în string-uri la decompilare.  Poate genera probleme.</string>
 	<string name="add_dummy">Add \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Adaugă resursele lipsă la decompilare</string>
 	<string name="apk_template">Șablon nume APK</string>

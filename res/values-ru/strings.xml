@@ -661,8 +661,6 @@
 	<string name="build_notification_summary">Отправлять уведомление по окончанию сборки и декомпиляции</string>
 	<string name="ongoing_notification">Уведомление при работе</string>
 	<string name="ongoing_notification_summary">Отображать уведомление во время сборки и декомпиляции</string>
-	<string name="format_html">Форматировать HTML</string>
-	<string name="format_html_summary">Форматировать HTML в строках при декомпиляции. Может привести к проблемам.</string>
 	<string name="add_dummy">Добавлять \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Добавлять отсутствующие ресурсы при декомпиляции</string>
 	<string name="apk_template">Шаблон имени APK</string>

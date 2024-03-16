@@ -402,8 +402,6 @@
 	<string name="force_exit">סגור לחלוטין</string>
 	<string name="force_exit_summary">סגור את היישום לחלוטין ביציאה</string>
 	<string name="format">יישור קוד</string>
-	<string name="format_html">עיצוב HTML</string>
-	<string name="format_html_summary">עיצוב HTML במחרוזות בעת פירוק. יכול להוביל לבעיות.</string>
 	<string name="from_unicode">מ- Unicode</string>
 	<string name="gen_key_summary">גע כדי ליצור קובץ מפתח.</string>
 	<string name="gen_key_title">יצירת קובץ מפתח</string>

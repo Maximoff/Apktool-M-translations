@@ -674,8 +674,6 @@
 	<string name="build_notification_summary">Send notification upon completion of build and decompilation</string>
 	<string name="ongoing_notification">Notification at work</string>
 	<string name="ongoing_notification_summary">Display notification during build and decompilation</string>
-	<string name="format_html">Format HTML</string>
-	<string name="format_html_summary">Format HTML in strings when decompiling.  Can lead to problems.</string>
 	<string name="add_dummy">Add \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Add missing resources when decompiling</string>
 	<string name="apk_template">APK name template</string>

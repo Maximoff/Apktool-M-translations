@@ -666,8 +666,6 @@
 	<string name="build_notification_summary">Kirim pemberitahuan setelah selesai membuild dan mendekompilasi</string>
 	<string name="ongoing_notification">Pemberitahuan di tempat kerja</string>
 	<string name="ongoing_notification_summary">Tampilkan pemberitahuan selama pembuatan dan dekompilasi</string>
-	<string name="format_html">Format HTML</string>
-	<string name="format_html_summary">Memformat HTML dalam bentuk string saat mendekompilasi.  Dapat menyebabkan masalah.</string>
 	<string name="add_dummy">Tambahkan \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Tambahkan sumber yang hilang saat mendekompilasi</string>
 	<string name="apk_template">Template nama APK</string>

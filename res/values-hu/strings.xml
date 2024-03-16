@@ -557,8 +557,6 @@
 	<string name="build_notification_summary">Értesítés küldése az összeállítás és a visszafejtés befejezését követően</string>
 	<string name="ongoing_notification">Értesítés munka közben</string>
 	<string name="ongoing_notification_summary">Értesítés megjelenítése az összeállítás és visszafejtés során</string>
-	<string name="format_html">HTML formázása</string>
-	<string name="format_html_summary">Html formázása a karakterláncokban visszafejtés során. Problémákhoz vezethet.</string>
 	<string name="add_dummy">\"APKTOOL_DUMMY\" hozzáadása</string>
 	<string name="add_dummy_summary">Hiányzó forráskészletek hozzáadása visszafejtéskor</string>
 	<string name="apk_template">APK név sablon</string>

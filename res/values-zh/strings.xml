@@ -414,8 +414,6 @@
 	<string name="mtool_repl_summary">更换 aapt/aapt2</string>
 	<string name="build_notification">通知</string>
 	<string name="build_notification_summary">构建和反编译完成后发送通知</string>
-	<string name="format_html">格式化HTML</string>
-	<string name="format_html_summary">反编译时将HTML格式化为字符串。可能导致问题。</string>
 	<string name="add_dummy">添加“APKTOOL_DUMMY”</string>
 	<string name="add_dummy_summary">反编译时添加缺少的资源</string>
 	<string name="apk_template">APK名称模板</string>

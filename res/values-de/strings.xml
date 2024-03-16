@@ -159,8 +159,6 @@
 	<string name="font_size_summary">Gebe die Standardschriftgröße des Editors an.</string>
 	<string name="font_size_title">Editor Schriftgrösse:</string>
 	<string name="format">Code ausrichten</string>
-	<string name="format_html">Format HTML</string>
-	<string name="format_html_summary">Formatieren Sie HTML in Strings beim Dekompilieren. Kann zu Problemen führen.</string>
 	<string name="from_unicode">Von Unicode</string>
 	<string name="gen_key_summary">Berühren um eine Schlüsseldatei zu erstellen.</string>
 	<string name="gen_key_title">Erstelle eine Schlüsseldatei</string>

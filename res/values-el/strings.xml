@@ -260,8 +260,6 @@
 	<string name="force_exit">Πλήρες Κλείσιμο</string>
 	<string name="force_exit_summary">Κλείστε εντελώς την εφαρμογή κατά την έξοδο</string>
 	<string name="format">Στοίχιση κώδικα</string>
-	<string name="format_html">Μορφοποίηση HTML</string>
-	<string name="format_html_summary">Μορφοποίηση HTML σε συμβολοσειρές κατά την Απομεταγλώττιση. Μπορεί να οδηγήσει σε προβλήματα.</string>
 	<string name="from_unicode">Από Unicode</string>
 	<string name="gen_key_summary">Αγγίξτε για να δημιουργήσετε ένα αρχείο κλειδιού.</string>
 	<string name="gen_key_title">Δημιουργία αρχείου κλειδιού</string>

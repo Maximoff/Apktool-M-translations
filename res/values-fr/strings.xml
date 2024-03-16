@@ -593,8 +593,6 @@
 	<string name="build_notification_summary">Envoyer une notification à la fin de la construction et de la décompilation</string>
 	<string name="ongoing_notification">Notification au travail</string>
 	<string name="ongoing_notification_summary">Afficher une notification pendant la construction et la décompilation</string>
-	<string name="format_html">Formater HTML</string>
-	<string name="format_html_summary">Formatez le HTML en chaînes lors de la décompilation. Peut entraîner des problèmes.</string>
 	<string name="add_dummy">Ajoutez \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Ajouter les ressources manquantes lors de la décompilation</string>
 	<string name="apk_template">Modèle de nom APK</string>

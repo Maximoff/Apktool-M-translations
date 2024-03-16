@@ -657,8 +657,6 @@
 	<string name="build_notification_summary">پس از اتمام ساخت و تجزیه یک اعلان نمایش داده می شود</string>
 	<string name="ongoing_notification">نمایش اعلان در حال کار</string>
 	<string name="ongoing_notification_summary">در هنگام ساخت و تجزیه یک اعلان نمایش داده می شود</string>
-	<string name="format_html">قالب بندی HTML</string>
-	<string name="format_html_summary">هنگام تجزیه HTML را در رشته ها قالب بندی میکند. می تواند منجر به مشکلات شود.</string>
 	<string name="add_dummy">افزودن \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">اضافه کردن منابع از دست رفته هنگام تجزیه</string>
 	<string name="apk_template">قالب نام APK</string>

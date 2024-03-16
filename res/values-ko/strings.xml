@@ -615,8 +615,6 @@
 	<string name="build_notification_summary">빌드 및 디컴파일 완료 시 알림을 보냅니다</string>
 	<string name="ongoing_notification">작업시 알림</string>
 	<string name="ongoing_notification_summary">빌드 및 디컴파일 중 알림 표시</string>
-	<string name="format_html">HTML 형식</string>
-	<string name="format_html_summary">디컴파일 할 때 문자열의 HTML 형식. 문제를 일으킬 수 있습니다.</string>
 	<string name="add_dummy">\"APKTOOL_DUMMY\" 추가</string>
 	<string name="add_dummy_summary">압축을 풀 때 누락된 리소스 추가</string>
 	<string name="apk_template">APK 이름 템플릿</string>

@@ -620,8 +620,6 @@
 	<string name="build_notification_summary">Gửi thông báo khi hoàn thành quá trình xây dựng và dịch ngược</string>
 	<string name="ongoing_notification">Thông báo tại nơi làm việc</string>
 	<string name="ongoing_notification_summary">Hiển thị thông báo trong quá trình xây dựng và dịch ngược</string>
-	<string name="format_html">Định dạng HTML</string>
-	<string name="format_html_summary">Định dạng HTML dưới dạng chuỗi khi dịch ngược. Có thể dẫn đến các vấn đề.</string>
 	<string name="add_dummy">Thêm \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Thêm tài nguyên còn thiếu khi dịch ngược</string>
 	<string name="apk_template">Mẫu tên APK</string>

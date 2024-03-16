@@ -405,8 +405,6 @@
 	<string name="mtool_repl_summary">Sostituzione di aapt, aapt2</string>
 	<string name="build_notification">Notifiche</string>
 	<string name="build_notification_summary">Invia notifica al completamento della compilazione e della decompilazione</string>
-	<string name="format_html">Formato HTML</string>
-	<string name="format_html_summary">Formatta HTML in stringhe durante la decompilazione. Può portare a problemi.</string>
 	<string name="add_dummy">Aggiungi \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Aggiungi risorse mancanti durante la decompilazione</string>
 	<string name="apk_template">Modello per il nome APK</string>

@@ -599,8 +599,6 @@
 	<string name="build_notification_summary">Muestra una notificación cuando se complete la compilación y la descompilación</string>
 	<string name="ongoing_notification">Notificación en procesos</string>
 	<string name="ongoing_notification_summary">Muestra una notificación en tiempo de compilación y descompilación</string>
-	<string name="format_html">Formatear HTML</string>
-	<string name="format_html_summary">Formato HTML a las cadenas al descompilar. Esto puede causar problemas.</string>
 	<string name="add_dummy">Añadir \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Agregar recursos que falten al descompilar</string>
 	<string name="apk_template">Plantilla de nombre APK</string>

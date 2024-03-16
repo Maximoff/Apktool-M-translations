@@ -382,8 +382,6 @@
 	<string name="mtool_repl_summary">aapt, aapt2 dosyalarını değiştirin.</string>
 	<string name="build_notification">Bildirimler</string>
 	<string name="build_notification_summary">Derleme ve derleme tamamlandıktan sonra bildirim gönder</string>
-	<string name="format_html">HTML formatı</string>
-	<string name="format_html_summary">Derlemeyi açarken HTML\'yi dizelerde biçimlendirin. Sorunlara yol açabilir.</string>
 	<string name="add_dummy">\"APKTOOL_DUMMY\" ekle</string>
 	<string name="add_dummy_summary">Derlemeyi açarken eksik kaynakları ekleyin.</string>
 	<string name="apk_template">APK adı şablonu</string>

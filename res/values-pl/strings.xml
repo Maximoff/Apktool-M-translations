@@ -328,8 +328,6 @@
 	<string name="force_exit">Zamknij całkowicie</string>
 	<string name="force_exit_summary">Całkowicie zamknij aplikację przy wyjściu</string>
 	<string name="format">Dopasuj kod</string>
-	<string name="format_html">Format HTML</string>
-	<string name="format_html_summary">Formatuj HTML w ciągach znaków podczas dekompilacji. Może prowadzić do problemów.</string>
 	<string name="from_unicode">Z Unicode</string>
 	<string name="gen_key_summary">Dotknij, aby utworzyć plik klucza.</string>
 	<string name="gen_key_title">Utwórz plik klucza</string>
