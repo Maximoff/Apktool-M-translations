@@ -392,7 +392,7 @@
 	<string name="no_open">هیچ فایلی باز نیست!</string>
 	<string name="copy_success">کپی شد!</string>
 	<string name="deletion">حذف %s</string>
-	<string name="extract">استخراج</string>
+	<string name="extract">استخراج apk</string>
 	<string name="extraction">استخراج: %s</string>
 	<string name="error">خطا</string>
 	<string name="errorf">خطا: %s</string>
@@ -432,7 +432,7 @@
 	<string name="custom_signature_file_summary">استفاده از فایل امضای سفارشی</string>
 	<string name="signature_file">فایل امضا</string>
 	<string name="sel_signature_file">یک فایل امضا را انتخاب کنید</string>
-	<string name="signature_file_summary">فایل تنظیمات (فایل pk8 یا فایل keystore). اگر یک فایل pk8 باشد، به طور خودکار یک فایل x509.pem با همین نام تولید می کند (به عنوان مثال، testkey.pk8 مربوط به testkey.x509.pem است).</string>
+	<string name="signature_file_summary">فایل تنظیمات (فایل pk8 یا فایل keystore). اگر یک فایل pk8 باشد، به طور خودکار یک فایل x509.pem با همین نام تولید می کند (به عنوان مثال، testkey.pk8 مربوط به testkey.x509.pem است)</string>
 	<string name="signature_file_missing">فایل امضا \'%1$s\' یافت نشد، با استفاده از امضای پیشفرض!</string>
 	<string name="signature_pass_not_set">هیچ رمز عبوری برای keystore تنظیم نشده است، از امضای پیش فرض استفاده شده است!</string>
 	<string name="load_signature_file_fail">فایل امضای \'%1$s\' بارگذاری نشد.</string>
@@ -598,7 +598,7 @@
 	<string name="state_name">نام ایالت:</string>
 	<string name="country">کشور:</string>
 	<string name="gen_key_title">ایجاد فایل کلید</string>
-	<string name="gen_key_summary">برای ایجاد فایل کلید ضربه بزیند.</string>
+	<string name="gen_key_summary">برای ایجاد فایل کلید ضربه بزنید</string>
 	<string name="analysis_all_smali">تجزیه و تحلیل کل smali</string>
 	<string name="analysis_all_smali_summary">تجزیه و تحلیل همه فایل های smali هنگام راه اندازی و تنظیم پروژه اصلی</string>
 	<string name="create_and_use">ایجاد و استفاده</string>
@@ -694,7 +694,7 @@
 	<string name="github">فایل هایی برای ترجمه</string>
 	<string name="github_summary">منابعی برای ترجمه برنامه در GitHub</string>
 	<string name="keep_broken">حفظ منابع شکسته</string>
-	<string name="keep_broken_summary">اگر هنگام تجزیه منابع خطایی وجود داشت، اما باز هم میخواهید آنها را حتی با وجود خطاها، تجزیه کنید. این گزینه را روشن کنید.</string>
+	<string name="keep_broken_summary">اگر هنگام تجزیه منابع خطایی وجود داشت، اما باز هم میخواهید آنها را حتی با وجود خطاها، تجزیه کنید. این گزینه را روشن کنید</string>
 	<string name="editor_rem_tabs">به خاطر سپردن فایل های باز</string>
 	<string name="editor_rem_tabs_summary">زمانی که برنامه شروع به کار کرد، آخرین فایل های باز شده را در ویرایشگر باز میکند</string>
 	<string name="detect_protect">بررسی حفاظت برنامه</string>
@@ -776,7 +776,7 @@
 	<string name="moptimize_info">نام فایل ها یا الگوهای نام فایلی که نمی خواهید فشرده شوند را مشخص کنید. هر نام یا الگو را در یک خط جدید وارد کنید. از عبارات منظم استفاده نکنید.</string>
 	<string name="mshow_more_options">بیشتر</string>
 	<string name="mtranslator">مترجم</string>
-	<string name="gplay">گوگل پلی</string>
+	<string name="gplay">مشاهده برنامه در فروشگاه گوگل پلی</string>
 	<string name="moriginal">اصلی</string>
 	<string name="mtranslation">ترجمه</string>
 	<string name="madd">افزودن</string>
