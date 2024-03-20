@@ -864,4 +864,7 @@
 	<string name="select_rows">选择行</string>
 	<string name="start">开始</string>
 	<string name="end">结束</string>
+	<string name="copy_tt">复制到其他标签</string>
+	<string name="move_tt">移动到其他标签</string>
+	<string name="mextract_zip_to2">解压到其他标签</string>
 </resources>
