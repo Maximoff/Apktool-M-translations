@@ -49,7 +49,7 @@
 	<string name="auto_save">Αυτόματη αποθήκευση</string>
 	<string name="auto_save_summary">Αυτόματη αποθήκευση κειμένου στον επεξεργαστή</string>
 	<string name="auto_save_title">Αυτόματη αποθήκευση:</string>
-	<string name="background">Φόντο</string>
+	<string name="background">Παρασκήνιο</string>
 	<string name="backup">Αντίγραφο</string>
 	<string name="base64">Base64: %s</string>
 	<string name="base64_sign">Base64 υπογραφής: %s</string>
@@ -84,7 +84,7 @@
 	<string name="checksum_format">Προβολή ελέγχου αθροισμάτων</string>
 	<string name="checksum_format_summary">Προβολή μορφής ελέγχου αθροίσματος</string>
 	<string name="clear_history">Εκκαθαριση ιστορικου αναζητησης?</string>
-	<string name="clear_preview">Καθαρισμός cache μικρ/φιών</string>
+	<string name="clear_preview">Καθαρ. cache μικρ/φιών</string>
 	<string name="clear_preview_summary">Το διάστημα για τον καθαρισμό παλιών μικρογραφιών είναι σε ημέρες</string>
 	<string name="click_once_more">Ξαναπατήστε πίσω για Έξοδο!</string>
 	<string name="close_all">Κλείσιμο όλων</string>
@@ -95,7 +95,7 @@
 	<string name="colors_editor">Επεξεργαστής χρωμάτων</string>
 	<string name="common_name">Κοινή ονομασία:</string>
 	<string name="compare_sign">Σύγκριση της υπογραφής</string>
-	<string name="compile_project">Μεταγλώττιση αυτού του έργου</string>
+	<string name="compile_project">Μεταγλώττιση της εργασίας</string>
 	<string name="complete">Ολοκλήρωση</string>
 	<string name="completed_error">Η λειτουργία ολοκληρώθηκε με λάθη!</string>
 	<string name="completed_success">Η λειτουργία ολοκληρώθηκε με επιτυχία!</string>
@@ -125,7 +125,7 @@
 	<string name="created_cert_name">Υπογραφή με όνομα δημιουργού</string>
 	<string name="created_cert_name_summary">Υπογραφή με όνομα δημιουργού σε αρχείο SF</string>
 	<string name="crowdin">Crowdin</string>
-	<string name="crowdin_summary">Βοηθήστε στη μετάφραση του Apktool M στη γλώσσα σας</string>
+	<string name="crowdin_summary">Βοηθήστε τη μετάφραση του Apktool M στη γλώσσα σας</string>
 	<string name="custom_signature_file">Προσαρμοσμένο αρχείο υπογραφής</string>
 	<string name="custom_signature_file_summary">Χρήση προσαρμοσμένου αρχείου υπογραφής</string>
 	<string name="custom_size">Το μέγεθός σας</string>
@@ -148,7 +148,7 @@
 	<string name="decompile_res">Απομεταγλ. πόρων</string>
 	<string name="default_key">Προεπιλεγμένο κλειδί</string>
 	<string name="default_key_summary">Προεπιλεγμένο κλειδί υπογραφής</string>
-	<string name="default_signature_file">Προεπιλεγμένη υπογραφή</string>
+	<string name="default_signature_file">Προεπιλεγμένη</string>
 	<string name="delete">Διαγραφή</string>
 	<string name="delete_build">Διαγραφή του φακέλου \"Kατασκευή\".</string>
 	<string name="delete_build_summary">Διαγραφή του φακέλου \"Kατασκευή\" μετά τη Μεταγλώττιση</string>
@@ -191,7 +191,7 @@
 	<string name="editor_state">Γραμμή κατάστασης</string>
 	<string name="editor_state_str">L:%1$d[%2$d], C:%3$d[%4$d], %5$s</string>
 	<string name="editor_state_str2">L:%1$d[%2$d], C:%3$d[%4$d], S:%5$d[%6$d-%7$d], %8$s</string>
-	<string name="editor_state_summary">Γραμμή με την κατάσταση και κωδικοποίηση του δρομέα</string>
+	<string name="editor_state_summary">Γραμμή με την κατάσταση δρομέα και κωδικοποίηση</string>
 	<string name="editor_summary">Διαμόρφωση του επεξεργαστή.</string>
 	<string name="editor_wordwrap">Αναδίπλωση λέξεων</string>
 	<string name="editor_wordwrap_summary">Αναδίπλωση λέξεων στον επεξεργαστή</string>
@@ -457,7 +457,7 @@
 	<string name="mtranslation">Μετάφραση</string>
 	<string name="mtranslator">Μεταφράστης</string>
 	<string name="mupdate_4pda">Θέμα στο 4PDA.RU</string>
-	<string name="mupdate_4pda_summary">Θέμα συζήτησης εφαρμογής</string>
+	<string name="mupdate_4pda_summary">Νήμα συζήτησης εφαρμογής</string>
 	<string name="mupdate_down">Λήψη</string>
 	<string name="mupdate_error">Σφάλμα κατά τον έλεγχο για ενημερώσεις! Προσπαθήστε αργοτερα!</string>
 	<string name="mupdate_get">Ενημέρωση τώρα</string>
@@ -566,13 +566,13 @@
 	<string name="scoped_storage_msg">Το Android 11 εισάγει έναν νέο τρόπο διαχείρισης αρχείων που ονομάζεται \"Scoped Storage\". Πρέπει να χορηγήσετε ειδική άδεια!</string>
 	<string name="scoped_storage_title">Αλλαγές στο Android 11</string>
 	<string name="screen_on">Χωρίς απενεργοποίηση Οθόνης</string>
-	<string name="screen_on_summary">Παραμονή οθόνης πάντα αναμμένη</string>
+	<string name="screen_on_summary">Παραμονή οθόνης πάντα ενεργή</string>
 	<string name="screen_orientation">Προσανατολισμός οθόνης</string>
 	<string name="scrollbar_left">Γραμμή κύλισης στα αριστερά</string>
 	<string name="scrollbar_left_summary">Γραμμή κύλισης στις λίστες στα αριστερά</string>
 	<string name="search_call">Αναζήτηση κλήσεων</string>
 	<string name="search_files">Αναζήτηση αρχείων</string>
-	<string name="search_hint">Εισάγετε το κείμενο εδώ</string>
+	<string name="search_hint">Εισαγωγή κειμένου εδώ</string>
 	<string name="search_info">Οι αναζητήσεις περιεχομένου πραγματοποιούνται σε αρχεία με τις ακόλουθες επεκτάσεις: %s.\n\nΥποστηρίζεται αναζήτηση πολλαπλών γραμμών.</string>
 	<string name="search_inres">στα αποτελέσματα αναζήτησης</string>
 	<string name="search_loop">Κάντε μια αναζήτηση</string>
@@ -742,8 +742,8 @@
 	<string name="tooltips_summary">Προτάσεις εργαλείων για smali και xml</string>
 	<string name="keep_structure">Διατήρηση δομής φακέλου</string>
 	<string name="keep_structure_summary">Προσπάθεια διατήρησης δομής των φακέλων όπως είναι στο πρωτότυπο, χρήσιμο για τις εφαρμογές του συστήματος</string>
-	<string name="github">Αρχεία για μετάφραση</string>
-	<string name="github_summary">Πηγές για τη μετάφραση του προγράμματος στο GitHub</string>
+	<string name="github">Αρχεία προς μετάφραση</string>
+	<string name="github_summary">Πηγές για μετάφραση του προγράμματος στο GitHub</string>
 	<string name="reset_fab">Επαναφορά θέσης αιωρούμενου κουμπιού;</string>
 	<string name="keep_modified_time">Διατήρηση χρόνου τροποποίησης</string>
 	<string name="keep_modified_time_summary">Προσπάθεια διατήρησης χρόνου τροποποίησης αρχείων και φακέλων αν είναι δυνατόν</string>
@@ -851,10 +851,10 @@
         <string name="patcher_patch">Patch</string>
         <string name="patcher_patchf">Patch: \"%s\"</string>
         <string name="patcher_apk">APK: \"%s\"</string>
-        <string name="aeplugin_installed">ApkEditor patch εγκατεστημένο πρόσθετο υποστήριξης</string>
-        <string name="aeplugin_not_installed">ApkEditor patch μη εγκατεστημένο πρόσθετο υποστήριξης</string>
-	<string name="baksmali_registers">Χρήση \"καταχωρήσεις\" αντί \"τοπικές\"</string>
-	<string name="baksmali_registers_summary">Κατά την απομεταγλώττιση σε smali, χρήση \"καταχωρήσεις\" αντί \"τοπικές\"</string>
+        <string name="aeplugin_installed">ApkEditor patch εγκατεστημένο πρόσθετο</string>
+        <string name="aeplugin_not_installed">ApkEditor patch μη εγκατεστημένο πρόσθετο</string>
+	<string name="baksmali_registers">Χρήση \"registers\" αντί \"locals\"</string>
+	<string name="baksmali_registers_summary">Κατά την απομεταγλώττιση σε smali, χρήση \"registers\" αντί \"locals\"</string>
 	<string name="bg_proccess_notice">Υπάρχει μια διαδικασία που εκτελείται στο παρασκήνιο, εάν κλείσετε την εφαρμογή μπορεί να διακοπεί! Σίγουρα θέλετε \"Έξοδο\";</string>
 	<string name="dex_decompile_info">Αυτή η επιλογή απομεταγλωττίζει όλα τα αρχεία dex που βρίσκονται στη ρίζα του apk, αλλά αφήνει ανέγγιχτα τα αρχεία dex σε υποφακέλους.</string>
 	<string name="dex_decompile_info2">Αυτή η επιλογή απομεταγλωττίζει όλα τα αρχεία dex στο apk, τόσο εκείνα που βρίσκονται στη ρίζα όσο και εκείνα που βρίσκονται σε υποφακέλους.</string>
@@ -867,4 +867,7 @@
         <string name="select_rows">Επιλογή σειρών</string>
         <string name="start">Αρχή</string>
         <string name="end">Τέλος</string>
+        <string name="copy_tt">Αντιγρ.σε άλλη καρτέλα</string>
+	<string name="move_tt">Μετακ.σε άλλη καρτέλα</string>
+        <string name="mextract_zip_to2">Εξαγ.σε άλλη καρτέλα</string>
 </resources>
