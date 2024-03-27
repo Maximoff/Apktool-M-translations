@@ -707,6 +707,8 @@
 	<string name="baksmali_registers_summary">При декомпиляции до smali, использовать \"registers\" вместо \"locals\"</string>
     <string name="old_search">Старый вид поиска</string>
 	<string name="old_search_summary">Старый вариант отображения результатов поиска в файлах</string>
+    <string name="clear_split">Удалить следы сплит</string>
+	<string name="clear_split_summary">Удалить следы сплит из ресурсов при декомпиляции</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>

@@ -722,6 +722,8 @@
 	<string name="baksmali_registers_summary">When decompiling to smali, use \"registers\" instead of \"locals\"</string>
     <string name="old_search">Old search type</string>
 	<string name="old_search_summary">Old option for displaying search results in files</string>
+    <string name="clear_split">Remove split traces</string>
+	<string name="clear_split_summary">Remove split traces from resources during decompilation</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>
