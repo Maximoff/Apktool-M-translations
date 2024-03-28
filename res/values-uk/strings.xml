@@ -856,4 +856,6 @@
 	<string name="copy_tt">Копіювати в іншу вкладку</string>
 	<string name="move_tt">Перемістити в іншу вкладку</string>
 	<string name="mextract_zip_to2">Витягти в іншу вкладку</string>
+	<string name="clear_split">Видалити сліди спліт</string>
+	<string name="clear_split_summary">Видалити сліди спліт з ресурсів при декомпіляції</string>
 </resources>
