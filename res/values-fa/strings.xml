@@ -101,7 +101,7 @@
 	<string name="dump_resources">استخراج منابع (aapt2)</string>
 	<string name="swap">تعویض</string>
 	<string name="build_smali">بازسازی smali</string>
-	<string name="decode_smali">استخراج smali</string>
+	<string name="decode_smali">تجزیه smali</string>
 	<string name="others">دیگر</string>
 	<string name="compare_text">مقایسه متن</string>
 	<string name="files_identical">فایل ها یکسان هستند!</string>
@@ -392,7 +392,7 @@
 	<string name="no_open">هیچ فایلی باز نیست!</string>
 	<string name="copy_success">کپی شد!</string>
 	<string name="deletion">حذف %s</string>
-	<string name="extract">استخراج apk</string>
+	<string name="extract">استخراج</string>
 	<string name="extraction">استخراج: %s</string>
 	<string name="error">خطا</string>
 	<string name="errorf">خطا: %s</string>
@@ -705,6 +705,8 @@
 	<string name="baksmali_registers_summary">هنگام تجزیه به smali، از \"registers\" به جای \"locals\" استفاده می کند</string>
 	<string name="old_search">حالت جستجوی قدیمی</string>
 	<string name="old_search_summary">گزینه قدیمی برای نمایش نتایج جستجو در فایل ها</string>
+	<string name="clear_split">حذف ردپاهای تقسیم</string>
+	<string name="clear_split_summary">در حین تجزیه کردن، ردپاهای تقسیم را از منابع حذف می‌کند</string>
 	<string name="search_call">یافتن فراخوانی ها</string>
 	<string name="search_call_get">یافتن فراخوانی های get</string>
 	<string name="search_call_put">یافتن فراخوانی های put</string>
