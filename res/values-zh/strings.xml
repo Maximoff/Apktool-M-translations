@@ -867,4 +867,6 @@
 	<string name="copy_tt">复制到其他标签</string>
 	<string name="move_tt">移动到其他标签</string>
 	<string name="mextract_zip_to2">解压到其他标签</string>
+	<string name="clear_split">移除拆分跟踪</string>
+	<string name="clear_split_summary">在反编译期间从资源中移除拆分跟踪</string>
 </resources>
