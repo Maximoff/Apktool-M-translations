@@ -870,4 +870,6 @@
         <string name="copy_tt">Αντιγρ.σε άλλη καρτέλα</string>
 	<string name="move_tt">Μετακ.σε άλλη καρτέλα</string>
         <string name="mextract_zip_to2">Εξαγ.σε άλλη καρτέλα</string>
+        <string name="clear_split">Αφαίρεση Ίχνη Διαχωρισμού</string>
+	<string name="clear_split_summary">Αφαίρεση ιχνών διαχωρισμού από πόρους κατά την απομεταγλώττιση</string>
 </resources>
