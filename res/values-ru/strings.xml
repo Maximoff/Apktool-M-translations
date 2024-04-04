@@ -299,6 +299,9 @@
 	<string name="verify">Проверить подпись</string>
 	<string name="translate">Перевести</string>
 	<string name="import_framework">Импортировать как framework</string>
+    <string name="import_system">Импортировать из системы</string>
+    <string name="for_miui">Для MIUI</string>
+    <string name="for_others">Для остальных</string>
 	<string name="sign">Подписать</string>
 	<string name="rename">Переименовать</string>
 	<string name="delete">Удалить</string>

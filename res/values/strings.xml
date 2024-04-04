@@ -311,6 +311,9 @@
 	<string name="verify">Verify signature</string>
 	<string name="translate">Translate</string>
 	<string name="import_framework">Import as framework</string>
+    <string name="import_system">Import from system</string>
+    <string name="for_miui">For MIUI</string>
+    <string name="for_others">For others</string>
 	<string name="sign">Sign</string>
 	<string name="rename">Rename</string>
 	<string name="delete">Delete</string>
