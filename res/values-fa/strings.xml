@@ -294,6 +294,9 @@
 	<string name="verify">بررسی امضا</string>
 	<string name="translate">ترجمه</string>
 	<string name="import_framework">وارد کردن به عنوان چارچوب</string>
+	<string name="import_system">وارد کردن از دستگاه</string>
+    <string name="for_miui">برای MIUI</string>
+    <string name="for_others">برای دیگران</string>
 	<string name="sign">امضا</string>
 	<string name="rename">تغییر نام</string>
 	<string name="delete">حذف</string>
