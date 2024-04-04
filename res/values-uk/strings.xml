@@ -858,4 +858,7 @@
 	<string name="mextract_zip_to2">Витягти в іншу вкладку</string>
 	<string name="clear_split">Видалити сліди спліт</string>
 	<string name="clear_split_summary">Видалити сліди спліт з ресурсів при декомпіляції</string>
+	<string name="import_system">Імпортувати зі системи</string>
+	<string name="for_miui">Для MIUI</string>
+	<string name="for_others">Для інших</string>
 </resources>
