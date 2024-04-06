@@ -869,4 +869,7 @@
 	<string name="mextract_zip_to2">解压到其他标签</string>
 	<string name="clear_split">移除拆分跟踪</string>
 	<string name="clear_split_summary">在反编译期间从资源中移除拆分跟踪</string>
+	<string name="import_system">从系统导入</string>
+	<string name="for_miui">针对 MIUI 系统</string>
+	<string name="for_others">针对其它系统</string>
 </resources>
