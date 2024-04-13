@@ -19,7 +19,7 @@
 	<string name="new_dict">Kamus Baru</string>
 	<string name="type">Jenis: %s</string>
 	<string name="types">Jenis</string>
-	<string name="dex_is_full">Kemungkinan besar, jumlah metode/field yang diperbolehkan dalam dex telah terlampaui. Pindahkan beberapa file smali ke folder lain atau buat yang baru jika perlu.</string>
+	<string name="dex_is_full">Kemungkinan besar, jumlah methods/fields yang diperbolehkan dalam dex telah terlampaui. Pindahkan beberapa file smali ke folder lain atau buat yang baru jika perlu.</string>
 	<string name="go_to">Pergi ke</string>
 	<string name="clear_history">Hapus riwayat pencarian?</string>
 	<string name="refresh_res">Segarkan sumber</string>
@@ -78,7 +78,7 @@
 	<string name="dex_decompile_info2">Opsi ini mendekompilasi semua file dex menjadi apk, baik yang berada di root maupun yang berada di subfolder.</string>
 	<string name="delete_orig">Hapus yang asli</string>
 	<string name="split_dex">Pisahkan dex</string>
-	<string name="split_dex_label">Pisahkan:</string>
+	<string name="split_dex_label">Terpisah:</string>
 	<string name="split_dex_cnd">Jumlah dex:</string>
 	<string name="split_dex_cnm">Jumlah methods/fields:</string>
 	<string name="merge_dex">Gabungkan dex</string>
@@ -94,7 +94,7 @@
 	<string name="ignore_indent">Abaikan lekukan</string>
 	<string name="file_nw">File ini tidak dapat ditulis!</string>
 	<string name="dexs_info">Informasi Dex</string>
-	<string name="dex_limit_info">Jumlah maksimum metode/bidang dalam dex: %d</string>
+	<string name="dex_limit_info">Jumlah maksimum methods/fields dalam dex: %d</string>
 	<string name="hide">Sembunyikan</string>
 	<string name="unsupported_android">Tidak didukung di versi Android Anda!</string>
 	<string name="reset_fab">Atur ulang posisi tombol mengambang?</string>
@@ -303,6 +303,9 @@
 	<string name="verify">Verifikasi tanda tangan</string>
 	<string name="translate">Terjemahkan</string>
 	<string name="import_framework">Impor sebagai kerangka kerja</string>
+	<string name="import_system">Impor dari sistem</string>
+	<string name="for_miui">Untuk MIUI</string>
+	<string name="for_others">Untuk yang lain</string>
 	<string name="sign">Tanda tangani</string>
 	<string name="rename">Ganti nama</string>
 	<string name="delete">Hapus</string>
@@ -631,7 +634,7 @@
 	<string name="mextract_zip_to">Ekstrak ke \"%s\"</string>
 	<string name="mextract_zip_to2">Ekstrak ke tab lain</string>
 	<string name="mplease_wait">Silakan tunggu...</string>
-	<string name="split">Pisahkan</string>
+	<string name="split">Terpisah</string>
 	<string name="mcompress">Kompres</string>
 	<string name="mcompression">Kompresi</string>
 	<string name="mupdate_pref">Pembaruan program</string>
@@ -714,6 +717,8 @@
 	<string name="baksmali_registers_summary">Saat mendekompilasi ke smali, gunakan \"registrasi\" dan bukan \"lokal\"</string>
 	<string name="old_search">Jenis pencarian lama</string>
 	<string name="old_search_summary">Opsi lama untuk menampilkan hasil pencarian dalam file</string>
+	<string name="clear_split">Hapus jejak pemisahan</string>
+	<string name="clear_split_summary">Menghapus jejak pemisahan dari sumber selama dekompilasi</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>
@@ -764,7 +769,7 @@
 	<string name="mapp_cn">Kode versi</string>
 	<string name="mapp_inLocation">Lokasi pemasangan</string>
 	<string name="mapp_minsdk">Versi Min SDK</string>
-	<string name="mapp_targetsdk">Versi target SDK</string>
+	<string name="mapp_targetsdk">Versi Target SDK</string>
 	<string name="mapp_down_plugin">Ingin mengunduh plugin dekripsi apkm?</string>
 	<string name="mapk_damage">File Apk rusak!</string>
 	<string name="mapk_nosign">File Apk tidak ditandatangani!</string>
