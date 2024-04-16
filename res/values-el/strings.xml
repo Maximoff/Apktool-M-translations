@@ -872,4 +872,7 @@
         <string name="mextract_zip_to2">Εξαγ.σε άλλη καρτέλα</string>
         <string name="clear_split">Αφαίρεση Ίχνη Διαχωρισμού</string>
 	<string name="clear_split_summary">Αφαίρεση ιχνών διαχωρισμού από πόρους κατά την απομεταγλώττιση</string>
+        <string name="import_system">Εισαγωγή από το Σύστημα</string>
+        <string name="for_miui">Για MIUI</string>
+        <string name="for_others">Για άλλα</string>
 </resources>
