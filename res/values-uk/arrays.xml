@@ -302,6 +302,7 @@
 		<item>Не декомпілювати</item>
 		<item>Декомпілювати в загальний каталог</item>
 		<item>Декомпілювати в окремий каталог</item>
+        <item>Try to merge packages</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Текст &lt;-> Base64</item>

@@ -596,6 +596,7 @@
 		<item>Do not decompile</item>
 		<item>Decompile to main directory</item>
 		<item>Decompile into a separate directory</item>
+        <item>Try to merge packages</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Text &lt;-> Base64</item>

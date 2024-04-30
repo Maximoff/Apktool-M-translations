@@ -294,6 +294,7 @@
 		<item>Не декомпилирай</item>
 		<item>Декомпилирайте в главната директория</item>
 		<item>Декомпилирайте в отделна директория</item>
+        <item>Try to merge packages</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Текст &lt;-> Base64</item>

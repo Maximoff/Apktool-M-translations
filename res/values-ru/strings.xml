@@ -520,6 +520,7 @@
 	<string name="crowdin_summary">Помогите перевести Apktool M на ваш язык</string>
 	<string name="fast_scroll">Быстрая прокрутка</string>
 	<string name="fast_scroll_summary">Быстрая прокрутка в редакторе</string>
+    <string name="fast_scroll_summary2">Быстрая прокрутка в списках</string>
 	<string name="show_exit">Показать кнопку \"Выход\"</string>
 	<string name="show_exit_summary">Показывать кнопку выхода на нижней панели</string>
 	<string name="show_line_numbers_summary">Отображать номера строк</string>
@@ -712,6 +713,8 @@
 	<string name="old_search_summary">Старый вариант отображения результатов поиска в файлах</string>
     <string name="clear_split">Удалить следы сплит</string>
 	<string name="clear_split_summary">Удалить следы сплит из ресурсов при декомпиляции</string>
+    <string name="try_merge_res">Попытаться объединить пакеты</string>
+	<string name="try_merge_res_summary">Попытаться объединить дополнительные пакеты ресурсов с основным пакетом при сборке сплитов</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>

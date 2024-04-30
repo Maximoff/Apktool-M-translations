@@ -273,6 +273,7 @@
         <item>Não descompilar</item>
         <item>Descompilar ao diretório principal</item>
         <item>Descompilar em um diretório separado</item>
+        <item>Try to merge packages</item>
     </string-array>
     <string-array name="converter_items">
         <item>Texto &lt;-> Base64</item>

@@ -283,6 +283,7 @@
 		<item>디컴파일 안 함</item>
 		<item>주 디렉터리로 디컴파일</item>
 		<item>별도의 디렉터리로 디컴파일</item>
+        <item>Try to merge packages</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>텍스트 &lt;-> Base64</item>

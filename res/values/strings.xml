@@ -533,6 +533,7 @@
 	<string name="buffer_size_summary">Byte buffer size in kilobytes</string>
 	<string name="fast_scroll">Fast scrolling</string>
 	<string name="fast_scroll_summary">Fast scrolling in the editor</string>
+    <string name="fast_scroll_summary2">Fast scrolling in lists</string>
 	<string name="show_exit">Show \"Exit\" button</string>
 	<string name="show_exit_summary">Show the exit button on the bottom panel</string>
 	<string name="show_line_numbers_summary">Show line numbers</string>
@@ -727,6 +728,8 @@
 	<string name="old_search_summary">Old option for displaying search results in files</string>
     <string name="clear_split">Remove split traces</string>
 	<string name="clear_split_summary">Remove split traces from resources during decompilation</string>
+    <string name="try_merge_res">Try to merge packages</string>
+	<string name="try_merge_res_summary">Try to merge additional resource packs with the main pack when building splits</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>

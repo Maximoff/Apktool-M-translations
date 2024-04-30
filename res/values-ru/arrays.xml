@@ -302,6 +302,7 @@
 		<item>Не декомпилировать</item>
 		<item>Декомпилировать в общий каталог</item>
 		<item>Декомпилировать в отдельный каталог</item>
+        <item>Попытаться объединить пакеты</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Текст &lt;-> Base64</item>

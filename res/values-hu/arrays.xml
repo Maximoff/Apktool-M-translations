@@ -277,6 +277,7 @@
 		<item>Nincs visszafejtés</item>
 		<item>Visszafejtés a fő könyvtárba</item>
 		<item>Visszafejtés egy különálló könyvtárba</item>
+        <item>Try to merge packages</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Szöveg &lt;-> Base64</item>

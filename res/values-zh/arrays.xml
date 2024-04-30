@@ -296,6 +296,7 @@
 		<item>不编译</item>
 		<item>反编译到主目录</item>
 		<item>反编译到单独的目录</item>
+        <item>Try to merge packages</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>文本 &lt;-> Base64</item>
