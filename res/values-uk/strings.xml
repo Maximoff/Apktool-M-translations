@@ -861,4 +861,7 @@
 	<string name="import_system">Імпортувати зі системи</string>
 	<string name="for_miui">Для MIUI</string>
 	<string name="for_others">Для інших</string>
+	<string name="fast_scroll_summary2">Швидка прокрутка в списках</string>
+	<string name="try_merge_res">Спробувати об\'єднати пакети</string>
+	<string name="try_merge_res_summary">Спробувати об\'єднати додаткові пакети ресурсів з основним пакетом під час збирання сплітів</string>
 </resources>
