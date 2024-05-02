@@ -524,7 +524,8 @@
 	<string name="buffer_size">Ukuran penyangga</string>
 	<string name="buffer_size_summary">Ukuran penyangga byte dalam kilobyte</string>
 	<string name="fast_scroll">Gulir cepat</string>
-	<string name="fast_scroll_summary">Menggulir cepat di editor</string>
+	<string name="fast_scroll_summary">Menggulir cepat dalam editor</string>
+	<string name="fast_scroll_summary2">Menggulir cepat dalam daftar</string>
 	<string name="show_exit">Tampilkan tombol \"Keluar\".</string>
 	<string name="show_exit_summary">Tampilkan tombol keluar pada panel bawah</string>
 	<string name="show_line_numbers_summary">Tampilkan nomor baris</string>
@@ -719,6 +720,8 @@
 	<string name="old_search_summary">Opsi lama untuk menampilkan hasil pencarian dalam file</string>
 	<string name="clear_split">Hapus jejak pemisahan</string>
 	<string name="clear_split_summary">Menghapus jejak pemisahan dari sumber selama dekompilasi</string>
+	<string name="try_merge_res">Mencoba menggabungkan paket</string>
+	<string name="try_merge_res_summary">Cobalah untuk menggabungkan paket sumber tambahan dengan paket utama saat membuild pemisahan</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>

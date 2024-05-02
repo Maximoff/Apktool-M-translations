@@ -287,11 +287,11 @@
 		<item>A,R,G,B</item>
 	</string-array>
 	<string-array name="resDecodeMode">
-		<item>Jangan dekompilasi</item>
-		<item>Dekompilasi ke folder utama</item>
-		<item>Dekompilasi ke folder terpisah</item>
-        <item>Try to merge packages</item>
-	</string-array>
+        <item>Jangan dekompilasi</item>
+        <item>Dekompilasi ke folder utama</item>
+        <item>Dekompilasi ke folder terpisah</item>
+        <item>Cobalah untuk menggabungkan paket</item>
+    </string-array>
 	<string-array name="converter_items">
 		<item>Teks &lt;-> Base64</item>
 		<item>Teks &lt;-> Unicode</item>
