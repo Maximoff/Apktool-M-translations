@@ -78,6 +78,8 @@
     <string name="select_rows">Select rows</string>
     <string name="start">Start</string>
     <string name="end">End</string>
+    <string name="disable_syntax">Disable syntax</string>
+    <string name="disable_syntax_summary">Disable syntax highlighting completely in the editor</string>
     <string name="dex_decompile_info">This option decompiles all dex files that are in the root of the apk, but leaves dex files in subfolders untouched.</string>
     <string name="dex_decompile_info2">This option decompiles all dex files into apk, both those located in the root and those located in subfolders.</string>
     <string name="delete_orig">Delete original</string>

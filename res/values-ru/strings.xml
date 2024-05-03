@@ -71,6 +71,8 @@
     <string name="select_rows">Выбрать строки</string>
     <string name="start">Начало</string>
     <string name="end">Конец</string>
+    <string name="disable_syntax">Отключить синтаксис</string>
+    <string name="disable_syntax_summary">Отключить полностью подсветку синтаксиса в редакторе</string>
     <string name="dex_decompile_info">Эта опция декомпилирует все файлы dex, которые находятся в корне apk, но оставляет нетронутыми файлы dex во вложенных папках.</string>
     <string name="dex_decompile_info2">Эта опция декомпилирует все файлы dex в apk, как находящиеся в корне, так и находящиеся во вложенных папках.</string>
     <string name="delete_orig">Удалить оригинал</string>
