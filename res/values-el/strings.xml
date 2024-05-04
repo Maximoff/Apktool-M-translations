@@ -875,4 +875,6 @@
         <string name="import_system">Εισαγωγή από το Σύστημα</string>
         <string name="for_miui">Για MIUI</string>
         <string name="for_others">Για άλλα</string>
+        <string name="disable_syntax">Απενεργοποίηση σύνταξης</string>
+        <string name="disable_syntax_summary">Απενεργοποιήστε εντελώς την επισήμανση σύνταξης στον επεξεργαστή</string>
 </resources>
