@@ -275,7 +275,7 @@
 		<item>Χωρίς απομεταγλώττιση</item>
 		<item>Απομεταγλώττιση στον κύριο κατάλογο</item>
 		<item>Απομεταγλώττιση σε ξεχωριστό κατάλογο</item>
-        <item>Try to merge packages</item>
+        <item>Προσπάθεια συγχώνευσης πακέτων</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Δεν έχει οριστεί</item>
