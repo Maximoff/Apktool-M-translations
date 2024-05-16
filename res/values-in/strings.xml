@@ -74,6 +74,8 @@
 	<string name="select_rows">Pilih baris</string>
 	<string name="start">Awal</string>
 	<string name="end">Akhir</string>
+	<string name="disable_syntax">Nonaktifkan sintaks</string>
+	<string name="disable_syntax_summary">Nonaktifkan penyorotan sintaks sepenuhnya di editor</string>
 	<string name="dex_decompile_info">Opsi ini mendekompilasi semua file dex yang ada di root apk, tetapi membiarkan file dex di subfolder tidak tersentuh.</string>
 	<string name="dex_decompile_info2">Opsi ini mendekompilasi semua file dex menjadi apk, baik yang berada di root maupun yang berada di subfolder.</string>
 	<string name="delete_orig">Hapus yang asli</string>
@@ -613,7 +615,7 @@
 	<string name="gen_key_title">Buat file kunci</string>
 	<string name="gen_key_summary">Sentuh untuk membuat file kunci.</string>
 	<string name="analysis_all_smali">Analisis semua smali</string>
-	<string name="analysis_all_smali_summary">Analisis Semua file smali saat meluncurkan dan mengatur proyek utama.</string>
+	<string name="analysis_all_smali_summary">Analisis semua file smali saat meluncurkan dan mengatur proyek utama.</string>
 	<string name="create_and_use">Buat dan gunakan</string>
 	<string name="please_update_your_android">Perbarui sistem Android Anda ke versi 4.3 atau yang lebih baru!</string>
 	<string name="mselect">Pilih</string>
