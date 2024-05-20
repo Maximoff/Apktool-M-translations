@@ -277,7 +277,7 @@
 		<item>تجزیه نشود</item>
 		<item>تجزیه در مسیر اصلی</item>
 		<item>تجزیه در یک مسیر جداگانه</item>
-        <item>Try to merge packages</item>
+        <item>سعی کنید بسته ها را ادغام کنید</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>تنظیم نشده</item>
