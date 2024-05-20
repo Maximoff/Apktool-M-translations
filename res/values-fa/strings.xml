@@ -63,6 +63,8 @@
 	<string name="select_rows">انتخاب ردیف ها</string>
         <string name="start">ابتدا</string>
         <string name="end">انتها</string>
+	<string name="disable_syntax">غیر فعال کردن نحو</string>
+    <string name="disable_syntax_summary">برجسته سازی نحو به طور کامل در ویرایشگر غیرفعال می‌شود.</string>
 	<string name="dex_decompile_info">این گزینه همه فایل‌های dex را که در ریشه apk هستند تجزیه می‌کند، اما فایل‌های dex را در زیر پوشه‌ها دست نخورده باقی می‌گذارد.</string>
         <string name="dex_decompile_info2">این گزینه همه فایل‌های dex موجود در apk را تجزیه می‌کند، هم آن‌هایی که در ریشه apk هستند و هم آنهایی که در زیر پوشه‌های apk قرار دارند.</string>
 	<string name="delete_orig">حذف اصلی</string>
@@ -516,6 +518,7 @@
 	<string name="buffer_size_summary">اندازه حافظه میانی بایت بر حسب کیلوبایت</string>
 	<string name="fast_scroll">پیمایش سریع</string>
 	<string name="fast_scroll_summary">پیمایش سریع در ویرایشگر</string>
+	<string name="fast_scroll_summary2">پیمایش سریع در فهرست ها.</string>
 	<string name="show_exit">نمایش دکمه \"خروج\"</string>
 	<string name="show_exit_summary">نمایش دکمه خروج در صفحه پایین</string>
 	<string name="show_line_numbers_summary">نمایش شماره خطوط</string>
@@ -709,7 +712,9 @@
 	<string name="old_search">حالت جستجوی قدیمی</string>
 	<string name="old_search_summary">گزینه قدیمی برای نمایش نتایج جستجو در فایل ها</string>
 	<string name="clear_split">حذف ردپاهای تقسیم</string>
-	<string name="clear_split_summary">در حین تجزیه کردن، ردپاهای تقسیم را از منابع حذف می‌کند</string>
+	<string name="clear_split_summary">در حین تجزیه کردن، ردپاهای تقسیم را از منابع حذف می‌کند.</string>
+	<string name="try_merge_res">سعی در ادغام بسته ها</string>
+	<string name="try_merge_res_summary">سعی می‌کند هنگام ساخت تقسیم، بسته های منابع اضافی با بسته اصلی ادغام شود.</string>
 	<string name="search_call">یافتن فراخوانی ها</string>
 	<string name="search_call_get">یافتن فراخوانی های get</string>
 	<string name="search_call_put">یافتن فراخوانی های put</string>
