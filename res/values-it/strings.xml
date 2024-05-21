@@ -651,6 +651,8 @@
 	<string name="mplugin_installed_summary">Fare clic per rimuovere il plugin</string>
 	<string name="mplugin_not_installed">Plugin UnApkm non installato</string>
 	<string name="mplugin_not_installed_summary">Clicca per scaricare il plugin</string>
+	<string name="aeplugin_installed">Plug-in di supporto patch ApkEditor installato</string>
+        <string name="aeplugin_not_installed">Plug-in di supporto patch ApkEditor non installato</string>
 	<string name="mupdate_4pda">Discussione su 4PDA.RU</string>
 	<string name="mupdate_4pda_summary">Argomento di discussione dell\'applicazione</string>
 	<string name="mtool_repl">Sostituzione dello strumento</string>
