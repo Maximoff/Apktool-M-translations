@@ -866,4 +866,6 @@
 	<string name="try_merge_res_summary">Спробувати об\'єднати додаткові пакети ресурсів з основним пакетом під час збирання сплітів</string>
 	<string name="disable_syntax">Вимкнути синтаксис</string>
 	<string name="disable_syntax_summary">Вимкнути повністю підсвічування синтаксису в редакторі</string>
+	<string name="ignore_crc">Ігнорувати CRC-суми</string>
+	<string name="ignore_crc_summary">Ігнорувати помилку CRC в apk/zip при редагуванні</string>
 </resources>
