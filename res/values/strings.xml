@@ -732,6 +732,8 @@
 	<string name="clear_split_summary">Remove split traces from resources during decompilation</string>
     <string name="try_merge_res">Try to merge packages</string>
 	<string name="try_merge_res_summary">Try to merge additional resource packs with the main pack when building splits</string>
+    <string name="ignore_crc">Ignore CRC sums</string>
+	<string name="ignore_crc_summary">Ignore CRC error in apk/zip ​​when editing</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>
