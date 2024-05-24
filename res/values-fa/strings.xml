@@ -512,7 +512,7 @@
 	<string name="update_freq_summary">دفعات بررسی به روز رسانی در روز</string>
 	<string name="menu_position">جهت نمایش منو</string>
 	<string name="menu_position_summary">جهت نمایش منوی زمینه فایل</string>
-	<string name="share_type">در هنگام ارسال، نوع فایل را در نظر گرفته شود</string>
+	<string name="share_type">در هنگام ارسال، نوع فایل در نظر گرفته شود</string>
 	<string name="share_type_summary">در هنگام ارسال فایل به برنامه دیگر، نوع فایل در نظر گرفته می شود</string>
 	<string name="buffer_size">اندازه حافظه میانی</string>
 	<string name="buffer_size_summary">اندازه حافظه میانی بایت بر حسب کیلوبایت</string>
@@ -715,6 +715,8 @@
 	<string name="clear_split_summary">در حین تجزیه کردن، ردپاهای تقسیم را از منابع حذف می‌کند.</string>
 	<string name="try_merge_res">سعی در ادغام بسته ها</string>
 	<string name="try_merge_res_summary">سعی می‌کند هنگام ساخت تقسیم، بسته های منابع اضافی با بسته اصلی ادغام شود.</string>
+	<string name="ignore_crc">نادیده گرفتن درستی CRC</string>
+	<string name="ignore_crc_summary">هنگام ویرایش، خطای CRC در apk/zip نادیده گرفته میشود.</string>
 	<string name="search_call">یافتن فراخوانی ها</string>
 	<string name="search_call_get">یافتن فراخوانی های get</string>
 	<string name="search_call_put">یافتن فراخوانی های put</string>
