@@ -724,6 +724,8 @@
 	<string name="clear_split_summary">Menghapus jejak pemisahan dari sumber selama dekompilasi</string>
 	<string name="try_merge_res">Mencoba menggabungkan paket</string>
 	<string name="try_merge_res_summary">Cobalah untuk menggabungkan paket sumber tambahan dengan paket utama saat membuild pemisahan</string>
+	<string name="ignore_crc">Abaikan jumlah CRC</string>
+	<string name="ignore_crc_summary">Abaikan kesalahan CRC di apk/zip saat mengedit</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>
