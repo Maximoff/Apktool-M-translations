@@ -63,6 +63,7 @@
 	<string name="select_rows">انتخاب ردیف ها</string>
         <string name="start">ابتدا</string>
         <string name="end">انتها</string>
+	<string name="libs_one_apk">ایجاد یک APK با موارد انتخاب شده</string>
 	<string name="disable_syntax">غیر فعال کردن نحو</string>
     <string name="disable_syntax_summary">برجسته سازی نحو به طور کامل در ویرایشگر غیرفعال می‌شود.</string>
 	<string name="dex_decompile_info">این گزینه همه فایل‌های dex را که در ریشه apk هستند تجزیه می‌کند، اما فایل‌های dex را در زیر پوشه‌ها دست نخورده باقی می‌گذارد.</string>
@@ -459,6 +460,7 @@
 	<string name="dirs_size_summary">نمایش اندازه پوشه در فهرست</string>
 	<string name="date_format">قالب تاریخ</string>
 	<string name="date_format_summary">قالب تاریخ نمایش داده می شود</string>
+	<string name="create_icon">ایجاد یک نماد</string>
 	<string name="round_icons">نمادهای گرد</string>
 	<string name="round_icons_summary">نمادهای گرد به جای مربعی</string>
 	<string name="hidden_files">فایل های مخفی</string>
@@ -760,6 +762,9 @@
 	<string name="reset_remind">بازنشانی یادآوری ها</string>
 	<string name="mapp_quickedit">ویرایش سریع</string>
 	<string name="replace_adaptive">جایگزین کردن نماد تطبیقی</string>
+	<string name="vector_icon">نماد بردار</string>
+        <string name="adaptive_icon">نماد تطبیقی</string>
+        <string name="mapp_round_icon">نماد گرد</string>
 	<string name="mapp_icon">نماد برنامه</string>
 	<string name="mapp_label">نام برنامه</string>
 	<string name="mapp_pn">نام بسته</string>
