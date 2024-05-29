@@ -234,6 +234,10 @@
 		<item>ارجاع به مدیریت روش (method) را در ثبت vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 		<item>ارجاع به نمونه اولیه روش (method) را در ثبت vAA قرار می دهد. از نسخه 039 در فایل های Dex موجود است.</item>
 	</string-array>
+	<string-array name="years_or_days">
+		<item>سال</item>
+		<item>روز</item>
+	</string-array>
 	<string-array name="app_theme">
 		<item>روشن</item>
 		<item>تاریک</item>
