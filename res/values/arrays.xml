@@ -460,6 +460,10 @@
 		<item>Places a reference to a method handle in the vAA register. Present in Dex files since version 039.</item>
 		<item>Places a reference to the method prototype in the vAA register. Present in Dex files since version 039.</item>
 	</string-array>
+    <string-array name="years_or_days">
+		<item>years</item>
+		<item>days</item>
+	</string-array>
 	<string-array name="aapt2_dump">
 		<item>badging</item>
 		<item>configurations</item>

@@ -78,6 +78,7 @@
     <string name="select_rows">Select rows</string>
     <string name="start">Start</string>
     <string name="end">End</string>
+    <string name="libs_one_apk">Create one APK with selected ones</string>
     <string name="disable_syntax">Disable syntax</string>
     <string name="disable_syntax_summary">Disable syntax highlighting completely in the editor</string>
     <string name="dex_decompile_info">This option decompiles all dex files that are in the root of the apk, but leaves dex files in subfolders untouched.</string>
@@ -476,6 +477,7 @@
 	<string name="dirs_size_summary">Display folder size in list</string>
 	<string name="date_format">Date format</string>
 	<string name="date_format_summary">Date format displayed</string>
+    <string name="create_icon">Create an icon</string>
 	<string name="round_icons">Round icons</string>
 	<string name="round_icons_summary">Round explorer icons</string>
 	<string name="hidden_files">Hidden files</string>
@@ -777,6 +779,9 @@
 	<string name="reset_remind">Reset reminders</string>
 	<string name="mapp_quickedit">Quick edit</string>
 	<string name="replace_adaptive">replace adaptive icon</string>
+    <string name="vector_icon">Vector icon</string>
+    <string name="adaptive_icon">Adaptive icon</string>
+    <string name="mapp_round_icon">Round icon</string>
 	<string name="mapp_icon">App icon</string>
 	<string name="mapp_label">App name</string>
 	<string name="mapp_pn">Package name</string>
