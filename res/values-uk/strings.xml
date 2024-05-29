@@ -868,4 +868,9 @@
 	<string name="disable_syntax_summary">Вимкнути повністю підсвічування синтаксису в редакторі</string>
 	<string name="ignore_crc">Ігнорувати CRC-суми</string>
 	<string name="ignore_crc_summary">Ігнорувати помилку CRC в apk/zip при редагуванні</string>
+	<string name="create_icon">Створити іконку</string>
+	<string name="vector_icon">Векторна</string>
+	<string name="adaptive_icon">Адаптивна</string>
+	<string name="mapp_round_icon">Кругла іконка</string>
+	<string name="libs_one_apk">Створити один APK з вибраними</string>
 </resources>
