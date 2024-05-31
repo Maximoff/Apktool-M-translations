@@ -53,7 +53,7 @@
 	<string name="name">名称</string>
 	<string name="paste">粘贴</string>
 	<string name="value">内容</string>
-	<string name="background">置于后台</string>
+	<string name="background">置于后台</string><!-- 此行原始英文内容为“Background”，该字符串出现在删除、移动、拷贝等文件操作时的进度消息框左下角，因此之前我翻译成“置于后台”，也符合将进度提示放到后台运行的意思。但现在我又发现它还会出现在查看XML格式图片时的预览框左下角，点击后不是将预览框放到后台，而是改变预览框中图片的背景颜色，那么用之前的翻译就不合适了。不知各位汉化大神，有没有更符合用于这两种情况（不确定还有没有其它情况）的中文意思？ -->
 	<string name="reload">重新加载</string>
 	<string name="show">转到</string>
 	<string name="converter">转换器</string>
@@ -877,4 +877,11 @@
 	<string name="fast_scroll_summary2">在列表中快速滚动</string>
 	<string name="try_merge_res">尝试合并包</string>
 	<string name="try_merge_res_summary">在构建拆分时，尝试将其他资源包与主包合并</string>
+	<string name="libs_one_apk">使用选定的 APK 创建一个 APK</string>
+	<string name="create_icon">创建图标</string>
+	<string name="ignore_crc">忽略 CRC 校验码</string>
+	<string name="ignore_crc_summary">编辑时忽略 apk/zip 中的CRC错误</string>
+	<string name="vector_icon">矢量图标</string>
+	<string name="adaptive_icon">自适应图标</string>
+	<string name="mapp_round_icon">圆形图标</string>
 </resources>
