@@ -53,7 +53,8 @@
 	<string name="name">名称</string>
 	<string name="paste">粘贴</string>
 	<string name="value">内容</string>
-	<string name="background">置于后台</string><!-- 此行原始英文内容为“Background”，该字符串出现在删除、移动、拷贝等文件操作时的进度消息框左下角，因此之前我翻译成“置于后台”，也符合将进度提示放到后台运行的意思。但现在我又发现它还会出现在查看XML格式图片时的预览框左下角，点击后不是将预览框放到后台，而是改变预览框中图片的背景颜色，那么用之前的翻译就不合适了。不知各位汉化大神，有没有更符合用于这两种情况（不确定还有没有其它情况）的中文意思？ -->
+	<string name="background">置于后台</string>
+    <string name="background_preview">置于后台</string>
 	<string name="reload">重新加载</string>
 	<string name="show">转到</string>
 	<string name="converter">转换器</string>

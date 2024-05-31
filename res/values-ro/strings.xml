@@ -58,6 +58,7 @@
 	<string name="paste">Lipeşte</string>
 	<string name="value">Valoare</string>
 	<string name="background">Fundal</string>
+    <string name="background_preview">Fundal</string>
 	<string name="reload">Reîncarcă</string>
 	<string name="show">Arată</string>
 	<string name="converter">Converter</string>

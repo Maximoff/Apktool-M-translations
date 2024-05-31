@@ -464,6 +464,10 @@
 		<item>years</item>
 		<item>days</item>
 	</string-array>
+    <string-array name="store_type">
+		<item>built-in</item>
+		<item>custom</item>
+	</string-array>
 	<string-array name="aapt2_dump">
 		<item>badging</item>
 		<item>configurations</item>

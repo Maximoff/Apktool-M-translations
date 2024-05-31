@@ -102,6 +102,7 @@
 	<string name="paste">Ngjit</string>
 	<string name="value">Vlera</string>
 	<string name="background">Sfondi</string>
+    <string name="background_preview">Sfondi</string>
 	<string name="reload">Ringarkoj</string>
 	<string name="show">Shfaqje</string>
 	<string name="converter">Konvertuesi</string>

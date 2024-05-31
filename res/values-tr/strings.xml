@@ -47,6 +47,7 @@
 	<string name="paste">Yapıştır</string>
 	<string name="value">Değer</string>
 	<string name="background">Arka plan</string>
+    <string name="background_preview">Arka plan</string>
 	<string name="reload">Yeniden yükle</string>
 	<string name="show">Göster</string>
 	<string name="converter">Dönüştürücü</string>

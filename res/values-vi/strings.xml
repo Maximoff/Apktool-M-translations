@@ -125,6 +125,7 @@
 	<string name="paste">Dán</string>
 	<string name="value">Giá trị</string>
 	<string name="background">Lý lịch</string>
+    <string name="background_preview">Lý lịch</string>
 	<string name="reload">Tải lại</string>
 	<string name="show">Trình diễn</string>
 	<string name="converter">Bộ chuyển đổi</string>

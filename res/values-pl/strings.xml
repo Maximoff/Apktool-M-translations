@@ -67,6 +67,7 @@
 	<string name="axml_info_ref">„Powinien istnieć identyfikator zasobu w formacie szesnastkowym (HEX)! Nie używaj ciągów znaków!”</string>
 	<string name="axml_prop">„Plik: %1$rozmiar: %2$Suma wierszy: %3$Zmodyfikowane wiersze: %4$s”</string>
 	<string name="background">Tło</string>
+    <string name="background_preview">Tło</string>
 	<string name="backup">Kopia zapasowa</string>
 	<string name="baksmali_registers">Użyj „rejestrów” zamiast „lokalnych”</string>
 	<string name="baksmali_registers_summary">Podczas dekompilacji do smali użyj „rejestrów” zamiast „lokalnych”</string>

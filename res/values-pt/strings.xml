@@ -69,6 +69,7 @@
 	<string name="paste">Colar</string>
 	<string name="value">Valor</string>
 	<string name="background">Fundo</string>
+    <string name="background_preview">Fundo</string>
 	<string name="reload">Recarregar</string>
 	<string name="show">Ver</string>
 	<string name="converter">Conversor</string>

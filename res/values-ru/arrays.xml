@@ -238,6 +238,10 @@
 		<item>лет</item>
 		<item>дней</item>
 	</string-array>
+    <string-array name="store_type">
+		<item>встроенный</item>
+		<item>пользовательский</item>
+	</string-array>
     <string-array name="aapt2_dump_descr">
         <item>Распечатать информацию, извлеченную из манифеста APK.</item>
         <item>Распечатать каждую конфигурацию, используемую ресурсами в APK.</item>

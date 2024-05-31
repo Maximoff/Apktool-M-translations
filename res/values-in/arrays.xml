@@ -234,6 +234,10 @@
 		<item>Menempatkan referensi ke pegangan metode di register vAA. Hadir dalam file Dex sejak versi 039.</item>
 		<item>Menempatkan referensi ke prototipe metode dalam register vAA. Hadir dalam file Dex sejak versi 039.</item>
 	</string-array>
+    <string-array name="years_or_days">
+        <item>tahun</item>
+        <item>hari</item>
+    </string-array>
 	<string-array name="aapt2_dump_descr">
 		<item>Cetak informasi yang diekstrak dari manifest APK.</item>
 		<item>Cetak setiap konfigurasi yang digunakan oleh sumber dalam APK.</item>

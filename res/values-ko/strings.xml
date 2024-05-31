@@ -144,6 +144,7 @@
 	<string name="paste">붙여넣기</string>
 	<string name="value">값</string>
 	<string name="background">배경</string>
+    <string name="background_preview">배경</string>
 	<string name="reload">다시 로드</string>
 	<string name="show">표시</string>
 	<string name="converter">변환</string>

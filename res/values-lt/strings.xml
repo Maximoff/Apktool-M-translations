@@ -51,6 +51,7 @@
 	<string name="paste">Įklijuoti</string>
 	<string name="value">Value</string>
 	<string name="background">Fonas</string>
+    <string name="background_preview">Fonas</string>
 	<string name="reload">Perkrauti</string>
 	<string name="show">Rodyti</string>
 	<string name="converter">Konverteris</string>

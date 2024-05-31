@@ -74,6 +74,7 @@
 	<string name="select_rows">Pilih baris</string>
 	<string name="start">Awal</string>
 	<string name="end">Akhir</string>
+	<string name="libs_one_apk">Buat satu APK dengan yang dipilih</string>
 	<string name="disable_syntax">Nonaktifkan sintaks</string>
 	<string name="disable_syntax_summary">Nonaktifkan penyorotan sintaks sepenuhnya di editor</string>
 	<string name="dex_decompile_info">Opsi ini mendekompilasi semua file dex yang ada di root apk, tetapi membiarkan file dex di subfolder tidak tersentuh.</string>
@@ -160,6 +161,7 @@
 	<string name="paste">Tempel</string>
 	<string name="value">Nilai</string>
 	<string name="background">Latar belakang</string>
+    <string name="background_preview">Latar belakang</string>
 	<string name="reload">Muat ulang</string>
 	<string name="show">Tampilkan</string>
 	<string name="converter">Konverter</string>
@@ -468,6 +470,7 @@
 	<string name="dirs_size_summary">Tampilkan ukuran folder dalam daftar</string>
 	<string name="date_format">Format tanggal</string>
 	<string name="date_format_summary">Format tanggal yang ditampilkan</string>
+	<string name="create_icon">Buat ikon</string>
 	<string name="round_icons">Ikon bulat</string>
 	<string name="round_icons_summary">Ikon penjelajah bulat</string>
 	<string name="hidden_files">File yang tersembunyi</string>
@@ -769,6 +772,9 @@
 	<string name="reset_remind">Atur ulang pengingat</string>
 	<string name="mapp_quickedit">Edit cepat</string>
 	<string name="replace_adaptive">ganti ikon adaptif</string>
+	<string name="vector_icon">Ikon vector</string>
+	<string name="adaptive_icon">Ikon adaptif</string>
+	<string name="mapp_round_icon">Ikon bulat</string>
 	<string name="mapp_icon">Ikon aplikasi</string>
 	<string name="mapp_label">Nama aplikasi</string>
 	<string name="mapp_pn">Nama paket</string>

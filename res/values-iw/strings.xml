@@ -160,6 +160,7 @@
 	<string name="paste">הדבק</string>
 	<string name="value">ערך</string>
 	<string name="background">רקע</string>
+    <string name="background_preview">רקע</string>
 	<string name="reload">טען מחדש</string>
 	<string name="show">הופעה</string>
 	<string name="converter">ממיר</string>

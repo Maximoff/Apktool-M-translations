@@ -71,6 +71,7 @@
 	<string name="select_rows">Выбрать строки</string>
 	<string name="start">Начало</string>
 	<string name="end">Конец</string>
+    <string name="framework">Фреймворк</string>
     <string name="libs_one_apk">Создать один APK с выбранными</string>
 	<string name="disable_syntax">Отключить синтаксис</string>
 	<string name="disable_syntax_summary">Отключить полностью подсветку синтаксиса в редакторе</string>
@@ -161,6 +162,7 @@
 	<string name="paste">Вставить</string>
 	<string name="value">Значение</string>
 	<string name="background">Фон</string>
+    <string name="background_preview">Фон</string>
 	<string name="reload">Перезагрузить</string>
 	<string name="show">Показать</string>
 	<string name="converter">Конвертер</string>
@@ -268,6 +270,7 @@
 	<string name="redo">Повторить</string>
 	<string name="open">Открыть</string>
 	<string name="open_in">Открыть в...</string>
+    <string name="open_apk_mf">Открыть APK</string>
 	<string name="sharing_file">Отправить файл(ы)...</string>
 	<string name="open_in_editor">Открыть в редакторе</string>
 	<string name="view_content">Просмотр содержимого</string>

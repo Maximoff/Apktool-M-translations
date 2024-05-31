@@ -111,6 +111,7 @@
 	<string name="paste">Pegar</string>
 	<string name="value">Valor</string>
 	<string name="background">Fondo</string>
+    <string name="background_preview">Fondo</string>
 	<string name="reload">Recargar</string>
 	<string name="show">Mostrar</string>
 	<string name="converter">Conversor</string>

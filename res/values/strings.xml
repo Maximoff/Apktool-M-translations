@@ -78,6 +78,7 @@
     <string name="select_rows">Select rows</string>
     <string name="start">Start</string>
     <string name="end">End</string>
+    <string name="framework">Framework</string>
     <string name="libs_one_apk">Create one APK with selected ones</string>
     <string name="disable_syntax">Disable syntax</string>
     <string name="disable_syntax_summary">Disable syntax highlighting completely in the editor</string>
@@ -169,6 +170,7 @@
 	<string name="paste">Paste</string>
 	<string name="value">Value</string>
 	<string name="background">Background</string>
+    <string name="background_preview">Background</string>
 	<string name="reload">Reload</string>
 	<string name="show">Show</string>
 	<string name="converter">Converter</string>
@@ -280,6 +282,7 @@
 	<string name="redo">Redo</string>
 	<string name="open">Open</string>
 	<string name="open_in">Open in...</string>
+    <string name="open_apk_mf">Open APK</string>
 	<string name="sharing_file">Sharing file(s)...</string>
 	<string name="open_in_editor">Open in editor</string>
 	<string name="view_content">View content</string>

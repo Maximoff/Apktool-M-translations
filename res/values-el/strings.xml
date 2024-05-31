@@ -50,6 +50,7 @@
 	<string name="auto_save_summary">Αυτόματη αποθήκευση κειμένου στον επεξεργαστή</string>
 	<string name="auto_save_title">Αυτόματη αποθήκευση:</string>
 	<string name="background">Παρασκήνιο</string>
+    <string name="background_preview">Παρασκήνιο</string>
 	<string name="backup">Αντίγραφο</string>
 	<string name="base64">Base64: %s</string>
 	<string name="base64_sign">Base64 υπογραφής: %s</string>

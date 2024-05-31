@@ -51,6 +51,7 @@
 	<string name="paste">لصق</string>
 	<string name="value">قيمة</string>
 	<string name="background">معلومات أساسية</string>
+    <string name="background_preview">معلومات أساسية</string>
 	<string name="reload">تحميل</string>
 	<string name="show">اظهار</string>
 	<string name="converter">تحويل</string>

@@ -154,6 +154,7 @@
 	<string name="paste">جای‌گذاری</string>
 	<string name="value">مقدار</string>
 	<string name="background">پس زمینه</string>
+    <string name="background_preview">پس زمینه</string>
 	<string name="reload">تازه سازی</string>
 	<string name="show">نمایش</string>
 	<string name="converter">تبدیل کننده</string>

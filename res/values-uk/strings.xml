@@ -114,6 +114,7 @@
 	<string name="paste">Вставити</string>
 	<string name="value">Значення</string>
 	<string name="background">Фон</string>
+    <string name="background_preview">Фон</string>
 	<string name="reload">Перевантажити</string>
 	<string name="show">Показати</string>
 	<string name="converter">Конвертер</string>

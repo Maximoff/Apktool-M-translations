@@ -34,6 +34,7 @@
 	<string name="auto_save_summary">Text im Editor automatisch speichern</string>
 	<string name="auto_save_title">Automatisch speichern:</string>
 	<string name="background">Hintergrund</string>
+    <string name="background_preview">Hintergrund</string>
 	<string name="backup">Sichern</string>
 	<string name="bks">Keystore(BKS)</string>
 	<string name="build_and_decode">Build &amp; Decode</string>

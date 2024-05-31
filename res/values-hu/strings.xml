@@ -90,6 +90,7 @@
 	<string name="paste">Beillesztés</string>
 	<string name="value">Érték</string>
 	<string name="background">Háttér</string>
+    <string name="background_preview">Háttér</string>
 	<string name="reload">Újratöltés</string>
 	<string name="show">Megjelenítés</string>
 	<string name="converter">Átalakító</string>

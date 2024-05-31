@@ -111,6 +111,7 @@
 	<string name="paste">Pâte</string>
 	<string name="value">Valeur</string>
 	<string name="background">Arrière-plan</string>
+    <string name="background_preview">Arrière-plan</string>
 	<string name="reload">Recharger</string>
 	<string name="show">Montrer</string>
 	<string name="converter">Convertisseur</string>

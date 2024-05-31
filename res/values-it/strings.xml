@@ -149,6 +149,7 @@
 	<string name="paste">Incolla</string>
 	<string name="value">Valore</string>
 	<string name="background">Sfondo</string>
+    <string name="background_preview">Sfondo</string>
 	<string name="reload">Ricarica</string>
 	<string name="show">Mostra</string>
 	<string name="converter">Convertitore</string>
