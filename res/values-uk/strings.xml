@@ -874,4 +874,6 @@
 	<string name="adaptive_icon">Адаптивна</string>
 	<string name="mapp_round_icon">Кругла іконка</string>
 	<string name="libs_one_apk">Створити один APK з вибраними</string>
+	<string name="framework">Фреймворк</string>
+	<string name="open_apk_mf">Відкрити APK</string>
 </resources>
