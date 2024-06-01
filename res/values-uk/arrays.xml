@@ -239,8 +239,8 @@
 		<item>днів</item>
 	</string-array>
 	<string-array name="store_type">
-		<item>вбудований</item>
-		<item>користувацький</item>
+		<item>Вбудований</item>
+		<item>Користувацький</item>
 	</string-array>
 	<string-array name="aapt2_dump_descr">
 		<item>Роздрукувати інформацію, витягнуту з маніфесту APK.</item>

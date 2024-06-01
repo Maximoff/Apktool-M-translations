@@ -72,6 +72,7 @@
 	<string name="start">Начало</string>
 	<string name="end">Конец</string>
     <string name="framework">Фреймворк</string>
+    <string name="syntax">Синтаксис</string>
     <string name="libs_one_apk">Создать один APK с выбранными</string>
 	<string name="disable_syntax">Отключить синтаксис</string>
 	<string name="disable_syntax_summary">Отключить полностью подсветку синтаксиса в редакторе</string>
@@ -723,6 +724,8 @@
 	<string name="clear_split_summary">Удалить следы сплит из ресурсов при декомпиляции</string>
 	<string name="try_merge_res">Попытаться объединить пакеты</string>
 	<string name="try_merge_res_summary">Попытаться объединить дополнительные пакеты ресурсов с основным пакетом при сборке сплитов</string>
+    <string name="custom_frame">Пользовательский фреймворк</string>
+	<string name="custom_frame_summary">Использовать фреймворк, импортированный пользователем, вместо встроенного</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>

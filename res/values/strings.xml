@@ -79,6 +79,7 @@
     <string name="start">Start</string>
     <string name="end">End</string>
     <string name="framework">Framework</string>
+    <string name="syntax">Syntax</string>
     <string name="libs_one_apk">Create one APK with selected ones</string>
     <string name="disable_syntax">Disable syntax</string>
     <string name="disable_syntax_summary">Disable syntax highlighting completely in the editor</string>
@@ -739,6 +740,8 @@
 	<string name="try_merge_res_summary">Try to merge additional resource packs with the main pack when building splits</string>
     <string name="ignore_crc">Ignore CRC sums</string>
 	<string name="ignore_crc_summary">Ignore CRC error in apk/zip ​​when editing</string>
+    <string name="custom_frame">Custom framework</string>
+	<string name="custom_frame_summary">Use a user-imported framework instead of the built-in one</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>

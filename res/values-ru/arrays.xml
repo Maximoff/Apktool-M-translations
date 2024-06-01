@@ -239,8 +239,8 @@
 		<item>дней</item>
 	</string-array>
     <string-array name="store_type">
-		<item>встроенный</item>
-		<item>пользовательский</item>
+		<item>Встроенный</item>
+		<item>Пользовательский</item>
 	</string-array>
     <string-array name="aapt2_dump_descr">
         <item>Распечатать информацию, извлеченную из манифеста APK.</item>
