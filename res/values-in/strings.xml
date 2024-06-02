@@ -74,6 +74,8 @@
 	<string name="select_rows">Pilih baris</string>
 	<string name="start">Awal</string>
 	<string name="end">Akhir</string>
+	<string name="framework">Kerangka kerja</string>
+	<string name="syntax">Sintaks</string>
 	<string name="libs_one_apk">Buat satu APK dengan yang dipilih</string>
 	<string name="disable_syntax">Nonaktifkan sintaks</string>
 	<string name="disable_syntax_summary">Nonaktifkan penyorotan sintaks sepenuhnya di editor</string>
@@ -161,7 +163,7 @@
 	<string name="paste">Tempel</string>
 	<string name="value">Nilai</string>
 	<string name="background">Latar belakang</string>
-    <string name="background_preview">Latar belakang</string>
+	<string name="background_preview">Latar belakang</string>
 	<string name="reload">Muat ulang</string>
 	<string name="show">Tampilkan</string>
 	<string name="converter">Konverter</string>
@@ -273,6 +275,7 @@
 	<string name="redo">Ulang</string>
 	<string name="open">Buka</string>
 	<string name="open_in">Buka di...</string>
+	<string name="open_apk_mf">Buka APK</string>
 	<string name="sharing_file">Bagikan file...</string>
 	<string name="open_in_editor">Buka di editor</string>
 	<string name="view_content">Lihat isi</string>
@@ -729,6 +732,8 @@
 	<string name="try_merge_res_summary">Cobalah untuk menggabungkan paket sumber tambahan dengan paket utama saat membuild pemisahan</string>
 	<string name="ignore_crc">Abaikan jumlah CRC</string>
 	<string name="ignore_crc_summary">Abaikan kesalahan CRC di apk/zip saat mengedit</string>
+	<string name="custom_frame">Kerangka kerja khusus</string>
+	<string name="custom_frame_summary">Gunakan kerangka kerja yang diimpor pengguna, bukan kerangka kerja bawaan</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>

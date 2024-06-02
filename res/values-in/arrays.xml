@@ -234,10 +234,14 @@
 		<item>Menempatkan referensi ke pegangan metode di register vAA. Hadir dalam file Dex sejak versi 039.</item>
 		<item>Menempatkan referensi ke prototipe metode dalam register vAA. Hadir dalam file Dex sejak versi 039.</item>
 	</string-array>
-    <string-array name="years_or_days">
-        <item>tahun</item>
-        <item>hari</item>
-    </string-array>
+	<string-array name="years_or_days">
+		<item>tahun</item>
+		<item>hari</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>Bawaan</item>
+		<item>Khusus</item>
+	</string-array>
 	<string-array name="aapt2_dump_descr">
 		<item>Cetak informasi yang diekstrak dari manifest APK.</item>
 		<item>Cetak setiap konfigurasi yang digunakan oleh sumber dalam APK.</item>
@@ -291,11 +295,11 @@
 		<item>A,R,G,B</item>
 	</string-array>
 	<string-array name="resDecodeMode">
-        <item>Jangan dekompilasi</item>
-        <item>Dekompilasi ke folder utama</item>
-        <item>Dekompilasi ke folder terpisah</item>
-        <item>Cobalah untuk menggabungkan paket</item>
-    </string-array>
+		<item>Jangan dekompilasi</item>
+		<item>Dekompilasi ke folder utama</item>
+		<item>Dekompilasi ke folder terpisah</item>
+		<item>Cobalah untuk menggabungkan paket</item>
+	</string-array>
 	<string-array name="converter_items">
 		<item>Teks &lt;-> Base64</item>
 		<item>Teks &lt;-> Unicode</item>
