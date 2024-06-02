@@ -878,4 +878,16 @@
         <string name="for_others">Για άλλα</string>
         <string name="disable_syntax">Απενεργοποίηση σύνταξης</string>
         <string name="disable_syntax_summary">Απενεργοποιήστε εντελώς την επισήμανση σύνταξης στον επεξεργαστή</string>
+        <string name="libs_one_apk">Δημιουργήστε ένα APK με τα επιλεγμένα</string>
+        <string name="create_icon">Δημιουργία ενός εικονιδίου</string>
+        <string name="vector_icon">Διανυσματικό εικονίδιο</string>
+        <string name="adaptive_icon">Προσαρμοστικό εικονίδιο</string>
+        <string name="mapp_round_icon">Στρογγυλό εικονίδιο</string>
+        <string name="syntax">Σύνταξη</string>
+        <string name="custom_frame">Προσαρμοσμένο framework</string>
+	<string name="custom_frame_summary">Χρήση ενός framework που εισήχθει από το χρήστη αντί του ενσωματωμένου</string>
+        <string name="ignore_crc">Αγνόηση αθροισμάτων CRC</string>
+	<string name="ignore_crc_summary">Αγνοήστε το σφάλμα CRC στο apk/zip κατά την επεξεργασία</string>
+        <string name="try_merge_res">Προσπάθεια συγχώνευσης πακέτων</string>
+	<string name="try_merge_res_summary">Προσπαθήστε να συγχωνεύσετε πρόσθετα πακέτα πόρων με το κύριο πακέτο κατά τη δημιουργία διαχωρισμών</string>
 </resources>
