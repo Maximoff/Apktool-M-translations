@@ -876,4 +876,7 @@
 	<string name="libs_one_apk">Створити один APK з вибраними</string>
 	<string name="framework">Фреймворк</string>
 	<string name="open_apk_mf">Відкрити APK</string>
+	<string name="syntax">Синтаксис</string>
+	<string name="custom_frame">Користувацький фреймворк</string>
+	<string name="custom_frame_summary">Використовувати фреймворк, імпортований користувачем, замість вбудованого</string>
 </resources>
