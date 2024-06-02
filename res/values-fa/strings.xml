@@ -63,9 +63,11 @@
 	<string name="select_rows">انتخاب ردیف ها</string>
         <string name="start">ابتدا</string>
         <string name="end">انتها</string>
+	<string name="framework">چارچوب</string>
+        <string name="syntax">نحو</string>
 	<string name="libs_one_apk">ایجاد یک APK با موارد انتخاب شده</string>
 	<string name="disable_syntax">غیر فعال کردن نحو</string>
-    <string name="disable_syntax_summary">برجسته سازی نحو به طور کامل در ویرایشگر غیرفعال می‌شود.</string>
+        <string name="disable_syntax_summary">برجسته سازی نحو به طور کامل در ویرایشگر غیرفعال می‌شود.</string>
 	<string name="dex_decompile_info">این گزینه همه فایل‌های dex را که در ریشه apk هستند تجزیه می‌کند، اما فایل‌های dex را در زیر پوشه‌ها دست نخورده باقی می‌گذارد.</string>
         <string name="dex_decompile_info2">این گزینه همه فایل‌های dex موجود در apk را تجزیه می‌کند، هم آن‌هایی که در ریشه apk هستند و هم آنهایی که در زیر پوشه‌های apk قرار دارند.</string>
 	<string name="delete_orig">حذف اصلی</string>
@@ -125,7 +127,7 @@
 	<string name="new_file">فایل جدید</string>
 	<string name="new_dir">پوشه مسیر جدید</string>
 	<string name="file">فایل</string>
-	<string name="dir">مسیر</string>
+	<string name="dir">پوشه</string>
 	<string name="filef">فایل: %s</string>
 	<string name="dirf">مسیر: %s</string>
 	<string name="main_project">تنظیم به عنوان پروژه اصلی</string>
@@ -154,7 +156,7 @@
 	<string name="paste">جای‌گذاری</string>
 	<string name="value">مقدار</string>
 	<string name="background">پس زمینه</string>
-    <string name="background_preview">پس زمینه</string>
+        <string name="background_preview">پس زمینه</string>
 	<string name="reload">تازه سازی</string>
 	<string name="show">نمایش</string>
 	<string name="converter">تبدیل کننده</string>
@@ -183,7 +185,7 @@
 	<string name="fav_add">افزودن به موارد دلخواه</string>
 	<string name="file_is_changed">فایل \"%s\" در دستگاه تغییر کرده است، فایل دوباره بارگیری شود؟</string>
 	<string name="set_enl">مقدار \"android:extractNativeLibs\":</string>
-	<string name="copy_id">کپی شناسه</string>
+	<string name="copy_id">رونوشت شناسه</string>
 	<string name="ultra_zip">فشرده سازی فوق العاده</string>
 	<string name="mapp_name">نام برنامه</string>
 	<string name="edit">ویرایش</string>
@@ -200,7 +202,7 @@
 	<string name="protos_count">تعداد نمونه های اولیه</string>
 	<string name="mark_file">علامت گذاری فایل</string>
 	<string name="create_logcat">ایجاد فایل LogCat</string>
-	<string name="aapts33">بارگیری برای SDK 33</string>
+	<string name="aapts33">بارگیری برای SDK ۳۳</string>
 	<string name="aapts33_warn">آگاه باشید که فایل های SDK 33 ممکن است کند و ناپایدار باشند!</string>
 	<string name="aapt2_dens">تنظیم تراکم صفحه نمایش</string>
 	<string name="aapt2_configs">تنظیم پیکربندی ها</string>
@@ -264,6 +266,7 @@
 	<string name="redo">تکرار عمل</string>
 	<string name="open">باز کردن</string>
 	<string name="open_in">باز کردن در...</string>
+	<string name="open_apk_mf">باز کردن APK</string>
 	<string name="sharing_file">اشتراک گذاری...</string>
 	<string name="open_in_editor">باز کردن در ویرایشگر</string>
 	<string name="view_content">مشاهده محتوا</string>
@@ -299,8 +302,8 @@
 	<string name="translate">ترجمه</string>
 	<string name="import_framework">وارد کردن به عنوان چارچوب</string>
 	<string name="import_system">وارد کردن از دستگاه</string>
-    <string name="for_miui">برای MIUI</string>
-    <string name="for_others">برای دیگران</string>
+        <string name="for_miui">برای MIUI</string>
+        <string name="for_others">برای دیگران</string>
 	<string name="sign">امضا</string>
 	<string name="rename">تغییر نام</string>
 	<string name="delete">حذف</string>
@@ -615,7 +618,7 @@
 	<string name="mselect">انتخاب</string>
 	<string name="mselect_all">انتخاب همه</string>
 	<string name="mselect_inv">معکوس</string>
-	<string name="mselect_to">Select to this</string>
+	<string name="mselect_to">این را انتخاب کنید</string>
 	<string name="mantisplit">ضد تقسیم</string>
 	<string name="mmerge">ادغام</string>
 	<string name="mprepare">آماده سازی...</string>
@@ -720,6 +723,8 @@
 	<string name="try_merge_res_summary">سعی می‌کند هنگام ساخت تقسیم، بسته های منابع اضافی با بسته اصلی ادغام شود.</string>
 	<string name="ignore_crc">نادیده گرفتن درستی CRC</string>
 	<string name="ignore_crc_summary">هنگام ویرایش، خطای CRC در apk/zip نادیده گرفته میشود.</string>
+	<string name="custom_frame">چارچوب سفارشی</string>
+	<string name="custom_frame_summary">به جای چارچوب داخلی، از یک چارچوب وارد شده توسط کاربر استفاده کنید</string>
 	<string name="search_call">یافتن فراخوانی ها</string>
 	<string name="search_call_get">یافتن فراخوانی های get</string>
 	<string name="search_call_put">یافتن فراخوانی های put</string>
@@ -772,8 +777,8 @@
 	<string name="mapp_vn">نام نسخه</string>
 	<string name="mapp_cn">کد ساخت</string>
 	<string name="mapp_inLocation">محل نصب</string>
-	<string name="mapp_minsdk">نسخه minimum SDK</string>
-	<string name="mapp_targetsdk">نسخه target SDK</string>
+	<string name="mapp_minsdk">حد اقل نسخه SDK</string>
+	<string name="mapp_targetsdk">نسخه SDK هدف</string>
 	<string name="mapp_down_plugin">آیا می خواهید افزونه رمزگشایی apkm را بارگیری کنید؟</string>
 	<string name="mapk_damage">فایل apk آسیب دیده است!</string>
 	<string name="mapk_nosign">فایل apk امضا نشده است!</string>
