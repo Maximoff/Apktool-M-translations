@@ -238,6 +238,10 @@
 		<item>سال</item>
 		<item>روز</item>
 	</string-array>
+	<string-array name="store_type">
+		<item>پیش‌ساخته</item>
+		<item>سفارشی</item>
+	</string-array>
 	<string-array name="app_theme">
 		<item>روشن</item>
 		<item>تاریک</item>
