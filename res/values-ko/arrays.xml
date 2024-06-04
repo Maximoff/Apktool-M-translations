@@ -234,6 +234,14 @@
 		<item>vAA 레지스터에 메서드 핸들에 대한 참조를 배치합니다. 버전 039부터 Dex 파일에 존재합니다.</item>
 		<item>vAA 레지스터에 메서드 프로토타입에 대한 참조를 배치합니다. 버전 039부터 Dex 파일에 존재합니다.</item>
 	</string-array>
+	<string-array name="years_or_days">
+		<item>년</item>
+		<item>일</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>내장</item>
+		<item>맞춤</item>
+	</string-array>
 	<string-array name="jadx_sets">
 		<item>대체 모드</item>
 		<item>난독화 해제</item>
@@ -283,7 +291,7 @@
 		<item>디컴파일 안 함</item>
 		<item>주 디렉터리로 디컴파일</item>
 		<item>별도의 디렉터리로 디컴파일</item>
-        <item>Try to merge packages</item>
+		<item>패키지 병합 (실험적)</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>텍스트 &lt;-> Base64</item>

@@ -65,6 +65,8 @@
 	<string name="select_rows">줄 선택</string>
 	<string name="start">시작</string>
 	<string name="end">끝</string>
+	<string name="framework">프레임워크</string>
+	<string name="syntax">구문강조</string>
 	<string name="disable_syntax">구문강조 비활성화</string>
 	<string name="disable_syntax_summary">편집기에서 구문 강조 표시를 완전히 비활성화합니다.</string>
 	<string name="dex_decompile_info">이 옵션은 APK 루트에 있는 모든 Dex 파일을 디컴파일하지만 하위 폴더의 Dex 파일은 그대로 둡니다.</string>
@@ -144,7 +146,7 @@
 	<string name="paste">붙여넣기</string>
 	<string name="value">값</string>
 	<string name="background">배경</string>
-    <string name="background_preview">배경</string>
+	<string name="background_preview">배경</string>
 	<string name="reload">다시 로드</string>
 	<string name="show">표시</string>
 	<string name="converter">변환</string>
@@ -286,6 +288,9 @@
 	<string name="verify">서명 확인</string>
 	<string name="translate">번역</string>
 	<string name="import_framework">프레임워크로 가져오기</string>
+	<string name="import_system">시스템에서 가져오기</string>
+	<string name="for_miui">MIUI</string>
+	<string name="for_others">기타</string>
 	<string name="sign">서명</string>
 	<string name="rename">이름 바꾸기</string>
 	<string name="delete">삭제</string>
@@ -697,7 +702,13 @@
 	<string name="clear_split_summary">디컴파일 중에 리소스에서 분할 추적을 제거합니다.</string>
 	<string name="try_merge_res">패키지 병합 (실험적)</string>
 	<string name="try_merge_res_summary">분할로 빌드할 때 추가 리소스 팩을 기본 팩과 병합 합니다.</string>
+	<string name="ignore_crc">CRC 확인 무시</string>
+	<string name="ignore_crc_summary">편집 시 apk/zip의 CRC 오류를 무시합니다.</string>
+	<string name="custom_frame">맞춤 프레임워크 사용</string>
+	<string name="custom_frame_summary">내장된 프레임워크 대신 사용자가 가져온 프레임워크를 사용 합니다.</string>
 	<string name="search_call">호출 찾기</string>
+	<string name="search_call_get">get 호출 찾기</string>
+	<string name="search_call_put">put 호출 찾기</string>
 	<string name="search_over">재정의 찾기</string>
 	<string name="search_files">파일 검색</string>
 	<string name="search_result">검색 결과</string>
