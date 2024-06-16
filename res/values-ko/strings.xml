@@ -191,7 +191,7 @@
 	<string name="types_count">유형 수</string>
 	<string name="protos_count">속성 수</string>
 	<string name="mime_type">마임 유형</string>
-	<string name="pngquant">PngQuant (이미지 압축)</string>
+	<string name="pngquant">사진압축 (PngQuant)</string>
 	<string name="mark_file">파일 표시</string>
 	<string name="create_logcat">LogCat 파일 생성</string>
 	<string name="aapts33">SDK 33용 다운로드</string>
@@ -290,7 +290,7 @@
 	<string name="import_framework">프레임워크로 가져오기</string>
 	<string name="import_system">시스템에서 가져오기</string>
 	<string name="for_miui">MIUI</string>
-	<string name="for_others">기타</string>
+	<string name="for_others">현재 시스템</string>
 	<string name="sign">서명</string>
 	<string name="rename">이름 바꾸기</string>
 	<string name="delete">삭제</string>
@@ -449,6 +449,7 @@
 	<string name="dirs_size_summary">목록에 폴더 크기를 표시하거나 숨깁니다</string>
 	<string name="date_format">날짜 형식</string>
 	<string name="date_format_summary">표시되는 날짜 형식을 설정합니다</string>
+	<string name="create_icon">아이콘 만들기</string>
 	<string name="round_icons">둥근 아이콘</string>
 	<string name="round_icons_summary">둥근 탐색기 아이콘</string>
 	<string name="hidden_files">숨겨진 파일 표시/숨김</string>

@@ -73,6 +73,8 @@
 	<string name="end">Конец</string>
     <string name="framework">Фреймворк</string>
     <string name="syntax">Синтаксис</string>
+    <string name="embed_dp">Встроить поставщик документов</string>
+    <string name="embed_dp_info">Функция встраивает в приложение поставщик документов, открывающий доступ к скрытым данным приложения. Открыть папки со скрытыми данными можно будет через системное приложение \"Файлы\" или файловый менеджер, который поддерживает работу с поставщиками документов. Функция работает на Android 5 и выше.</string>
     <string name="libs_one_apk">Создать один APK с выбранными</string>
 	<string name="disable_syntax">Отключить синтаксис</string>
 	<string name="disable_syntax_summary">Отключить полностью подсветку синтаксиса в редакторе</string>
