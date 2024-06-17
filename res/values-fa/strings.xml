@@ -65,6 +65,8 @@
         <string name="end">انتها</string>
 	<string name="framework">چارچوب</string>
         <string name="syntax">نحو</string>
+	<string name="embed_dp">تعبیه ارائه دهنده اسناد</string>
+    <string name="embed_dp_info">این تابع یک ارائه دهنده سند را در برنامه تعبیه می کند که دسترسی به اطلاعات پنهان برنامه را فراهم می کند. پوشه‌های دارای اطلاعات پنهان را می‌توان از طریق برنامه سیستم \"Files\" یا مدیر پرونده ای که از کار با ارائه‌دهندگان اسناد پشتیبانی می‌کند باز کرد. این عملکرد در اندروید ۵ و بالاتر کار می کند.</string>
 	<string name="libs_one_apk">ایجاد یک APK با موارد انتخاب شده</string>
 	<string name="disable_syntax">غیر فعال کردن نحو</string>
         <string name="disable_syntax_summary">برجسته سازی نحو به طور کامل در ویرایشگر غیرفعال می‌شود.</string>
