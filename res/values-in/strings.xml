@@ -76,6 +76,8 @@
 	<string name="end">Akhir</string>
 	<string name="framework">Kerangka kerja</string>
 	<string name="syntax">Sintaks</string>
+	<string name="embed_dp">Penyedia Dokumen Penyematan</string>
+	<string name="embed_dp_info">Fungsi ini menyematkan penyedia dokumen ke dalam aplikasi yang menyediakan akses ke data aplikasi yang tersembunyi. Folder dengan data tersembunyi dapat dibuka melalui aplikasi sistem \"File\" atau manajer file yang mendukung kerja dengan penyedia dokumen. Fungsi ini bekerja pada Android 5 dan yang lebih tinggi.</string>
 	<string name="libs_one_apk">Buat satu APK dengan yang dipilih</string>
 	<string name="disable_syntax">Nonaktifkan sintaks</string>
 	<string name="disable_syntax_summary">Nonaktifkan penyorotan sintaks sepenuhnya di editor</string>

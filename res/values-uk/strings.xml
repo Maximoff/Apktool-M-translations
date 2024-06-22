@@ -114,7 +114,7 @@
 	<string name="paste">Вставити</string>
 	<string name="value">Значення</string>
 	<string name="background">Фон</string>
-    <string name="background_preview">Фон</string>
+	<string name="background_preview">Фон</string>
 	<string name="reload">Перевантажити</string>
 	<string name="show">Показати</string>
 	<string name="converter">Конвертер</string>
@@ -879,6 +879,6 @@
 	<string name="syntax">Синтаксис</string>
 	<string name="custom_frame">Користувацький фреймворк</string>
 	<string name="custom_frame_summary">Використовувати фреймворк, імпортований користувачем, замість вбудованого</string>
-	<string name="embed_dp">Вбудувати Постачальник документів</string>.
-    	<string name="embed_dp_info">Функція вбудовує в додаток Постачальник документів, що відкриває доступ до прихованих даних додатка. Відкрити теки з прихованими даними можливо буде через системний додаток \"Файли\" або менеджер файлів, який підтримує роботу з Постачальник документів. Функція працює на Android 5 і вище.</string>
+	<string name="embed_dp">Вбудувати Постачальник документів</string>
+	<string name="embed_dp_info">Функція вбудовує в додаток Постачальник документів, що відкриває доступ до прихованих даних додатка. Відкрити теки з прихованими даними можливо буде через системний додаток \"Файли\" або менеджер файлів, який підтримує роботу з Постачальник документів. Функція працює на Android 5 і вище.</string>
 </resources>
