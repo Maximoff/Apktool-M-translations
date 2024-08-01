@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>Registros</item>
 		<item>Valores literais</item>
 		<item>Tipos de dados primitivos</item>
@@ -234,729 +234,772 @@
 		<item>Coloca uma referência a um identificador de método no registro vAA. Presente em arquivos Dex desde a versão 039.</item>
 		<item>Coloca uma referência ao protótipo do método no registro vAA. Presente em arquivos Dex desde a versão 039.</item>
 	</string-array>
-    <string-array name="copy_variants">
-        <item>Renomear</item>
-        <item>Renomear apenas arquivos</item>
-        <item>Substituir</item>
-        <item>Pular</item>
-    </string-array>
-    <string-array name="menu_pos">
-        <item>Eaquerda</item>
-        <item>Direito</item>
-    </string-array>
-    <string-array name="checksum_names">
-        <item>Todas MAIÚSCULAS</item>
-        <item>Separe com dois pontos</item>
-    </string-array>
-    <string-array name="sort">
-        <item>Nome</item>
-        <item>Nome (Reverso)</item>
-        <item>Tipo</item>
-        <item>Tipo (Reverso)</item>
-        <item>Tamanho</item>
-        <item>Tamanho (Reverso)</item>
-        <item>Tempo</item>
-        <item>Tempo (Reverso)</item>
-    </string-array>
-    <string-array name="color_var">
-        <item>HEX-Color</item>
-        <item>Código Smali</item>
-        <item>A,R,G,B</item>
-    </string-array>
-    <string-array name="format">
-        <item>@string/jks</item>
-        <item>@string/pkcs12</item>
-        <item>@string/bks</item>
-        <item>@string/pk8</item>
-    </string-array>
-    <string-array name="resDecodeMode">
-        <item>Não descompilar</item>
-        <item>Descompilar ao diretório principal</item>
-        <item>Descompilar em um diretório separado</item>
-        <item>Try to merge packages</item>
-    </string-array>
-    <string-array name="converter_items">
-        <item>Texto &lt;-> Base64</item>
-        <item>Texto &lt;-> Unicode</item>
-        <item>Texto &lt;-> Codificação de URL</item>
-        <item>Texto &lt;-> MD5</item>
-        <item>Texto &lt;-> SHA-1</item>
-        <item>Texto &lt;-> SHA-224</item>
-        <item>Texto &lt;-> SHA-256</item>
-        <item>Texto &lt;-> SHA-384</item>
-        <item>Texto &lt;-> SHA-512</item>
-        <item>Texto &lt;-> Array (UTF-8)</item>
-        <item>Texto &lt;-> Array (UTF-16)</item>
-        <item>Texto &lt;-> Array (UTF-16LE)</item>
-        <item>Texto &lt;-> Array (UTF-16BE)</item>
-        <item>Texto &lt;-> Array (US-ASCII)</item>
-        <item>Texto &lt;-> Array (ISO-8859-1)</item>
-        <item>Texto &lt;-> Array (CP1251)</item>
-        <item>Decimal &lt;-> Binário</item>
-        <item>Decimal &lt;-> Octal</item>
-        <item>Decimal &lt;-> Hex</item>
-        <item>Decimal &lt;-> Hex (0x0)</item>
-        <item>Decimal &lt;-> Hex (0x00000000)</item>
-        <item>Float &lt;-> Binary</item>
-        <item>Float &lt;-> Octal</item>
-        <item>Float &lt;-> Hex</item>
-        <item>Float &lt;-> Hex (0x0)</item>
-        <item>Float &lt;-> Hex (0x00000000)</item>
-        <item>Color &lt;-> Smali</item>
-        <item>Color &lt;-> Decimal</item>
-        <item>Color &lt;-> A,R,G,B</item>
-    </string-array>
-    <string-array name="installLocation">
-        <item>Não configurado</item>
-        <item>Auto</item>
-        <item>Apenas interno</item>
-        <item>Externo preferido</item>
-    </string-array>
-    <string-array name="xml_format_variants">
-        <item>Padrão</item>
-        <item>Apktool</item>
-        <item>Android Studio</item>
-        <item>Truque Simples</item>
-    </string-array>
-    <string-array name="orientation_variants">
-        <item>Padrão</item>
-        <item>Paisagem</item>
-        <item>Retrato</item>
-    </string-array>
-    <string-array name="auto_save_variants">
-        <item>Desativo</item>
-        <item>15 segundos</item>
-        <item>30 segundos</item>
-        <item>1 minuto</item>
-        <item>5 minutos</item>
-    </string-array>
-    <string-array name="to_vector_values">
-        <item>Imagem adaptada (qualidade baixa)</item>
-        <item>Imagem de alta qualidade (tamanho maior)</item>
-        <item>Converter para SVG</item>
-    </string-array>
-    <string-array name="backup_values">
-        <item>Configurações</item>
-        <item>Favoritos</item>
-        <item>Pesquisar/Substituir o histórico</item>
-        <item>Dicionários</item>
-    </string-array>
-    <string-array name="editor_themes">
-        <item>Padrão</item>
-        <item>Novo</item>
-    </string-array>
-    <string-array name="bing_translator_codes">
-        <item>auto-detect</item>
-        <item>az</item>
-        <item>sq</item>
-        <item>en</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>af</item>
-        <item>bn</item>
-        <item>bg</item>
-        <item>bs</item>
-        <item>cy</item>
-        <item>hu</item>
-        <item>vi</item>
-        <item>ht</item>
-        <item>nl</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>da</item>
-        <item>he</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>is</item>
-        <item>es</item>
-        <item>it</item>
-        <item>kk</item>
-        <item>kn</item>
-        <item>yue</item>
-        <item>ca</item>
-        <item>otq</item>
-        <item>zh-Hant</item>
-        <item>zh-Hans</item>
-        <item>ko</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>de</item>
-        <item>ne</item>
-        <item>nb</item>
-        <item>or</item>
-        <item>pa</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>pt-PT</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>sm</item>
-        <item>sr-Cyrl</item>
-        <item>sr-Latn</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>sw</item>
-        <item>ty</item>
-        <item>th</item>
-        <item>ta</item>
-        <item>te</item>
-        <item>to</item>
-        <item>tr</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>fj</item>
-        <item>fil</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>hi</item>
-        <item>mww</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>sv</item>
-        <item>et</item>
-        <item>yua</item>
-        <item>ja</item>
-        <item>am</item>
-        <item>as</item>
-        <item>prs</item>
-        <item>fr-CA</item>
-        <item>iu</item>
-        <item>km</item>
-        <item>tlh-Latn</item>
-        <item>ku</item>
-        <item>kmr</item>
-        <item>lo</item>
-        <item>my</item>
-        <item>ps</item>
-        <item>ti</item>
-    </string-array>
-    <string-array name="bing_translator_names">
-        <item>Automático</item>
-        <item>Azerbaijão (Latim)</item>
-        <item>Albanês</item>
-        <item>Inglês</item>
-        <item>Árabe</item>
-        <item>Armênio</item>
-        <item>Africâner</item>
-        <item>Bengalês</item>
-        <item>Búlgaro</item>
-        <item>Bósnio</item>
-        <item>Galês</item>
-        <item>Húngaro</item>
-        <item>Vietnamita</item>
-        <item>Crioulo Haitiano</item>
-        <item>Holandês</item>
-        <item>Grego</item>
-        <item>Guzerate</item>
-        <item>Dinamarquês</item>
-        <item>Hebraico</item>
-        <item>Indonésio</item>
-        <item>Irlandês</item>
-        <item>Islandês</item>
-        <item>Espanhol</item>
-        <item>Italiano</item>
-        <item>Cazaque</item>
-        <item>Canarês</item>
-        <item>Cantonês Tradicional</item>
-        <item>Catalão</item>
-        <item>Keretarian Otomi</item>
-        <item>Chinês Tradicional</item>
-        <item>Chinês Simplificado</item>
-        <item>Coreano</item>
-        <item>Letão</item>
-        <item>Lituano</item>
-        <item>Malgaxe</item>
-        <item>Malaio</item>
-        <item>Malaiala</item>
-        <item>Maltês</item>
-        <item>Maori</item>
-        <item>Marata</item>
-        <item>Alemão</item>
-        <item>Nepalês</item>
-        <item>Norueguês</item>
-        <item>Oriá</item>
-        <item>Panjabi</item>
-        <item>Persa</item>
-        <item>Polonês</item>
-        <item>Português (Brasil)</item>
-        <item>Português (Portugal)</item>
-        <item>Romeno</item>
-        <item>Russo</item>
-        <item>Samoa</item>
-        <item>Sérvio (Cirílico)</item>
-        <item>Sérvio (Latim)</item>
-        <item>Eslovaco</item>
-        <item>Esloveno</item>
-        <item>Suaíle</item>
-        <item>Tahiti</item>
-        <item>Tailandês</item>
-        <item>Tâmil</item>
-        <item>Telugo</item>
-        <item>Tonga</item>
-        <item>Turco</item>
-        <item>Ucraniano</item>
-        <item>Urdu</item>
-        <item>Fiji</item>
-        <item>Filipino</item>
-        <item>Finlandês</item>
-        <item>Francês</item>
-        <item>Hindi</item>
-        <item>Hmong Dhow</item>
-        <item>Croata</item>
-        <item>Tcheco</item>
-        <item>Sueco</item>
-        <item>Estoniano</item>
-        <item>Yucatec Maya</item>
-        <item>Japonês</item>
-        <item>Amárico</item>
-        <item>Assamês</item>
-        <item>Dari</item>
-        <item>Francês (Canadá)</item>
-        <item>Inuktitut</item>
-        <item>Quemer</item>
-        <item>Klingon (Latim)</item>
-        <item>Curdo (Central)</item>
-        <item>Curdo (Norte)</item>
-        <item>Laosiano</item>
-        <item>Mianmar (Birmanês)</item>
-        <item>Pastó</item>
-        <item>Tigrinya</item>
-    </string-array>
-    <string-array name="google_translator_codes">
-        <item>auto</item>
-        <item>af</item>
-        <item>sq</item>
-        <item>am</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>az</item>
-        <item>eu</item>
-        <item>be</item>
-        <item>bn</item>
-        <item>bs</item>
-        <item>bg</item>
-        <item>ca</item>
-        <item>ceb</item>
-        <item>ny</item>
-        <item>zh-cn</item>
-        <item>zh-tw</item>
-        <item>co</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>da</item>
-        <item>nl</item>
-        <item>en</item>
-        <item>eo</item>
-        <item>et</item>
-        <item>tl</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>fy</item>
-        <item>gl</item>
-        <item>ka</item>
-        <item>de</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>ht</item>
-        <item>ha</item>
-        <item>haw</item>
-        <item>iw</item>
-        <item>hi</item>
-        <item>hmn</item>
-        <item>hu</item>
-        <item>is</item>
-        <item>ig</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>it</item>
-        <item>ja</item>
-        <item>jw</item>
-        <item>kn</item>
-        <item>kk</item>
-        <item>km</item>
-        <item>ko</item>
-        <item>ku</item>
-        <item>ky</item>
-        <item>lo</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>lb</item>
-        <item>mk</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>mn</item>
-        <item>my</item>
-        <item>ne</item>
-        <item>no</item>
-        <item>ps</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>ma</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>sm</item>
-        <item>gd</item>
-        <item>sr</item>
-        <item>st</item>
-        <item>sn</item>
-        <item>sd</item>
-        <item>si</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>so</item>
-        <item>es</item>
-        <item>su</item>
-        <item>sw</item>
-        <item>sv</item>
-        <item>tg</item>
-        <item>ta</item>
-        <item>te</item>
-        <item>th</item>
-        <item>tr</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>uz</item>
-        <item>vi</item>
-        <item>cy</item>
-        <item>xh</item>
-        <item>yi</item>
-        <item>yo</item>
-        <item>zu</item>
-        <item>or</item>
-        <item>pa</item>
-        <item>rw</item>
-        <item>tt</item>
-        <item>tk</item>
-        <item>ug</item>
-    </string-array>
-    <string-array name="google_translator_names">
-        <item>Automático</item>
-        <item>Africâner</item>
-        <item>Albanês</item>
-        <item>Amárico</item>
-        <item>Árabe</item>
-        <item>Armênio</item>
-        <item>Azerbaijano</item>
-        <item>Basco</item>
-        <item>Bielorrusso</item>
-        <item>Bengalês</item>
-        <item>Bósnio</item>
-        <item>Búlgaro</item>
-        <item>Catalão</item>
-        <item>Cebuano</item>
-        <item>Cinianja</item>
-        <item>Chinês Simplificado</item>
-        <item>Chinês Tradicional</item>
-        <item>Corso</item>
-        <item>Croata</item>
-        <item>Tcheco</item>
-        <item>Dinamarquês</item>
-        <item>Holandês</item>
-        <item>Inglês</item>
-        <item>Esperanto</item>
-        <item>Estoniano</item>
-        <item>Filipino</item>
-        <item>Finlandês</item>
-        <item>Francês</item>
-        <item>Frisiã</item>
-        <item>Galego</item>
-        <item>Georgiano</item>
-        <item>Alemão</item>
-        <item>Grego</item>
-        <item>Guzerate</item>
-        <item>Crioulo Haitiano</item>
-        <item>Hausa</item>
-        <item>Havaiano</item>
-        <item>Hebraico</item>
-        <item>Hindi</item>
-        <item>Hmong</item>
-        <item>Húngaro</item>
-        <item>Islandês</item>
-        <item>Igbo</item>
-        <item>Indonésio</item>
-        <item>Irlandês</item>
-        <item>Italiano</item>
-        <item>Japonês</item>
-        <item>Javanês</item>
-        <item>Canarês</item>
-        <item>Cazaque</item>
-        <item>Quemer</item>
-        <item>Coreano</item>
-        <item>Curdo (Curmanji)</item>
-        <item>Quirguiz</item>
-        <item>Laosiano</item>
-        <item>Latim</item>
-        <item>Letão</item>
-        <item>Lituano</item>
-        <item>Luxemburguês</item>
-        <item>Macedônio</item>
-        <item>Malgaxe</item>
-        <item>Malaio</item>
-        <item>Malaiala</item>
-        <item>Maltês</item>
-        <item>Maori</item>
-        <item>Marata</item>
-        <item>Mongol</item>
-        <item>Mianmar (Birmanês)</item>
-        <item>Nepalês</item>
-        <item>Norueguês</item>
-        <item>Pastó</item>
-        <item>Persa</item>
-        <item>Polonês</item>
-        <item>Português</item>
-        <item>Panjabi</item>
-        <item>Romeno</item>
-        <item>Russo</item>
-        <item>Samoana</item>
-        <item>Ânglica Escocesa</item>
-        <item>Sérvio</item>
-        <item>Sepedi</item>
-        <item>Xona</item>
-        <item>Sindi</item>
-        <item>Cingalês</item>
-        <item>Eslovaco</item>
-        <item>Esloveno</item>
-        <item>Somali</item>
-        <item>Espanhol</item>
-        <item>Sundanês</item>
-        <item>Suaíle</item>
-        <item>Sueco</item>
-        <item>Tadjique</item>
-        <item>Tâmil</item>
-        <item>Telugo</item>
-        <item>Tailandês</item>
-        <item>Turco</item>
-        <item>Ucraniano</item>
-        <item>Urdu</item>
-        <item>Usbeque</item>
-        <item>Vietnamita</item>
-        <item>Galês</item>
-        <item>Xhosa</item>
-        <item>Iídiche</item>
-        <item>Iorubá</item>
-        <item>Zulu</item>
-        <item>Oriá</item>
-        <item>Panjabi</item>
-        <item>Ruanda</item>
-        <item>Tártaro</item>
-        <item>Turcomeno</item>
-        <item>Uigur</item>
-    </string-array>
-    <string-array name="yandex_translator_codes">
-        <item>auto</item>
-        <item>af</item>
-        <item>sq</item>
-        <item>am</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>az</item>
-        <item>ba</item>
-        <item>eu</item>
-        <item>be</item>
-        <item>bn</item>
-        <item>bs</item>
-        <item>bg</item>
-        <item>my</item>
-        <item>ca</item>
-        <item>ceb</item>
-        <item>zh</item>
-        <item>cv</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>da</item>
-        <item>nl</item>
-        <item>sjn</item>
-        <item>emj</item>
-        <item>en</item>
-        <item>eo</item>
-        <item>et</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>gl</item>
-        <item>ka</item>
-        <item>de</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>ht</item>
-        <item>he</item>
-        <item>mrj</item>
-        <item>hi</item>
-        <item>hu</item>
-        <item>is</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>it</item>
-        <item>ja</item>
-        <item>jv</item>
-        <item>kn</item>
-        <item>kk</item>
-        <item>kazlat</item>
-        <item>km</item>
-        <item>ko</item>
-        <item>ky</item>
-        <item>lo</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>lb</item>
-        <item>mk</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>mhr</item>
-        <item>mn</item>
-        <item>ne</item>
-        <item>no</item>
-        <item>pap</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>pa</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>gd</item>
-        <item>sr</item>
-        <item>si</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>es</item>
-        <item>su</item>
-        <item>sw</item>
-        <item>sv</item>
-        <item>tl</item>
-        <item>tg</item>
-        <item>ta</item>
-        <item>tt</item>
-        <item>te</item>
-        <item>th</item>
-        <item>tr</item>
-        <item>udm</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>uz</item>
-        <item>uzbcyr</item>
-        <item>vi</item>
-        <item>cy</item>
-        <item>xh</item>
-        <item>sah</item>
-        <item>yi</item>
-    </string-array>
-    <string-array name="yandex_translator_names">
-        <item>Automático</item>
-        <item>Africâner</item>
-        <item>Albanês</item>
-        <item>Amárico</item>
-        <item>Árabe</item>
-        <item>Armênio</item>
-        <item>Azerbaijano</item>
-        <item>Basquires</item>
-        <item>Basco</item>
-        <item>Bielorrusso</item>
-        <item>Bengalês</item>
-        <item>Bósnio</item>
-        <item>Búlgaro</item>
-        <item>Birmanês</item>
-        <item>Catalão</item>
-        <item>Cebuano</item>
-        <item>Chinês</item>
-        <item>Chuvacho</item>
-        <item>Croata</item>
-        <item>Tcheco</item>
-        <item>Dinamarquês</item>
-        <item>Holandês</item>
-        <item>Élfico (Sindarin)</item>
-        <item>Emoji</item>
-        <item>Inglês</item>
-        <item>Esperanto</item>
-        <item>Estoniano</item>
-        <item>Finlandês</item>
-        <item>Francês</item>
-        <item>Galego</item>
-        <item>Georgiano</item>
-        <item>Alemão</item>
-        <item>Grego</item>
-        <item>Guzerate</item>
-        <item>Haitiano</item>
-        <item>Hebraico</item>
-        <item>Hill Mari</item>
-        <item>Hindi</item>
-        <item>Húngaro</item>
-        <item>Islandês</item>
-        <item>Indonésio</item>
-        <item>Irlandês</item>
-        <item>Italiano</item>
-        <item>Japonês</item>
-        <item>Javanês</item>
-        <item>Canarês</item>
-        <item>Cazaque</item>
-        <item>Cazaque (Latim)</item>
-        <item>Quemer</item>
-        <item>Coreano</item>
-        <item>Quirguiz</item>
-        <item>Laosiano</item>
-        <item>Latim</item>
-        <item>Letão</item>
-        <item>Lituano</item>
-        <item>Luxemburguês</item>
-        <item>Macedônio</item>
-        <item>Malgaxe</item>
-        <item>Malaio</item>
-        <item>Malaiala</item>
-        <item>Maltês</item>
-        <item>Maori</item>
-        <item>Marata</item>
-        <item>Mari</item>
-        <item>Mongol</item>
-        <item>Nepalês</item>
-        <item>Norueguês</item>
-        <item>Papiamento</item>
-        <item>Persa</item>
-        <item>Polonês</item>
-        <item>Português</item>
-        <item>Panjabi</item>
-        <item>Romeno</item>
-        <item>Russo</item>
-        <item>Galês</item>
-        <item>Sérvio</item>
-        <item>Cingalês</item>
-        <item>Eslovaco</item>
-        <item>Esloveno</item>
-        <item>Espanhol</item>
-        <item>Sundanês</item>
-        <item>Suaíle</item>
-        <item>Sueco</item>
-        <item>Tagalo</item>
-        <item>Tadjique</item>
-        <item>Tâmil</item>
-        <item>Tártaro</item>
-        <item>Telugo</item>
-        <item>Tailandês</item>
-        <item>Turco</item>
-        <item>Udmurtes</item>
-        <item>Ucraniano</item>
-        <item>Urdu</item>
-        <item>Usbeque</item>
-        <item>Usbeque (Cirílico)</item>
-        <item>Vietnamita</item>
-        <item>Galês</item>
-        <item>Xhosa</item>
-        <item>Rubi</item>
-        <item>Iídiche</item>
-    </string-array>
+	<string-array name="years_or_days">
+		<item>years</item>
+		<item>days</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>Built-in</item>
+		<item>Personalizado</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>Imprimir informações extraídas do manifesto do APK.</item>
+		<item>Imprima todas as configurações usadas por um recurso no APK.</item>
+		<item>Imprima as permissões extraídas do manifesto do APK.</item>
+		<item>Imprima o conteúdo do pool de strings da tabela de recursos no APK.</item>
+		<item>Imprima o conteúdo da tabela de recursos do APK.</item>
+		<item>Imprima os recursos &lt;overlayable> de um APK.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Light</item>
+		<item>Dark</item>
+		<item>Black</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>Modo alternativo</item>
+		<item>Desofuscação</item>
+		<item>Fugir do Unicode</item>
+		<item>Mostrar código inconsistente</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>Renomear</item>
+		<item>Renomear apenas arquivos</item>
+		<item>Substituir</item>
+		<item>Pular</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>Eaquerda</item>
+		<item>Direito</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>Todas MAIÚSCULAS</item>
+		<item>Separe com dois pontos</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>Adicionar novos recursos (somente arquivos)</item>
+		<item>Excluir recursos ausentes</item>
+	</string-array>
+	<string-array name="sort">
+		<item>Nome</item>
+		<item>Nome (Reverso)</item>
+		<item>Tipo</item>
+		<item>Tipo (Reverso)</item>
+		<item>Tamanho</item>
+		<item>Tamanho (Reverso)</item>
+		<item>Tempo</item>
+		<item>Tempo (Reverso)</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>HEX-Color</item>
+		<item>Código Smali</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>Não descompilar</item>
+		<item>Descompilar ao diretório principal</item>
+		<item>Descompilar em um diretório separado</item>
+		<item>Tente mesclar pacotes</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>Texto &lt;-> Base64</item>
+		<item>Texto &lt;-> Unicode</item>
+		<item>Texto &lt;-> Codificação de URL</item>
+		<item>Texto &lt;-> MD5</item>
+		<item>Texto &lt;-> SHA-1</item>
+		<item>Texto &lt;-> SHA-224</item>
+		<item>Texto &lt;-> SHA-256</item>
+		<item>Texto &lt;-> SHA-384</item>
+		<item>Texto &lt;-> SHA-512</item>
+		<item>Texto &lt;-> Array (UTF-8)</item>
+		<item>Texto &lt;-> Array (UTF-16)</item>
+		<item>Texto &lt;-> Array (UTF-16LE)</item>
+		<item>Texto &lt;-> Array (UTF-16BE)</item>
+		<item>Texto &lt;-> Array (US-ASCII)</item>
+		<item>Texto &lt;-> Array (ISO-8859-1)</item>
+		<item>Texto &lt;-> Array (CP1251)</item>
+		<item>Decimal &lt;-> Binário</item>
+		<item>Decimal &lt;-> Octal</item>
+		<item>Decimal &lt;-> Hex</item>
+		<item>Decimal &lt;-> Hex (0x0)</item>
+		<item>Decimal &lt;-> Hex (0x00000000)</item>
+		<item>Float &lt;-> Binary</item>
+		<item>Float &lt;-> Octal</item>
+		<item>Float &lt;-> Hex</item>
+		<item>Float &lt;-> Hex (0x0)</item>
+		<item>Float &lt;-> Hex (0x00000000)</item>
+		<item>Color &lt;-> Smali</item>
+		<item>Color &lt;-> Decimal</item>
+		<item>Color &lt;-> A,R,G,B</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>Não configurado</item>
+		<item>Auto</item>
+		<item>Apenas interno</item>
+		<item>Externo preferido</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>Padrão</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>Truque Simples</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>Padrão</item>
+		<item>Paisagem</item>
+		<item>Retrato</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>Desativo</item>
+		<item>15 segundos</item>
+		<item>30 segundos</item>
+		<item>1 minuto</item>
+		<item>5 minutos</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>Imagem adaptada (qualidade baixa)</item>
+		<item>Imagem de alta qualidade (tamanho maior)</item>
+		<item>Converter para SVG</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>Configurações</item>
+		<item>Favoritos</item>
+		<item>Pesquisar/Substituir o histórico</item>
+		<item>Dicionários</item>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>por número de methods/fields</item>
+		<item>into equal parts</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>Data primeiro</item>
+		<item>Dimensione primeiro</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>Padrão</item>
+		<item>Novo</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>auto-detect</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>he</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pt-PT</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>to</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>as</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>my</item>
+		<item>ps</item>
+		<item>ti</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>Automático</item>
+		<item>Azerbaijão (Latim)</item>
+		<item>Albanês</item>
+		<item>Inglês</item>
+		<item>Árabe</item>
+		<item>Armênio</item>
+		<item>Africâner</item>
+		<item>Bengalês</item>
+		<item>Búlgaro</item>
+		<item>Bósnio</item>
+		<item>Galês</item>
+		<item>Húngaro</item>
+		<item>Vietnamita</item>
+		<item>Crioulo Haitiano</item>
+		<item>Holandês</item>
+		<item>Grego</item>
+		<item>Guzerate</item>
+		<item>Dinamarquês</item>
+		<item>Hebraico</item>
+		<item>Indonésio</item>
+		<item>Irlandês</item>
+		<item>Islandês</item>
+		<item>Espanhol</item>
+		<item>Italiano</item>
+		<item>Cazaque</item>
+		<item>Canarês</item>
+		<item>Cantonês Tradicional</item>
+		<item>Catalão</item>
+		<item>Keretarian Otomi</item>
+		<item>Chinês Tradicional</item>
+		<item>Chinês Simplificado</item>
+		<item>Coreano</item>
+		<item>Letão</item>
+		<item>Lituano</item>
+		<item>Malgaxe</item>
+		<item>Malaio</item>
+		<item>Malaiala</item>
+		<item>Maltês</item>
+		<item>Maori</item>
+		<item>Marata</item>
+		<item>Alemão</item>
+		<item>Nepalês</item>
+		<item>Norueguês</item>
+		<item>Oriá</item>
+		<item>Panjabi</item>
+		<item>Persa</item>
+		<item>Polonês</item>
+		<item>Português (Brasil)</item>
+		<item>Português (Portugal)</item>
+		<item>Romeno</item>
+		<item>Russo</item>
+		<item>Samoa</item>
+		<item>Sérvio (Cirílico)</item>
+		<item>Sérvio (Latim)</item>
+		<item>Eslovaco</item>
+		<item>Esloveno</item>
+		<item>Suaíle</item>
+		<item>Tahiti</item>
+		<item>Tailandês</item>
+		<item>Tâmil</item>
+		<item>Telugo</item>
+		<item>Tonga</item>
+		<item>Turco</item>
+		<item>Ucraniano</item>
+		<item>Urdu</item>
+		<item>Fiji</item>
+		<item>Filipino</item>
+		<item>Finlandês</item>
+		<item>Francês</item>
+		<item>Hindi</item>
+		<item>Hmong Dhow</item>
+		<item>Croata</item>
+		<item>Tcheco</item>
+		<item>Sueco</item>
+		<item>Estoniano</item>
+		<item>Yucatec Maya</item>
+		<item>Japonês</item>
+		<item>Amárico</item>
+		<item>Assamês</item>
+		<item>Dari</item>
+		<item>Francês (Canadá)</item>
+		<item>Inuktitut</item>
+		<item>Quemer</item>
+		<item>Klingon (Latim)</item>
+		<item>Curdo (Central)</item>
+		<item>Curdo (Norte)</item>
+		<item>Laosiano</item>
+		<item>Mianmar (Birmanês)</item>
+		<item>Pastó</item>
+		<item>Tigrinya</item>
+	</string-array>
+	<string-array name="google_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>Automático</item>
+		<item>Africâner</item>
+		<item>Albanês</item>
+		<item>Amárico</item>
+		<item>Árabe</item>
+		<item>Armênio</item>
+		<item>Azerbaijano</item>
+		<item>Basco</item>
+		<item>Bielorrusso</item>
+		<item>Bengalês</item>
+		<item>Bósnio</item>
+		<item>Búlgaro</item>
+		<item>Catalão</item>
+		<item>Cebuano</item>
+		<item>Cinianja</item>
+		<item>Chinês Simplificado</item>
+		<item>Chinês Tradicional</item>
+		<item>Corso</item>
+		<item>Croata</item>
+		<item>Tcheco</item>
+		<item>Dinamarquês</item>
+		<item>Holandês</item>
+		<item>Inglês</item>
+		<item>Esperanto</item>
+		<item>Estoniano</item>
+		<item>Filipino</item>
+		<item>Finlandês</item>
+		<item>Francês</item>
+		<item>Frisiã</item>
+		<item>Galego</item>
+		<item>Georgiano</item>
+		<item>Alemão</item>
+		<item>Grego</item>
+		<item>Guzerate</item>
+		<item>Crioulo Haitiano</item>
+		<item>Hausa</item>
+		<item>Havaiano</item>
+		<item>Hebraico</item>
+		<item>Hindi</item>
+		<item>Hmong</item>
+		<item>Húngaro</item>
+		<item>Islandês</item>
+		<item>Igbo</item>
+		<item>Indonésio</item>
+		<item>Irlandês</item>
+		<item>Italiano</item>
+		<item>Japonês</item>
+		<item>Javanês</item>
+		<item>Canarês</item>
+		<item>Cazaque</item>
+		<item>Quemer</item>
+		<item>Coreano</item>
+		<item>Curdo (Curmanji)</item>
+		<item>Quirguiz</item>
+		<item>Laosiano</item>
+		<item>Latim</item>
+		<item>Letão</item>
+		<item>Lituano</item>
+		<item>Luxemburguês</item>
+		<item>Macedônio</item>
+		<item>Malgaxe</item>
+		<item>Malaio</item>
+		<item>Malaiala</item>
+		<item>Maltês</item>
+		<item>Maori</item>
+		<item>Marata</item>
+		<item>Mongol</item>
+		<item>Mianmar (Birmanês)</item>
+		<item>Nepalês</item>
+		<item>Norueguês</item>
+		<item>Pastó</item>
+		<item>Persa</item>
+		<item>Polonês</item>
+		<item>Português</item>
+		<item>Panjabi</item>
+		<item>Romeno</item>
+		<item>Russo</item>
+		<item>Samoana</item>
+		<item>Ânglica Escocesa</item>
+		<item>Sérvio</item>
+		<item>Sepedi</item>
+		<item>Xona</item>
+		<item>Sindi</item>
+		<item>Cingalês</item>
+		<item>Eslovaco</item>
+		<item>Esloveno</item>
+		<item>Somali</item>
+		<item>Espanhol</item>
+		<item>Sundanês</item>
+		<item>Suaíle</item>
+		<item>Sueco</item>
+		<item>Tadjique</item>
+		<item>Tâmil</item>
+		<item>Telugo</item>
+		<item>Tailandês</item>
+		<item>Turco</item>
+		<item>Ucraniano</item>
+		<item>Urdu</item>
+		<item>Usbeque</item>
+		<item>Vietnamita</item>
+		<item>Galês</item>
+		<item>Xhosa</item>
+		<item>Iídiche</item>
+		<item>Iorubá</item>
+		<item>Zulu</item>
+		<item>Oriá</item>
+		<item>Panjabi</item>
+		<item>Ruanda</item>
+		<item>Tártaro</item>
+		<item>Turcomeno</item>
+		<item>Uigur</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>ba</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>my</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>zh</item>
+		<item>cv</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>sjn</item>
+		<item>emj</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>he</item>
+		<item>mrj</item>
+		<item>hi</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jv</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>kazlat</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mhr</item>
+		<item>mn</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>pap</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pa</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tl</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>udm</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>uzbcyr</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>sah</item>
+		<item>yi</item>
+	</string-array>
+	<string-array name="yandex_translator_names">
+		<item>Automático</item>
+		<item>Africâner</item>
+		<item>Albanês</item>
+		<item>Amárico</item>
+		<item>Árabe</item>
+		<item>Armênio</item>
+		<item>Azerbaijano</item>
+		<item>Basquires</item>
+		<item>Basco</item>
+		<item>Bielorrusso</item>
+		<item>Bengalês</item>
+		<item>Bósnio</item>
+		<item>Búlgaro</item>
+		<item>Birmanês</item>
+		<item>Catalão</item>
+		<item>Cebuano</item>
+		<item>Chinês</item>
+		<item>Chuvacho</item>
+		<item>Croata</item>
+		<item>Tcheco</item>
+		<item>Dinamarquês</item>
+		<item>Holandês</item>
+		<item>Élfico (Sindarin)</item>
+		<item>Emoji</item>
+		<item>Inglês</item>
+		<item>Esperanto</item>
+		<item>Estoniano</item>
+		<item>Finlandês</item>
+		<item>Francês</item>
+		<item>Galego</item>
+		<item>Georgiano</item>
+		<item>Alemão</item>
+		<item>Grego</item>
+		<item>Guzerate</item>
+		<item>Haitiano</item>
+		<item>Hebraico</item>
+		<item>Hill Mari</item>
+		<item>Hindi</item>
+		<item>Húngaro</item>
+		<item>Islandês</item>
+		<item>Indonésio</item>
+		<item>Irlandês</item>
+		<item>Italiano</item>
+		<item>Japonês</item>
+		<item>Javanês</item>
+		<item>Canarês</item>
+		<item>Cazaque</item>
+		<item>Cazaque (Latim)</item>
+		<item>Quemer</item>
+		<item>Coreano</item>
+		<item>Quirguiz</item>
+		<item>Laosiano</item>
+		<item>Latim</item>
+		<item>Letão</item>
+		<item>Lituano</item>
+		<item>Luxemburguês</item>
+		<item>Macedônio</item>
+		<item>Malgaxe</item>
+		<item>Malaio</item>
+		<item>Malaiala</item>
+		<item>Maltês</item>
+		<item>Maori</item>
+		<item>Marata</item>
+		<item>Mari</item>
+		<item>Mongol</item>
+		<item>Nepalês</item>
+		<item>Norueguês</item>
+		<item>Papiamento</item>
+		<item>Persa</item>
+		<item>Polonês</item>
+		<item>Português</item>
+		<item>Panjabi</item>
+		<item>Romeno</item>
+		<item>Russo</item>
+		<item>Galês</item>
+		<item>Sérvio</item>
+		<item>Cingalês</item>
+		<item>Eslovaco</item>
+		<item>Esloveno</item>
+		<item>Espanhol</item>
+		<item>Sundanês</item>
+		<item>Suaíle</item>
+		<item>Sueco</item>
+		<item>Tagalo</item>
+		<item>Tadjique</item>
+		<item>Tâmil</item>
+		<item>Tártaro</item>
+		<item>Telugo</item>
+		<item>Tailandês</item>
+		<item>Turco</item>
+		<item>Udmurtes</item>
+		<item>Ucraniano</item>
+		<item>Urdu</item>
+		<item>Usbeque</item>
+		<item>Usbeque (Cirílico)</item>
+		<item>Vietnamita</item>
+		<item>Galês</item>
+		<item>Xhosa</item>
+		<item>Rubi</item>
+		<item>Iídiche</item>
+	</string-array>
 </resources>
