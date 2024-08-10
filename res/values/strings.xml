@@ -80,6 +80,7 @@
     <string name="end">End</string>
     <string name="framework">Framework</string>
     <string name="syntax">Syntax</string>
+    <string name="copy_sign">Copy signature from another apk</string>
     <string name="embed_dp">Embed Documents Provider</string>
     <string name="embed_dp_info">The function embeds a document provider into the application that provides access to hidden application data. Folders with hidden data can be opened through the \"Files\" system application or a file manager that supports working with document providers. The function works on Android 5 and higher.</string>
     <string name="libs_one_apk">Create one APK with selected ones</string>
@@ -744,6 +745,11 @@
 	<string name="ignore_crc_summary">Ignore CRC error in apk/zip ​​when editing</string>
     <string name="custom_frame">Custom framework</string>
 	<string name="custom_frame_summary">Use a user-imported framework instead of the built-in one</string>
+    <string name="custom_exts">Text extensions</string>
+	<string name="custom_exts_summary">File extensions that will be detected by the program as text</string>
+    <string name="custom_exts_info">Specify extensions separated by commas: aaa, bbb, ccc</string>
+    <string name="remove_property">Remove &lt;property></string>
+	<string name="remove_property_summary">Remove &lt;property> tags from manifest when decompiling</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>

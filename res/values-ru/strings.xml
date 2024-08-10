@@ -73,6 +73,7 @@
 	<string name="end">Конец</string>
     <string name="framework">Фреймворк</string>
     <string name="syntax">Синтаксис</string>
+    <string name="copy_sign">Копировать подпись из другого apk</string>
     <string name="embed_dp">Встроить поставщик документов</string>
     <string name="embed_dp_info">Функция встраивает в приложение поставщик документов, открывающий доступ к скрытым данным приложения. Открыть папки со скрытыми данными можно будет через системное приложение \"Файлы\" или файловый менеджер, который поддерживает работу с поставщиками документов. Функция работает на Android 5 и выше.</string>
     <string name="libs_one_apk">Создать один APK с выбранными</string>
@@ -728,6 +729,11 @@
 	<string name="try_merge_res_summary">Попытаться объединить дополнительные пакеты ресурсов с основным пакетом при сборке сплитов</string>
     <string name="custom_frame">Пользовательский фреймворк</string>
 	<string name="custom_frame_summary">Использовать фреймворк, импортированный пользователем, вместо встроенного</string>
+    <string name="custom_exts">Текстовые расширения</string>
+	<string name="custom_exts_summary">Расширения файлов, которые будут определяться программой, как текст</string>
+    <string name="custom_exts_info">Укажите расширения через запятую: aaa, bbb, ccc</string>
+    <string name="remove_property">Удалить &lt;property></string>
+	<string name="remove_property_summary">Удалить теги &lt;property> из манифеста при декомпиляции</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>
