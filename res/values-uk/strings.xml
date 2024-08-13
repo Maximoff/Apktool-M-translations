@@ -881,4 +881,10 @@
 	<string name="custom_frame_summary">Використовувати фреймворк, імпортований користувачем, замість вбудованого</string>
 	<string name="embed_dp">Вбудувати Постачальник документів</string>
 	<string name="embed_dp_info">Функція вбудовує в додаток Постачальник документів, що відкриває доступ до прихованих даних додатка. Відкрити теки з прихованими даними можливо буде через системний додаток \"Файли\" або менеджер файлів, який підтримує роботу з Постачальник документів. Функція працює на Android 5 і вище.</string>
+	<string name="copy_sign">Копіювати підпис з іншого apk</string>
+	<string name="custom_exts">Текстові розширення</string>
+	<string name="custom_exts_summary">Розширення файлів, які будуть визначатися програмою, як текст</string>
+	<string name="custom_exts_info">Вкажіть розширення через кому: aaa, bbb, ccc</string>
+	<string name="remove_property">Видаляти &lt;property></string>
+	<string name="remove_property_summary">Видаляти теги &lt;property> з маніфесту при декомпіляції</string>
 </resources>
