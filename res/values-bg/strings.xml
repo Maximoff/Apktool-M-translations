@@ -179,8 +179,7 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">Маркирай файл</string>
 	<string name="create_logcat">Създайте LogCat файл</string>
-	<string name="aapts33">Изтегли за SDK 33</string>
-	<string name="aapts33_warn">Файловете за SDK 33 може да са бавни и нестабилни!</string>
+	<string name="aapts33_warn">Файловете за SDK33 може да са бавни и нестабилни!</string>
 	<string name="aapt2_dens">Задай плътност на екрана</string>
 	<string name="aapt2_configs">Задаване на конфигурации</string>
 	<string name="label_den">Плътност на екрана: \"%s\"</string>

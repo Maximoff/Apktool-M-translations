@@ -222,8 +222,7 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">Mark file</string>
 	<string name="create_logcat">Create LogCat file</string>
-	<string name="aapts33">Download for SDK 33</string>
-	<string name="aapts33_warn">Be prepared that files for SDK 33 may be slow and unstable!</string>
+	<string name="aapts33_warn">Be prepared that files for SDK33 may be slow and unstable!</string>
 	<string name="aapt2_dens">Set screen density</string>
 	<string name="aapt2_configs">Set configurations</string>
 	<string name="label_den">Screen density: \"%s\"</string>

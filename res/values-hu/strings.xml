@@ -137,7 +137,6 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">Fájl megjelölése</string>
 	<string name="create_logcat">LogCat fájl létrehozása</string>
-	<string name="aapts33">Letöltés SDK 33-hoz</string>
 	<string name="aapt2_dens">Képernyősűrűség beállítása</string>
 	<string name="aapt2_configs">Konfigurációk beállítása</string>
 	<string name="aapt2_dens_info">&lt;b>Vesszővel elválasztott&lt;/b> lista azokról a képernyősűrűségekről, amelyekre az APK optimalizálva lesz. Az összes olyan erőforrás, amely a megadott sűrűségű eszközökön nem lenne felhasználva, ki lesz véve az APK-ból.</string>

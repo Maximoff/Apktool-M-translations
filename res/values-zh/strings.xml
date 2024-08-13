@@ -649,8 +649,7 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">标记文件</string>
 	<string name="create_logcat">创建 LogCat 文件</string>
-	<string name="aapts33">下载 SDK 33</string>
-	<string name="aapts33_warn">请注意，SDK 33的文件可能会速度缓慢且不稳定！</string>
+	<string name="aapts33_warn">请注意，SDK33的文件可能会速度缓慢且不稳定！</string>
 	<string name="aapt2_dens">设置屏幕密度</string>
 	<string name="aapt2_configs">设置配置</string>
 	<string name="aapt2_dens_info">用&lt;b>逗号分隔&lt;/b>的屏幕密度列表，APK 将针对这些密度进行优化。在给定密度的设备上未使用的所有资源都将从 APK 中删除。</string>

@@ -8,8 +8,7 @@
 	<string name="aapt2_configs_info">&lt;b>Rozdzielana przecinkami&lt;/b> lista konfiguracji do uwzględnienia. Wartość domyślna to wszystkie konfiguracje.</string>
 	<string name="aapt2_dens">Ustaw rozdzielczość ekranu</string>
 	<string name="aapt2_dens_info">&lt;b>Rozdzielana przecinkami&lt;/b> lista rozdzielczości ekranu, pod kątem której plik APK będzie zoptymalizowany. Wszystkie zasoby, które nie byłyby wykorzystane na urządzeniach o danej rozdzielczości, zostaną usunięte z APK.</string>
-	<string name="aapts33">Pobierz dla SDK 33</string>
-	<string name="aapts33_warn">Bądź przygotowany, że pliki SDK 33 mogą być wolne i niestabilne!</string>
+	<string name="aapts33_warn">Bądź przygotowany, że pliki SDK33 mogą być wolne i niestabilne!</string>
 	<string name="about">O Aplikacji</string>
 	<string name="about_summary">Informacje o autorze, przydatne linki</string>
 	<string name="accessibility_info">W przypadku Androida 13 lub nowszego należy udzielić specjalnego pozwolenia, aby włączyć usługę ułatwień dostępu. Aby to zrobić, otwórz systemowe informacje o aplikacji i w menu u góry (trzy kropki) udziel zgody. To menu może nie zostać wyświetlone, dopóki nie klikniesz usługi ułatwień dostępu.</string>

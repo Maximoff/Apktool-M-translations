@@ -149,7 +149,6 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">Shënoni skedarin</string>
 	<string name="create_logcat">Krijoni skedarin LogCat</string>
-	<string name="aapts33">Shkarkoni për SDK 33</string>
 	<string name="aapt2_dens">Cakto densitetin e ekranit</string>
 	<string name="aapt2_configs">Vendosni konfigurimet</string>
 	<string name="aapt2_dens_info">Lista &lt;b>të ndara me presje&lt;/b> të densitetit të ekranit për të cilin do të optimizohet APK. Të gjitha burimet që do të ishin të papërdorura në pajisjet e densitetit të caktuar do të hiqen nga APK.</string>

@@ -159,8 +159,7 @@
 	<string name="protos_count">Кількість прототипів</string>
 	<string name="mark_file">Позначити файл</string>
 	<string name="create_logcat">Створити файл LogCat</string>
-	<string name="aapts33">Завантажити для SDK 33</string>
-	<string name="aapts33_warn">Будьте готові, що файли для SDK 33 можуть працювати повільно та не стабільно!</string>
+	<string name="aapts33_warn">Будьте готові, що файли для SDK33 можуть працювати повільно та не стабільно!</string>
 	<string name="aapt2_dens">Задати щільність екрану</string>
 	<string name="aapt2_configs">Задати конфігурації</string>
 	<string name="label_den">Щільність екрану: \"%s\"</string>

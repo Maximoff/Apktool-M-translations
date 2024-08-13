@@ -204,8 +204,7 @@
 	<string name="protos_count">تعداد نمونه های اولیه</string>
 	<string name="mark_file">علامت گذاری فایل</string>
 	<string name="create_logcat">ایجاد فایل LogCat</string>
-	<string name="aapts33">بارگیری برای SDK ۳۳</string>
-	<string name="aapts33_warn">آگاه باشید که فایل های SDK 33 ممکن است کند و ناپایدار باشند!</string>
+	<string name="aapts33_warn">آگاه باشید که فایل های SDK33 ممکن است کند و ناپایدار باشند!</string>
 	<string name="aapt2_dens">تنظیم تراکم صفحه نمایش</string>
 	<string name="aapt2_configs">تنظیم پیکربندی ها</string>
 	<string name="aapt2_arch_info">فهرست معماری هایی که باید در apk باقی بمانند، &lt;b>با واوک از هم جدا شوند&lt;/b>. پیش فرض تمام معماری ها است.</string>

@@ -173,8 +173,7 @@
 	<string name="pngquant">PNGSố lượng</string>
 	<string name="mark_file">Đánh dấu tập tin</string>
 	<string name="create_logcat">Tạo tập tin LogCat</string>
-	<string name="aapts33">Tải xuống SDK 33</string>
-	<string name="aapts33_warn">Hãy chuẩn bị tinh thần rằng các tệp dành cho SDK 33 có thể bị chậm và không ổn định!</string>
+	<string name="aapts33_warn">Hãy chuẩn bị tinh thần rằng các tệp dành cho SDK33 có thể bị chậm và không ổn định!</string>
 	<string name="aapt2_dens">Đặt mật độ màn hình</string>
 	<string name="aapt2_configs">Đặt cấu hình</string>
 	<string name="label_den">Mật độ màn hình: \"%s\"</string>

@@ -4,7 +4,6 @@
 	<string name="aapt2_configs_info">&lt;b>Διαχωρισμένες με κόμμα&lt;/b> λίστα διαμορφώσεων που πρέπει να συμπεριληφθούν. Η προεπιλογή είναι όλες οι διαμορφώσεις.</string>
 	<string name="aapt2_dens">Ρύθμιση πυκνότητας οθόνης</string>
 	<string name="aapt2_dens_info">&lt;b>Διαχωρισμένες με κόμμα&lt;/b> λίστα με τις πυκνότητες οθόνης για τις οποίες θα βελτιστοποιηθεί το APK. Όλοι οι πόροι που δεν θα χρησιμοποιηθούν σε συσκευές με τις δεδομένες πυκνότητες θα αφαιρεθούν από το APK.</string>
-	<string name="aapts33">Λήψη για SDK 33</string>
 	<string name="about">Σχετικά</string>
 	<string name="about_summary">Πληροφορίες για τον συγγραφέα, χρήσιμοι σύνδεσμοι</string>
 	<string name="accessibility_service_description">Υπηρεσία λήψης πληροφοριών σχετικά με την εκτέλεση δραστηριοτήτων. Η υπηρεσία δεν συλλέγει προσωπικά δεδομένα.</string>
@@ -761,7 +760,7 @@
 	<string name="dec_indent">Μείωση εσοχής</string>
 	<string name="inc_indent">Αύξηση εσοχής</string>
 	<string name="search_class">Αναζήτηση για κλάση \"%s\"</string>
-	<string name="aapts33_warn">Να είστε ενήμεροι ότι τα αρχεία για το SDK 33 μπορεί να είναι αργά και ασταθή!</string>
+	<string name="aapts33_warn">Να είστε ενήμεροι ότι τα αρχεία για το SDK33 μπορεί να είναι αργά και ασταθή!</string>
 	<string name="checksums_original">Αντικατάσταση των αθροισμάτων ελέγχου από το αρχικό</string>
 	<string name="clear">Εκκαθάριση</string>
 	<string name="kill_sign_notice">Μια εφαρμογή που υποβάλλεται σε επεξεργασία από αυτήν τη λειτουργία δεν θα μπορεί να λειτουργήσει σε εκδόσεις Android παλαιότερες από 5!</string>

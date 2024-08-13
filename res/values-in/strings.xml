@@ -76,6 +76,7 @@
 	<string name="end">Akhir</string>
 	<string name="framework">Kerangka kerja</string>
 	<string name="syntax">Sintaks</string>
+	<string name="copy_sign">Salin tanda tangan dari apk lain</string>
 	<string name="embed_dp">Penyedia Dokumen Penyematan</string>
 	<string name="embed_dp_info">Fungsi ini menyematkan penyedia dokumen ke dalam aplikasi yang menyediakan akses ke data aplikasi yang tersembunyi. Folder dengan data tersembunyi dapat dibuka melalui aplikasi sistem \"File\" atau manajer file yang mendukung kerja dengan penyedia dokumen. Fungsi ini bekerja pada Android 5 dan yang lebih tinggi.</string>
 	<string name="libs_one_apk">Buat satu APK dengan yang dipilih</string>
@@ -213,8 +214,7 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">Tandai file</string>
 	<string name="create_logcat">Buat file LogCat</string>
-	<string name="aapts33">Unduh untuk SDK 33</string>
-	<string name="aapts33_warn">Bersiaplah karena file untuk SDK 33 mungkin lambat dan tidak stabil!</string>
+	<string name="aapts33_warn">Bersiaplah karena file untuk SDK33 mungkin lambat dan tidak stabil!</string>
 	<string name="aapt2_dens">Atur kepadatan layar</string>
 	<string name="aapt2_configs">Atur konfigurasi</string>
 	<string name="label_den">Kepadatan layar: \"%s\"</string>
@@ -736,6 +736,11 @@
 	<string name="ignore_crc_summary">Abaikan kesalahan CRC di apk/zip saat mengedit</string>
 	<string name="custom_frame">Kerangka kerja khusus</string>
 	<string name="custom_frame_summary">Gunakan kerangka kerja yang diimpor pengguna, bukan kerangka kerja bawaan</string>
+	<string name="custom_exts">Ekstensi teks</string>
+	<string name="custom_exts_summary">Ekstensi file yang akan terdeteksi oleh program sebagai teks</string>
+	<string name="custom_exts_info">Tentukan ekstensi yang dipisahkan dengan koma: aaa, bbb, ccc</string>
+	<string name="remove_property">Hapus &lt;properti></string>
+	<string name="remove_property_summary">Hapus &lt;properti> tag dari manifest saat mendekompilasi</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>

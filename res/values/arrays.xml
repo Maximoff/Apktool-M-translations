@@ -479,6 +479,10 @@
         <item>Smali</item>
         <item>XML</item>
 	</string-array>
+    <string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+	</string-array>
 	<string-array name="aapt2_dump">
 		<item>badging</item>
 		<item>configurations</item>

@@ -158,8 +158,7 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">Marquer le fichier</string>
 	<string name="create_logcat">Créer un fichier LogCat</string>
-	<string name="aapts33">Télécharger pour SDK 33</string>
-	<string name="aapts33_warn">Soyez prêt à ce que les fichiers du SDK 33 puissent être lents et instables !</string>
+	<string name="aapts33_warn">Soyez prêt à ce que les fichiers du SDK33 puissent être lents et instables !</string>
 	<string name="aapt2_dens">Définir la densité de l\'écran</string>
 	<string name="aapt2_configs">Définir les configurations</string>
 	<string name="aapt2_dens_info">Liste &lt;b>séparée par des virgules&lt;/b> des densités d\'écran pour lesquelles l\'APK sera optimisé. Toutes les ressources qui seraient inutilisées sur les appareils des densités données seront supprimées de l\'APK.</string>

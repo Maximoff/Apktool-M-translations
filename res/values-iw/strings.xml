@@ -208,8 +208,7 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">סמן קובץ</string>
 	<string name="create_logcat">צור קובץ LogCat</string>
-	<string name="aapts33">הורד עבור SDK 33</string>
-	<string name="aapts33_warn">היו מוכנים לכך שקבצים עבור SDK 33 עשויים להיות איטיים ולא יציבים!</string>
+	<string name="aapts33_warn">היו מוכנים לכך שקבצים עבור SDK33 עשויים להיות איטיים ולא יציבים!</string>
 	<string name="aapt2_dens">הגדר את צפיפות המסך</string>
 	<string name="aapt2_configs">הגדר תצורות</string>
 	<string name="label_den">צפיפות מסך: \"%s\"</string>

@@ -197,8 +197,7 @@
 	<string name="pngquant">PngQuant</string>
 	<string name="mark_file">Segna file</string>
 	<string name="create_logcat">Crea file LogCat</string>
-	<string name="aapts33">Download per SDK 33</string>
-	<string name="aapts33_warn">Tieni presente che i file per l\'SDK 33 potrebbero essere lenti e instabili!</string>
+	<string name="aapts33_warn">Tieni presente che i file per l\'SDK33 potrebbero essere lenti e instabili!</string>
 	<string name="aapt2_dens">Imposta densità schermo</string>
 	<string name="aapt2_configs">Imposta configurazioni</string>
 	<string name="label_den">Densità schermo: \"%s\"</string>
