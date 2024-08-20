@@ -733,6 +733,8 @@
     <string name="custom_exts_info">Укажите расширения через запятую: aaa, bbb, ccc</string>
     <string name="remove_property">Удалить &lt;property></string>
 	<string name="remove_property_summary">Удалить теги &lt;property> из манифеста при декомпиляции</string>
+    <string name="save_sign_data">Сохранять данные подписи V2 и V3</string>
+	<string name="save_sign_data_summary">Сохранять данные подписи при действиях с apk, если выбран вариант подписи \"Не подписывать\"</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>

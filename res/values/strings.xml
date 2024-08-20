@@ -749,6 +749,8 @@
     <string name="custom_exts_info">Specify extensions separated by commas: aaa, bbb, ccc</string>
     <string name="remove_property">Remove &lt;property></string>
 	<string name="remove_property_summary">Remove &lt;property> tags from manifest when decompiling</string>
+    <string name="save_sign_data">Save V2 and V3 signature data</string>
+	<string name="save_sign_data_summary">Save signature data during actions with apk, if the signature option \"Do not sign\" is selected</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>
