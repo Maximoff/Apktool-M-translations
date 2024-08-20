@@ -65,6 +65,7 @@
         <string name="end">انتها</string>
 	<string name="framework">چارچوب</string>
         <string name="syntax">نحو</string>
+	<string name="copy_sign">نسخه برداری امضا از یک apk دیگر</string>
 	<string name="embed_dp">تعبیه ارائه دهنده اسناد</string>
     <string name="embed_dp_info">این تابع یک ارائه دهنده سند را در برنامه تعبیه می کند که دسترسی به اطلاعات پنهان برنامه را فراهم می کند. پوشه‌های دارای اطلاعات پنهان را می‌توان از طریق برنامه سیستم \"Files\" یا مدیر پرونده ای که از کار با ارائه‌دهندگان اسناد پشتیبانی می‌کند باز کرد. این عملکرد در اندروید ۵ و بالاتر کار می کند.</string>
 	<string name="libs_one_apk">ایجاد یک APK با موارد انتخاب شده</string>
@@ -204,7 +205,7 @@
 	<string name="protos_count">تعداد نمونه های اولیه</string>
 	<string name="mark_file">علامت گذاری فایل</string>
 	<string name="create_logcat">ایجاد فایل LogCat</string>
-	<string name="aapts33_warn">آگاه باشید که فایل های SDK33 ممکن است کند و ناپایدار باشند!</string>
+	<string name="aapts33_warn">آگاه باشید که پرونده های SDK33 ممکن است کند و ناپایدار باشند!</string>
 	<string name="aapt2_dens">تنظیم تراکم صفحه نمایش</string>
 	<string name="aapt2_configs">تنظیم پیکربندی ها</string>
 	<string name="aapt2_arch_info">فهرست معماری هایی که باید در apk باقی بمانند، &lt;b>با واوک از هم جدا شوند&lt;/b>. پیش فرض تمام معماری ها است.</string>
@@ -726,6 +727,13 @@
 	<string name="ignore_crc_summary">هنگام ویرایش، خطای CRC در apk/zip نادیده گرفته میشود.</string>
 	<string name="custom_frame">چارچوب سفارشی</string>
 	<string name="custom_frame_summary">به جای چارچوب داخلی، از یک چارچوب وارد شده توسط کاربر استفاده کنید</string>
+	<string name="custom_exts">پسوندهای متن</string>
+	<string name="custom_exts_summary">پسوند پرونده هایی که توسط برنامه به صورت متن شناسایی می شوند</string>
+    <string name="custom_exts_info">پسوندها را مشخص کنید که با واوک از هم جدا شده اند: aaa ،bbc ،ccc</string>
+    <string name="remove_property">حذف &lt;property></string>
+	<string name="remove_property_summary">حذف برچسب های &lt;property> از manifest هنگام تجزیه</string>
+    <string name="save_sign_data">ذخیره اطلاعات امضای v۲ و v۳</string>
+	<string name="save_sign_data_summary">اگر گزینه امضا به صورت \"امضا نشود\" انتخاب شده باشد، اطلاعات امضا در طول عملیات apk ذخیره شود</string>
 	<string name="search_call">یافتن فراخوانی ها</string>
 	<string name="search_call_get">یافتن فراخوانی های get</string>
 	<string name="search_call_put">یافتن فراخوانی های put</string>
