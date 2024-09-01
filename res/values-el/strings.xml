@@ -891,4 +891,12 @@
 	<string name="try_merge_res_summary">Προσπαθήστε να συγχωνεύσετε πρόσθετα πακέτα πόρων με το κύριο πακέτο κατά τη δημιουργία διαχωρισμών</string>
         <string name="embed_dp">Πάροχος Ενσωμάτωσης Εγγράφων</string>
         <string name="embed_dp_info">Η λειτουργία ενσωματώνει έναν πάροχο εγγράφων στην εφαρμογή που παρέχει πρόσβαση σε κρυφά δεδομένα της εφαρμογής. Οι φάκελοι με κρυφά δεδομένα μπορούν να ανοίξουν μέσω της εφαρμογής συστήματος \"Αρχεία\" ή ενός διαχειριστή αρχείων που υποστηρίζει την εργασία με παρόχους εγγράφων. Λειτουργεί σε Android 5 και νεότερες εκδόσεις.</string>
+        <string name="copy_sign">Αντιγραφή υπογραφής από άλλο apk</string>
+        <string name="custom_exts">Επεκτάσεις κειμένου</string>
+	<string name="custom_exts_summary">Επεκτάσεις αρχείων που θα εντοπιστούν από το πρόγραμμα ως κείμενο</string>
+        <string name="custom_exts_info">Καθορισμός επεκτάσεων διαχωρισμένες με κόμμα: aaa, bbb, ccc</string>
+        <string name="remove_property">Αφαίρεση &lt;ιδιότητας></string>
+	<string name="remove_property_summary">Αφαίρεση &lt;ιδιότητας> ετικετών από το manifest στην αποκωδικοποίηση</string>
+        <string name="save_sign_data">Αποθήκ. δεδομ. υπογραφών V2 &amp; V3</string>
+	<string name="save_sign_data_summary">Αποθήκευση δεδομένων υπογραφής στις ενέργειες με το apk, αν η επιλογή υπογραφής \"Χωρίς υπογραφή\" είναι επιλεγμένη</string>
 </resources>
