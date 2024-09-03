@@ -751,6 +751,8 @@
 	<string name="remove_property_summary">Remove &lt;property> tags from manifest when decompiling</string>
     <string name="save_sign_data">Save V2 and V3 signature data</string>
 	<string name="save_sign_data_summary">Save signature data during actions with apk, if the signature option \"Do not sign\" is selected</string>
+    <string name="mapp_inLocation_summary">Ask for application installation location when installing via session</string>
+    <string name="mapp_inLocation_info">To install on external storage, the storage must be mounted in internal memory expansion mode!</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>

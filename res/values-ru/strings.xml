@@ -735,6 +735,8 @@
 	<string name="remove_property_summary">Удалить теги &lt;property> из манифеста при декомпиляции</string>
     <string name="save_sign_data">Сохранять данные подписи V2 и V3</string>
 	<string name="save_sign_data_summary">Сохранять данные подписи при действиях с apk, если выбран вариант подписи \"Не подписывать\"</string>
+	<string name="mapp_inLocation_summary">Спрашивать место установки приложений при установке с помощью сессии</string>
+    <string name="mapp_inLocation_info">Для установки на внешний накопитель, накопитель должен быть подключен в режиме расширения внутренней памяти!</string>
 	<string name="search_call">Найти вызовы</string>
 	<string name="search_call_get">Найти вызовы get</string>
 	<string name="search_call_put">Найти вызовы put</string>
