@@ -886,4 +886,6 @@
 	<string name="custom_exts_info">Вкажіть розширення через кому: aaa, bbb, ccc</string>
 	<string name="remove_property">Видаляти &lt;property></string>
 	<string name="remove_property_summary">Видаляти теги &lt;property> з маніфесту при декомпіляції</string>
+	<string name="mapp_inLocation_summary">Запитувати місце встановлення додатків при встановленні за допомогою сесії</string>.
+	<string name="mapp_inLocation_info">Для встановлення на зовнішній накопичувач, накопичувач повинен бути підключений у режимі розширення внутрішньої пам\'яті!</string>
 </resources>
