@@ -64,6 +64,11 @@
 	<string name="select_rows">Seleziona righe</string>
 	<string name="start">Inizio</string>
 	<string name="end">Fine</string>
+	<string name="syntax">Sintassi</string>
+	<string name="copy_sign">Copia la firma da un altro apk</string>
+	<string name="embed_dp">Fornitore di documenti incorporati</string>
+        <string name="embed_dp_info">La funzione incorpora un provider di documenti nell\'applicazione che fornisce accesso ai dati nascosti dell\'applicazione. Le cartelle con dati nascosti possono essere aperte tramite l\'applicazione di sistema \"Files\" o un file manager che supporta l\'utilizzo dei provider di documenti. La funzione funziona su Android 5 e versioni successive.</string>
+	<string name="libs_one_apk">Crea un APK con quelli selezionati</string>
 	<string name="disable_syntax">Disabilita sintassi</string>
 	<string name="disable_syntax_summary">Disabilita completamente l\'evidenziazione della sintassi nell\'editor</string>
 	<string name="dex_decompile_info">Questa opzione decompila tutti i file dex che si trovano nella root dell\'apk, ma lascia intatti i file dex nelle sottocartelle.</string>
@@ -149,7 +154,7 @@
 	<string name="paste">Incolla</string>
 	<string name="value">Valore</string>
 	<string name="background">Sfondo</string>
-    <string name="background_preview">Sfondo</string>
+        <string name="background_preview">Anteprima sfondo</string>
 	<string name="reload">Ricarica</string>
 	<string name="show">Mostra</string>
 	<string name="converter">Convertitore</string>
@@ -457,6 +462,7 @@
 	<string name="dirs_size_summary">Visualizza la dimensione della cartella nell\'elenco</string>
 	<string name="date_format">Formato data</string>
 	<string name="date_format_summary">Formato data visualizzato</string>
+	<string name="create_icon">Crea un\'icona</string>
 	<string name="round_icons">Icone rotonde</string>
 	<string name="round_icons_summary">Icone rotonde dell\'esploratore</string>
 	<string name="hidden_files">File nascosti</string>
@@ -712,6 +718,17 @@
 	<string name="clear_split_summary">Rimuovi le tracce divise dalle risorse durante la decompilazione</string>
 	<string name="try_merge_res">Prova a unire i pacchetti</string>
 	<string name="try_merge_res_summary">Prova a unire pacchetti di risorse aggiuntivi con il pacchetto principale durante la creazione divisa</string>
+	<string name="ignore_crc">Ignora le somme CRC</string>
+	<string name="ignore_crc_summary">Ignora l\'errore CRC in apk/zip ​​durante la modifica</string>
+	<string name="custom_frame">Framework personalizzato</string>
+	<string name="custom_frame_summary">Utilizza un framework importato dall\'utente invece di quello integrato</string>
+        <string name="custom_exts">Estensioni testo</string>
+	<string name="custom_exts_summary">Estensioni di file che verranno rilevate dal programma come testo</string>
+        <string name="custom_exts_info">Specificare le estensioni separate da virgole: aaa, bbb, ccc</string>
+        <string name="remove_property">Rimuovi &lt;proprietà></string>
+	<string name="remove_property_summary">Rimuovi &lt;proprietà> i tag dal manifesto durante la decompilazione</string>
+	<string name="mapp_inLocation_summary">Richiedi la posizione di installazione dell\'applicazione durante l\'installazione tramite sessione</string>
+        <string name="mapp_inLocation_info">Per installare su un dispositivo di archiviazione esterno, è necessario che il dispositivo sia montato in modalità di espansione della memoria interna!</string>
 	<string name="search_call">Trova chiamate</string>
 	<string name="search_call_get">Trova chiamate prese</string>
 	<string name="search_call_put">Trova chiamate messe</string>
@@ -754,6 +771,9 @@
 	<string name="reset_remind">Ripristina promemoria</string>
 	<string name="mapp_quickedit">Modifica rapida</string>
 	<string name="replace_adaptive">sostituisci l\'icona adattiva</string>
+	<string name="vector_icon">Icona vettoriale</string>
+        <string name="adaptive_icon">Icona adattiva</string>
+        <string name="mapp_round_icon">Icona rotonda</string>
 	<string name="mapp_icon">Icona dell\'app</string>
 	<string name="mapp_label">Nome dell\'app</string>
 	<string name="mapp_pn">Nome del pacchetto</string>
