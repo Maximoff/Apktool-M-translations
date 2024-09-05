@@ -741,6 +741,10 @@
 	<string name="custom_exts_info">Tentukan ekstensi yang dipisahkan dengan koma: aaa, bbb, ccc</string>
 	<string name="remove_property">Hapus &lt;properti></string>
 	<string name="remove_property_summary">Hapus &lt;properti> tag dari manifest saat mendekompilasi</string>
+	<string name="save_sign_data">Simpan data tanda tangan V2 dan V3</string>
+	<string name="save_sign_data_summary">Simpan data tanda tangan selama tindakan dengan apk, jika opsi tanda tangan \"Jangan tanda tangan\" dipilih</string>
+	<string name="mapp_inLocation_summary">Tanyakan lokasi penginstalan aplikasi saat menginstal melalui sesi</string>
+	<string name="mapp_inLocation_info">Untuk memasang pada penyimpanan eksternal, penyimpanan harus dipasang dalam mode ekspansi memori internal!</string>
 	<string name="search_call">Temukan panggilan</string>
 	<string name="search_call_get">Temukan panggilan untuk mendapatkan</string>
 	<string name="search_call_put">Temukan panggilan yang dimasukkan</string>
