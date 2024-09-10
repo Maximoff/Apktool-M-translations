@@ -651,7 +651,7 @@
 	<string name="system_theme_summary">Αυτόματη αλλαγή θέματος ανάλογα με τις ρυθμίσεις του συστήματος</string>
 	<string name="task_cancel_sure">Είστε βέβαιοι ότι θέλετε να ακυρώσετε τη διαδικασία;</string>
 	<string name="telegram">Telegram</string>
-	<string name="telegram_summary">Κανάλι Telegram με ενημερώσεις</string>
+	<string name="telegram_summary">Κανάλι στο Telegram με ενημερώσεις</string>
 	<string name="text">%1$s</string>
 	<string name="time_spent">Χρόνος που πέρασε: %s</string>
 	<string name="to_apks">Μετατροπή σε \"*.apks\"</string>
@@ -899,4 +899,7 @@
 	<string name="remove_property_summary">Αφαίρεση &lt;ιδιότητας> ετικετών από το manifest στην αποκωδικοποίηση</string>
         <string name="save_sign_data">Αποθήκ. δεδομ. υπογραφών V2 &amp; V3</string>
 	<string name="save_sign_data_summary">Αποθήκευση δεδομένων υπογραφής στις ενέργειες με το apk, αν η επιλογή υπογραφής \"Χωρίς υπογραφή\" είναι επιλεγμένη</string>
+        <string name="fast_scroll_summary2">Γρήγορη κύλιση στις λίστες</string>
+        <string name="mapp_inLocation_summary">Ερώτηση θέση εγκατάστασης της εφαρμογής μέσω συνεδρίας</string>
+        <string name="mapp_inLocation_info">Για εγκατάσταση σε εξωτερικό αποθηκευτικό χώρο, ο αποθηκευτικός χώρος πρέπει να είναι τοποθετημένος σε λειτουργία επέκτασης εσωτερικής μνήμης!</string>
 </resources>
