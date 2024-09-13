@@ -803,7 +803,7 @@
 	<string name="mapp_label">App name</string>
 	<string name="mapp_pn">Package name</string>
 	<string name="mapp_vn">Version name</string>
-	<string name="mapp_cn">Build name</string>
+	<string name="mapp_cn">Version code</string>
 	<string name="mapp_inLocation">Install location</string>
 	<string name="mapp_minsdk">Min SDK version</string>
 	<string name="mapp_targetsdk">Target SDK version</string>
