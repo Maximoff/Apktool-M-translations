@@ -73,6 +73,7 @@
 	<string name="end">Конец</string>
     <string name="framework">Фреймворк</string>
     <string name="syntax">Синтаксис</string>
+    <string name="exclude_path">Исключить из поиска</string>
     <string name="base_not_def">Базовый файл не определён, выберите вручную!</string>
     <string name="base_not_found">Базовый файл не найден, выход!</string>
     <string name="copy_sign">Копировать подпись из другого apk</string>

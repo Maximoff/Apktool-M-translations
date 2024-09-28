@@ -80,6 +80,7 @@
     <string name="end">End</string>
     <string name="framework">Framework</string>
     <string name="syntax">Syntax</string>
+    <string name="exclude_path">Exclude from search</string>
     <string name="base_not_def">Base file not defined, select manually!</string>
     <string name="base_not_found">Base file not found, exit!</string>
     <string name="copy_sign">Copy signature from another apk</string>
