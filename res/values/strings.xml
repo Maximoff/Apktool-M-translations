@@ -80,6 +80,8 @@
     <string name="end">End</string>
     <string name="framework">Framework</string>
     <string name="syntax">Syntax</string>
+    <string name="base_not_def">Base file not defined, select manually!</string>
+    <string name="base_not_found">Base file not found, exit!</string>
     <string name="copy_sign">Copy signature from another apk</string>
     <string name="embed_dp">Embed Documents Provider</string>
     <string name="embed_dp_info">The function embeds a document provider into the application that provides access to hidden application data. Folders with hidden data can be opened through the \"Files\" system application or a file manager that supports working with document providers. The function works on Android 5 and higher.</string>
