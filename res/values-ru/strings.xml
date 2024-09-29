@@ -425,7 +425,7 @@
 	<string name="not_found">Ничего не найдено!</string>
 	<string name="compress_level">Уровень сжатия</string>
 	<string name="file_filter">Фильтр файлов</string>
-	<string name="file_filter_help">Используйте шаблоны путей и/или имён файлов, например: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Не используйте регулярные выражения.</string>
+	<string name="file_filter_help">Используйте шаблоны путей и/или имён файлов, например: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Не используйте регулярные выражения.</string>
 	<string name="application">Приложение</string>
 	<string name="application_summary">Глобальные параметры приложения.</string>
 	<string name="editor">Редактор</string>

@@ -299,7 +299,7 @@
 	<string name="file_changed">Plik zmieniony, zapisać zmiany?</string>
 	<string name="file_download">Pobieranie pliku: %s</string>
 	<string name="file_filter">Filtr plików</string>
-	<string name="file_filter_help">„Użyj szablonów ścieżek i/lub nazw plików, na przykład: „*.smali”, „*/drawable*/*.xml”, „*/assets/*”. Nie używaj wyrażeń regularnych.”</string>
+	<string name="file_filter_help">„Użyj szablonów ścieżek i/lub nazw plików, na przykład: „*.smali”, „*/drawable*/*.xml”, „assets/*”. Nie używaj wyrażeń regularnych.”</string>
 	<string name="file_is_changed">Plik „%s” został zmieniony na urządzeniu. załadować plik ponownie?</string>
 	<string name="file_not_found">Plik \"%s\" nie został znaleziony</string>
 	<string name="file_nw">Plik nie nadaje się do zapisu!</string>

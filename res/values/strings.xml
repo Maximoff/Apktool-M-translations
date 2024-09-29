@@ -437,7 +437,7 @@
 	<string name="not_found">Nothing found!</string>
 	<string name="compress_level">Compression level</string>
 	<string name="file_filter">File filter</string>
-	<string name="file_filter_help">Use path and/or file name templates, for example: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Don\'t use regular expressions.</string>
+	<string name="file_filter_help">Use path and/or file name templates, for example: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Don\'t use regular expressions.</string>
 	<string name="backup">Backup</string>
 	<string name="restore">Restore</string>
 	<string name="application">Application</string>

@@ -427,7 +427,7 @@
 	<string name="not_found">Nada encontrado!</string>
 	<string name="compress_level">Nível de compressão</string>
 	<string name="file_filter">Filtro de arquivo</string>
-	<string name="file_filter_help">Use caminho e/ou modelos de nomes, por exemplo: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Nãoo use expressões regulares.</string>
+	<string name="file_filter_help">Use caminho e/ou modelos de nomes, por exemplo: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Nãoo use expressões regulares.</string>
 	<string name="backup">Backup</string>
 	<string name="restore">Restaurar</string>
 	<string name="application">Aplicativo</string>

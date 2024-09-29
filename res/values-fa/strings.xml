@@ -417,7 +417,7 @@
 	<string name="not_found">هیچ چیزی یافت نشد!</string>
 	<string name="compress_level">سطح فشرده سازی</string>
 	<string name="file_filter">فیلتر فایل</string>
-	<string name="file_filter_help">از الگوهای مسیر و/یا نام فایل استفاده کنید، به عنوان مثال: \"*.smali\" ،\"*/drawable*/*.xml\" ،\"*/assets/*\". از عبارات منظم استفاده نکنید.</string>
+	<string name="file_filter_help">از الگوهای مسیر و/یا نام فایل استفاده کنید، به عنوان مثال: \"*.smali\" ،\"*/drawable*/*.xml\" ،\"assets/*\". از عبارات منظم استفاده نکنید.</string>
 	<string name="backup">پشتیبان گیری</string>
 	<string name="restore">بازگرداندن</string>
 	<string name="application">برنامه</string>

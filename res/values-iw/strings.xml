@@ -419,7 +419,7 @@
 	<string name="not_found">שום דבר לא נמצא!</string>
 	<string name="compress_level">רמת דחיסה</string>
 	<string name="file_filter">מסנן קבצים</string>
-	<string name="file_filter_help">השתמש בתבניות של נתיב ו/או שם קובץ, לדוגמה: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". אל תשתמש בביטויים רגולריים.</string>
+	<string name="file_filter_help">השתמש בתבניות של נתיב ו/או שם קובץ, לדוגמה: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". אל תשתמש בביטויים רגולריים.</string>
 	<string name="backup">גיבוי</string>
 	<string name="restore">שחזור</string>
 	<string name="application">יישום</string>

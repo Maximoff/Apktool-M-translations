@@ -427,7 +427,7 @@
 	<string name="not_found">Nada Encontrado!</string>
 	<string name="compress_level">Nivel de compresión</string>
 	<string name="file_filter">Filtro de archivos</string>
-	<string name="file_filter_help">Utilice plantillas de ruta y/o nombre de archivo, por ejemplo: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". No utilices expresiones regulares.</string>
+	<string name="file_filter_help">Utilice plantillas de ruta y/o nombre de archivo, por ejemplo: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". No utilices expresiones regulares.</string>
 	<string name="backup">Respaldo</string>
 	<string name="restore">Restaurar</string>
 	<string name="application">Aplicación</string>

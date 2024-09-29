@@ -403,7 +403,7 @@
 	<string name="not_found">검색 결과 없음!</string>
 	<string name="compress_level">압축 수준</string>
 	<string name="file_filter">파일 필터</string>
-	<string name="file_filter_help">경로 및/또는 파일 이름 템플릿을 사용하십시오(예: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\"). 정규식을 사용하지 마십시오.</string>
+	<string name="file_filter_help">경로 및/또는 파일 이름 템플릿을 사용하십시오(예: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\"). 정규식을 사용하지 마십시오.</string>
 	<string name="backup">백업</string>
 	<string name="restore">복원</string>
 	<string name="application">앱</string>

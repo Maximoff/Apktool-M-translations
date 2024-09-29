@@ -245,7 +245,7 @@
 	<string name="not_found">Nimic găsit!</string>
 	<string name="compress_level">Nivel compresie</string>
 	<string name="file_filter">Filtru Fişiere</string>
-	<string name="file_filter_help">Utilizează șabloane de căi și/sau nume de fișiere, de exemplu: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Nu utilizaţi expresii regulare.</string>
+	<string name="file_filter_help">Utilizează șabloane de căi și/sau nume de fișiere, de exemplu: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Nu utilizaţi expresii regulare.</string>
 	<string name="backup">Backup</string>
 	<string name="restore">Restaurează</string>
 	<string name="application">Aplicaţie</string>

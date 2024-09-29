@@ -426,7 +426,7 @@
 	<string name="not_found">Tidak ada yang ditemukan!</string>
 	<string name="compress_level">Tingkat kompresi</string>
 	<string name="file_filter">Filter file</string>
-	<string name="file_filter_help">Gunakan templat jalur dan/atau nama file, misalnya: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Jangan gunakan ekspresi biasa.</string>
+	<string name="file_filter_help">Gunakan templat jalur dan/atau nama file, misalnya: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Jangan gunakan ekspresi biasa.</string>
 	<string name="backup">Cadangkan</string>
 	<string name="restore">Pulihkan</string>
 	<string name="application">Aplikasi</string>

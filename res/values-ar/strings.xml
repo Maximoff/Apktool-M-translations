@@ -665,7 +665,7 @@
 	<string name="app_theme">سمة</string>
 	<string name="app_theme_summary">إعدادات موضوع الواجهة</string>
 	<string name="file_filter">مرشح الملف</string>
-	<string name="file_filter_help">استخدم قوالب المسار و/أو اسم الملف (على سبيل المثال \"*.smali\"، \"*/drawable*/*.xml\"، \"*/assets/*\"). لا تستخدم التعبيرات العادية.</string>
+	<string name="file_filter_help">استخدم قوالب المسار و/أو اسم الملف (على سبيل المثال \"*.smali\"، \"*/drawable*/*.xml\"، \"assets/*\"). لا تستخدم التعبيرات العادية.</string>
 	<string name="keyboard_suggestions">الإكمال التلقائي للوحة المفاتيح</string>
 	<string name="keyboard_suggestions_summary">إظهار مطالبة لوحة المفاتيح (يعمل بشكل غير مستقر، وغير مستحسن)</string>
 	<string name="use_v3_sign">التوقيع v3</string>

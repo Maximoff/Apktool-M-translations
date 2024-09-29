@@ -482,6 +482,7 @@
     <string-array name="aapts_version">
 		<item>SDK30</item>
 		<item>SDK33</item>
+        <item>SDK35</item>
 	</string-array>
 	<string-array name="aapt2_dump">
 		<item>badging</item>

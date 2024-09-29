@@ -358,7 +358,7 @@
 	<string name="not_found">Rien n\'a été trouvé!</string>
 	<string name="compress_level">Niveau de compression</string>
 	<string name="file_filter">Filtre de fichiers</string>
-	<string name="file_filter_help">Utilisez des modèles de chemin et/ou de nom de fichier, par exemple : \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". N\'utilisez pas d\'expressions régulières.</string>
+	<string name="file_filter_help">Utilisez des modèles de chemin et/ou de nom de fichier, par exemple : \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". N\'utilisez pas d\'expressions régulières.</string>
 	<string name="backup">Sauvegarde</string>
 	<string name="restore">Restaurer</string>
 	<string name="application">Application</string>

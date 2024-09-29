@@ -413,7 +413,7 @@
 	<string name="not_found">Non abbiamo trovato nulla!</string>
 	<string name="compress_level">Livello di compressione</string>
 	<string name="file_filter">Filtro file</string>
-	<string name="file_filter_help">Utilizzare modelli di percorso e/o nome file, ad esempio: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Non utilizzare espressioni regolari.</string>
+	<string name="file_filter_help">Utilizzare modelli di percorso e/o nome file, ad esempio: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Non utilizzare espressioni regolari.</string>
 	<string name="backup">Backup</string>
 	<string name="restore">Ripristina</string>
 	<string name="application">Applicazione</string>

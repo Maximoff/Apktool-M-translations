@@ -377,7 +377,7 @@
 	<string name="not_found">Không kết quả!</string>
 	<string name="compress_level">Mức nén</string>
 	<string name="file_filter">Bộ lọc tập tin</string>
-	<string name="file_filter_help">Sử dụng các mẫu đường dẫn và/hoặc tên tệp, ví dụ: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Đừng sử dụng biểu thức thông thường.</string>
+	<string name="file_filter_help">Sử dụng các mẫu đường dẫn và/hoặc tên tệp, ví dụ: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Đừng sử dụng biểu thức thông thường.</string>
 	<string name="backup">Hỗ trợ</string>
 	<string name="restore">Khôi phục</string>
 	<string name="application">Ứng dụng</string>

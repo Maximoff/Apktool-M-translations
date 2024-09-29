@@ -358,7 +358,7 @@
 	<string name="not_found">Нічого не знайдено!</string>
 	<string name="compress_level">Рівень стиснення</string>
 	<string name="file_filter">Фільтр файлів</string>
-	<string name="file_filter_help">Використовуйте шаблони шляхів і/або імен файлів, наприклад: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Не використовуйте регулярні вирази.</string>
+	<string name="file_filter_help">Використовуйте шаблони шляхів і/або імен файлів, наприклад: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Не використовуйте регулярні вирази.</string>
 	<string name="application">Додаток</string>
 	<string name="application_summary">Глобальні параметри додатку.</string>
 	<string name="editor">Редактор</string>

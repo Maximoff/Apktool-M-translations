@@ -334,7 +334,7 @@
 	<string name="not_found">Nincs találat!</string>
 	<string name="compress_level">Tömörítési szint</string>
 	<string name="file_filter">Fájlszűrő</string>
-	<string name="file_filter_help">Használjon elérési útvonal- és/vagy fájlnév sablonokat, például: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Ne használjon reguláris kifejezéseket.</string>
+	<string name="file_filter_help">Használjon elérési útvonal- és/vagy fájlnév sablonokat, például: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Ne használjon reguláris kifejezéseket.</string>
 	<string name="backup">Biztonsági mentés</string>
 	<string name="restore">Visszaállítás</string>
 	<string name="application">Alkalmazás</string>

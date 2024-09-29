@@ -346,7 +346,7 @@
 	<string name="not_found">Asgjë nuk u gjet!</string>
 	<string name="compress_level">Niveli i kompresimit</string>
 	<string name="file_filter">Filtri i skedarit</string>
-	<string name="file_filter_help">Përdorni shabllonet e shtigjeve dhe/ose të emrave të skedarit, për shembull: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Mos përdorni shprehje të rregullta.</string>
+	<string name="file_filter_help">Përdorni shabllonet e shtigjeve dhe/ose të emrave të skedarit, për shembull: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Mos përdorni shprehje të rregullta.</string>
 	<string name="backup">Rezervimi</string>
 	<string name="restore">Rivendos</string>
 	<string name="application">Aplikacioni</string>

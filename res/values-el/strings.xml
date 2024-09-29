@@ -235,7 +235,7 @@
 	<string name="file">Αρχείο</string>
 	<string name="file_download">Λήψη αρχείου: %s</string>
 	<string name="file_filter">Φίλτρο αρχείου</string>
-	<string name="file_filter_help">Χρησιμοποιήστε πρότυπα διαδρομής και/ή ονόματος αρχείου, για παράδειγμα: \"*.smali\", \"*/drawable*/*.xml\", \"*/assets/*\". Μην χρησιμοποιείτε κανονικές εκφράσεις.</string>
+	<string name="file_filter_help">Χρησιμοποιήστε πρότυπα διαδρομής και/ή ονόματος αρχείου, για παράδειγμα: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Μην χρησιμοποιείτε κανονικές εκφράσεις.</string>
 	<string name="file_is_changed">Το \"%s\" αρχείο έχει αλλάξει στη συσκευή, επαναφόρτωση του αρχείου;</string>
 	<string name="file_not_found">Το \"%s\" αρχείο δεν βρέθηκε!</string>
 	<string name="file_size">Μέγεθος αρχείου</string>

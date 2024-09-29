@@ -679,7 +679,7 @@
 	<string name="lib_set">库集</string>
 	<string name="act_launch">启动 Activity</string>
 	<string name="file_filter">文件过滤器</string>
-	<string name="file_filter_help">使用路径和（或）文件名模板，例如：“*.smali”、“*/drawable*/*.xml”、“*/assets/*”。不使用正则表达式。</string>
+	<string name="file_filter_help">使用路径和（或）文件名模板，例如：“*.smali”、“*/drawable*/*.xml”、“assets/*”。不使用正则表达式。</string>
 	<string name="keyboard_suggestions">键盘自动完成</string>
 	<string name="keyboard_suggestions_summary">显示键盘提示（工作不稳定，不推荐）</string>
 	<string name="use_v3_sign">V3 签名</string>

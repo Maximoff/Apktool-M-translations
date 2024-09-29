@@ -383,7 +383,7 @@
 	<string name="not_found">Нищо не намери!</string>
 	<string name="compress_level">Ниво на компресия</string>
 	<string name="file_filter">Файлов филтър</string>
-	<string name="file_filter_help">Използвай шаблони за път и/или имена на файлове, например: „*.smali“, „*/drawable*/*.xml“, „*/assets/*“. Не използвай регулярни изрази.</string>
+	<string name="file_filter_help">Използвай шаблони за път и/или имена на файлове, например: „*.smali“, „*/drawable*/*.xml“, „assets/*“. Не използвай регулярни изрази.</string>
 	<string name="backup">Бекъп</string>
 	<string name="restore">Възстановяване</string>
 	<string name="application">Приложение</string>
