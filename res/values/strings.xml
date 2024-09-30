@@ -756,6 +756,12 @@
 	<string name="save_sign_data_summary">Save signature data during actions with apk, if the signature option \"Do not sign\" is selected</string>
     <string name="mapp_inLocation_summary">Ask for application installation location when installing via session</string>
     <string name="mapp_inLocation_info">To install on external storage, the storage must be mounted in internal memory expansion mode!</string>
+    <string name="shell_cmd">Shell command</string>
+	<string name="shell_cmd_summary">A shell for running shell scripts</string>
+    <string name="shell_cmd_root">Root command</string>
+	<string name="shell_cmd_root_summary">Command to run shell scripts with root rights</string>
+    <string name="shell_run">Run script</string>
+	<string name="shell_run_root">Run the script with root rights</string>
 	<string name="search_call">Find calls</string>
 	<string name="search_call_get">Find get calls</string>
 	<string name="search_call_put">Find put calls</string>

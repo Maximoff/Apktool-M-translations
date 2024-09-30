@@ -76,6 +76,9 @@
 	<string name="end">Akhir</string>
 	<string name="framework">Kerangka kerja</string>
 	<string name="syntax">Sintaks</string>
+	<string name="exclude_path">Kecualikan dari pencarian</string>
+	<string name="base_not_def">File dasar tidak ditemukan, pilih secara manual!</string>
+	<string name="base_not_found">File dasar tidak ditemukan, keluar!</string>
 	<string name="copy_sign">Salin tanda tangan dari apk lain</string>
 	<string name="embed_dp">Penyedia Dokumen Penyematan</string>
 	<string name="embed_dp_info">Fungsi ini menyematkan penyedia dokumen ke dalam aplikasi yang menyediakan akses ke data aplikasi yang tersembunyi. Folder dengan data tersembunyi dapat dibuka melalui aplikasi sistem \"File\" atau manajer file yang mendukung kerja dengan penyedia dokumen. Fungsi ini bekerja pada Android 5 dan yang lebih tinggi.</string>
@@ -426,7 +429,7 @@
 	<string name="not_found">Tidak ada yang ditemukan!</string>
 	<string name="compress_level">Tingkat kompresi</string>
 	<string name="file_filter">Filter file</string>
-	<string name="file_filter_help">Gunakan templat jalur dan/atau nama file, misalnya: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Jangan gunakan ekspresi biasa.</string>
+	<string name="file_filter_help">Gunakan templat jalur dan/atau nama file, misalnya: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Jangan gunakan ekspresi reguler.</string>
 	<string name="backup">Cadangkan</string>
 	<string name="restore">Pulihkan</string>
 	<string name="application">Aplikasi</string>
@@ -758,7 +761,7 @@
 	<string name="search_rec">pencarian berulang</string>
 	<string name="search_inres">dalam hasil pencarian</string>
 	<string name="search_reset">Atur ulang</string>
-	<string name="search_regexp">Ekspresi biasa</string>
+	<string name="search_regexp">Ekspresi reguler</string>
 	<string name="search_sen2">Peka terhadap huruf besar/kecil</string>
 	<string name="search_loop">Ulangi pencarian</string>
 	<string name="minfo">Info</string>
@@ -816,7 +819,7 @@
 	<string name="moptimize2">Optimalkan (aapt2)</string>
 	<string name="moptimize_file">Optimalisasi: %s</string>
 	<string name="moptimize_hint">Nama atau pola nama</string>
-	<string name="moptimize_info">Tentukan nama file atau pola nama file yang tidak ingin Anda kompres.  Masukkan setiap nama atau pola pada baris baru.  Jangan gunakan ekspresi biasa.</string>
+	<string name="moptimize_info">Tentukan nama file atau pola nama file yang tidak ingin Anda kompres.  Masukkan setiap nama atau pola pada baris baru.  Jangan gunakan ekspresi reguler.</string>
 	<string name="mshow_more_options">Selengkapnya</string>
 	<string name="mtranslator">Penerjemah</string>
 	<string name="gplay">Google Play</string>
