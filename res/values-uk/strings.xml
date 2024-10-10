@@ -888,4 +888,13 @@
 	<string name="remove_property_summary">Видаляти теги &lt;property> з маніфесту при декомпіляції</string>
 	<string name="mapp_inLocation_summary">Запитувати місце встановлення додатків при встановленні за допомогою сесії</string>
 	<string name="mapp_inLocation_info">Для встановлення на зовнішній накопичувач, накопичувач повинен бути підключений у режимі розширення внутрішньої пам\'яті!</string>
+	<string name="base_not_def">Базовий файл не визначено, виберіть вручну!</string>
+	<string name="base_not_found">Базовий файл не знайдено, вихід!</string>
+	<string name="exclude_path">Виключити з пошуку</string>
+	<string name="shell_cmd">Команда оболонки</string>
+	<string name="shell_cmd_summary">Оболонка для запуску shell-скриптів</string>
+	<string name="shell_cmd_root">Команда root</string>
+	<string name="shell_cmd_root_summary">Команда для запуску shell-скриптів з root-правами</string>
+	<string name="shell_run">Запустити скрипт</string>
+	<string name="shell_run_root">Запустити скрипт з root-правами</string>
 </resources>
