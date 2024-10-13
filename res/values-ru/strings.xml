@@ -74,6 +74,8 @@
     <string name="framework">Фреймворк</string>
     <string name="syntax">Синтаксис</string>
     <string name="exclude_path">Исключить из поиска</string>
+    <string name="comp_stats">Статистика сборок</string>
+    <string name="comp_stats_info">Успешно: %1$s\nС ошибкой: %2$s\nВсего: %3$s</string>
     <string name="base_not_def">Базовый файл не определён, выберите вручную!</string>
     <string name="base_not_found">Базовый файл не найден, выход!</string>
     <string name="copy_sign">Копировать подпись из другого apk</string>
