@@ -189,6 +189,7 @@
 	<string name="if_exists">If the file exists</string>
 	<string name="create_list">Create a list</string>
 	<string name="folders_rec">folders recursively</string>
+    <string name="files_rec">files recursively</string>
 	<string name="relative_path">relative path</string>
 	<string name="play">Play</string>
 	<string name="pause">Pause</string>
