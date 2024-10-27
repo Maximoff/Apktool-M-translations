@@ -15,6 +15,7 @@
 	<string name="lock_icon" translatable="false">&#xec61;</string>
 	<string name="block_icon" translatable="false">&#xec41;</string>
     <string name="list_icon" translatable="false">&#xec6f;</string>
+    <string name="clock_icon" translatable="false">&#xec4e;</string>
 	<string name="base64">Base64: %s</string>
 	<string name="base64_sign">Base64 of signature: %s</string>
 	<string name="base64_cert">Base64 of certificate: %s</string>

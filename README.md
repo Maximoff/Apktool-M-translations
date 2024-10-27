@@ -16,6 +16,7 @@ dot
 rarrow
 lock_icon
 block_icon
+clock_icon
 list_icon
 search_menu_title
 status_bar_notification_info_overflow
@@ -39,6 +40,7 @@ dot
 rarrow
 lock_icon
 block_icon
+clock_icon
 list_icon
 search_menu_title
 status_bar_notification_info_overflow
