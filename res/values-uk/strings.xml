@@ -899,4 +899,5 @@
 	<string name="shell_run_root">Запустити скрипт з root-правами</string>
 	<string name="comp_stats">Статистика збірок</string>
 	<string name="comp_stats_info">Успішно: %1$s\пЗ помилкою: %2$s\пУсього: %3$s</string>
+	<string name="files_rec">файли рекурсивно</string>
 </resources>
