@@ -253,6 +253,7 @@
 	<string name="fix_line_numbers_summary">Διορθώστε τους αριθμούς των γραμμών κατά την κύλιση</string>
 	<string name="folder_menu">Μενού φακέλου</string>
 	<string name="folders_rec">φάκελοι αναδρομικά</string>
+        <string name="files_rec">αρχεία αναδρομικά</string>
 	<string name="foldersc">κατάλογοι</string>
 	<string name="font_size">Μέγεθος γραμ/σειράς επεξεργαστή</string>
 	<string name="font_size_summary">Καθορισμός προεπιλεγμένου μεγέθους γραμ/σειράς επεξεργαστή.</string>
@@ -902,4 +903,14 @@
         <string name="fast_scroll_summary2">Γρήγορη κύλιση στις λίστες</string>
         <string name="mapp_inLocation_summary">Ερώτηση θέση εγκατάστασης της εφαρμογής μέσω συνεδρίας</string>
         <string name="mapp_inLocation_info">Για εγκατάσταση σε εξωτερικό αποθηκευτικό χώρο, ο αποθηκευτικός χώρος πρέπει να είναι τοποθετημένος σε λειτουργία επέκτασης εσωτερικής μνήμης!</string>
+        <string name="comp_stats">Συλλογή στατιστικών</string>
+        <string name="comp_stats_info">Επιτυχή: %1$s\nΣφάλματα: %2$s\nΣυνολικά: %3$s</string>
+        <string name="editor_auto_search">Άνοιγμα Αναζήτησης αυτόματα</string>
+        <string name="shell_cmd">Εντολή Κελύφους</string>
+	<string name="shell_cmd_summary">Ένα κέλυφος για την εκτέλεση σεναρίων κελύφους</string>
+        <string name="shell_cmd_root">Εντολή Ρίζας</string>
+	<string name="shell_cmd_root_summary">Εντολή για εκτέλεση σεναρίων κελύφους με δικαιώματα Ρίζας</string>
+        <string name="shell_run">Εκτέλεση σεναρίου</string>
+	<string name="shell_run_root">Εκτέλεση σεναρίου με δικαιώματα Ρίζας</string>
+        <string name="editor_auto_search_summary">Άνοιγμα Αναζήτησης στο άνοιγμα των αποτελεσμάτων αναζήτησης αρχείων</string>
 </resources>
