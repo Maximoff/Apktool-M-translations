@@ -67,6 +67,8 @@
 	<string name="end">끝</string>
 	<string name="framework">프레임워크</string>
 	<string name="syntax">구문강조</string>
+	<string name="comp_stats">통계</string>
+	<string name="comp_stats_info">성공 : %1$s\n오류 : %2$s\n전체 : %3$s</string>
 	<string name="copy_sign">다른앱에서 서명 복사</string>
 	<string name="embed_dp">내장 문서 제공자</string>
 	<string name="embed_dp_info">이 기능은 숨겨진 애플리케이션 데이터에 대한 액세스를 제공하는 애플리케이션에 문서 제공자를 포함합니다. 숨겨진 데이터가 있는 폴더는 \"파일\" 시스템 응용 프로그램이나 문서 제공자 작업을 지원하는 파일 관리자를 통해 열 수 있습니다. 이 기능은 Android 5 이상에서 작동합니다.</string>
@@ -719,6 +721,10 @@
 	<string name="save_sign_data_summary">서명 옵션에 \"서명 안 함\"이 선택된 경우 작업하는 동안 서명 데이터를 저장 합니다.</string>
 	<string name="mapp_inLocation_summary">세션을 통해 설치할 때 애플리케이션 설치 위치 묻기</string>
 	<string name="mapp_inLocation_info">외부 저장소에 설치하려면 저장소를 내부 메모리 확장 모드로 마운트해야 합니다 !</string>
+	<string name="shell_cmd">쉘 커멘드</string>
+	<string name="shell_cmd_summary">쉘 스크립트를 실행하기 위한 쉘</string>
+	<string name="shell_cmd_root">루트 커멘드</string>
+	<string name="shell_cmd_root_summary">루트 권한으로 쉘 스크립트를 실행하기 위한 명령어</string>
 	<string name="search_call">호출 찾기</string>
 	<string name="search_call_get">get 호출 찾기</string>
 	<string name="search_call_put">put 호출 찾기</string>
