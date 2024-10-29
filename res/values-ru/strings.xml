@@ -720,6 +720,8 @@
 	<string name="keep_broken_summary">Используйте это, если произошла ошибка при декомпиляции ресурсов, но вы всё равно хотите их декомпилировать, даже с ошибками</string>
 	<string name="editor_rem_tabs">Запоминать открытые файлы</string>
 	<string name="editor_rem_tabs_summary">Открывать в редакторе последние открытые файлы при запуске приложения</string>
+    <string name="editor_auto_search">Открывать поиск автоматически</string>
+	<string name="editor_auto_search_summary">Открывать поиск при открытии из результатов поиска файлов</string>
 	<string name="detect_protect">Проверять защиту приложений</string>
 	<string name="detect_protect_summary">Пытаться определить защиту файла apk в диалоге деталей</string>
 	<string name="ds_display">Отображение даты и размера</string>
