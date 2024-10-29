@@ -75,6 +75,8 @@
 	<string name="framework">Kerangka kerja</string>
 	<string name="syntax">Sintaks</string>
 	<string name="exclude_path">Kecualikan dari pencarian</string>
+	<string name="comp_stats">Statistik kompilasi</string>
+	<string name="comp_stats_info">Berhasil: %1$s\nKesalahan: %2$s\nTotal: %3$s</string>
 	<string name="base_not_def">File dasar tidak ditemukan, pilih secara manual!</string>
 	<string name="base_not_found">File dasar tidak ditemukan, keluar!</string>
 	<string name="copy_sign">Salin tanda tangan dari apk lain</string>
@@ -181,6 +183,7 @@
 	<string name="if_exists">Jika file tersebut ada</string>
 	<string name="create_list">Buat daftar</string>
 	<string name="folders_rec">folder secara rekursif</string>
+	<string name="files_rec">file secara rekursif</string>
 	<string name="relative_path">jalur relatif</string>
 	<string name="play">Putar</string>
 	<string name="pause">Jeda</string>
