@@ -336,6 +336,8 @@
 	<string name="moving_file">Перемещение \"%s\"...</string>
 	<string name="copy_here">Копировать \"%s\" сюда?</string>
 	<string name="move_here">Переместить \"%s\" сюда?</string>
+    <string name="copy_tt_conf">Копировать \"%s\" в другую вкладку?</string>
+	<string name="move_tt_conf">Переместить \"%s\" в другую вкладку?</string>
 	<string name="file_not_found">Файл \"%s\" не найден!</string>
 	<string name="copy_path">Копировать путь</string>
 	<string name="build_copy_file">Копирование \"%1$s\"...</string>
