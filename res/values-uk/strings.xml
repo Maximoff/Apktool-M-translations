@@ -902,4 +902,6 @@
 	<string name="files_rec">файли рекурсивно</string>
 	<string name="editor_auto_search">Відкривати пошук автоматично</string>
 	<string name="editor_auto_search_summary">Відкривати пошук під час відкриття з результатів пошуку файлів</string>
+	<string name="copy_tt_conf">Копіювати \"%s\" в іншу вкладку?</string>
+	<string name="move_tt_conf">Перемістити \"%s\" в іншу вкладку?</string>
 </resources>
