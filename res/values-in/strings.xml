@@ -342,6 +342,8 @@
 	<string name="moving_file">Memindahkan \"%s\"...</string>
 	<string name="copy_here">Salin \"%s\" di sini?</string>
 	<string name="move_here">Pindahkan \"%s\" di sini?</string>
+	<string name="copy_tt_conf">Salin \"%s\" ke tab lain?</string>
+	<string name="move_tt_conf">Pindahkan \"%s\" ke tab lain?</string>
 	<string name="file_not_found">File \"%s\" tidak ditemukan!</string>
 	<string name="copy_path">Salin jalur</string>
 	<string name="build_copy_file">Menyalin \"%1$s\"...</string>
@@ -351,7 +353,7 @@
 	<string name="unknown_skip_bytes">Data tidak dikenal terdeteksi. Melewati: %d byte\(s\)</string>
 	<string name="using_apktool">Menggunakan Apktool M %1$s pada %2$s</string>
 	<string name="build_run_title">Mengkompilasi...</string>
-	<string name="sign_done">Tanda tangan selesai dan file keluarannya adalah \'%1$s\'.</string>
+	<string name="sign_done">Tanda tangan selesai dan output filenya adalah \'%1$s\'.</string>
 	<string name="verify_v1_success">Verifikasi tanda tangan V1 berhasil.</string>
 	<string name="verify_v1_fail">Verifikasi tanda tangan V1 gagal.</string>
 	<string name="verify_v2_success">Verifikasi tanda tangan V2 berhasil.</string>
@@ -728,6 +730,8 @@
 	<string name="keep_broken_summary">Gunakan ini jika terjadi kesalahan saat mendekompilasi sumber, tetapi Anda masih ingin mendekompilasinya, bahkan dengan kesalahan</string>
 	<string name="editor_rem_tabs">Ingat file yang terbuka</string>
 	<string name="editor_rem_tabs_summary">Buka file yang terakhir dibuka di editor saat aplikasi dimulai</string>
+	<string name="editor_auto_search">Buka pencarian secara otomatis</string>
+	<string name="editor_auto_search_summary">Buka pencarian saat membuka dari hasil pencarian file</string>
 	<string name="detect_protect">Periksa perlindungan aplikasi</string>
 	<string name="detect_protect_summary">Mencoba menentukan perlindungan file apk dalam rincian dialog</string>
 	<string name="ds_display">Tampilan tanggal dan ukuran</string>
