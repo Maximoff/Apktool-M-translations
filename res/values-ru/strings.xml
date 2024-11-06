@@ -747,6 +747,8 @@
 	<string name="save_sign_data_summary">Сохранять данные подписи при действиях с apk, если выбран вариант подписи \"Не подписывать\"</string>
 	<string name="mapp_inLocation_summary">Спрашивать место установки приложений при установке с помощью сессии</string>
     <string name="mapp_inLocation_info">Для установки на внешний накопитель, накопитель должен быть подключен в режиме расширения внутренней памяти!</string>
+    <string name="sign_priority">Приоритет подписи V1</string>
+	<string name="sign_priority_summary">Приоритет подписи V1 при проверке и получении данных подписи</string>
     <string name="shell_cmd">Команда оболочки</string>
 	<string name="shell_cmd_summary">Оболочка для запуска shell-скриптов</string>
     <string name="shell_cmd_root">Команда root</string>

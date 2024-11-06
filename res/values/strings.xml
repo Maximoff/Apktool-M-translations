@@ -764,6 +764,8 @@
 	<string name="save_sign_data_summary">Save signature data during actions with apk, if the signature option \"Do not sign\" is selected</string>
     <string name="mapp_inLocation_summary">Ask for application installation location when installing via session</string>
     <string name="mapp_inLocation_info">To install on external storage, the storage must be mounted in internal memory expansion mode!</string>
+    <string name="sign_priority">Signature priority V1</string>
+	<string name="sign_priority_summary">Signature priority V1 when verifying and retrieving signature data</string>
     <string name="shell_cmd">Shell command</string>
 	<string name="shell_cmd_summary">A shell for running shell scripts</string>
     <string name="shell_cmd_root">Root command</string>
