@@ -16,7 +16,7 @@
 	<string name="no">Tidak</string>
 	<string name="ok">Ok</string>
 	<string name="cancel">Batal</string>
-	<string name="go_to">Pergi ke</string>
+	<string name="go_to">Pergi</string>
 	<string name="new_dict">Kamus Baru</string>
 	<string name="type">Jenis: %s</string>
 	<string name="types">Jenis</string>
@@ -757,6 +757,8 @@
 	<string name="save_sign_data_summary">Simpan data tanda tangan selama tindakan dengan apk, jika opsi tanda tangan \"Jangan tanda tangan\" dipilih</string>
 	<string name="mapp_inLocation_summary">Tanyakan lokasi penginstalan aplikasi saat menginstal melalui sesi</string>
 	<string name="mapp_inLocation_info">Untuk memasang pada penyimpanan eksternal, penyimpanan harus dipasang dalam mode ekspansi memori internal!</string>
+	<string name="sign_priority">Prioritas tanda tangan V1</string>
+	<string name="sign_priority_summary">Prioritas tanda tangan V1 saat memverifikasi dan mengambil data tanda tangan</string>
 	<string name="shell_cmd">Perintah shell</string>
 	<string name="shell_cmd_summary">Shell untuk menjalankan skrip shell</string>
 	<string name="shell_cmd_root">Perintah root</string>
