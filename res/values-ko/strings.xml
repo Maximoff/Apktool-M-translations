@@ -696,6 +696,8 @@
 	<string name="keep_broken_summary">리소스를 디컴파일할 때 오류가 발생해도 계속 디컴파일하고 싶은 경우에 사용하세요.</string>
 	<string name="editor_rem_tabs">열린 파일 기억하기</string>
 	<string name="editor_rem_tabs_summary">앱이 재시작시 편집기에서 마지막으로 열었던 파일을 엽니다</string>
+	<string name="editor_auto_search">검색 자동 열기</string>
+	<string name="editor_auto_search_summary">파일 검색 결과에서 열 때 검색을 자동으로 업니다.</string>
 	<string name="detect_protect">앱 보호 확인</string>
 	<string name="detect_protect_summary">세부 정보 대화 상자에서 APK 파일의 보호를 확인 합니다.</string>
 	<string name="ds_display">날짜 및 크기 표시</string>
