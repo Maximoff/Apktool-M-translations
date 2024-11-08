@@ -904,4 +904,6 @@
 	<string name="editor_auto_search_summary">Відкривати пошук під час відкриття з результатів пошуку файлів</string>
 	<string name="copy_tt_conf">Копіювати \"%s\" в іншу вкладку?</string>
 	<string name="move_tt_conf">Перемістити \"%s\" в іншу вкладку?</string>
+	<string name="sign_priority">Пріоритет підпису V1</string>
+	<string name="sign_priority_summary">Пріоритет підпису V1 при перевірці та отриманні даних підпису</string>
 </resources>
