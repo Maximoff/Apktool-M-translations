@@ -913,4 +913,8 @@
         <string name="shell_run">Εκτέλεση σεναρίου</string>
 	<string name="shell_run_root">Εκτέλεση σεναρίου με δικαιώματα Ρίζας</string>
         <string name="editor_auto_search_summary">Άνοιγμα Αναζήτησης στο άνοιγμα των αποτελεσμάτων αναζήτησης αρχείων</string>
+        <string name="copy_tt_conf">Αντιγραφή \"%s\" σε άλλη Καρτέλα;</string>
+	<string name="move_tt_conf">Μετακίνηση \"%s\" σε άλλη Καρτέλα;</string>
+        <string name="sign_priority">Προτεραιότητα υπογραφής V1</string>
+	<string name="sign_priority_summary">Προτεραιότητα υπογραφής V1 στην επαλήθευση και ανάκτηση δεδομένων υπογραφής</string>
 </resources>
