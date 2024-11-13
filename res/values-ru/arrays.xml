@@ -904,4 +904,37 @@
 		<item>Якутский</item>
 		<item>Японский</item>
 	</string-array>
+    <string-array name="deepl_translator_names">
+		<item>Авто</item>
+		<item>Арабский</item>
+		<item>Болгарский</item>
+		<item>Чешский</item>
+		<item>Датский</item>
+		<item>Немецкий</item>
+		<item>Греческий</item>
+		<item>Английский</item>
+		<item>Испанский</item>
+		<item>Эстонский</item>
+		<item>Финский</item>
+		<item>Французский</item>
+		<item>Венгерский</item>
+		<item>Индонезийский</item>
+		<item>Итальянский</item>
+		<item>Японский</item>
+		<item>Корейский</item>
+		<item>Латышский</item>
+		<item>Литовский</item>
+		<item>Норвежский (Букмол)</item>
+		<item>Нидерландский</item>
+		<item>Польский</item>
+		<item>Португальский</item>
+		<item>Румынский</item>
+		<item>Русский</item>
+		<item>Словацкий</item>
+		<item>Словенский</item>
+		<item>Шведский</item>
+		<item>Турецкий</item>
+		<item>Украинский</item>
+		<item>Китайский</item>
+	</string-array>
 </resources>

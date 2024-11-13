@@ -874,6 +874,8 @@
 	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_bing">Bing</string>
 	<string name="mtr_yandex">Yandex</string>
+    <string name="mtr_deepl">DeepL</string>
+    <string name="mtr_deepl_warn">Too many requests, your IP address is temporarily blocked DeepL! Please wait a while and try again!</string>
 	<string name="mtr_create">Create</string>
 	<string name="mtr_hide_trans">Hide translated</string>
 	<string name="mtr_create_dict">Create dictionary</string>
