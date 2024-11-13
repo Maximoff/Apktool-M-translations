@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>Регистры</item>
 		<item>Литеральные значения</item>
 		<item>Примитивные типы данных</item>
@@ -234,52 +234,52 @@
 		<item>Помещает ссылку на дескриптор метода в регистр vAA. Присутствует в файлах Dex, начиная с версии 039.</item>
 		<item>Помещает ссылку на прототип метода в регистр vAA, Присутствует в файлах Dex, начиная с версии 039.</item>
 	</string-array>
-    <string-array name="years_or_days">
+	<string-array name="years_or_days">
 		<item>лет</item>
 		<item>дней</item>
 	</string-array>
-    <string-array name="store_type">
+	<string-array name="store_type">
 		<item>Встроенный</item>
 		<item>Пользовательский</item>
 	</string-array>
-    <string-array name="aapt2_dump_descr">
-        <item>Распечатать информацию, извлеченную из манифеста APK.</item>
-        <item>Распечатать каждую конфигурацию, используемую ресурсами в APK.</item>
-        <item>Распечатать разрешения, извлеченные из манифеста APK.</item>
-        <item>Распечатать содержимое пула строк таблицы ресурсов APK.</item>
-        <item>Распечатать содержимое таблицы ресурсов APK.</item>
-        <item>Распечатать &lt;overlayable> ресурсы APK.</item>
-    </string-array>
-    <string-array name="app_theme">
-        <item>Светлая</item>
-        <item>Тёмная</item>
-        <item>Чёрная</item>
-    </string-array>
-    <string-array name="jadx_sets">
-        <item>Fallback режим</item>
-        <item>Деобфускация</item>
-        <item>Экранировать юникод</item>
-        <item>Показать противоречивый код</item>
-    </string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>Распечатать информацию, извлеченную из манифеста APK.</item>
+		<item>Распечатать каждую конфигурацию, используемую ресурсами в APK.</item>
+		<item>Распечатать разрешения, извлеченные из манифеста APK.</item>
+		<item>Распечатать содержимое пула строк таблицы ресурсов APK.</item>
+		<item>Распечатать содержимое таблицы ресурсов APK.</item>
+		<item>Распечатать &lt;overlayable> ресурсы APK.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Светлая</item>
+		<item>Тёмная</item>
+		<item>Чёрная</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>Fallback режим</item>
+		<item>Деобфускация</item>
+		<item>Экранировать юникод</item>
+		<item>Показать противоречивый код</item>
+	</string-array>
 	<string-array name="copy_variants">
-        <item>Переименовать</item>
+		<item>Переименовать</item>
 		<item>Переименовать только файлы</item>
-        <item>Заменить</item>
-        <item>Пропустить</item>
-    </string-array>
+		<item>Заменить</item>
+		<item>Пропустить</item>
+	</string-array>
 	<string-array name="menu_pos">
-        <item>Слева</item>
-        <item>Справа</item>
-    </string-array>
+		<item>Слева</item>
+		<item>Справа</item>
+	</string-array>
 	<string-array name="checksum_names">
-        <item>Все заглавные</item>
-        <item>Разделить двоеточием</item>
-    </string-array>
+		<item>Все заглавные</item>
+		<item>Разделить двоеточием</item>
+	</string-array>
 	<string-array name="refresh_res">
-        <item>Добавить новые ресурсы (только файлы)</item>
-        <item>Удалить отсутствующие ресурсы</item>
-    </string-array>
-    <string-array name="sort">
+		<item>Добавить новые ресурсы (только файлы)</item>
+		<item>Удалить отсутствующие ресурсы</item>
+	</string-array>
+	<string-array name="sort">
 		<item>Имя</item>
 		<item>Имя (реверс)</item>
 		<item>Тип</item>
@@ -288,29 +288,29 @@
 		<item>Размер (реверс)</item>
 		<item>Время</item>
 		<item>Время (реверс)</item>
-    </string-array>
+	</string-array>
 	<string-array name="color_var">
-        <item>HEX-цвет</item>
-        <item>Smali код</item>
-        <item>A,R,G,B</item>
-    </string-array>
-    <string-array name="format">
+		<item>HEX-цвет</item>
+		<item>Smali код</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
 		<item>@string/jks</item>
 		<item>@string/pkcs12</item>
 		<item>@string/bks</item>
 		<item>@string/pk8</item>
-    </string-array>
+	</string-array>
 	<string-array name="installLocation">
 		<item>Не задано</item>
-        <item>Авто</item>
-        <item>Внутренняя память</item>
-        <item>Внешняя память</item>
-    </string-array>
+		<item>Авто</item>
+		<item>Внутренняя память</item>
+		<item>Внешняя память</item>
+	</string-array>
 	<string-array name="resDecodeMode">
 		<item>Не декомпилировать</item>
 		<item>Декомпилировать в общий каталог</item>
 		<item>Декомпилировать в отдельный каталог</item>
-        <item>Попытаться объединить пакеты</item>
+		<item>Попытаться объединить пакеты</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Текст &lt;-> Base64</item>
@@ -341,24 +341,24 @@
 		<item>Float &lt;-> Hex (0x00000000)</item>
 		<item>Цвет &lt;-> Smali</item>
 		<item>Цвет &lt;-> Decimal</item>
-        <item>Цвет &lt;-> A,R,G,B</item>
+		<item>Цвет &lt;-> A,R,G,B</item>
 	</string-array>
 	<string-array name="xml_format_variants">
 		<item>По умолчанию</item>
-		<item>Apktool</item> 
+		<item>Apktool</item>
 		<item>Android Studio</item>
 		<item>Simple Trick</item>
 	</string-array>
 	<string-array name="orientation_variants">
 		<item>По умолчанию</item>
-		<item>Ландшафтная</item> 
+		<item>Ландшафтная</item>
 		<item>Портретная</item>
 	</string-array>
 	<string-array name="auto_save_variants">
 		<item>Отключить</item>
-		<item>15 секунд</item> 
+		<item>15 секунд</item>
 		<item>30 секунд</item>
-		<item>1 минута</item> 
+		<item>1 минута</item>
 		<item>5 минут</item>
 	</string-array>
 	<string-array name="to_vector_values">
@@ -369,20 +369,20 @@
 	<string-array name="backup_values">
 		<item>Настройки</item>
 		<item>Закладки</item>
-        <item>История поиска/замены</item>
+		<item>История поиска/замены</item>
 		<item>Словари</item>
-    </string-array>
-    <string-array name="split_dex_items">
-		<item>по количеству методов/полей</item>
-		<item>по равным частям</item> 
 	</string-array>
-    <string-array name="ds_display_items">
+	<string-array name="split_dex_items">
+		<item>по количеству методов/полей</item>
+		<item>по равным частям</item>
+	</string-array>
+	<string-array name="ds_display_items">
 		<item>Сначала дата</item>
-		<item>Сначала размер</item> 
+		<item>Сначала размер</item>
 	</string-array>
 	<string-array name="editor_themes">
 		<item>По умолчанию</item>
-		<item>Новая</item> 
+		<item>Новая</item>
 	</string-array>
 	<string-array name="bing_translator_names">
 		<item>Определить язык</item>
@@ -477,230 +477,230 @@
 		<item>Тигринья</item>
 	</string-array>
 	<string-array name="google_translator_codes">
-        <item>auto</item>
-        <item>az</item>
-        <item>sq</item>
-        <item>am</item>
-        <item>en</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>af</item>
-        <item>eu</item>
-        <item>be</item>
-        <item>bn</item>
-        <item>my</item>
-        <item>bg</item>
-        <item>bs</item>
-        <item>cy</item>
-        <item>hu</item>
-        <item>vi</item>
-        <item>haw</item>
-        <item>gl</item>
-        <item>el</item>
-        <item>ka</item>
-        <item>gu</item>
-        <item>da</item>
-        <item>zu</item>
-        <item>iw</item>
-        <item>ig</item>
-        <item>yi</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>is</item>
-        <item>es</item>
-        <item>it</item>
-        <item>yo</item>
-        <item>kk</item>
-        <item>kn</item>
-        <item>ca</item>
-        <item>ky</item>
-        <item>zh-tw</item>
-        <item>zh-cn</item>
-        <item>ko</item>
-        <item>co</item>
-        <item>ht</item>
-        <item>ku</item>
-        <item>km</item>
-        <item>xh</item>
-        <item>lo</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>lb</item>
-        <item>mk</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>mn</item>
-        <item>de</item>
-        <item>ne</item>
-        <item>nl</item>
-        <item>no</item>
-        <item>or</item>
-        <item>pa</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>ps</item>
-        <item>rw</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>sm</item>
-        <item>ceb</item>
-        <item>sr</item>
-        <item>st</item>
-        <item>si</item>
-        <item>sd</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>so</item>
-        <item>sw</item>
-        <item>su</item>
-        <item>tg</item>
-        <item>th</item>
-        <item>ta</item>
-        <item>tt</item>
-        <item>te</item>
-        <item>tr</item>
-        <item>tk</item>
-        <item>uz</item>
-        <item>ug</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>tl</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>fy</item>
-        <item>ha</item>
-        <item>hi</item>
-        <item>hmn</item>
-        <item>hr</item>
-        <item>ny</item>
-        <item>cs</item>
-        <item>sv</item>
-        <item>sn</item>
-        <item>gd</item>
-        <item>eo</item>
-        <item>et</item>
-        <item>jw</item>
-        <item>ja</item>
-    </string-array>
-    <string-array name="google_translator_names">
-        <item>Определить язык</item>
-        <item>Азербайджанский</item>
-        <item>Албанский</item>
-        <item>Амхарский</item>
-        <item>Английский</item>
-        <item>Арабский</item>
-        <item>Армянский</item>
-        <item>Африкаанс</item>
-        <item>Баскский</item>
-        <item>Белорусский</item>
-        <item>Бенгальский</item>
-        <item>Бирманский</item>
-        <item>Болгарский</item>
-        <item>Боснийский</item>
-        <item>Валлийский</item>
-        <item>Венгерский</item>
-        <item>Вьетнамский</item>
-        <item>Гавайский</item>
-        <item>Галисийский</item>
-        <item>Греческий</item>
-        <item>Грузинский</item>
-        <item>Гуджарати</item>
-        <item>Датский</item>
-        <item>Зулу</item>
-        <item>Иврит</item>
-        <item>Игбо</item>
-        <item>Идиш</item>
-        <item>Индонезийский</item>
-        <item>Ирландский</item>
-        <item>Исландский</item>
-        <item>Испанский</item>
-        <item>Итальянский</item>
-        <item>Йоруба</item>
-        <item>Казахский</item>
-        <item>Каннада</item>
-        <item>Каталанский</item>
-        <item>Киргизский</item>
-        <item>Китайский (традиционный)</item>
-        <item>Китайский (упрощенный)</item>
-        <item>Корейский</item>
-        <item>Корсиканский</item>
-        <item>Креольский (Гаити)</item>
-        <item>Курманджи</item>
-        <item>Кхмерский</item>
-        <item>Кхоса</item>
-        <item>Лаосский</item>
-        <item>Латинский</item>
-        <item>Латышский</item>
-        <item>Литовский</item>
-        <item>Люксембургский</item>
-        <item>Македонский</item>
-        <item>Малагасийский</item>
-        <item>Малайский</item>
-        <item>Малаялам</item>
-        <item>Мальтийский</item>
-        <item>Маори</item>
-        <item>Маратхи</item>
-        <item>Монгольский</item>
-        <item>Немецкий</item>
-        <item>Непальский</item>
-        <item>Нидерландский</item>
-        <item>Норвежский</item>
-        <item>Ория</item>
-        <item>Панджаби</item>
-        <item>Персидский</item>
-        <item>Польский</item>
-        <item>Португальский</item>
-        <item>Пушту</item>
-        <item>Руанда</item>
-        <item>Румынский</item>
-        <item>Русский</item>
-        <item>Самоанский</item>
-        <item>Себуанский</item>
-        <item>Сербский</item>
-        <item>Сесото</item>
-        <item>Сингальский</item>
-        <item>Синдхи</item>
-        <item>Словацкий</item>
-        <item>Словенский</item>
-        <item>Сомалийский</item>
-        <item>Суахили</item>
-        <item>Суданский</item>
-        <item>Таджикский</item>
-        <item>Тайский</item>
-        <item>Тамильский</item>
-        <item>Татарский</item>
-        <item>Телугу</item>
-        <item>Турецкий</item>
-        <item>Туркменский</item>
-        <item>Узбекский</item>
-        <item>Уйгурский</item>
-        <item>Украинский</item>
-        <item>Урду</item>
-        <item>Филиппинский</item>
-        <item>Финский</item>
-        <item>Французский</item>
-        <item>Фризский</item>
-        <item>Хауса</item>
-        <item>Хинди</item>
-        <item>Хмонг</item>
-        <item>Хорватский</item>
-        <item>Чева</item>
-        <item>Чешский</item>
-        <item>Шведский</item>
-        <item>Шона</item>
-        <item>Шотландский (гэльский)</item>
-        <item>Эсперанто</item>
-        <item>Эстонский</item>
-        <item>Яванский</item>
-        <item>Японский</item>
-    </string-array>
-    <string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>my</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>haw</item>
+		<item>gl</item>
+		<item>el</item>
+		<item>ka</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>zu</item>
+		<item>iw</item>
+		<item>ig</item>
+		<item>yi</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>yo</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>ca</item>
+		<item>ky</item>
+		<item>zh-tw</item>
+		<item>zh-cn</item>
+		<item>ko</item>
+		<item>co</item>
+		<item>ht</item>
+		<item>ku</item>
+		<item>km</item>
+		<item>xh</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nl</item>
+		<item>no</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ps</item>
+		<item>rw</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>ceb</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>si</item>
+		<item>sd</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>sw</item>
+		<item>su</item>
+		<item>tg</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>tr</item>
+		<item>tk</item>
+		<item>uz</item>
+		<item>ug</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>ha</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hr</item>
+		<item>ny</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>sn</item>
+		<item>gd</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>jw</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>Определить язык</item>
+		<item>Азербайджанский</item>
+		<item>Албанский</item>
+		<item>Амхарский</item>
+		<item>Английский</item>
+		<item>Арабский</item>
+		<item>Армянский</item>
+		<item>Африкаанс</item>
+		<item>Баскский</item>
+		<item>Белорусский</item>
+		<item>Бенгальский</item>
+		<item>Бирманский</item>
+		<item>Болгарский</item>
+		<item>Боснийский</item>
+		<item>Валлийский</item>
+		<item>Венгерский</item>
+		<item>Вьетнамский</item>
+		<item>Гавайский</item>
+		<item>Галисийский</item>
+		<item>Греческий</item>
+		<item>Грузинский</item>
+		<item>Гуджарати</item>
+		<item>Датский</item>
+		<item>Зулу</item>
+		<item>Иврит</item>
+		<item>Игбо</item>
+		<item>Идиш</item>
+		<item>Индонезийский</item>
+		<item>Ирландский</item>
+		<item>Исландский</item>
+		<item>Испанский</item>
+		<item>Итальянский</item>
+		<item>Йоруба</item>
+		<item>Казахский</item>
+		<item>Каннада</item>
+		<item>Каталанский</item>
+		<item>Киргизский</item>
+		<item>Китайский (традиционный)</item>
+		<item>Китайский (упрощенный)</item>
+		<item>Корейский</item>
+		<item>Корсиканский</item>
+		<item>Креольский (Гаити)</item>
+		<item>Курманджи</item>
+		<item>Кхмерский</item>
+		<item>Кхоса</item>
+		<item>Лаосский</item>
+		<item>Латинский</item>
+		<item>Латышский</item>
+		<item>Литовский</item>
+		<item>Люксембургский</item>
+		<item>Македонский</item>
+		<item>Малагасийский</item>
+		<item>Малайский</item>
+		<item>Малаялам</item>
+		<item>Мальтийский</item>
+		<item>Маори</item>
+		<item>Маратхи</item>
+		<item>Монгольский</item>
+		<item>Немецкий</item>
+		<item>Непальский</item>
+		<item>Нидерландский</item>
+		<item>Норвежский</item>
+		<item>Ория</item>
+		<item>Панджаби</item>
+		<item>Персидский</item>
+		<item>Польский</item>
+		<item>Португальский</item>
+		<item>Пушту</item>
+		<item>Руанда</item>
+		<item>Румынский</item>
+		<item>Русский</item>
+		<item>Самоанский</item>
+		<item>Себуанский</item>
+		<item>Сербский</item>
+		<item>Сесото</item>
+		<item>Сингальский</item>
+		<item>Синдхи</item>
+		<item>Словацкий</item>
+		<item>Словенский</item>
+		<item>Сомалийский</item>
+		<item>Суахили</item>
+		<item>Суданский</item>
+		<item>Таджикский</item>
+		<item>Тайский</item>
+		<item>Тамильский</item>
+		<item>Татарский</item>
+		<item>Телугу</item>
+		<item>Турецкий</item>
+		<item>Туркменский</item>
+		<item>Узбекский</item>
+		<item>Уйгурский</item>
+		<item>Украинский</item>
+		<item>Урду</item>
+		<item>Филиппинский</item>
+		<item>Финский</item>
+		<item>Французский</item>
+		<item>Фризский</item>
+		<item>Хауса</item>
+		<item>Хинди</item>
+		<item>Хмонг</item>
+		<item>Хорватский</item>
+		<item>Чева</item>
+		<item>Чешский</item>
+		<item>Шведский</item>
+		<item>Шона</item>
+		<item>Шотландский (гэльский)</item>
+		<item>Эсперанто</item>
+		<item>Эстонский</item>
+		<item>Яванский</item>
+		<item>Японский</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
 		<item>auto</item>
 		<item>az</item>
 		<item>sq</item>
@@ -803,7 +803,7 @@
 		<item>ja</item>
 	</string-array>
 	<string-array name="yandex_translator_names">
-		<item>Определить язык</item> 
+		<item>Определить язык</item>
 		<item>Азербайджанский</item>
 		<item>Албанский</item>
 		<item>Амхарский</item>
@@ -904,37 +904,70 @@
 		<item>Якутский</item>
 		<item>Японский</item>
 	</string-array>
-    <string-array name="deepl_translator_names">
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>hu</item>
+		<item>el</item>
+		<item>da</item>
+		<item>id</item>
+		<item>es</item>
+		<item>it</item>
+		<item>zh</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>de</item>
+		<item>nl</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
 		<item>Авто</item>
+		<item>Английский</item>
 		<item>Арабский</item>
 		<item>Болгарский</item>
-		<item>Чешский</item>
-		<item>Датский</item>
-		<item>Немецкий</item>
-		<item>Греческий</item>
-		<item>Английский</item>
-		<item>Испанский</item>
-		<item>Эстонский</item>
-		<item>Финский</item>
-		<item>Французский</item>
 		<item>Венгерский</item>
+		<item>Греческий</item>
+		<item>Датский</item>
 		<item>Индонезийский</item>
+		<item>Испанский</item>
 		<item>Итальянский</item>
-		<item>Японский</item>
+		<item>Китайский</item>
 		<item>Корейский</item>
 		<item>Латышский</item>
 		<item>Литовский</item>
-		<item>Норвежский (Букмол)</item>
+		<item>Немецкий</item>
 		<item>Нидерландский</item>
+		<item>Норвежский (Букмол)</item>
 		<item>Польский</item>
 		<item>Португальский</item>
 		<item>Румынский</item>
 		<item>Русский</item>
 		<item>Словацкий</item>
 		<item>Словенский</item>
-		<item>Шведский</item>
 		<item>Турецкий</item>
 		<item>Украинский</item>
-		<item>Китайский</item>
+		<item>Финский</item>
+		<item>Французский</item>
+		<item>Чешский</item>
+		<item>Шведский</item>
+		<item>Эстонский</item>
+		<item>Японский</item>
 	</string-array>
 </resources>
