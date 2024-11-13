@@ -460,29 +460,29 @@
 		<item>Places a reference to a method handle in the vAA register. Present in Dex files since version 039.</item>
 		<item>Places a reference to the method prototype in the vAA register. Present in Dex files since version 039.</item>
 	</string-array>
-    <string-array name="years_or_days">
+	<string-array name="years_or_days">
 		<item>years</item>
 		<item>days</item>
 	</string-array>
-    <string-array name="store_type">
+	<string-array name="store_type">
 		<item>Built-in</item>
 		<item>Custom</item>
 	</string-array>
-    <string-array name="syntax_values">
+	<string-array name="syntax_values">
 		<item>@string/disable_syntax</item>
 		<item>C++</item>
-        <item>CSS</item>
-        <item>Java</item>
-        <item>JavaScript</item>
-        <item>JSON</item>
-        <item>Objective-C</item>
-        <item>Smali</item>
-        <item>XML</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
 	</string-array>
-    <string-array name="aapts_version">
+	<string-array name="aapts_version">
 		<item>SDK30</item>
 		<item>SDK33</item>
-        <item>SDK35</item>
+		<item>SDK35</item>
 	</string-array>
 	<string-array name="aapt2_dump">
 		<item>badging</item>
@@ -620,7 +620,7 @@
 		<item>Do not decompile</item>
 		<item>Decompile to main directory</item>
 		<item>Decompile into a separate directory</item>
-        <item>Try to merge packages</item>
+		<item>Try to merge packages</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Text &lt;-> Base64</item>
@@ -676,7 +676,7 @@
 		<item>Deutsch</item>
 		<item>Lituania</item>
 		<item>Italiano</item>
-        <item>Polski</item>
+		<item>Polski</item>
 		<item>မြန်မာ</item>
 		<item>中文</item>
 		<item>Português</item>
@@ -703,7 +703,7 @@
 		<item>de</item>
 		<item>lt</item>
 		<item>it</item>
-        <item>pl</item>
+		<item>pl</item>
 		<item>my</item>
 		<item>zh</item>
 		<item>pt</item>
@@ -798,13 +798,13 @@
 		<item>by number of methods/fields</item>
 		<item>into equal parts</item>
 	</string-array>
-    <string-array name="ds_display_items">
+	<string-array name="ds_display_items">
 		<item>Date first</item>
-		<item>Size first</item> 
+		<item>Size first</item>
 	</string-array>
-    <string-array name="ds_display_values">
+	<string-array name="ds_display_values">
 		<item>0</item>
-		<item>1</item> 
+		<item>1</item>
 	</string-array>
 	<string-array name="editor_themes">
 		<item>Default</item>
@@ -1428,19 +1428,20 @@
 		<item>Yakut</item>
 		<item>Yiddish</item>
 	</string-array>
-    <string-array name="deepl_translator_codes">
+	<string-array name="deepl_translator_codes">
 		<item>auto</item>
 		<item>ar</item>
 		<item>bg</item>
+		<item>zh</item>
 		<item>cs</item>
 		<item>da</item>
-		<item>de</item>
-		<item>el</item>
+		<item>nl</item>
 		<item>en</item>
-		<item>es</item>
 		<item>et</item>
 		<item>fi</item>
 		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
 		<item>hu</item>
 		<item>id</item>
 		<item>it</item>
@@ -1449,31 +1450,31 @@
 		<item>lv</item>
 		<item>lt</item>
 		<item>nb</item>
-		<item>nl</item>
 		<item>pl</item>
 		<item>pt</item>
 		<item>ro</item>
 		<item>ru</item>
 		<item>sk</item>
 		<item>sl</item>
+		<item>es</item>
 		<item>sv</item>
 		<item>tr</item>
 		<item>uk</item>
-		<item>zh</item>
 	</string-array>
 	<string-array name="deepl_translator_names">
 		<item>Auto</item>
 		<item>Arabic</item>
 		<item>Bulgarian</item>
+		<item>Chinese</item>
 		<item>Czech</item>
 		<item>Danish</item>
-		<item>German</item>
-		<item>Greek</item>
+		<item>Dutch</item>
 		<item>English</item>
-		<item>Spanish</item>
 		<item>Estonian</item>
 		<item>Finnish</item>
 		<item>French</item>
+		<item>German</item>
+		<item>Greek</item>
 		<item>Hungarian</item>
 		<item>Indonesian</item>
 		<item>Italian</item>
@@ -1482,16 +1483,15 @@
 		<item>Latvian</item>
 		<item>Lithuanian</item>
 		<item>Norwegian (Bokmål)</item>
-		<item>Dutch</item>
 		<item>Polish</item>
 		<item>Portuguese</item>
 		<item>Romanian</item>
 		<item>Russian</item>
 		<item>Slovak</item>
 		<item>Slovenian</item>
+		<item>Spanish</item>
 		<item>Swedish</item>
 		<item>Turkish</item>
 		<item>Ukrainian</item>
-		<item>Chinese</item>
 	</string-array>
 </resources>
