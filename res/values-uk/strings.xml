@@ -906,4 +906,5 @@
 	<string name="move_tt_conf">Перемістити \"%s\" в іншу вкладку?</string>
 	<string name="sign_priority">Пріоритет підпису V1</string>
 	<string name="sign_priority_summary">Пріоритет підпису V1 при перевірці та отриманні даних підпису</string>
+	<string name="mtr_deepl_warn">Занадто багато запитів, вашу IP-адресу тимчасово заблоковано DeepL! Будь ласка, зачекайте трохи та спробуйте знову!</string>
 </resources>
