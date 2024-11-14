@@ -904,4 +904,70 @@
 		<item>Якутська</item>
 		<item>Японська</item>
 	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>hu</item>
+		<item>el</item>
+		<item>da</item>
+		<item>id</item>
+		<item>es</item>
+		<item>it</item>
+		<item>zh</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>de</item>
+		<item>nl</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>Авто</item>
+		<item>Англійська</item>
+		<item>Арабська</item>
+		<item>Болгарська</item>
+		<item>Угорська</item>
+		<item>Грецька</item>
+		<item>Датська</item>
+		<item>Індонезійська</item>
+		<item>Іспанська</item>
+		<item>Італійська</item>
+		<item>Китайська</item>
+		<item>Корейська</item>
+		<item>Латиська</item>
+		<item>Литовська</item>
+		<item>Німецька</item>
+		<item>Нідерландська</item>
+		<item>Норвезька (Букмол)</item>
+		<item>Польська</item>
+		<item>Португальська</item>
+		<item>Румунська</item>
+		<item>Російська</item>
+		<item>Словацька</item>
+		<item>Словенська</item>
+		<item>Турецька</item>
+		<item>Українська</item>
+		<item>Фінська</item>
+		<item>Французька</item>
+		<item>Чеська</item>
+		<item>Шведська</item>
+		<item>Естонська</item>
+		<item>Японська</item>
+	</string-array>
 </resources>
