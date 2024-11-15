@@ -917,4 +917,6 @@
 	<string name="move_tt_conf">Μετακίνηση \"%s\" σε άλλη Καρτέλα;</string>
         <string name="sign_priority">Προτεραιότητα υπογραφής V1</string>
 	<string name="sign_priority_summary">Προτεραιότητα υπογραφής V1 στην επαλήθευση και ανάκτηση δεδομένων υπογραφής</string>
+        <string name="mtr_deepl">DeepL</string>
+        <string name="mtr_deepl_warn">Πάρα πολλά αιτήματα, η διεύθυνση IP σας είναι προσωρινά μπλοκαρισμένη DeepL! Παρακαλώ περιμένετε λίγο και προσπαθήστε ξανά!</string>
 </resources>
