@@ -50,7 +50,7 @@
 	<string name="dummy_file">Ganti dengan boneka</string>
 	<string name="extract_icon">Ekstrak Ikon</string>
 	<string name="comment">Komentar</string>
-	<string name="cloning">Kloning</string>
+	<string name="cloning">Cloning</string>
 	<string name="cloning_result">Nama lama: %1$s\nNama baru: %2$s\nWaktu berlalu: %3$s</string>
 	<string name="originalf">Asli: %s</string>
 	<string name="soeditor">Editor perpustakaan</string>
@@ -252,7 +252,7 @@
 	<string name="data_dir">Direktori data</string>
 	<string name="app_uid">UID</string>
 	<string name="inst_ver">Versi terinstal</string>
-	<string name="inst_date">Tanggal pemasangan</string>
+	<string name="inst_date">Tanggal penginstalan</string>
 	<string name="inst_update">Terakhir diperbarui</string>
 	<string name="sign_match">Pencocokan tanda tangan</string>
 	<string name="err_save">Simpan kesalahan: %s</string>
@@ -293,7 +293,7 @@
 	<string name="scan_mode">Mode navigasi</string>
 	<string name="translate_java">Terjemahkan ke Java</string>
 	<string name="return_smali">Kembali ke Smali</string>
-	<string name="format">Sejajarkan kode</string>
+	<string name="format">Format kode</string>
 	<string name="find_next">Berikutnya</string>
 	<string name="find_prev">Sebelumnya</string>
 	<string name="find_all">Semua</string>
@@ -469,7 +469,7 @@
 	<string name="load_signature_file_fail">Tidak dapat memuat file tanda tangan \'%1$s\'.</string>
 	<string name="enter_password">Masukkan kata sandi:</string>
 	<string name="about">Tentang</string>
-	<string name="about_summary">Informasi tentang penulis, tautan yang berguna</string>
+	<string name="about_summary">Informasi tentang pengembang, tautan yang berguna</string>
 	<string name="overwrite_apk">Timpa file</string>
 	<string name="overwrite_apk_summary">Timpa file dan folder</string>
 	<string name="editor_wordwrap">Bungkus kata</string>
@@ -659,7 +659,7 @@
 	<string name="mcompress">Kompres</string>
 	<string name="mcompression">Kompresi</string>
 	<string name="mupdate_pref">Pembaruan program</string>
-	<string name="mupdate_pref_summary">Perbarui pengaturan</string>
+	<string name="mupdate_pref_summary">Pengaturan pembaruan</string>
 	<string name="mauto_update">Periksa pembaruan</string>
 	<string name="mauto_update_summary">Periksa pembaruan saat memulai</string>
 	<string name="mcheck_update">Periksa sekarang</string>
@@ -756,7 +756,7 @@
 	<string name="save_sign_data">Simpan data tanda tangan V2 dan V3</string>
 	<string name="save_sign_data_summary">Simpan data tanda tangan selama tindakan dengan apk, jika opsi tanda tangan \"Jangan tanda tangan\" dipilih</string>
 	<string name="mapp_inLocation_summary">Tanyakan lokasi penginstalan aplikasi saat menginstal melalui sesi</string>
-	<string name="mapp_inLocation_info">Untuk memasang pada penyimpanan eksternal, penyimpanan harus dipasang dalam mode ekspansi memori internal!</string>
+	<string name="mapp_inLocation_info">Untuk menginstal pada penyimpanan eksternal, penyimpanan harus dipasang dalam mode ekspansi memori internal!</string>
 	<string name="sign_priority">Prioritas tanda tangan V1</string>
 	<string name="sign_priority_summary">Prioritas tanda tangan V1 saat memverifikasi dan mengambil data tanda tangan</string>
 	<string name="shell_cmd">Perintah shell</string>
@@ -816,7 +816,7 @@
 	<string name="mapp_pn">Nama paket</string>
 	<string name="mapp_vn">Nama versi</string>
 	<string name="mapp_cn">Kode versi</string>
-	<string name="mapp_inLocation">Lokasi pemasangan</string>
+	<string name="mapp_inLocation">Lokasi penginstalan</string>
 	<string name="mapp_minsdk">Versi Min SDK</string>
 	<string name="mapp_targetsdk">Versi Target SDK</string>
 	<string name="mapp_down_plugin">Ingin mengunduh plugin dekripsi apkm?</string>
@@ -867,6 +867,8 @@
 	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_bing">Bing</string>
 	<string name="mtr_yandex">Yandex</string>
+	<string name="mtr_deepl">DeepL</string>
+	<string name="mtr_deepl_warn">Terlalu banyak permintaan, alamat IP Anda diblokir sementara oleh DeepL! Mohon tunggu beberapa saat dan coba lagi!</string>
 	<string name="mtr_create">Buat</string>
 	<string name="mtr_hide_trans">Sembunyikan terjemahan</string>
 	<string name="mtr_create_dict">Buat kamus</string>
@@ -900,7 +902,7 @@
 	<string name="mpatcher_run">Jalankan MPatcher</string>
 	<string name="mpatcher_down_summary">MPatcher — program untuk menjalankan skrip shell</string>
 	<string name="telegram">Telegram</string>
-	<string name="telegram_summary">Saluran Telegram dengan pembaruan</string>
+	<string name="telegram_summary">Perbarui melalui saluran Telegram</string>
 	<string name="report_descr">Jelaskan secara singkat tindakan yang Anda lakukan setelah kesalahan terjadi</string>
 	<string name="optimize_battery">Optimalkan kinerja baterai</string>
 	<string name="optimization_notice">Agar program dapat bekerja di latar belakang (saat diminimalkan), disarankan untuk menambahkannya ke pengecualian pengoptimal sistem. Aplikasi hanya akan berjalan di latar belakang jika Anda menjalankannya sendiri!</string>

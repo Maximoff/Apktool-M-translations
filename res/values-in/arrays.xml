@@ -685,4 +685,37 @@
 		<item>Yakut</item>
 		<item>Yiddish</item>
 	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>Otomatis</item>
+		<item>Arab</item>
+		<item>Bulgaria</item>
+		<item>Cina</item>
+		<item>Ceko</item>
+		<item>Denmark</item>
+		<item>Belanda</item>
+		<item>Inggris</item>
+		<item>Estonia</item>
+		<item>Finlandia</item>
+		<item>Prancis</item>
+		<item>Jerman</item>
+		<item>Yunani</item>
+		<item>Hongaria</item>
+		<item>Indonesia</item>
+		<item>Italia</item>
+		<item>Jepang</item>
+		<item>Korea</item>
+		<item>Latvia</item>
+		<item>Lithuania</item>
+		<item>Norwegia (Bokmål)</item>
+		<item>Polandia</item>
+		<item>Portugal</item>
+		<item>Romania</item>
+		<item>Rusia</item>
+		<item>Slowakia</item>
+		<item>Slovenia</item>
+		<item>Spanyol</item>
+		<item>Swedia</item>
+		<item>Turki</item>
+		<item>Ukraina</item>
+	</string-array>
 </resources>
