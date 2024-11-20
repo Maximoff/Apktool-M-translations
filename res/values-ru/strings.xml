@@ -73,6 +73,7 @@
 	<string name="end">Конец</string>
     <string name="framework">Фреймворк</string>
     <string name="syntax">Синтаксис</string>
+    <string name="parameters">Параметры: %s</string>
     <string name="exclude_path">Исключить из поиска</string>
     <string name="comp_stats">Статистика сборок</string>
     <string name="comp_stats_info">Успешно: %1$s\nС ошибкой: %2$s\nВсего: %3$s</string>
