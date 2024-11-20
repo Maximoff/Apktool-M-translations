@@ -113,6 +113,7 @@
 	<string name="kill_sign">Удалить проверку подписи</string>
 	<string name="kill_sign_rand">Случайное имя класса</string>
 	<string name="kill_sign_advanced">Улучшенный метод</string>
+    <string name="kill_sign_installer">Подмена имени установщика</string>
 	<string name="kill_sign_orig">Добавить оригинал apk для проверки целостности</string>
 	<string name="kill_sign_exists">Хук уже был добавлен</string>
 	<string name="kill_sign_by_orig">Взять подпись из указанного оригинала</string>

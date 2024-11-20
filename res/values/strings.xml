@@ -122,6 +122,7 @@
 	<string name="kill_sign">Remove signature verification</string>
     <string name="kill_sign_rand">Random class name</string>
 	<string name="kill_sign_advanced">Improved method</string>
+    <string name="kill_sign_installer">Installer name spoofing</string>
 	<string name="kill_sign_orig">Add original apk to check integrity</string>
 	<string name="kill_sign_exists">The hook has already been added</string>
 	<string name="kill_sign_by_orig">Take a signature from the specified original</string>
