@@ -174,6 +174,7 @@
 	<string name="close_project">Close project</string>
 	<string name="failed_openset">Failed to open settings!</string>
 	<string name="linel">line</string>
+    <string name="linef">line %d</string>
 	<string name="confirmb">Compile project \"%s\"?</string>
 	<string name="make_home">Make as home dir</string>
 	<string name="check_hash">Check hash</string>

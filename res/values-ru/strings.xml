@@ -165,6 +165,7 @@
 	<string name="close_project">Закрыть проект</string>
 	<string name="failed_openset">Не удалось открыть настройки!</string>
 	<string name="linel">строка</string>
+    <string name="linef">строка %d</string>
 	<string name="confirmb">Собрать проект \"%s\"?</string>
 	<string name="make_home">Сделать домашней папкой</string>
 	<string name="check_hash">Проверить хеш</string>
