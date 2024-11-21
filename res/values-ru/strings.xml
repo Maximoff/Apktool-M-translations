@@ -113,6 +113,7 @@
 	<string name="reset_fab">Сбросить позицию плавающей кнопки?</string>
 	<string name="kill_sign">Удалить проверку подписи</string>
 	<string name="kill_sign_rand">Случайное имя класса</string>
+    <string name="kill_sign_rand_apk">Случайное имя файла</string>
 	<string name="kill_sign_advanced">Улучшенный метод</string>
     <string name="kill_sign_installer">Подмена имени установщика</string>
 	<string name="kill_sign_orig">Добавить оригинал apk для проверки целостности</string>
