@@ -65,6 +65,7 @@
 	<string name="end">انتها</string>
 	<string name="framework">چارچوب</string>
 	<string name="syntax">نحو</string>
+	<string name="parameters">پارامترها: %s</string>
 	<string name="exclude_path">حذف از جستجو</string>
 	<string name="comp_stats">آمار تدوین</string>
 	<string name="comp_stats_info">موفقیت: %1$s\nخطا: %2$s\nمجموع: %3$s</string>
@@ -103,8 +104,10 @@
 	<string name="unsupported_android">در نسخه اندروید شما پشتیبانی نمی شود!</string>
 	<string name="reset_fab">موقعیت دکمه شناور بازنشانی شود؟</string>
 	<string name="kill_sign">حذف تایید امضا</string>
+	<string name="kill_sign_rand_apk">نام پرونده تصادفی</string>
 	<string name="kill_sign_rand">نام کلاس تصادفی</string>
 	<string name="kill_sign_advanced">روش بهبود یافته</string>
+	<string name="kill_sign_installer">جعل نام نصب کننده</string>
 	<string name="kill_sign_orig">اضافه کردن apk اصلی برای بررسی یکپارچگی</string>
 	<string name="kill_sign_exists">قلاب قبلاً اضافه شده است</string>
 	<string name="kill_sign_by_orig">گرفتن امضا از اصل (original) مشخص شده</string>
@@ -155,6 +158,7 @@
 	<string name="close_project">بستن پروژه</string>
 	<string name="failed_openset">تنظیمات باز نشد!</string>
 	<string name="linel">خط</string>
+	<string name="linef">خط %d</string>
 	<string name="confirmb">پروژه \"%s\" بازسازی شود؟</string>
 	<string name="make_home">تنظیم به عنوان مسیر اصلی</string>
 	<string name="check_hash">بررسی هش</string>
@@ -318,22 +322,24 @@
 	<string name="send">ارسال</string>
 	<string name="complete">کامل</string>
 	<string name="complete_msg">تکمیل شد، اصلی(ها) در \"%s\" ذخیره شد</string>
-	<string name="complete_msg2">تکمیل شد، فایل(ها) در \"%s\" ذخیره شد</string>
+	<string name="complete_msg2">تکمیل شد، پرونده(ها) در \"%s\" ذخیره شد</string>
 	<string name="success">با موفقیت انجام شد</string>
 	<string name="successf">با موفقیت انجام شد: %s</string>
 	<string name="success_of">%1$d از %2$d موفقیت آمیز بود!</string>
-	<string name="copy">کپی</string>
+	<string name="copy">رونوشت</string>
 	<string name="cut">برش</string>
-	<string name="copy_tt">کپی در زبانه دیگری</string>
+	<string name="copy_tt">رونوشت در زبانه دیگری</string>
 	<string name="move_tt">انتقال به زبانه دیگری</string>
-	<string name="copying">در حال کپی</string>
+	<string name="copying">در حال رونوشت</string>
 	<string name="moving">در حال انتقال</string>
 	<string name="moving_file">در حال انتقال \"%s\"...</string>
-	<string name="copy_here">\"%s\" در اینجا کپی شود؟</string>
+	<string name="copy_here">\"%s\" در اینجا رونوشت شود؟</string>
 	<string name="move_here">\"%s\" به اینجا منتقل شود؟</string>
-	<string name="file_not_found">فایل \"%s\" یافت نشد!</string>
-	<string name="copy_path">کپی مسیر</string>
-	<string name="build_copy_file">در حال کپی \"%1$s\"...</string>
+	<string name="copy_tt_conf">\"%s\" به پنجره دیگر رونوشت شود؟</string>
+	<string name="move_tt_conf">\"%s\" به پنجره دیگر منتقل شود؟</string>
+	<string name="file_not_found">پرونده \"%s\" یافت نشد!</string>
+	<string name="copy_path">رونوشت مسیر</string>
+	<string name="build_copy_file">در حال رونوشت \"%1$s\"...</string>
 	<string name="jaxp_not_support">پشتیبانی JAXP 1.5 برای اعتبارسنجی XML مورد نیاز است</string>
 	<string name="report_error">لطفاً این برنامه را برای رفع مشکل به Apktool گزارش دهید: https://github.com/iBotPeaches/Apktool/issues/1728</string>
 	<string name="decoding_shared_library">رمزگشایی کتابخانه مشترک \(%1$s\), pkgId: %2$d</string>
@@ -717,6 +723,8 @@
 	<string name="keep_broken_summary">اگر هنگام تجزیه منابع خطایی وجود داشت، اما باز هم میخواهید آنها را حتی با وجود خطاها، تجزیه کنید. این گزینه را روشن کنید</string>
 	<string name="editor_rem_tabs">به خاطر سپردن فایل های باز</string>
 	<string name="editor_rem_tabs_summary">زمانی که برنامه شروع به کار کرد، آخرین فایل های باز شده را در ویرایشگر باز میکند</string>
+	<string name="editor_auto_search">باز کردن جستجو به صورت خودکار</string>
+	<string name="editor_auto_search_summary">هنگام باز کردن از نتایج جستجوی پرونده، جستجو باز شود</string>
 	<string name="detect_protect">بررسی حفاظت برنامه</string>
 	<string name="detect_protect_summary">سعی میکند نوع حفاظت apk را در گفتگوی جزئیات تشخیص دهد</string>
 	<string name="ds_display">نمایش تاریخ و اندازه</string>
@@ -742,6 +750,8 @@
 	<string name="save_sign_data_summary">اگر گزینه امضا به صورت \"امضا نشود\" انتخاب شده باشد، اطلاعات امضا در طول عملیات apk ذخیره شود</string>
 	<string name="mapp_inLocation_summary">هنگام نصب از طریق جلسه، مکان نصب برنامه خواسته می‌شود</string>
 	<string name="mapp_inLocation_info">برای نصب روی ذخیره‌سازی خارجی، ذخیره‌سازی باید در حالت گسترش ذخیره‌سازی داخلی نصب شود!</string>
+	<string name="sign_priority">اولویت امضای V1</string>
+	<string name="sign_priority_summary">اولویت امضای V1 هنگام تأیید و بازیابی اطلاعات امضا</string>
 	<string name="shell_cmd">دستور پوسته</string>
 	<string name="shell_cmd_summary">پوسته ای برای اجرای پردازه های پوسته</string>
 	<string name="shell_cmd_root">دستور Root</string>
@@ -874,7 +884,7 @@
 	<string name="down_for">بارگیری برای %s</string>
 	<string name="file_download">بارگیری فایل: %s</string>
 	<string name="download_success">%s فایل با موفقیت بارگیری شد!</string>
-	<string name="load_binaries2">شما باید فایل های aapt/aapt2 را بارگیری کنید!  می‌توانید هم‌اکنون آن‌ها را بارگیری کنید یا بعداً در تنظیمات این کار را انجام دهید.  اتصال شبکه برای بارگیری لازم است.\n\nآیا می‌خواهید اکنون بارگیری کنید؟</string>
+	<string name="load_binaries2">شما باید پرونده های aapt/aapt2 را بارگیری کنید!  می‌توانید هم‌اکنون آن‌ها را بارگیری کنید یا بعداً در تنظیمات این کار را انجام دهید.  اتصال شبکه برای بارگیری لازم است.\n\nآیا می‌خواهید اکنون بارگیری کنید؟</string>
 	<string name="load_binaries">دودویی aapt/aapt2 داخلی ممکن است با سیستم شما سازگار نباشد. می توانید آنها را اکنون به روز کنید یا بعداً در تنظیمات این کار را انجام دهید. اتصال شبکه برای بارگیری لازم است.\n\nآیا می‌خواهید اکنون بارگیری کنید؟</string>
 	<string name="plugin_modif">افزونه UnApkm توسط امضای شخص دیگری امضا شده است. احتمالاً افزونه اصلاح شده است. به شدت توصیه می شود که افزونه را حذف کرده و فایل اصلی را از تارنمای توسعه دهنده بارگیری کنید. با لمس بر روی \"یادآوری نکن\" به استفاده از افزونه اصلاح شده با قبول خطر ادامه می دهید!</string>
 	<string name="not_remind">یادآوری نکن</string>
@@ -887,13 +897,13 @@
 	<string name="report_descr">لطفاً اقدامات خود را که پس از آن خطا رخ داده است به طور خلاصه شرح دهید</string>
 	<string name="optimize_battery">بهینه سازی عملکرد باتری</string>
 	<string name="optimization_notice">برای اینکه برنامه در پس زمینه کار کند (زمانی که کمینه می‌شود)، توصیه می‌شود آن را به استثناهای بهینه‌ساز سیستم اضافه کنید. برنامه فقط در صورتی در پس زمینه اجرا می شود که خودتان آن را اجرا کنید!\n\nآیا می خواهید این کار را انجام دهید؟</string>
-	<string name="heap_help">برای رفع خطای OOM، اندازه حافظه کمکی را افزایش دهید.&lt;br>&lt;br>برای افزایش اندازه حافظه کمکی، &lt;b>شما به دسترسی root نیاز دارید&lt;/b>!&lt;br>&lt;br>شما باید فایل را باز کرده &lt;b>/system/build.prop&lt;/b> و خط را در آن اضافه کرده/تغییر دهید &lt;b>dalvik.vm.heapsize = 512m&lt;/b> (اندازه کمکی 512m بر حسب مگابایت است).&lt;br>&lt;br>&lt;small>این عملیات را می توان با استفاده از Apktool M تنها در صورتی انجام داد که تقسیم بندی (پارتیشن) سیستم / با مجوز نوشتن مجدداً نصب شود، در غیر این صورت باید از ابزارهای دیگری استفاده کنید.&lt;br>&lt;br>گاهی اوقات دو خط از این قبیل در فایل وجود دارد که یکی از آنها باید حذف شود.&lt;/small></string>
-	<string name="heap_memory">حافظه کمکی</string>
+	<string name="heap_help">برای رفع خطای OOM، اندازه حافظه انبوه را افزایش دهید.&lt;br>&lt;br>برای افزایش اندازه حافظه انبوه، &lt;b>شما به دسترسی root نیاز دارید&lt;/b>!&lt;br>&lt;br>شما باید پرونده &lt;b>/system/build.prop&lt;/b> را باز کنید و خط زیر را در آن اضافه کرده/تغییر دهید &lt;b>dalvik.vm.heapsize = 512m&lt;/b> (اندازه انبوه 512m بر حسب مگابایت است).&lt;br>&lt;br>&lt;small>این عملیات را می توان با استفاده از Apktool M تنها در صورتی انجام داد که تقسیم بندی (پارتیشن) سیستم / با مجوز نوشتن مجدداً نصب شود، در غیر این صورت باید از ابزارهای دیگری استفاده کنید.&lt;br>&lt;br>گاهی اوقات دو خط از این قبیل در پرونده وجود دارد که یکی از آنها باید حذف شود.&lt;/small></string>
+	<string name="heap_memory">حافظه انبوه</string>
 	<string name="heap_info">حافظه استفاده شده: %1$dMB\nحافظه موجود: %2$dMB\n کل حافظه: %3$dMB</string>
-	<string name="scoped_storage">مجوز دسترسی به همه فایل ها</string>
+	<string name="scoped_storage">مجوز دسترسی به همه پرونده ها</string>
 	<string name="restore_set_dialog">آیا می خواهید تنظیمات خود را بازیابی کنید؟  تنظیمات فعلی بازنویسی خواهد شد!</string>
 	<string name="scoped_storage_title">تغییرات اندروید ۱۱</string>
-	<string name="scoped_storage_msg">اندروید ۱۱ یک روش مدیریت فایل جدید به نام \"دسترسی همه فایل ها\" را معرفی کرده است. شما باید یک مجوز ویژه اعطا کنید!</string>
+	<string name="scoped_storage_msg">اندروید ۱۱ یک روش مدیریت پرونده جدید به نام \"دسترسی همه پرونده ها\" را معرفی کرده است. شما باید یک مجوز ویژه اعطا کنید!</string>
 	<string name="rename_help">{NAME} - نام فایل اصلی بدون پسوند\n{EXT} - پسوند فایل اصلی.\n{DATE} - تاریخ در \"%1$s\" format.\n{TIME} - زمان در \"%2$s\" format.\n{0} - شماره شروع از \"0\".</string>
 	<string name="license_agreement">توافقنامه مجوز</string>
 	<string name="license_accept">موافقت</string>
