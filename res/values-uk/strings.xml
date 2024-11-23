@@ -907,4 +907,8 @@
 	<string name="sign_priority">Пріоритет підпису V1</string>
 	<string name="sign_priority_summary">Пріоритет підпису V1 при перевірці та отриманні даних підпису</string>
 	<string name="mtr_deepl_warn">Занадто багато запитів, вашу IP-адресу тимчасово заблоковано DeepL! Будь ласка, зачекайте трохи та спробуйте знову!</string>
+	<string name="kill_sign_installer">Підміна імені встановлювача</string>
+	<string name="parameters">Параметри: %s</string>
+	<string name="kill_sign_rand_apk">Випадкове ім\'я файла</string>
+	<string name="linef">рядок %d</string>
 </resources>
