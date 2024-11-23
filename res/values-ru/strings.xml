@@ -859,6 +859,7 @@
 	<string name="mtr_google">Google</string>
 	<string name="mtr_yandex">Яндекс</string>
 	<string name="mtr_deepl_warn">Слишком много запросов, ваш IP-адрес временно заблокирован DeepL! Пожалуйста, подождите немного и повторите попытку!</string>
+    <string name="mtr_deepl_key_warn">Количество запросов к DeepL API для вашего ключа исчерпано!</string>
 	<string name="mtr_deepl_key">Ключ API для DeepL</string>
 	<string name="mtr_deepl_key_info">Если у вас есть ключ API, вы можете его использовать. Программа будет обращаться к серверу DeepL через официальный API.</string>
 	<string name="mtr_create">Создать</string>
