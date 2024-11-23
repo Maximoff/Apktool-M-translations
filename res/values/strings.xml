@@ -880,6 +880,8 @@
 	<string name="mtr_yandex">Yandex</string>
     <string name="mtr_deepl">DeepL</string>
     <string name="mtr_deepl_warn">Too many requests, your IP address is temporarily blocked DeepL! Please wait a while and try again!</string>
+    <string name="mtr_deepl_key">API key for DeepL</string>
+    <string name="mtr_deepl_key_info">If you have an API key, you can use it. The program will access the DeepL server through the official API.</string>
 	<string name="mtr_create">Create</string>
 	<string name="mtr_hide_trans">Hide translated</string>
 	<string name="mtr_create_dict">Create dictionary</string>

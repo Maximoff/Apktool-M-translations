@@ -74,6 +74,7 @@
 	<string name="end">Akhir</string>
 	<string name="framework">Kerangka kerja</string>
 	<string name="syntax">Sintaks</string>
+	<string name="linef">baris %d</string>
 	<string name="exclude_path">Kecualikan dari pencarian</string>
 	<string name="comp_stats">Statistik kompilasi</string>
 	<string name="comp_stats_info">Berhasil: %1$s\nKesalahan: %2$s\nTotal: %3$s</string>
@@ -114,7 +115,9 @@
 	<string name="reset_fab">Atur ulang posisi tombol mengambang?</string>
 	<string name="kill_sign">Hapus verifikasi tanda tangan</string>
 	<string name="kill_sign_rand">Nama class secara acak</string>
+	<string name="kill_sign_rand_apk">Nama file secara acak</string>
 	<string name="kill_sign_advanced">Metode yang ditingkatkan</string>
+	<string name="kill_sign_installer">Pemalsuan nama penginstal</string>
 	<string name="kill_sign_orig">Tambahkan apk asli untuk memeriksa integritas</string>
 	<string name="kill_sign_exists">Pengait sudah ditambahkan</string>
 	<string name="kill_sign_by_orig">Mengambil tanda tangan dari dokumen asli yang telah ditentukan</string>
