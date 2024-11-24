@@ -911,7 +911,7 @@
 	<string name="parameters">Параметри: %s</string>
 	<string name="kill_sign_rand_apk">Випадкове ім\'я файла</string>
 	<string name="linef">рядок %d</string>
-	<string name="mtr_deepl_key">Ключ API для DeepL</string>.
+	<string name="mtr_deepl_key">Ключ API для DeepL</string>
 	<string name="mtr_deepl_key_info">Якщо у вас є ключ API, ви можете його використовувати. Програма буде звертатися до сервера DeepL через офіційний API.</string>
 	<string name="mtr_deepl_key_warn">Кількість запитів до DeepL API для вашого ключа вичерпано!</string>
 </resources>
