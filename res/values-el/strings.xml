@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+1<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="aapt2_configs">Ρύθμιση διαμορφώσεων</string>
 	<string name="aapt2_configs_info">&lt;b>Διαχωρισμένες με κόμμα&lt;/b> λίστα διαμορφώσεων που πρέπει να συμπεριληφθούν. Η προεπιλογή είναι όλες οι διαμορφώσεις.</string>
@@ -443,7 +443,7 @@
 	<string name="mtr_properties">Εργασία: %1$s\n\nΣύνολο γλωσσών: %2$s\nΤρέχουσα γλώσσα: %3$s\nΜέγεθος: %4$s\nΣύνολο συμβ/σειρών: %5$s\nΜεταφρασμένες συμβ/σειρές: %6$s</string>
 	<string name="mtr_quantity">Ποσότητα</string>
 	<string name="mtr_save_to_dict">Αποθήκευση στο λεξικό</string>
-	<string name="mtr_service">Μεταφραστική υπηρεσία</string>
+	<string name="mtr_service">Υπηρεσία Μετάφρασης</string>
 	<string name="mtr_skip_tr">Παράλειψη μεταφρασμένων γραμμών</string>
 	<string name="mtr_slang">Γλώσσα πηγής</string>
 	<string name="mtr_success_count">%d συμβ/σειρές μεταφράστηκαν με επιτυχία</string>
@@ -813,7 +813,7 @@
 	<string name="others">Άλλα</string>
 	<string name="threads_count">Αριθμός νημάτων</string>
 	<string name="threads_count_summary">Αριθμός νημάτων για Πολυνηματικές διεργασίες</string>
-	<string name="trlangs_settings">Ρύθμιση Μεταφραστικών Υπηρεσιών</string>
+	<string name="trlangs_settings">Ρύθμιση Υπηρεσιών Μετάφρασης</string>
 	<string name="trlangs_settings_summary">Επιλογή γλωσσών για διαδικτυακούς μεταφραστές</string>
 	<string name="packages">Πακέτα πηγών</string>
 	<string name="types">Τύποι</string>
@@ -833,7 +833,7 @@
 	<string name="protection">Προστασία</string>
 	<string name="protection_info">Εντοπίστηκαν ενδείξεις προστασίας apk: %s.\n\nΛάβετε υπόψη ότι η ανίχνευση γίνεται με βάση έμμεσες ενδείξεις, οπότε ενδέχεται να πρόκειται για σφάλμα!</string>
 	<string name="main_pkg">κύριο πακέτο</string>
-	<string name="styled">στυλάτη συμβολοσειρά</string>
+	<string name="styled">σχεδιασμένη συμβολοσειρά</string>
 	<string name="app_crashed">Υπήρξε σφάλμα στην εφαρμογή! Κάντε κλικ για να δείτε το αρχείο καταγραφής</string>
 	<string name="disable_crashes">Απενεργ/ση εντοπισμού σφαλμάτων</string>
 	<string name="disable_crashes_summary">Χωρίς λήψη κατάρευσης του προγράμματος σε περίπτωση σφάλματος</string>
@@ -919,4 +919,9 @@
 	<string name="sign_priority_summary">Προτεραιότητα υπογραφής V1 στην επαλήθευση και ανάκτηση δεδομένων υπογραφής</string>
         <string name="mtr_deepl">DeepL</string>
         <string name="mtr_deepl_warn">Πάρα πολλά αιτήματα, η διεύθυνση IP σας είναι προσωρινά μπλοκαρισμένη DeepL! Παρακαλώ περιμένετε λίγο και προσπαθήστε ξανά!</string>
+        <string name="mtr_deepl_key">Κλειδί API για DeepL</string>
+        <string name="mtr_deepl_key_info">Εάν έχετε κλειδί API, μπορείτε να το χρησιμοποιήσετε. Το πρόγραμμα θα έχει πρόσβαση στον διακομιστή DeepL μέσω του επίσημου API.</string>
+        <string name="mtr_deepl_key_warn">Ο αριθμός των αιτήσεων στο DeepL API για το κλειδί σας έχει εξαντληθεί!</string>
+        <string name="hl_time">Χρόνος επισήμανσης φακέλου</string>
+	<string name="hl_time_summary">Χρόνος επισήμανσης φακέλου στην επιστροφή, σε χιλιοστά δευτ/πτου</string>
 </resources>
