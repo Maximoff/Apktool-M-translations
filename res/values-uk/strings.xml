@@ -793,7 +793,7 @@
 	<string name="diff_resources2">Порівняти ресурси \"%2$s\" з ресурсами \"%1$s\"</string>
 	<string name="dump_resources">Дамп ресурсів (aapt2)</string>
 	<string name="swap">Поміняти</string>
-	<string name="dex_is_full">Найімовірніше, перевищено допустиму кількість методів/полів у dex. Перемістіть частину файлів smali в іншу папку або створіть нову, якщо потрібно.</string>
+	<string name="dex_is_full">Найімовірніше, перевищено допустиму кількість методів/полів у dex. Перемістіть частину файлів smali в іншу теку або створіть нову, якщо потрібно.</string>
 	<string name="trlangs_settings">Налаштування сервісів перекладу</string>
 	<string name="trlangs_settings_summary">Вибір мов для онлайн перекладачів</string>
 	<string name="threads_count">Кількість потоків</string>
@@ -914,4 +914,6 @@
 	<string name="mtr_deepl_key">Ключ API для DeepL</string>
 	<string name="mtr_deepl_key_info">Якщо у вас є ключ API, ви можете його використовувати. Програма буде звертатися до сервера DeepL через офіційний API.</string>
 	<string name="mtr_deepl_key_warn">Кількість запитів до DeepL API для вашого ключа вичерпано!</string>
+	<string name="hl_time">Час підсвічування теки</string>
+	<string name="hl_time_summary">Час підсвічування теки при переході назад, у мілісекундах</string>
 </resources>
