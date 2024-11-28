@@ -774,6 +774,8 @@
 	<string name="sign_priority_summary">Signature priority V1 when verifying and retrieving signature data</string>
     <string name="hl_time">Folder highlight time</string>
 	<string name="hl_time_summary">Folder highlighting time when going back, in milliseconds</string>
+    <string name="user_cache">Selecting a cache folder</string>
+	<string name="user_cache_summary">Select storage for temporary files folder</string>
     <string name="shell_cmd">Shell command</string>
 	<string name="shell_cmd_summary">A shell for running shell scripts</string>
     <string name="shell_cmd_root">Root command</string>

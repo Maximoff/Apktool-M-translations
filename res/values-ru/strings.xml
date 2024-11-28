@@ -755,6 +755,8 @@
 	<string name="sign_priority_summary">Приоритет подписи V1 при проверке и получении данных подписи</string>
     <string name="hl_time">Время подсветки папки</string>
 	<string name="hl_time_summary">Время подсветки папки при переходе назад, в миллисекундах</string>
+    <string name="user_cache">Выбор папки кэша</string>
+	<string name="user_cache_summary">Выберите хранилище для папки временных файлов</string>
 	<string name="shell_cmd">Команда оболочки</string>
 	<string name="shell_cmd_summary">Оболочка для запуска shell-скриптов</string>
 	<string name="shell_cmd_root">Команда root</string>
