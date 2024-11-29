@@ -916,4 +916,6 @@
 	<string name="mtr_deepl_key_warn">Кількість запитів до DeepL API для вашого ключа вичерпано!</string>
 	<string name="hl_time">Час підсвічування теки</string>
 	<string name="hl_time_summary">Час підсвічування теки при переході назад, у мілісекундах</string>
+	<string name="user_cache">Вибір теки кешу</string>
+	<string name="user_cache_summary">Виберіть сховище для теки тимчасових файлів</string>
 </resources>
