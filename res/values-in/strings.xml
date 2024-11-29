@@ -167,6 +167,7 @@
 	<string name="close_project">Tutup proyek</string>
 	<string name="failed_openset">Gagal membuka pengaturan!</string>
 	<string name="linel">baris</string>
+	<string name="linef">baris %d</string>
 	<string name="confirmb">Kompilasi proyek \"%s\"?</string>
 	<string name="make_home">Jadikan sebagai folder utama</string>
 	<string name="check_hash">Periksa hash</string>
