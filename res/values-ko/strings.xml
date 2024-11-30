@@ -723,6 +723,12 @@
 	<string name="save_sign_data_summary">서명 옵션에 \"서명 안 함\"이 선택된 경우 작업하는 동안 서명 데이터를 저장 합니다.</string>
 	<string name="mapp_inLocation_summary">세션을 통해 설치할 때 애플리케이션 설치 위치 묻기</string>
 	<string name="mapp_inLocation_info">외부 저장소에 설치하려면 저장소를 내부 메모리 확장 모드로 마운트해야 합니다 !</string>
+	<string name="sign_priority">서명 우선 순위 V1</string>
+	<string name="sign_priority_summary">서명 데이터 검증 및 검색 시 서명 우선 순위 V1</string>
+	<string name="hl_time">폴더 강조 시간</string>
+	<string name="hl_time_summary">뒤로 돌아갈 때 폴더 강조 시간 (밀리초)</string>
+	<string name="user_cache">캐시 폴더 선택</string>
+	<string name="user_cache_summary">임시 파일 폴더 저장소 선택</string>
 	<string name="shell_cmd">쉘 커멘드</string>
 	<string name="shell_cmd_summary">쉘 스크립트를 실행하기 위한 쉘</string>
 	<string name="shell_cmd_root">루트 커멘드</string>
