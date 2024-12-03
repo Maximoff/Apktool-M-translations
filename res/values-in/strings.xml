@@ -767,6 +767,8 @@
 	<string name="hl_time_summary">Waktu penyorotan folder saat kembali, dalam milidetik</string>
 	<string name="user_cache">Pilih folder cache</string>
 	<string name="user_cache_summary">Pilih penyimpanan untuk folder file sementara</string>
+	<string name="snowfall">Aktifkan hujan salju</string>
+	<string name="snowfall_summary">Hujan salju dalam program untuk liburan Tahun Baru</string>
 	<string name="shell_cmd">Perintah shell</string>
 	<string name="shell_cmd_summary">Shell untuk menjalankan skrip shell</string>
 	<string name="shell_cmd_root">Perintah root</string>
