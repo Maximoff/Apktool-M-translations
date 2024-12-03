@@ -776,6 +776,8 @@
 	<string name="hl_time_summary">Folder highlighting time when going back, in milliseconds</string>
     <string name="user_cache">Selecting a cache folder</string>
 	<string name="user_cache_summary">Select storage for temporary files folder</string>
+    <string name="snowfall">Enable snowfall</string>
+	<string name="snowfall_summary">Snowfall in the program for the New Year holidays</string>
     <string name="shell_cmd">Shell command</string>
 	<string name="shell_cmd_summary">A shell for running shell scripts</string>
     <string name="shell_cmd_root">Root command</string>
