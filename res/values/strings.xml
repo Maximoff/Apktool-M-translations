@@ -84,6 +84,8 @@
     <string name="framework">Framework</string>
     <string name="syntax">Syntax</string>
     <string name="parameters">Parameters: %s</string>
+    <string name="storages_info">Memory information</string>
+    <string name="storage_info">Total %1$s. Used %2$s. Free %3$s.</string>
     <string name="exclude_path">Exclude from search</string>
     <string name="comp_stats">Compilation statistics</string>
     <string name="comp_stats_info">Success: %1$s\nError: %2$s\nTotal: %3$s</string>
