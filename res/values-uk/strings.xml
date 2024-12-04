@@ -918,4 +918,8 @@
 	<string name="hl_time_summary">Час підсвічування теки при переході назад, у мілісекундах</string>
 	<string name="user_cache">Вибір теки кешу</string>
 	<string name="user_cache_summary">Виберіть сховище для теки тимчасових файлів</string>
+	<string name="snowfall">Увімкнути снігопад</string>
+	<string name="snowfall_summary">Снігопад у програмі на новорічні свята</string>
+	<string name="storages_info">Інформація про пам\'ять</string>
+    <string name="storage_info">Всього %1$s. Використовується %2$s. Вільно %3$s.</string>
 </resources>
