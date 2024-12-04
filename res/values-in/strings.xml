@@ -76,7 +76,7 @@
 	<string name="syntax">Sintaks</string>
 	<string name="parameters">Parameter: %s</string>
 	<string name="storages_info">Informasi memori</string>
-	<string name="storage_info">Total %1$s. Digunakan %2$s. Bebas %3$s.</string>
+	<string name="storage_info">Total %1$s. Digunakan %2$s. Tersedia %3$s.</string>
 	<string name="exclude_path">Kecualikan dari pencarian</string>
 	<string name="comp_stats">Statistik kompilasi</string>
 	<string name="comp_stats_info">Berhasil: %1$s\nBermasalah: %2$s\nTotal: %3$s</string>
