@@ -84,7 +84,7 @@
 	<string name="checksum_format">Προβολή ελέγχου αθροισμάτων</string>
 	<string name="checksum_format_summary">Προβολή μορφής ελέγχου αθροίσματος</string>
 	<string name="clear_history">Εκκαθαριση ιστορικου αναζητησης?</string>
-	<string name="clear_preview">Καθαρ. cache μικρ/φιών</string>
+	<string name="clear_preview">Καθαρισμός cache μικρ/φιών</string>
 	<string name="clear_preview_summary">Το διάστημα για τον καθαρισμό παλιών μικρογραφιών είναι σε ημέρες</string>
 	<string name="click_once_more">Ξαναπατήστε πίσω για Έξοδο!</string>
 	<string name="close_all">Κλείσιμο όλων</string>
@@ -924,4 +924,10 @@
         <string name="mtr_deepl_key_warn">Ο αριθμός των αιτήσεων στο DeepL API για το κλειδί σας έχει εξαντληθεί!</string>
         <string name="hl_time">Χρόνος επισήμανσης φακέλου</string>
 	<string name="hl_time_summary">Χρόνος επισήμανσης φακέλου στην επιστροφή, σε χιλιοστά δευτ/πτου</string>
+        <string name="user_cache">Επιλογή φακέλου cache</string>
+        <string name="user_cache_summary">Επιλέξτε το φάκελο Αποθήκευσης προσωρινών αρχείων</string>
+        <string name="snowfall">Ενεργοποίηση Χιονόπτωσης</string>
+	<string name="snowfall_summary">Χιονόπτωση στο πρόγραμμα για τις γιορτές της Πρωτοχρονιάς</string>
+        <string name="storages_info">Πληροφορίες μνήμης</string>
+        <string name="storage_info">Σύνολο %1$s. Σε Χρήση %2$s. Ελεύθερα %3$s.</string>
 </resources>
