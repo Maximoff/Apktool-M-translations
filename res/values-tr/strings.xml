@@ -72,6 +72,9 @@
 	<string name="end">Son</string>
 	<string name="framework">Çerçeve</string>
 	<string name="syntax">Söz dizimi</string>
+	<string name="parameters">Parametreler: %s</string>
+	<string name="storages_info">Bellek bilgisi</string>
+	<string name="storage_info">Toplam %1$s. Kullanılan %2$s. Boş %3$s.</string>
 	<string name="exclude_path">Aramadan hariç tut</string>
 	<string name="comp_stats">Derleme istatistikleri</string>
 	<string name="comp_stats_info">Başarılı: %1$s\nHata: %2$s\nToplam: %3$s</string>
@@ -112,7 +115,9 @@
 	<string name="reset_fab">Yüzen düğme konumu sıfırlansın mı?</string>
 	<string name="kill_sign">İmza doğrulamasını kaldır</string>
 	<string name="kill_sign_rand">Rastgele sınıf adı</string>
+	<string name="kill_sign_rand_apk">Rastgele dosya adı</string>
 	<string name="kill_sign_advanced">Geliştirilmiş yöntem</string>
+	<string name="kill_sign_installer">Yükleyici adı sahteciliği</string>
 	<string name="kill_sign_orig">Bütünlüğü kontrol etmek için orijinal apk\'yı ekle</string>
 	<string name="kill_sign_exists">Kanca zaten eklendi</string>
 	<string name="kill_sign_by_orig">Belirtilen orijinalden imza al</string>
@@ -162,6 +167,7 @@
 	<string name="close_project">Projeyi kapat</string>
 	<string name="failed_openset">Ayarlar açılamadı!</string>
 	<string name="linel">Satır</string>
+	<string name="linef">satır %d</string>
 	<string name="confirmb">%s projesi derlensin mi?</string>
 	<string name="make_home">Ana klasör yap</string>
 	<string name="check_hash">Hash kontrolü</string>
@@ -340,6 +346,8 @@
 	<string name="moving_file">%s taşınıyor...</string>
 	<string name="copy_here">%s buraya kopyalansın mı?</string>
 	<string name="move_here">%s buraya taşınsın mı?</string>
+	<string name="copy_tt_conf">\"%s\" Başka bir sekmeye kopyalansın mı?</string>
+	<string name="move_tt_conf">\"%s\" Başka bir sekmeye taşınsın mı?</string>
 	<string name="file_not_found">%s dosyası bulunamadı!</string>
 	<string name="copy_path">Konumu kopyala</string>
 	<string name="build_copy_file">%1$s kopyalanıyor...</string>
@@ -726,6 +734,8 @@
 	<string name="keep_broken_summary">Kaynakları derlerken bir hata oluştuysa ancak hatalar olsa bile yine de derlemek istiyorsanız bunu kullanın</string>
 	<string name="editor_rem_tabs">Açık dosyaları hatırla</string>
 	<string name="editor_rem_tabs_summary">Uygulama başlatıldığında editörde son açılan dosyaları aç</string>
+	<string name="editor_auto_search">Aramayı otomatik olarak aç</string>
+	<string name="editor_auto_search_summary">Dosya arama sonuçlarından açıldığında aramayı aç</string>
 	<string name="detect_protect">Uygulama korumasını kontrol et</string>
 	<string name="detect_protect_summary">Ayrıntılar iletişim kutusunda apk dosyasının korumasını belirlemeye çalış</string>
 	<string name="ds_display">Tarih ve boyut gösterimi</string>
@@ -751,6 +761,12 @@
 	<string name="save_sign_data_summary">İmza seçeneği \"İmzalama\" olarak seçiliyse, apk ile yapılan eylemler sırasında imza verileri kaydedilir</string>
 	<string name="mapp_inLocation_summary">Oturum üzerinden kurulum yaparken uygulama kurulum konumunu sor</string>
 	<string name="mapp_inLocation_info">Harici depolama birimine kurulum yapabilmek için depolama biriminin dahili bellek genişletme modunda olması gerekir!</string>
+	<string name="sign_priority">İmza önceliği V1</string>
+	<string name="sign_priority_summary">İmza verilerini doğrularken ve alırken imza önceliği V1</string>
+	<string name="hl_time">Klasör vurgulama zamanı</string>
+	<string name="hl_time_summary">Geriye giderken klasör vurgulama süresi, milisaniye cinsinden</string>
+	<string name="user_cache">Önbellek klasörü seçme</string>
+	<string name="user_cache_summary">Geçici dosyalar klasörü için depolama alanını seçin</string>
 	<string name="shell_cmd">Kabuk komutu</string>
 	<string name="shell_cmd_summary">Kabuk betiklerini çalıştırmak için bir kabuk</string>
 	<string name="shell_cmd_root">Kök komutu</string>
@@ -859,6 +875,11 @@
 	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_bing">Bing</string>
 	<string name="mtr_yandex">Yandex</string>
+	<string name="mtr_deepl">DeepL</string>
+	<string name="mtr_deepl_warn">Çok fazla istek, IP adresiniz geçici olarak engellendi DeepL! Lütfen bir süre bekleyin ve tekrar deneyin!</string>
+	<string name="mtr_deepl_key_warn">DeepL API\'sine anahtarınız için yapılan istek sayısı tükendi!</string>
+	<string name="mtr_deepl_key">DeepL için API anahtarı</string>
+	<string name="mtr_deepl_key_info">Bir API anahtarınız varsa, onu kullanabilirsiniz. Program DeepL sunucusuna resmi API aracılığıyla erişecektir.</string>
 	<string name="mtr_create">Oluştur</string>
 	<string name="mtr_hide_trans">Çeviriyi gizle</string>
 	<string name="mtr_create_dict">Sözlük oluştur</string>
