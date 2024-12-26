@@ -930,4 +930,6 @@
 	<string name="snowfall_summary">Χιονόπτωση στο πρόγραμμα για τις γιορτές της Πρωτοχρονιάς</string>
         <string name="storages_info">Πληροφορίες μνήμης</string>
         <string name="storage_info">Σύνολο %1$s. Σε Χρήση %2$s. Ελεύθερα %3$s.</string>
+        <string name="kill_sign_installer">Παραποίηση ονόματος εγκαταστάτη</string>
+        <string name="kill_sign_rand_apk">Τυχαίο όνομα αρχείου</string>
 </resources>
