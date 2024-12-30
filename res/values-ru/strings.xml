@@ -90,6 +90,11 @@
 	<string name="dex_decompile_info">Эта опция декомпилирует все файлы dex, которые находятся в корне apk, но оставляет нетронутыми файлы dex во вложенных папках.</string>
 	<string name="dex_decompile_info2">Эта опция декомпилирует все файлы dex в apk, как находящиеся в корне, так и находящиеся во вложенных папках.</string>
 	<string name="delete_orig">Удалить оригинал</string>
+    <string name="compare_apk">Сравнить содержимое</string>
+    <string name="compare_apk_mod">Изменённые файлы</string>
+    <string name="compare_apk_unmod">Не изменённые файлы</string>
+    <string name="compare_apk_add">Добавленные файлы</string>
+    <string name="compare_apk_del">Удалённые файлы</string>
 	<string name="split_dex">Разделить dex</string>
 	<string name="split_dex_label">Разделить:</string>
 	<string name="split_dex_cnd">Количество dex:</string>
