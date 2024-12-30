@@ -95,6 +95,7 @@
     <string name="compare_apk_unmod">Не изменённые файлы</string>
     <string name="compare_apk_add">Добавленные файлы</string>
     <string name="compare_apk_del">Удалённые файлы</string>
+    <string name="compare_apk_mess">Сравнить содержимое \"%1$s\" с содержимым \"%2$s\"</string>
 	<string name="split_dex">Разделить dex</string>
 	<string name="split_dex_label">Разделить:</string>
 	<string name="split_dex_cnd">Количество dex:</string>
