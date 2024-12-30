@@ -105,6 +105,7 @@
     <string name="compare_apk_unmod">Unmodified files</string>
     <string name="compare_apk_add">Added files</string>
     <string name="compare_apk_del">Deleted files</string>
+    <string name="compare_apk_mov">Moved files</string>
     <string name="compare_apk_mess">Compare the contents of \"%1$s\" with the contents of \"%2$s\"</string>
     <string name="split_dex">Split dex</string>
     <string name="split_dex_label">Split:</string>
