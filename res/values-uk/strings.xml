@@ -921,5 +921,12 @@
 	<string name="snowfall">Увімкнути снігопад</string>
 	<string name="snowfall_summary">Снігопад у програмі на новорічні свята</string>
 	<string name="storages_info">Інформація про пам\'ять</string>
-    <string name="storage_info">Всього %1$s. Використовується %2$s. Вільно %3$s.</string>
+	<string name="storage_info">Всього %1$s. Використовується %2$s. Вільно %3$s.</string>
+	<string name="compare_apk">Порівняти вміст</string>
+	<string name="compare_apk_mod">Змінені файли</string>
+	<string name="compare_apk_unmod">Не змінені файли</string>
+	<string name="compare_apk_add">Додані файли</string>
+	<string name="compare_apk_del">Видалені файли</string>
+	<string name="compare_apk_mess">Порівняти вміст \"%1$s\" із вмістом \"%2$s\"</string>
+	<string name="compare_apk_mov">Переміщені файли</string>
 </resources>
