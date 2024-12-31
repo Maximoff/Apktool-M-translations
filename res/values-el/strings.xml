@@ -84,7 +84,7 @@
 	<string name="checksum_format">Προβολή ελέγχου αθροισμάτων</string>
 	<string name="checksum_format_summary">Προβολή μορφής ελέγχου αθροίσματος</string>
 	<string name="clear_history">Εκκαθαριση ιστορικου αναζητησης?</string>
-	<string name="clear_preview">Καθαρισμός cache μικρ/φιών</string>
+	<string name="clear_preview">Εκκαθ. cache μικρ/φιών</string>
 	<string name="clear_preview_summary">Το διάστημα για τον καθαρισμό παλιών μικρογραφιών είναι σε ημέρες</string>
 	<string name="click_once_more">Ξαναπατήστε πίσω για Έξοδο!</string>
 	<string name="close_all">Κλείσιμο όλων</string>
@@ -293,7 +293,7 @@
 	<string name="install_anyway">Εγκατάσταση ούτως ή άλλως</string>
 	<string name="install_del">Διαγραφή και εγκατάσταση</string>
 	<string name="install_fail">Η εγκατάσταση απέτυχε! Κωδικός λάθους: %d</string>
-	<string name="install_session">Εγκατάσταση με χρήση συνεδρίας</string>
+	<string name="install_session">Εγκατ/ση με χρήση συνεδρίας</string>
 	<string name="install_sign">Υπογραφή &amp; εγκατ/ση</string>
 	<string name="install_success">Επιτυχία εγκατάστασης! Εκκίνηση αυτής της εφαρμογής;</string>
 	<string name="installer">Εγκαταστάτης</string>
@@ -748,7 +748,7 @@
 	<string name="reset_fab">Επαναφορά θέσης αιωρούμενου κουμπιού;</string>
 	<string name="keep_modified_time">Διατήρηση χρόνου τροποποίησης</string>
 	<string name="keep_modified_time_summary">Προσπάθεια διατήρησης χρόνου τροποποίησης αρχείων και φακέλων αν είναι δυνατόν</string>
-	<string name="kill_sign">Αφαίρεση επαλήθευσης υπογραφής</string>
+	<string name="kill_sign">Αφαίρεση επαλήθ. υπογραφής</string>
 	<string name="kill_sign_advanced">Βελτιωμένη μέθοδος</string>
 	<string name="kill_sign_orig">Προσθήκη αρχικού apk για έλεγχο ακεραιότητας</string>
 	<string name="kill_sign_exists">Το άγκιστρο έχει ήδη προστεθεί</string>
@@ -892,7 +892,7 @@
 	<string name="try_merge_res_summary">Προσπαθήστε να συγχωνεύσετε πρόσθετα πακέτα πόρων με το κύριο πακέτο κατά τη δημιουργία διαχωρισμών</string>
         <string name="embed_dp">Πάροχος Ενσωμάτωσης Εγγράφων</string>
         <string name="embed_dp_info">Η λειτουργία ενσωματώνει έναν πάροχο εγγράφων στην εφαρμογή που παρέχει πρόσβαση σε κρυφά δεδομένα της εφαρμογής. Οι φάκελοι με κρυφά δεδομένα μπορούν να ανοίξουν μέσω της εφαρμογής συστήματος \"Αρχεία\" ή ενός διαχειριστή αρχείων που υποστηρίζει την εργασία με παρόχους εγγράφων. Λειτουργεί σε Android 5 και νεότερες εκδόσεις.</string>
-        <string name="copy_sign">Αντιγραφή υπογραφής από άλλο apk</string>
+        <string name="copy_sign">Αντιγ. υπογρ. από άλλο apk</string>
         <string name="custom_exts">Επεκτάσεις κειμένου</string>
 	<string name="custom_exts_summary">Επεκτάσεις αρχείων που θα εντοπιστούν από το πρόγραμμα ως κείμενο</string>
         <string name="custom_exts_info">Καθορισμός επεκτάσεων διαχωρισμένες με κόμμα: aaa, bbb, ccc</string>
@@ -905,7 +905,7 @@
         <string name="mapp_inLocation_info">Για εγκατάσταση σε εξωτερικό αποθηκευτικό χώρο, ο αποθηκευτικός χώρος πρέπει να είναι τοποθετημένος σε λειτουργία επέκτασης εσωτερικής μνήμης!</string>
         <string name="comp_stats">Συλλογή στατιστικών</string>
         <string name="comp_stats_info">Επιτυχή: %1$s\nΣφάλματα: %2$s\nΣυνολικά: %3$s</string>
-        <string name="editor_auto_search">Άνοιγμα Αναζήτησης αυτόματα</string>
+        <string name="editor_auto_search">Αυτόματο Άνοιγμα Αναζήτησης</string>
         <string name="shell_cmd">Εντολή Κελύφους</string>
 	<string name="shell_cmd_summary">Ένα κέλυφος για την εκτέλεση σεναρίων κελύφους</string>
         <string name="shell_cmd_root">Εντολή Ρίζας</string>
@@ -932,4 +932,11 @@
         <string name="storage_info">Σύνολο %1$s. Σε Χρήση %2$s. Ελεύθερα %3$s.</string>
         <string name="kill_sign_installer">Παραποίηση ονόματος εγκαταστάτη</string>
         <string name="kill_sign_rand_apk">Τυχαίο όνομα αρχείου</string>
+        <string name="compare_apk">Σύγκριση περιεχομένων</string>
+        <string name="compare_apk_mod">Τροποποιημένα αρχεία</string>
+        <string name="compare_apk_unmod">Μη Τροποποιημένα αρχεία</string>
+        <string name="compare_apk_add">Προστιθέμενα αρχεία</string>
+        <string name="compare_apk_del">Διαγραμμένα αρχεία</string>
+        <string name="compare_apk_mess">Σύγκριση περιεχομένων του \"%1$s\" με τα περιεχόμενα του \"%2$s\"</string>
+        <string name="compare_apk_mov">Μετακινηθέντα αρχεία</string>
 </resources>
