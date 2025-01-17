@@ -67,6 +67,9 @@
 	<string name="end">끝</string>
 	<string name="framework">프레임워크</string>
 	<string name="syntax">구문강조</string>
+	<string name="storages_info">메모리 정보</string>
+	<string name="storage_info">총 %1$s. 사용 %2$s. 여유 %3$s.</string>
+	<string name="exclude_path">검색에서 제외</string>
 	<string name="comp_stats">통계</string>
 	<string name="comp_stats_info">성공 : %1$s\n오류 : %2$s\n전체 : %3$s</string>
 	<string name="copy_sign">다른앱에서 서명 복사</string>
@@ -87,6 +90,12 @@
 	<string name="bg_proccess_notice">백그라운드에서 실행 중인 프로세스가 있습니다. 애플리케이션을 닫으면 프로세스가 중단될 수 있습니다! 정말로 나가고 싶나요?</string>
 	<string name="protection">보호</string>
 	<string name="protection_info">보호 징후 감지됨 : %s\n\n간접적인 기호를 기반으로 감지가 이루어지기 때문에 오류가 있을 수 있다는 점 참고해주세요!</string>
+	<string name="main_pkg">메인 패키지</string>
+	<string name="styled">스타일있는 문자열</string>
+	<string name="app_crashed">애플리케이션에 오류가 발생했습니다! 클릭하여 로그 보기</string>
+	<string name="max_value">최대값</string>
+	<string name="sign_ver_info">Android 서명 버전 :\nV1 - 첫 번째 서명 옵션으로 Android 7.0까지만 해당됩니다.\nV2 - Android 7.0에 추가됨.\n\n서명 버전은 애플리케이션에 필요한 최소/대상 Android 버전을 기준으로 사용해야 합니다. 대상 버전이 30+(Android 11+)인 경우 V2 서명이 필요합니다.\n\n\"저장\" 체크박스를 선택하지 않으면 선택한 설정은 이번에만 사용됩니다.</string>
+	<string name="sign_ver_info2">Android 서명 버전 :\nV1 – 첫 번째 서명 옵션으로 Android 7.0까지만 해당됩니디.\nV2 – Android 7.0에 추가됨.\nV3 – Android 9.0에 추가됨.\nV4 – Android 11에 추가됨.\n\n서명 버전은 애플리케이션에 필요한 최소/대상 Android 버전을 기준으로 사용해야 합니다. 대상 버전이 30+(Android 11+)인 경우 V2 서명이 필요합니다. V2 또는 V3은 V4 서명과 함께 사용해야 합니다. 현재 버전 V4는 거의 사용되지 않습니다.\n\n\"저장\" 체크박스를 선택하지 않으면 선택한 설정은 이번에만 사용됩니다.</string>
 	<string name="ignore_indent">들여쓰기 무시</string>
 	<string name="dexs_info">Dex 정보</string>
 	<string name="dex_limit_info">Dex의 방법/필드의 최대 수 : %d</string>
@@ -729,6 +738,8 @@
 	<string name="hl_time_summary">뒤로 돌아갈 때 폴더 강조 시간 (밀리초)</string>
 	<string name="user_cache">캐시 폴더 선택</string>
 	<string name="user_cache_summary">임시 파일 폴더 저장소 선택</string>
+	<string name="snowfall">눈 내리기</string>
+	<string name="snowfall_summary">새해 명절에 눈이 내리도록 설정</string>
 	<string name="shell_cmd">쉘 커멘드</string>
 	<string name="shell_cmd_summary">쉘 스크립트를 실행하기 위한 쉘</string>
 	<string name="shell_cmd_root">루트 커멘드</string>
