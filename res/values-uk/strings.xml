@@ -929,4 +929,5 @@
 	<string name="compare_apk_del">Видалені файли</string>
 	<string name="compare_apk_mess">Порівняти вміст \"%1$s\" із вмістом \"%2$s\"</string>
 	<string name="compare_apk_mov">Переміщені файли</string>
+	<string name="only_diff">Тільки відмінності</string>
 </resources>
