@@ -234,6 +234,14 @@
 		<item>将对方法句柄的引用放置在 vAA 寄存器中。自版本 039 以来存在于 Dex 文件中。</item>
 		<item>在 vAA 寄存器中放置对方法原型的引用。自版本 039 以来存在于 Dex 文件中。</item>
 	</string-array>
+	<string-array name="years_or_days">
+		<item>年</item>
+		<item>天</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>内置</item>
+		<item>自定义</item>
+	</string-array>
 	<string-array name="aapt2_dump_descr">
 		<item>打印从 APK 清单中提取的信息。</item>
 		<item>打印 APK 中资源使用的每个配置。</item>
@@ -682,5 +690,38 @@
 		<item>科萨语</item>
 		<item>雅库特语</item>
 		<item>意第绪语</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>自动检测</item>
+		<item>阿拉伯语</item>
+		<item>保加利亚语</item>
+		<item>中文</item>
+		<item>捷克语</item>
+		<item>丹麦语</item>
+		<item>荷兰语</item>
+		<item>英语</item>
+		<item>爱沙尼亚语</item>
+		<item>芬兰语</item>
+		<item>法语</item>
+		<item>德语</item>
+		<item>希腊语</item>
+		<item>匈牙利语</item>
+		<item>印度尼西亚语</item>
+		<item>意大利语</item>
+		<item>日语</item>
+		<item>韩语</item>
+		<item>拉脱维亚语</item>
+		<item>立陶宛语</item>
+		<item>挪威语(书面语)</item>
+		<item>波兰语</item>
+		<item>葡萄牙语</item>
+		<item>罗马尼亚语</item>
+		<item>俄语</item>
+		<item>斯洛伐克语</item>
+		<item>斯洛文尼亚语</item>
+		<item>西班牙语</item>
+		<item>瑞典语</item>
+		<item>土耳其语</item>
+		<item>乌克兰语</item>
 	</string-array>
 </resources>
