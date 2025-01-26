@@ -66,6 +66,8 @@
 	<string name="framework">چارچوب</string>
 	<string name="syntax">نحو</string>
 	<string name="parameters">پارامترها: %s</string>
+	<string name="storages_info">اطلاعات حافظه</string>
+        <string name="storage_info">کل %1$s. استفاده شده %2$s. آزاد %3$s.</string>
 	<string name="exclude_path">حذف از جستجو</string>
 	<string name="comp_stats">آمار تدوین</string>
 	<string name="comp_stats_info">موفقیت: %1$s\nخطا: %2$s\nمجموع: %3$s</string>
@@ -80,6 +82,14 @@
 	<string name="dex_decompile_info">این گزینه همه فایل‌های dex را که در ریشه apk هستند تجزیه می‌کند، اما فایل‌های dex را در زیر پوشه‌ها دست نخورده باقی می‌گذارد.</string>
 	<string name="dex_decompile_info2">این گزینه همه فایل‌های dex موجود در apk را تجزیه می‌کند، هم آن‌هایی که در ریشه apk هستند و هم آنهایی که در زیر پوشه‌های apk قرار دارند.</string>
 	<string name="delete_orig">حذف اصلی</string>
+	<string name="compare_apk">مقایسه محتوا</string>
+        <string name="compare_apk_mod">پرونده‌های اصلاح شده</string>
+        <string name="compare_apk_unmod">پرونده‌های اصلاح نشده</string>
+        <string name="compare_apk_add">پرونده‌های اضافه شده</string>
+        <string name="compare_apk_del">پرونده‌های حذف شده</string>
+        <string name="compare_apk_mov">پرونده‌های منتقل شده</string>
+        <string name="compare_apk_mess">محتوای \"%1$s\" را با محتوای \"%2$s\" مقایسه کنید</string>
+        <string name="only_diff">فقط تفاوت ها</string>
 	<string name="split_dex">تقسیم dex</string>
 	<string name="split_dex_label">تقسیم:</string>
 	<string name="split_dex_cnd">تعداد dex:</string>
@@ -500,7 +510,7 @@
 	<string name="use_aapt2">استفاده از aapt2</string>
 	<string name="use_aapt2_summary">استفاده از aapt2 برای ساخت</string>
 	<string name="check_install">بررسی apk</string>
-	<string name="check_install_summary">فایل apk را قبل از نصب بررسی می کند</string>
+	<string name="check_install_summary">پرونده apk را قبل از نصب بررسی می کند</string>
 	<string name="editor_non_printing">نویسه های غیر قابل چاپ</string>
 	<string name="editor_non_printing_summary">نمایش نویسه های غیرقابل چاپ</string>
 	<string name="editor_quick_panel">صفحه نویسه ها</string>
@@ -508,7 +518,7 @@
 	<string name="quick_panel_sym">سفارشی سازی صفحه</string>
 	<string name="quick_panel_sym_summary">سفارشی سازی نویسه های صفحه</string>
 	<string name="dont_work_aapt2">این با aapt2 کار نمی کند</string>
-	<string name="drawer_fullscreen">فهرست فایل های تمام صفحه</string>
+	<string name="drawer_fullscreen">فهرست پرونده های تمام صفحه</string>
 	<string name="drawer_fullscreen_summary">مدیر فایل تمام صفحه را اشغال می کند</string>
 	<string name="rem_path">یادآوری آخرین مسیر</string>
 	<string name="rem_path_summary">آخرین مسیر را به خاطر می سپارد</string>
@@ -752,6 +762,12 @@
 	<string name="mapp_inLocation_info">برای نصب روی ذخیره‌سازی خارجی، ذخیره‌سازی باید در حالت گسترش ذخیره‌سازی داخلی نصب شود!</string>
 	<string name="sign_priority">اولویت امضای V1</string>
 	<string name="sign_priority_summary">اولویت امضای V1 هنگام تأیید و بازیابی اطلاعات امضا</string>
+	<string name="hl_time">زمان برجسته شدن پوشه</string>
+	<string name="hl_time_summary">زمان برجسته شدن پوشه هنگام بازگشت به عقب، بر حسب میلی ثانیه</string>
+        <string name="user_cache">انتخاب پوشه حافظه پنهان</string>
+	<string name="user_cache_summary">فضای ذخیره سازی را برای پوشه پرونده های موقت انتخاب کنید</string>
+        <string name="snowfall">فعال کردن بارش برف</string>
+	<string name="snowfall_summary">بارش برف در برنامه تعطیلات</string>
 	<string name="shell_cmd">دستور پوسته</string>
 	<string name="shell_cmd_summary">پوسته ای برای اجرای پردازه های پوسته</string>
 	<string name="shell_cmd_root">دستور Root</string>
@@ -860,6 +876,11 @@
 	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_bing">بینگ</string>
 	<string name="mtr_yandex">یاندکس</string>
+	<string name="mtr_deepl">DeepL</string>
+        <string name="mtr_deepl_warn">درخواست های بسیار زیاد، نشانی IP شما به طور موقت DeepL مسدود شده است!  لطفا کمی صبر کنید و دوباره امتحان کنید!</string>
+        <string name="mtr_deepl_key_warn">تعداد درخواست های DeepL API برای کلید شما تمام شده است!</string>
+        <string name="mtr_deepl_key">کلید API برای DeepL</string>
+        <string name="mtr_deepl_key_info">اگر یک کلید API دارید، می توانید از آن استفاده کنید. این برنامه از طریق API رسمی به کارگزار DeepL دسترسی خواهد داشت.</string>
 	<string name="mtr_create">ایجاد</string>
 	<string name="mtr_hide_trans">پنهان کردن موارد ترجمه شده</string>
 	<string name="mtr_create_dict">ایجاد واژه نامه</string>
