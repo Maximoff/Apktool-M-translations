@@ -98,12 +98,13 @@
 	<string name="compare_apk_del">File yang dihapus</string>
 	<string name="compare_apk_mov">File yang dipindahkan</string>
 	<string name="compare_apk_mess">Bandingkan konten \"%1$s\" dengan konten \"%2$s\"</string>
+	<string name="only_diff">Hanya perbedaannya</string>
 	<string name="split_dex">Pisahkan dex</string>
 	<string name="split_dex_label">Terpisah:</string>
 	<string name="split_dex_cnd">Jumlah dex:</string>
 	<string name="split_dex_cnm">Jumlah methods/fields:</string>
 	<string name="merge_dex">Gabungkan dex</string>
-	<string name="merge_dex_error">Tidak mungkin untuk menggabungkan file, jumlah methods/fields yang diizinkan telah terlampaui!</string>
+	<string name="merge_dex_error">Tidak dapat menggabungkan file, jumlah methods/fields yang diizinkan telah terlampaui!</string>
 	<string name="redistribute_dex">Mendistribusikan ulang dex</string>
 	<string name="bg_proccess_notice">Ada proses yang berjalan di latar belakang, jika Anda menutup aplikasi, proses tersebut mungkin akan terganggu! Apakah Anda yakin ingin keluar?</string>
 	<string name="protection">Perlindungan</string>
@@ -439,7 +440,7 @@
 	<string name="extract">Ekstrak</string>
 	<string name="extraction">Ekstraksi: %s</string>
 	<string name="error">Terjadi kesalahan</string>
-	<string name="errorf">Kesalahan: %s</string>
+	<string name="errorf">Terjadi kesalahan: %s</string>
 	<string name="crash_log">Log kerusakan</string>
 	<string name="import_scheme">Impor sebagai skema warna</string>
 	<string name="import_scheme_confirm">Impor \"%s\"  sebagai skema warna editor?</string>
@@ -940,6 +941,7 @@
 	<string name="license_accept">Terima</string>
 	<string name="license_refuse">Jangan terima</string>
 	<string name="send_log">Kirim log ke pengembang</string>
+
 	<string name="patcher_select">Pilih tambalan</string>
 	<string name="patcher_select_error">Ini bukan tambalan!</string>
 	<string name="patcher_project">Proyek: \"%s\"</string>
