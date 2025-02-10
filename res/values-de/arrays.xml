@@ -1,624 +1,1355 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>Registriert</item>
 		<item>Literale Werte</item>
 		<item>Primitive Datentypen</item>
 	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
+	</string-array>
 	<string-array name="smali_help_values" formatted="false">
-		<item>vA ist ein 4-Bit-Register mit dem Wertebereich v0 - v15\nvAA ist ein 8-Bit-Register mit einem Wertebereich von v0 – v255\nvAAAA ist ein 16-Bit-Register mit einem Wertebereich von v0 – v65535</item>
-		<item>0xF, 0xFF usw. werden verwendet. um Literalwerte darzustellen. Wie bei Registern wird die Zahl F zur Darstellung eines Wertebereichs verwendet, zum Beispiel:\nDer Bereich der 0xF-Werte wird durch [-0x8, 0x7] dargestellt.\nDer Wertebereich von 0xFF wird dargestellt durch [-0x80, 0x7F]</item>
-		<item>V – leer, Z – boolesch, B – Byte\nC – char, S – short, I – int\nJ – lang, F – schwebend, D – doppelt\nvoid: kann nur für Rückgabetypen verwendet werden\nboolean: speichert den Wert true oder false\nByte: Speichert eine Ganzzahl von -128 bis 127 und belegt 1 Byte\nkurz: speichert eine Ganzzahl von -32768 bis 32767 und benötigt 2 Bytes\nint: speichert eine Ganzzahl von -2147483648 bis 2147483647 und belegt 4 Bytes\nlong: speichert eine Ganzzahl von -9223372036854775808 bis 9223372036854775807 und belegt 8 Bytes\ndouble: speichert eine Gleitkommazahl von ±4,9*10³²⁴ bis ±1,7976931348623157*10³⁰⁸ und belegt 8 Bytes. Als Dezimaltrennzeichen wird in Bruchliteralen ein Punkt verwendet.\nfloat: speichert eine Gleitkommazahl von -3,4*10³⁸ bis 3,4*10³⁸ und belegt 4 Bytes\nchar: speichert ein einzelnes Zeichen in UTF-16-Codierung und belegt 2 Bytes, sodass der Bereich der gespeicherten Werte zwischen 0 und 65535 liegt.</item>
+		<item>vA ist ein 4-Bit-Register mit dem Wertebereich v0 - v15\nvAA ist ein 8-Bit-Register mit einem Wertebereich von v0 - v255\nvAAAA ist ein 16-Bit-Register mit einem Wertebereich von v0 - v65535</item>
+		<item>0xF, 0xFF usw. werden zur Darstellung von Literalwerten verwendet. Wie Register wird die Zahl F verwendet, um einen Wertebereich darzustellen, zum Beispiel:\nDer Wertebereich von 0xF wird durch [-0x8, 0x7]\nDer Wertebereich von 0xFF wird durch [-0x80, 0x7F] dargestellt</item>
+		<item>V - void, Z - boolesch, B - byte\nC - char, S - kurz, I - int\nJ - lang, F - float, D - doppel\nvoid: kann nur für Rückgabetypen verwendet werden\nboolean: speichert den Wert true oder false\nbyte: speichert eine Ganzzahl von -128 bis 127 und belegt 1 Byte\nshort: speichert eine Ganzzahl von -32768 bis 32767 und belegt 2 Byte\nint: speichert eine Ganzzahl von -2147483648 bis 2147483647 und belegt 4 Byte\nlong: speichert eine Ganzzahl von -9223372036854775808 bis 9223372036854775807 und belegt 8 Byte\ndouble: speichert eine Gleitkommazahl von ±4.9*10³²⁴ bis ±1.7976931348623157*10³⁰⁸ und belegt 8 Bytes. Ein Punkt wird als Dezimaltrennzeichen in Bruchliteralen verwendet.\nfloat: speichert eine Gleitkommazahl von -3,4*10³⁸ bis 3,4*10³⁸ und belegt 4 Bytes\nchar: speichert ein einzelnes Zeichen in UTF-16-Kodierung und belegt 2 Bytes, so dass der Bereich der gespeicherten Werte von 0 bis 65535 reicht.</item>
 		<item>Keine Aktion.</item>
-		<item>Verschiebt den Wert des Registers vB in das Register vA.</item>
-		<item>Verschiebt den Wert des vBBBB-Registers in das vAA-Register.</item>
-		<item>Verschiebt den Wert des vBBBB-Registers in das vAAAA-Register.</item>
-		<item>Verschiebt den Long/Double-Wert des Registerpaars (vB, vB+1) in das Registerpaar vA, vA+1.</item>
-		<item>Verschiebt den Long/Double-Wert eines Registerpaars (vBBBB, vBBBB+1) in ein Registerpaar vAA, vAA+1.</item>
-		<item>Verschiebt den Long/Double-Wert eines Registerpaars (vBBBB, vBBBB+1) in ein Registerpaar vAAAA, vAAAA+1.</item>
-		<item>Verschiebt eine Objektreferenz vom vB-Register in das vA-Register.</item>
-		<item>Verschiebt eine Objektreferenz vom vBBBB-Register in das vAA-Register.</item>
-		<item>Verschiebt eine Objektreferenz vom vBBBB-Register in das vAAAA-Register.</item>
+		<item>Verschiebt den Wert von Register vB nach Register vA.</item>
+		<item>Verschiebt den Wert des Registers vBBBB in das Register vAA.</item>
+		<item>Verschiebt den Wert des Registers vBBBB in das Register vAAAA.</item>
+		<item>Verschiebt den Long/Double-Wert des Registerpaares (vB, vB+1) zum Registerpaar vA, vA+1.</item>
+		<item>Verschiebt den Long/Double-Wert eines Registerpaares (vBBBB, vBBBB+1) in ein Registerpaar vAA, vAA+1.</item>
+		<item>Verschiebt den Long/Double-Wert eines Registerpaares (vBBBB, vBBBB+1) in ein Registerpaar vAAAA, vAAAA+1.</item>
+		<item>Verschiebt eine Objektreferenz aus dem vB-Register in das vA-Register.</item>
+		<item>Verschiebt eine Objektreferenz aus dem Register vBBBB in das Register vAA.</item>
+		<item>Verschiebt eine Objektreferenz aus dem Register vBBBB in das Register vAAAA.</item>
 		<item>Verschiebt den Rückgabewert der zuvor aufgerufenen Methode in das vAA-Register.</item>
-		<item>Verschiebt den von der zuvor aufgerufenen Methode zurückgegebenen Long-/Double-Wert in das Registerpaar vAA, vAA+1.</item>
+		<item>Verschiebt den von der zuvor aufgerufenen Methode zurückgegebenen Long/Double-Wert in das Registerpaar vAA, vAA+1.</item>
 		<item>Verschiebt die von der zuvor aufgerufenen Methode zurückgegebene Objektreferenz in das vAA-Register.</item>
-		<item>Verschiebt den Verweis auf das ausgeschlossene Objekt, der während des Methodenaufrufs (während der Ausführung) ausgegeben wurde, in das vAA-Register.</item>
+		<item>Verschiebt den Verweis auf das ausgeschlossene Objekt, das während des Methodenaufrufs (während der Ausführung) ausgegeben wurde, in das vAA-Register.</item>
 		<item>Rückgabe ohne Rückgabewert.</item>
-		<item>Rückkehr durch Rückgabe des Werts aus dem vAA-Register.</item>
-		<item>Kehren Sie zurück, indem Sie einen Double/Long-Wert in ein Registerpaar vAA, vAA+1 zurückgeben.</item>
-		<item>Rückkehr durch Rückgabe des Werts der Objektreferenz aus dem vAA-Register.</item>
-		<item>Platziert eine 4-Bit-Konstante im vA-Register.</item>
-		<item>Platziert eine 16-Bit-Konstante im vAA-Register.</item>
-		<item>Fügt eine ganzzahlige Konstante in das vAA-Register ein.</item>
-		<item>Platziert eine 16-Bit-Konstante in den oberen Bits des vAA-Registers. Wird zum Initialisieren von Float-Werten (Gleitkommawerten) verwendet.</item>
-		<item>Platziert eine 16-Bit-Ganzzahlkonstante in das Registerpaar vAA, vAA+1 und wandelt die Ganzzahlkonstante in eine lange Konstante um.</item>
-		<item>Platziert eine 32-Bit-Ganzzahlkonstante in das Registerpaar vAA, vAA+1 und wandelt die Ganzzahlkonstante in eine lange Konstante um.</item>
-		<item>Platziert eine 64-Bit-Konstante im Registerpaar vAA, vAA+1.</item>
-		<item>Platziert eine 16-Bit-Konstante in den oberen 16 Bits des Registerpaars vAA, vAA+1. Wird zum Initialisieren von Double-Werten (Gleitkommawerten) verwendet.</item>
-		<item>Platziert einen Verweis auf die angegebene Zeichenfolge im vAA-Register.</item>
-		<item>Platziert einen Verweis auf die angegebene Zeichenfolge im vAA-Register.</item>
-		<item>Platziert einen Verweis auf die durch string_id identifizierte Zeichenfolgenkonstante (Zeichenfolge) im vAA-Register.</item>
+		<item>Rückgabe durch Rückgabe des Wertes aus dem vAA-Register.</item>
+		<item>Rückgabe durch Rückgabe eines Double/Long-Wertes in ein Registerpaar vAA, vAA+1.</item>
+		<item>Rückgabe durch Rückgabe des Wertes der Objektreferenz aus dem vAA-Register.</item>
+		<item>Legt eine 4-Bit-Konstante in das vA-Register.</item>
+		<item>Setzt eine 16-Bit-Konstante in das vAA-Register.</item>
+		<item>Setzt eine Integer-Konstante in das vAA-Register.</item>
+		<item>Platziert eine 16-Bit-Konstante in die oberen Bits des vAA-Registers. Wird zur Initialisierung von Float- (Gleitkomma-) Werten verwendet.</item>
+		<item>Legt eine 16-Bit-Integer-Konstante in das Registerpaar vAA, vAA+1 und wandelt die Integer-Konstante in eine Long-Konstante um.</item>
+		<item>Legt eine 32-Bit-Integer-Konstante in das Registerpaar vAA, vAA+1 und wandelt die Integer-Konstante in eine Long-Konstante um.</item>
+		<item>Legt eine 64-Bit-Konstante in das Registerpaar vAA, vAA+1.</item>
+		<item>Setzt eine 16-Bit-Konstante in die oberen 16 Bits des Registerpaares vAA, vAA+1. Wird verwendet, um doppelte (Gleitkomma-)Werte zu initialisieren.</item>
+		<item>Setzt einen Verweis auf die angegebene Zeichenfolge in das vAA-Register.</item>
+		<item>Setzt einen Verweis auf die angegebene Zeichenfolge in das vAA-Register.</item>
+		<item>Legt einen Verweis auf die durch string_id identifizierte String-Konstante (string) in das vAA-Register.</item>
 		<item>Ruft den Objektmonitor ab, auf den das vAA-Register verweist.</item>
-		<item>Gibt den Objektmonitor frei, auf den das vAA-Register verweist.</item>
-		<item>Überprüft, ob eine im vAA-Register enthaltene Objektreferenz in die durch type_id identifizierte Klasse umgewandelt werden kann. Löst eine ClassCastException aus, wenn dies nicht möglich ist, andernfalls wird die Ausführung fortgesetzt.</item>
-		<item>Überprüft, ob der Inhalt des vB-Registers eine Instanz der durch type_id identifizierten Klasse ist. Setzt das Register vA auf ungleich Null, falls vorhanden, auf 0, wenn nicht.\nvA = vB-Instanztyp? 10</item>
-		<item>Bestimmt die Anzahl der Array-Elemente aus dem vB-Register und legt den Wert im vA-Register ab.\nvA = vB.Länge</item>
-		<item>Erstellt eine Instanz eines Objekttyps und platziert einen Verweis auf die erstellte Instanz im vAA-Register.</item>
-		<item>Erstellt ein neues Array von type_id-Variablen mit der Größe der Register-vB-Elemente und platziert einen Verweis auf das Array im Register vA.</item>
-		<item>Erstellt ein neues Datenarray vom Typ type_id und füllt es mit Parametern (d. h. keine Long-/Double-Arrays, aber Referenztypen sind erlaubt). Eine Referenz auf das neu erstellte Array kann mithilfe der Anweisung „move-result-object“ direkt nach dieser Anweisung abgerufen werden (sofern eine solche verwendet werden soll).</item>
-		<item>Erstellt ein neues Datenarray vom Typ type_id und füllt es mit einer Reihe von Parametern (d. h. keine langen/doppelten Arrays, aber Referenztypen sind akzeptabel). Eine Referenz auf das neu erstellte Array kann mithilfe der Anweisung „move-result-object“ direkt nach dieser Anweisung abgerufen werden (sofern eine solche verwendet werden soll).</item>
-		<item>Füllt das im vAA-Register referenzierte Array mit statischen Daten. Der Datenort ist die Summe aus der Position des aktuellen Befehls und dem Offset.</item>
-		<item>Löst ein Ausnahmeobjekt aus. Ein Verweis auf das Ausnahmeobjekt im vAA-Register.</item>
-		<item>Springe bedingungslos zu einem kurzen (ganzzahligen) 8-Bit-Offset.</item>
+		<item>Gibt den vom vAA-Register referenzierten Objektmonitor frei.</item>
+		<item>Prüft, ob eine im vAA-Register enthaltene Objektreferenz in die durch type_id identifizierte Klasse gecastet werden kann. Wenn dies nicht möglich ist, wird eine ClassCastException geworfen, ansonsten wird die Ausführung fortgesetzt.</item>
+		<item>Prüft, ob der Inhalt des Registers vB eine Instanz der durch type_id identifizierten Klasse ist. Setzt das Register vA auf einen Wert ungleich Null, falls vorhanden, sonst auf 0. \nvA = vB instanceOf type ? 10</item>
+		<item>Ermittelt die Anzahl der Array-Elemente aus dem vB-Register und legt den Wert im vA-Register ab. \nvA = vB.length</item>
+		<item>Erzeugt eine Instanz eines Objekttyps und legt einen Verweis auf die erzeugte Instanz im vAA-Register ab.</item>
+		<item>Erzeugt ein neues Array von type_id-Variablen mit der Größe der Elemente des Registers vB und legt einen Verweis auf das Array im Register vA ab.</item>
+		<item>Erzeugt ein neues Datenarray vom Typ type_id und füllt es mit Parametern (d.h. keine Long/Double-Arrays, aber Referenztypen sind erlaubt). Ein Verweis auf das neu erstellte Array kann mit der unmittelbar auf diese Anweisung folgenden move-result-object-Anweisung erhalten werden (falls eine solche verwendet werden soll).</item>
+		<item>Erzeugt ein neues Datenarray vom Typ type_id und füllt es mit einem Bereich von Parametern (d.h. keine Long/Double-Arrays, aber Referenztypen sind akzeptabel). Ein Verweis auf das neu erstellte Array kann mit der unmittelbar auf diese Anweisung folgenden move-result-object-Anweisung erhalten werden (falls eine solche verwendet werden soll).</item>
+		<item>Füllt das im vAA-Register referenzierte Array mit statischen Daten. Der Datenort ist die Summe aus der Position der aktuellen Anweisung und dem Offset.</item>
+		<item>Wirft ein Ausnahmeobjekt. Ein Verweis auf das Ausnahmeobjekt im vAA-Register.</item>
+		<item>Unbedingter Sprung zu einem kurzen (ganzzahligen) 8-Bit-Offset.</item>
 		<item>Unbedingter Sprung zum 16-Bit-Offset.</item>
 		<item>Unbedingter Sprung zum 32-Bit-Offset.</item>
-		<item>Implementiert den Switch-Operator, wenn die Steuerkonstanten nahe beieinander liegen (in einer Reihe). Die Anweisung verwendet eine Indextabelle. Der Befehlsoffset für einen bestimmten Fall wird durch den vAA-Index bestimmt. Wenn der vAA-Index über die Tabelle hinausgeht, wird die Ausführung mit der nächsten Anweisung fortgesetzt (Standard).</item>
-		<item>Implementiert den Switch-Operator im Falle einer Tabelle mit geringer Dichte. Die Anweisung verwendet eine Tabelle, die Offsets für jede Konstante angibt. Wenn in der Tabelle keine Übereinstimmungen gefunden werden, wird die nächste Anweisung ausgeführt (Standardfall).</item>
-		<item>Vergleicht die Float-Werte (Gleitkommawerte) in vBB und vCC und legt den ganzzahligen Wert im vAA-Register ab:\nvAA = vBB &lt; vCC ? ja: 1, nein: -1, gleich: 0</item>
-		<item>Vergleicht die Float-Werte (Gleitkommawerte) in vBB und vCC und legt den ganzzahligen Wert im vAA-Register ab:\nvAA = vBB &lt; vCC ? ja: 1, nein: -1, gleich: 0</item>
-		<item>Vergleicht die Double-Werte (Gleitkommawerte) in vBB und vCC und platziert den ganzzahligen Wert im vAA-Register:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? j\nja: 1, nein: -1, gleich: 0</item>
-		<item>Vergleicht die Double-Werte (Gleitkommawerte) in vBB und vCC und platziert den ganzzahligen Wert im vAA-Register:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ja: 1, nein: -1, gleich: 0</item>
-		<item>Vergleicht die langen (ganzzahligen) Werte in vBB und vCC und platziert den ganzzahligen (ganzzahligen) Wert im vAA-Register:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ja: 1, nein: -1, gleich: 0</item>
-		<item>Springt zum angegebenen Label, wenn vA == vB. vA und vB enthalten ganzzahlige Werte.\n(eq ist die Abkürzung für Equals)</item>
+		<item>Implementiert den Switch-Operator, wenn die Steuerungskonstanten nahe beieinander liegen (in einer Reihe). Die Anweisung verwendet eine Indextabelle. Der Anweisungsoffset für einen bestimmten Fall wird durch den vAA-Index bestimmt. Wenn der vAA-Index über die Tabelle hinausgeht, wird die Ausführung mit der nächsten Anweisung fortgesetzt (Standard).</item>
+		<item>Implementiert den Switch-Operator im Falle einer spärlichen Tabelle. Die Anweisung verwendet eine Tabelle, die Offsets für jede Konstante angibt. Wenn keine Übereinstimmungen in der Tabelle gefunden werden, wird die nächste Anweisung ausgeführt (Standardfall).</item>
+		<item>Vergleicht die Gleitkommawerte in vBB und vCC und stellt den ganzzahligen Wert in das vAA-Register: \nvAA = vBB &lt; vCC ? ja: 1, nein: -1, gleich: 0</item>
+		<item>Vergleicht die Gleitkommawerte in vBB und vCC und stellt den ganzzahligen Wert in das vAA-Register: \nvAA = vBB &lt; vCC ? ja: 1, nein: -1, gleich: 0</item>
+		<item>Vergleicht die doppelten (Gleitkomma-)Werte in vBB und vCC und stellt den ganzzahligen Wert in das vAA-Register: \nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nyes: 1, no: -1, equal: 0</item>
+		<item>Vergleicht die doppelten (Fließkomma-)Werte in vBB und vCC und stellt den ganzzahligen Wert in das vAA-Register: \nvAA = (vBB, vBB+1) &gt; (vCC, vCC+1) ? ja: 1, nein: -1, gleich: 0</item>
+		<item>Vergleicht die langen (ganzzahligen) Werte in vBB und vCC und setzt den ganzzahligen Wert in das vAA-Register:\nvAA = (vBB, vBB+1) &gt; (vCC, vCC+1) ? ja: 1, nein: -1, gleich: 0</item>
+		<item>Springt zum angegebenen Etikett, wenn vA == vB. vA und vB enthalten ganzzahlige Werte.\n(eq ist die Abkürzung für Equals)</item>
 		<item>Springt zum angegebenen Label, wenn vA != vB. vA und vB enthalten ganzzahlige Werte.\n(ne ist die Abkürzung für Not Equals)</item>
-		<item>Springt zum angegebenen Label, wenn vA &lt; vB. vA und vB enthalten ganzzahlige Werte.\n(Es ist die Abkürzung für Less Than)</item>
-		<item>Springt zum angegebenen Label, wenn vA &lt;= vB. vA und vB enthalten ganzzahlige Werte.\n(le ist eine Abkürzung für Less than or Equal/Less or equal)</item>
-		<item>Springt zum angegebenen Label, wenn vA > vB. vA und vB enthalten ganzzahlige Werte.\n(gt ist die Abkürzung für Greater Than/More Than)</item>
-		<item>Springt zum angegebenen Label, wenn vA >= vB. vA und vB enthalten ganzzahlige Werte.\n(ge ist die Abkürzung für Greater than or Equal)</item>
-		<item>Springt zum angegebenen Label, wenn vAA == 0. vAA enthält einen ganzzahligen Wert.\n(eqz ist die Abkürzung für Equals to Zero)</item>
-		<item>Springt zum angegebenen Label, wenn vAA != 0. vAA enthält einen ganzzahligen Wert.\n(nez ist die Abkürzung für Not Equals to Zero)</item>
-		<item>Springt zum angegebenen Label, wenn vAA &lt; 0. vAA enthält einen ganzzahligen Wert.\n(ltz ist die Abkürzung für Less Than Zero)</item>
-		<item>Springt zum angegebenen Label, wenn vAA &lt;= 0. vAA enthält einen ganzzahligen Wert.\n(lez ist eine Abkürzung für Less than or Equal to Zero/Less or equal to Zero)</item>
-		<item>Springt zum angegebenen Label, wenn vAA > 0. vAA enthält einen ganzzahligen Wert.\n(gtz ist die Abkürzung für Greater Than Zero)</item>
-		<item>Springt zum angegebenen Label, wenn vAA >= 0. vAA enthält einen ganzzahligen Wert.\n(gez ist eine Abkürzung für Greater than or Equal to Zero)</item>
-		<item>Ruft einen ganzzahligen Wert am in vCC enthaltenen Index aus dem in vBB referenzierten Array ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
-		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen Double/Long-Wert ab und platziert ihn im Registerpaar vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
-		<item>Empfängt am in vCC enthaltenen Index von dem in vBB referenzierten Array eine Referenz auf das Objekt und platziert es im vAA-Register.\nvAA = vBB[vCC]</item>
-		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen booleschen Wert ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
-		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen Bytewert (Ganzzahl) ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
-		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen char-Wert ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
-		<item>Ruft am in vCC enthaltenen Index aus dem in vBB referenzierten Array einen kurzen (ganzzahligen) Wert ab und platziert ihn im vAA-Register.\nvAA = vBB[vCC]</item>
-		<item>Platziert den ganzzahligen Wert von vAA in dem in vBB referenzierten Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
+		<item>Springt zum angegebenen Etikett, wenn vA &lt; vB. vA und vB enthalten ganzzahlige Werte.\n(lt ist die Abkürzung für Less Than)</item>
+		<item>Springt zum angegebenen Etikett, wenn vA &lt;= vB. vA und vB enthalten ganzzahlige Werte. \n(le ist eine Abkürzung für Less than or Equal/Less or equal)</item>
+		<item>Springt zum angegebenen Etikett, wenn vA &gt; vB. vA und vB enthalten ganzzahlige Werte.\n(gt ist die Abkürzung für Greater Than/More Than)</item>
+		<item>Springt zum angegebenen Etikett, wenn vA &gt;= vB. vA und vB enthalten ganzzahlige Werte.\n(ge ist die Abkürzung für Greater than or Equal)</item>
+		<item>Springt zum angegebenen Etikett, wenn vAA == 0. vAA enthält einen ganzzahligen Wert.\n(eqz ist die Abkürzung für Equals to Zero)</item>
+		<item>Springt zum angegebenen Etikett, wenn vAA != 0. vAA enthält einen ganzzahligen Wert.\n(nez ist die Abkürzung für Not Equals to Zero)</item>
+		<item>Springt zum angegebenen Etikett, wenn vAA &lt; 0. vAA enthält einen ganzzahligen Wert.\n(ltz ist die Abkürzung für Less Than Zero)</item>
+		<item>Springt zum angegebenen Etikett, wenn vAA &lt;= 0. vAA enthält einen ganzzahligen Wert.\n(lez ist eine Abkürzung für Less than or Equal to Zero/Weniger oder gleich Null)</item>
+		<item>Springt zum angegebenen Etikett, wenn vAA &gt; 0. vAA enthält einen ganzzahligen Wert.\n(gtz ist die Abkürzung für Greater Than Zero)</item>
+		<item>Springt zum angegebenen Etikett, wenn vAA &gt;= 0. vAA enthält einen ganzzahligen Wert.\n(gez ist eine Abkürzung für Greater than or Equal to Zero)</item>
+		<item>Holt einen ganzzahligen Wert an dem in vCC enthaltenen Index aus dem in vBB referenzierten Array und legt ihn in das vAA-Register ab.\nvAA = vBB[vCC]</item>
+		<item>Holt an dem in vCC enthaltenen Index aus dem in vBB referenzierten Array einen Double/Long-Wert und legt ihn in das Registerpaar vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Empfängt an dem in vCC enthaltenen Index aus dem in vBB referenzierten Array einen Verweis auf das Objekt und legt ihn in das Register vAA ab.</item>
+		<item>Ruft an dem in vCC enthaltenen Index aus dem in vBB referenzierten Array einen booleschen Wert ab und legt ihn in das Register vAA ab.\nvAA = vBB[vCC]</item>
+		<item>Ruft an dem in vCC enthaltenen Index aus dem in vBB referenzierten Array einen Byte-Wert (Integer) ab und legt ihn in das Register vAA ab.\nvAA = vBB[vCC]</item>
+		<item>Ruft an dem in vCC enthaltenen Index aus dem in vBB referenzierten Array einen Char-Wert ab und legt ihn in das Register vAA ab.\nvAA = vBB[vCC]</item>
+		<item>Ruft an dem in vCC enthaltenen Index aus dem in vBB referenzierten Array einen kurzen (ganzzahligen) Wert ab und legt ihn in das Register vAA ein.\nvAA = vBB[vCC]</item>
+		<item>Platziert den Integer-Wert aus vAA in das in vBB referenzierte Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
 		<item>Platziert einen Double/Long-Wert aus dem Registerpaar vAA, vAA+1 in das in vBB referenzierte Array, wobei das Element das vCC-Register enthält.\nvBB[vCC] = (vAA, vAA+1)</item>
-		<item>Platziert einen Verweis auf ein Objekt von vAA in das Array, auf das in vBB mit einem Element im vCC-Register verwiesen wird.\nvBB[vCC] = vAA</item>
-		<item>Platziert den booleschen Wert von vAA in dem von vBB referenzierten Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
-		<item>Platziert den Bytewert (Ganzzahlwert) von vAA in dem in vBB referenzierten Array mit dem Element, das das Register vCC enthält.\nvBB[vCC] = vAA</item>
-		<item>Platziert den char-Wert (Zeichen) von vAA in dem Array, auf das in vBB durch das Element mit dem Register vCC verwiesen wird.\nvBB[vCC] = vAA</item>
-		<item>Platziert den kurzen (ganzzahligen) Wert von vAA in dem in vBB referenzierten Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
-		<item>Liest den Wert aus dem Instanzfeld und legt ihn im vA-Register ab. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
-		<item>Liest einen Double/Long-Wert aus einem Instanzfeld und platziert ihn in einem Registerpaar (vA, vA+1). Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\n(vA, vA+1) = vB.field</item>
-		<item>Liest eine Objektreferenz aus einem Instanzfeld und platziert sie im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
-		<item>Liest einen booleschen Wert aus dem Instanzfeld und platziert ihn im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
-		<item>Liest einen Bytewert (Ganzzahlwert) aus einem Instanzfeld und platziert ihn im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
-		<item>Liest einen char-Wert aus einem Instanzfeld und platziert ihn im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
-		<item>Liest einen kurzen (ganzzahligen) Wert aus einem Instanzfeld und platziert ihn im vA-Register. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvA = vB.Feld</item>
-		<item>Platziert den Wert aus dem vA-Register im Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvB.field = vA</item>
-		<item>Platziert einen Double/Long-Wert aus einem Registerpaar (vA, vA+1) in ein Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvB.field = (vA, vA+1)</item>
-		<item>Platziert einen Verweis auf ein Objekt aus dem vA-Register in das Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvB.field = vA</item>
-		<item>Platziert den booleschen Wert aus dem vA-Register im Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im vB-Register.\nvB.field = vA</item>
-		<item>Setzt den Bytewert (Ganzzahlwert) des angegebenen booleschen Felds in der durch Register vB referenzierten Instanz gleich dem Wert von Register vA, d. h.:\nvB.field = vA</item>
-		<item>Setzt den char-Wert (Zeichen) des angegebenen booleschen Felds in der durch Register vB referenzierten Instanz gleich dem Wert von Register vA, d. h.:\nvB.field = vA</item>
-		<item>Setzt den kurzen (ganzzahligen) Wert des angegebenen booleschen Felds in der durch Register vB referenzierten Instanz gleich dem Wert von Register vA, d. h.:\nvB.field = vA</item>
-		<item>Liest einen Wert aus einem statischen Feld und platziert ihn im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Liest einen Double/Long-Wert aus einem statischen Feld und platziert ihn in einem Registerpaar vAA, vAA+1. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Liest eine Objektreferenz aus einem statischen Feld und platziert sie im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Liest einen booleschen Wert aus einem statischen Feld und platziert ihn im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Liest einen Bytewert (Ganzzahlwert) aus einem statischen Feld und platziert ihn im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Liest einen char-Wert aus einem statischen Feld und platziert ihn im vAA-Register. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Liest einen kurzen (ganzzahligen) Wert aus einem statischen Feld und legt ihn im vAA-Register ab. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Platziert den Wert aus dem vAA-Register in einem Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Platziert einen Double/Long-Wert aus einem Registerpaar vAA, vAA+1 in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Platziert einen Verweis auf ein Objekt aus dem vAA-Register in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Platziert den booleschen Wert aus dem vAA-Register in einem Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Platziert einen Bytewert (Ganzzahlwert) aus dem vAA-Register in einem Feld (statisches Feld). Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Platziert den char-Wert aus dem vAA-Register in einem statischen Feld. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Platziert den kurzen (ganzzahligen) Wert aus dem vAA-Register in einem statischen Feld. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
-		<item>Ruft eine virtuelle Methode mit Parametern auf (führt sie aus). Parameter werden in geschweiften Klammern angegeben. Der erste Parameter (Register v2) enthält eine Referenz auf die Klasse, die die aufgerufene Methode enthält, der zweite Parameter (der Inhalt von Register v3) wird an die aufgerufene Methode übergeben.</item>
-		<item>Ruft eine virtuelle Methode mit Parametern direkt aus der übergeordneten Klasse auf (führt sie aus).</item>
-		<item>Ruft eine Methode mit Parametern auf (führt sie aus), ohne über die Berechtigungen der virtuellen Methode zu verfügen.</item>
-		<item>Ruft eine statische Methode mit Parametern auf (führt sie aus). Parameter werden in geschweiften Klammern angegeben. Der Parameter (der Inhalt von Register v3) wird an die aufgerufene Methode übergeben. Hinter den geschweiften Klammern wird die Klasse angegeben, die die aufgerufene Methode enthält.</item>
+		<item>Platziert eine Referenz auf ein Objekt aus vAA in das in vBB referenzierte Array mit einem Element mit dem Register vCC. vBB[vCC] = vAA</item>
+		<item>Platziert den booleschen Wert aus vAA in das von vBB referenzierte Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
+		<item>Platziert den Byte-Wert (Integer-Wert) von vAA in das in vBB referenzierte Array mit dem Element, das das Register vCC enthält.\nvBB[vCC] = vAA</item>
+		<item>Platziert den char (Zeichen)-Wert aus vAA in das Array, das in vBB durch das Element mit dem Register vCC referenziert wird.\nvBB[vCC] = vAA</item>
+		<item>Platziert den kurzen (ganzzahligen) Wert aus vAA in das in vBB referenzierte Array mit dem Element, das das vCC-Register enthält.\nvBB[vCC] = vAA</item>
+		<item>Liest den Wert aus dem Instanzfeld und stellt ihn in das Register vA. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvA = vB.field</item>
+		<item>Liest einen Double/Long-Wert aus einem Instanzfeld und legt ihn in einem Registerpaar (vA, vA+1) ab. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\n(vA, vA+1) = vB.field</item>
+		<item>Liest eine Objektreferenz aus einem Instanzfeld und stellt sie in das Register vA. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvA = vB.field</item>
+		<item>Liest einen booleschen Wert aus dem Instanzfeld und stellt ihn in das Register vA. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvA = vB.field</item>
+		<item>Liest einen Byte-Wert (Integer) aus einem Instanzfeld und legt ihn im Register vA ab. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvA = vB.field</item>
+		<item>Liest einen Char-Wert aus einem Instanzfeld und stellt ihn in das Register vA. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvA = vB.field</item>
+		<item>Liest einen kurzen (ganzzahligen) Wert aus einem Instanzfeld und legt ihn im Register vA ab. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvA = vB.field</item>
+		<item>Platziert den Wert aus dem Register vA in das Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, steht im Register vB.\nvB.field = vA</item>
+		<item>Platziert einen double/long-Wert aus einem Registerpaar (vA, vA+1) in ein Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvB.field = (vA, vA+1)</item>
+		<item>Platziert eine Referenz auf ein Objekt aus dem Register vA in das Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvB.field = vA</item>
+		<item>Platziert den booleschen Wert aus dem Register vA in das Instanzfeld. Der Verweis auf die Klasse, die dieses Feld enthält, befindet sich im Register vB.\nvB.field = vA</item>
+		<item>Setzt den Byte-Wert (Ganzzahl) des angegebenen booleschen Feldes in der Instanz, auf die das Register vB verweist, gleich dem Wert des Registers vA, d. h.:\nvB.field = vA</item>
+		<item>Setzt den char-Wert (Zeichen) des angegebenen booleschen Feldes in der Instanz, auf die Register vB verweist, gleich dem Wert von Register vA, d. h.:\nvB.field = vA</item>
+		<item>Setzt den kurzen (ganzzahligen) Wert des angegebenen booleschen Feldes in der Instanz, auf die das Register vB verweist, gleich dem Wert des Registers vA, d. h.:\nvB.field = vA</item>
+		<item>Liest einen Wert aus einem statischen Feld und setzt ihn in das vAA-Register. Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Liest einen Double/Long-Wert aus einem statischen Feld und legt ihn in einem Paar von Registern vAA, vAA+1 ab. Das Register, das den Verweis auf die Klasse enthält, die dieses Feld enthält, wird nicht verwendet.</item>
+		<item>Liest eine Objektreferenz aus einem statischen Feld und setzt sie in das vAA-Register. Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Liest einen booleschen Wert aus einem statischen Feld und setzt ihn in das vAA-Register. Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Liest einen Byte-Wert (Integer) aus einem statischen Feld und setzt ihn in das vAA-Register. Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Liest einen Char-Wert aus einem statischen Feld und setzt ihn in das vAA-Register. Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Liest einen kurzen (ganzzahligen) Wert aus einem statischen Feld und setzt ihn in das vAA-Register. Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Setzt den Wert aus dem vAA-Register in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Platziert einen double/long-Wert aus einem Registerpaar vAA, vAA+1 in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Platziert eine Referenz auf ein Objekt aus dem vAA-Register in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Setzt den booleschen Wert aus dem vAA-Register in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Platziert einen Byte-Wert (Integer) aus dem vAA-Register in ein Feld (statisches Feld). Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Platziert den Char-Wert aus dem vAA-Register in ein statisches Feld. Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Platziert den kurzen (ganzzahligen) Wert aus dem vAA-Register in ein statisches Feld. Das Register, das den Verweis auf die Klasse, die dieses Feld enthält, enthält, wird nicht verwendet.</item>
+		<item>Ruft eine virtuelle Methode mit Parametern auf (führt sie aus). Die Parameter werden in geschweiften Klammern angegeben. Der erste Parameter (Register v2) enthält einen Verweis auf die Klasse, die die aufgerufene Methode enthält, der zweite Parameter (der Inhalt von Register v3) wird an die aufgerufene Methode übergeben.</item>
+		<item>Ruft eine virtuelle Methode mit Parametern direkt von der übergeordneten Klasse auf (führt sie aus).</item>
+		<item>Ruft eine Methode mit Parametern auf (führt sie aus), ohne die Rechte der virtuellen Methode zu besitzen.</item>
+		<item>Ruft eine statische Methode mit Parametern auf (führt sie aus). Parameter werden in geschweiften Klammern angegeben. Der Parameter (der Inhalt von Register v3) wird an die aufgerufene Methode übergeben. Die Klasse, die die aufgerufene Methode enthält, wird nach den geschweiften Klammern angegeben.</item>
 		<item>Ruft eine Schnittstellenmethode mit Parametern auf (führt sie aus).</item>
-		<item>Ruft eine virtuelle Methode mit Parametern auf (führt sie aus), aber die Parameter müssen in der Reihenfolge der Nummern in Registern enthalten sein.</item>
-		<item>Ruft eine virtuelle Methode mit Parametern direkt aus der übergeordneten Klasse auf (führt sie aus), die Parameter müssen jedoch in Registern mit fortlaufenden Nummern enthalten sein.</item>
-		<item>Ruft eine Methode mit Parametern ohne virtuelle Methodenberechtigungen auf (führt sie aus), die Parameter müssen jedoch in fortlaufend nummerierten Registern enthalten sein.</item>
-		<item>Ruft eine statische Methode mit Parametern auf (führt sie aus), die Parameter müssen jedoch in Registern mit fortlaufenden Nummern enthalten sein.</item>
-		<item>Ruft eine Schnittstellenmethode mit Parametern auf (führt sie aus), die Parameter müssen jedoch in fortlaufend nummerierten Registern enthalten sein.</item>
-		<item>Berechnet vA = -vB für Werte vom Typ Ganzzahl.</item>
+		<item>Ruft eine virtuelle Methode mit Parametern auf (führt sie aus), aber die Parameter müssen in Registern mit Nummern in Reihenfolge enthalten sein.</item>
+		<item>Ruft eine virtuelle Methode mit Parametern direkt von der übergeordneten Klasse auf (führt sie aus), wobei die Parameter in Registern mit fortlaufenden Nummern enthalten sein müssen.</item>
+		<item>Ruft eine Methode mit Parametern auf (führt sie aus), ohne dass eine virtuelle Methode zugelassen ist, aber die Parameter müssen in fortlaufend nummerierten Registern enthalten sein.</item>
+		<item>Ruft eine statische Methode mit Parametern auf (führt sie aus), aber die Parameter müssen in Registern mit fortlaufenden Nummern enthalten sein.</item>
+		<item>Ruft eine Schnittstellenmethode mit Parametern auf (führt sie aus), wobei die Parameter in fortlaufend nummerierten Registern enthalten sein müssen.</item>
+		<item>Berechnet vA = -vB für Werte vom Typ Integer.</item>
 		<item>Berechnet vA = ~vB für ganzzahlige Werte.\nvA = ~vB</item>
-		<item>Berechnet (vA, vA+1) = -(vB, vB+1) für Werte vom Typ long (integer).</item>
-		<item>Berechnet (vA, vA+1) = ~(vB, vB+1) für Werte vom Typ long (integer).</item>
+		<item>Berechnet (vA, vA+1) = -(vB, vB+1) für Werte vom Typ long (Ganzzahl).</item>
+		<item>Berechnet (vA, vA+1) = ~(vB, vB+1) für Werte vom Typ long (Ganzzahl).</item>
 		<item>Berechnet vA = -vB für Float-Werte.</item>
 		<item>Berechnet (vA, vA+1) = -(vB, vB+1) für doppelte (Gleitkomma-)Werte.</item>
-		<item>Konvertiert eine Ganzzahl von vB in eine lange Zahl und speichert sie im Registerpaar vA, vA+1.\n(vA, vA+1) = (lang) vB</item>
-		<item>Konvertiert eine Ganzzahl von vB in eine Gleitkommazahl und speichert sie im vA-Register.\nvA = (float) vB</item>
-		<item>Konvertiert eine Ganzzahl von vB in einen Double (Gleitkomma) und speichert sie in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (doppelt) vB</item>
-		<item>Konvertiert einen langen (ganzzahligen) Wert von vB, vB+1 in eine ganze Zahl (Ganzzahl) und speichert ihn im vA-Register.\nvA = (int) (vB, vB+1)</item>
-		<item>Konvertiert einen langen (ganzzahligen) Wert von vB, vB+1 in einen Float (Gleitkomma) und speichert ihn im vA-Register.\nvA = (float) (vB, vB+1)</item>
-		<item>Konvertiert einen langen (ganzzahligen) Wert von vB, vB+1 in einen Double-Wert (Gleitkomma) und speichert ihn in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (doppelt) (vB, vB+1)</item>
-		<item>Konvertiert einen Float-Wert (Gleitkommawert) von vB in einen Integer-Wert (Ganzzahl) und speichert ihn im vA-Register.\nvA = (int)vB</item>
-		<item>Konvertiert einen Float-Wert (Gleitkommawert) von vB in einen Long-Wert (Ganzzahl) und speichert ihn im Registerpaar vA, vA+1.\n(vA, vA+1) = (lang) vB</item>
-		<item>Wandelt einen Float-Wert (Gleitkommawert) von vB in einen Double-Wert (Gleitkommawert) um und speichert ihn im Registerpaar vA, vA+1.\n(vA, vA+1) = (doppelt) vB</item>
-		<item>Konvertiert einen Double-Wert (Gleitkommawert) von vB, vB+1 in einen ganzzahligen Wert (Ganzzahl) und speichert ihn im vA-Register.\nvA = (int) (vB, vB+1)</item>
-		<item>Konvertiert einen Double-Wert (Gleitkommawert) von vB, vB+1 in einen Long-Wert (Ganzzahl) und speichert ihn in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (lang) (vB, vB+1)</item>
-		<item>Konvertiert einen Double-Wert (Gleitkommawert) von vB, vB+1 in einen Float-Wert (Gleitkommawert) und speichert ihn im vA-Register.\nvA = (float) (vB, vB+1)</item>
-		<item>Konvertiert einen ganzzahligen Wert von vB in einen Bytewert und speichert ihn im vA-Register.\nvA = (Byte) vB</item>
-		<item>Konvertiert einen ganzzahligen Wert von vB in einen char-Wert und speichert ihn im vA-Register.\nvA = (char)vB</item>
-		<item>Konvertiert einen ganzzahligen Wert von vB in einen kurzen Wert und speichert ihn im vA-Register.\nvA = (kurz) vB</item>
-		<item>Berechnet vBB + vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB + vCC</item>
-		<item>Berechnet vBB - vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB – vCC</item>
-		<item>Berechnet vBB * vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB * vCC</item>
-		<item>Berechnet vBB / vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB / vCC</item>
-		<item>Berechnet vBB % vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB % vCC</item>
-		<item>Berechnet vBB und vCC (logisches UND) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB &amp; vCC</item>
-		<item>Berechnet vBB | vCC (logisches ODER) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB | vCC</item>
-		<item>Berechnet vBB ^ vCC (exklusives ODER) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB ^ vCC</item>
-		<item>Verschiebt vBB um die durch vCC angegebene Anzahl von Bits nach links und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB &lt;&lt; vCC</item>
-		<item>Verschiebt vBB um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB >> vCC</item>
-		<item>Verschiebt vBB ohne Beibehaltung des Vorzeichens um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB >>> vCC</item>
-		<item>Berechnet (vBB, vBB+1) + (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) - (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) – (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) * (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) / (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) % (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) &amp; (vCC, vCC+1) (logisches UND) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) | (vCC, vCC+1) (logisches ODER) und speichert das Ergebnis in einem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) ^ (vCC, vCC+1) (exklusives UND) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
-		<item>Verschiebt vBB, vBB+1 um die durch vCC angegebene Anzahl von Bits nach links und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
-		<item>Verschiebt vBB, vBB+1 um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
-		<item>Verschiebt vBB, vBB+1 ohne Beibehaltung des Vorzeichens um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis in einem Registerpaar vAA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
-		<item>Berechnet vBB + vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB + vCC</item>
-		<item>Berechnet vBB - vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB – vCC</item>
-		<item>Berechnet vBB * vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB * vCC</item>
-		<item>Berechnet vBB / vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB / vCC</item>
-		<item>Berechnet vBB % vCC und speichert das Ergebnis im vAA-Register. Alle Werte sind Float.\nvAA = vBB % vCC</item>
-		<item>Berechnet (vBB, vBB+1) + (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) - (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) – (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) * (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) / (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
-		<item>Berechnet (vBB, vBB+1) % (vCC, vCC+1) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind doppelt (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
-		<item>Berechnet vA + vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA + vB</item>
-		<item>Berechnet vA - vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA - vB</item>
-		<item>Berechnet vA * vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA * vB</item>
-		<item>Berechnet vA / vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA / vB</item>
-		<item>Berechnet vA % vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA % vB</item>
-		<item>Berechnet vA und vB (logisches UND) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA &amp; vB</item>
-		<item>Berechnet vA | vB (logisches ODER) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA | vB</item>
-		<item>Berechnet vA ^ vB (exklusives ODER) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA ^ vB</item>
-		<item>Verschiebt vA um die durch vB angegebene Anzahl von Bits nach links und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA &lt;&lt; vB</item>
-		<item>Verschiebt vA um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA >> vB</item>
-		<item>Verschiebt vA ohne Beibehaltung seines Vorzeichens um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vA >>> vB</item>
-		<item>Berechnet (vA, vA+1) + (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) - (vB, vB+1) und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) * (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) / (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) % (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) &amp; (vB, vB+1) (logisches UND) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) | (vB, vB+1) (logisches ODER) und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) &amp; (vB, vB+1) (exklusives ODER) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
-		<item>Verschiebt vA, vA+1 um die durch vB angegebene Anzahl von Bits nach links und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
-		<item>Verschiebt vA, vA+1 um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
-		<item>Verschiebt vA, vA+1 ohne Beibehaltung des Vorzeichens um die durch vB angegebene Anzahl von Stellen nach rechts und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
-		<item>Berechnet vA + vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA + vB</item>
-		<item>Berechnet vA - vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA - vB</item>
-		<item>Berechnet vA * vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA * vB</item>
-		<item>Berechnet vA / vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA / vB</item>
-		<item>Berechnet vA % vB und speichert das Ergebnis im vA-Register. Alle Werte sind Float.\nvA = vA % vB</item>
-		<item>Berechnet (vA, vA+1) + (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) - (vB, vB+1) und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) * (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) / (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
-		<item>Berechnet (vA, vA+1) % (vB, vB+1) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind doppelt (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
-		<item>Berechnet vB + 0xFFFF und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB + 0xFFFF</item>
-		<item>Berechnet 0xFFFF - vB und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = 0xFFFF - vB</item>
-		<item>Berechnet vB * 0xFFFF und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB * 0xFFFF</item>
-		<item>Berechnet vB / 0xFFFF und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB / 0xFFFF</item>
-		<item>Berechnet vB % 0xFFFF und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB % 0xFFFF</item>
-		<item>Berechnet vB &amp; 0xFFFF (logisches UND) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB &amp; 0xFFFF</item>
-		<item>Berechnet vB | 0xFFFF (logisches ODER) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB | 0xFFFF</item>
-		<item>Berechnet vB ^ 0xFFFF (exklusives ODER) und speichert das Ergebnis im vA-Register. Alle Werte sind ganzzahlig.\nvA = vB ^ 0xFFFF</item>
-		<item>Berechnet vBB + 0xFF und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB + 0xFF</item>
-		<item>Berechnet 0xFF - vBB und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = 0xFF - vBB</item>
-		<item>Berechnet vBB * 0xFF und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB * 0xFF</item>
-		<item>Berechnet vBB / 0xFF und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB / 0xFF</item>
-		<item>Berechnet vBB % 0xFF und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB % 0xFF</item>
-		<item>Berechnet vBB und 0xFF (logisches UND) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB &amp; 0xFF</item>
-		<item>Berechnet vBB | 0xFF (logisches ODER) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB | 0xFF</item>
-		<item>Berechnet vBB ^ 0xFF (exklusives ODER) und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB ^ 0xFF</item>
-		<item>Verschiebt vBB um die durch 0xFF angegebene Anzahl von Bits nach links und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB &lt;&lt; 0xFF</item>
-		<item>Verschiebt vBB um die durch 0xFF angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB >> 0xFF</item>
-		<item>Verschiebt vBB signalmäßig um die durch 0xFF angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im vAA-Register. Alle Werte sind ganzzahlig.\nvAA = vBB >>> 0xFF</item>
+		<item>Wandelt eine ganze Zahl von vB in einen Long-Wert um und speichert sie in dem Registerpaar vA, vA+1.\n(vA, vA+1) = (long) vB</item>
+		<item>Konvertiert eine Ganzzahl von vB in eine Fließkommazahl und speichert sie im Register vA. \nvA = (float) vB</item>
+		<item>Konvertiert eine ganze Zahl von vB in ein Double (Gleitkomma) und speichert sie in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (double) vB</item>
+		<item>Konvertiert einen Long-Wert (Integer) von vB, vB+1 in einen Integer-Wert (Ganzzahl) und speichert ihn im Register vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Konvertiert einen Long-Wert (Integer) von vB, vB+1 in einen Float-Wert (Gleitkomma) und speichert ihn im vA-Register.\nvA = (float) (vB, vB+1)</item>
+		<item>Wandelt einen Long-Wert (Ganzzahl) von vB, vB+1 in einen Double-Wert (Gleitkomma) um und speichert ihn in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (double) (vB, vB+1)</item>
+		<item>Konvertiert einen Float-Wert (Fließkommawert) aus vB in einen Integer-Wert (Ganzzahl) und speichert ihn im Register vA. \nvA = (int)vB</item>
+		<item>Konvertiert einen Float-Wert (Gleitkomma) von vB in einen Long-Wert (Integer) und speichert ihn im Registerpaar vA, vA+1.\n(vA, vA+1) = (long) vB</item>
+		<item>Konvertiert einen Float-Wert (Fließkomma) von vB in einen Double-Wert (Fließkomma) und speichert ihn in dem Registerpaar vA, vA+1.\n(vA, vA+1) = (double) vB</item>
+		<item>Konvertiert einen Double-Wert (Fließkommawert) von vB, vB+1 in einen Integer-Wert (Ganzzahl) und speichert ihn im Register vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Konvertiert einen Double-Wert (Gleitkomma) von vB, vB+1 in einen Long-Wert (Ganzzahl) und speichert ihn in einem Registerpaar vA, vA+1.\n(vA, vA+1) = (long) (vB, vB+1)</item>
+		<item>Konvertiert einen Double-Wert (Fließkomma) aus vB, vB+1 in einen Float-Wert (Fließkomma) und speichert ihn im Register vA. \nvA = (float) (vB, vB+1)</item>
+		<item>Konvertiert einen Integer-Wert aus vB in einen Byte-Wert und speichert ihn im vA-Register.\nvA = (Byte) vB</item>
+		<item>Konvertiert einen Integer-Wert aus vB in einen Char-Wert und speichert ihn im vA-Register.\nvA = (char)vB</item>
+		<item>Konvertiert einen Integer-Wert aus vB in einen Short-Wert und speichert ihn im vA-Register.\nvA = (short) vB</item>
+		<item>Berechnet vBB + vCC und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB + vCC</item>
+		<item>Berechnet vBB - vCC und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB - vCC</item>
+		<item>Berechnet vBB * vCC und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB * vCC</item>
+		<item>Berechnet vBB / vCC und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB / vCC</item>
+		<item>Berechnet vBB % vCC und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB % vCC</item>
+		<item>Berechnet vBB &amp; vCC (logisches UND) und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB &amp; vCC</item>
+		<item>Berechnet vBB | vCC (logisches ODER) und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB | vCC</item>
+		<item>Berechnet vBB ^ vCC (exklusives ODER) und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB ^ vCC</item>
+		<item>Verschiebt vBB um die durch vCC angegebene Anzahl von Bits nach links und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Verschiebt vBB um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB &gt;&gt; vCC</item>
+		<item>Verschiebt vBB ohne Beibehaltung des Vorzeichens um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB &gt;&gt;&gt; vCC</item>
+		<item>Berechnet (vBB, vBB+1) + (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) - (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) * (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) / (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) % (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) &amp; (vCC, vCC+1) (logisches UND) und speichert das Ergebnis im Registerpaar vAA, vAA+1. Alle Werte sind lang (Ganzzahl).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) | (vCC, vCC+1) (logisches ODER) und speichert das Ergebnis in einem Registerpaar vAA, vAA+1. Alle Werte sind lang (Ganzzahl).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) ^ (vCC, vCC+1) (exklusives UND) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind lang (Ganzzahl).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Verschiebt vBB, vBB+1 um die durch vCC angegebene Anzahl von Bits nach links und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Verschiebt vBB, vBB+1 um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind lang (ganzzahlig).\n(vAA, vAA+1) = (vBB, vBB+1) &gt;&gt; vCC</item>
+		<item>Verschiebt vBB, vBB+1 ohne Beibehaltung des Vorzeichens um die durch vCC angegebene Anzahl von Bits nach rechts und speichert das Ergebnis in einem Paar von Registern vAA, vA+1. Alle Werte sind lang (ganzzahlig). \n(vAA, vAA+1) = (vBB, vBB+1) &gt;&gt;&gt; vCC</item>
+		<item>Berechnet vBB + vCC und speichert das Ergebnis im Register vAA. Alle Werte sind Fließkommazahlen.\nvAA = vBB + vCC</item>
+		<item>Berechnet vBB - vCC und speichert das Ergebnis im Register vAA. Alle Werte sind Fließkommazahlen.\nvAA = vBB - vCC</item>
+		<item>Berechnet vBB * vCC und speichert das Ergebnis im Register vAA. Alle Werte sind Fließkommazahlen.\nvAA = vBB * vCC</item>
+		<item>Berechnet vBB / vCC und speichert das Ergebnis im Register vAA. Alle Werte sind Fließkommazahlen.\nvAA = vBB / vCC</item>
+		<item>Berechnet vBB % vCC und speichert das Ergebnis im Register vAA. Alle Werte sind Fließkommazahlen.\nvAA = vBB % vCC</item>
+		<item>Berechnet (vBB, vBB+1) + (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind double (Fließkomma).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) - (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind double (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) * (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind double (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) / (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind double (Gleitkomma).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Berechnet (vBB, vBB+1) % (vCC, vCC+1) und speichert das Ergebnis in dem Registerpaar vAA, vAA+1. Alle Werte sind double (Fließkomma).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Berechnet vA + vB und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA + vB</item>
+		<item>Berechnet vA - vB und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA - vB</item>
+		<item>Berechnet vA * vB und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA * vB</item>
+		<item>Berechnet vA / vB und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA / vB</item>
+		<item>Berechnet vA % vB und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA % vB</item>
+		<item>Berechnet vA &amp; vB (logisches UND) und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA &amp; vB</item>
+		<item>Berechnet vA | vB (logisches ODER) und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA | vB</item>
+		<item>Berechnet vA ^ vB (exklusives ODER) und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA ^ vB</item>
+		<item>Verschiebt vA um die durch vB angegebene Anzahl von Bits nach links und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA &lt;&lt; vB</item>
+		<item>Verschiebt vA um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vA &gt;&gt; vB</item>
+		<item>Verschiebt vA ohne Beibehaltung des Vorzeichens um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig. \nvA = vA &gt;&gt;&gt; vB</item>
+		<item>Berechnet (vA, vA+1) + (vB, vB+1) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) - (vB, vB+1) und speichert das Ergebnis in einem Paar von Registern vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) * (vB, vB+1) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) / (vB, vB+1) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) % (vB, vB+1) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) &amp; (vB, vB+1) (logisches UND) und speichert das Ergebnis im Registerpaar vA, vA+1. Alle Werte sind lang (Ganzzahl).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) | (vB, vB+1) (logisches ODER) und speichert das Ergebnis in einem Registerpaar vA, vA+1. Alle Werte sind lang (Ganzzahl).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) &amp; (vB, vB+1) (exklusives ODER) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Verschiebt vA, vA+1 um die durch vB angegebene Anzahl von Bits nach links und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind lang (ganzzahlig).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Verschiebt vA, vA+1 um die durch vB angegebene Anzahl von Bits nach rechts und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind lang (Ganzzahl).\n(vA, vA+1) = (vA, vA+1) &gt;&gt; vB</item>
+		<item>Verschiebt vA, vA+1 ohne Beibehaltung des Vorzeichens um die durch vB angegebene Anzahl von Stellen nach rechts und speichert das Ergebnis in einem Paar von Registern vA, vA+1. Alle Werte sind lang (ganzzahlig). \n(vA, vA+1) = (vA, vA+1) &gt;&gt;&gt; vB</item>
+		<item>Berechnet vA + vB und speichert das Ergebnis im Register vA. Alle Werte sind Fließkommazahlen.\nvA = vA + vB</item>
+		<item>Berechnet vA - vB und speichert das Ergebnis im Register vA. Alle Werte sind Fließkommazahlen.\nvA = vA - vB</item>
+		<item>Berechnet vA * vB und speichert das Ergebnis im Register vA. Alle Werte sind Fließkommazahlen.\nvA = vA * vB</item>
+		<item>Berechnet vA / vB und speichert das Ergebnis im Register vA. Alle Werte sind Fließkommazahlen.\nvA = vA / vB</item>
+		<item>Berechnet vA % vB und speichert das Ergebnis im Register vA. Alle Werte sind Fließkommazahlen.\nvA = vA % vB</item>
+		<item>Berechnet (vA, vA+1) + (vB, vB+1) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind double (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) - (vB, vB+1) und speichert das Ergebnis in einem Paar von Registern vA, vA+1. Alle Werte sind double (Fließkomma).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) * (vB, vB+1) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind double (Gleitkomma). \n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) / (vB, vB+1) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind double (Gleitkomma).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Berechnet (vA, vA+1) % (vB, vB+1) und speichert das Ergebnis in dem Registerpaar vA, vA+1. Alle Werte sind double (Fließkomma).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Berechnet vB + 0xFFFF und speichert das Ergebnis im Register vA. Alle Werte sind Ganzzahlen. vA = vB + 0xFFFF</item>
+		<item>Berechnet 0xFFFF - vB und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = 0xFFFF - vB</item>
+		<item>Berechnet vB * 0xFFFF und speichert das Ergebnis im Register vA. Alle Werte sind Ganzzahlen. vA = vB * 0xFFFF</item>
+		<item>Berechnet vB / 0xFFFF und speichert das Ergebnis im Register vA. Alle Werte sind Integer. vA = vB / 0xFFFF</item>
+		<item>Berechnet vB % 0xFFFF und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig. vA = vB % 0xFFFF</item>
+		<item>Berechnet vB &amp; 0xFFFF (logisches UND) und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vB &amp; 0xFFFF</item>
+		<item>Berechnet vB | 0xFFFF (logisches ODER) und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig. vA = vB | 0xFFFF</item>
+		<item>Berechnet vB ^ 0xFFFF (exklusives ODER) und speichert das Ergebnis im Register vA. Alle Werte sind ganzzahlig.\nvA = vB ^ 0xFFFF</item>
+		<item>Berechnet vBB + 0xFF und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB + 0xFF</item>
+		<item>Berechnet 0xFF - vBB und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = 0xFF - vBB</item>
+		<item>Berechnet vBB * 0xFF und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig. vAA = vBB * 0xFF</item>
+		<item>Berechnet vBB / 0xFF und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig. vAA = vBB / 0xFF</item>
+		<item>Berechnet vBB % 0xFF und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB % 0xFF</item>
+		<item>Berechnet vBB &amp; 0xFF (logisches UND) und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB &amp; 0xFF</item>
+		<item>Berechnet vBB | 0xFF (logisches ODER) und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig. vAA = vBB | 0xFF</item>
+		<item>Berechnet vBB ^ 0xFF (exklusives ODER) und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB ^ 0xFF</item>
+		<item>Verschiebt vBB um die durch 0xFF angegebene Anzahl von Bits nach links und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Verschiebt vBB um die durch 0xFF angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB &gt;&gt; 0xFF</item>
+		<item>Verschiebt vBB um die durch 0xFF angegebene Anzahl von Bits nach rechts und speichert das Ergebnis im Register vAA. Alle Werte sind ganzzahlig.\nvAA = vBB &gt;&gt;&gt; 0xFF</item>
 		<item>Ruft eine polymorphe Signaturmethode mit Parametern auf (führt sie aus). In Dex-Dateien seit Version 038 vorhanden.</item>
-		<item>Ruft eine polymorphe Signaturmethode mit Parametern auf (führt sie aus), die Parameter müssen jedoch in fortlaufend nummerierten Registern enthalten sein. In Dex-Dateien seit Version 038 vorhanden.</item>
+		<item>Ruft eine polymorphe Signaturmethode mit Parametern auf (führt sie aus), wobei die Parameter in fortlaufend nummerierten Registern enthalten sein müssen. In Dex-Dateien seit Version 038 vorhanden.</item>
 		<item>Ermöglicht (startet) den Aufruf einer Site mit Parametern. In Dex-Dateien seit Version 038 vorhanden.</item>
-		<item>Ermöglicht (startet) den Aufruf einer Site mit Parametern, die Parameter müssen jedoch in der Reihenfolge der Nummern in Registern enthalten sein. In Dex-Dateien seit Version 038 vorhanden.</item>
-		<item>Platziert einen Verweis auf ein Methodenhandle im vAA-Register. In Dex-Dateien seit Version 039 vorhanden.</item>
-		<item>Platziert einen Verweis auf den Methodenprototyp im vAA-Register. In Dex-Dateien seit Version 039 vorhanden.</item>
+		<item>Ermöglicht (beginnt) den Aufruf einer Site mit Parametern, aber die Parameter müssen in Registern mit Nummern in Reihenfolge enthalten sein. In Dex-Dateien seit Version 038 vorhanden.</item>
+		<item>Setzt einen Verweis auf ein Methodenhandle in das vAA-Register. In Dex-Dateien seit Version 039 vorhanden.</item>
+		<item>Setzt einen Verweis auf den Methodenprototyp in das vAA-Register. In Dex-Dateien seit Version 039 vorhanden.</item>
+	</string-array>
+	<string-array name="years_or_days">
+		<item>Jahre</item>
+		<item>Tage</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>Eingebaut</item>
+		<item>Benutzerdefiniert</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objektiv-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>Abzeichen</item>
+		<item>Konfigurationen</item>
+		<item>Berechtigungen</item>
+		<item>Zeichenketten</item>
+		<item>Ressourcen</item>
+		<item>überlagerbar</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>Druckt Information, extrahiert aus dem Manifest der APK.</item>
+		<item>Druckt jede Konfiguration, die von einer Ressource in der APK verwendet wird.</item>
+		<item>Druckt die aus dem Manifest der APK extrahierten Berechtigungen.</item>
+		<item>Druckt den Inhalt der Ressourcentabelle string pool in der APK.</item>
+		<item>Druckt den Inhalt der Ressourcentabelle aus der APK.</item>
+		<item>Druckt die &lt;überlagerbaren&gt; Ressourcen einer APK.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Hell</item>
+		<item>Dunkel</item>
+		<item>Schwarz</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>Rückfall-Modus</item>
+		<item>Entschärfung</item>
+		<item>Escape Unicode</item>
+		<item>Widersprüchlichen Code anzeigen</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inkonsistent</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>Umbenennen</item>
+		<item>Nur Dateien umbenennen</item>
+		<item>Ersetzen</item>
+		<item>Überspringen</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>Links</item>
+		<item>Rechts</item>
+	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>Alle Großbuchstaben</item>
+		<item>Mit einem Doppelpunkt trennen</item>
+	</string-array>
+	<string-array name="checksum_keys">
+		<item>Prüfsumme_oben</item>
+		<item>prüfsumme_getrennt</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>Neue Ressourcen hinzufügen (nur Dateien)</item>
+		<item>Fehlende Ressourcen löschen</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
 	</string-array>
 	<string-array name="sort">
-        <item>Name</item>
-        <item>Name umgekehrt</item>
-        <item>Typ</item>
-        <item>Typ umgekehrt</item>
-        <item>Größe</item>
-        <item>Größe umgekehrt</item>
-        <item>Datum</item>	
-        <item>Datum umgekehrt</item>
-    </string-array>
-    <string-array name="format">
-        <item>@string/jks</item>
-        <item>@string/pkcs12</item>
-        <item>@string/bks</item>
-        <item>@string/pk8</item>
-    </string-array>
-    <string-array name="installLocation">
-        <item>Nicht eingestellt</item>
-        <item>Auto</item>
-        <item>Nur interner Speicher</item>
-        <item>Externer Speicher bevorzugt</item>
-    </string-array>
-    <string-array name="auto_save_variants">
-        <item>Aus</item>
-        <item>15 Sekunden</item>
-        <item>30 Sekunden</item>
-        <item>1 Minute</item>
-        <item>5 Minuten</item>
-    </string-array>
-    <string-array name="editor_themes">
-        <item>Standard</item>
-        <item>Neu</item>
-    </string-array>
-    <string-array name="google_translator_codes">
-        <item>auto</item>
-        <item>af</item>
-        <item>sq</item>
-        <item>am</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>az</item>
-        <item>eu</item>
-        <item>be</item>
-        <item>bn</item>
-        <item>bs</item>
-        <item>bg</item>
-        <item>ca</item>
-        <item>ceb</item>
-        <item>ny</item>
-        <item>zh-cn</item>
-        <item>zh-tw</item>
-        <item>co</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>da</item>
-        <item>nl</item>
-        <item>en</item>
-        <item>eo</item>
-        <item>et</item>
-        <item>tl</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>fy</item>
-        <item>gl</item>
-        <item>ka</item>
-        <item>de</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>ht</item>
-        <item>ha</item>
-        <item>haw</item>
-        <item>iw</item>
-        <item>hi</item>
-        <item>hmn</item>
-        <item>hu</item>
-        <item>is</item>
-        <item>ig</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>it</item>
-        <item>ja</item>
-        <item>jw</item>
-        <item>kn</item>
-        <item>kk</item>
-        <item>km</item>
-        <item>ko</item>
-        <item>ku</item>
-        <item>ky</item>
-        <item>lo</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>lb</item>
-        <item>mk</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>mn</item>
-        <item>my</item>
-        <item>ne</item>
-        <item>no</item>
-        <item>ps</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>ma</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>sm</item>
-        <item>gd</item>
-        <item>sr</item>
-        <item>st</item>
-        <item>sn</item>
-        <item>sd</item>
-        <item>si</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>so</item>
-        <item>es</item>
-        <item>su</item>
-        <item>sw</item>
-        <item>sv</item>
-        <item>tg</item>
-        <item>ta</item>
-        <item>te</item>
-        <item>th</item>
-        <item>tr</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>uz</item>
-        <item>vi</item>
-        <item>cy</item>
-        <item>xh</item>
-        <item>yi</item>
-        <item>yo</item>
-        <item>zu</item>
-        <item>or</item>
-        <item>pa</item>
-        <item>rw</item>
-        <item>tt</item>
-        <item>tk</item>
-        <item>ug</item>
-    </string-array>
-    <string-array name="google_translator_names">
-        <item>Automatisch</item>
-        <item>Afrikaans</item>
-        <item>Albanisch</item>
-        <item>Amharisch</item>
-        <item>Arabisch</item>
-        <item>Armenisch</item>
-        <item>Aserbaidschanisch</item>
-        <item>Baskisch</item>
-        <item>Weißrussisch</item>
-        <item>Bengalisch</item>
-        <item>Bosnisch</item>
-        <item>Bulgarisch</item>
-        <item>Katalanisch</item>
-        <item>Cebuano</item>
-        <item>Chichewa</item>
-        <item>Chinesisch Vereinfacht</item>
-        <item>Chinesisch Traditionell</item>
-        <item>Korsisch</item>
-        <item>Kroatisch</item>
-        <item>Tschechisch</item>
-        <item>Dänisch</item>
-        <item>Niederländisch</item>
-        <item>Englisch</item>
-        <item>Esperanto</item>
-        <item>Estnisch</item>
-        <item>Filipino</item>
-        <item>Finnisch</item>
-        <item>Französisch</item>
-        <item>Friesisch</item>
-        <item>Galizisch</item>
-        <item>Georgisch</item>
-        <item>Deutsch</item>
-        <item>Griechisch</item>
-        <item>Gujarati</item>
-        <item>Haitianisch</item>
-        <item>Hausa</item>
-        <item>Hawaiisch</item>
-        <item>Hebräisch</item>
-        <item>Hindi</item>
-        <item>Hmong</item>
-        <item>Ungarisch</item>
-        <item>Isländisch</item>
-        <item>Igbo</item>
-        <item>Indonesisch</item>
-        <item>Irisch</item>
-        <item>Italienisch</item>
-        <item>Japanisch</item>
-        <item>Javanisch</item>
-        <item>Kannada</item>
-        <item>Kasachisch</item>
-        <item>Khmer</item>
-        <item>Koreanisch</item>
-        <item>Kurdisch (Kurmandschi)</item>
-        <item>Kirgisisch</item>
-        <item>Lao</item>
-        <item>Lateinisch</item>
-        <item>Lettisch</item>
-        <item>Litauisch</item>
-        <item>Luxemburgisch</item>
-        <item>Mazedonisch</item>
-        <item>Malagasy</item>
-        <item>Malay</item>
-        <item>Malaysisch</item>
-        <item>Maltesisch</item>
-        <item>Maori</item>
-        <item>Marathi</item>
-        <item>Mongolisch</item>
-        <item>Birmanisch</item>
-        <item>Nepalesisch</item>
-        <item>Norwegisch</item>
-        <item>Paschtu</item>
-        <item>Persisch</item>
-        <item>Polnisch</item>
-        <item>Portugiesisch</item>
-        <item>Punjabi</item>
-        <item>Rumänisch</item>
-        <item>Russisch</item>
-        <item>Samoanisch</item>
-        <item>Schottisch-Gälisch</item>
-        <item>Serbisch</item>
-        <item>Sesotho</item>
-        <item>Shona</item>
-        <item>Sindhi</item>
-        <item>Singhalesisch</item>
-        <item>Slowakisch</item>
-        <item>Slowenisch</item>
-        <item>Somali</item>
-        <item>Spanisch</item>
-        <item>Sundanesisch</item>
-        <item>Suaheli</item>
-        <item>Schwedisch</item>
-        <item>Tadschikisch</item>
-        <item>Tamil</item>
-        <item>Telugu</item>
-        <item>Thailändisch</item>
-        <item>Türkisch</item>
-        <item>Ukrainisch</item>
-        <item>Urdu</item>
-        <item>Usbekisch</item>
-        <item>Vietnamesisch</item>
-        <item>Walisisch</item>
-        <item>Xhosa</item>
-        <item>Jiddish</item>
-        <item>Yoruba</item>
-        <item>Zulu</item>
-        <item>Oriya</item>
-        <item>Punjabi</item>
-        <item>Rwanda</item>
-        <item>Tatar</item>
-        <item>Turkmenisch</item>
-        <item>Uigurisch</item>
-    </string-array>
-    <string-array name="yandex_translator_codes">
-        <item>auto</item>
-        <item>af</item>
-        <item>sq</item>
-        <item>am</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>az</item>
-        <item>ba</item>
-        <item>eu</item>
-        <item>be</item>
-        <item>bn</item>
-        <item>bs</item>
-        <item>bg</item>
-        <item>my</item>
-        <item>ca</item>
-        <item>ceb</item>
-        <item>zh</item>
-        <item>cv</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>da</item>
-        <item>nl</item>
-        <item>sjn</item>
-        <item>emj</item>
-        <item>en</item>
-        <item>eo</item>
-        <item>et</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>gl</item>
-        <item>ka</item>
-        <item>de</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>ht</item>
-        <item>he</item>
-        <item>mrj</item>
-        <item>hi</item>
-        <item>hu</item>
-        <item>is</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>it</item>
-        <item>ja</item>
-        <item>jv</item>
-        <item>kn</item>
-        <item>kk</item>
-        <item>kazlat</item>
-        <item>km</item>
-        <item>ko</item>
-        <item>ky</item>
-        <item>lo</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>lb</item>
-        <item>mk</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>mhr</item>
-        <item>mn</item>
-        <item>ne</item>
-        <item>no</item>
-        <item>pap</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>pa</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>gd</item>
-        <item>sr</item>
-        <item>si</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>es</item>
-        <item>su</item>
-        <item>sw</item>
-        <item>sv</item>
-        <item>tl</item>
-        <item>tg</item>
-        <item>ta</item>
-        <item>tt</item>
-        <item>te</item>
-        <item>th</item>
-        <item>tr</item>
-        <item>udm</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>uz</item>
-        <item>uzbcyr</item>
-        <item>vi</item>
-        <item>cy</item>
-        <item>xh</item>
-        <item>sah</item>
-        <item>yi</item>
-    </string-array>
-    <string-array name="yandex_translator_names">
-        <item>Automatisch</item>
-        <item>Afrikaans</item>
-        <item>Albanisch</item>
-        <item>Amharisch</item>
-        <item>Arabisch</item>
-        <item>Armenisch</item>
-        <item>Aserbaidschanisch</item>
-        <item>Baschkirisch</item>
-        <item>Baskisch</item>
-        <item>Belarussisch</item>
-        <item>Bengali</item>
-        <item>Bosnisch</item>
-        <item>Bulgarisch</item>
-        <item>Birmanisch</item>
-        <item>Katalanisch</item>
-        <item>Cebuano</item>
-        <item>Chinesisch</item>
-        <item>Tschuwaschisch</item>
-        <item>Kroatisch</item>
-        <item>Tschechisch</item>
-        <item>Dänisch</item>
-        <item>Niederländisch</item>
-		<item>Elbisch(Sindarin)</item>
+		<item>Name</item>
+		<item>Name Rückseite</item>
+		<item>Typ</item>
+		<item>Typ Reverse</item>
+		<item>Größe</item>
+		<item>Größe rückwärts</item>
+		<item>Zeit</item>
+		<item>Zeit rückwärts</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>HEX-Farbe</item>
+		<item>Smali-Code</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="keys">
+		<item>Editorkey</item>
+		<item>halb</item>
+		<item>Plattform</item>
+		<item>gemeinsam genutzt</item>
+		<item>Testschlüssel</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>Null</item>
+		<item>eine</item>
+		<item>zwei</item>
+		<item>wenige</item>
+		<item>viele</item>
+		<item>andere</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>Nicht dekompilieren</item>
+		<item>Dekompilieren in das Hauptverzeichnis</item>
+		<item>Dekompilieren in ein separates Verzeichnis</item>
+		<item>Versuche, Pakete zusammenzuführen</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>Text &lt;-&gt; Base64</item>
+		<item>Text &lt;-&gt; Unicode</item>
+		<item>Text &lt;-&gt; URL-Kodierung</item>
+		<item>Text &lt;-&gt; MD5</item>
+		<item>Text &lt;-&gt; SHA-1</item>
+		<item>Text &lt;-&gt; SHA-224</item>
+		<item>Text &lt;-&gt; SHA-256</item>
+		<item>Text &lt;-&gt; SHA-384</item>
+		<item>Text &lt;-&gt; SHA-512</item>
+		<item>Text &lt;-&gt; Array (UTF-8)</item>
+		<item>Text &lt;-&gt; Array (UTF-16)</item>
+		<item>Text &lt;-&gt; Array (UTF-16LE)</item>
+		<item>Text &lt;-&gt; Array (UTF-16BE)</item>
+		<item>Text &lt;-&gt; Array (US-ASCII)</item>
+		<item>Text &lt;-&gt; Array (ISO-8859-1)</item>
+		<item>Text &lt;-&gt; Array (CP1251)</item>
+		<item>Dezimal &lt;-&gt; Binär</item>
+		<item>Dezimal &lt;-&gt; Oktal</item>
+		<item>Dezimal &lt;-&gt; Hex</item>
+		<item>Dezimal &lt;-&gt; Hex (0x0)</item>
+		<item>Dezimal &lt;-&gt; Hex (0x00000000)</item>
+		<item>Gleitkomma &lt;-&gt; Binär</item>
+		<item>Fließkomma &lt;-&gt; Oktal</item>
+		<item>Fließkomma &lt;-&gt; Hex</item>
+		<item>Fließkomma &lt;-&gt; Hex (0x0)</item>
+		<item>Fließkomma &lt;-&gt; Hex (0x00000000)</item>
+		<item>Farbe &lt;-&gt; Smali</item>
+		<item>Farbe &lt;-&gt; Dezimal</item>
+		<item>Farbe &lt;-&gt; A,R,G,B</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>Nicht festgelegt</item>
+		<item>Auto</item>
+		<item>Nur intern</item>
+		<item>Bevorzugte externe</item>
+	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5mitRSA</item>
+		<item>SHA1mitRSA</item>
+		<item>SHA224mitRSA</item>
+		<item>SHA256mitRSA</item>
+		<item>SHA384mitRSA</item>
+		<item>SHA512mitRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Russisch</item>
+		<item>Ukrainisch</item>
+		<item>Englisch</item>
+		<item>Englisch</item>
+		<item>Französisch</item>
+		<item>Deutsch</item>
+		<item>Litauen</item>
+		<item>Italienisch</item>
+		<item>Polnisch</item>
+		<item>မြန်မာ</item>
+		<item>Chinesisch</item>
+		<item>Portugiesisch</item>
+		<item>Englisch</item>
+		<item>Türkisch</item>
+		<item>Tschechisch</item>
+		<item>Việt Nam</item>
+		<item>Englisch</item>
+		<item>Persisch</item>
+		<item>Arabisch</item>
+		<item>Shqip</item>
+		<item>Koreanisch</item>
+		<item>Englisch</item>
+		<item>Bahasa Indonesien</item>
+		<item>עברית</item>
+		<item>Englisch</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>Es</item>
+		<item>es</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>er</item>
+		<item>hu</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>JJJJ/MM/TT HH:mm</item>
+		<item>tt/MM/jjjj HH:mm</item>
+		<item>HH:mm JJJJ/MM/TT</item>
+		<item>HH:mm tt/MM/jjjj</item>
+		<item>JJ/MM/TT HH:mm</item>
+		<item>tt/MM/jj HH:mm</item>
+		<item>HH:mm JJ/MM/TT</item>
+		<item>HH:mm tt/MM/jj</item>
+		<item>jjjj.MM.tt HH:mm</item>
+		<item>tt.mm.jjjj HH:mm</item>
+		<item>HH:mm jjjj.MM.tt</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>jj.MM.tt HH:mm</item>
+		<item>tt.MM.jj HH:mm</item>
+		<item>HH:mm jj.MM.tt</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>jjjj-MM-tt HH:mm</item>
+		<item>tt-MM-jjjj HH:mm</item>
+		<item>HH:mm JJJJ-MM-TT</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>jj-MM-tt HH:mm</item>
+		<item>tt-MM-jj HH:mm</item>
+		<item>HH:mm JJ-MM-TT</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>Vorgabe</item>
+		<item>Apktool</item>
+		<item>Android-Studio</item>
+		<item>Einfacher Trick</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>Vorgabe</item>
+		<item>Landschaft</item>
+		<item>Porträt</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>Aus</item>
+		<item>15 Sekunden</item>
+		<item>30 Sekunden</item>
+		<item>1 Minute</item>
+		<item>5 Minuten</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>Angepasstes Bild (Qualität unten)</item>
+		<item>Hochwertiges Bild (größeres Format)</item>
+		<item>In SVG konvertieren</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>Einstellungen</item>
+		<item>Lesezeichen</item>
+		<item>Historie suchen/ersetzen</item>
+		<item>Wörterbücher</item>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>nach Anzahl der Methoden/Felder</item>
+		<item>zu gleichen Teilen</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>Erstes Datum</item>
+		<item>Größe zuerst</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>Vorgabe</item>
+		<item>Neu</item>
+	</string-array>
+	<string-array name="editor_themes_values">
+		<item>Vorgabe</item>
+		<item>neu</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>Automatische Erkennung</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>er</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>ist</item>
+		<item>es</item>
+		<item>es</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>Es</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>Herr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>oder</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>en-US</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>zu</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>und</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>als</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>meine</item>
+		<item>ps</item>
+		<item>ti</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>Automatisch</item>
+		<item>Aserbaidschanisch (Latein)</item>
+		<item>Albanisch</item>
+		<item>Englisch</item>
+		<item>Arabisch</item>
+		<item>Armenisch</item>
+		<item>Afrika</item>
+		<item>Bengalisch</item>
+		<item>Bulgarisch</item>
+		<item>Bosnisch</item>
+		<item>Walisisch</item>
+		<item>Ungarisch</item>
+		<item>Vietnamesisch</item>
+		<item>Haitianisch-Kreolisch</item>
+		<item>Niederländisch</item>
+		<item>Griechisch</item>
+		<item>Gujarati</item>
+		<item>Dänisch</item>
+		<item>Hebräisch</item>
+		<item>Indonesisch</item>
+		<item>Irisch</item>
+		<item>Isländisch</item>
+		<item>Spanisch</item>
+		<item>Italienisch</item>
+		<item>Kasachstan</item>
+		<item>Kannada</item>
+		<item>Kantonesisch Traditionell</item>
+		<item>Katalanisch</item>
+		<item>Autonomer Keretarier</item>
+		<item>Traditionelles Chinesisch</item>
+		<item>Vereinfachtes Chinesisch</item>
+		<item>Koreanisch</item>
+		<item>Lettisch</item>
+		<item>Litauisch</item>
+		<item>Madagassisch</item>
+		<item>Malaiisch</item>
+		<item>Malayalam</item>
+		<item>Maltese</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>Deutsch</item>
+		<item>Nepali</item>
+		<item>Norwegisch</item>
+		<item>Oriya</item>
+		<item>Punjabi</item>
+		<item>Persisch</item>
+		<item>Polnisch</item>
+		<item>Portugiesisch (Brasilien)</item>
+		<item>Portugiesisch (Portugal)</item>
+		<item>Rumänisch</item>
+		<item>Russisch</item>
+		<item>Samoa</item>
+		<item>Serbisch (kyrillisch)</item>
+		<item>Serbisch (Latein)</item>
+		<item>Slowakisch</item>
+		<item>Slowenisch</item>
+		<item>Suaheli</item>
+		<item>Tahiti</item>
+		<item>Thailändisch</item>
+		<item>Tamilisch</item>
+		<item>Telugu</item>
+		<item>Tonga</item>
+		<item>Türkisch</item>
+		<item>Ukrainisch</item>
+		<item>Urdu</item>
+		<item>Fidschi</item>
+		<item>Filipino</item>
+		<item>Finnisch</item>
+		<item>Französisch</item>
+		<item>Hindi</item>
+		<item>Hmong Dhow</item>
+		<item>Kroatisch</item>
+		<item>Tschechische Republik</item>
+		<item>Schwedisch</item>
+		<item>Estnisch</item>
+		<item>Yucatec Maya</item>
+		<item>Japanisch</item>
+		<item>Amharisch</item>
+		<item>Assamisch</item>
+		<item>Dari</item>
+		<item>Französisch (Kanada)</item>
+		<item>Inuktitut</item>
+		<item>Khmer</item>
+		<item>Klingonisch (Latein)</item>
+		<item>Kurdisch (Zentral)</item>
+		<item>Kurdisch (Nord)</item>
+		<item>Laos</item>
+		<item>Myanmar (Birmanisch)</item>
+		<item>Paschtu</item>
+		<item>Tigrinya</item>
+	</string-array>
+	<string-array name="google_translator_codes">
+		<item>Auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>sein</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>ist</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>es</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>Es</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>also</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>Automatisch</item>
+		<item>Afrika</item>
+		<item>Albanisch</item>
+		<item>Amharisch</item>
+		<item>Arabisch</item>
+		<item>Armenisch</item>
+		<item>Aserbaidschanisch</item>
+		<item>Baskisch</item>
+		<item>Weißrussisch</item>
+		<item>Bengalisch</item>
+		<item>Bosnisch</item>
+		<item>Bulgarisch</item>
+		<item>Katalanisch</item>
+		<item>Cebuano</item>
+		<item>Chichewa</item>
+		<item>Vereinfachtes Chinesisch</item>
+		<item>Chinesisch Traditionell</item>
+		<item>Korsika</item>
+		<item>Kroatisch</item>
+		<item>Tschechisch</item>
+		<item>Dänisch</item>
+		<item>Niederländisch</item>
+		<item>Englisch</item>
+		<item>Esperanto</item>
+		<item>Estnisch</item>
+		<item>Filipino</item>
+		<item>Finnisch</item>
+		<item>Französisch</item>
+		<item>Friesisch</item>
+		<item>Galizisch</item>
+		<item>Georgisch</item>
+		<item>Deutsch</item>
+		<item>Griechisch</item>
+		<item>Gujarati</item>
+		<item>Haitianisch-Kreolisch</item>
+		<item>Hausa</item>
+		<item>Hawaii</item>
+		<item>Hebräisch</item>
+		<item>Hindi</item>
+		<item>Hmong</item>
+		<item>Ungarisch</item>
+		<item>Isländisch</item>
+		<item>Igbo</item>
+		<item>Indonesisch</item>
+		<item>Irisch</item>
+		<item>Italienisch</item>
+		<item>Japanisch</item>
+		<item>Javanisch</item>
+		<item>Kannada</item>
+		<item>Kasachstan</item>
+		<item>Khmer</item>
+		<item>Koreanisch</item>
+		<item>Kurdisch (Kurmandschi)</item>
+		<item>Kirgisistan</item>
+		<item>Laos</item>
+		<item>Lateinisch</item>
+		<item>Lettisch</item>
+		<item>Litauisch</item>
+		<item>Luxembourgish</item>
+		<item>Mazedonisch</item>
+		<item>Madagassisch</item>
+		<item>Malaiisch</item>
+		<item>Malayalam</item>
+		<item>Maltese</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>Mongolei</item>
+		<item>Myanmar (Birmanisch)</item>
+		<item>Nepali</item>
+		<item>Norwegisch</item>
+		<item>Paschtu</item>
+		<item>Persisch</item>
+		<item>Polnisch</item>
+		<item>Portugiesisch</item>
+		<item>Punjabi</item>
+		<item>Rumänisch</item>
+		<item>Russisch</item>
+		<item>Samoanisch</item>
+		<item>Schottisches Gälisch</item>
+		<item>Serbisch</item>
+		<item>Sesotho</item>
+		<item>Shona</item>
+		<item>Sindhi</item>
+		<item>Singhalesisch</item>
+		<item>Slowakisch</item>
+		<item>Slowenisch</item>
+		<item>Somali</item>
+		<item>Spanisch</item>
+		<item>Sundanisch</item>
+		<item>Suaheli</item>
+		<item>Schwedisch</item>
+		<item>Tadschikisch</item>
+		<item>Tamilisch</item>
+		<item>Telugu</item>
+		<item>Thailändisch</item>
+		<item>Türkisch</item>
+		<item>Ukrainisch</item>
+		<item>Urdu</item>
+		<item>Usbekisch</item>
+		<item>Vietnamesisch</item>
+		<item>Walisisch</item>
+		<item>Xhosa</item>
+		<item>Jiddisch</item>
+		<item>Yoruba</item>
+		<item>Zulu</item>
+		<item>Oriya</item>
+		<item>Punjabi</item>
+		<item>Ruanda</item>
+		<item>Tatar</item>
+		<item>Turkmenisch</item>
+		<item>Uigurisch</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>ba</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>my</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>zh</item>
+		<item>cv</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>sjn</item>
+		<item>emj</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>he</item>
+		<item>mrj</item>
+		<item>hi</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jv</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>kazlat</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mhr</item>
+		<item>mn</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>pap</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pa</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tl</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>udm</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>uzbcyr</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>sah</item>
+		<item>yi</item>
+	</string-array>
+	<string-array name="yandex_translator_names">
+		<item>Automatisch</item>
+		<item>Afrika</item>
+		<item>Albanisch</item>
+		<item>Amharisch</item>
+		<item>Arabisch</item>
+		<item>Armenisch</item>
+		<item>Aserbaidschanisch</item>
+		<item>Baschkirisch</item>
+		<item>Baskisch</item>
+		<item>Weißrussisch</item>
+		<item>Bengalisch</item>
+		<item>Bosnisch</item>
+		<item>Bulgarisch</item>
+		<item>Birmanisch</item>
+		<item>Katalanisch</item>
+		<item>Cebuano</item>
+		<item>Chinesisch</item>
+		<item>Tschuwaschisch</item>
+		<item>Kroatisch</item>
+		<item>Tschechisch</item>
+		<item>Dänisch</item>
+		<item>Niederländisch</item>
+		<item>Elbisch (Sindarin)</item>
 		<item>Emoji</item>
 		<item>Englisch</item>
 		<item>Esperanto</item>
@@ -632,7 +1363,7 @@
 		<item>Gujarati</item>
 		<item>Haitianisch</item>
 		<item>Hebräisch</item>
-		<item>BergMari</item>
+		<item>Frau Hill</item>
 		<item>Hindi</item>
 		<item>Ungarisch</item>
 		<item>Isländisch</item>
@@ -642,26 +1373,26 @@
 		<item>Japanisch</item>
 		<item>Javanisch</item>
 		<item>Kannada</item>
-		<item>Kasachisch</item>
-		<item>Kasachisch(lateinisch)</item>
+		<item>Kasachstan</item>
+		<item>Kasachisch (Latein)</item>
 		<item>Khmer</item>
 		<item>Koreanisch</item>
-		<item>Kirgisisch</item>
-		<item>Laotisch</item>
-		<item>Latein</item>
+		<item>Kirgisistan</item>
+		<item>Laos</item>
+		<item>Lateinisch</item>
 		<item>Lettisch</item>
 		<item>Litauisch</item>
-		<item>Luxemburgisch</item>
+		<item>Luxembourgish</item>
 		<item>Mazedonisch</item>
 		<item>Madagassisch</item>
 		<item>Malaiisch</item>
-		<item>Malay</item>
-		<item>Maltesisch</item>
+		<item>Malayalam</item>
+		<item>Maltese</item>
 		<item>Maori</item>
 		<item>Marathi</item>
 		<item>Mari</item>
-		<item>Mongolisch</item>
-		<item>Nepalesisch</item>
+		<item>Mongolei</item>
+		<item>Nepali</item>
 		<item>Norwegisch</item>
 		<item>Papiamento</item>
 		<item>Persisch</item>
@@ -672,17 +1403,17 @@
 		<item>Russisch</item>
 		<item>Schottisch-Gälisch</item>
 		<item>Serbisch</item>
-		<item>Singhalesisch</item>
+		<item>Sinhalese</item>
 		<item>Slowakisch</item>
 		<item>Slowenisch</item>
 		<item>Spanisch</item>
-		<item>Sundanesisch</item>
-		<item>Swahili</item>
+		<item>Sundanisch</item>
+		<item>Suaheli</item>
 		<item>Schwedisch</item>
 		<item>Tagalog</item>
 		<item>Tadschikisch</item>
-		<item>Tamil</item>
-		<item>Tatarisch</item>
+		<item>Tamilisch</item>
+		<item>Tatar</item>
 		<item>Telugu</item>
 		<item>Thailändisch</item>
 		<item>Türkisch</item>
@@ -690,11 +1421,77 @@
 		<item>Ukrainisch</item>
 		<item>Urdu</item>
 		<item>Usbekisch</item>
-		<item>Usbekisch(kyrillisch)</item>
+		<item>Usbekisch (kyrillisch)</item>
 		<item>Vietnamesisch</item>
 		<item>Walisisch</item>
 		<item>Xhosa</item>
-		<item>Yakut</item>
+		<item>Jakutisch</item>
 		<item>Jiddisch</item>
-    </string-array>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>Auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>es</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>Auto</item>
+		<item>Arabisch</item>
+		<item>Bulgarisch</item>
+		<item>Chinesisch</item>
+		<item>Tschechisch</item>
+		<item>Dänisch</item>
+		<item>Niederländisch</item>
+		<item>Englisch</item>
+		<item>Estnisch</item>
+		<item>Finnisch</item>
+		<item>Französisch</item>
+		<item>Deutsch</item>
+		<item>Griechisch</item>
+		<item>Ungarisch</item>
+		<item>Indonesisch</item>
+		<item>Italienisch</item>
+		<item>Japanisch</item>
+		<item>Koreanisch</item>
+		<item>Lettisch</item>
+		<item>Litauisch</item>
+		<item>Norwegisch (Bokmål)</item>
+		<item>Polnisch</item>
+		<item>Portugiesisch</item>
+		<item>Rumänisch</item>
+		<item>Russisch</item>
+		<item>Slowakisch</item>
+		<item>Slowenisch</item>
+		<item>Spanisch</item>
+		<item>Schwedisch</item>
+		<item>Türkisch</item>
+		<item>Ukrainisch</item>
+	</string-array>
 </resources>
