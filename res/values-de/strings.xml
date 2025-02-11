@@ -9,15 +9,6 @@
 	<string name="pkcs12">Schlüsselspeicher(PKCS12)</string>
 	<string name="bks">Schlüsselspeicher(BKS)</string>
 	<string name="pk8">pk8+x509.pem</string>
-	<string name="beta" translatable="false">β</string>
-	<string name="dot" translatable="false">-</string>
-	<string name="rarrow" translatable="false">→</string>
-	<string name="lock_icon" translatable="false"></string>
-	<string name="block_icon" translatable="false"></string>
-    <string name="list_icon" translatable="false"></string>
-    <string name="clock_icon" translatable="false"></string>
-    <string name="prev_icon" translatable="false">◀</string>
-    <string name="next_icon" translatable="false">▶</string>
 	<string name="base64">Base64: %s</string>
 	<string name="base64_sign">Base64 der Signatur: %s</string>
 	<string name="base64_cert">Base64 des Zertifikats: %s</string>
@@ -376,7 +367,7 @@
 	<string name="unknown_skip_bytes">Unbekannte Daten entdeckt. Überspringen: %d byte\(s\)</string>
 	<string name="using_apktool">Verwendung von Apktool M %1$s auf %2$s</string>
 	<string name="build_run_title">Kompilieren...</string>
-	<string name="sign_done">Die Signatur ist vollständig und die Ausgabedatei lautet '%1$s'.</string>
+	<string name="sign_done">Die Signatur ist vollständig und die Ausgabedatei lautet \'%1$s\'.</string>
 	<string name="verify_v1_success">V1-Signaturprüfung erfolgreich.</string>
 	<string name="verify_v1_fail">V1-Signaturprüfung fehlgeschlagen.</string>
 	<string name="verify_v2_success">V2-Signaturprüfung erfolgreich.</string>
