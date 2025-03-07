@@ -130,6 +130,12 @@
 	<string name="kill_sign_exists">Хук уже был добавлен</string>
 	<string name="kill_sign_by_orig">Взять подпись из указанного оригинала</string>
 	<string name="kill_sign_notice">Приложение, обработанное этой функцией, не сможет работать на версиях Android ниже 5!</string>
+    <string name="kill_sign_ex_app">Имя класса хука</string>
+    <string name="kill_sign_ex_lib">Имя библиотеки хука</string>
+    <string name="kill_sign_ex_inject">Имя оригинала внутри apk</string>
+    <string name="kill_sign_ex_extract">Путь оригинала при извлечении</string>
+    <string name="kill_sign_ex_mode">Расширенный режим</string>
+    <string name="kill_sign_old_mode">Обычный режим</string>
 	<string name="compare_text">Сравнить текст</string>
 	<string name="diff_resources">Сравнить ресурсы (aapt2)</string>
 	<string name="diff_resources2">Сравнить ресурсы \"%2$s\" с ресурсами \"%1$s\"</string>

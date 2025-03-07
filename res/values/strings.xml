@@ -141,6 +141,12 @@
 	<string name="kill_sign_exists">The hook has already been added</string>
 	<string name="kill_sign_by_orig">Take a signature from the specified original</string>
 	<string name="kill_sign_notice">An application processed by this function will not be able to work on Android versions lower than 5!</string>
+    <string name="kill_sign_ex_app">Hook class name</string>
+    <string name="kill_sign_ex_lib">Name of hook so library</string>
+    <string name="kill_sign_ex_inject">Name of original inside apk</string>
+    <string name="kill_sign_ex_extract">Path of original when extracting</string>
+    <string name="kill_sign_ex_mode">Advanced mode</string>
+    <string name="kill_sign_old_mode">Normal mode</string>
 	<string name="compare_text">Compare text</string>
     <string name="diff_resources">Compare resources (aapt2)</string>
     <string name="diff_resources2">Compare resources \"%2$s\" with resources \"%1$s\"</string>
