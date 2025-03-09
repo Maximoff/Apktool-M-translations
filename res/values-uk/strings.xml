@@ -929,7 +929,8 @@
 	<string name="compare_apk_del">Видалені файли</string>
 	<string name="compare_apk_mess">Порівняти вміст \"%1$s\" із вмістом \"%2$s\"</string>
 	<string name="compare_apk_mov">Переміщені файли</string>
-	<string name="only_diff">Тільки відмінності</string><string name="kill_sign_ex_app">Ім\'я класу хука</string>
+	<string name="only_diff">Тільки відмінності</string>
+	<string name="kill_sign_ex_app">Ім\'я класу хука</string>
 	<string name="kill_sign_ex_lib">Ім\'я бібліотеки хука</string>
 	<string name="kill_sign_ex_inject">Ім\'я оригіналу всередині apk</string>
 	<string name="kill_sign_ex_extract">Шлях оригіналу при витяганні</string>
