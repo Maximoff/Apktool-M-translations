@@ -926,6 +926,8 @@
 	<string name="mtr_trans_xml">Translate xml</string>
 	<string name="mtr_no_trans">The string does not need to be translated!</string>
 	<string name="mtr_first_notrans">Not translated at first</string>
+    <string name="mtr_check_source">Check for compliance with the source language</string>
+    <string name="mtr_check_source_info">If a specific source language is selected, the program will try to check the strings for compliance with that language. Strings in other languages will not be translated.</string>
 	<string name="attention">Attention!</string>
 	<string name="repeat">Repeat</string>
 	<string name="down_for">Download for %s</string>
