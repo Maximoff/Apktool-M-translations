@@ -939,4 +939,6 @@
         <string name="compare_apk_del">Διαγραμμένα αρχεία</string>
         <string name="compare_apk_mess">Σύγκριση περιεχομένων του \"%1$s\" με τα περιεχόμενα του \"%2$s\"</string>
         <string name="compare_apk_mov">Μετακινηθέντα αρχεία</string>
-</resources>
+        <string name="mtr_check_source">Έλεγχος συμμόρφωσης με τη γλώσσα προέλευσης</string>
+        <string name="mtr_check_source_info">Εάν επιλεγεί μια συγκεκριμένη γλώσσα προέλευσης, το πρόγραμμα θα προσπαθήσει να ελέγξει τις συμβολοσειρές ως προς τη συμμόρφωση με τη συγκεκριμένη γλώσσα. Συμβολοσειρές σε άλλες γλώσσες δεν θα μεταφραστούν.</string>
+ </resources>
