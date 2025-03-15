@@ -936,4 +936,6 @@
 	<string name="kill_sign_ex_extract">Шлях оригіналу при витяганні</string>
 	<string name="kill_sign_ex_mode">Розширений режим</string>
 	<string name="kill_sign_old_mode">Зазвичайний режим</string>
+	<string name="mtr_check_source">Перевіряти на відповідність вихідній мові</string>
+	<string name="mtr_check_source_info">Якщо обрано конкретну вихідну мову, програма намагатиметься перевіряти рядки на відповідність цій мові. Рядки іншими мовами перекладатися не будуть.</string>
 </resources>
