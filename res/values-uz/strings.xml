@@ -761,8 +761,8 @@
     <string name="custom_exts">Matn kengaytmasi</string>
     <string name="custom_exts_summary">Dastur tomonidan matn sifatida belgilanadigan fayllarni kengaytirish</string>
     <string name="custom_exts_info">Vergul orqali kengaytmalarni belgilang: AAA, BBB, CCC</string>
-    <string name="remove_property">& Lt; mulk></string>
-    <string name="remove_property_summary">Teglar & LT; mulk> dekompillanish paytida manifestdan oling</string>
+    <string name="remove_property">Oʻchirish &lt;property></string>
+	<string name="remove_property_summary">Dekompilyatsiya paytida manifestdan &lt;property> teglarini oʻchirish</string>
     <string name="save_sign_data">Ushbu imzolarni v2 va v3 saqlang</string>
     <string name="save_sign_data_summary">Ushbu imzolarni APK bilan ishlash uchun APK bilan harakat qiling</string>
     <string name="mapp_inLocation_summary">Mashg"ulotdan foydalanayotganda dasturlarni o"rnatish joyidan so"rang</string>
@@ -922,7 +922,7 @@
     <string name="report_descr">Iltimos, xatolik yuz berganidan qisqa vaqt ichida qisqacha bayon qiling</string>
     <string name="optimize_battery">Batareyani optimallashtirish</string>
     <string name="optimization_notice">Dasturni fonda ishlash uchun (u o"ralgan holda), uni optimizator istisnolariga qo"shish tavsiya etiladi. Ilova faqat o"zingizni boshlasangiz, fonda ishlaydi! \N \n buni amalga oshirish uchunmi?</string>
-    <string name="heap_help">OMOD-ni yo"q qilish uchun, uyum xarita hajmini oshirish uchun. &lt;b> Huquqlar Ilmiy & LT; & lt; & lt; siz faylni ochishingiz kerak &lt;b>//system/Build.Proplert; &lt;b> ni qo"shish/o"zgartirish;/b> (512m uyumning o"lchami megabaytlar) O"chirish. & LT;/kichik></string>
+    <string name="heap_help">OMOD-ni yo"q qilish uchun, uyum xarita hajmini oshirish uchun. &lt;b> Huquqlar Ilmiy &lt; &lt; &lt; siz faylni ochishingiz kerak &lt;b>//system/Build.Proplert; &lt;b> ni qo"shish/o"zgartirish;/b> (512m uyumning o"lchami megabaytlar) O"chirish. &lt;/kichik></string>
     <string name="heap_memory">Uyum xotirasi</string>
     <string name="heap_info">Xotira ishlatiladi:%1$dmb. \N, xotira:%$2\n, umumiy xotira hajmi:%3$dmb.</string>
     <string name="scoped_storage">Cheklangan saqlash</string>
