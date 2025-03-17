@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apktool M Yordam</title>
+    <style>
+        .light {
+            background-color: #ffffff;
+        }
+            
+        	    .dark {
+            background-color: #303030;
+        }
+            
+        .black {
+            background-color: #000000;
+        }
+        
+        .light .section_title, .light .content_text, .light .answer_text {
+            color: #424242;
+        }
+            
+        .light .content_text {
+            background: #ddebf7;
+        }
+            
+        .light .answer_text {
+            background: #dddddd;
+        }
+            
+        	    .dark .section_title, .dark .content_text, .dark .answer_text {
+            color: #bdbdbd;
+        }
+            
+        .dark .content_text {
+            background: #081e22;
+        }
+            
+        .dark .answer_text {
+            background: #222222;
+        }
+            
+        .black .section_title, .black .content_text, .black .answer_text {
+            color: #ffffff;
+        }
+            
+        .black .content_text {
+            background: #222222;
+        }
+            
+        .black .answer_text {
+            border: 1px solid #424242;
+            background: #222222;
+        }
+            
+        .black .question_title {
+            border: 1px solid #424242;
+            background: #424242;
+            background: #111111;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        .section_title {
+            border: none;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .content_text {
+            border: 1px solid #c0c6d2;
+            border-radius: 3px;
+            padding: 6px;
+            background: #ddebf7;
+        }
+        
+        a:active,
+        a:hover,
+        a {
+            text-decoration: none;
+            color: #2196F3;
+        }
+        
+        .details_block {
+            margin-bottom: 10px;
+            border-radius: 3px;
+            overflow: auto;
+        }
+        
+        .question_title {
+            border: 1px solid #2196F3;
+            padding: 6px;
+            background: #2196F3;
+            color: #ffffff;
+        }
+        
+        .answer_text {
+            border: 1px solid #2196F3;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 6px;
+        }
+        
+        .warning_text {
+            color: red;
+        }
+    </style>
+</head>
+
+<body class="light">
+    <section class="section_zero">
+        <div class="section_title">
+            Tarkib
+        </div>
+        <div class="content_text">
+            <li><a href="https://4pda.to/forum/index.php?showtopic=1002506&amp;view=findpost&amp;p=116526321"><b>4PDA-da yangilangan yordam</b></a></li>
+            <li><a href="#section_one">Tez tahrirlash</a></li>
+            <li><a href="#section_two">To'liq tahrirlash - dekompilyatsiya va yig'ish</a></li>
+            <li><a href="#section_three">Ilovalarni tarjima qilish</a></li>
+            <li><a href="#section_four">Ajralishga qarshi funksiya</a></li>
+            <li><a href="#section_five">Shaxsiy imzo yarating</a></li>
+            <li><a href="#section_six">Fayl menejeri</a></li>
+            <li><a href="#section_seven">Turli xil</a></li>
+            <li><a href="#section_eight">MPatcher</a></li>
+        </div>
+    </section>
+    <section id="section_one">
+        <div class="section_title">
+            Tez tahrirlash
+        </div>
+        <details class="details_block">
+            <summary class="question_title">Tez tahrirlash nima?</summary>
+            <div class="answer_text">
+                Bu dekompilyatsiyaga hojat qoldirmasdan ilovalarning asosiy ma'lumotlarini tahrirlash va qayta yig'ish.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Tez tahrirlash nima uchun ishlatiladi?</summary>
+            <div class="answer_text">
+                <li>ma'lumotlarni ko'rish uchun ilova (apk), uning ruxsatlari va afzal o'rnatish joyi haqida (haqiqiy joylashuv bilan adashtirmaslik kerak) o'rnatish);</li>
+                <li>ilova nomini o'zgartirish;</li>
+                <li>dastur paketi nomini o'zgartirish (ilovani klonlash);</li>
+                <li>ikkala vektor (avtomatik ravishda yaratilgan), moslashuvchan va oddiy rastr piktogrammalarini almashtirish uchun ilovalar;</li>
+                <li>ilovaning afzal o'rnatish joyini belgilash;</li>
+                <li>minimal yoki maqsadli SDK versiyasini o'zgartirish;</li>
+                <li>ilovani Android TV uchun moslashtirish;</li>
+                <li>Manifestdan olib tashlash uchun: <code>android:isSplitRequired, android:debuggable, android:testOnly</code>.</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> "Ruxsatnomalar" bandi nima uchun? </summary>
+            <div class="answer_text">
+                Ilova ruxsatlarini ko‘rish va ularni yoqish yoki o‘chirish uchun.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Rasmlarni vektorga aylantirish mumkinmi? </summary>
+            <div class="answer_text">
+                Ha.<br> PNG, Jpeg, Webp, Svg formatlari qo'llab-quvvatlanadi.<br> Transformatsiya turiga qarab sodir bo'ladi <u>{eski fayl nomi}_vector.xml</u><br> Konvertatsiya qilishda tasvir sifatini yaxshilash/pasaytirish mumkin.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Svg tasvirini VectorDrawable-ga aylantirish mumkinmi? </summary>
+            <div class="answer_text">
+                Ha.<br> SVG/VectorDrawable yo'lni oldindan ko'rishda mavjud (kompilyatsiya qilinmagan)<br> <u>Eslatma:</u> svg oddiy va adekvat tuzilishga ega bo'lishi kerak, aks holda tahlilchi uni to'g'ri qayta ishlamasligi mumkin va to'g'ri ishlashi uchun uni qo'lda normallashtirishingiz kerak bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Bitmap tasvirlarni VectorDrawable-ga aylantirish mumkinmi? </summary>
+            <div class="answer_text">
+                Ha.<br> Panatseya emas, kuzatuvda kuchli xato bo'lishi mumkin - asl tasvirning geometriyasining murakkabligiga bog'liq.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilova belgisini qanday almashtirish mumkin? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli belgini tayyorlang, yaxshisi png formatida va undan kattaroq bo'lmasligi kerak 192x192 piksel.</li>
+                    <li>Kerakli ilovani tanlang → Tez tahrirlash.</li>
+                    <li>Yuqori chap burchakda siz o'rnatilgan dasturning belgisini va uning nomini ko'rishingiz mumkin.</li>
+                    <li>Belgining o'ziga teging va oldindan tayyorlangan belgini tanlang.</li>
+                    <li>Agar kerak bo'lsa, kerakli sozlamalar qutilarini belgilang: "moslashuvchan belgini almashtirish" "yuqori sifatli belgi (kattaroq)</li>
+                    <li>Agar siz avval uni o'rnatmagan bo'lsangiz, imzo faylini ham tanlang.</li>
+                    <li>"Saqlash" tugmasini bosing.</li>
+                </ol> Tayyor fayl bir xil papkada, tanlangan ilovaning yonida, oxirida mod belgisi bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilova belgisini qanday chiqarish mumkin? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli ilovani tanlang → Tez tahrirlash.</li>
+                    <li>Belgini uzoq vaqt bosing.</li>
+                </ol> Chiqarilgan fayl bir xil papkada, tanlangan ilovaning yonida bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Minimal yoki maqsadli SDK versiyasini qanday o'zgartirish mumkin? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli ilovani tanlang → Tez tahrirlash.</li>
+                    <li>Kerakli sozlamalarda "Minimal SDK versiyasi" yoki "Target SDK versiyasi" kerakli o'zgarishlarni kiriting.</li>
+                    <li>"Saqlash" tugmasini bosing.</li>
+                </ol> Tayyor fayl bir xil papkada, tanlangan ilovaning yonida, oxirida mod belgisi bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilova nomini qanday o'zgartirish mumkin? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli ilovani tanlang → Tez tahrirlash.</li>
+                    <li>Keyin kerakli dastur nomini kerakli dasturga o'zgartiring.</li>
+                    <li>Agar siz avval uni o'rnatmagan bo'lsangiz, imzo faylini tanlang.</li>
+                    <li>"Saqlash" tugmasini bosing.</li>
+                </ol> Tugallangan fayl oxirida mod belgisi bilan tanlangan dasturning yonida bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Nima uchun "Ilova nomi"ni o'zgartira olmayman? (Element faol emas.) </summary>
+            <div class="answer_text">
+                Ehtimol, dasturning minimal SDK versiyasi sizning tizimingiz versiyasidan yuqoriroqdir. Bunday sharoitlarda tahrirlash cheklangan.<br> Avval siz minimal SDK versiyasini pasaytirishingiz kerak va keyin hamma narsani tahrirlashingiz kerak.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilova paketi nomini qanday o'zgartirish mumkin? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli ilovani tanlang → “Tezkor tahrir”.</li>
+                    <li>Keyin paket nomini o'zgartiring.</li>
+                    <li>Agar siz avval uni o'rnatmagan bo'lsangiz, imzo faylini tanlang.</li>
+                    <li>"Saqlash" tugmasini bosing.</li>
+                </ol> Tugallangan fayl oxirida mod belgisi bilan tanlangan dasturning yonida bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ushbu ilovada apk klonini qanday qilish mumkin? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli ilovani tanlang → “Tezkor tahrir”.</li>
+                    <li>Keyin paket nomini o'zgartiring, masalan, ismdagi oxirgi harflarni qo'shish yoki olib tashlash orqali.</li>
+                    <li>Agar siz ilgari o'rnatmagan bo'lsangiz, imzo faylini tanlang.</li>
+                    <li>"Saqlash" tugmasini bosing.</li>
+                </ol> Tugallangan fayl oxirida mod belgisi bilan tanlangan dasturning yonida bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Tez tahrirlashda ilovani klonlash qanday ishlaydi? </summary>
+            <div class="answer_text">
+                Tez tahrirlash vaqtida dastur AndroidManifest.xml va resources.arsc-ni o'zgartiradi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Android TV uchun ilovani qanday moslash mumkin? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli ilovani tanlang → “Tezkor tahrir”.</li>
+                    <li>Keyin, pastki qismida "Android TV uchun moslash" katagiga belgi qo'ying.</li>
+                    <li>Agar siz avval uni o'rnatmagan bo'lsangiz, imzo faylini tanlang.</li>
+                    <li>"Saqlash" tugmasini bosing.</li>
+                </ol> Tugallangan fayl oxirida mod belgisi bilan tanlangan dasturning yonida bo'ladi. U banner sifatida ishlatiladi ilova belgisi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Tez tahrirlashdan keyin dastur o'rnatilmasa nima qilish kerak? </summary>
+            <div class="answer_text">
+                Tekshiring, ehtimol siz paketga imzo chekmagandirsiz?<br> Tez tahrirlashda imzoni tanlang. Agar ilgari imzodan foydalanmagan bo'lsangiz, sukut bo'yicha "imzo qilmang".
+            </div>
+        </details>
+    </section>
+    <section id="section_two">
+        <div class="section_title">
+            To'liq tahrirlash - dekompilyatsiya va yig'ish
+        </div>
+        <details class="details_block">
+            <summary class="question_title"> Dekompilyatsiya nima va u nima uchun? </summary>
+            <div class="answer_text">
+                decompile arsc+dex - ikkilik kodni inson o'qiy oladigan kodga tarjima qilish. Ilova resurslarini (resources.arsc) va Smali assemblerini (kod) tahrirlash holatlarida talab qilinadi. Shuningdek, ushbu dekompilyatsiyani talab qiladigan funktsiyalar uchun - ma'lumotlarga kirish, yamoqlarni qo'llash, tarjima...
+                <p><em>Qayta kompilyatsiya qilish uchun aaptning ikkilik fayllari ishlashi kerak. Ilovani birinchi marta ishga tushirganingizda o'rnatish so'rovi paydo bo'ladi. Agar buni qilmagan bo'lsangiz, yuklab olish "Sozlamalar" &gt; "Yaratish va dekompilyatsiya qilish" &gt; "O'zgartirish" bo'limida amalga oshiriladi. asboblar » ... uchun yuklab olish »</em></p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilovani qanday dekompilyatsiya qilish kerak? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli dasturni tanlang.</li>
+                    <li>Unga teging.</li>
+                    <li>Qalqib chiquvchi menyu ochiladi.</li>
+                    <li>"Dekompilyatsiya" variantini tanlang.</li>
+                    <li>Biz dekompilyatsiya qilinishi kerak bo'lgan narsalarni belgilaymiz:</li>
+                    <ul>
+                        <li>"Resurslarni kompilyatsiya qilish"</li>
+                        <li>"Decompile classes.dex" yoki "Barcha '*.dex' ni dekompilyatsiya qilish."<br> <em>("barchasi *.dex" bandi ichki o'rnatilgan papkalardagi dexlar uchun javobgardir: masalan, aktivlarda, mthook va va boshqalar)</em></li>
+                        <li>Va shuningdek, agar kerak bo'lsa, mumkin bo'lgan joyni tanlash bilan "Qo'shimcha resurslarni dekompilyatsiya qilish" dekompilyatsiya qilish.</li>
+                    </ul>
+                </ol> Muvaffaqiyatli dekompilyatsiyadan so'ng, agar u ilgari yoqilgan bo'lsa, ovozli va dialogli bildirishnoma bo'ladi Sozlamalar.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilovani qanday qayta kompilyatsiya qilish kerak? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Loyihaning ichida Explorer oynasi ustidagi "Loyihani qurish" yozuvini bosing.</li>
+                    <li>Qurilish oynasida siz resurs yaratish vositasini tanlashingiz kerak - aapt yoki aapt2.</li>
+                    <li>Agar kerak bo'lsa, avtomatik imzolashni ham belgilashingiz mumkin.</li>
+                </ol> Jurnal real vaqtda ko'rsatiladi. Yig'ish paytida siz bosqichlarni, sharhlarni va xatolarni kuzatishingiz mumkin.<br> Tugatgandan so'ng, jurnal to'xtaydi (bu ko'rinadi).<br> Muvaffaqiyatli kompilyatsiyadan so'ng, agar u ilgari yoqilgan bo'lsa, ovozli va dialogli bildirishnoma bo'ladi Sozlamalar.<br> Pastki qismida kompilyatsiya qilingan dasturni darhol o'rnatish taklifi ham bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilova qurilgandan keyin qayerda saqlanadi? </summary>
+            <div class="answer_text">
+                Demontaj qilingan dastur bilan jildga. Loyihaning ildizida (apktool.json yonida)
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Bir vaqtning o'zida bir nechta fayllarni dekompilyatsiya qilish mumkinmi? </summary>
+            <div class="answer_text">
+                Ha, lekin bir nechtasini ketma-ket dekompilyatsiya qilish yaxshiroqdir, chunki bir vaqtning o'zida dekompilyatsiya etarli bo'lmasligi mumkin xotira.<br><br>
+                <details class="details_block">
+                    <summary class="question_title"> Buni qanday qilish kerak? </summary>
+                    <div class="answer_text">
+                        Bir nechta fayllarni tanlang va uzoq bosish orqali menyu ochiladi.<br> <u>Diqqat!</u> Bu shunga o'xshash fayllar uchun ishlaydi. Agar siz apk-dan boshqa narsani tanlasangiz, menyuda hech qanday element bo'lmaydi.
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Apk saqlanadigan papkani qanday o'zgartirish mumkin? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Sozlamalar → "yig'ish va dekompilyatsiya qilish" → "o'rnatilgan ilovalarning chiqish katalogini o'rnatish"</li>
+                    <li>Kerakli papkaga o'ting, "yo'l" qatoriga teging - chiqish katalogini o'rnating.</li>
+                    <li>Chiqish katalogini to'g'ridan-to'g'ri fayl menejerida o'rnatishingiz mumkin.</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> "O'rnatilgan ilovalarning chiqish katalogi" bandi nima? </summary>
+            <div class="answer_text">
+                Bu ilovalar menyusidan keyingi ishlash uchun apk eksport qilinadigan/olinadigan katalog.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Fayldagi resurslarni qanday almashtirish kerak."apk»? </summary>
+            <div class="answer_text">
+                Avval dekompilyatsiya kerak, keyin fayllarni nusxalash/joylashtirish va yig'ish kerak.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Agar ilova bajarilmasa nima qilish kerak, garchi hamma narsa xatosiz bajarilgan bo'lsa yoki men hech narsani o'zgartirmagan bo'lsam apk, lekin shunchaki qayta kompilyatsiya qildingizmi? </summary>
+            <div class="answer_text">
+                Aapt versiyasini almashtiring.<br> Voqea darajasi mavjudligi uchun jurnalni ko'ring Warning. <br> Umuman olganda, jurnalga qarang-buning sababi bo'lishi kerak.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> APKTOOL loyihalari bilan mosligi qanday? </summary>
+            <div class="answer_text">
+                Apktool M sizga oddiy Apktool orqali demontaj qilingan loyihalarni yig'ish imkonini beradi.<br> Yig'ishdan oldin, Apktool M o'zgartiradi .yml ichida.json.<br> Jarayon haqidagi ma'lumotlarni jurnal orqali kuzatish mumkin.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Apktool M tizim ilovalari bilan ishlay oladimi? </summary>
+            <div class="answer_text">
+                Ha, bu mumkin.<br><br>
+                <details class="details_block">
+                    <summary class="question_title"> Buni qanday qilish kerak? </summary>
+                    <div class="answer_text">
+                        Bunday apk bilan ishlashdan oldin, ushbu apk uchun kontekst menyusidagi element orqali apk ramkalarini import qilishingiz kerak. Import barcha bunday apk-larda amalga oshiriladi.
+                        <p>Asosiy yo'l: / system / framework/..</p> Ular, shuningdek,/system/vendor / framework va boshqalarda bo'lishi mumkin.qo'shni kataloglar. Agar ushbu kataloglar mavjud bo'lsa (kamdan-kam uchraydigan hodisa).<br><br> Ramkalar namunasi:<br> <img width="100%" alt="" align="center" class="image" src="data:image/webp;base64,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">
+                        <p>Keyin dekompilyatsiya qiling va oddiy apk sifatida kompilyatsiya qiling. Asl META-INF va manifestni saqlash uchun-dekompilyatsiya sozlamalarida "asl nusxaga mos kelish"tugmachasini yoqing.</p>
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> "Yig'ish va dekompilyatsiya" bo'limidagi fikrlarni tushuntirish </summary>
+            <div class="answer_text">
+                <details class="details_block">
+                    <summary class="question_title"> Chiqish katalogi </summary>
+                    <div class="answer_text">
+                        O'rnatilgan ilovalar yorliqdan eksport qilinadigan/olinadigan yo'l "Ilovalar".
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Aapt2 dan foydalaning </summary>
+                    <div class="answer_text">
+                        Aapt versiyasini tanlash elementiga qurishdan oldin vositaning ikkinchi versiyasini qo'shadi.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Disk raskadrovka ma'lumotlari </summary>
+                    <div class="answer_text">
+                        <p>Yig'ish paytida smali fayllari disk raskadrovka ma'lumotlarini saqlaydi, masalan<code>.line, .param</code> va boshqalar.</p> <u>Eslatma:</u><br> Ushbu ma'lumotlar faqat dasturni rejimda disk raskadrovka qilish uchun talab qilinadi debuggable. Shuningdek, Logcat jurnalida smali tomchilarini tor yo'naltirilgan disk raskadrovka qilish uchun (kamdan-kam uchraydigan hodisa, yiqilishga olib keladigan chiziq uchun langar sifatida yordam berishi mumkin). Ular kodning bajarilishiga ta'sir qilmaydi. Ushbu ma'lumotlar, shuningdek, smali assembler-ni qo'llanma sifatida tahrirlashda yordam berishi mumkin shunga o'xshash (moda modellari uchun).
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Disk raskadrovka rejimi </summary>
+                    <div class="answer_text">
+                        Tegdagi manifestda yozadi <code> &lt;application /&gt; </code> attribut <code>android:debuggable</code> ma'nosi <code>true</code>. Tizimga bu debug ilovasi ekanligini e'lon qiladi. Bu logging-ga kirishni kengaytirishga imkon beradi ilovalar. Ushbu funktsiyaning ishlashi bilan o'zaro ta'sir faqat maxsus vositalar yordamida mumkin asboblar (bular Android Studio-da, shuningdek ADB darajasida disk raskadrovka va boshqalar). Bu emas Logcat jurnaliga tegishli-tizim jurnalidagi disk raskadrovka miqdori o'zgartirilganda o'zgarmaydi ushbu parametr.
+                        <p>Bunday dasturni disk raskadrovka uchun joriy sifatida ko'rsatish uchun uni "tizim sozlamalari" da tanlang » Ishlab chiquvchilar uchun" disk raskadrovka dasturi " (yo'llar farq qilishi mumkin).</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> To'liq </summary>
+                    <div class="answer_text">
+                        Yig'ish paytida u kompilyatsiya qilinganidan keyin har bir faylning yakuniy holatini jurnalga chiqaradi. Emas agar kerak bo'lmasa, uni yoqing.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Asl nusxaga muvofiqlik </summary>
+                    <div class="answer_text">
+                        Asl meta-INF va manifest xeshlarini asl xeshlarga rioya qilish orqali saqlashga imkon beradi resurslar.<br> Ushbu rejim faqat Smali – ni tahrirlashga imkon beradi-tahrirlangan faylni yig'ishga urinayotganda res/..., u oxirgi apk-da o'chiriladi, chunki u asl xeshga mos kelmaydi (o'zgartirilgan).
+                        <p><span class="warning_text"><em>Savol aniqlashtirishni talab qiladi.</em></span></p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Barcha Smalilarni tahlil qilish </summary>
+                    <div class="answer_text">
+                        Smali-da fayllarni tahlil qilishga majbur qiladi.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Qo'shish "APKTOOL_DUMMY" </summary>
+                    <div class="answer_text">
+                        <p>Odatiy bo'lib, resurslar ichidagi resurs identifikatori.arsc arifmetik progressiya bo'yicha o'rnatiladi. Ichida ba'zi hollarda u buzilishi mumkin – qiymat turlari ichidagi ba'zi joylar bo'lishi mumkin emas to'ldirilgan (bo'sh).</p>
+                        <p>Ushbu joylarga yaxlitlikni tiklash uchun apktool_dummy vilkasidan o'rnatiladi progressiya. Ushbu satrlar hech kim tomonidan ishlatilmaydi va hech narsaga ta'sir qilmaydi.</p> <u>Qisqa eslatma:</u><br>
+                        <p>Agar resurs obyektini res / values / public dan olib tashlasangiz.xml, keyin yig'ish paytida u buni topishga harakat qiladi bo'sh joy va unda ID-ni o'rnating. Agar bo'sh joy bo'lmasa, u oxirida qo'shiladi ro'yxat o'z toifasidagi ob'ektlar. Buni quyidagi ob'ektlar identifikatori bilan qilish tavsiya etilmaydi Smali - bu qulashga olib keladi, chunki ID tomonidan ko'rsatilgan resurs ko'chirildi (u endi mavjud emas qanday qilib shunday).</p>
+                        <p>Ommaviy o'chirish.xml butunlay Apktool-ni noldan progressiyani yaratishga majbur qiladi-keyin APKTOOL_DUMMY emas u hech qanday joyga o'rnatilmaydi, chunki boshlang'ich va yopilish identifikatori o'rtasida bo'sh joy yo'q.</p>
+                        <p>APKTOOL_DUMMY-ga ehtiyoj faqat Foydalanuvchining o'zi tomonidan belgilanadi. Bundan tashqari, bu mumkin agar dekompilyatsiya qilingan loyihada maxsus xususiyat mavjud bo'lsa, talab qilinadi. idlar orasidagi tuzilma (xususan tufayli maxsus attributlar va / yoki obfuskatsiyalar).</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> HTML-ni formatlash </summary>
+                    <div class="answer_text">
+                        Barcha fayllarning tarkibi .html va .htm (?) XML sintaksisiga muvofiq formatlanadi. Bu HTML sahifasining chiqish ko'rinishini buzishi mumkin. Faqat quyidagi hollarda o'rnatiladi zaruriyat.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> "Build"papkasini o'chirish </summary>
+                    <div class="answer_text">
+                        <p>Assambleyada, Dex va ARS fayllari qurilishi papkasiga keshlashmoqda. Agar siz avvalgi yig'ishdan keyin resurslarni o'zgartirmagan bo'lsangiz va yana to'plangan APK - .orsc yana yaratilmaydi, lekin keshli nusxadan olinmaydi, chunki hash bir xil (o'zgartirilgan). Bu, shuningdek, SMALI (DEX fayllari) ga tegishli. Qayta qurish orqali APK yig'ilishini tezlashtiradi.</p>
+                        <p>Jildni olib tashlash faqat bo'shliqni ozod qilish bilan birga keladi. Shundan so'ng, keyingi anjumanlar, .dex va .Sarc "Scatchdan" yaratiladi va papka qayta tiklanadi. Mahsulotni faollashtirish muvaffaqiyatli anjumandan so'ng avtomatik ravishda papkani avtomatik ravishda o'chirishga imkon beradi. Agar kerak bo'lsa, faollashtiring.</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Hammasi hafta oxiri katalog </summary>
+                    <div class="answer_text">
+                        Barcha muvaffaqiyatli tuzilgan APK avtomatik ravishda chiqish katalogiga avtomatik ravishda o'tkaziladi.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Tumani boshqarish </summary>
+                    <div class="answer_text">
+                        Tashqi tomondan olib kirilgan ramkalarni boshqarish imkoniyatini beradi. Qayta tiklash tugmachasi ro'yxatni va fayllarni tozalaydi, shuningdek, APKTOOD M. dan (ID 1) qayta tiklaydi.
+                    </div>
+                </details>
+            </div>
+        </details>
+    </section>
+    <section id="section_three">
+        <div class="section_title">
+            Arizalarni tarjima qilish
+        </div>
+        <details class="details_block">
+            <summary class="question_title"> Tarjima uchun nechta tillar qo'llab-quvvatlanadi? </summary>
+            <div class="answer_text">
+                100 dan ortiq tillar.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Tarjimonda qanday variantlar mavjud? </summary>
+            <div class="answer_text">
+                <li>Tanlangan liniyalarni resurslarga (str, massivlar, partallar) va Milliy tarjima qilish;</li>
+                <li>Qo'lda resurslarni uzatish (tor, qatorlar, partallar) va Milliy;</li>
+                <li>Tarjimali tuzatish;</li>
+                <li>Bir nechta tarjima xizmatlaridan tanlash imkoniyati bilan onlayn tarjima;</li>
+                <li>Oflayn tarjima;</li>
+                <li>Lug'atlarni qo'llab-quvvatlash;</li>
+                <li>Mavjud tarjimadan o'z lug'atlaringizni yaratish;</li>
+                <li>MT menejeridan lug'atlarni qo'llab-quvvatlash;</li>
+                <li>Tillar uyushmasi.</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Onlayn tarjima uchun qancha xizmat ko'rsatiladi? </summary>
+            <div class="answer_text">
+                Uchta: Yandex, Google, Bing.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilovani tarjima qilish funktsiyasini topa olmadim. Tarjimonni qanday yoqish va arizani rus tiliga tarjima qilish kerak? </summary>
+            <div class="answer_text">
+                Ushbu funktsiya faqat ariza parchalanganda mavjud.
+                <ol>
+                    <li>Kerakli APKning beg'arali resurslari.</li>
+                    <li>Dekomillangan fayllar bilan papkaga o'ting.</li>
+                    <li>Fayl menejeri menyusini oching (u manzil chizig'idagi bosish bilan ochiladi) va "Tarjimon" elementini tanlang.</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Avtomatik rejimda dasturga tarjima qilish kerak? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Dekome kerakli APK resurslarini parchalaydi.</li>
+                    <li>Dekomillangan fayllar bilan papkaga o'ting.</li>
+                    <li>Fayl menejerining menyusini oching (u manzil liniyasini bosish bilan ochiladi) va "Tarjimon" elementini tanlang, shunda biz uchta ochko bilan o'ng tomonga va "Avtosug'urta" elementini bosing.</li>
+                    <li>Ochilgan menyuda, masalan, Yandex-ni ochadigan menyuda, masalan, Yandex.</li>
+                    <li>"Manba til" qismida siz oxirgi tilni "Tilni aniqlay" - bu oxirgi tilni tanlang - keraklilarni tanlang. Odatiy bo'lib, tizimingizda til taklif qilinadi.</li>
+                    <li>Quyida biz kerakli katakchalarni "agar u mavjud bo'lsa," faqat tarjima qilingan chiziqlarni saqlash "ni qayd etamiz</li>
+                    <li>Kerakli satrlarni tanlang, -ni tanlang.</li>
+                    <li>"O'tkazma" ni bosing. RES / KIMS / STATEga o'tkaziladi.</li>
+                    <li>Tarjima tugagandan so'ng, yana uchta nuqtaning o'ng tomonidagi o'ng tomonga bosing va "Saqlash" elementini tanlang</li>
+                    <li>Biz o'z loyihamizni (ariza) to'playmiz.</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Ilovani Smali avtomatik rejimda qanday tarjima qilish kerak?</summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Belgilangan APKni ajratish.</li>
+                    <li>Dekomillangan fayllar bilan papkaga o'ting.</li>
+                    <li>Fayl menejeri menyusini oching (u manzil liniyasini bosish bilan ochiladi) va "Tarjima SMALI" elementini tanlang, shunda biz uchta ochko bilan o'ng tomonni bosamiz va "Avtosug'urta" elementini bosing.</li>
+                    <li>Ochilgan menyuda, masalan, Yandex-ni ochadigan menyuda, masalan, Yandex.</li>
+                    <li>"Manba til" qismida siz oxirgi tilni "Tilni aniqlay" - bu oxirgi tilni tanlang - keraklilarni tanlang. Odatiy bo'lib, tizimingizda til taklif qilinadi.</li>
+                    <li>Kerakli satrlarni tanlang, -ni tanlang.</li>
+                    <li>Quyida biz kerakli katakchalarni "agar u mavjud bo'lsa," faqat tarjima qilingan chiziqlarni saqlash "ni qayd etamiz</li>
+                    <li>"Tarjima" elementini bosing</li>
+                    <li>Tarjima tugaganidan so'ng, biz yana uchta ochkodan o'ngga bosib, "Saqlash" elementini tanlang.</li>
+                    <li>Biz o'z loyihamizni (ariza) to'playmiz.</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> "Avtomatik tarjima" ichida "Tarjimani to'g'rilash" funktsiyasi mavjud. Bu nima uchun? </summary>
+            <div class="answer_text">
+                Tarjima qilishingiz shart bo'lmagan chiziqlarni o'tkazib yuborish uchun: <code>true, false, %1$d/%2$d</code>, Endi vektor grafikasi, havolalari va boshqalar, shuningdek avtomobil uzatilishidan keyin ozgina chiziqni to'g'rilaydi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Qo'lda dastur rejimida dasturga tarjima qilish kerak? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Belgilangan APKni ajratish.</li>
+                    <li>Dekomillangan fayllar bilan papkaga o'ting.</li>
+                    <li>Fayl menejeri menyusini oching (manzil liniyasini bosish bilan ochiladi) va "SMALI" elementini tanlang va kerakli satrlarni qo'lda boshqaradi.</li>
+                    <li>Yuqori o'ng tomonda uchta ochkoni bosing va "Saqlash" elementini tanlang</li>
+                    <li>Biz o'z loyihamizni (ariza) to'playmiz.</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Qanday qilib tillarning kombinatsiyasini amalga oshirish kerak, agar tarjima qilingan dasturning standart sathida kerakli bo'lmaganlar yo'q, lekin boshqalarda bormi? </summary>
+            <div class="answer_text">
+                Ilovaning zaruriy tarjimasidan so'ng, tarjimon menyusiga boramiz, "Qo'shish, qo'shish" ni tanlang va yo'qolgan chiziqlarni boshqa mahalliy joylardan qo'shing. Albatta, biz ularni kerak bo'lsa, tarjima qilamiz.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Apktool M-da qaysi dicals formatini qo'llab-quvvatlaydi? </summary>
+            <div class="answer_text">
+                *.amd и *.mtd
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Tarjima qilingan fayldan o'z lug'atingizni qanday yaratish kerak? </summary>
+            <div class="answer_text">
+                Tarjimonni oching, "Lug'atni yaratish" -ni tanlang, manba (tarjima qilinmagan chiziqlar) va Loyiha papkasida maqsad manbai (Tarjima faylingiz) ni tanlang, saqlang.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Konservalangan lug'atdan qanday foydalanish kerak? </summary>
+            <div class="answer_text">
+                Keyingi tarjimada u tarjima xizmatini tanlashda paydo bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Oflayn tarjima uchun tugatgan lug'atni qayerdan olish kerak? </summary>
+            <div class="answer_text">
+                Mavzu bo'yicha <a href="https://4pda.to/forum/index.php?showtopic=548542&amp;view=findpost&amp;p=29447386&amp;anchor=Spoil-29447386-6">MT Manager'а</a><br> Uni "Chiqish katalogi / lug'at" ga nusxalash (sukut bo'yicha "Ichki xotirada" APKTOL_M / Lug'at ", yoki shunchaki import qilish lug'at faylini bosish va qo'shish orqali shunchaki import qiling.<br> Shundan so'ng, lug'at tarjimonda, avtosug'urta xizmatlarida paydo bo'ladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> O'tkazmadan so'ng, loyihaga bormaydi. Xato beradi. </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Odatda respublikadagi xatolar jurnalida ko'rsatilgan haqiqiy chiziqlarni olib tashlang.</li>
+                    <li>Assambleyada, agar siz ATT2-da to'planmagan bo'lsangiz, AMTT2 va noto'g'ri tarjima chiziqlari haqida hech qanday xato yo'q.</li>
+                    <li>Ehtimol, dasturda imzolarni himoya qilish mavjud.</li>
+                </ol>
+            </div>
+        </details>
+    </section>
+    <section id="section_four">
+        <div class="section_title">
+            "Antisplit" Funktsiyasi
+        </div>
+        <details class="details_block">
+            <summary class="question_title"> Antisplit nima? </summary>
+            <div class="answer_text">
+                Bu Android App Bundle (split) ni bitta o'rnatish fayliga birlashtirish, shuningdek bunday fayllarni o'rnatish va chiqarib olish.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Apk splitlaridan qanday yig'ish mumkin? Ushbu parametr qayerda? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kontekst menyusida "Antisplit". Apks/xapk orqali qisqa bosish orqali chaqiriladi.</li>
+                    <li>"Antozmplit" kontekstida. Bu oldindan qilingan/tanlangan APK guruh tomonidan slip tufayli yuzaga keladi.</li>
+                </ol> Keyinchalik, kerakli kompilyatsiya vositasini tanlang: aapt2 yoki aapt, agar dastur birinchi bo'lib yig'ilmasa.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> O'rnatilgan bo'linishdan APKni yig'ish mumkinmi? </summary>
+            <div class="answer_text">
+                Ha.<br> Ilovalar ro'yxatida o'rnatilgan dasturni tanlang va "Antisplit"bandini uzoq vaqt bosib chaqiring.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Yig'ilgan fayl qayerda? </summary>
+            <div class="answer_text">
+                apk standart ish papkasida joylashgan: ichki xotira / Apktool_M.<br> <small><i>Qurilish oxirida "o'rnatish" tugmasi bo'ladi, lekin agar siz uni uzoq vaqt ushlab tursangiz, fayl papkasi ochiladi.</i></small>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> APKTOOL M yordamida Apks-ni Apk-ga qanday o'zgartirish bo'yicha bosqichma-bosqich ko'rsatmalar. </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Kerakli faylni (apk) tanlang va ustiga bosing.</li>
+                    <li>Keyin paydo bo'lgan menyudan "Antisplit" - ni tanlang.</li>
+                    <li>Keyin yana "Antozplit" tugmachasini bosing (avval barcha fayllar, ya'ni barcha belgilar yoqilganligiga ishonch hosil qiling).</li>
+                    <li>Shundan so'ng, kerakli vositani tanlang (aapt2 yoki aapt agar dastur kompilyatsiya qilinmasa) va "tanlash"tugmasini bosing.</li>
+                    <li>Butun jarayonni tugatishni kuting.</li>
+                </ol> Endi Sizning Apks Apk-ga aylandi va endi siz u bilan oddiy Apk fayli kabi ishlashingiz mumkin.
+            </div>
+        </details>
+    </section>
+    <section id="section_five">
+        <div class="section_title">
+            Foydalanuvchi imzosini yaratish
+        </div>
+        <details class="details_block">
+            <summary class="question_title"> Imzoni qanday yaratish kerak? </summary>
+            <div class="answer_text">
+                <p>"Sozlamalar" → "Imzo" ga o'ting, "Kalit yaratish" -ni tanlang.</p>
+                <li><small><i>Imzo sozlamalarida siz RSA/SF fayllarini, shuningdek v1 imzolanishi uchun yaratuvchining ismi bo'lishi mumkin</i></small></li><br> Menyu ochilgan, satrlarni to'ldiring:
+                <p><u>Imzo Algoritm:</u><br> Sertifikat davomiyligidagi farq (apk imzosi keyin). Eng maqbul - bu sha256witrsa. Biz odatiylikni qoldiramiz. MD5 xavfli hisoblanadi. Batafsil farqlarni Internetda topish mumkin.</p>
+                <p><u>Tur:</u><br> Saqlash turini bildiradi. Odatiy JKlar tomonidan (shuningdek, deb nomlanishi mumkin. Batafsil farqlarni Internetda topish mumkin.</p>
+                <p><u>Kalitga yo'l:</u><br> Kalit uchun ish haqining chiqishi. Fayl nomi avtomatik ravishda almashtiriladi, agar xohlasangiz, siz o'zgartirishingiz mumkin.</p>
+                <p><u>Taxallus:</u><br> Kalit uchun taxallus. Bu import qilish / operatsiya paytida ko'rsatilgan.</p>
+                <p><u>Parolni saqlash va kalit:</u><br> Import/foydalanishdan oldin saqlash va kalitning o'zini himoya qilish uchun parol. Qulaylik uchun siz uni bir xil qilishingiz mumkin.</p>
+                <p><u>Asosiy o'lcham:</u><br> Uni o'qish uchun asosiy imzoni (uzunligi) sonini aniqlaydi. Odatiy bo'lib, 2048. O'lchamining ko'payishi uning kripto qarshiligini oshiradi, ammo uni tahlil qilish qiyinroq. U ma'lumotli geometrik rivojlanish bo'yicha (2, 4, 8, 16, 64, 64, 128, 256, 512, 2048, 2048, 4098, va boshqalar)</p>
+                <p><u>Xarajat:</u><br> Kalitning haqiqiyligi muddati tugagan vaqtdan boshlab vaqt tugaydi. Bu yillar davomida ko'rsatilgan.</p>
+                <p><u>Imzo egasiga xabar berish uchun quyidagi ma'lumotlar kerak. Istakni ko'rsating:</u><br> Ism, lavozim, tashkilot, shahar, mintaqa / Davlat, mamlakat.</p>
+                <p>"Saqlash" tugmasi yaratishni tugatadi va oldindan ko'rsatilgan yo'ldagi kalitni saqlash joylarini joylashtiradi.</p>
+                <p>"Yaratish va foydalanish" tugmasi yakuniy faylni foydalanuvchi imzosi saytiga olib chiqadi.</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> PK8 + X509.PEM-da JKS / tugmachani saqlashni o'zgartirish mumkinmi? </summary>
+            <div class="answer_text">
+                Ha, bu mumkin.
+            </div>
+        </details>
+    </section>
+    <section id="section_six">
+        <div class="section_title">
+            Fayl menejeri
+        </div>
+        <details class="details_block">
+            <summary class="question_title"> Apktoolda to'liq fayl menejeri bormi? </summary>
+            <div class="answer_text">
+                Ha.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Fayl menyusidagi menyusiga qanday borish kerak? </summary>
+            <div class="answer_text">
+                Menyu manzil qatorida bosish bilan menyu ochiladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Undagi funktsiyalar qanday? </summary>
+            <div class="answer_text">
+                <li>Faylni o'chirish;</li>
+                <li>Nusxa ko'chirish;</li>
+                <li>to'pni qayta nomlash, shu jumladan paket;</li>
+                <li>Fayllar ro'yxatini yaratish;</li>
+                <li>arxivlash;</li>
+                <li>Fayllar va jildlarning xususiyatlari;</li>
+                <li>To'liq qidirish;</li>
+                <li>Xatcho'plar;</li>
+                <li>So'nggi ochiq fayllarning tarixi;</li>
+                <li>Qishloq xo'jaligi / APKS fayllarining xossasi alohida mavzu;</li>
+                <li>Vektor XML / SVGning natijasi, shuningdek tasvirlarni vektorga aylantirish;</li>
+                <li>TTF / OTF shriftlarini ishlab chiqarish;</li>
+                <li>APK yoki Rasmlar bilan paketli operatsiyalar, uzoq muddatli matbuotda;</li>
+                <li>Loyiha papkalarida, resurs fayllarining xususiyatlarida, ularning identifikatorlari mavjud.xml (agar mavjud bo'lsa).</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Fayllarni ko'rishda yakuniy menyuni qanday qo'ng'iroq qilish kerak? </summary>
+            <div class="answer_text">
+                Faylning o'zida uzun kran bilan.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Kontekst menyusida qaysi nuqtalar mavjud? </summary>
+            <div class="answer_text">
+                <li>Muvaffaqiyatsiz (lar) ni yuboring ...</li>
+                <li>Ochish...</li>
+                <li>O'chirmoq.</li>
+                <li>Nomini o'zgartirish.</li>
+                <li>Siqish.</li>
+                <li>Bu erda ekstrakti.</li>
+                <li>"Fayl nomi" ga olib tashlang</li>
+                <li>Tarkibni ko'rish.</li>
+                <li>Xususiyatlar.</li>
+                <li>Nusxa ko'chirmoq.</li>
+                <li>Kesmoq.</li>
+                <li>MPatcher.</li>
+                <li>Tanlang.</li>
+                <li>Hamma narsani tanlang.</li>
+                <li>Ismni nusxalash.</li>
+                <li>Yo'lni nusxalash.</li>
+                <li>Xatcho'plarga qo'shing.</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Fayl / papkani qanday tanlash kerak? </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Fayl / papkani yoki belgi ustiga uzun bosing.</li>
+                    <li>Fayl / papkani ta'kidlaganingizdan so'ng, ikonkani bosing, siz boshqa faylning belgisini uzun bosib, "va dan" fayllarini tanlang.</li>
+                    <li>"Orqaga" ("orqaga") belgisini uzoq bosib, hamma narsani tezda tanlashingiz mumkin..)</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Fayllarning nomini qanday o'zgartirish mumkin? </summary>
+            <div class="answer_text">
+                Faylni uzoq bosib, nomini o'zgartirish dialog oynasi paydo bo'ladi.<br> Xuddi shu dialog oynasida, "avtomatik" tugmachasini uzoq bosib, shablonlardan foydalanib, avtomatik rejimda nomini o'zgartirish mumkin.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Faylni tashqi muharrir tomonidan to'g'ridan-to'g'ri ilovadan qanday tahrirlash mumkin? </summary>
+            <div class="answer_text">
+                Faylni uzoq bosing → qalqib chiquvchi conmatn menyusida "ochish" - ni tanlang...
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Fayllar arxivini qanday yaratish kerak? </summary>
+            <div class="answer_text">
+                Kontaman menyusida "siqish" elementini tanlang. Fayllarni arxivlashda ular mavjud arxivga qo'shilishi mumkin.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Arxivlarda (shu jumladan apk-da) fayllarni/papkalarni demontaj qilmasdan/yig'masdan o'chirish yoki almashtirish mumkinmi? </summary>
+            <div class="answer_text">
+                Ha.<br>
+                <ol>
+                    <li>Arxivga uzoq teginish/.apk va ochilgan Menyuda "tarkibni ko'rish" - ni tanlang.</li>
+                    <li>Olib tashlash yoki chiqarib olish uchun kerakli tegni ajrating.</li>
+                </ol> Kerakli manipulyatsiya qilingandan so'ng, fayl avtomatik ravishda orqaga chekinadi va imzolanadi.<br> Asl nusxa .Bu kengaytma yonida saqlanadi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Belgilangan APKda allaqachon tahrirlangan fayl yoki papkani almashtirish mumkinmi? </summary>
+            <div class="answer_text">
+                O'ng tomonda va Conmatn menyusida uzun tertiper va ConMatn menyusida "Ajratish" -ni tanlang ...<br> Agar xohlasangiz, rasmni yuqori darajadagi papkada almashtirishni istasangiz, siz APK ROS papkasida almashtirish bilan almashtirishingiz kerak, unda rasmni yoqilganda.<br>
+                <p><span class="warning_text">Ular. Kataloglar tarkibini yuritish juda muhim!</span></p> Kerakli harakatlardan so'ng, faylni apk kengaytmasi bilan arxivlang.<br> Imzo qo'yish.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Apktool M-da to'liq qidiruv bormi? </summary>
+            <div class="answer_text">
+                Ha.<br> Fayllar, fayllar, fayllarni qidirish, fayllardagi matnni va o'rnatilgan ilovalarda.<br> Manzilning qo'lda yozuvi uzoq bosib keyin manzilga kiritiladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Arizada muntazam ravishda qidiruvlar mavjudmi? </summary>
+            <div class="answer_text">
+                Ha.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Qidiruvdan qanday boshlash kerak? </summary>
+            <div class="answer_text">
+                Manzilni bosing va manzilni bosing.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Men papkalarda qidiruvni topmadim. Faqat faylda. </summary>
+            <div class="answer_text">
+                Papkani yopishmasligi kerak, lekin qidiruvda qidiruvlar bo'lgan papkaga borish kerak, so'ngra "O'q / faylga yoki papka / faylga yo'nalishda" ni bosing va qidirish menyusi chiqariladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Barcha qidiruv natijalari va ularni qanday topish mumkin? </summary>
+            <div class="answer_text">
+                Ha. Qidiruv tarixi saqlanadi.<br> Ishlovchilar menyusida element paydo bo'ladi (yuqoridan tepada bosing) yoki agar u xuddi shu joyda kiritilgan bo'lsa, quyida keltirilgan paneldagi qidiruv belgisini bosing.<br> Shuningdek, qidiruv natijalarini izlash mumkin.<br> Agar ular hech narsa qidirmagan bo'lsalar, bu nuqta emas.
+            </div>
+        </details>
+    </section>
+    <section id="section_seven">
+        <div class="section_title">
+            Har xil
+        </div>
+        <details class="details_block">
+            <summary class="question_title"> Apktoolda klonlash funktsiyasi bormi? </summary>
+            <div class="answer_text">
+                Ha.<br> Buning uchun arizaning to'liq dekompansiyasini talab qiladi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Siz arizani yana qanday klon olasiz? </summary>
+            <div class="answer_text">
+                MPatcher dasturida yamoqdan foydalaning.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Qanday qilib keraksiz tillarni qo'llashdan, ulardan tashqari ingliz tilidan tashqari </summary>
+            <div class="answer_text">
+                Kontekst menyusida "OptiMeate (AraR2) ni tanlang.<br>Ushbu mahsulotning sozlamalarida biz "konfiguratsiyani sozlash" ni belgilash va qoldirilishi kerak bo'lgan tilni belgilaymiz, bu holda "RU, RU--rru".
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Rossiya, Ukraina va ingliz tilidan tashqari barcha tillarni qanday olib tashlash mumkin? </summary>
+            <div class="answer_text">
+                Barcha tillarni olib tashlash bilan taqqoslash orqali, rus va ingliz tilidan tashqari.<br>"Konfiguratsiyani o'rnating" punktida, masalan, "RU, Ru-RRU, Buyuk Britaniya, Ru-Rua, Buyuk Britaniya", deb aytadigan tillarni belgilaymiz.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> O'rnatilgan dasturlarning ro'yxatini qanday ko'rishingiz mumkin? </summary>
+            <div class="answer_text">
+                Yuqori o'ng tomonda - "Ilova" yorlig'i.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Arizada butun manifestni qanday tahrirlash kerak? </summary>
+            <div class="answer_text">
+                Manifest resurslar parchalanishida tahrirlangan.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> O'rnatilgan qiymatlar konvertori bormi? </summary>
+            <div class="answer_text">
+                <p>Ha.</p>
+                <details class="details_block">
+                    <summary class="question_title"> U erga qanday borish kerak? </summary>
+                    <div class="answer_text">
+                        Asosiy ekran → Yuqori o'ng burchakda → konverter.
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title"> Qanday qadriyatlar qo'llab-quvvatlanadi? </summary>
+                    <div class="answer_text">
+                        <li>Matn ↔ SHA-384</li>
+                        <li>Matn ↔ SHA-224</li>
+                        <li>Matn ↔ SHA-256</li>
+                        <li>Matn ↔ SHA-512</li>
+                        <li>Matn ↔ SHA-1</li>
+                        <li>Matn ↔ MD5</li>
+                        <li>Matn ↔ URL kodlash</li>
+                        <li>Matn ↔ Unicode</li>
+                        <li>Matn ↔ Base64</li>
+                        <li>Matn ↔ Massiv (US-ASCII)</li>
+                        <li>Matn ↔ Massiv (UTF-16LE)</li>
+                        <li>Matn ↔ Massiv (UTF-16BE)</li>
+                        <li>Matn ↔ Massiv (UTF-8)</li>
+                        <li>Matn ↔ Massiv (CP1251)</li>
+                        <li>Matn ↔ Massiv (ISO-8859-1)</li>
+                        <li>Decimal ↔ Octal</li>
+                        <li>Decimal ↔ Binary</li>
+                        <li>Rang ↔ Smali</li>
+                        <li>Decimal ↔ Hex (0x0)</li>
+                        <li>Decimal ↔ Hex (0x00000000)</li>
+                        <li>Decimal ↔ Hex</li>
+                        <li>Float ↔ Binary</li>
+                        <li>Float ↔ Octal</li>
+                        <li>Float ↔ Hex</li>
+                        <li>Float ↔ Hex (0x0)</li>
+                        <li>Float ↔ Hex (0x00000000)</li>
+                        <p><u>Diqqat qilish!</u></p> To'xtatuvchanlik bilan barcha shifrlashlar o'zgartirilishi mumkin. Bu pastki kirish oynasida amalga oshiriladi.
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Apktool M ni qanday yangilash kerak? </summary>
+            <div class="answer_text">
+                Asosiy ekran → Yuqori o'ng burchakda → "Sozlamalar" → "Dasturni tekshirish" elementini kiritish uchun "Dasturni yangilash".<br> Quyida siz "Yangilash chastotasini" tanlashingiz mumkin.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Yangilanishni qanday yuklab olish mumkin?</summary>
+            <div class="answer_text">
+                APKTool M undan, brauzer orqali yuklanadi.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Yangilanish fayli qayerda saqlangan?</summary>
+            <div class="answer_text">
+                "Yuklab olish" jildidagi ichki xotirada.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Yangilanishlarni tekshirishni o'chirib qo'yish mumkinmi? </summary>
+            <div class="answer_text">
+                Ha, qila olasiz.
+                <p>Asosiy ekran → Yuqori o'ng burchakda → "Sozlamalar" → "→" Uyushma tekshirishni o'chirib qo'yish "ni bosing.</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Qanday qilib zaxira nusxadan xalos bo'ladi? Mening buyumim tiklanish uchun faol emas ...</summary>
+            <div class="answer_text">
+                Tuzalish uchun avval omon qolishingiz kerak.<br> Zaxira fayli yo'lda bo'lishi kerak:"/ichki xotira / Apktool_M.backup", agar u bo'lmasa, element faol emas.
+            </div>
+        </details>
+    </section>
+    <section id="section_eight">
+        <div class="section_title">
+            MPatcher
+        </div>
+        <details class="details_block">
+            <summary class="question_title"> MPatcher nima? </summary>
+            <div class="answer_text">
+                Bu apktool M ga o'rnatilgan qobiqda yozilgan skriptlar va yamoqlarni ishga tushirish, yaratish, olib kirish, olib chiqish, olib chiqish, eksport qilish, eksport qilish, eksport qilish uchun ariza.
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> Forumda alohida mavzu bormi? </summary>
+            <div class="answer_text">
+                Ha: <a href="https://4pda.to/forum/index.php?showtopic=1018077">MPatcher</a>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title"> MPatcherni qanday qo'ng'iroq qilish kerak? </summary>
+            <div class="answer_text">
+                Fayldagi uzun tipper va kontekst menyusi ochildi, "MPatcher" elementini tanlang.<br> Bu maqsad apkni ko'rsatadi.
+                <p>Maqsad loyihasini tanlash uchun - yuqoridagi "Majburot" mavjud, u erda MPatcher element mavjud.</p>
+            </div>
+        </details>
+    </section>
+    <script type="text/javascript">
+        (function(){window.location.search.substring(1).split("&").forEach(function(a){a=a.split("=");"theme"==a[0]&&document.body.setAttribute("class",a[1])});})();
+    </script>
+</body>
+
+</html>
