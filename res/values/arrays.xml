@@ -693,6 +693,7 @@
 		<item>Bahasa Indonesia</item>
 		<item>עברית</item>
 		<item>Magyar</item>
+        <item>O\'zbek tili</item>
 	</string-array>
 	<string-array name="values_lang">
 		<item>ru</item>
@@ -720,6 +721,7 @@
 		<item>in</item>
 		<item>he</item>
 		<item>hu</item>
+        <item>uz</item>
 	</string-array>
 	<string-array name="date_variants">
 		<item>yyyy/MM/dd HH:mm</item>
