@@ -944,4 +944,12 @@
     <string name="mtr_deepl_key_warn">对 DeepL API 的密钥请求数量已用尽！</string>
     <string name="mtr_deepl_key">DeepL 的 API 密钥</string>
     <string name="mtr_deepl_key_info">如果您有 API 密钥，则可以使用它。该程序将通过官方 API 访问 DeepL 服务器。</string>
+    <string name="kill_sign_ex_app">Hook 类名称</string>
+    <string name="kill_sign_ex_lib">Hook so 库的名称</string>
+    <string name="kill_sign_ex_inject">apk 中的原始名称</string>
+    <string name="kill_sign_ex_extract">提取时的原始路径</string>
+    <string name="kill_sign_ex_mode">高级模式</string>
+    <string name="kill_sign_old_mode">正常模式</string>
+    <string name="mtr_check_source">检查是否符合源语言</string>
+    <string name="mtr_check_source_info">如果选择了特定的源语言，程序将尝试检查字符串是否符合该语言。其他语言的字符串将不会被翻译。</string>
 </resources>
