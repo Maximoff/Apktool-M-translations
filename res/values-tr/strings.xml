@@ -89,6 +89,14 @@
 	<string name="dex_decompile_info">Bu seçenek apk\'nın kökünde bulunan tüm dex dosyalarını derler, ancak alt klasörlerdeki dex dosyalarına dokunmaz.</string>
 	<string name="dex_decompile_info2">Bu seçenek, hem kök klasörde hem de alt klasörlerde bulunan tüm dex dosyalarını apk\'ya dönüştürür.</string>
 	<string name="delete_orig">Orijinali sil</string>
+	<string name="compare_apk">İçeriği karşılaştır</string>
+	<string name="compare_apk_mod">Değiştirilmiş dosyalar</string>
+	<string name="compare_apk_unmod">Değiştirilmemiş dosyalar</string>
+	<string name="compare_apk_add">Eklenen dosyalar</string>
+	<string name="compare_apk_del">Silinen dosyalar</string>
+	<string name="compare_apk_mov">Taşınan dosyalar</string>
+	<string name="compare_apk_mess">\"%1$s\" içeriğini \"%2$s\" içeriğiyle karşılaştır</string>
+	<string name="only_diff">Sadece farklılıklar</string>
 	<string name="split_dex">Bölünmüş dex</string>
 	<string name="split_dex_label">Böl:</string>
 	<string name="split_dex_cnd">Dex sayısı:</string>
@@ -122,6 +130,12 @@
 	<string name="kill_sign_exists">Kanca zaten eklendi</string>
 	<string name="kill_sign_by_orig">Belirtilen orijinalden imza al</string>
 	<string name="kill_sign_notice">Bu fonksiyonla işlenen bir uygulama Android 5\'ten düşük sürümlerde çalışamayacaktır!</string>
+	<string name="kill_sign_ex_app">Kanca sınıf adı</string>
+	<string name="kill_sign_ex_lib">Kanca so kütüphanesinin adı</string>
+	<string name="kill_sign_ex_inject">Orijinalin içindeki apk\'nın adı</string>
+	<string name="kill_sign_ex_extract">Çıkarma sırasında orijinalin yolu</string>
+	<string name="kill_sign_ex_mode">Gelişmiş mod</string>
+	<string name="kill_sign_old_mode">Normal mod</string>
 	<string name="compare_text">Metni karşılaştır</string>
 	<string name="diff_resources">Kaynakları karşılaştırın (aapt2)</string>
 	<string name="diff_resources2">Kaynakları karşılaştırın \"%2$s\" kaynaklarla \"%1$s\"</string>
@@ -629,7 +643,7 @@
 	<string name="date">Geçerlilik süresi:</string>
 	<string name="vdate_info">Geçerlilik süresi YIL cinsinden olmalıdır!</string>
 	<string name="common_name">Adı:</string>
-	<string name="organization_unit">Organizasyon birimi@</string>
+	<string name="organization_unit">Organizasyon birimi:</string>
 	<string name="organization_name">Organizasyon:</string>
 	<string name="locality_name">Şehir:</string>
 	<string name="state_name">Bölge/eyalet:</string>
@@ -767,6 +781,8 @@
 	<string name="hl_time_summary">Geriye giderken klasör vurgulama süresi, milisaniye cinsinden</string>
 	<string name="user_cache">Önbellek klasörü seçme</string>
 	<string name="user_cache_summary">Geçici dosyalar klasörü için depolama alanını seçin</string>
+	<string name="snowfall">Kar yağışını etkinleştir</string>
+	<string name="snowfall_summary">Yeni Yıl tatil programında kar yağışı</string>
 	<string name="shell_cmd">Kabuk komutu</string>
 	<string name="shell_cmd_summary">Kabuk betiklerini çalıştırmak için bir kabuk</string>
 	<string name="shell_cmd_root">Kök komutu</string>
@@ -899,6 +915,8 @@
 	<string name="mtr_trans_xml">xml\'i çevir</string>
 	<string name="mtr_no_trans">Dizenin çevrilmesine gerek yok!</string>
 	<string name="mtr_first_notrans">İlk başta çevrilmedi</string>
+	<string name="mtr_check_source">Kaynak dil ile uyumluluğu kontrol et</string>
+	<string name="mtr_check_source_info">Belirli bir kaynak dil seçilirse, program dizelerin o dille uyumluluğunu kontrol etmeye çalışacaktır. Diğer dillerdeki dizeler çevrilmeyecektir.</string>
 	<string name="attention">Dikkat!</string>
 	<string name="repeat">Tekrarla</string>
 	<string name="down_for">%s için indir</string>
