@@ -132,6 +132,12 @@
 	<string name="kill_sign_exists">Pengait sudah ditambahkan</string>
 	<string name="kill_sign_by_orig">Mengambil tanda tangan dari dokumen asli yang telah ditentukan</string>
 	<string name="kill_sign_notice">Aplikasi yang diproses oleh fungsi ini tidak akan dapat bekerja pada versi Android yang lebih rendah dari 5!</string>
+	<string name="kill_sign_ex_app">Nama class pengait</string>
+	<string name="kill_sign_ex_lib">Nama pengait jadi perpustakaan</string>
+	<string name="kill_sign_ex_inject">Nama asli di dalam apk</string>
+	<string name="kill_sign_ex_extract">Jalur asli saat mengekstrak</string>
+	<string name="kill_sign_ex_mode">Mode lanjutan</string>
+	<string name="kill_sign_old_mode">Mode normal</string>
 	<string name="compare_text">Bandingkan teks</string>
 	<string name="diff_resources">Bandingkan sumber (aapt2)</string>
 	<string name="diff_resources2">Bandingkan sumber \"%2$s\" dengan sumber \"%1$s\"</string>
@@ -911,6 +917,8 @@
 	<string name="mtr_trans_xml">Terjemahkan xml</string>
 	<string name="mtr_no_trans">String tidak perlu diterjemahkan!</string>
 	<string name="mtr_first_notrans">Tidak diterjemahkan pada awalnya</string>
+	<string name="mtr_check_source">Periksa kecocokan dengan bahasa sumber</string>
+	<string name="mtr_check_source_info">Jika bahasa sumber tertentu dipilih, program akan mencoba memeriksa kecocokan string dengan bahasa tersebut. String dalam bahasa lain tidak akan diterjemahkan.</string>
 	<string name="attention">Perhatian!</string>
 	<string name="repeat">Ulangi</string>
 	<string name="down_for">Unduh untuk %s</string>
@@ -925,7 +933,7 @@
 	<string name="mpatcher_run">Jalankan MPatcher</string>
 	<string name="mpatcher_down_summary">MPatcher — program untuk menjalankan skrip shell</string>
 	<string name="telegram">Telegram</string>
-	<string name="telegram_summary">Perbarui melalui saluran Telegram</string>
+	<string name="telegram_summary">Pembaruan lewat saluran Telegram</string>
 	<string name="report_descr">Jelaskan secara singkat tindakan yang Anda lakukan setelah kesalahan terjadi</string>
 	<string name="optimize_battery">Optimalkan kinerja baterai</string>
 	<string name="optimization_notice">Agar program dapat bekerja di latar belakang (saat diminimalkan), disarankan untuk menambahkannya ke pengecualian pengoptimal sistem. Aplikasi hanya akan berjalan di latar belakang jika Anda menjalankannya sendiri!</string>
