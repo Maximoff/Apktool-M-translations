@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="smali_help_names">
+		<item>Ro\'yxatga olmoq</item>
+		<item>Tom ma\'noda qiymat</item>
+		<item>O\'qituvchi ma\'lumotlar turlari</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>V0 - V15 qiymatidagi 4 bitli registratsiyani tashkil etadi\nVAA - V0 - V255 qiymatlari bilan 8 bitli registratsiya\nVAAAA - V0 - V65535 qiymatlari bilan 16 bitli registratsiyadir</item>
+		<item>0xf, 0xFF va boshqalar ishlatiladi. tom ma\'nodagi qiymatlarni ifodalash. Fanlar ro\'yxatida F-ning soni bir qator qiymatlarni ifodalash uchun ishlatiladi, masalan:\n0XF qiymatlari oralig\'ida [-0x8, 0x7]\n0XFF qiymatlari oralig\'i [-0x80, 0x7F]</item>
+		<item>V - bo\'sh, z - Boolean, b - bayt\nC - char, s - qisqa, i - int\nJ - uzun, f - suzuvchi, d dubl\nbo\'shliq: faqat daromad turlari uchun ishlatilishi mumkin\nBoolean: haqiqiy yoki yolg\'on qiymatni saqlaydi\nbayt: 128 dan 127 gacha butun sonni saqlaydi va 1 baytni egallaydi\nQisqa: -32768 dan 32767 gacha butun sonni saqlaydi va 2 baytni oladi\nint: -21474836448-dan 2147483647 gacha bo\'lgan butun sonni saqlaydi va 4 baytni egallaydi\nUzoq: -922337203685775808 dan 92233720368558807 va 8 baytni egallab olish\nIkki juft: ± 4.9 * 10 l³²⁴ dan ± 1.9 * 1048623157 * 10³⁰⁸ va 8 baytni egallaydi. Nuqta kassali timsollarda o\'nlik ajratuvchi sifatida ishlatiladi.\nsuzish: suzuvchi nuqta raqamini -3.4 * 10 dan 3,4 funtgacha saqlaydi va 4 baytni egallaydi\nChar: UTF-16 kodlashida bitta belgi o\'rnatadi va 2 baytni egallaydi, shuning uchun saqlangan qiymatlar oralig\'i 0 dan 65535 gacha.</item>
+		<item>Hech qanday chora yo\'q.</item>
+		<item>Ro\'yxatdan o\'tish uchun Ro\'yxatdan o\'tgan VB qiymatini siljitadi.</item>
+		<item>VAA ro\'yxatiga VBBBB Ro\'yxatdan o\'tish.</item>
+		<item>VAAAA ro\'yxatiga VBBBB Ro\'yxatdan o\'tishni amalga oshiradi.</item>
+		<item>Ro\'yxatdan o\'tish juftligi (VB, VB + 1) ning uzoq / ikki tomonlama qiymatini, va + 1-juftligini ro\'yxatdan o\'tkazish uchun harakat qiladi.</item>
+		<item>Ro\'yxatdan o\'tish juftligi (VBBBB, VBBBB + 1) ning uzoq / ikki tomonlama qiymatini registr, vaA + 1 ga o\'tadi.</item>
+		<item>Ro\'yxatdan o\'tish juftligining uzoq / ikki tomonlama qiymatini (VBBBB, VBBBB + 1) registr, vaaa + 1 ga o\'tadi.</item>
+		<item>VB Reyestr uchun VB ro\'yxatdan o\'tish joyidan ob\'ekt havolasini harakatlantiradi.</item>
+		<item>VAA ro\'yxatiga Ob\'ekt havolasini VAA ro\'yxatiga kiritish.</item>
+		<item>VAAAA ro\'yxatdan o\'tishi uchun VBBBBB ro\'yxatdan o\'tishning ob\'ekt havolasini harakatlantiradi.</item>
+		<item>Ilgari chaqirilgan usulning vaA-ga qaytish qiymatini VAA Reyestrga o\'tadi.</item>
+		<item>Ilgari chaqirilgan usul tomonidan qayta ro\'yxatdan o\'tgan va Ro\'yxatdan o\'tgan VAA + 1 ga qaytariladi.</item>
+		<item>Ob\'ekt ma\'lumotnomasini oldindan chaqirilgan usul tomonidan VAA ro\'yxatiga qaytarilgan.</item>
+		<item>VAA reestriga qo\'ng\'iroq paytida berilgan istisno qilingan ob\'ektga murojaat qiladi (ijro etish paytida).</item>
+		<item>Qaytish qiymatisiz qaytish.</item>
+		<item>VAA reestridan qiymatni qaytarish orqali qaytish.</item>
+		<item>VAA, VAA + 1 raqamiga ikki marta / uzoq qiymatni qaytarish orqali qaytish.</item>
+		<item>VAA Reyestr-dan ob\'ekt ma\'lumotnomasi qiymatini qaytarish orqali qaytish.</item>
+		<item>VA Reyestrga 4 bitli doimiy ishlaydi.</item>
+		<item>VAA reestriga 16 ta doimiy doimiy ravishda joylashadi.</item>
+		<item>VAA reestriga doimiy keladigan butun sonni joylashtiradi.</item>
+		<item>16 bitli doimiy VAA reestrining yuqori chetiga joylashadi. Suzish (suzuvchi nuqtasi) qiymatlarini ishga tushirish uchun ishlatiladi.</item>
+		<item>16-bitli butun sonni registratura juftligiga va butun butun sonni uzoq davom ettirish uchun butun sonni o\'zgartirib, registratsiya juftligini o\'zgartiradi.</item>
+		<item>32-bitli butun sonni ro\'yxatga olish juftligini va butun sonni uzoq davom ettirish uchun butun sonni o\'zgartiradi.</item>
+		<item>64-bitli doimiy ravishda Registratsiya juftligiga VAA, VAA + 1-da joylashtiradi.</item>
+		<item>16-bitli doimiy ravishda 16-sonli eng yaxshi 16-bitxonada VAA, VAA + 1. Ikkita (suzuvchi nuqta) qiymatini ishga tushirish uchun ishlatiladi.</item>
+		<item>VAA reestridagi belgilangan satrga havola qiladi.</item>
+		<item>VAA reestridagi belgilangan satrga havola qiladi.</item>
+		<item>VAA ro\'yxatdan o\'tishi bilan aniqlangan tor doiradagi doimiy (satr) tor stress (satr).</item>
+		<item>VAA Reyestrion tomonidan boshqariladigan ob\'ekt monitorini oladi.</item>
+		<item>VAA ro\'yxatdan o\'tgan ob\'ektni tasdiqlaydi.</item>
+		<item>VAA ro\'yxatida mavjud bo\'lgan ob\'ekt havolasi tip_id tomonidan belgilangan sinfga tashlanishi mumkinligini tekshiradi. Agar buni qila olmasa, klasseshitscception tashlaydi, aks holda bajarishni davom ettiradi.</item>
+		<item>VB Registratsiyasining tarkibi tip_id tomonidan belgilangan sinf namunasidirmi yoki yo\'qligini tekshiradi. Agar yo\'q bo\'lsa, 0 bo\'lmasa, 0-noldan kam bo\'lmagan.\nva = vb misol turi? 10</item>
+		<item>VB registraturasidan qator elementlar sonini belgilaydi va VA Reyestrdagi qiymatni joylashtiradi.\nva = vb.length</item>
+		<item>Ob\'ekt turi misolini keltirib chiqaradi va VAA reestrida yaratilgan misolga havola qiladi.</item>
+		<item>VB elementlari va Rate-da Rate-da massivlash uchun massivlar qatoriga qarab yangi ty_ID o\'zgaruvchini yaratadi.</item>
+		<item>Ty_ID tipidagi yangi ma\'lumotlar qatorini yaratadi va parametrlar bilan to\'ldiradi (ya\'ni uzoq / juft massivlar, masalan, ma\'lumot turlariga ruxsat beriladi). Yangi yaratilgan massivlarga havola, ushbu bayonotdan keyin darhol (agar ishlatilishi kerak bo\'lsa)-darhol yaratilgan ob\'ekt bayonotidan foydalangan holda olinishi mumkin.</item>
+		<item>Turli tipidagi yangi ma\'lumotlar qatorini yaratadi va uni bir qator parametrlar bilan to\'ldiradi (ya\'ni uzun / ikki tomonlama massivlar, ammo ma\'lumot turlari qabul qilinmaydi). Yangi yaratilgan massivlarga havola, ushbu bayonotdan keyin darhol (agar ishlatilishi kerak bo\'lsa)-darhol yaratilgan ob\'ekt bayonotidan foydalangan holda olinishi mumkin.</item>
+		<item>VAA ro\'yxatdan o\'tishidagi massistlar ro\'yxatini statik ma\'lumotlar bilan to\'ldiradi. Ma\'lumot joylashuvi ushbu qo\'llanma va ofsetning pozitsiyasining yig\'indisidir.</item>
+		<item>Istisno ob\'ektni tashlaydi. VAA reestridagi istisno ob\'ektga havola.</item>
+		<item>Qisqacha (butun son) 8-bitli ofsetga so\'zsiz sakrash.</item>
+		<item>Shartsiz 16 bitli ofitsetga sakrash.</item>
+		<item>Shartsiz 32 bitli ofitsetga sakrab o\'ting.</item>
+		<item>Boshqaruv oppozini boshqaruvchi doimiylar bir-biriga yaqinlashganda (ketma-ket). Yo\'l-yo\'riqlar indeks jadvalidan foydalanadi. Muayyan holat uchun ko\'rsatma va VAA indeksi tomonidan belgilanadi. Agar VAA indeksi jadvaldan tashqarida bo\'lsa, qatl keyingi bayonot bilan davom etmoqda (standart).</item>
+		<item>Sparks stoli bo\'lsa, kommutator operatorini amalga oshiradi. Yo\'l-yo\'riq har bir doimiy uchun offsetlarni belgilaydigan jadvaldan foydalanadi. Agar jadvalda hech qanday moslik topilmasa, keyingi bayonot (standart holat).</item>
+		<item>VBB va VCC-dagi suzuvchi (suzuvchi nuqta) va VAA ro\'yxatida butun sonni joylashtirishni joylashtirmoqda:\nVaa = VCB &lt;VCC? Ha: 1, yo\'q: -1, teng: 0</item>
+		<item>VBB va VCC-dagi suzuvchi (suzuvchi nuqta) va VAA ro\'yxatida butun sonni joylashtirishni joylashtirmoqda:\nVaa = VCB &lt;VCC? Ha: 1, yo\'q: -1, teng: 0</item>
+		<item>VBB va VCC-da ikki juft (suzuvchi nuqta) qiymatlarini taqqoslaydi va VAA ro\'yxatidagi butun sonni joylashtiradi:\nVaa = (VBB, VCB + 1) &lt;(VCC, VCC + 1)? shilmoq\nHa: 1, yo\'q: -1, teng: 0</item>
+		<item>VBB va VCC-da ikki juft (suzuvchi nuqta) qiymatlarini taqqoslaydi va VAA ro\'yxatidagi butun sonni joylashtiradi:\nVaa = (VBB, VBB + 1)> (VCC, VCC + 1)? Ha: 1, yo\'q: -1, teng: 0</item>
+		<item>VAA ro\'yxatida VBB va VCC-da uzoq vaqt (butun son) qiymatlarini taqqoslaydi va VAA ro\'yxatida butun son (butun son) qiymatini joylashtiradi:\nVaa = (VBB, VBB + 1)> (VCC, VCC + 1)? Ha: 1, yo\'q: -1, teng: 0</item>
+		<item>Agar va v\'== VB bo\'lsa, belgilangan yorliqqa sakrab chiqadi. va VB butun sonlarni o\'z ichiga oladi.\n(EQ teng eksa uchun qisqa)</item>
+		<item>Agar va VA! = VB bo\'lsa, belgilangan yorliqqa sakrab chiqadi. va VB butun sonlarni o\'z ichiga oladi.\n(SH bir teng emas)</item>
+		<item>Agar va &lt;vb bo\'lsa, belgilangan yorliqqa sakrab chiqadi. va VB butun sonlarni o\'z ichiga oladi.\n(lt kamroq uchun qisqa)</item>
+		<item>Agar VA &lt;= vb bo\'lsa, belgilangan yorliqqa sakrab chiqadi. va VB butun sonlarni o\'z ichiga oladi.\n(Le - bu teng yoki undan kam yoki teng yoki teng) uchun qisqartma</item>
+		<item>Agar VA> VA bo\'lsa, belgilangan yorliqqa sakrab chiqadi. va VB butun sonlarni o\'z ichiga oladi.\n(gt dan ko\'proq / ko\'proq)</item>
+		<item>Agar va> = vb bo\'lsa, belgilangan yorliqqa sakrab chiqadi. va VB butun sonlarni o\'z ichiga oladi.\n(Ge katta yoki teng) uchun qisqa</item>
+		<item>Agar VAA == 0 bo\'lsa, belgilangan yorliqqa sakrab chiqadi. VAA butun sonni o\'z ichiga oladi.\n(EQz nolga teng)</item>
+		<item>Agar VAA! = 0 bo\'lsa, belgilangan yorliqqa sakrab chiqadi. VAA butun sonni o\'z ichiga oladi.\n(Nez nolga teng emas)</item>
+		<item>Agar Vay &lt;0 bo\'lsa, VAA-ning butun sonini o\'z ichiga olgan belgilangan yorliqqa sakrab chiqadi.\n(LTZ noldan kam bo\'lgan)</item>
+		<item>Agar VAA &lt;= 0 bo\'lsa, belgilangan yorliqqa sakrab chiqadi. VAA butun sonni o\'z ichiga oladi.\n(lz - bu nol / kam yoki teng yoki teng bo\'lgan qisqartma)</item>
+		<item>Agar VAA> 0 bo\'lsa, belgilangan yorliqqa sakraydi. VAA butun sonni o\'z ichiga oladi.\n(GTZ noldan katta)</item>
+		<item>Agar VAA> = 0 bo\'lsa, belgilangan yorliqqa sakrab chiqadi. VAA butun sonni o\'z ichiga oladi.\n(gez - bu noldan katta yoki teng bo\'lgan qisqartma)</item>
+		<item>VCC-da ACRB-da ACRB-dagi qatorda joylashgan indeksni o\'z ichiga oladi va uni VAA ro\'yxatiga joylashtiradi.\nVaa = VCB [VCC]</item>
+		<item>VCC-dagi indeksda, VCB-dagi qatorda, VBB-da, ikki tomonlama / uzoq qiymat va uni registratsiya juftligida va ulanish juftligida va ulanish juftligi\n(Vaa, Vaa + 1) = VCB [VCC]</item>
+		<item>VCC tarkibidagi indeksda, VBB-da ko\'rsatilgan massivda, ob\'ektga havola qilingan va uni VAA ro\'yxatiga kiritgan indeksda oladi.\nVaa = VCB [VCC]</item>
+		<item>VCCda joylashgan indeksda, VBB, Boolean qiymatidagi massistlar va uni VAA ro\'yxatiga joylashtiradi.\nVaa = VCB [VCC]</item>
+		<item>VCC-dagi indeksda, VCB-dagi yozuvda, VBB, bayt (butun son) va uni VAA ro\'yxatiga joylashtiradi.\nVaa = VCB [VCC]</item>
+		<item>VCCda joylashgan indeksda, VCC-dagi Indeksda, VBB-dagi massivlar, char qiymati va uni VAA ro\'yxatiga kiritadi.\nVaa = VCB [VCC]</item>
+		<item>VCCda joylashgan indeksda, VCR-dagi qatorda, VBB-da, qisqa (butun son) va uni VAA ro\'yxatiga joylashtiradi.\nVaa = VCB [VCC]</item>
+		<item>VAA-dan butun sonni VAA-dan VHB reestrini o\'z ichiga olgan element bilan VBB orqali joylashtiring.\nVBB [VCC] = VAA</item>
+		<item>VAA, VAA + 1 Ro\'yxatdan o\'tish juftligidan, VCC-ni o\'z ichiga olgan element bilan bir qatorda VOA, VAA + 1 qiymatidan.\nVBB [VCC] = (Vaa, Vaa 1)</item>
+		<item>VAA dan VOA-da ASBB-da ASBB-da AVC reestriga ega bo\'lgan elementga havola qiladi.\nVBB [VCC] = VAA</item>
+		<item>VAA tomonidan VOA tomonidan VOA tomonidan VBB reestrini o\'z ichiga olgan element bilan joylashtiring.\nVBB [VCC] = VAA</item>
+		<item>VAA-dan VCR-dagi VBB ro\'yxatiga kiritilgan elementni VBC-dagi versiyada VOA-dan Bayt (butun son) qiymatini joylashtiradi.\nVBB [VCC] = VAA</item>
+		<item>VAA-dan Chell (belgi) qiymatini VBC-da ro\'yxatdan o\'tkazilgan VCC ro\'yxatga olish bilan VBC-da ko\'rsatilgan.\nVBB [VCC] = VAA</item>
+		<item>VAA-dan qisqa (butun son) qiymatini VBB registrini o\'z ichiga olgan element bilan VBB-da Alarp-dagi massistga joylashtiring.\nVBB [VCC] = VAA</item>
+		<item>Instantsiya maydonidan qiymatni o\'qiydi va uni VA Reyhida joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nva = vb.fild</item>
+		<item>Maymun maydonidan ikki martali / uzoq qiymatni o\'qiydi va uni bir juft ro\'yxatga qo\'yadi (VaA, VA + 1). Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\n(VA, VA + 1) = vb.fild</item>
+		<item>Maymun maydonidan ob\'ekt havolasini o\'qiydi va uni VAGI RASTITAGA qo\'yadi. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nva = vb.fild</item>
+		<item>Involyutsion qiymatni inspektor maydonidan o\'qiydi va uni VAKENTIDA VA RAQAMDA o\'rinlarni egallaydi. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nva = vb.fild</item>
+		<item>Maydon maydonidan bayt (butun son) qiymatini o\'qiydi va uni VA Reyestrda joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nva = vb.fild</item>
+		<item>Maydon maydonidan char qiymatini o\'qiydi va uni VA Reyestrga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nva = vb.fild</item>
+		<item>Maydon maydonidan qisqa (butun son) qiymatini o\'qiydi va uni VA Reyestrda joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nva = vb.fild</item>
+		<item>VA Restavidan inskect maydoniga joylashtiring. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nvb.field = VA</item>
+		<item>Ro\'yxatdan o\'tish juftligidan (VA, VA + 1) bir-biriga yaqin / uzoq qiymatga ega. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nvb.field = (VA, VA + 1)</item>
+		<item>VA Restavidagi ob\'ektga tegishli maydonga ishora qiladi. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nvb.field = VA</item>
+		<item>Boolean qiymatini VA Restidan inspekt sohasiga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havola vb restoretiga kiradi.\nvb.field = VA</item>
+		<item>Ro\'yxatdan o\'tgan VB ro\'yxatga olingan holatda ko\'rsatilgan paolean konining bayt (butunlay) qiymatini o\'rnatadi, ya\'ni:\nvb.field = VA</item>
+		<item>Ro\'yxatdan o\'tgan VB ro\'yxatdan o\'tgan varaqasi ro\'yxatiga kiritilgan holda ko\'rsatilgan baolean konining char (xarakterini) belgilaydi, ya\'ni:\nvb.field = VA</item>
+		<item>Ro\'yxatdan o\'tgan VB ro\'yxatga olingan holda ko\'rsatilgan paolean maydonining qisqa (butunlay) qiymatini, ya\'ni:\nvb.field = VA</item>
+		<item>Statik maydondan qiymatni o\'qiydi va uni VAA ro\'yxatiga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>Statik maydondan ikki martali / uzoq qiymatni o\'qiydi va uni vaA, VAA + 1 raqamiga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>Statik maydondan ob\'ekt havolasini o\'qiydi va uni VAA ro\'yxatiga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>Statik maydondan Booleen qiymatini o\'qiydi va uni VAA ro\'yxatiga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>Statik maydondan bayt (butun son) qiymatini o\'qiydi va uni VAA ro\'yxatiga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>TAR qiymatini statik maydondan o\'qiydi va uni VAA ro\'yxatiga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>Statik maydondan qisqa (butun son) qiymatini o\'qiydi va uni VAA ro\'yxatiga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>VAA ro\'yxatidan dala tarkibiga (statik maydon) joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>Vaa, VAA + 1-dan bir qatorda (statik maydon) bir juft ro\'yxatga olinadi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>VAA-dan Ob\'ektga (Statik maydon) ma\'lumotiga havola qiladi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>VAA-dan VAA-dagi boka qiymatini maydonga (statik maydon) joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>VAA ro\'yxatdan o\'tishi (statik maydon) dan bayt (butun son) qiymatini joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>Char qiymatini VAA-dan VAA-da statik maydonga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>VAA ro\'yxatidan qisqa (butun son) qiymatini statik maydonga joylashtiradi. Ushbu maydonni o\'z ichiga olgan sinfga havolalangan reestr ishlatilmaydi.</item>
+		<item>Parametrlar bilan virtual usul qo\'ng\'iroqlar (ishlaydi). Parametrlar jingalak qavslarda ko\'rsatilgan. Birinchi parametr (Ro\'yxatdan o\'tish v2) deb nomlangan sinfga havolasi mavjud, ikkinchi parametr (Ro\'yxatdan o\'tish muddati) deb nomlangan usulga o\'tkaziladi.</item>
+		<item>Parametrlar bilan to\'g\'ridan-to\'g\'ri ota-ona sinfidan parametrlar bilan qo\'ng\'iroqlar (ishlaydi).</item>
+		<item>Virtual usulning ruxsatisiz parametrlar bilan parametrlar bilan qo\'ng\'iroqlar (ishlaydi).</item>
+		<item>Parametrlar bilan statik usul qo\'ng\'iroqlar (ishlaydi). Parametrlar jingalak qavslarda ko\'rsatilgan. Parametr (Ro\'yxatdan o\'tish muddati) deb nomlangan usulga o\'tkaziladi. Ushbu usulni o\'z ichiga olgan sinf jingalak qavslardan keyin ko\'rsatilgan.</item>
+		<item>Parametrlar bilan interfeys usuli qo\'ng\'iroqlar (ishlaydi).</item>
+		<item>Parametrlar bilan virtual usul qo\'ng\'iroqlar (ishlaydi), ammo parametrlar tartibda raqamlar bilan ro\'yxatga olinishi kerak.</item>
+		<item>Parametrlar bilan to\'g\'ridan-to\'g\'ri ota-ona sinfidan bo\'lgan parametrlar bilan virtual usulni chaqiradi (ishlaydi), ammo parametrlar ketma-ket raqamlar bilan ro\'yxatga olinishi kerak.</item>
+		<item>Virtual usul ruxsatisiz parametrlar bilan parametrlar bilan qo\'ng\'iroqlar (ishlaydi), ammo parametrlar ketma-ket ro\'yxatga olinishi kerak.</item>
+		<item>Parametrlar bilan statik usulni chaqiradi (ishlaydi), ammo parametrlar ketma-ket raqamlar bilan ro\'yxatga olinishi kerak.</item>
+		<item>Parametrlar bilan interfeys usuli (ishlaydi), ammo parametrlar ketma-ket ro\'yxatga olinishi kerak.</item>
+		<item>Tipdagi butun sonlarning qiymatlari uchun va -VB ni hisoblang.</item>
+		<item>Butun sonli qiymatlar uchun VA = VB ni hisoblang.\nva = ~ vb</item>
+		<item>(VA, VA + 1) = - (VB, VB + 1) uzoq vaqt (butun son) qiymatlari uchun hisoblang.</item>
+		<item>Kaltkülkülkülkülkülkülkülkücatters (VA, VA + 1) = ~ (VB, VB + 1) uzoq vaqt (butun son) qiymatlari uchun.</item>
+		<item>Va = -vb hisob-kitob qiymatlari uchun hisoblang.</item>
+		<item>Hisoblash (VA, VA + 1) = - (VB, VB + 1) qiymatlar uchun.</item>
+		<item>VB-dan butun sonni uzoq vaqt o\'zgartiradi va uni registratsiya juftligida saqlaydi va va + 1.\n(VA, VA + 1) = (uzun) vb</item>
+		<item>Vb-dan butun sonni suzib, va uni ro\'yxatga olishda saqlaydi.\nva = (suzuvchi) vb</item>
+		<item>VB dan ikki baravar (suzuvchi nuqta) ga aylantiradi va uni registrator juftligi va va u + 1-da saqlaydi.\n(VA, VA + 1) = (ikki juft) vb</item>
+		<item>Vb, VB + 1 qiymatini butun songa (butun son) o\'zgartiradi va uni VA Restavida saqlaydi.\nva = (int) (VB, VB + 1)</item>
+		<item>Vb, VB + 1 dan uzoq vaqt (butun son) qiymatini (suzuvchi nuqtasi) bilan aylantiradi va uni VA Reyestrda saqlaydi.\nva = (suzuvchi) (VB, VB + 1)</item>
+		<item>VB, VB + 1 dan uzunlikdagi (butun son) qiymatini (Suzuvchi nuqtasiga) o\'zgartiradi va uni registratsiya juftligi va va u + 1-da ro\'yxatdan o\'tkazadi.\n(VaA, VA + 1) = (dubl) (VB, VB + 1)</item>
+		<item>Vb-dan butun sonni (butun son) qiymatini butun songa o\'zgartiradi va uni VA Restavida saqlaydi.\nva = (int) vb</item>
+		<item>VB dan uzoq vaqt (butun son) qiymatiga qarab suzadi va uni registratsiya juftligida va Registraturada saqlaydi.\n(VA, VA + 1) = (uzun) vb</item>
+		<item>VB-dan ikki juft (suzuvchi nuqta) qiymatidagi suzuvchi qiymatni o\'zgartiradi va uni registratsiya juftligida va Registraturada saqlaydi.\n(VA, VA + 1) = (ikki juft) vb</item>
+		<item>VB, VB + 1 dan butun son (butun son) qiymatidagi ikki juft (Suzuvchi nuqta) qiymatini o\'zgartiradi va uni VA Restavida saqlaydi.\nva = (int) (VB, VB + 1)</item>
+		<item>VB, VB + 1 qiymatidan ikki baravar (butun son) qiymatini o\'zgartiradi va uni registratsiya juftligi va u + 1 hisobida saqlaydi.\n(VaA, VA + 1) = (uzun) (VB, VB + 1)</item>
+		<item>VB, VB + 1 qiymatini (suzuvchi nuqtasi) qiymatiga (suzuvchi nuqtasiga) o\'zgartiradi va uni VA Restavida saqlaydi.\nva = (suzuvchi) (VB, VB + 1)</item>
+		<item>Vb-dan bayt qiymatidagi butun sonni bayt qiymatiga o\'zgartiradi va uni VA Reyestrda saqlaydi.\nva = (bayt) vb</item>
+		<item>Vb dan char qiymatidagi butun sonni VB qiymatini o\'zgartiradi va uni VAKENTNI SAQLASh.\nva = (char) vb</item>
+		<item>Vb-dan butun sonni qisqa qiymatga o\'zgartiradi va uni VA Reyhida saqlaydi.\nva = (qisqa) vb</item>
+		<item>VAB Reyestrda VABB + VCC-ni hisoblab chiqadi va natijasini VAA ro\'yxatiga kiritadi. Barcha qiymatlar butun son.\nVaa = VBB + VCC</item>
+		<item>VBB - VCC-ni hisoblab chiqadi va VAA ro\'yxatdan o\'tish natijalarini saqlaydi. Barcha qiymatlar butun son.\nVaa = VCB - VCC</item>
+		<item>VAA ro\'yxatdan o\'tish natijalarini hisoblab chiqadi va VAA reestrida natijani saqlaydi. Barcha qiymatlar butun son.\nVAA = VBB * VCC</item>
+		<item>VAA ro\'yxatida VAA ro\'yxatidagi natijani hisoblab chiqadi va natijasini saqlaydi. Barcha qiymatlar butun son.\nVaa = VBB / VCC</item>
+		<item>VBB% VCC-ni hisoblab chiqadi va natijada VAA ro\'yxatdan o\'tishi natijalarini saqlaydi. Barcha qiymatlar butun son.\nVaa = VBC% VCC</item>
+		<item>VAA ro\'yxatdan o\'tish natijalarini VBB &amp; VCC (mantiqiy va) hisoblab chiqadi va natijasini VAA ro\'yxatdan o\'tkazadi. Barcha qiymatlar butun son.\nVAA = VBB va VCC</item>
+		<item>VBB | ni hisoblaydi VCC (mantiqiy yoki) va natijani VAA ro\'yxatiga kiritadi. Barcha qiymatlar butun son.\nVAA = VBB | ishqiboz</item>
+		<item>VAA ro\'yxatdan o\'tish natijalarini VBB ^ VCC (eksklyuziv yoki) hisoblaydi. Barcha qiymatlar butun son.\nVaa = VBB ^ VCC</item>
+		<item>VCC tomonidan belgilangan bitlar sonidan chapga siljiydi va natijasini VAA ro\'yxatiga kiritadi. Barcha qiymatlar butun son.\nVaa = VBB &lt;&lt; VCC</item>
+		<item>VCC tomonidan belgilangan bitlar soni bo\'yicha VBB ni o\'ng tomonga siljiting va natijani VAA ro\'yxatiga kiritadi. Barcha qiymatlar butun son.\nVaa = VBB >> VCC</item>
+		<item>VCC tomonidan belgilangan bitlar soni bo\'yicha o\'ng tomonga belgi qo\'ymasdan, VBB ni saqlash va natijani VAA ro\'yxatdan o\'tkazmasdan saqlang. Barcha qiymatlar butun son.\nVAA = VBB >>> VCC</item>
+		<item>Hisoblaydi (VBC, VCR + 1) + (VCC, VCC + 1) va natijani registratsiya juftligida saqlaydi va VAA + 1. Barcha qadriyatlar uzoq (butun son).\n(Vaa, vaa + 1) = (VBB, VCB + 1) + + (VCC, VCC + 1)</item>
+		<item>Hisoblang (VBB, VBB + 1) - (VCC, VCC + 1) va natijani registratsiya juftligi va VAA + 1-da saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(Vaa, Vaa + 1) = (VBB, VBB + 1) - (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBB, VBB + 1) * (VCC, VCC + 1) va natijani registratsiya juftligida saqlash uchun VAA + 1. Barcha qadriyatlar uzoq (butun son).\n(Vaa, vaa + 1) = (VBB, VBB + 1) * (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBC, VCB + 1) / (VCC, VCC + 1) va Registratsiya juftligida VAA, VAA + 1-dagi natijani saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(Vaa, vaa + 1) = (VBB, VBB + 1) / (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBB, VBB + 1)% (VCC, VCC + 1) va natijani registratsiya juftligida saqlaydi va VAA + 1. Barcha qadriyatlar uzoq (butun son).\n(Vaa, Vaa + 1) = (VBB, VBB + 1)% (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBB, VBB + 1) &amp; (VCC, VCC + 1) (mantiqiy va) va natijada Registraturada VAA + 1). Barcha qadriyatlar uzoq (butun son).\n(Vaa, Vaa + 1) = (VBB, VBB + 1) &amp; (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBB, VBB + 1) | (VCC, VCC + 1) (mantiqiy yoki) va natijani VAA, VAA + 1 registrida saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(Vaa, Vaa + 1) = (VBB, VBB + 1) | (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBB, VCB + 1) ^ (VCC, VCC + 1) (eksklyuziv va) va natijani registratsiya juftligida saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(Vaa, vaa + 1) = (VBB, VBB + 1) ^ (VCC, VCC + 1)</item>
+		<item>VCC tomonidan belgilangan bitlar soni bo\'yicha VBB, VBB + 1 ni chapga siljiting va Registratsiya juftligida VAA, VAA + 1-dagi natijani saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(Vaa, vaa + 1) = (VBB, VBB + 1) &lt;&lt; VCC</item>
+		<item>VAA, VAA, VAA + 1-dagi natijalarni o\'ng tomonga siljiting va natijani ro\'yxatdan o\'tkazadi. Barcha qadriyatlar uzoq (butun son).\n(Vaa, vaa + 1) = (VBB, VBB + 1) >> VCC</item>
+		<item>VCC tomonidan belgilangan bitlar soni bo\'yicha Belgilarni saqlamasdan, VBB, VBB + 1 ni o\'ngga o\'ng tomonga siljiting va natijani VAA, VA + 1 ro\'yxatiga kiritadi. Barcha qadriyatlar uzoq (butun son).\n(Vaa, vaa + 1) = (VBB, VBB + 1) >>> VCC</item>
+		<item>VAB Reyestrda VABB + VCC-ni hisoblab chiqadi va natijasini VAA ro\'yxatiga kiritadi. Barcha qadriyatlar suzmoqda.\nVaa = VBB + VCC</item>
+		<item>VBB - VCC-ni hisoblab chiqadi va VAA ro\'yxatdan o\'tish natijalarini saqlaydi. Barcha qadriyatlar suzmoqda.\nVaa = VCB - VCC</item>
+		<item>VAA ro\'yxatdan o\'tish natijalarini hisoblab chiqadi va VAA reestrida natijani saqlaydi. Barcha qadriyatlar suzmoqda.\nVAA = VBB * VCC</item>
+		<item>VAA ro\'yxatida VAA ro\'yxatidagi natijani hisoblab chiqadi va natijasini saqlaydi. Barcha qadriyatlar suzmoqda.\nVaa = VBB / VCC</item>
+		<item>VBB% VCC-ni hisoblab chiqadi va natijada VAA ro\'yxatdan o\'tishi natijalarini saqlaydi. Barcha qadriyatlar suzmoqda.\nVaa = VBC% VCC</item>
+		<item>Hisoblaydi (VBC, VCR + 1) + (VCC, VCC + 1) va natijani registratsiya juftligida saqlaydi va VAA + 1. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(Vaa, vaa + 1) = (VBB, VCB + 1) + + (VCC, VCC + 1)</item>
+		<item>Hisoblang (VBB, VBB + 1) - (VCC, VCC + 1) va natijani registratsiya juftligi va VAA + 1-da saqlaydi. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(Vaa, Vaa + 1) = (VBB, VBB + 1) - (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBB, VBB + 1) * (VCC, VCC + 1) va natijani registratsiya juftligida saqlash uchun VAA + 1. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(Vaa, vaa + 1) = (VBB, VBB + 1) * (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBC, VCB + 1) / (VCC, VCC + 1) va Registratsiya juftligida VAA, VAA + 1-dagi natijani saqlaydi. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(Vaa, vaa + 1) = (VBB, VBB + 1) / (VCC, VCC + 1)</item>
+		<item>Hisoblaydi (VBB, VBB + 1)% (VCC, VCC + 1) va natijani registratsiya juftligida saqlaydi va VAA + 1. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(Vaa, Vaa + 1) = (VBB, VBB + 1)% (VCC, VCC + 1)</item>
+		<item>VA + VB-ni hisoblaydi va natijani VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nVA = VA + VB</item>
+		<item>VA - VB-ni hisoblab chiqadi va natijani VA ro\'yxatiga kiritadi. Barcha qiymatlar butun son.\nVA = VA - VB</item>
+		<item>VA * VB-ni hisoblab chiqadi va natijani VA Restavida saqlaydi. Barcha qiymatlar butun son.\nVA = VA * VB</item>
+		<item>VA / VB-ni hisoblab chiqadi va natijani VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nVA = VA / VB</item>
+		<item>VA% VB-ni hisoblab chiqadi va natijani VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nva = va% VB</item>
+		<item>VA &amp; VB (mantiqiy va) va natijani VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nVA = VA VB</item>
+		<item>Va | hisobini hisoblaydi VB (mantiqiy yoki) va natijani VA Maeysda keltirilgan natijani saqlaydi. Barcha qiymatlar butun son.\nVA = VA | tiniq</item>
+		<item>VA ^ VB (eksklyuziv yoki) va natijani VA Reysida saqlaydi. Barcha qiymatlar butun son.\nva = va ^ vb</item>
+		<item>VB tomonidan belgilangan bitlar soni bo\'yicha chap tomonga siljiydi va natijasini VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nVA = VA &lt;VB</item>
+		<item>VB tomonidan belgilangan bitlar soni bo\'yicha o\'ng tomonga siljiydi va natijani VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nVa = va >> VB</item>
+		<item>VB tomonidan belgilangan bitlar soni bo\'yicha o\'z belgisini o\'ng tomonga saqlamasdan, va uning natijalarini saqlaydi. Barcha qiymatlar butun son.\nVA = VA >> VB vb</item>
+		<item>Hisoblaydi (VA, VA + 1) + (VB, VB + 1) va natijani Registr juftligida saqlaydi va natijani ro\'yxatdan o\'tkazadi. Barcha qadriyatlar uzoq (butun son).\n(VaA, VA + 1) = (VA, VA + 1) + (VB, VB + 1)</item>
+		<item>Hisoblaydi (VA, VA + 1) - (VB, VB + 1) va natijada VA, VA + 1. Barcha qadriyatlar uzoq (butun son).\n(VaA, VA + 1) = (VA, VA + 1) - (VB, VB + 1)</item>
+		<item>Hisoblaydi (VA, VA + 1) * (VB, VB + 1) va natijani Registratsiyaning va 1 + 1-da saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(VA, VA + 1) = (VA, VA + 1) * (VB, VB + 1)</item>
+		<item>Hisoblaydi (VA, VA + 1) / (VB, VB + 1) va natijani registratsiya juftligida saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(VaA, VA + 1) = (VA, VA + 1) / (VB, VB + 1)</item>
+		<item>Hisobni (VA, VA + 1) hisoblab chiqadi va natijani registratsiya juftligida va Registratsiya juftligida saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(VaA, VA + 1) = (VA, VA + 1)% (VB, VB + 1)</item>
+		<item>Rejalashtiradi (VA, VA + 1) &amp; (VB, VB + 1) (mantiqiy va vb + 1) va natijani registratsiya juftligida saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(VaA, VA + 1) = (VAB, VA + 1) &amp; (VB, VB + 1)</item>
+		<item>Hisoblaydi (VA, VA + 1) | (vb, vb + 1) (mantiqiy yoki) va natijani va Natijada VA PA + 1-ni ro\'yxatdan o\'tkazadi. Barcha qadriyatlar uzoq (butun son).\n(VA, VA + 1) = (VaA, VA + 1) | (VB, VB + 1)</item>
+		<item>Hisoblaydi (VA, VA + 1) &amp; (VB, VB + 1) (eksklyuziv yoki) va natijani registratsiya juftligida saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(VaA, VA + 1) = (VAB, VA + 1) ^ (VB, VB + 1)</item>
+		<item>VA, VaA + 1 chapga VB tomonidan belgilangan bitlar soni bo\'yicha siljiydi va natijani Registr juftligida saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(Vaa, va + 1) = (VA, VA + 1) &lt;&lt; VB</item>
+		<item>VA, VaA + 1 VB tomonidan belgilangan bitlar soni bo\'yicha o\'ng tomonga siljiydi va natijani registratsiya juftligida va Registr juftligida saqlaydi. Barcha qadriyatlar uzoq (butun son).\n(VA, VA + 1) = (VaA, VA + 1) >> VB</item>
+		<item>VB tomonidan belgilangan raqamlar soniga qarab belgilanmasdan va natijani saqlovchi va natijani saqlaydi va natijani bir juft ro\'yxatga olishni davom ettiradi. Barcha qadriyatlar uzoq (butun son).\n(VaA, VA + 1) = (VA, VA + 1) >>> VB</item>
+		<item>VA + VB-ni hisoblaydi va natijani VA Reyestrda saqlaydi. Barcha qadriyatlar suzmoqda.\nVA = VA + VB</item>
+		<item>VA - VB-ni hisoblab chiqadi va natijani VA ro\'yxatiga kiritadi. Barcha qadriyatlar suzmoqda.\nVA = VA - VB</item>
+		<item>VA * VB-ni hisoblab chiqadi va natijani VA Restavida saqlaydi. Barcha qadriyatlar suzmoqda.\nVA = VA * VB</item>
+		<item>VA / VB-ni hisoblab chiqadi va natijani VA Reyestrda saqlaydi. Barcha qadriyatlar suzmoqda.\nVA = VA / VB</item>
+		<item>VA% VB-ni hisoblab chiqadi va natijani VA Reyestrda saqlaydi. Barcha qadriyatlar suzmoqda.\nva = va% VB</item>
+		<item>Hisoblaydi (VA, VA + 1) + (VB, VB + 1) va natijani Registr juftligida saqlaydi va natijani ro\'yxatdan o\'tkazadi. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(VaA, VA + 1) = (VA, VA + 1) + (VB, VB + 1)</item>
+		<item>Hisoblaydi (VA, VA + 1) - (VB, VB + 1) va natijada VA, VA + 1. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(VaA, VA + 1) = (VA, VA + 1) - (VB, VB + 1)</item>
+		<item>Hisoblaydi (VA, VA + 1) * (VB, VB + 1) va natijani Registratsiyaning va 1 + 1-da saqlaydi. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(VA, VA + 1) = (VA, VA + 1) * (VB, VB + 1)</item>
+		<item>Hisoblaydi (VA, VA + 1) / (VB, VB + 1) va natijani registratsiya juftligida saqlaydi. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(VaA, VA + 1) = (VA, VA + 1) / (VB, VB + 1)</item>
+		<item>Hisobni (VA, VA + 1) hisoblab chiqadi va natijani registratsiya juftligida va Registratsiya juftligida saqlaydi. Barcha qiymatlar ikki baravar (suzuvchi nuqta).\n(VaA, VA + 1) = (VA, VA + 1)% (VB, VB + 1)</item>
+		<item>VB + 0XFFFFFFFFFINING VA NARX VAZIRINI VA RAQAMDAGI NARXIDA. Barcha qiymatlar butun son.\nva = vb + 0xffff</item>
+		<item>0xffff - VB va Registratsiyaning natijalarini saqlaydi. Barcha qiymatlar butun son.\nVA = 0XFFFF - VB</item>
+		<item>VB * 0XFFFFFFINING va Natijada VA REASTEKTIDA Natijada saqlanadi. Barcha qiymatlar butun son.\nva = vb * 0xffff</item>
+		<item>VB / 0XFFF-ni hisoblab chiqadi va natijani VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nva = vb / 0xffff</item>
+		<item>Vb% 0XFFFFFFFFFFFFFINING VA Natijalarni VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nva = vb% 0xffff</item>
+		<item>VB &amp; 0XFFFFFFFFFFINING (mantiqiy va) va natijani VA Reyestrda saqlaydi. Barcha qiymatlar butun son.\nva = vb &amp; 0xffff</item>
+		<item>Vb | hisobini hisoblaydi 0XFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIKA VA NARXI VA RAQAMDA. Barcha qiymatlar butun son.\nva = vb | 0xffff</item>
+		<item>VB ^ 0XFFFFFFFINING (eksklyuziv yoki) va natijani VA Reysida saqlaydi. Barcha qiymatlar butun son.\nva = vb ^ 0xffff</item>
+		<item>VAA ro\'yxatdan o\'tish natijalarini hisoblab chiqadi va VAA reestrida natijani saqlaydi. Barcha qiymatlar butun son.\nVaa = VBB + 0XFF</item>
+		<item>0xFF - VBB-ni hisoblab chiqadi va VAA ro\'yxatdan o\'tish natijalarini saqlaydi. Barcha qiymatlar butun son.\nVaa = 0xFF - VBB</item>
+		<item>VAA ro\'yxatidagi VAA ro\'yxatidagi natijani hisoblaydi va natijani saqlaydi. Barcha qiymatlar butun son.\nVaa = VBB * 0XFF</item>
+		<item>VAA ro\'yxatidagi natijani hisoblab chiqadi va natijani VAA ro\'yxatdan o\'tkazadi. Barcha qiymatlar butun son.\nVaa = VBB / 0XFF</item>
+		<item>VBB% 0XFFni hisoblaydi va VAA ro\'yxatdan o\'tish natijalarini saqlaydi. Barcha qiymatlar butun son.\nVaa = VBB% 0XFFF</item>
+		<item>VAA ro\'yxatdan o\'tish natijalarini VBB &amp; 0XFFSni hisoblaydi va natijani VAA ro\'yxatdan o\'tkazadi. Barcha qiymatlar butun son.\nVAA = VBB &amp; 0XFF</item>
+		<item>VBB | ni hisoblaydi 0xFF (mantiqiy yoki) va VAA reestrida natijani saqlaydi. Barcha qiymatlar butun son.\nVAA = VBB | 0xFF</item>
+		<item>VAA ro\'yxatdan o\'tish natijalarini VBB ^ 0xFFni hisoblaydi va natijani VAA ro\'yxatdan o\'tkazadi. Barcha qiymatlar butun son.\nVaa = VBB ^ 0XFF</item>
+		<item>VBB 0xFF tomonidan belgilangan bitlar sonidan chapga siljiydi va VAA ro\'yxatdan o\'tish natijalarini saqlaydi. Barcha qiymatlar butun son.\nVaa = VBB &lt;&lt; 0xFFF</item>
+		<item>VBB-ni o\'ng tomonga 0xFF tomonidan belgilangan bitlar soniga qarab siljiting va VAA ro\'yxatdan o\'tishi natijalarini saqlaydi. Barcha qiymatlar butun son.\nVaa = VBB >> 0XFFF</item>
+		<item>0xFF tomonidan belgilangan bitlar soni bo\'yicha VBBning o\'ng tomoniga. Barcha qiymatlar butun son.\nVAA = VBB >>> 0XFFF</item>
+		<item>Parametrlar bilan polimorfik imzo usulini chaqiradi (ishlaydi). 038 versiyasidan beri Dex fayllarida mavjud.</item>
+		<item>Parametrlar bilan polimforp imzo usulini chaqiradi (ishlaydi), ammo parametrlar ketma-ket ro\'yxatga olinishi kerak. 038 versiyasidan beri Dex fayllarida mavjud.</item>
+		<item>Saytni parametrlar bilan chaqirishga imkon beradi (ishga tushiradi). 038 versiyasidan beri Dex fayllarida mavjud.</item>
+		<item>Saytni parametrlar bilan qo\'ng\'iroq qilish imkonini beradi, ammo parametrlar tartibda raqamlar bilan ro\'yxatga olinishi kerak. 038 versiyasidan beri Dex fayllarida mavjud.</item>
+		<item>VAA reestridagi usul dastagiga havola qiladi. 039 versiyasidan beri Dex fayllarida mavjud.</item>
+		<item>VAA reestridagi prototipga havola. 039 versiyasidan beri Dex fayllarida mavjud.</item>
+	</string-array>
+</resources>
