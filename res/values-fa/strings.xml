@@ -122,6 +122,12 @@
 	<string name="kill_sign_exists">قلاب قبلاً اضافه شده است</string>
 	<string name="kill_sign_by_orig">گرفتن امضا از اصل (original) مشخص شده</string>
 	<string name="kill_sign_notice">برنامه ای که توسط این تابع پردازش می شود نمی تواند روی نسخه های اندروید کمتر از ۵ کار کند!</string>
+	<string name="kill_sign_ex_app">نام کلاس قلاب</string>
+        <string name="kill_sign_ex_lib">نام قلاب کتابخانه so</string>
+        <string name="kill_sign_ex_inject">نام اصلی داخل apk</string>
+        <string name="kill_sign_ex_extract">مسیر اصلی هنگام استخراج</string>
+        <string name="kill_sign_ex_mode">حالت پیشرفته</string>
+        <string name="kill_sign_old_mode">حالت معمولی</string>
 	<string name="diff_resources">مقایسه منابع (aapt2)</string>
 	<string name="diff_resources2">مقایسه منابع \"%2$s\" با منابع \"%1$s\"</string>
 	<string name="dump_resources">استخراج منابع (aapt2)</string>
