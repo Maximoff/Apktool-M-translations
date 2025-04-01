@@ -918,6 +918,8 @@
 	<string name="mtr_old_layout">Old layout</string>
 	<string name="mtr_sure_continue">The translation will be lost, do you want to continue?</string>
 	<string name="mtr_quantity">Quantity</string>
+    <string name="mtr_mark_trans">Mark as translated</string>
+    <string name="mtr_mark_trans_all">Mark everything as translated</string>
 	<string name="select_mod">Select modified</string>
 	<string name="task_cancel_sure">Are you sure you want to cancel the process?</string>
 	<string name="mtr_del_array">Delete array</string>

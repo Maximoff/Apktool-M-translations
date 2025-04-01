@@ -895,6 +895,8 @@
 	<string name="mtr_old_layout">Старый макет</string>
 	<string name="mtr_sure_continue">Перевод будет утерян, хотите продолжить?</string>
 	<string name="mtr_quantity">Количество</string>
+    <string name="mtr_mark_trans">Отметить как переведённое</string>
+    <string name="mtr_mark_trans_all">Отметить всё как переведённое</string>
 	<string name="select_mod">Выбрать изменённые</string>
 	<string name="task_cancel_sure">Вы действительно хотите отменить процесс?</string>
 	<string name="mtr_del_array">Удалить массив</string>
