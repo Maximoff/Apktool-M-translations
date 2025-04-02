@@ -938,4 +938,6 @@
 	<string name="kill_sign_old_mode">Зазвичайний режим</string>
 	<string name="mtr_check_source">Перевіряти на відповідність вихідній мові</string>
 	<string name="mtr_check_source_info">Якщо обрано конкретну вихідну мову, програма намагатиметься перевіряти рядки на відповідність цій мові. Рядки іншими мовами перекладатися не будуть.</string>
+	<string name="mtr_mark_trans">Позначити як перекладене</string>
+ 	<string name="mtr_mark_trans_all">Позначити все як перекладене</string>
 </resources>
