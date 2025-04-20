@@ -512,8 +512,8 @@
 	<string name="hidden_files_summary">Tampilkan file dan folder yang tersembunyi</string>
 	<string name="atod_set">Semua yang ada di direktori output</string>
 	<string name="atod_set_summary">Dekompilasi semuanya ke direktori output</string>
-	<string name="show_errors">Tampilkan masalah</string>
-	<string name="show_errors_summary">Tampilkan masalah proyek</string>
+	<string name="show_errors">Tampilkan kesalahan</string>
+	<string name="show_errors_summary">Tampilkan kesalahan proyek</string>
 	<string name="auto_save">Simpan otomatis</string>
 	<string name="auto_save_summary">Simpan teks secara otomatis di editor</string>
 	<string name="auto_save_title">Simpan otomatis:</string>
@@ -909,6 +909,8 @@
 	<string name="mtr_old_layout">Tata letak lama</string>
 	<string name="mtr_sure_continue">Terjemahan akan hilang, apakah Anda ingin melanjutkan?</string>
 	<string name="mtr_quantity">Jumlah</string>
+	<string name="mtr_mark_trans">Tandai sebagai telah diterjemahkan</string>
+	<string name="mtr_mark_trans_all">Tandai semua yang telah diterjemahkan</string>
 	<string name="select_mod">Pilih modifikasi</string>
 	<string name="task_cancel_sure">Apakah Anda yakin ingin membatalkan proses ini?</string>
 	<string name="mtr_del_array">Hapus array</string>
