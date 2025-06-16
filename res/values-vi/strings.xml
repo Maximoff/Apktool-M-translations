@@ -553,7 +553,7 @@
 	<string name="fix_drawer_summary">Không đóng trình quản lý tệp bằng thao tác vuốt</string>
 	<string name="dont_notify">Không thông báo nếu chạy</string>
 	<string name="dont_notify_summary">Không hiển thị thông báo nếu ứng dụng đang mở</string>
-	<string name="default_key">Phím mặc định</string>
+	<string name="default_key">Khoá mặc định</string>
 	<string name="default_key_summary">Khóa chữ ký mặc định</string>
 	<string name="update_freq">Tần suất kiểm tra cập nhật</string>
 	<string name="update_freq_summary">Tần suất kiểm tra cập nhật trong ngày</string>
@@ -629,8 +629,8 @@
 	<string name="disable_crashes_summary">Không bắt lỗi khi chương trình gặp sự cố</string>
 	<string name="faq">Câu hỏi thường gặp</string>
 	<string name="faq_summary">Trợ giúp sử dụng chương trình</string>
-	<string name="key_type">Loại chính:</string>
-	<string name="key_path">Đường dẫn chính:</string>
+	<string name="key_type">Loại khoá:</string>
+	<string name="key_path">Đường dẫn khoá:</string>
 	<string name="cert_path">Đường dẫn chứng chỉ:</string>
 	<string name="key_alias">Alias:</string>
 	<string name="store_pass">Mật khẩu kho khóa:</string>
