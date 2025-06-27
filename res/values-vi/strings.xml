@@ -12,14 +12,14 @@
 	<string name="base64">Base64: %s</string>
 	<string name="base64_sign">Base64 của chữ ký: %s</string>
 	<string name="base64_cert">Base64 của chứng chỉ: %s</string>
-	<string name="yes">Đúng</string>
+	<string name="yes">CÓ</string>
 	<string name="no">KHÔNG</string>
-	<string name="ok">Được rồi</string>
-	<string name="cancel">Hủy bỏ</string>
+	<string name="ok">OK</string>
+	<string name="cancel">Hủy</string>
 	<string name="go_to">Đi đến</string>
 	<string name="new_dict">Từ điển mới</string>
-	<string name="type">Loại: %s</string>
-	<string name="types">Loại</string>
+	<string name="type">Kiểu: %s</string>
+	<string name="types">Kiểu</string>
 	<string name="dex_is_full">Nhiều khả năng, đã vượt quá số phương thức hoặc trường được phép trong dex. Di chuyển một số tệp smali sang một thư mục khác hoặc tạo một tệp mới nếu cần thiết.</string>
 	<string name="clear_history">Xóa lịch sử tìm kiếm?</string>
 	<string name="refresh_res">Làm mới tài nguyên</string>
@@ -33,7 +33,7 @@
 	<string name="open_files">Mở tệp</string>
 	<string name="close_files">Đóng tệp</string>
 	<string name="list_files">Danh sách các tệp đang mở</string>
-	<string name="folder_menu">Trình đơn thư mục</string>
+	<string name="folder_menu">Menu thư mục</string>
 	<string name="recent_files">Các tệp gần đây</string>
 	<string name="screen_orientation">Hướng màn hình</string>
 	<string name="split_arch">Chia theo kiến ​​trúc</string>
@@ -248,9 +248,9 @@
 	<string name="label_den">Mật độ màn hình: \"%s\"</string>
 	<string name="label_config">Cấu hình: \"%s\"</string>
 	<string name="label_libs">Bộ thư viện: \"%s\"</string>
-	<string name="aapt2_dens_info">&lt;b>Danh sách phân tách bằng dấu phẩy&lt;/b> về mật độ màn hình mà APK sẽ được tối ưu hóa. Tất cả tài nguyên không sử dụng trên các thiết bị có mật độ đã cho sẽ bị xoá khỏi APK.</string>
-	<string name="aapt2_configs_info">&lt;b>Danh sách các cấu hình phân tách bằng dấu phẩy&lt;/b> để bao gồm. Mặc định là tất cả các cấu hình.</string>
-	<string name="aapt2_arch_info">Danh sách các kiến ​​trúc phải được giữ lại trong APK, &lt;b>được phân tách bằng dấu phẩy&lt;/b>. Mặc định là tất cả các kiến ​​trúc.</string>
+	<string name="aapt2_dens_info">&lt;b&gt;Danh sách phân cách bằng dấu phẩy&lt;/b&gt; về mật độ màn hình mà APK sẽ được tối ưu hóa. Tất cả tài nguyên không sử dụng trên các thiết bị có mật độ đã cho sẽ bị xoá khỏi APK.</string>
+	<string name="aapt2_configs_info">&lt;b&gt;Danh sách các cấu hình phân cách bằng dấu phẩy&lt;/b&gt; để bao gồm. Mặc định là tất cả các cấu hình.</string>
+	<string name="aapt2_arch_info">Danh sách các kiến ​​trúc phải được giữ lại trong APK, &lt;b&gt;được phân cách bằng dấu phẩy&lt;/b&gt;. Mặc định là tất cả các kiến ​​trúc.</string>
 	<string name="accessibility_service_name">Hoạt động hiện tại</string>
 	<string name="accessibility_service_description">Dịch vụ nhận thông tin về hoạt động chạy bộ. Dịch vụ này không thu thập bất kỳ dữ liệu cá nhân nào.</string>
 	<string name="accessibility_service_toast">Kích hoạt dịch vụ Apktool M</string>
@@ -675,7 +675,7 @@
 	<string name="mextract_zip_to">Giải nén vào \"%s\"</string>
 	<string name="mextract_zip_to2">Giải nén vào tab khác</string>
 	<string name="mplease_wait">Vui lòng chờ...</string>
-	<string name="split">Tách ra</string>
+	<string name="split">Chia nhỏ</string>
 	<string name="mcompress">Nén</string>
 	<string name="mcompression">Nén</string>
 	<string name="mupdate_pref">Cập nhật chương trình</string>
@@ -691,7 +691,7 @@
 	<string name="mupdate_get">Cập nhật bây giờ</string>
 	<string name="mupdate_down">Tải xuống</string>
 	<string name="mupdate_inbrowser">Mở trong trình duyệt</string>
-	<string name="mupdate_message">&lt;b>Phiên bản mới:&lt;/b> %1$s&lt;br>&lt;br>&lt;b>Ngày phát hành:&lt;/b> %2$s&lt;br>&lt;br>&lt;b>Kích thước:&lt;/b> %3$s&lt;br>&lt;br>&lt;b>Nhật ký thay đổi:&lt;/b>&lt;br>%4$s</string>
+	<string name="mupdate_message">&lt;b&gt;Phiên bản mới:&lt;/b&gt; %1$s&lt;br&gt;&lt;br&gt;&lt;b&gt;Ngày phát hành:&lt;/b&gt; %2$s&lt;br&gt;&lt;br&gt;&lt;b&gt;Kích thước:&lt;/b&gt; %3$s&lt;br&gt;&lt;br&gt;&lt;b&gt;Nhật ký thay đổi:&lt;/b&gt;&lt;br&gt;%4$s</string>
 	<string name="down_started">Đã bắt đầu tải xuống tệp</string>
 	<string name="mchanges">Có gì mới?</string>
 	<string name="mchanges_summary">Những thay đổi trong phiên bản này</string>
@@ -760,8 +760,8 @@
 	<string name="baksmali_registers_summary">Khi giải mã sang smali, sử dụng \"registers\" thay vì \"locals\"</string>
 	<string name="old_search">Kiểu tìm kiếm cũ</string>
 	<string name="old_search_summary">Tùy chọn cũ để hiển thị kết quả tìm kiếm trong các tệp</string>
-	<string name="clear_split">Xóa dấu vết chia tách</string>
-	<string name="clear_split_summary">Xóa dấu vết chia tách khỏi tài nguyên trong quá trình giải mã</string>
+	<string name="clear_split">Xóa dấu vết chia nhỏ</string>
+	<string name="clear_split_summary">Xóa dấu vết chia nhỏ khỏi tài nguyên trong quá trình giải mã</string>
 	<string name="try_merge_res">Thử hợp nhất các gói</string>
 	<string name="try_merge_res_summary">Cố gắng hợp nhất các gói tài nguyên bổ sung với gói chính khi dựng bản chia tách</string>
 	<string name="ignore_crc">Bỏ qua tổng CRC</string>
@@ -771,8 +771,8 @@
 	<string name="custom_exts">Tiện ích mở rộng văn bản</string>
 	<string name="custom_exts_summary">Tiện ích mở rộng tệp sẽ được chương trình phát hiện dưới dạng văn bản</string>
 	<string name="custom_exts_info">Nhập các tiện ích mở rộng, cách nhau bằng dấu phẩy: aaa, bbb, ccc</string>
-	<string name="remove_property">Xoá &lt;thuộc tính></string>
-	<string name="remove_property_summary">Xoá thẻ &lt;thuộc tính> khỏi bảng kê khai khi giải mã</string>
+	<string name="remove_property">Xoá &lt;thuộc tính&gt;</string>
+	<string name="remove_property_summary">Xoá thẻ &lt;thuộc tính&gt; khỏi bảng kê khai khi giải mã</string>
 	<string name="save_sign_data">Lưu dữ liệu chữ ký V2 và V3</string>
 	<string name="save_sign_data_summary">Lưu dữ liệu chữ ký khi thao tác với APK, nếu tùy chọn ký là \"Không ký\"</string>
 	<string name="mapp_inLocation_summary">Hỏi vị trí cài đặt ứng dụng khi cài đặt qua phiên</string>
@@ -893,6 +893,7 @@
 	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_bing">Bing</string>
 	<string name="mtr_yandex">Yandex</string>
+	<string name="mtr_deepl">DeepL</string>
 	<string name="mtr_deepl_warn">Quá nhiều yêu cầu, địa chỉ IP của bạn tạm thời bị DeepL chặn, Vui lòng đợi một lúc và thử lại!</string>
 	<string name="mtr_deepl_key_warn">Số lượng yêu cầu đến API DeepL cho khóa của bạn đã vượt quá!</string>
 	<string name="mtr_deepl_key">Khóa API cho DeepL</string>
@@ -938,7 +939,7 @@
 	<string name="report_descr">Vui lòng mô tả ngắn gọn hành động của bạn sau đó xảy ra lỗi</string>
 	<string name="optimize_battery">Tối ưu hóa hiệu suất pin</string>
 	<string name="optimization_notice">Để chương trình hoạt động ở chế độ nền (khi nó được thu nhỏ), nên thêm nó vào các ngoại lệ của trình tối ưu hóa hệ thống. Ứng dụng sẽ chỉ chạy ở chế độ nền nếu bạn tự chạy!\n\nBạn có muốn làm điều này không?</string>
-	<string name="heap_help">Để sửa lỗi OOM, hãy tăng kích thước của bộ nhớ heap.&lt;br>&lt;br>Để tăng kích thước của bộ nhớ heap, &lt;b>bạn cần có quyền root&lt;/b>!&lt;br>&lt;br>Hãy mở tệp &lt;b>/system/build.prop&lt;/b> và thêm hoặc chỉnh sửa dòng trong đó &lt;b>dalvik.vm.heapsize = 512m&lt;/b> (512m là dung lượng heap tính theo megabyte).&lt;br>&lt;br>&lt;small>Thao tác này chỉ có thể thực hiện bằng Apktool M nếu phân vùng /system đã được gắn lại với quyền ghi. Nếu không, bạn cần dùng công cụ khác.&lt;br>&lt;br>Đôi khi trong tệp này có hai dòng tương tự, bạn cần xóa một dòng đi.&lt;/small></string>
+	<string name="heap_help">Để sửa lỗi OOM, hãy tăng kích thước của bộ nhớ heap.&lt;br&gt;&lt;br&gt;Để tăng kích thước của bộ nhớ heap, &lt;b&gt;bạn cần có quyền root&lt;/b&gt;!&lt;br&gt;&lt;br&gt;Hãy mở tệp &lt;b&gt;/system/build.prop&lt;/b&gt; và thêm hoặc chỉnh sửa dòng trong đó &lt;b&gt;dalvik.vm.heapsize = 512m&lt;/b&gt; (512m là dung lượng heap tính theo megabyte).&lt;br&gt;&lt;br&gt;&lt;small&gt;Thao tác này chỉ có thể thực hiện bằng Apktool M nếu phân vùng /system đã được gắn lại với quyền ghi. Nếu không, bạn cần dùng công cụ khác.&lt;br&gt;&lt;br&gt;Đôi khi trong tệp này có hai dòng tương tự, bạn cần xóa một dòng đi.&lt;/small&gt;</string>
 	<string name="heap_memory">Bộ nhớ heap</string>
 	<string name="heap_info">Bộ nhớ đã sử dụng: %1$dMB.\nBộ nhớ khả dụng: %2$dMB.\nKích thước heap: %3$dMB.</string>
 	<string name="scoped_storage">Bộ nhớ có phạm vi</string>
