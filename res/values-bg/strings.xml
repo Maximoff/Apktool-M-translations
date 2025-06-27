@@ -28,7 +28,7 @@
 	<string name="editor_state_str">L:%1$d[%2$d], C:%3$d[%4$d], %5$s</string>
 	<string name="editor_state_str2">L:%1$d[%2$d], C:%3$d[%4$d], S:%5$d[%6$d-%7$d], %8$s</string>
 	<string name="close_cur">Затвори</string>
-	<string name="close_others">Затворете другите</string>
+	<string name="close_others">Затвори другите</string>
 	<string name="close_all">Затвори всички</string>
 	<string name="open_files">Отвори файловете</string>
 	<string name="close_files">Затвори файловете</string>
@@ -45,7 +45,7 @@
 	<string name="miui_warn_title">MIUI открит!</string>
 	<string name="miui_warn_message">Изглежда, че имате MIUI! Препоръчвам да отворите настройките за разработчици и да деактивирате оптимизацията на MIUI. Ако не направите това, може да имате проблеми с работата на приложението, грешки и сривове. Моля, не ми пишете за програмни грешки, ако сте прочели това съобщение и не сте последвали съвета ми!</string>
 	<string name="topmenu_toast">Сега знаете, че тук има меню</string>
-	<string name="add_media">Добавяне към медийната галерия</string>
+	<string name="add_media">Добавяне към медийна галерия</string>
 	<string name="wait_bg">Изчакайте края на текущия процес!</string>
 	<string name="dummy_file">Замени с празни</string>
 	<string name="extract_icon">Икона за извличане</string>
@@ -66,11 +66,11 @@
 	<string name="base64_decode">Декодирай Base64</string>
 	<string name="accessibility_info">За Android 13+ е необходимо да се даде специално разрешение, за да се активира услугата за достъпност. За да направите това, отворете системната информация за приложението и в менюто отгоре (три точки) дайте разрешение. Това меню може да не се появи, докато не щракнете върху услугата за достъпност.</string>
 	<string name="total">Общо</string>
-	<string name="up">нагоре</string>
+	<string name="up">Нагоре</string>
 	<string name="down">Надолу</string>
-	<string name="threads">нишки</string>
-	<string name="select_rows">Изберете редове</string>
-	<string name="start">Започнете</string>
+	<string name="threads">потоци</string>
+	<string name="select_rows">Изберете колони</string>
+	<string name="start">Започни</string>
 	<string name="end">Край</string>
 	<string name="framework">рамка</string>
 	<string name="syntax">Синтаксис</string>
@@ -110,7 +110,7 @@
 	<string name="protection">защита</string>
 	<string name="protection_info">„Открит признаци на защита apk: %s.\n\n Моля, обърнете внимание, че откриването се извършва въз основа на косвени признаци, така че това може да е грешка!“</string>
 	<string name="main_pkg">основен пакет</string>
-	<string name="styled">стилизиран низ</string>
+	<string name="styled">стилизиран стринг</string>
 	<string name="app_crashed">Имаше грешка в приложението! Кликнете, за да видите дневника</string>
 	<string name="max_value">Максимална стойност</string>
 	<string name="sign_ver_info">„Версии за подпис за версии на Android:\nV1 – първата опция за подпис, единствена до Android 7.0;\nV2 – добавена към Android 7.0;\n\nВерсията за подпис трябва да се използва въз основа на минималната/целевата необходима версия на Android за приложението. Ако целевата версия е 30+ (Android 11+), се изисква подпис V2.\n\nАко не поставите отметка в квадратчето „Запазване“, тогава избраните схеми ще се използват само този път.“</string>
@@ -524,7 +524,7 @@
 	<string name="screen_on_summary">Дръж екрана винаги включен</string>
 	<string name="editor_cs">Тема</string>
 	<string name="editor_cs_summary">Цветова схема на редактора</string>
-	<string name="use_aapt2">Използване на aapt2</string>
+	<string name="use_aapt2">Използвай aapt2</string>
 	<string name="use_aapt2_summary">Използвай aapt2 за сборка. Експериментален вариант</string>
 	<string name="check_install">Проверка на apk</string>
 	<string name="check_install_summary">Проверявай apk, преди инсталиране</string>
@@ -623,10 +623,10 @@
 	<string name="jadx_settings_summary">Настройки за преглед на Java код</string>
 	<string name="trlangs_settings">Създаване на преводачески услуги</string>
 	<string name="trlangs_settings_summary">Избор на езици за онлайн преводачи</string>
-	<string name="threads_count">Брой нишки</string>
-	<string name="threads_count_summary">Брой нишки за многонишкови процеси</string>
+	<string name="threads_count">Брой потоци</string>
+	<string name="threads_count_summary">Брой потоци за многопоточни процеси</string>
 	<string name="disable_crashes">Деактивирайте улавянето на грешки</string>
-	<string name="disable_crashes_summary">Не хващайте сривовете на програмата в случай на грешка</string>
+	<string name="disable_crashes_summary">Не хващай сривовете на програмата в случай на грешка</string>
 	<string name="faq">ЧЗВ</string>
 	<string name="faq_summary">Помощ за използване на програмата</string>
 	<string name="key_type">Тип ключ:</string>
@@ -647,7 +647,7 @@
 	<string name="common_name">Име:</string>
 	<string name="organization_unit">Длъжност:</string>
 	<string name="organization_name">Организация:</string>
-	<string name="locality_name">Град:</string>
+	<string name="locality_name">Локално име:</string>
 	<string name="state_name">Област/държава:</string>
 	<string name="country">Страна:</string>
 	<string name="gen_key_title">Създаване на ключ</string>
@@ -708,7 +708,7 @@
 	<string name="mtool_repl_summary">Замяна на aapt, aapt2</string>
 	<string name="build_notification">Известия</string>
 	<string name="build_notification_summary">Изпрати известие след завършване на компилация и сборка</string>
-	<string name="ongoing_notification">Уведомяване на работа</string>
+	<string name="ongoing_notification">Уведомяване за работа</string>
 	<string name="ongoing_notification_summary">Показвай известие по време на компилиране и декомпилиране</string>
 	<string name="add_dummy">Добавяне \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Добавяй отсъстващите ресурси при декомпилация</string>
@@ -756,8 +756,8 @@
 	<string name="detect_protect_summary">Опитвате се да определите защитата на apk файла в диалоговия прозорец с подробности</string>
 	<string name="ds_display">Дисплей за дата и размер</string>
 	<string name="ds_display_summary">Ред на показване на датата и размера на файловете</string>
-	<string name="baksmali_registers">Използвайте „регистри“ вместо „местни“</string>
-	<string name="baksmali_registers_summary">Когато декомпилирате до smali, използвайте \"registers\" вместо \"locals\"</string>
+	<string name="baksmali_registers">Използвай \ \"регистри\" вместо \"локални\"</string>
+	<string name="baksmali_registers_summary">Когато декомпилира до smali, използвай \"registers\" вместо \"locals\"</string>
 	<string name="old_search">Стар тип търсене</string>
 	<string name="old_search_summary">Стара опция за показване на резултатите от търсенето във файлове</string>
 	<string name="clear_split">Премахване на разделени следи</string>
@@ -818,7 +818,7 @@
 	<string name="to_unicode">В уникод</string>
 	<string name="from_unicode">От уникод</string>
 	<string name="list_methods">Список методи</string>
-	<string name="list_strings">Редове</string>
+	<string name="list_strings">Стрингове</string>
 	<string name="select_color">Избери цвят</string>
 	<string name="colors_editor">Цветови редактор</string>
 	<string name="invert_color">Инвертирай цвета</string>
@@ -869,7 +869,7 @@
 	<string name="moriginal">Оригинал</string>
 	<string name="mtranslation">Превод</string>
 	<string name="madd">Добави</string>
-	<string name="mtr_only_tr">Съхранявай само преведени редове</string>
+	<string name="mtr_only_tr">Съхранявай само преведени стрингове</string>
 	<string name="mtr_info">Ако ресурсът на реда вече съществува, той ще бъде заменен. Ако няма такава директория, тя ще бъде създадена. Името на директорията трябва да започва с \"values\".</string>
 	<string name="string_exists">Ред с такова име вече съществува!</string>
 	<string name="confirmation">Потвърждаване</string>
@@ -887,7 +887,7 @@
 	<string name="mtr_invalid_res">грешен отговор на сървъра</string>
 	<string name="mtr_translating">Превод: %1$d от %2$d ...</string>
 	<string name="mtr_success_count">%d реда са преведени успешно</string>
-	<string name="mtr_properties">Проект: %1$s\nОбщо локализации: %2$s\nТекуща локализация: %3$s\nРазмер: %4$s\nОбщо редове: %5$s\nПреведени редове: %6$s</string>
+	<string name="mtr_properties">Проект: %1$s\nОбщо локализации: %2$s\nТекуща локализация: %3$s\nРазмер: %4$s\nОбщо стрингове: %5$s\nПреведени стрингове: %6$s</string>
 	<string name="mtr_service">Преводачески сервиз</string>
 	<string name="mtr_google">Google</string>
 	<string name="mtr_google_web">Google Web</string>
@@ -920,7 +920,7 @@
 	<string name="mtr_no_trans">Стринга не се нуждае от превод!</string>
 	<string name="mtr_first_notrans">Първоначално не е преведено</string>
 	<string name="mtr_check_source">Проверете за съответствие с изходния език</string>
-	<string name="mtr_check_source_info">Ако е избран конкретен изходен език, програмата ще се опита да провери низовете за съответствие с този език. Низове на други езици няма да бъдат превеждани.</string>
+	<string name="mtr_check_source_info">Ако е избран конкретен изходен език, програмата ще се опита да провери стрингове за съответствие с този език. Низове на други езици няма да бъдат превеждани.</string>
 	<string name="attention">Внимание!</string>
 	<string name="repeat">Повтори</string>
 	<string name="down_for">Изтегли за %s</string>
@@ -952,9 +952,9 @@
 	<string name="license_refuse">Откажи</string>
 	<string name="send_log">Изпращане на лога към разработчика</string>
 	<string name="patcher_select">Изберете пластир</string>
-	<string name="patcher_select_error">Това не е пластир!</string>
+	<string name="patcher_select_error">Това не е пач!</string>
 	<string name="patcher_project">Проект: \"%s\"</string>
-	<string name="patcher_patch">Кръпка</string>
+	<string name="patcher_patch">Пач</string>
 	<string name="patcher_patchf">Корекция: \"%s\"</string>
 	<string name="patcher_apk">APK: \"%s\"</string>
 </resources>
