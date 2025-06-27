@@ -551,11 +551,11 @@
 	<string name="delete_build_summary">Xóa thư mục \"build\" sau khi biên dịch</string>
 	<string name="fix_drawer">Tệp cố định</string>
 	<string name="fix_drawer_summary">Không đóng trình quản lý tệp bằng thao tác vuốt</string>
-	<string name="dont_notify">Không thông báo nếu chạy</string>
+	<string name="dont_notify">Không thông báo nếu đang chạy</string>
 	<string name="dont_notify_summary">Không hiển thị thông báo nếu ứng dụng đang mở</string>
 	<string name="default_key">Khoá mặc định</string>
 	<string name="default_key_summary">Khóa chữ ký mặc định</string>
-	<string name="update_freq">Tần suất kiểm tra cập nhật</string>
+	<string name="update_freq">Kiểm tra cập nhật định kì</string>
 	<string name="update_freq_summary">Tần suất kiểm tra cập nhật trong ngày</string>
 	<string name="menu_position">Vị trí thực đơn</string>
 	<string name="menu_position_summary">Vị trí menu ngữ cảnh tệp</string>
@@ -736,7 +736,7 @@
 	<string name="editor_colors_summary">Đánh dấu màu hex trong văn bản</string>
 	<string name="add_nsc">Thêm cấu hình bảo mật mạng</string>
 	<string name="add_nsc_summary">Thêm cấu hình bảo mật mạng cho phép chung tại thời điểm dựng</string>
-	<string name="add_nsc_ex">Không thay đổi nếu nó tồn tại</string>
+	<string name="add_nsc_ex">Không thay đổi nếu chuỗi đã tồn tại</string>
 	<string name="add_nsc_ex_summary">Không thay đổi cấu hình bảo mật mạng đã thêm</string>
 	<string name="dont_reset_cpb">Không đặt lại nút dán</string>
 	<string name="dont_reset_cpb_summary">Nút dán khi sao chép tệp sẽ chỉ được đặt lại khi nhấn và giữ nút đó</string>
@@ -771,7 +771,7 @@
 	<string name="custom_exts">Phần mở rộng văn bản</string>
 	<string name="custom_exts_summary">Đuôi tệp sẽ được chương trình phát hiện dưới dạng văn bản</string>
 	<string name="custom_exts_info">Nhập các đuôi tệp, cách nhau bằng dấu phẩy: aaa, bbb, ccc</string>
-	<string name="remove_property">Xoá &lt;thuộc tính&gt;</string>
+	<string name="remove_property">Xoá &lt;property&gt;</string>
 	<string name="remove_property_summary">Xoá thẻ &lt;property&gt; khỏi tệp kê khai khi dịch ngược</string>
 	<string name="save_sign_data">Lưu dữ liệu chữ ký V2 và V3</string>
 	<string name="save_sign_data_summary">Lưu dữ liệu chữ ký khi thao tác với APK, nếu tùy chọn ký là \"Không ký\"</string>
