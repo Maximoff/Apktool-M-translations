@@ -775,6 +775,8 @@
 	<string name="user_cache_summary">Выберите хранилище для папки временных файлов</string>
     <string name="snowfall">Включить снегопад</string>
 	<string name="snowfall_summary">Снегопад в программе на новогодних праздниках</string>
+    <string name="install_options">Варианты установки</string>
+	<string name="install_options_summary">Выбор вариантов установки файлов apk</string>
 	<string name="shell_cmd">Команда оболочки</string>
 	<string name="shell_cmd_summary">Оболочка для запуска shell-скриптов</string>
 	<string name="shell_cmd_root">Команда root</string>
@@ -797,6 +799,7 @@
 	<string name="search_regexp">Регулярные выражения</string>
 	<string name="search_sen2">Учитывать регистр</string>
 	<string name="search_loop">Поиск по кругу</string>
+    <string name="both_options">Оба варианта</string>
 	<string name="minfo">Инфо</string>
 	<string name="mauto">Авто</string>
 	<string name="permissions">Разрешения</string>

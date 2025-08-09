@@ -794,6 +794,8 @@
 	<string name="user_cache_summary">Select storage for temporary files folder</string>
     <string name="snowfall">Enable snowfall</string>
 	<string name="snowfall_summary">Snowfall in the program for the New Year holidays</string>
+    <string name="install_options">Installation options</string>
+	<string name="install_options_summary">Choosing the apk file installation options</string>
     <string name="shell_cmd">Shell command</string>
 	<string name="shell_cmd_summary">A shell for running shell scripts</string>
     <string name="shell_cmd_root">Root command</string>
@@ -816,6 +818,7 @@
 	<string name="search_regexp">Regular expressions</string>
 	<string name="search_sen2">Case sensitive</string>
 	<string name="search_loop">Loop a search</string>
+    <string name="both_options">Both options</string>
 	<string name="minfo">Info</string>
 	<string name="mauto">Auto</string>
 	<string name="permissions">Permissions</string>
