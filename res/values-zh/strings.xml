@@ -773,7 +773,7 @@
 	<string name="imgs_backup_summary">使用函数“%1$s”、“%2$s”、“%3$s”和“%4$s”处理时保存原始图像</string>
 	<string name="mtr_trans_xml">翻译 xml</string>
 	<string name="mtr_no_trans">字符串不需要翻译！</string>
-	<string name="mtr_first_notrans">前排显示未翻译内容</string>
+	<string name="mtr_first_notrans">优先显示未翻译项</string>
 	<string name="drawer_width">抽屉宽度</string>
 	<string name="drawer_width_summary">抽屉宽度百分比</string>
 	<string name="double_exit">双击退出</string>
@@ -826,7 +826,7 @@
 	<string name="down">下</string>
 	<string name="threads">线程</string>
 	<string name="dex_decompile_info">此选项会反编译 apk 根目录下的所有 dex 文件，但保留子文件夹中的 dex 文件不变。</string>
-	<string name="dex_decompile_info2">此选项将所有 dex 文件反编译为 apk，包括位于根目录中的文件和子文件夹中的文件。</string>
+	<string name="dex_decompile_info2">此选项会反编译 apk 中的所有 dex 文件，包括位于根目录中的文件和子文件夹中的文件。</string>
 	<string name="delete_orig">删除原文件</string>
 	<string name="split_dex">拆分 dex</string>
 	<string name="split_dex_label">拆分：</string>
@@ -952,4 +952,9 @@
     <string name="kill_sign_old_mode">正常模式</string>
     <string name="mtr_check_source">检查是否符合源语言</string>
     <string name="mtr_check_source_info">如果选择了特定的源语言，程序将尝试检查字符串是否符合该语言。其他语言的字符串将不会被翻译。</string>
+    <string name="install_options">安装选项</string>
+	<string name="install_options_summary">选择 apk 文件的安装选项</string>
+    <string name="both_options">两种选择</string>
+    <string name="mtr_mark_trans">标记为已翻译</string>
+    <string name="mtr_mark_trans_all">全部标记为已翻译</string>
 </resources>
