@@ -785,6 +785,8 @@
 	<string name="user_cache_summary">Pilih penyimpanan untuk folder file sementara</string>
 	<string name="snowfall">Aktifkan hujan salju</string>
 	<string name="snowfall_summary">Hujan salju dalam program untuk liburan Tahun Baru</string>
+	<string name="install_options">Opsi penginstalan</string>
+	<string name="install_options_summary">Pilih opsi penginstalan file apk</string>
 	<string name="shell_cmd">Perintah shell</string>
 	<string name="shell_cmd_summary">Shell untuk menjalankan skrip shell</string>
 	<string name="shell_cmd_root">Perintah root</string>
@@ -807,6 +809,7 @@
 	<string name="search_regexp">Ekspresi reguler</string>
 	<string name="search_sen2">Peka terhadap huruf besar/kecil</string>
 	<string name="search_loop">Ulangi pencarian</string>
+	<string name="both_options">Kedua opsi</string>
 	<string name="minfo">Info</string>
 	<string name="mauto">Otomatis</string>
 	<string name="permissions">Izin</string>
