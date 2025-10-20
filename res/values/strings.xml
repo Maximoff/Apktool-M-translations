@@ -24,6 +24,7 @@
 	<string name="yes">Yes</string>
 	<string name="no">No</string>
 	<string name="ok">Ok</string>
+    <string name="smali">Smali</string>
 	<string name="cancel">Cancel</string>
 	<string name="go_to">Go to</string>
 	<string name="new_dict">New Dictionary</string>
