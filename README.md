@@ -33,7 +33,7 @@ status_bar_notification_info_overflow
 ```
 
 <details>
-<summary><b>▶ English</b></summary>
+<summary><b>English</b></summary>
 Apktool M localization files.
 
 To send me a change request you need to do the following:
@@ -69,7 +69,7 @@ status_bar_notification_info_overflow
 </details>
 
 <details>
-<summary><b>▶ Tiếng Việt </b></summary>
+<summary><b>Tiếng Việt </b></summary>
 Các tệp localization của Apktool M.
 
 Để gửi yêu cầu thay đổi, bạn cần thực hiện các bước sau:
