@@ -32,7 +32,8 @@ search_menu_title
 status_bar_notification_info_overflow
 ```
 
-## For English
+<details>
+<summary><b>▶ English</b></summary>
 Apktool M localization files.
 
 To send me a change request you need to do the following:
@@ -65,3 +66,40 @@ next_icon
 search_menu_title
 status_bar_notification_info_overflow
 ```
+</details>
+
+<details>
+<summary><b>▶ Tiếng Việt </b></summary>
+Các tệp localization của Apktool M.
+
+Để gửi yêu cầu thay đổi, bạn cần thực hiện các bước sau:
+1. fork kho lưu trữ này;
+2. clone bản fork về thiết bị của bạn;
+3. chỉnh sửa;
+4. lưu và gửi pull request tới nhánh của tôi;
+
+[Hướng dẫn sử dụng GitHub](https://help.github.com/articles/using-pull-requests/ "Hướng dẫn sử dụng GitHub")
+
+Vui lòng sử dụng trình dịch tích hợp sẵn của Apktool M, hoặc tự chỉnh sửa các ký tự sau:
+1. `<` thành `&lt;`.
+2. `&` thành `&amp;`.
+3. `"` thành `\"`.
+3. `'` thành `\'`.
+4. ký tự `%` phải là `%%` đôi nếu không dùng để định dạng chuỗi, hoặc chuỗi phải có thuộc tính `formatted="false"`.
+
+Nếu có thể, hãy xóa các chuỗi có tên bắt đầu bằng `"abc_..."` khỏi tệp `strings.xml`, chúng không cần thiết.
+Ngoài ra, các chuỗi có tên sau đây không cần dịch:
+```
+beta
+dot
+rarrow
+lock_icon
+block_icon
+clock_icon
+list_icon
+prev_icon
+next_icon
+search_menu_title
+status_bar_notification_info_overflow
+```
+</details>
