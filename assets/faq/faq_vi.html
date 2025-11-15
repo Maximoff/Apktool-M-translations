@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apktool M FAQ Tiếng Việt</title>
+    <style>
+        .light {
+            background-color: #ffffff;
+        }
+    
+	    .dark {
+            background-color: #303030;
+        }
+    
+        .black {
+            background-color: #000000;
+        }
+        
+        .light .section_title, .light .content_text, .light .answer_text {
+            color: #424242;
+        }
+    
+        .light .content_text {
+            background: #ddebf7;
+        }
+    
+        .light .answer_text {
+            background: #dddddd;
+        }
+    
+	    .dark .section_title, .dark .content_text, .dark .answer_text {
+            color: #bdbdbd;
+        }
+    
+        .dark .content_text {
+            background: #081e22;
+        }
+    
+        .dark .answer_text {
+            background: #222222;
+        }
+    
+        .black .section_title, .black .content_text, .black .answer_text {
+            color: #ffffff;
+        }
+    
+        .black .content_text {
+            background: #222222;
+        }
+    
+        .black .answer_text {
+            border: 1px solid #424242;
+            background: #222222;
+        }
+    
+        .black .question_title {
+            border: 1px solid #424242;
+            background: #424242;
+            background: #111111;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        .section_title {
+            border: none;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .content_text {
+            border: 1px solid #c0c6d2;
+            border-radius: 3px;
+            padding: 6px;
+            background: #ddebf7;
+        }
+        
+        a:active,
+        a:hover,
+        a {
+            text-decoration: none;
+            color: #2196F3;
+        }
+        
+        .details_block {
+            margin-bottom: 10px;
+            border-radius: 3px;
+            overflow: auto;
+        }
+        
+        .question_title {
+            border: 1px solid #2196F3;
+            padding: 6px;
+            background: #2196F3;
+            color: #ffffff;
+        }
+        
+        .answer_text {
+            border: 1px solid #2196F3;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 6px;
+        }
+        
+        .warning_text {
+            color: red;
+        }
+    </style>
+</head>
+<body class="light">
+    <section class="section_zero">
+    <div class="section_title">  Nội dung  </div>
+    <div class="content_text">
+        <li><a href="https://4pda.to/forum/index.php?showtopic=1002506&view=findpost&p=116526321"><b>Câu hỏi thường gặp cập nhật trên 4PDA (bằng tiếng Nga)</b></a></li>
+        <li><a href="#section_one">Chỉnh sửa nhanh</a></li>
+        <li><a href="#section_two">Chỉnh sửa đầy đủ - giải mã và biên dịch</a></li>
+        <li><a href="#section_three">Dịch ứng dụng</a></li>
+        <li><a href="#section_four">Chức năng chống tách</a></li>
+        <li><a href="#section_five">Tạo chữ ký tùy chỉnh</a></li>
+        <li><a href="#section_six">Quản lý tệp</a></li>
+        <li><a href="#section_seven">Khác</a></li>
+        <li><a href="#section_eight">MPatcher</a></li>
+    </div>
+</section>
+<section id="section_one">
+    <div class="section_title">  Chỉnh sửa nhanh  </div>
+    <details class="details_block">
+        <summary class="question_title">Chỉnh sửa nhanh là gì?</summary>
+        <div class="answer_text">Đây là việc chỉnh sửa một số dữ liệu cốt lõi của ứng dụng mà không cần giải mã và biên dịch lại.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Chỉnh sửa nhanh dùng để làm gì?</summary>
+        <div class="answer_text">
+            <li>xem thông tin về ứng dụng (apk), quyền truy cập và vị trí cài đặt ưu tiên (không nhầm với vị trí cài đặt thực tế);</li>
+            <li>thay đổi tên ứng dụng;</li>
+            <li>thay đổi tên gói ứng dụng (nhân bản ứng dụng);</li>
+            <li>thay thế các biểu tượng vector (tự động tạo), biểu tượng thích ứng và biểu tượng raster thông thường trong ứng dụng;</li>
+            <li>thiết lập vị trí ưu tiên cài đặt ứng dụng;</li>
+            <li>thay đổi phiên bản SDK tối thiểu hoặc mục tiêu;</li>
+            <li>tùy chỉnh ứng dụng cho Android TV;</li>
+            <li>loại bỏ khỏi Manifest: <code>android:isSplitRequired, android:debuggable, android:testOnly</code>.</li>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Tại sao cần mục "Quyền truy cập"?</summary>
+        <div class="answer_text">Để xem các quyền truy cập của ứng dụng cũng như bật/tắt chúng.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Có thể chuyển đổi ảnh sang vector không?</summary>
+        <div class="answer_text">Có.<br> Hỗ trợ các định dạng PNG, Jpeg, Webp và Svg.<br> Việc chuyển đổi sẽ tạo file <u>{tên file cũ}type _vector.xml</u><br> Khi chuyển đổi, bạn có thể cải thiện hoặc làm giảm chất lượng hình ảnh.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Có thể chuyển đổi ảnh svg sang VectorDrawable không?</summary>
+        <div class="answer_text">Có.<br> Hỗ trợ xem trước SVG/VectorDrawable polygons (chưa biên dịch)<br>
+            <u>Lưu ý:</u> svg phải có cấu trúc đơn giản và hợp lý, nếu không trình phân tích có thể không xử lý đúng và bạn cần chuẩn hóa thủ công để sử dụng tốt.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Có thể chuyển đổi ảnh bitmap sang VectorDrawable không?</summary>
+        <div class="answer_text">Có.<br> Nhưng đây không phải là giải pháp hoàn hảo. Có thể có sai số lớn khi chuyển đổi, tuỳ vào độ phức tạp hình học của ảnh gốc.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để thay thế biểu tượng ứng dụng?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chuẩn bị biểu tượng cần thiết, tốt nhất ở định dạng png và kích thước không quá 192x192px.</li>
+                <li>Chọn ứng dụng → Chỉnh sửa nhanh.</li>
+                <li>Ở góc trên bên trái, bạn sẽ thấy biểu tượng và tên ứng dụng đã cài.</li>
+                <li>Chạm vào biểu tượng và chọn biểu tượng mới đã chuẩn bị sẵn.</li>
+                <li>Nếu cần, đánh dấu các tùy chọn: "thay thế biểu tượng thích ứng" "biểu tượng chất lượng cao (kích thước lớn hơn)"</li>
+                <li>Chọn file chữ ký nếu chưa cài đặt trước đó.</li>
+                <li>Nhấn "Lưu".</li>
+            </ol> File đã chỉnh sửa sẽ nằm cùng thư mục với ứng dụng đã chọn, có thêm nhãn mod ở cuối.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để trích xuất biểu tượng ứng dụng?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chọn ứng dụng → Chỉnh sửa nhanh.</li>
+                <li>Nhấn giữ vào biểu tượng.</li>
+            </ol> Biểu tượng được trích xuất sẽ nằm cùng thư mục với ứng dụng đã chọn.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để thay đổi phiên bản sdk tối thiểu hoặc mục tiêu?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chọn ứng dụng → Chỉnh sửa nhanh.</li>
+                <li>Thay đổi ở phần "Phiên bản SDK tối thiểu" hoặc "Phiên bản SDK mục tiêu".</li>
+                <li>Nhấn "Lưu".</li>
+            </ol> File đã chỉnh sửa sẽ nằm cùng thư mục với ứng dụng đã chọn và có nhãn mod ở cuối.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để đổi tên ứng dụng?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chọn ứng dụng → Chỉnh sửa nhanh.</li>
+                <li>Thay đổi tên ứng dụng theo ý muốn.</li>
+                <li>Chọn file chữ ký nếu chưa cài đặt trước đó.</li>
+                <li>Nhấn "Lưu".</li>
+            </ol> File đã chỉnh sửa sẽ nằm cạnh ứng dụng đã chọn và có nhãn mod ở cuối.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Tại sao không đổi được "Tên ứng dụng"? (Mục này bị ẩn)</summary>
+        <div class="answer_text">Có thể do phiên bản sdk tối thiểu của ứng dụng cao hơn phiên bản hệ thống của bạn. Khi đó sẽ bị giới hạn chỉnh sửa.<br>Trước tiên, cần giảm phiên bản sdk tối thiểu rồi mới chỉnh sửa được các mục khác.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để đổi tên gói ứng dụng?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chọn ứng dụng → "Chỉnh sửa nhanh".</li>
+                <li>Thay đổi tên gói ứng dụng.</li>
+                <li>Chọn file chữ ký nếu chưa cài đặt trước đó.</li>
+                <li>Nhấn "Lưu".</li>
+            </ol> File đã chỉnh sửa sẽ nằm cạnh ứng dụng đã chọn và có nhãn mod ở cuối.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để nhân bản apk trong ứng dụng này?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chọn ứng dụng → "Chỉnh sửa nhanh".</li>
+                <li>Thay đổi tên gói, ví dụ thêm hoặc bớt ký tự cuối tên.</li>
+                <li>Chọn file chữ ký nếu chưa cài đặt trước đó.</li>
+                <li>Nhấn "Lưu".</li>
+            </ol> File đã chỉnh sửa sẽ nằm cạnh ứng dụng đã chọn và có nhãn mod ở cuối.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để nhân bản ứng dụng khi chỉnh sửa nhanh?</summary>
+        <div class="answer_text">Chương trình sẽ thay đổi các tham số: AndroidManifest.xml và resources.arsc khi chỉnh sửa nhanh.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để tùy chỉnh ứng dụng cho Android TV?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chọn ứng dụng → "Chỉnh sửa nhanh".</li>
+                <li>Đánh dấu mục "Tùy chỉnh cho Android TV".</li>
+                <li>Chọn file chữ ký nếu chưa cài đặt trước đó.</li>
+                <li>Nhấn "Lưu".</li>
+            </ol> File đã chỉnh sửa sẽ nằm cạnh ứng dụng đã chọn và có nhãn mod ở cuối. Biểu tượng ứng dụng sẽ được dùng làm banner.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Nếu ứng dụng không cài được sau khi chỉnh sửa nhanh thì làm gì?</summary>
+        <div class="answer_text">Kiểm tra xem bạn đã ký gói chưa?<br> Trong chỉnh sửa nhanh, chọn file chữ ký. Mặc định chọn "không ký" nếu chưa dùng chữ ký trước đó.</div>
+    </details>
+</section>
+ <section id="section_two">
+    <div class="section_title">  Chỉnh sửa đầy đủ - giải mã và biên dịch  </div>
+    <details class="details_block">
+        <summary class="question_title">Giải mã (decompilation) là gì và dùng để làm gì?</summary>
+        <div class="answer_text">Giải mã arsc+dex - chuyển mã nhị phân thành định dạng dễ đọc cho con người. Cần thiết để chỉnh sửa tài nguyên ứng dụng (resources.arsc) và trình hợp dịch Smali (code). Ngoài ra còn dùng cho các chức năng yêu cầu giải mã như truy cập thông tin, áp dụng bản vá, dịch ngôn ngữ...<p><em>Để biên dịch lại, cần có các tệp nhị phân của aapt. Yêu cầu cài đặt sẽ xuất hiện khi chạy ứng dụng lần đầu. Nếu chưa cài, có thể tải trong mục "Cài đặt" → "Xây dựng và giải mã" → "Thay thế công cụ" → "Tải về cho ..."</em></p></div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để giải mã ứng dụng?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chọn ứng dụng cần thiết.</li>
+                <li>Nhấn vào ứng dụng.</li>
+                <li>Một menu bật lên xuất hiện.</li>
+                <li>Chọn "Giải mã".</li>
+                <li>Đánh dấu các mục cần giải mã:</li>
+                <ul>
+                    <li>"Giải mã tài nguyên"</li>
+                    <li>"Giải mã classes.dex" hoặc "Giải mã tất cả các file '*.dex'".<br>
+                        <em>(Mục "tất cả *.dex" dùng cho các file dex trong thư mục lồng nhau, ví dụ: assets, mthook, v.v.)</em>
+                    </li>
+                    <li>Nếu cần, chọn thêm "Giải mã tài nguyên bổ sung" và chọn nơi giải mã.</li>
+                </ul>
+            </ol> Sau khi giải mã thành công, sẽ có thông báo âm thanh và hộp thoại nếu đã bật trước đó trong Cài đặt.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để biên dịch lại ứng dụng?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Bên trong dự án, nhấn vào nhãn "Xây dựng dự án" phía trên cửa sổ trình duyệt.</li>
+                <li>Trong cửa sổ xây dựng, chọn công cụ xây dựng tài nguyên - aapt hoặc aapt2.</li>
+                <li>Có thể chọn tự động ký ứng dụng nếu cần.</li>
+            </ol> Nhật ký được hiển thị theo thời gian thực. Bạn có thể theo dõi các giai đoạn, bình luận và lỗi trong quá trình xây dựng.<br> Sau khi hoàn thành, nhật ký sẽ dừng lại (sẽ thấy rõ).<br> Sau khi biên dịch thành công, sẽ có thông báo âm thanh và hộp thoại nếu đã bật trước đó trong Cài đặt.<br> Ở phía dưới, cũng sẽ có đề xuất cài đặt ứng dụng vừa xây dựng ngay lập tức.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Ứng dụng sau khi xây dựng được lưu ở đâu?</summary>
+        <div class="answer_text">Vào thư mục chứa ứng dụng đã giải mã. Ở thư mục gốc dự án (cạnh file apktool.json).</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Có thể giải mã nhiều file cùng lúc không?</summary>
+        <div class="answer_text">Có, nhưng nên giải mã từng cái một, vì nếu làm cùng lúc có thể không đủ bộ nhớ.<br><br>
+            <details class="details_block">
+                <summary class="question_title">Làm thế nào để giải mã nhiều file?</summary>
+                <div class="answer_text">Chọn nhiều file và nhấn giữ để mở menu.<br>
+                    <u>Lưu ý!</u> Chỉ hoạt động với các file cùng loại. Nếu chọn không phải apk thì menu sẽ không có mục nào.</div>
+            </details>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để đổi thư mục lưu apk?</summary>
+        <div class="answer_text">
+            <ol>
+                <li>Cài đặt → "Xây dựng và giải mã" → "Thiết lập thư mục xuất ứng dụng đã cài đặt"</li>
+                <li>Vào thư mục mong muốn, nhấn vào dòng "đường dẫn" - thiết lập thư mục xuất.</li>
+                <li>Cũng có thể thiết lập thư mục xuất trực tiếp ở trình quản lý tệp.</li>
+            </ol>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Mục "Thư mục xuất ứng dụng đã cài đặt" là gì?</summary>
+        <div class="answer_text">Đây là thư mục nơi APK sẽ được xuất/giải nén ra để tiếp tục làm việc từ menu Ứng dụng.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Làm thế nào để thay thế tài nguyên trong file ".apk"?</summary>
+        <div class="answer_text">Trước tiên cần giải mã, sau đó sao chép/dán file và xây dựng lại.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Nếu không biên dịch được ứng dụng dù không báo lỗi, hoặc bạn không thay đổi gì mà chỉ biên dịch lại, thì làm sao?</summary>
+        <div class="answer_text">Hãy chuyển phiên bản aapt.<br> Xem nhật ký ở mức cảnh báo (Warning).<br> Nói chung, hãy kiểm tra nhật ký – lý do sẽ được ghi rõ ở đó.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Tương thích với dự án Apktool thế nào?</summary>
+        <div class="answer_text">Apktool M cho phép xây dựng các dự án đã được phân tích bằng Apktool thông thường.<br> Trước khi xây dựng, Apktool M chuyển đổi file .yml thành .json.<br> Có thể theo dõi quá trình bằng nhật ký.</div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title">Apktool M có thể làm việc với ứng dụng hệ thống không?</summary>
+        <div class="answer_text">Có thể.<br><br>
+            <details class="details_block">
+                <summary class="question_title">Làm thế nào để làm được?</summary>
+                <div class="answer_text">Trước khi làm với apk kiểu này, cần nhập khung apk bằng mục trong menu ngữ cảnh cho apk đó. Nhập khung áp dụng cho tất cả apk kiểu này. <p>Đường dẫn gốc: /system/framework/..</p> Chúng cũng có thể nằm ở /system/vendor/framework, v.v. trong các thư mục lân cận, nếu các thư mục này tồn tại (hiếm gặp).<br><br>Ví dụ về các khung:                        
+<img align="center" alt="" class="image" src="data:image/webp;base64,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" width="100%">
+        <p>Sau đó, hãy giải mã và biên dịch lại như một apk thông thường. Để lưu lại META-INF và manifest gốc – bật tùy chọn "Khớp với gốc" trong phần cài đặt giải mã.</p>
+</details>
+</details>
+<details class="details_block">
+    <summary class="question_title">Giải thích các mục trong phần "Xây dựng và giải mã"</summary>
+    <div class="answer_text">
+        <details class="details_block">
+            <summary class="question_title">Thư mục xuất</summary>
+            <div class="answer_text">Đường dẫn nơi ứng dụng đã cài đặt sẽ được xuất/giải nén từ tab "Ứng dụng".</div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Dùng aapt2</summary>
+            <div class="answer_text">Thêm phiên bản thứ hai của công cụ vào mục chọn phiên bản aapt trước khi xây dựng.</div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Thông tin debug</summary>
+            <div class="answer_text">
+                <p>Khi xây dựng, dữ liệu debug được lưu trong các tệp Smali như <code>.line, .param</code>, v.v.</p>
+                <u>Lưu ý:</u><br> Dữ liệu này chỉ cần cho việc debug ứng dụng ở chế độ debug. Cũng như debug các lỗi Smali trong Logcat (hiếm, có thể giúp xác định dòng gây lỗi). Không ảnh hưởng đến quá trình thực thi mã. Thông tin này cũng hữu ích khi chỉnh sửa assembler Smali như các điểm tham chiếu (dành cho modeler).
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Chế độ debug</summary>
+            <div class="answer_text">Ghi thuộc tính <code>android:debuggable</code> trong thẻ <code>&lt;application /&gt;</code> của manifest thành <code>true</code>. Báo cho hệ thống biết đây là ứng dụng debug. Cho phép mở rộng quyền truy cập vào nhật ký ứng dụng. Tương tác chức năng này chỉ thực hiện được bằng các công cụ đặc biệt (như Android Studio, debug ở cấp độ ADB, v.v.). Tùy chọn này không ảnh hưởng đến Logcat – số lượng dòng debug trong nhật ký hệ thống không thay đổi nếu chỉnh thông số này.<p>Để chọn ứng dụng này làm ứng dụng debug hiện tại, hãy chọn trong "Cài đặt hệ thống" → "Nhà phát triển" → "Ứng dụng debug" (đường dẫn có thể khác).</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Đầy đủ</summary>
+            <div class="answer_text">Khi xây dựng sẽ xuất trạng thái cuối cùng của từng tệp vào nhật ký sau khi biên dịch. Không cần thiết thì không nên bật.</div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Khớp với gốc</summary>
+            <div class="answer_text">Cho phép lưu lại META-INF gốc và hash manifest bằng cách giữ nguyên hash tài nguyên gốc.<br> Chế độ này chỉ chỉnh sửa được Smali – nếu cố biên dịch file đã chỉnh trong res/..., sẽ bị xóa khỏi apk cuối cùng vì không khớp hash gốc (đã bị chỉnh sửa).
+                <p><span class="warning_text"><em>Mục này cần làm rõ thêm.</em></span></p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Phân tích tất cả Smalisedit</summary>
+            <div class="answer_text">Tăng tốc phân tích tệp trong Smali.</div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Thêm "APKTOOL_DUMMY"</summary>
+            <div class="answer_text">
+                <p>Mặc định, các ID tài nguyên trong resources.arsc sẽ tăng dần. Đôi khi chuỗi này bị đứt – một số vị trí bên trong kiểu giá trị có thể chưa được điền (còn trống).</p>
+                <p>Những chỗ trống này sẽ được gán APKTOOL_DUMMY để đảm bảo chuỗi ID liền mạch. Các dòng này không ảnh hưởng đến gì cả.</p>
+                <u>Lưu ý nhỏ:</u><br>
+                <p>Nếu xóa một đối tượng tài nguyên khỏi res/values/public.xml, khi xây dựng sẽ cố tìm chỗ còn trống để gán lại ID. Nếu không có chỗ trống, sẽ thêm vào cuối danh sách. Không nên làm với ID đối tượng đã dùng trong Smali – sẽ gây crash do đối tượng bị chuyển vị trí (không tồn tại).</p>
+                <p>Xóa public.xml sẽ khiến Apktool tạo lại chuỗi ID mới – lúc đó APKTOOL_DUMMY sẽ không còn đâu để gán vì không có khoảng trống giữa ID đầu và cuối.</p>
+                <p>Việc cần APKTOOL_DUMMY do người dùng quyết định. Có thể cần nếu dự án giải mã có cấu trúc ID đặc biệt (ví dụ do thuộc tính tuỳ chỉnh hoặc bị obfuscate).</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Định dạng HTML</summary>
+            <div class="answer_text">Nội dung các tệp .html và .htm (?) sẽ được định dạng theo cú pháp XML. Có thể làm hỏng hiển thị trang HTML. Chỉ nên bật khi cần.</div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Xóa thư mục "build"</summary>
+            <div class="answer_text">
+                <p>Khi xây dựng, các tệp DEX và ARSC sẽ được cache trong thư mục build. Nếu không thay đổi tài nguyên sau lần build trước và build lại apk, .arsc sẽ không được tạo lại mà lấy từ cache do hash không thay đổi. Điều này cũng áp dụng cho Smali (file DEX). Giúp tăng tốc build apk bằng cách bỏ qua bước biên dịch lại.</p>
+                <p>Xóa thư mục chỉ để giải phóng bộ nhớ. Sau đó, khi build lại, .dex và .arsc sẽ được tạo lại từ đầu và thư mục sẽ được tạo lại. Bật tùy chọn này sẽ tự động xóa thư mục sau khi build thành công.</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Đưa tất cả về thư mục xuất</summary>
+            <div class="answer_text">Tất cả các apk đã biên dịch thành công sẽ được chuyển tự động về thư mục xuất.</div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Quản lý frameworks</summary>
+            <div class="answer_text">Cho phép quản lý các khung nhập từ ngoài. Nút reset sẽ xóa danh sách và file ở máy, đồng thời khôi phục res-framework.apk (ID 1) từ Apktool M.</div>
+        </details>
+    </div>
+</details>
+            </div>
+        </details>
+    </section>
+<section id="section_three">
+    <div class="section_title">  Dịch ứng dụng  </div>
+    <details class="details_block">
+        <summary class="question_title"> Hỗ trợ dịch bao nhiêu ngôn ngữ? </summary>
+        <div class="answer_text"> Hơn 100 ngôn ngữ. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Các tùy chọn có trong Yandex.Translate là gì? </summary>
+        <div class="answer_text">
+            <li>Dịch tự động các chuỗi chọn trong tài nguyên (strings, arrays, plurals) và smali;</li>
+            <li>Dịch thủ công trong tài nguyên (strings, arrays, plurals) và smali;</li>
+            <li>Chỉnh sửa bản dịch;</li>
+            <li>Dịch trực tuyến với nhiều dịch vụ dịch khác nhau;</li>
+            <li>Dịch ngoại tuyến;</li>
+            <li>Hỗ trợ từ điển;</li>
+            <li>Tạo từ điển riêng từ bản dịch có sẵn;</li>
+            <li>Hỗ trợ từ điển của MT Manager;</li>
+            <li>Kết hợp các ngôn ngữ.</li>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có bao nhiêu dịch vụ dịch trực tuyến trong ứng dụng? </summary>
+        <div class="answer_text"> Ba dịch vụ: Yandex, Google, Bing. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Tôi không tìm thấy chức năng dịch ứng dụng. Làm thế nào để bật Yandex.Translate và dịch ứng dụng (strings.xml) sang tiếng Nga? </summary>
+        <div class="answer_text"> Chức năng này chỉ có khi ứng dụng đã được giải mã.
+            <ol>
+                <li>Giải mã tài nguyên của apk cần dịch.</li>
+                <li>Vào thư mục chứa các file đã giải mã.</li>
+                <li>Mở menu quản lý tệp (bằng cách nhấn vào thanh địa chỉ) và chọn "Translator".</li>
+            </ol>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để dịch ứng dụng tự động? </summary>
+        <div class="answer_text">
+            <ol>
+                <li>Giải mã tài nguyên của apk cần dịch.</li>
+                <li>Vào thư mục chứa các file đã giải mã.</li>
+                <li>Mở menu quản lý tệp (nhấn vào thanh địa chỉ), chọn "Translator", sau đó nhấn vào ba chấm ở góc trên bên phải và chọn "Dịch tự động".</li>
+                <li>Trong menu hiện ra, chọn dịch vụ dịch phù hợp, ví dụ Yandex.</li>
+                <li>Ở mục "Ngôn ngữ nguồn", có thể để "Xác định ngôn ngữ" tự động, còn ngôn ngữ đích thì chọn theo ý muốn. Mặc định sẽ là ngôn ngữ hệ thống của bạn.</li>
+                <li>Ở dưới cùng, đánh dấu vào hộp "Gộp nếu đã tồn tại" hoặc "Chỉ lưu chuỗi đã dịch".</li>
+                <li>Chọn các dòng cần dịch.</li>
+                <li>Nhấn "Dịch" để dịch các chuỗi trong res/values/strings.</li>
+                <li>Sau khi dịch xong, lại nhấn vào ba chấm ở góc trên bên phải và chọn "Lưu".</li>
+                <li>Tiến hành ghép lại dự án (ứng dụng).</li>
+            </ol>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để dịch tự động phần smali của ứng dụng? </summary>
+        <div class="answer_text">
+            <ol>
+                <li>Giải mã apk cần dịch.</li>
+                <li>Vào thư mục chứa các file đã giải mã.</li>
+                <li>Mở menu quản lý tệp (nhấn vào thanh địa chỉ), chọn "smali translation", sau đó nhấn ba chấm ở góc trên bên phải và chọn "Dịch tự động".</li>
+                <li>Trong menu hiện ra, chọn dịch vụ dịch phù hợp, ví dụ Yandex.</li>
+                <li>Ở mục "Ngôn ngữ nguồn", có thể để "Xác định ngôn ngữ" tự động, còn ngôn ngữ đích thì chọn theo ý muốn. Mặc định sẽ là ngôn ngữ hệ thống của bạn.</li>
+                <li>Chọn các dòng cần dịch.</li>
+                <li>Ở dưới cùng, đánh dấu vào hộp "Gộp nếu đã tồn tại" hoặc "Chỉ lưu chuỗi đã dịch".</li>
+                <li>Nhấn "Dịch".</li>
+                <li>Sau khi dịch xong, lại nhấn vào ba chấm ở góc trên bên phải và chọn "Lưu".</li>
+                <li>Tiến hành ghép lại dự án (ứng dụng).</li>
+            </ol>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Trong "Dịch tự động" có chức năng "chỉnh sửa bản dịch". Dùng để làm gì? </summary>
+        <div class="answer_text"> Để bỏ qua các dòng không cần dịch: <code>true, false, %1$d/%2$d</code>, hiện đã bao gồm cả đồ họa vector, tham chiếu, v.v., cũng như chỉnh sửa một số dòng sau khi dịch tự động. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để dịch ứng dụng thủ công? </summary>
+        <div class="answer_text">
+            <ol>
+                <li>Giải mã apk cần dịch.</li>
+                <li>Vào thư mục chứa các file đã giải mã.</li>
+                <li>Mở menu quản lý tệp (nhấn vào thanh địa chỉ), chọn "smali translation" và chỉnh sửa thủ công các dòng cần thiết.</li>
+                <li>Ở góc trên bên phải, nhấn vào ba chấm và chọn "Lưu".</li>
+                <li>Tiến hành ghép lại dự án (ứng dụng).</li>
+            </ol>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao để kết hợp các ngôn ngữ nếu chuỗi mặc định của ứng dụng đã dịch không chứa các chuỗi cần thiết, nhưng lại có trong ngôn ngữ khác? </summary>
+        <div class="answer_text"> Sau khi dịch xong ứng dụng, vào menu dịch, chọn "thêm, thêm từ" và thêm các dòng còn thiếu từ một locale khác. Sau đó, nếu cần, lại dịch các dòng đó. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Định dạng từ điển nào được hỗ trợ trong Apktool M? </summary>
+        <div class="answer_text"> *.amd và *.mtd </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để tạo từ điển từ file đã dịch? </summary>
+        <div class="answer_text"> Mở Yandex.Translate, chọn "tạo từ điển" trong menu, chọn nguồn (chuỗi chưa dịch) và tài nguyên đích (file dịch của bạn) trong thư mục dự án rồi lưu lại. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao dùng từ điển đã lưu? </summary>
+        <div class="answer_text"> Lần tiếp theo khi dịch, nó sẽ xuất hiện trong mục chọn dịch vụ dịch. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Lấy từ điển có sẵn để dịch offline ở đâu? </summary>
+        <div class="answer_text"> Trong <a href="https://4pda.to/forum/index.php?showtopic=548542&amp;view=findpost&amp;p=29447386&amp;anchor=Spoil-29447386-6">chủ đề MT Manager</a><br> Sao chép vào "thư mục xuất/dictionary" (mặc định là "Apktool_M/dictionary" trong bộ nhớ trong), hoặc nhập trực tiếp bằng cách nhấn vào file từ điển trong chương trình và thêm vào.<br> Sau đó, từ điển sẽ xuất hiện trong Yandex.Translate, ở các dịch vụ dịch tự động. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Sau khi dịch, dự án không ghép được, báo lỗi. </summary>
+        <div class="answer_text">
+            <ol>
+                <li>Xóa các dòng không hợp lệ thường được ghi rõ trong nhật ký lỗi khi ghép.</li>
+                <li>Khi ghép, dùng aapt1 nếu không ghép được bằng aapt2 và không có lỗi về chuỗi dịch không hợp lệ.</li>
+                <li>Ứng dụng có thể bị bảo vệ bởi chữ ký.</li>
+            </ol>
+        </div>
+    </details>
+</section>
+<section id="section_four">
+    <div class="section_title">  Chức năng Antisplit  </div>
+    <details class="details_block">
+        <summary class="question_title"> Antisplit là gì? </summary>
+        <div class="answer_text"> Đây là quá trình gộp các Android App Bundle (split) thành một tệp cài đặt duy nhất, cũng như cài đặt và trích xuất các tệp này. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để tạo một apk từ các split? Tùy chọn này nằm ở đâu? </summary>
+        <div class="answer_text">
+            <ol>
+                <li>Trong menu ngữ cảnh "Antisplit". Gọi bằng cách chạm ngắn vào apks/xapk.</li>
+                <li>Trong menu ngữ cảnh "Antisplit". Gọi bằng cách chạm vào nhóm apks đã chọn trước / đã chọn.</li>
+            </ol> Sau đó, chọn công cụ biên dịch cần thiết: aapt2 hoặc aapt, nếu ứng dụng chưa được biên dịch trước đó.
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có thể tạo apk từ split đã cài đặt không? </summary>
+        <div class="answer_text"> Có thể.<br> Chọn ứng dụng đã cài đặt trong danh sách và nhấn giữ để gọi mục "Antisplit". </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Tệp đã ghép được lưu ở đâu? </summary>
+        <div class="answer_text"> Tệp apk sẽ nằm ở thư mục làm việc mặc định: internal_memory/Apktool_M.<br>
+            <small><i>Sau khi xây dựng xong sẽ có nút "Cài đặt", nếu nhấn giữ lâu sẽ mở thư mục chứa tệp.</i></small>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Hướng dẫn từng bước chuyển đổi Apks thành Apk bằng Apktool M. </summary>
+        <div class="answer_text">
+            <ol>
+                <li>Chọn tệp cần thiết (Apks) và nhấn vào nó.</li>
+                <li>Tiếp theo chọn "Antisplit" từ menu hiện ra.</li>
+                <li>Nhấn tiếp vào nút "Antisplit" (đảm bảo tất cả các tệp, tức là các ô chọn, đều được bật).</li>
+                <li>Sau đó, chọn công cụ cần dùng (aapt2 hoặc aapt nếu ứng dụng chưa được biên dịch) và nhấn nút "Chọn".</li>
+                <li>Chờ quá trình hoàn tất.</li>
+            </ol> Bây giờ file Apks của bạn đã chuyển thành Apk và bạn có thể làm việc với nó như một tệp Apk thông thường.
+        </div>
+    </details>
+</section>
+<section id="section_five">
+    <div class="section_title">  Tạo chữ ký tùy chỉnh  </div>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để tạo chữ ký của riêng tôi? </summary>
+        <div class="answer_text">
+            <p>Vào "Cài đặt" → "Chữ ký", chọn "Tạo khóa".</p>
+            <li><small><i>Trong phần cài đặt chữ ký, bạn có thể thiết lập tên file RSA / SF, cũng như tên người tạo cho chữ ký V1</i></small></li><br> Trong menu mở ra, hãy điền các dòng sau:
+            <p><u>Thuật toán chữ ký:</u><br> Khác nhau về độ dài của mã hash chứng chỉ (sau khi ký apk). SHA256withRSA là tối ưu. Nên giữ mặc định. MD5 được xem là không an toàn. Có thể tìm hiểu kỹ hơn trên Internet.</p>
+            <p><u>Loại:</u><br> Chỉ định loại lưu trữ. Mặc định là JKS (còn gọi là .keystore). Có thể tìm hiểu chi tiết trên Internet.</p>
+            <p><u>Đường dẫn đến khóa:</u><br> Vị trí lưu trữ khóa đầu ra. Tên file sẽ được nhập tự động, có thể thay đổi nếu muốn.</p>
+            <p><u>Bí danh (Alias):</u><br> Bí danh cho khóa. Sử dụng khi nhập/xử lý.</p>
+            <p><u>Mật khẩu kho và mật khẩu khóa:</u><br> Mật khẩu bảo vệ kho lưu trữ và bản thân khóa trước khi nhập/sử dụng. Để tiện lợi, có thể đặt giống nhau.</p>
+            <p><u>Kích thước khóa:</u><br> Số bit (độ dài) của chữ ký khóa để đọc. Giá trị mặc định là 2048. Tăng kích thước thì độ mạnh mã hóa cao hơn nhưng khó phân tích hơn (chậm hơn). Thiết lập theo chuỗi tiến hóa 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, v.v.</p>
+            <p><u>Thời hạn hiệu lực:</u><br> Thời gian kể từ ngày tạo đến khi khóa hết hạn. Nhập số năm.</p>
+            <p><u>Thông tin về chủ sở hữu chữ ký (tùy chọn):</u><br> Tên, chức vụ, tổ chức, thành phố, tỉnh/thành phố, quốc gia.</p>
+            <p>Nút "Lưu" sẽ hoàn thành việc tạo và đặt kho lưu trữ vào đường dẫn đã chọn.</p>
+            <p>Nút "Tạo và sử dụng" sẽ nhập file vừa tạo làm chữ ký người dùng.</p>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có thể chuyển đổi kho jks/keystore sang pk8+x509.pem không? </summary>
+        <div class="answer_text"> Có thể. </div>
+    </details>
+</section>
+  <section id="section_six">
+    <div class="section_title">  Quản lý tệp  </div>
+    <details class="details_block">
+        <summary class="question_title"> Apktool có trình quản lý tệp đầy đủ không? </summary>
+        <div class="answer_text"> Có. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để truy cập menu quản lý tệp? </summary>
+        <div class="answer_text"> Menu sẽ mở khi bấm vào thanh địa chỉ. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có những chức năng gì? </summary>
+        <div class="answer_text">
+            <li>Xóa tệp;</li>
+            <li>Sao chép tệp;</li>
+            <li>Đổi tên, bao gồm đổi tên hàng loạt;</li>
+            <li>Tạo danh sách tệp;</li>
+            <li>Nén/giải nén (archiving);</li>
+            <li>Xem thuộc tính tệp và thư mục;</li>
+            <li>Tìm kiếm đầy đủ;</li>
+            <li>Đánh dấu trang (bookmarks);</li>
+            <li>Lịch sử các tệp đã mở gần nhất;</li>
+            <li>Hộp thoại thuộc tính tệp apk/apks là một mục riêng;</li>
+            <li>Xem trước file vector xml/svg, cũng như chuyển đổi ảnh sang vector;</li>
+            <li>Xem trước font ttf/otf;</li>
+            <li>Thao tác hàng loạt với các apk hoặc ảnh đã chọn bằng cách nhấn giữ;</li>
+            <li>Trong thư mục dự án, phần thuộc tính của file tài nguyên sẽ hiển thị ID từ public.xml (nếu có).</li>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để mở menu ngữ cảnh khi xem tệp? </summary>
+        <div class="answer_text"> Nhấn giữ vào chính tệp. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Các mục có trong menu ngữ cảnh là gì? </summary>
+        <div class="answer_text">
+            <li>Gửi tệp...</li>
+            <li>Mở bằng...</li>
+            <li>Xóa.</li>
+            <li>Đổi tên.</li>
+            <li>Nén.</li>
+            <li>Giải nén tại đây.</li>
+            <li>Giải nén sang "Tên file"</li>
+            <li>Xem nội dung.</li>
+            <li>Thuộc tính.</li>
+            <li>Sao chép.</li>
+            <li>Cắt.</li>
+            <li>MPatcher.</li>
+            <li>Chọn.</li>
+            <li>Chọn tất cả.</li>
+            <li>Sao chép tên.</li>
+            <li>Sao chép đường dẫn.</li>
+            <li>Thêm vào đánh dấu trang.</li>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để chọn tệp / thư mục? </summary>
+        <div class="answer_text">
+            <ol>
+                <li>Nhấn giữ vào chính tệp / thư mục hoặc vào biểu tượng của nó.</li>
+                <li>Sau khi chọn một tệp / thư mục bằng cách nhấn giữ vào biểu tượng, có thể nhấn giữ biểu tượng của tệp khác để chọn kiểu "từ... đến...".</li>
+                <li>Cũng có thể chọn nhanh tất cả bằng cách nhấn giữ biểu tượng "quay lại" (..)</li>
+            </ol>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để đổi tên tệp? </summary>
+        <div class="answer_text"> Nhấn giữ vào tệp sẽ hiện hộp thoại đổi tên.<br> Trong hộp thoại này, nhấn giữ vào "tự động" có thể đổi tên hàng loạt theo mẫu. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để chỉnh sửa tệp bằng trình soạn thảo ngoài trực tiếp từ ứng dụng? </summary>
+        <div class="answer_text"> Nhấn giữ vào tệp → trong menu ngữ cảnh hiện ra, chọn "Mở bằng"... </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để tạo file nén? </summary>
+        <div class="answer_text"> Chọn "Nén" trong menu ngữ cảnh. Khi nén tệp, bạn có thể thêm vào file nén đã có sẵn. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có thể xóa hoặc thay thế tệp/thư mục trong file nén (bao gồm APK) mà không cần giải nén/biên dịch lại không? </summary>
+        <div class="answer_text"> Có thể.<br>
+            <ol>
+                <li>Nhấn giữ vào file .apk và chọn "Xem nội dung" từ menu nổi.</li>
+                <li>Dùng nhấn giữ để chọn phần cần xóa hoặc trích xuất.</li>
+            </ol> Sau khi thao tác, tệp sẽ tự động được đóng gói lại và ký tên.<br> File gốc sẽ được lưu bên cạnh với phần mở rộng .bak.
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để thay thế tệp hoặc thư mục bằng bản đã chỉnh sửa trong APK đã giải nén? </summary>
+        <div class="answer_text"> Nhấn giữ vào tệp cần thay thế và chọn "Giải nén tại đây" trong menu ngữ cảnh...<br> Nếu muốn thay ảnh trong thư mục drawable, phải thêm thư mục res chứa drawable vào apk, trong drawable có ảnh cần thay.<br>
+            <p>
+                <span class="warning_text">Nói cách khác, cần giữ nguyên cấu trúc thư mục!</span>
+            </p> Sau khi xong, đóng gói lại file apk.<br> Ký tên lại.
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Apktool M có công cụ tìm kiếm đầy đủ không? </summary>
+        <div class="answer_text"> Có.<br> Có thể tìm kiếm tệp, tên tệp, nội dung trong tệp, ứng dụng đã cài đặt.<br> Nhập địa chỉ thủ công bằng cách nhấn giữ địa chỉ. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Ứng dụng có tìm kiếm theo biểu thức chính quy không? </summary>
+        <div class="answer_text"> Có. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để bắt đầu sử dụng chức năng tìm kiếm? </summary>
+        <div class="answer_text"> Mở menu quản lý tệp bằng cách nhấn vào thanh địa chỉ. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Tôi không thấy tìm kiếm thư mục, chỉ thấy tìm kiếm trong file. </summary>
+        <div class="answer_text"> Không cần nhấn giữ vào chính thư mục, mà hãy vào thư mục cần tìm, rồi nhấn vào "mũi tên hoặc đường dẫn đến thư mục/tệp" sẽ hiện menu tìm kiếm. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Kết quả tìm kiếm có được lưu lại không và tìm ở đâu? </summary>
+        <div class="answer_text"> Có. Lịch sử tìm kiếm sẽ được lưu lại.<br> Một mục sẽ xuất hiện trong menu Explorer (nhấn vào địa chỉ trên cùng), hoặc bằng cách nhấn giữ vào biểu tượng tìm kiếm ở thanh dưới, nếu đã bật.<br> Có thể tìm tiếp trong chính kết quả tìm kiếm.<br> Nếu chưa từng tìm kiếm thì mục này sẽ không xuất hiện. </div>
+    </details>
+</section>
+  <section id="section_seven">
+    <div class="section_title">  Khác  </div>
+    <details class="details_block">
+        <summary class="question_title"> Apktool có chức năng nhân bản ứng dụng không? </summary>
+        <div class="answer_text"> Có.<br> Cần giải mã hoàn toàn ứng dụng. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có cách nào khác để nhân bản ứng dụng không? </summary>
+        <div class="answer_text"> Dùng bản vá trong chương trình MPatcher. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao để xóa các ngôn ngữ không cần thiết khỏi app, chỉ giữ lại ru, eng? </summary>
+        <div class="answer_text"> Trong menu ngữ cảnh, chọn mục "Tối ưu hóa (aapt2)".<br> Trong phần cài đặt, đánh dấu "Cấu hình" và chỉ định ngôn ngữ cần giữ, ví dụ "ru, ru-rRU". </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao để xóa tất cả ngôn ngữ trừ tiếng Nga, tiếng Ukraina và tiếng Anh? </summary>
+        <div class="answer_text"> Tương tự như xóa hết ngôn ngữ trừ tiếng Nga và tiếng Anh.<br> Trong mục "Cấu hình", chỉ định các ngôn ngữ cần giữ, ví dụ "ru, ru-rRU, uk, ru-rUA, uk-rRU". </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao để xem danh sách ứng dụng đã cài đặt? </summary>
+        <div class="answer_text"> Ở góc trên bên phải - tab "Ứng dụng". </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao để chỉnh sửa toàn bộ Manifest trong app? </summary>
+        <div class="answer_text"> Toàn bộ manifest sẽ được chỉnh sửa khi các tài nguyên đã được giải mã. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có công cụ chuyển đổi giá trị tích hợp không? </summary>
+        <div class="answer_text">
+            <p>Có.</p>
+            <details class="details_block">
+                <summary class="question_title"> Làm sao để vào đó? </summary>
+                <div class="answer_text"> Màn hình chính → Ba chấm ở góc trên bên phải → Bộ chuyển đổi. </div>
+            </details>
+            <details class="details_block">
+                <summary class="question_title"> Hỗ trợ các giá trị nào? </summary>
+                <div class="answer_text">
+                    <li>Text ↔ SHA-384</li>
+                    <li>Text ↔ SHA-224</li>
+                    <li>Text ↔ SHA-256</li>
+                    <li>Text ↔ SHA-512</li>
+                    <li>Text ↔ SHA-1</li>
+                    <li>Text ↔ MD5</li>
+                    <li>Text ↔ Mã hóa URL</li>
+                    <li>Text ↔ Unicode</li>
+                    <li>↔ Base64 text</li>
+                    <li>Text ↔ Mảng (US-ASCII)</li>
+                    <li>Text ↔ Mảng (UTF-16LE)</li>
+                    <li>Text ↔ Mảng (UTF-16BE)</li>
+                    <li>Text ↔ Mảng (UTF-8)</li>
+                    <li>Text ↔ Mảng (CP1251)</li>
+                    <li>Text ↔ Mảng (ISO-8859-1)</li>
+                    <li>Thập phân ↔ Bát phân</li>
+                    <li>Thập phân ↔ Nhị phân</li>
+                    <li>↔ Màu Smali</li>
+                    <li>Thập phân ↔ Hex (0x0)</li>
+                    <li>Thập phân ↔ Hex (0x00000000)</li>
+                    <li>Thập phân ↔ Hex</li>
+                    <li>Float ↔ Nhị phân</li>
+                    <li>Float ↔ Bát phân</li>
+                    <li>Float ↔ Hex</li>
+                    <li>Float ↔ Hex (0x0)</li>
+                    <li>Float ↔ Hex (0x00000000)</li>
+                    <p><u>Lưu ý!</u></p> Tất cả các mã hóa nếu có hỗ trợ chuyển đổi ngược, đều chuyển đổi được ở cửa sổ nhập phía dưới.
+                </div>
+            </details>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao để cập nhật Apktool M? </summary>
+        <div class="answer_text"> Màn hình chính → Ba chấm góc trên bên phải → "Cài đặt" → "Cập nhật chương trình" bật "Kiểm tra cập nhật".<br> Bên dưới có thể chọn tần suất kiểm tra cập nhật. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao để tải bản cập nhật? </summary>
+        <div class="answer_text"> Tải từ chính Apktool M hoặc tải qua trình duyệt. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> File cập nhật được lưu ở đâu? </summary>
+        <div class="answer_text"> Trong bộ nhớ trong, thư mục "Download". </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có thể tắt kiểm tra cập nhật không? </summary>
+        <div class="answer_text"> Có thể.<p>Màn hình chính → Ba chấm góc trên bên phải → "Cài đặt" → "Giới thiệu ứng dụng" → "Tắt kiểm tra cập nhật".</p>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm sao để khôi phục từ bản sao lưu? Mục khôi phục không hoạt động... </summary>
+        <div class="answer_text"> Để khôi phục, cần lưu tài khoản trước.<br> File sao lưu phải nằm ở đường dẫn: "/internal_memory/Apktool_M.backup", nếu không có thì mục này sẽ không hoạt động. </div>
+    </details>
+</section>
+<section id="section_eight">
+    <div class="section_title">  MPatcher  </div>
+    <details class="details_block">
+        <summary class="question_title"> MPatcher là gì? </summary>
+        <div class="answer_text"> Đây là một ứng dụng dùng để chạy, tạo, nhập, xuất các script và patch viết bằng Shell, được tích hợp trong Apktool M. </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Có chủ đề riêng trên diễn đàn không? </summary>
+        <div class="answer_text"> Có: <a href="https://4pda.to/forum/index.php?showtopic=1018077">MPatcher</a>
+        </div>
+    </details>
+    <details class="details_block">
+        <summary class="question_title"> Làm thế nào để gọi MPatcher? </summary>
+        <div class="answer_text"> Nhấn giữ vào file và chọn "MPatcher" trong menu ngữ cảnh hiện ra.<br> Hành động này sẽ xác định apk mục tiêu. <p>Để chọn dự án mục tiêu – phía trên mục "Build" có menu thả xuống, trong đó có mục MPatcher.</p>
+        </div>
+    </details>
+</section>
+    <script type="text/javascript">(function(){window.location.search.substring(1).split("&").forEach(function(a){a=a.split("=");"theme"==a[0]&&document.body.setAttribute("class",a[1])});})();</script>
+</body>
+</html>
