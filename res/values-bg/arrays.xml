@@ -326,6 +326,8 @@
 		<item>Цвят &lt;-> Смали</item>
 		<item>Цвят &lt;-> Десетичен</item>
 		<item>Цвят &lt;-> A,R,G,B</item>
+        <item>Date &lt;-> Milliseconds</item>
+		<item>Date &lt;-> Hex</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Не е зададено</item>

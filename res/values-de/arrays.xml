@@ -363,6 +363,8 @@
 		<item>Farbe &lt;-&gt; Smali</item>
 		<item>Farbe &lt;-&gt; Dezimal</item>
 		<item>Farbe &lt;-&gt; A,R,G,B</item>
+        <item>Date &lt;-> Milliseconds</item>
+		<item>Date &lt;-> Hex</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Nicht festgelegt</item>

@@ -342,6 +342,8 @@
 		<item>Цвет &lt;-> Smali</item>
 		<item>Цвет &lt;-> Decimal</item>
 		<item>Цвет &lt;-> A,R,G,B</item>
+        <item>Дата &lt;-> Миллисекунды</item>
+		<item>Дата &lt;-> Hex</item>
 	</string-array>
 	<string-array name="xml_format_variants">
 		<item>По умолчанию</item>

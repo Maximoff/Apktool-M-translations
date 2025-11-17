@@ -290,6 +290,8 @@
         <item>Color &lt;-> Smali</item>
         <item>Color &lt;-> Decimal</item>
         <item>Color &lt;-> A,R,G,B</item>
+        <item>Date &lt;-> Milliseconds</item>
+		<item>Date &lt;-> Hex</item>
     </string-array>
     <string-array name="installLocation">
         <item>Nenustatyta</item>

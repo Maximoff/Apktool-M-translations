@@ -336,6 +336,8 @@
 		<item>颜色 &lt;-> Smali</item>
 		<item>颜色 &lt;-> 十进制</item>
 		<item>颜色 &lt;-> A,R,G,B</item>
+        <item>Date &lt;-> Milliseconds</item>
+		<item>Date &lt;-> Hex</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>未设置</item>

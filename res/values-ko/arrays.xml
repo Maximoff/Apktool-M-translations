@@ -323,6 +323,8 @@
 		<item>색상 &lt;-> Smali</item>
 		<item>색상 &lt;-> 10진수</item>
 		<item>색상 &lt;-> A,R,G,B</item>
+        <item>Date &lt;-> Milliseconds</item>
+		<item>Date &lt;-> Hex</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>설정 안 함</item>
