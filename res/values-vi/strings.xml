@@ -108,13 +108,13 @@
 	<string name="redistribute_dex">Phân phối lại dex</string>
 	<string name="bg_proccess_notice">Có một tiến trình đang chạy trong nền, nếu bạn đóng ứng dụng, nó có thể bị gián đoạn! Bạn có chắc chắn muốn thoát?</string>
 	<string name="protection">Bảo vệ</string>
-	<string name="protection_info">Dấu hiệu bảo vệ đã phát hiện apk: %s.&lt;br>&lt;br>Xin lưu ý rằng việc phát hiện xảy ra dựa trên các dấu hiệu gián tiếp, vì vậy đây có thể là một lỗi!</string>
+	<string name="protection_info">Dấu hiệu bảo vệ đã phát hiện apk: %s.&lt;br>Xin lưu ý rằng việc phát hiện xảy ra dựa trên các dấu hiệu gián tiếp, vì vậy đây có thể là một lỗi!</string>
 	<string name="main_pkg">gói chính</string>
 	<string name="styled">chuỗi được định kiểu</string>
 	<string name="app_crashed">Có lỗi trong ứng dụng! Nhấn để xem nhật ký</string>
 	<string name="max_value">Giá trị tối đa</string>
-	<string name="sign_ver_info">Phiên bản chữ ký cho các phiên bản Android:&lt;br>V1 - tùy chọn chữ ký đầu tiên, duy nhất cho đến Android 7.0;&lt;br>V2 - được thêm vào Android 7.0;&lt;br>&lt;br>Phiên bản chữ ký nên được sử dụng dựa trên phiên bản Android tối thiểu/mục tiêu được yêu cầu cho ứng dụng. Nếu phiên bản mục tiêu là 30+ (Android 11+), thì cần chữ ký V2.&lt;br>&lt;br>Nếu bạn không chọn hộp kiểm \"Lưu\", thì các lược đồ đã chọn sẽ chỉ được sử dụng lần này.</string>
-	<string name="sign_ver_info2">Phiên bản chữ ký cho các phiên bản Android:&lt;br>V1 – tùy chọn chữ ký đầu tiên, duy nhất cho đến Android 7.0;&lt;br>V2 – được thêm vào Android 7.0;&lt;br>V3 – được thêm vào Android 9.0;&lt;br>V4 – được thêm vào Android 11;&lt;br>&lt;br>Phiên bản chữ ký nên được sử dụng dựa trên phiên bản Android tối thiểu/mục tiêu được yêu cầu cho ứng dụng. Nếu phiên bản mục tiêu là 30+ (Android 11+), thì cần chữ ký V2. V2 hoặc V3 phải được sử dụng cùng với chữ ký V4. Phiên bản V4 hiện tại gần như không bao giờ được sử dụng.&lt;br>&lt;br>Nếu bạn không chọn hộp kiểm \"Lưu\", thì các lược đồ đã chọn sẽ chỉ được sử dụng lần này.</string>
+	<string name="sign_ver_info">Phiên bản chữ ký cho các phiên bản Android:&lt;br>V1 - tùy chọn chữ ký đầu tiên, duy nhất cho đến Android 7.0;&lt;br>V2 - được thêm vào Android 7.0;&lt;br>Phiên bản chữ ký nên được sử dụng dựa trên phiên bản Android tối thiểu/mục tiêu được yêu cầu cho ứng dụng. Nếu phiên bản mục tiêu là 30+ (Android 11+), thì cần chữ ký V2.&lt;br>Nếu bạn không chọn hộp kiểm \"Lưu\", thì các lược đồ đã chọn sẽ chỉ được sử dụng lần này.</string>
+	<string name="sign_ver_info2">Phiên bản chữ ký cho các phiên bản Android:&lt;br>V1 – tùy chọn chữ ký đầu tiên, duy nhất cho đến Android 7.0;&lt;br>V2 – được thêm vào Android 7.0;&lt;br>V3 – được thêm vào Android 9.0;&lt;br>V4 – được thêm vào Android 11;&lt;br>Phiên bản chữ ký nên được sử dụng dựa trên phiên bản Android tối thiểu/mục tiêu được yêu cầu cho ứng dụng. Nếu phiên bản mục tiêu là 30+ (Android 11+), thì cần chữ ký V2. V2 hoặc V3 phải được sử dụng cùng với chữ ký V4. Phiên bản V4 hiện tại gần như không bao giờ được sử dụng.&lt;br>Nếu bạn không chọn hộp kiểm \"Lưu\", thì các lược đồ đã chọn sẽ chỉ được sử dụng lần này.</string>
 	<string name="ignore_indent">Bỏ qua thụt lề</string>
 	<string name="file_nw">Tệp không thể ghi!</string>
 	<string name="dexs_info">Thông tin Dex</string>
@@ -216,7 +216,7 @@
 	<string name="internal">Bộ nhớ trong</string>
 	<string name="root_dir">Thư mục gốc</string>
 	<string name="custom_size">Kích thước của bạn</string>
-	<string name="custom_size_info">Kích thước hình ảnh hoàn chỉnh: %s.&lt;br>&lt;br>Chỉ định cạnh lớn nhất, tỷ lệ sẽ được lưu tự động.&lt;br>Không nên đặt kích thước quá lớn.</string>
+	<string name="custom_size_info">Kích thước hình ảnh hoàn chỉnh: %s.&lt;br>Chỉ định cạnh lớn nhất, tỷ lệ sẽ được lưu tự động.&lt;br>Không nên đặt kích thước quá lớn.</string>
 	<string name="custom_size_info_vc">Chỉ định cạnh lớn nhất, tỷ lệ sẽ được lưu tự động.&lt;br>Không nên đặt kích thước quá lớn.&lt;br>0 - tự động.</string>
 	<string name="fav_short">Yêu thích.</string>
 	<string name="fav_full">Yêu thích</string>
@@ -466,7 +466,7 @@
 	<string name="signature">Chữ ký</string>
 	<string name="signature_summary">Cấu hình cài đặt chữ ký.</string>
 	<string name="build_and_decode">Xây dựng &amp; Giải mã</string>
-	<string name="build_and_decode_summary">Cấu hình cài đặt Xây dựng &amp; Giải mã.</string>
+	<string name="build_and_decode_summary">Cấu hình cài đặt xây dựng &amp; giải mã.</string>
 	<string name="font_size">Kích thước phông chữ trình chỉnh sửa</string>
 	<string name="font_size_summary">Chỉ định kích thước phông chữ mặc định của trình chỉnh sửa</string>
 	<string name="font_size_title">Kích thước phông chữ trình chỉnh sửa:</string>
@@ -488,7 +488,7 @@
 	<string name="signature_pass_not_set">Không có mật khẩu được đặt cho keystore, chữ ký mặc định được sử dụng!</string>
 	<string name="load_signature_file_fail">Không thể tải tệp chữ ký \'%1$s\'.</string>
 	<string name="enter_password">Nhập mật khẩu:</string>
-	<string name="about">Về</string>
+	<string name="about">Giới thiệu</string>
 	<string name="about_summary">Thông tin về tác giả, các liên kết hữu ích</string>
 	<string name="overwrite_apk">Ghi đè tệp</string>
 	<string name="overwrite_apk_summary">Ghi đè tệp và thư mục</string>
@@ -691,7 +691,7 @@
 	<string name="mupdate_get">Cập nhật ngay</string>
 	<string name="mupdate_down">Tải xuống</string>
 	<string name="mupdate_inbrowser">Mở trong trình duyệt</string>
-	<string name="mupdate_message">&lt;b>Phiên bản mới:&lt;/b> %1$s&lt;br>&lt;br>&lt;b>Ngày:&lt;/b> %2$s&lt;br>&lt;br>&lt;b>Kích thước:&lt;/b> %3$s&lt;br>&lt;br>&lt;b>Nhật ký thay đổi:&lt;/b>&lt;br>%4$s</string>
+	<string name="mupdate_message">&lt;b>Phiên bản mới:&lt;/b> %1$s&lt;br>&lt;b>Ngày:&lt;/b> %2$s&lt;br>&lt;b>Kích thước:&lt;/b> %3$s&lt;br>&lt;b>Nhật ký thay đổi:&lt;/b>&lt;br>%4$s</string>
 	<string name="down_started">Bắt đầu tải tệp</string>
 	<string name="mchanges">Có gì mới?</string>
 	<string name="mchanges_summary">Thay đổi trong phiên bản này</string>
@@ -846,8 +846,8 @@
 	<string name="mapp_vn">Tên phiên bản</string>
 	<string name="mapp_cn">Mã phiên bản</string>
 	<string name="mapp_inLocation">Vị trí cài đặt</string>
-	<string name="mapp_minsdk">Phiên bản SDK tối thiểu</string>
-	<string name="mapp_targetsdk">Phiên bản SDK mục tiêu</string>
+	<string name="mapp_minsdk">Phiên bản SDK thấp nhất</string>
+	<string name="mapp_targetsdk">Phiên bản SDK cao nhất</string>
 	<string name="mapp_down_plugin">Bạn có muốn tải xuống plugin giải mã apkm không?</string>
 	<string name="mapk_damage">Tệp Apk bị hỏng!</string>
 	<string name="mapk_nosign">Tệp Apk chưa được ký!</string>
@@ -929,8 +929,8 @@
 	<string name="down_for">Tải xuống cho %s</string>
 	<string name="file_download">Tải xuống tệp: %s</string>
 	<string name="download_success">Tệp %s đã tải xuống thành công!</string>
-	<string name="load_binaries2">Bạn cần tải xuống các tệp aapt/aapt2! Bạn có thể tải xuống chúng ngay bây giờ hoặc làm điều đó sau trong cài đặt. Cần có kết nối Internet để tải xuống.&lt;br>&lt;br>Bạn có muốn tải xuống ngay bây; giờ?</string>
-	<string name="load_binaries">Các tệp nhị phân aapt/aapt2 tích hợp có thể không tương thích với hệ thống của bạn. Bạn có thể cập nhật chúng ngay bây giờ hoặc làm điều đó sau trong cài đặt. Cần có kết nối Internet để tải xuống.&lt;br>&lt;br>Bạn có muốn tải xuống ngay bây; giờ?</string>
+	<string name="load_binaries2">Bạn cần tải xuống các tệp aapt/aapt2! Bạn có thể tải xuống chúng ngay bây giờ hoặc làm điều đó sau trong cài đặt. Cần có kết nối Internet để tải xuống.&lt;br>Bạn có muốn tải xuống ngay bây; giờ?</string>
+	<string name="load_binaries">Các tệp nhị phân aapt/aapt2 tích hợp có thể không tương thích với hệ thống của bạn. Bạn có thể cập nhật chúng ngay bây giờ hoặc làm điều đó sau trong cài đặt. Cần có kết nối Internet để tải xuống.&lt;br>Bạn có muốn tải xuống ngay bây; giờ?</string>
 	<string name="plugin_modif">Plugin UnApkm được ký bởi chữ ký của người khác. Có thể plugin đã bị sửa đổi. Rất khuyến khích bạn xóa plugin và tải xuống tệp gốc từ trang web của nhà phát triển. Bằng cách nhấp vào \"Không nhắc nhở\", bạn tiếp tục sử dụng plugin đã sửa đổi với rủi ro của riêng bạn!</string>
 	<string name="not_remind">Không nhắc nhở</string>
 	<string name="mpatcher">MPatcher</string>
@@ -941,10 +941,10 @@
 	<string name="telegram_summary">Kênh Telegram với các cập nhật</string>
 	<string name="report_descr">Vui lòng mô tả ngắn gọn các hành động của bạn sau đó xảy ra lỗi</string>
 	<string name="optimize_battery">Tối ưu hóa hiệu suất pin</string>
-	<string name="optimization_notice">Để chương trình hoạt động trong nền (khi nó được thu nhỏ), nên thêm nó vào các ngoại lệ của trình tối ưu hóa hệ thống. Ứng dụng sẽ chỉ chạy trong nền nếu bạn tự chạy nó!&lt;br>&lt;br>Bạn có muốn làm điều này?</string>
-	<string name="heap_help">Để khắc phục lỗi OOM, hãy tăng kích thước bộ nhớ heap.&lt;br>&lt;br>Để tăng kích thước bộ nhớ heap, &lt;b>bạn cần có quyền root&lt;/b>!&lt;br>&lt;br>Bạn cần mở tệp &lt;b>/system/build.prop&lt;/b> và thêm/thay đổi dòng trong đó &lt;b>dalvik.vm.heapsize = 512m&lt;/b> (512m là kích thước heap tính bằng megabyte).&lt;br>&lt;br>&lt;small>Thao tác này chỉ có thể được thực hiện bằng Apktool M nếu phân vùng /system được gắn lại với quyền ghi, nếu không bạn cần sử dụng các công cụ khác.&lt;br>&lt;br>Đôi khi có hai dòng như vậy trong tệp, một trong số chúng cần phải được xóa.&lt;/small></string>
+	<string name="optimization_notice">Để chương trình hoạt động trong nền (khi nó được thu nhỏ), nên thêm nó vào các ngoại lệ của trình tối ưu hóa hệ thống. Ứng dụng sẽ chỉ chạy trong nền nếu bạn tự chạy nó!&lt;br>Bạn có muốn làm điều này?</string>
+	<string name="heap_help">Để khắc phục lỗi OOM, hãy tăng kích thước bộ nhớ heap.&lt;br>Để tăng kích thước bộ nhớ heap, &lt;b>bạn cần có quyền root&lt;/b>!&lt;br>Bạn cần mở tệp &lt;b>/system/build.prop&lt;/b> và thêm/thay đổi dòng trong đó &lt;b>dalvik.vm.heapsize = 512m&lt;/b> (512m là kích thước heap tính bằng megabyte).&lt;br>&lt;small>Thao tác này chỉ có thể được thực hiện bằng Apktool M nếu phân vùng /system được gắn lại với quyền ghi, nếu không bạn cần sử dụng các công cụ khác.&lt;br>Đôi khi có hai dòng như vậy trong tệp, một trong số chúng cần phải được xóa.&lt;/small></string>
 	<string name="heap_memory">Bộ nhớ heap</string>
-	<string name="heap_info">Bộ nhớ đã sử dụng: %1$dMB.&lt;br>Bộ nhớ khả dụng: %2$dMB.&lt;br>Kích thước heap: %3$dMB.</string>
+	<string name="heap_info">Bộ nhớ đã sử dụng: %1$dMB.&lt;\n \n Bộ nhớ khả dụng: %2$dMB.&lt;br>Kích thước heap: %3$dMB.</string>
 	<string name="scoped_storage">Bộ nhớ cục bộ</string>
 	<string name="restore_set_dialog">Bạn có muốn khôi phục cài đặt của mình không? Cài đặt hiện tại sẽ bị ghi đè!</string>
 	<string name="scoped_storage_title">Thay đổi Android 11</string>
