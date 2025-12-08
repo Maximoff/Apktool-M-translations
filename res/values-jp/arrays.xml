@@ -1,250 +1,206 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string-array name="smali_help_names">
-        <item>レジスタ</item>
-        <item>リテラル値</item>
-        <item>基本データ型</item>
-    </string-array>
-
-    <string-array name="smali_help_values" formatted="false">
-        <item>vA は値の範囲が v0 - v15 の 4 ビットレジスタです。\nvAA は値の範囲が v0 - v255 の 8 ビットレジスタです。\nvAAAA は値の範囲が v0 - v65535 の 16 ビットレジスタです。</item>
-        <item>0xF、0xFF などが使用されます。リテラル値を表します。レジスタと同じく数字 F は値の範囲を示すために使われます。例：\n0xF の値の範囲: [-0x8, 0x7]\n0xFF の値の範囲: [-0x80, 0x7F]</item>
-        <item>V - 空白、Z - boolean、B - byte\nC - char、S - short、I - int\nJ - long、F - float、D - double\nvoid: 戻り値専用。\nboolean: true / false を保存します。\nbyte: -128 ～ 127 の整数（1byte）。\nshort: -32768 ～ 32767 の整数（2byte）。\nint: -2147483648 ～ 2147483647（4byte）。\nlong: -9.22e18 ～ 9.22e18（8byte）。\ndouble: ±4.9e-324 ～ ±1.79e308 の浮動小数点（8byte）。\nfloat: -3.4e38 ～ 3.4e38 の浮動小数点（4byte）。\nchar: UTF-16 の 1 文字（0～65535）。</item>
-
-        <item>動作なし。</item>
-        <item>レジスタ vB の値をレジスタ vA に移動します。</item>
-        <item>レジスタ vBBBB の値をレジスタ vAA に移動します。</item>
-        <item>レジスタ vBBBB の値をレジスタ vAAAA に移動します。</item>
-        <item>レジスタペア (vB, vB+1) の long/double を (vA, vA+1) に移動します。</item>
-        <item>レジスタペア (vBBBB, vBBBB+1) の long/double を (vAA, vAA+1) に移動します。</item>
-        <item>レジスタペア (vBBBB, vBBBB+1) の long/double を (vAAAA, vAAAA+1) に移動します。</item>
-
-        <item>レジスタ vB のオブジェクト参照を vA へ移動します。</item>
-        <item>レジスタ vBBBB のオブジェクト参照を vAA へ移動します。</item>
-        <item>レジスタ vBBBB のオブジェクト参照を vAAAA へ移動します。</item>
-
-        <item>直前のメソッド呼び出しの戻り値を vAA に移動します。</item>
-        <item>直前のメソッド呼び出しの long/double 戻り値を (vAA, vAA+1) に移動します。</item>
-        <item>直前のメソッド呼び出しのオブジェクト参照を vAA に移動します。</item>
-        <item>メソッド呼び出し中にスローされた例外オブジェクト参照を vAA に移動します。</item>
-
-        <item>（戻り値なしで）return します。</item>
-        <item>レジスタ vAA の値を返します。</item>
-        <item>レジスタペア (vAA, vAA+1) の long/double を返します。</item>
-        <item>レジスタ vAA のオブジェクト参照を返します。</item>
-
-        <item>vA に 4 ビットの定数を配置します。</item>
-        <item>vAA に 16 ビットの定数を配置します。</item>
-        <item>vAA に整数定数を配置します。</item>
-        <item>vAA の上位ビットに 16 ビット定数を配置します。浮動小数点の初期化に使用。</item>
-
-        <item>16 ビット整数を (vAA, vAA+1) に配置し long へ拡張します。</item>
-        <item>32 ビット整数を (vAA, vAA+1) に配置し long へ拡張します。</item>
-        <item>64 ビット定数を (vAA, vAA+1) に配置します。</item>
-        <item>16 ビット定数を (vAA, vAA+1) の上位 16 ビットに配置します（double 初期化）。</item>
-
-        <item>指定された文字列参照を vAA に配置します。</item>
-        <item>指定された文字列参照を vAA に配置します。</item>
-        <item>string_id の文字列参照を vAA に配置します。</item>
-
-        <item>vAA のオブジェクトを monitor-enter します。</item>
-        <item>vAA のオブジェクトを monitor-exit します。</item>
-
-        <item>vAA の参照を type_id のクラスにキャスト可能か確認します。失敗すると ClassCastException。</item>
-        <item>vB が type_id のインスタンスか確認し、vA に 0/1 を設定します。</item>
-
-        <item>vB の配列長を vA に格納します。\nvA = vB.length</item>
-
-        <item>オブジェクトのインスタンスを作成し参照を vAA に入れます。</item>
-        <item>vB のサイズで type_id の新しい配列を作成し参照を vA に格納します。</item>
-        <item>type_id の新しいデータ配列を作成しパラメータで初期化します（long/double 除く）。参照は move-result-object で取得します。</item>
-        <item>type_id の新しいデータ配列を複数パラメータで初期化します（long/double 除く）。参照は move-result-object で取得します。</item>
-
-        <item>vAA の配列を静的データで埋めます。</item>
-
-        <item>vAA の例外オブジェクトを throw します。</item>
-
-        <item>8 ビットオフセットで無条件ジャンプします。</item>
-        <item>16 ビットオフセットで無条件ジャンプします。</item>
-        <item>32 ビットオフセットで無条件ジャンプします。</item>
-
-        <item>連続値に対してテーブルスイッチを実装します。</item>
-        <item>疎な値に対してスパーススイッチを実装します。</item>
-
-        <item>float を比較し結果を vAA に格納します。\nvAA = vBB &lt; vCC ? 1 : -1 : 0</item>
-        <item>float を比較し結果を vAA に格納します。</item>
-
-        <item>double を比較し結果を vAA に格納します。</item>
-        <item>double を > で比較し結果を vAA に格納します。</item>
-        <item>long を比較し結果を vAA に格納します。</item>
-
-        <item>vA == vB ならジャンプします。（eq）</item>
-        <item>vA != vB ならジャンプします。（ne）</item>
-        <item>vA &lt; vB ならジャンプします。（lt）</item>
-        <item>vA が真ならジャンプします。</item>
-        <item>vA > vB ならジャンプします。（gt）</item>
-        <item>vA >= vB ならジャンプします。（ge）</item>
-
-        <item>vAA == 0 ならジャンプします。（eqz）</item>
-        <item>vAA != 0 ならジャンプします。（nez）</item>
-        <item>vAA &lt; 0 ならジャンプします。（ltz）</item>
-        <item>vAA が真ならジャンプします。</item>
-        <item>vAA > 0 ならジャンプします。（gtz）</item>
-        <item>vAA >= 0 ならジャンプします。（gez）</item>
-
-        <!-- ここから先も同様に日本語翻訳を続けます（文字数制限のため分割） -->
-
-    </string-array>
-
-    <string-array name="years_or_days">
-        <item>年</item>
-        <item>日</item>
-    </string-array>
-
-    <string-array name="store_type">
-        <item>内蔵</item>
-        <item>カスタム</item>
-    </string-array>
-
-    <string-array name="jadx_sets">
-        <item>代替モード</item>
-        <item>難読化解除</item>
-        <item>Unicode エスケープ</item>
-        <item>一貫性のないコード表示</item>
-    </string-array>
-
-    <string-array name="copy_variants">
-        <item>名前変更</item>
-        <item>ファイル名のみ変更</item>
-        <item>置換</item>
-        <item>スキップ</item>
-    </string-array>
-
-    <string-array name="menu_pos">
-        <item>左</item>
-        <item>右</item>
-    </string-array>
-
-    <string-array name="checksum_names">
-        <item>全て大文字</item>
-        <item>コロン区切り</item>
-    </string-array>
-
-    <string-array name="refresh_res">
-        <item>新しいリソースを追加（ファイルのみ）</item>
-        <item>不足リソースを削除</item>
-    </string-array>
-
-    <string-array name="sort">
-        <item>名前</item>
-        <item>名前（逆順）</item>
-        <item>種類</item>
-        <item>種類（逆順）</item>
-        <item>サイズ</item>
-        <item>サイズ（逆順）</item>
-        <item>時間</item>
-        <item>時間（逆順）</item>
-    </string-array>
-
-    <string-array name="color_var">
-        <item>HEX 色</item>
-        <item>Smali コード</item>
-        <item>A,R,G,B</item>
-    </string-array>
-
-    <string-array name="format">
-        <item>@string/jks</item>
-        <item>@string/pkcs12</item>
-        <item>@string/bks</item>
-        <item>@string/pk8</item>
-    </string-array>
-
-    <string-array name="resDecodeMode">
-        <item>デコードしない</item>
-        <item>メインディレクトリにデコード</item>
-        <item>別ディレクトリにデコード</item>
-        <item>パッケージ結合（実験的）</item>
-    </string-array>
-
-    <string-array name="converter_items">
-        <item>テキスト &lt;-> Base64</item>
-        <item>テキスト &lt;-> Unicode</item>
-        <item>テキスト &lt;-> URL エンコード</item>
-        <item>テキスト &lt;-> MD5</item>
-        <item>テキスト &lt;-> SHA-1</item>
-        <item>テキスト &lt;-> SHA-224</item>
-        <item>テキスト &lt;-> SHA-256</item>
-        <item>テキスト &lt;-> SHA-384</item>
-        <item>テキスト &lt;-> SHA-512</item>
-        <item>テキスト &lt;-> 配列 (UTF-8)</item>
-        <item>テキスト &lt;-> 配列 (UTF-16)</item>
-        <item>テキスト &lt;-> 配列 (UTF-16LE)</item>
-        <item>テキスト &lt;-> 配列 (UTF-16BE)</item>
-        <item>テキスト &lt;-> 配列 (US-ASCII)</item>
-        <item>テキスト &lt;-> 配列 (ISO-8859-1)</item>
-        <item>テキスト &lt;-> 配列 (CP1251)</item>
-        <item>10進数 &lt;-> 2進数</item>
-        <item>10進数 &lt;-> 8進数</item>
-        <item>10進数 &lt;-> 16進数</item>
-        <item>10進数 &lt;-> 16進数 (0x0)</item>
-        <item>10進数 &lt;-> 16進数 (0x00000000)</item>
-        <item>浮動小数点 &lt;-> 2進数</item>
-        <item>浮動小数点 &lt;-> 8進数</item>
-        <item>浮動小数点 &lt;-> 16進数</item>
-        <item>浮動小数点 &lt;-> 16進数 (0x0)</item>
-        <item>浮動小数点 &lt;-> 16進数 (0x00000000)</item>
-        <item>色 &lt;-> Smali</item>
-        <item>色 &lt;-> 10進数</item>
-        <item>色 &lt;-> A,R,G,B</item>
-        <item>日付 &lt;-> ミリ秒</item>
-        <item>日付 &lt;-> 16進数</item>
-    </string-array>
-
-    <string-array name="installLocation">
-        <item>設定しない</item>
-        <item>自動</item>
-        <item>内部のみ</item>
-        <item>外部優先</item>
-    </string-array>
-
-    <string-array name="xml_format_variants">
-        <item>デフォルト</item>
-        <item>Apktool</item>
-        <item>Android Studio</item>
-        <item>シンプルスタイル</item>
-    </string-array>
-
-    <string-array name="orientation_variants">
-        <item>デフォルト</item>
-        <item>横向き</item>
-        <item>縦向き</item>
-    </string-array>
-
-    <string-array name="auto_save_variants">
-        <item>オフ</item>
-        <item>15秒</item>
-        <item>30秒</item>
-        <item>1分</item>
-        <item>5分</item>
-    </string-array>
-
-    <string-array name="to_vector_values">
-        <item>変換した画像（低品質）</item>
-        <item>高品質画像（大きい）</item>
-        <item>SVG に変換</item>
-    </string-array>
-
-    <string-array name="backup_values">
-        <item>設定</item>
-        <item>ブックマーク</item>
-        <item>検索/置換履歴</item>
-        <item>辞書</item>
-    </string-array>
-
-    <string-array name="editor_themes">
-        <item>デフォルト</item>
-        <item>新テーマ</item>
-    </string-array>
-
+	<string-array name="smali_help_names">
+		<item>レジスタ</item>
+		<item>リテラル値</item>
+		<item>基本データ型</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA は値の範囲が v0 - v15 の 4 ビットレジスタです。\nvAA は値の範囲が v0 - v255 の 8 ビットレジスタです。\nvAAAA は値の範囲が v0 - v65535 の 16 ビットレジスタです。</item>
+		<item>0xF、0xFF などが使用されます。リテラル値を表します。レジスタと同じく数字 F は値の範囲を示すために使われます。例：\n0xF の値の範囲: [-0x8, 0x7]\n0xFF の値の範囲: [-0x80, 0x7F]</item>
+		<item>V - 空白、Z - boolean、B - byte\nC - char、S - short、I - int\nJ - long、F - float、D - double\nvoid: 戻り値専用。\nboolean: true / false を保存します。\nbyte: -128 ～ 127 の整数（1byte）。\nshort: -32768 ～ 32767 の整数（2byte）。\nint: -2147483648 ～ 2147483647（4byte）。\nlong: -9.22e18 ～ 9.22e18（8byte）。\ndouble: ±4.9e-324 ～ ±1.79e308 の浮動小数点（8byte）。\nfloat: -3.4e38 ～ 3.4e38 の浮動小数点（4byte）。\nchar: UTF-16 の 1 文字（0～65535）。</item>
+		<item>動作なし。</item>
+		<item>レジスタ vB の値をレジスタ vA に移動します。</item>
+		<item>レジスタ vBBBB の値をレジスタ vAA に移動します。</item>
+		<item>レジスタ vBBBB の値をレジスタ vAAAA に移動します。</item>
+		<item>レジスタペア (vB, vB+1) の long/double を (vA, vA+1) に移動します。</item>
+		<item>レジスタペア (vBBBB, vBBBB+1) の long/double を (vAA, vAA+1) に移動します。</item>
+		<item>レジスタペア (vBBBB, vBBBB+1) の long/double を (vAAAA, vAAAA+1) に移動します。</item>
+		<item>レジスタ vB のオブジェクト参照を vA へ移動します。</item>
+		<item>レジスタ vBBBB のオブジェクト参照を vAA へ移動します。</item>
+		<item>レジスタ vBBBB のオブジェクト参照を vAAAA へ移動します。</item>
+		<item>直前のメソッド呼び出しの戻り値を vAA に移動します。</item>
+		<item>直前のメソッド呼び出しの long/double 戻り値を (vAA, vAA+1) に移動します。</item>
+		<item>直前のメソッド呼び出しのオブジェクト参照を vAA に移動します。</item>
+		<item>メソッド呼び出し中にスローされた例外オブジェクト参照を vAA に移動します。</item>
+		<item>（戻り値なしで）return します。</item>
+		<item>レジスタ vAA の値を返します。</item>
+		<item>レジスタペア (vAA, vAA+1) の long/double を返します。</item>
+		<item>レジスタ vAA のオブジェクト参照を返します。</item>
+		<item>vA に 4 ビットの定数を配置します。</item>
+		<item>vAA に 16 ビットの定数を配置します。</item>
+		<item>vAA に整数定数を配置します。</item>
+		<item>vAA の上位ビットに 16 ビット定数を配置します。浮動小数点の初期化に使用。</item>
+		<item>16 ビット整数を (vAA, vAA+1) に配置し long へ拡張します。</item>
+		<item>32 ビット整数を (vAA, vAA+1) に配置し long へ拡張します。</item>
+		<item>64 ビット定数を (vAA, vAA+1) に配置します。</item>
+		<item>16 ビット定数を (vAA, vAA+1) の上位 16 ビットに配置します（double 初期化）。</item>
+		<item>指定された文字列参照を vAA に配置します。</item>
+		<item>指定された文字列参照を vAA に配置します。</item>
+		<item>string_id の文字列参照を vAA に配置します。</item>
+		<item>vAA のオブジェクトを monitor-enter します。</item>
+		<item>vAA のオブジェクトを monitor-exit します。</item>
+		<item>vAA の参照を type_id のクラスにキャスト可能か確認します。失敗すると ClassCastException。</item>
+		<item>vB が type_id のインスタンスか確認し、vA に 0/1 を設定します。</item>
+		<item>vB の配列長を vA に格納します。\nvA = vB.length</item>
+		<item>オブジェクトのインスタンスを作成し参照を vAA に入れます。</item>
+		<item>vB のサイズで type_id の新しい配列を作成し参照を vA に格納します。</item>
+		<item>type_id の新しいデータ配列を作成しパラメータで初期化します（long/double 除く）。参照は move-result-object で取得します。</item>
+		<item>type_id の新しいデータ配列を複数パラメータで初期化します（long/double 除く）。参照は move-result-object で取得します。</item>
+		<item>vAA の配列を静的データで埋めます。</item>
+		<item>vAA の例外オブジェクトを throw します。</item>
+		<item>8 ビットオフセットで無条件ジャンプします。</item>
+		<item>16 ビットオフセットで無条件ジャンプします。</item>
+		<item>32 ビットオフセットで無条件ジャンプします。</item>
+		<item>連続値に対してテーブルスイッチを実装します。</item>
+		<item>疎な値に対してスパーススイッチを実装します。</item>
+		<item>float を比較し結果を vAA に格納します。\nvAA = vBB &lt; vCC ? 1 : -1 : 0</item>
+		<item>float を比較し結果を vAA に格納します。</item>
+		<item>double を比較し結果を vAA に格納します。</item>
+		<item>double を > で比較し結果を vAA に格納します。</item>
+		<item>long を比較し結果を vAA に格納します。</item>
+		<item>vA == vB ならジャンプします。（eq）</item>
+		<item>vA != vB ならジャンプします。（ne）</item>
+		<item>vA &lt; vB ならジャンプします。（lt）</item>
+		<item>vA が真ならジャンプします。</item>
+		<item>vA > vB ならジャンプします。（gt）</item>
+		<item>vA >= vB ならジャンプします。（ge）</item>
+		<item>vAA == 0 ならジャンプします。（eqz）</item>
+		<item>vAA != 0 ならジャンプします。（nez）</item>
+		<item>vAA &lt; 0 ならジャンプします。（ltz）</item>
+		<item>vAA が真ならジャンプします。</item>
+		<item>vAA > 0 ならジャンプします。（gtz）</item>
+		<item>vAA >= 0 ならジャンプします。（gez）</item>
+	</string-array>
+	<string-array name="years_or_days">
+		<item>年</item>
+		<item>日</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>内蔵</item>
+		<item>カスタム</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>代替モード</item>
+		<item>難読化解除</item>
+		<item>Unicode エスケープ</item>
+		<item>一貫性のないコード表示</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>名前変更</item>
+		<item>ファイル名のみ変更</item>
+		<item>置換</item>
+		<item>スキップ</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>左</item>
+		<item>右</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>全て大文字</item>
+		<item>コロン区切り</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>新しいリソースを追加（ファイルのみ）</item>
+		<item>不足リソースを削除</item>
+	</string-array>
+	<string-array name="sort">
+		<item>名前</item>
+		<item>名前（逆順）</item>
+		<item>種類</item>
+		<item>種類（逆順）</item>
+		<item>サイズ</item>
+		<item>サイズ（逆順）</item>
+		<item>時間</item>
+		<item>時間（逆順）</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>HEX 色</item>
+		<item>Smali コード</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>デコードしない</item>
+		<item>メインディレクトリにデコード</item>
+		<item>別ディレクトリにデコード</item>
+		<item>パッケージ結合（実験的）</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>テキスト &lt;-> Base64</item>
+		<item>テキスト &lt;-> Unicode</item>
+		<item>テキスト &lt;-> URL エンコード</item>
+		<item>テキスト &lt;-> MD5</item>
+		<item>テキスト &lt;-> SHA-1</item>
+		<item>テキスト &lt;-> SHA-224</item>
+		<item>テキスト &lt;-> SHA-256</item>
+		<item>テキスト &lt;-> SHA-384</item>
+		<item>テキスト &lt;-> SHA-512</item>
+		<item>テキスト &lt;-> 配列 (UTF-8)</item>
+		<item>テキスト &lt;-> 配列 (UTF-16)</item>
+		<item>テキスト &lt;-> 配列 (UTF-16LE)</item>
+		<item>テキスト &lt;-> 配列 (UTF-16BE)</item>
+		<item>テキスト &lt;-> 配列 (US-ASCII)</item>
+		<item>テキスト &lt;-> 配列 (ISO-8859-1)</item>
+		<item>テキスト &lt;-> 配列 (CP1251)</item>
+		<item>10進数 &lt;-> 2進数</item>
+		<item>10進数 &lt;-> 8進数</item>
+		<item>10進数 &lt;-> 16進数</item>
+		<item>10進数 &lt;-> 16進数 (0x0)</item>
+		<item>10進数 &lt;-> 16進数 (0x00000000)</item>
+		<item>浮動小数点 &lt;-> 2進数</item>
+		<item>浮動小数点 &lt;-> 8進数</item>
+		<item>浮動小数点 &lt;-> 16進数</item>
+		<item>浮動小数点 &lt;-> 16進数 (0x0)</item>
+		<item>浮動小数点 &lt;-> 16進数 (0x00000000)</item>
+		<item>色 &lt;-> Smali</item>
+		<item>色 &lt;-> 10進数</item>
+		<item>色 &lt;-> A,R,G,B</item>
+		<item>日付 &lt;-> ミリ秒</item>
+		<item>日付 &lt;-> 16進数</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>設定しない</item>
+		<item>自動</item>
+		<item>内部のみ</item>
+		<item>外部優先</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>デフォルト</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>シンプルスタイル</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>デフォルト</item>
+		<item>横向き</item>
+		<item>縦向き</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>オフ</item>
+		<item>15秒</item>
+		<item>30秒</item>
+		<item>1分</item>
+		<item>5分</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>変換した画像（低品質）</item>
+		<item>高品質画像（大きい）</item>
+		<item>SVG に変換</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>設定</item>
+		<item>ブックマーク</item>
+		<item>検索/置換履歴</item>
+		<item>辞書</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>デフォルト</item>
+		<item>新テーマ</item>
+	</string-array>
 </resources>

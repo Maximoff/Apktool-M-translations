@@ -696,6 +696,7 @@
 		<item>עברית</item>
 		<item>Magyar</item>
         <item>O\'zbek tili</item>
+        <item>日本語</item>
 	</string-array>
 	<string-array name="values_lang">
 		<item>ru</item>
@@ -724,6 +725,7 @@
 		<item>he</item>
 		<item>hu</item>
         <item>uz</item>
+        <item>jp</item>
 	</string-array>
 	<string-array name="date_variants">
 		<item>yyyy/MM/dd HH:mm</item>
