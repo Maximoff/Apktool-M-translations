@@ -725,7 +725,7 @@
 		<item>he</item>
 		<item>hu</item>
         <item>uz</item>
-        <item>jp</item>
+        <item>ja</item>
 	</string-array>
 	<string-array name="date_variants">
 		<item>yyyy/MM/dd HH:mm</item>
