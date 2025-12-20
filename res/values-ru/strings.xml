@@ -118,6 +118,7 @@
 	<string name="dexs_info">Информация о дексах</string>
 	<string name="dex_limit_info">Максимальное количество методов/полей в dex: %d</string>
 	<string name="hide">Скрыть</string>
+    <string name="remove_chars_info">Введите символы, которые нужно удалить из имени.</string>
 	<string name="data_unchanged">данные не изменились</string>
 	<string name="unsupported_android">Не поддерживается в вашей версии Android!</string>
 	<string name="reset_fab">Сбросить позицию плавающей кнопки?</string>
@@ -781,6 +782,9 @@
 	<string name="shell_cmd_summary">Оболочка для запуска shell-скриптов</string>
 	<string name="shell_cmd_root">Команда root</string>
 	<string name="shell_cmd_root_summary">Команда для запуска shell-скриптов с root-правами</string>
+    <string name="select_icon">Иконка приложения</string>
+	<string name="select_icon_summary">Выберите иконку приложения</string>
+    <string name="select_icon_info">Для смены иконки потребуется перезапуск, продолжить?</string>
 	<string name="shell_run">Запустить скрипт</string>
 	<string name="shell_run_root">Запустить скрипт с root-правами</string>
 	<string name="search_call">Найти вызовы</string>

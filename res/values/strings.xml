@@ -130,6 +130,7 @@
 	<string name="dexs_info">Dex information</string>
 	<string name="dex_limit_info">Max number of methods/fields in dex: %d</string>
 	<string name="hide">Hide</string>
+    <string name="remove_chars_info">Enter the characters you want to remove from the name.</string>
     <string name="data_unchanged">the data has not changed</string>
 	<string name="unsupported_android">Unsupported in your Android version!</string>
 	<string name="reset_fab">Reset floating button position?</string>
@@ -801,6 +802,9 @@
 	<string name="shell_cmd_summary">A shell for running shell scripts</string>
     <string name="shell_cmd_root">Root command</string>
 	<string name="shell_cmd_root_summary">Command to run shell scripts with root rights</string>
+    <string name="select_icon">Application icon</string>
+	<string name="select_icon_summary">Select an application icon</string>
+    <string name="select_icon_info">To change the icon, you will need to restart, continue?</string>
     <string name="shell_run">Run script</string>
 	<string name="shell_run_root">Run the script with root rights</string>
 	<string name="search_call">Find calls</string>
