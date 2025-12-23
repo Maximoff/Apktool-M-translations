@@ -118,6 +118,7 @@
 	<string name="dexs_info">Информация о дексах</string>
 	<string name="dex_limit_info">Максимальное количество методов/полей в dex: %d</string>
 	<string name="hide">Скрыть</string>
+    <string name="program_closed">Программа будет полностью закрыта, продолжить?</string>
     <string name="remove_chars_info">Введите символы, которые нужно удалить из имени.</string>
 	<string name="data_unchanged">данные не изменились</string>
 	<string name="unsupported_android">Не поддерживается в вашей версии Android!</string>
