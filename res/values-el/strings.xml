@@ -949,4 +949,10 @@
         <string name="kill_sign_ex_extract">Διαδρομή αρχικού στην εξαγωγή</string>
         <string name="kill_sign_ex_mode">Προηγμένη λειτουργία</string>
         <string name="kill_sign_old_mode">Κανονική λειτουργία</string>
+        <string name="install_options">Επιλογές εγκατάστασης</string>
+        <string name="install_options_summary">Επιλέξτε επιλογές εγκατ/σης του αρχείου apk</string>
+        <string name="remove_chars_info">Εισάγετε τους χαρακτήρες που θέλετε να αφαιρέσετε από το όνομα.</string>
+        <string name="select_icon">Εικονίδιο εφαρμογής</string>
+        <string name="select_icon_summary">Επιλέξτε ένα εικονίδιο εφαρμογής</string>
+        <string name="select_icon_info">Για να αλλάξετε το εικονίδιο, θα πρέπει να κάνετε επανεκκίνηση. Συνέχεια;</string>
 </resources>
