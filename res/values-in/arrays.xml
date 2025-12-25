@@ -330,8 +330,8 @@
 		<item>Warna &lt;-> Smali</item>
 		<item>Warna &lt;-> Desimal</item>
 		<item>Warna &lt;-> A,R,G,B</item>
-        <item>Date &lt;-> Milliseconds</item>
-		<item>Date &lt;-> Hex</item>
+		<item>Tanggal &lt;-> Milidetik</item>
+		<item>Tanggal &lt;-> Heksa</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Tidak diatur</item>
