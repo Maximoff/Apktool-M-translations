@@ -957,4 +957,9 @@
     <string name="both_options">两种选择</string>
     <string name="mtr_mark_trans">标记为已翻译</string>
     <string name="mtr_mark_trans_all">全部标记为已翻译</string>
+    <string name="program_closed">该程序将被完全关闭，我要继续吗？</string>
+    <string name="remove_chars_info">输入您想要从名称中移除的字符。</string>
+    <string name="select_icon">应用程序图标</string>
+	<string name="select_icon_summary">选择一个应用程序图标</string>
+    <string name="select_icon_info">要更改图标，您需要重新启动，是否继续？</string>
 </resources>
