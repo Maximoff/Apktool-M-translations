@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">Apktool M</string>
-	<string name="click_once_more">Çıkmak için tekrar bas!</string>
+	<string name="click_once_more">Çıkmak için geri düğmesine tekrar basın!</string>
 	<string name="click_once_more2">Kapatmak için tekrar tıklayın</string>
 	<string name="all_files_saved">Tüm dosyalar kaydedildi!</string>
 	<string name="storage_error">Uygulamaya depolama izni vermelisin!</string>
@@ -347,7 +347,7 @@
 	<string name="send">Gönder</string>
 	<string name="complete">Tamamlandı</string>
 	<string name="complete_msg">Tamamlandı, orijinal(ler) \"%s\" içinde kaydedildi</string>
-	<string name="complete_msg2">Tamamlandı, dosya(lar) \"%s\" konumuna kaydedildi</string>
+	<string name="complete_msg2">Tamamlandı, dosyalar \"%s\" konumuna kaydedildi</string>
 	<string name="success">Başarılı</string>
 	<string name="successf">Başarılı: %s</string>
 	<string name="success_of">Başarılı %2$d üzerinden %1$d!</string>
@@ -953,4 +953,14 @@
 	<string name="patcher_patch">Yama</string>
 	<string name="patcher_patchf">Yama: \"%s\"</string>
 	<string name="patcher_apk">APK: \"%s\"</string>
+    <string name="program_closed">Program tamamen kapatılacak. Devam etmek istiyor musunuz?</string>
+    <string name="remove_chars_info">İsimden kaldırmak istediğiniz karakterleri girin.</string>
+    <string name="install_options">Kurulum seçenekleri</string>
+    <string name="install_options_summary">APK dosyası kurulum seçeneklerini belirleme</string>
+    <string name="select_icon">Uygulama simgesi</string>
+    <string name="select_icon_summary">Bir uygulama simgesi seçin</string>
+    <string name="select_icon_info">Simgeyi değiştirmek için yeniden başlatma gerekiyor. Devam edilsin mi?</string>
+    <string name="both_options">Her iki seçenek</string>
+    <string name="mtr_mark_trans">Çevrildi olarak işaretle</string>
+    <string name="mtr_mark_trans_all">Her şeyi çevrildi olarak işaretle</string>
 </resources>
