@@ -797,6 +797,8 @@
 	<string name="user_cache_summary">Select storage for temporary files folder</string>
     <string name="snowfall">Enable snowfall</string>
 	<string name="snowfall_summary">Snowfall in the program for the New Year holidays</string>
+    <string name="editor_indent">Indent size</string>
+	<string name="editor_indent_summary">Indent size when formatting text</string>
     <string name="install_options">Installation options</string>
 	<string name="install_options_summary">Choosing the apk file installation options</string>
     <string name="shell_cmd">Shell command</string>

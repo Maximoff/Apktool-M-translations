@@ -777,6 +777,8 @@
 	<string name="user_cache_summary">Выберите хранилище для папки временных файлов</string>
     <string name="snowfall">Включить снегопад</string>
 	<string name="snowfall_summary">Снегопад в программе на новогодних праздниках</string>
+    <string name="editor_indent">Размер отступа</string>
+	<string name="editor_indent_summary">Размер отступа при форматировании текста</string>
     <string name="install_options">Варианты установки</string>
 	<string name="install_options_summary">Выбор вариантов установки файлов apk</string>
 	<string name="shell_cmd">Команда оболочки</string>
