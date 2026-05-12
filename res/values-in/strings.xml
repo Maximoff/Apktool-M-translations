@@ -788,6 +788,8 @@
 	<string name="user_cache_summary">Pilih penyimpanan untuk folder file sementara</string>
 	<string name="snowfall">Aktifkan hujan salju</string>
 	<string name="snowfall_summary">Hujan salju dalam program untuk liburan Tahun Baru</string>
+	<string name="editor_indent">Ukuran indentasi</string>
+	<string name="editor_indent_summary">Ukuran indentasi saat memformat teks</string>
 	<string name="install_options">Opsi penginstalan</string>
 	<string name="install_options_summary">Pilih opsi penginstalan file apk</string>
 	<string name="shell_cmd">Perintah shell</string>
