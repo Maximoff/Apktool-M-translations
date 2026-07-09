@@ -74,6 +74,7 @@
 	<string name="framework">Фреймворк</string>
 	<string name="syntax">Синтаксис</string>
 	<string name="parameters">Параметры: %s</string>
+    <string name="resources_found">Всего %d ресурсов найдено</string>
     <string name="storages_info">Информация о памяти</string>
     <string name="storage_info">Всего %1$s. Используется %2$s. Свободно %3$s.</string>
 	<string name="exclude_path">Исключить из поиска</string>

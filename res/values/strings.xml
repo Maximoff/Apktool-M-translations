@@ -85,6 +85,7 @@
     <string name="framework">Framework</string>
     <string name="syntax">Syntax</string>
     <string name="parameters">Parameters: %s</string>
+    <string name="resources_found">Total %d resources found</string>
     <string name="storages_info">Memory information</string>
     <string name="storage_info">Total %1$s. Used %2$s. Free %3$s.</string>
     <string name="exclude_path">Exclude from search</string>
