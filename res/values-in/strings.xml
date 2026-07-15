@@ -75,7 +75,9 @@
 	<string name="end">Akhir</string>
 	<string name="framework">Kerangka kerja</string>
 	<string name="syntax">Sintaks</string>
-    <string name="play_row">Putar berturut-turut</string>
+	<string name="play_row">Putar berturut-turut</string>
+	<string name="color_pipette">Pipet Warna</string>
+	<string name="permission_needle">Anda harus mendapatkan izin untuk menggunakan fitur ini!</string>
 	<string name="parameters">Parameter: %s</string>
 	<string name="resources_found">Total %d sumber ditemukan</string>
 	<string name="storages_info">Informasi memori</string>
