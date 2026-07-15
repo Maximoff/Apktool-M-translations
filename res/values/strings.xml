@@ -85,6 +85,8 @@
     <string name="framework">Framework</string>
     <string name="syntax">Syntax</string>
     <string name="play_row">Play in a row</string>
+    <string name="color_pipette">Color Pipette</string>
+    <string name="permission_needle">Permission must be granted to use this feature!</string>
     <string name="parameters">Parameters: %s</string>
     <string name="resources_found">Total %d resources found</string>
     <string name="storages_info">Memory information</string>

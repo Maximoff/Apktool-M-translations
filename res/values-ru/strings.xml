@@ -74,6 +74,8 @@
 	<string name="framework">Фреймворк</string>
 	<string name="syntax">Синтаксис</string>
     <string name="play_row">Играть подряд</string>
+    <string name="color_pipette">Цветовая пипетка</string>
+    <string name="permission_needle">Для использования этой функции необходимо выдать разрешение!</string>
 	<string name="parameters">Параметры: %s</string>
     <string name="resources_found">Всего %d ресурсов найдено</string>
     <string name="storages_info">Информация о памяти</string>
