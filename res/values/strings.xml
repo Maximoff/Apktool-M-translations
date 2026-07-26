@@ -222,6 +222,7 @@
 	<string name="folders_rec">folders recursively</string>
     <string name="files_rec">files recursively</string>
 	<string name="relative_path">relative path</string>
+    <string name="dir_suffix">suffix \"/\" for folders</string>
 	<string name="play">Play</string>
 	<string name="pause">Pause</string>
 	<string name="player">Player</string>

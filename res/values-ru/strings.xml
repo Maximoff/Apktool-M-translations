@@ -210,6 +210,7 @@
 	<string name="folders_rec">папки рекурсивно</string>
 	<string name="files_rec">файлы рекурсивно</string>
 	<string name="relative_path">относительный путь</string>
+    <string name="dir_suffix">суффикс \"/\" для папок</string>
 	<string name="play">Играть</string>
 	<string name="pause">Пауза</string>
 	<string name="player">Плеер</string>
