@@ -77,6 +77,7 @@
 	<string name="syntax">Sintaks</string>
 	<string name="play_row">Putar berturut-turut</string>
 	<string name="color_pipette">Pipet Warna</string>
+	<string name="pipette_info">Anda dapat mengubah skala dengan melakukan gerakan mencubit di dalam kaca pembesar.\nPenyesuaian halus dapat dilakukan dengan menggeser jari Anda di atas kaca pembesar.\nTekan sebentar pada bagian atas cincin warna untuk menyalin warna, tekan lama untuk mengubah format.\nTekan sebentar pada bagian bawah cincin untuk menutup kaca pembesar, tekan lama untuk mengatur ulang zoom.</string>
 	<string name="permission_needle">Anda harus mendapatkan izin untuk menggunakan fitur ini!</string>
 	<string name="parameters">Parameter: %s</string>
 	<string name="resources_found">Total %d sumber ditemukan</string>
@@ -212,6 +213,7 @@
 	<string name="folders_rec">folder secara rekursif</string>
 	<string name="files_rec">file secara rekursif</string>
 	<string name="relative_path">jalur relatif</string>
+	<string name="dir_suffix">akhiran \"/\" untuk folder</string>
 	<string name="play">Putar</string>
 	<string name="pause">Jeda</string>
 	<string name="player">Memutar</string>
