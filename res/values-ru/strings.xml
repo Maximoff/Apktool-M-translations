@@ -194,6 +194,7 @@
 	<string name="check_hash">Проверить хеш</string>
 	<string name="matches">совпадает</string>
 	<string name="not_match">не совпадает</string>
+    <string name="part_matches">частично совпадает</string>
 	<string name="name">Имя</string>
 	<string name="paste">Вставить</string>
 	<string name="value">Значение</string>

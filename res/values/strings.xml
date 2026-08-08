@@ -207,6 +207,7 @@
 	<string name="check_hash">Check hash</string>
 	<string name="matches">matches</string>
 	<string name="not_match">does not match</string>
+    <string name="part_matches">partially matches</string>
 	<string name="name">Name</string>
 	<string name="paste">Paste</string>
 	<string name="value">Value</string>
