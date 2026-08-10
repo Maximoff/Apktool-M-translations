@@ -197,6 +197,7 @@
 	<string name="check_hash">Periksa hash</string>
 	<string name="matches">cocok</string>
 	<string name="not_match">tidak cocok</string>
+	<string name="part_matches">cocok sebagian</string>
 	<string name="name">Nama</string>
 	<string name="paste">Tempel</string>
 	<string name="value">Nilai</string>
@@ -796,6 +797,8 @@
 	<string name="snowfall_summary">Hujan salju dalam program untuk liburan Tahun Baru</string>
 	<string name="editor_indent">Ukuran indentasi</string>
 	<string name="editor_indent_summary">Ukuran indentasi saat memformat teks</string>
+	<string name="editor_auto_reload">Muat ulang file yang telah diubah secara otomatis</string>
+	<string name="editor_auto_reload_summary">Jangan meminta konfirmasi, tetapi segera muat ulang jika file tersebut telah diubah oleh program lain</string>
 	<string name="install_options">Opsi penginstalan</string>
 	<string name="install_options_summary">Pilih opsi penginstalan file apk</string>
 	<string name="shell_cmd">Perintah shell</string>
