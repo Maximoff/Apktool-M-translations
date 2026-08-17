@@ -88,9 +88,12 @@
     <string name="mode">Mode</string>
     <string name="play_row">Play in a row</string>
     <string name="server_start">Start HTTP/WebDav server</string>
-    <string name="server_running">The server is running!</string>
+    <string name="local_server">Local server</string>
+    <string name="server_label">HTTP/WebDav server</string>
+    <string name="server_starting">Starting the server...</string>
+    <string name="server_running">Server is running</string>
     <string name="server_running_f">Server started: %s</string>
-    <string name="server_stopped">The server has stopped!</string>
+    <string name="server_stopped">Server stopped</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="color_pipette">Color Pipette</string>

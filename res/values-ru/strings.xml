@@ -76,9 +76,12 @@
  	<string name="mode">Режим</string>
     <string name="play_row">Играть подряд</string>
     <string name="server_start">Запустить HTTP/WebDav сервер</string>
-    <string name="server_running">Сервер запущен!</string>
+    <string name="local_server">Локальный сервер</string>
+    <string name="server_label">HTTP/WebDav сервер</string>
+    <string name="server_starting">Запуск сервера...</string>
+    <string name="server_running">Сервер запущен</string>
     <string name="server_running_f">Сервер запущен: %s</string>
-    <string name="server_stopped">Сервер остановлен!</string>
+    <string name="server_stopped">Сервер остановлен</string>
     <string name="start">Старт</string>
     <string name="stop">Стоп</string>
     <string name="color_pipette">Цветовая пипетка</string>
