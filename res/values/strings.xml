@@ -97,6 +97,7 @@
     <string name="server_stopped">Server stopped</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
+    <string name="pathf">Path: %s</string>
     <string name="color_pipette">Color Pipette</string>
     <string name="pipette_info">You can change the scale by pinching inside the magnifying glass.\nFine adjustments are made by moving your finger across the magnifying glass.\nA short press on the top half of the color ring copies the color, a long press changes the format.\nA short press on the bottom half of the ring closes the magnifying glass, a long press resets the zoom.</string>
     <string name="permission_needle">Permission must be granted to use this feature!</string>
