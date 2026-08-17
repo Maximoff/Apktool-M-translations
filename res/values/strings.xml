@@ -93,6 +93,7 @@
     <string name="server_starting">Starting the server...</string>
     <string name="server_running">Server is running</string>
     <string name="server_running_f">Server started: %s</string>
+    <string name="server_already_running">The server is already running!</string>
     <string name="server_stopped">Server stopped</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>

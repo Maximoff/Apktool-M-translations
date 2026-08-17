@@ -81,6 +81,7 @@
     <string name="server_starting">Запуск сервера...</string>
     <string name="server_running">Сервер запущен</string>
     <string name="server_running_f">Сервер запущен: %s</string>
+    <string name="server_already_running">Сервер уже запущен!</string>
     <string name="server_stopped">Сервер остановлен</string>
     <string name="start">Старт</string>
     <string name="stop">Стоп</string>
