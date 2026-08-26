@@ -534,7 +534,7 @@
 	<string name="mtr_line_num">Numery linii</string>
 	<string name="mtr_net_err">błąd sieci</string>
 	<string name="mtr_no_trans">Ciąg nie musi być tłumaczony!</string>
-	<string name="mtr_not_work">%s tłumacz chwilowo nie działa!</string>
+	<string name="mtr_not_work">%s Tłumacz chwilowo nie działa!</string>
 	<string name="mtr_old_layout">Stary układ</string>
 	<string name="mtr_only_tr">Zapisz tylko przetłumaczone ciągi znaków</string>
 	<string name="mtr_properties">„Projekt: %1$sŁączna liczba lokalizacji: %2$Bieżąca lokalizacja: %3$rozmiar: %4$Łączna liczba ciągów: %5$Przetłumaczone ciągi znaków: %6$s”</string>
@@ -572,7 +572,7 @@
 	<string name="new_file">Nowy plik</string>
 	<string name="no">Nie</string>
 	<string name="no_data">brak dostępnych danych</string>
-	<string name="no_media">utwórz plik „.nomedia”.</string>
+	<string name="no_media">Utwórz plik „.nomedia”.</string>
 	<string name="no_open">Brak otwartych plików!</string>
 	<string name="not_directory">„„%1$s” nie jest katalogiem!”</string>
 	<string name="not_found">Nic nie znaleziono!</string>
