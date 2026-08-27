@@ -2,247 +2,591 @@
 <resources>
 	<string-array name="smali_help_names">
 		<item>Rejestry</item>
-		<item>Wartości dosłowne</item>
-		<item>Pierwotne typy danych</item>
+		<item>Wartości literałów</item>
+		<item>Podstawowe typy danych</item>
+	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
 	</string-array>
 	<string-array name="smali_help_values" formatted="false">
-		<item>vA jest rejestrem 4-bitowym o zakresie wartości v0 - v15\nvAA jest rejestrem 8-bitowym z zakresem wartości v0 - v255\nvAAAA jest rejestrem 16-bitowym o zakresie wartości od v0 do v65535</item>
-		<item>Używane są 0xF, 0xFF itp. do reprezentowania wartości dosłownych. Podobnie jak rejestry, liczba F służy do reprezentowania zakresu wartości, na przykład:\nZakres wartości 0xF jest reprezentowany przez [-0x8, 0x7]\nZakres wartości 0xFF jest reprezentowany przez [-0x80, 0x7F]</item>
-		<item>V - nieważne, Z - logiczne, B - bajt\nC - char, S - krótki, I - int\nJ - długi, F - pływakowy, D - podwójny\nvoid: można używać tylko dla typów zwracanych\nboolean: przechowuje wartość true lub false\nbajt: przechowuje liczbę całkowitą od -128 do 127 i zajmuje 1 bajt\nw skrócie: przechowuje liczbę całkowitą od -32768 do 32767 i zajmuje 2 bajty\nint: przechowuje liczbę całkowitą od -2147483648 do 2147483647 i zajmuje 4 bajty\nlong: przechowuje liczbę całkowitą od -9223372036854775808 do 9223372036854775807 i zajmuje 8 bajtów\ndouble: przechowuje liczbę zmiennoprzecinkową od ±4,9*10³²⁴ do ±1,7976931348623157*10³⁰⁸ i zajmuje 8 bajtów. W literałach ułamkowych jako separator dziesiętny używana jest kropka.\nfloat: przechowuje liczbę zmiennoprzecinkową od -3,4*10³⁸ do 3,4*10³⁸ i zajmuje 4 bajty\nchar: przechowuje pojedynczy znak w kodowaniu UTF-16 i zajmuje 2 bajty, zatem zakres przechowywanych wartości wynosi od 0 do 65535.</item>
-		<item>Bez akcji.</item>
-		<item>Przenosi wartość rejestru vB do rejestru vA.</item>
-		<item>Przenosi wartość rejestru vBBBB do rejestru vAA.</item>
-		<item>Przenosi wartość rejestru vBBBB do rejestru vAAAA.</item>
-		<item>Przesuwa długą/podwójną wartość pary rejestrów (vB, vB+1) do pary rejestrów vA, vA+1.</item>
-		<item>Przenosi długą/podwójną wartość pary rejestrów (vBBBB, vBBBB+1) do pary rejestrów vAA, vAA+1.</item>
-		<item>Przenosi długą/podwójną wartość pary rejestrów (vBBBB, vBBBB+1) do pary rejestrów vAAAA, vAAAA+1.</item>
-		<item>Przenosi odwołanie do obiektu z rejestru vB do rejestru vA.</item>
-		<item>Przenosi odwołanie do obiektu z rejestru vBBBB do rejestru vAA.</item>
-		<item>Przenosi odwołanie do obiektu z rejestru vBBBB do rejestru vAAAA.</item>
-		<item>Przenosi wartość zwracaną przez poprzednio wywołaną metodę do rejestru vAA.</item>
-		<item>Przenosi wartość typu long/double zwróconą przez poprzednio wywołaną metodę do pary rejestrów vAA, vAA+1.</item>
-		<item>Przenosi odwołanie do obiektu zwrócone przez poprzednio wywołaną metodę do rejestru vAA.</item>
-		<item>Przenosi referencję do wykluczonego obiektu wydaną podczas wywołania metody (podczas wykonywania) do rejestru vAA.</item>
-		<item>Powrót bez wartości zwracanej.</item>
+		<item>vA to rejestr 4-bitowy o zakresie wartości v0 - v15\nvAA to rejestr 8-bitowy o zakresie wartości v0 - v255\nvAAAA to rejestr 16-bitowy o zakresie wartości v0 - v65535</item>
+		<item>Używa się 0xF, 0xFF itp. do reprezentowania wartości literałów. Podobnie jak w przypadku rejestrów, liczba F jest używana do reprezentowania zakresu wartości, na przykład:\nZakres wartości 0xF reprezentowany jest przez [-0x8, 0x7]\nZakres wartości 0xFF reprezentowany jest przez [-0x80, 0x7F]</item>
+		<item>V - void (pusty), Z - boolean (logiczny), B - byte (bajt)\nC - char (znak), S - short (krótki), I - int (całkowity)\nJ - long (długi), F - float (zmiennoprzecinkowy), D - double (podwójnej precyzji)\nvoid: może być używany tylko jako typ zwracany\nboolean: przechowuje wartość true lub false\nbyte: przechowuje liczbę całkowitą od -128 do 127 i zajmuje 1 bajt\nshort: przechowuje liczbę całkowitą od -32768 do 32767 i zajmuje 2 bajty\nint: przechowuje liczbę całkowitą od -2147483648 do 2147483647 i zajmuje 4 bajty\nlong: przechowuje liczbę całkowitą od -9223372036854775808 do 9223372036854775807 i zajmuje 8 bajtów\ndouble: przechowuje liczbę zmiennoprzecinkową od ±4,9*10³²⁴ do ±1,7976931348623157*10³⁰⁸ i zajmuje 8 bajtów. Kropka jest używana jako separator dziesiętny w literałach ułamkowych.\nfloat: przechowuje liczbę zmiennoprzecinkową od -3,4*10³⁸ do 3,4*10³⁸ i zajmuje 4 bajty\nchar: przechowuje pojedynczy znak w kodowaniu UTF-16 i zajmuje 2 bajty, więc zakres przechowywanych wartości wynosi od 0 do 65535.</item>
+		<item>Brak operacji.</item>
+		<item>Przenosi wartość z rejestru vB do rejestru vA.</item>
+		<item>Przenosi wartość z rejestru vBBBB do rejestru vAA.</item>
+		<item>Przenosi wartość z rejestru vBBBB do rejestru vAAAA.</item>
+		<item>Przenosi wartość long/double z pary rejestrów (vB, vB+1) do pary rejestrów vA, vA+1.</item>
+		<item>Przenosi wartość long/double z pary rejestrów (vBBBB, vBBBB+1) do pary rejestrów vAA, vAA+1.</item>
+		<item>Przenosi wartość long/double z pary rejestrów (vBBBB, vBBBB+1) do pary rejestrów vAAAA, vAAAA+1.</item>
+		<item>Przenosi referencję do obiektu z rejestru vB do rejestru vA.</item>
+		<item>Przenosi referencję do obiektu z rejestru vBBBB do rejestru vAA.</item>
+		<item>Przenosi referencję do obiektu z rejestru vBBBB do rejestru vAAAA.</item>
+		<item>Przenosi wartość zwróconą przez poprzednio wywołaną metodę do rejestru vAA.</item>
+		<item>Przenosi wartość long/double zwróconą przez poprzednio wywołaną metodę do pary rejestrów vAA, vAA+1.</item>
+		<item>Przenosi referencję do obiektu zwróconą przez poprzednio wywołaną metodę do rejestru vAA.</item>
+		<item>Przenosi referencję do wyjątku zgłoszonego podczas wywołania metody do rejestru vAA.</item>
+		<item>Powrót bez zwracania wartości.</item>
 		<item>Powrót poprzez zwrócenie wartości z rejestru vAA.</item>
-		<item>Wróć, zwracając wartość podwójną/długą do pary rejestrów vAA, vAA+1.</item>
-		<item>Powrót poprzez zwrócenie wartości odniesienia do obiektu z rejestru vAA.</item>
+		<item>Powrót poprzez zwrócenie wartości double/long do pary rejestrów vAA, vAA+1.</item>
+		<item>Powrót poprzez zwrócenie referencji do obiektu z rejestru vAA.</item>
 		<item>Umieszcza stałą 4-bitową w rejestrze vA.</item>
 		<item>Umieszcza stałą 16-bitową w rejestrze vAA.</item>
 		<item>Umieszcza stałą całkowitą w rejestrze vAA.</item>
-		<item>Umieszcza stałą 16-bitową w górnych bitach rejestru vAA. Służy do inicjowania wartości zmiennoprzecinkowych.</item>
-		<item>Umieszcza 16-bitową stałą całkowitą w parze rejestrów vAA, vAA+1, przekształcając stałą całkowitą na stałą długą.</item>
-		<item>Umieszcza 32-bitową stałą całkowitą w parze rejestrów vAA, vAA+1, przekształcając stałą całkowitą na stałą długą.</item>
+		<item>Umieszcza stałą 16-bitową w górnych bitach rejestru vAA. Używane do inicjalizacji wartości float (zmiennoprzecinkowych).</item>
+		<item>Umieszcza stałą całkowitą 16-bitową w parze rejestrów vAA, vAA+1, konwertując stałą całkowitą na stałą long.</item>
+		<item>Umieszcza stałą całkowitą 32-bitową w parze rejestrów vAA, vAA+1, konwertując stałą całkowitą na stałą long.</item>
 		<item>Umieszcza stałą 64-bitową w parze rejestrów vAA, vAA+1.</item>
-		<item>Umieszcza stałą 16-bitową w pierwszych 16 bitach pary rejestrów vAA, vAA+1. Służy do inicjowania wartości podwójnych (zmiennoprzecinkowych).</item>
-		<item>Umieszcza odwołanie do określonego ciągu w rejestrze vAA.</item>
-		<item>Umieszcza odwołanie do określonego ciągu w rejestrze vAA.</item>
-		<item>Umieszcza odwołanie do stałej łańcuchowej (string) identyfikowanej przez string_id w rejestrze vAA.</item>
-		<item>Pobiera monitor obiektów, do którego odwołuje się rejestr vAA.</item>
-		<item>Zwalnia monitor obiektów, do którego odwołuje się rejestr vAA.</item>
-		<item>Sprawdza, czy odwołanie do obiektu zawarte w rejestrze vAA może zostać rzutowane na klasę identyfikowaną przez type_id. Zgłasza wyjątek ClassCastException, jeśli nie jest to możliwe, w przeciwnym razie wykonywanie jest kontynuowane.</item>
-		<item>Sprawdza, czy zawartość rejestru vB jest instancją klasy identyfikowaną przez type_id. Ustawia rejestr vA na wartość różną od zera, jeśli jest obecny, lub na 0, jeśli nie.\nvA = vB typ instancji ? 10</item>
-		<item>Określa liczbę elementów tablicy z rejestru vB i umieszcza wartość w rejestrze vA.\nvA = vB.długość</item>
-		<item>Tworzy instancję typu obiektowego i umieszcza referencję do utworzonej instancji w rejestrze vAA.</item>
-		<item>Tworzy nową tablicę zmiennych type_id o rozmiarze elementów rejestru vB i umieszcza odwołanie do tablicy w rejestrze vA.</item>
-		<item>Tworzy nową tablicę danych typu type_id i wypełnia ją parametrami (tzn. nie ma długich/podwójnych tablic, ale dozwolone są typy referencyjne). Odniesienie do nowo utworzonej tablicy można uzyskać za pomocą instrukcji move-result-obiekt znajdującej się bezpośrednio po tej instrukcji (jeśli ma zostać użyta).</item>
-		<item>Tworzy nową tablicę danych typu type_id i wypełnia ją zakresem parametrów (to znaczy nie ma długich/podwójnych tablic, ale akceptowane są typy referencyjne). Odniesienie do nowo utworzonej tablicy można uzyskać za pomocą instrukcji move-result-obiekt znajdującej się bezpośrednio po tej instrukcji (jeśli ma zostać użyta).</item>
-		<item>Wypełnia tablicę, do której odwołuje się rejestr vAA, danymi statycznymi. Lokalizacja danych jest sumą pozycji bieżącej instrukcji i przesunięcia.</item>
-		<item>Zgłasza obiekt wyjątku. Odniesienie do obiektu wyjątku w rejestrze vAA.</item>
-		<item>Bezwarunkowy skok do krótkiego (całkowitego) 8-bitowego przesunięcia.</item>
-		<item>Bezwarunkowy skok do 16-bitowego przesunięcia.</item>
-		<item>Bezwarunkowy skok do 32-bitowego przesunięcia.</item>
-		<item>Implementuje operator Switch, gdy stałe sterujące są blisko siebie (w rzędzie). Instrukcja wykorzystuje tabelę indeksów. Offset instrukcji dla konkretnego przypadku jest wyznaczany przez indeks vAA. Jeśli indeks vAA wykracza poza tabelę, wykonanie jest kontynuowane od następnej instrukcji (domyślnie).</item>
-		<item>Implementuje operator Switch w przypadku rzadkiej tabeli. Instrukcja wykorzystuje tabelę, która określa przesunięcia dla każdej stałej. Jeśli w tabeli nie zostaną znalezione żadne dopasowania, wykonywana jest następna instrukcja (przypadek domyślny).</item>
-		<item>Porównuje wartości zmiennoprzecinkowe w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = vBB &lt; vCC? tak: 1, nie: -1, równe: 0</item>
-		<item>Porównuje wartości zmiennoprzecinkowe w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = vBB &lt; vCC? tak: 1, nie: -1, równe: 0</item>
-		<item>Porównuje wartości podwójne (zmiennoprzecinkowe) w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\ntak: 1, nie: -1, równe: 0</item>
-		<item>Porównuje wartości podwójne (zmiennoprzecinkowe) w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1)? tak: 1, nie: -1, równe: 0</item>
-		<item>Porównuje długie (całkowite) wartości w vBB i vCC i umieszcza wartość całkowitą (całkowitą) w rejestrze vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1)? tak: 1, nie: -1, równe: 0</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vA == vB. vA i vB zawierają wartości całkowite.\n(eq jest skrótem od Równych)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vA != vB. vA i vB zawierają wartości całkowite.\n(ne jest skrótem od Not Equals)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vA &lt; vB. vA i vB zawierają wartości całkowite.\n(To skrót od Mniej niż)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vA &lt;= vB. vA i vB zawierają wartości całkowite.\n(le to skrót od słów Mniej niż lub Równe/Mniejsze lub równe)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vA > vB. vA i vB zawierają wartości całkowite.\n(gt to skrót od Greater Than/More Than)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vA >= vB. vA i vB zawierają wartości całkowite.\n(ge jest skrótem od „Większy niż” lub „Równy”)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vAA == 0. vAA zawiera wartość całkowitą.\n(eqz jest skrótem od równa się zero)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vAA != 0. vAA zawiera wartość całkowitą.\n(nez to skrót od Not Equals to Zero)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vAA &lt; 0. vAA zawiera wartość całkowitą.\n(ltz to skrót od Less Than Zero)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vAA &lt;= 0. vAA zawiera wartość całkowitą.\n(lez to skrót od „Mniejszy lub równy zero/Mniejszy lub równy zero”)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vAA > 0. vAA zawiera wartość całkowitą.\n(gtz to skrót od „Większy niż zero”)</item>
-		<item>Przeskakuje do określonej etykiety, jeśli vAA >= 0. vAA zawiera wartość całkowitą.\n(gez to skrót od „Większy niż” lub „Równy zero”)</item>
-		<item>Pobiera wartość całkowitą indeksu zawartego w vCC z tablicy, do której odwołuje się vBB i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
-		<item>Pobiera, według indeksu zawartego w vCC, z tablicy, do której odwołuje się vBB, wartość double/long i umieszcza ją w parze rejestrów vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
-		<item>Otrzymuje, pod indeksem zawartym w vCC, z tablicy wskazanej w vBB referencję do obiektu i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
-		<item>Pobiera dla indeksu zawartego w vCC z tablicy, do której odwołuje się vBB, wartość logiczną i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
-		<item>Pobiera, pod indeksem zawartym w vCC, z tablicy, do której odwołuje się vBB, wartość bajtową (całkowitą) i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
-		<item>Pobiera dla indeksu zawartego w vCC z tablicy, do której odwołuje się vBB, wartość char i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
-		<item>Pobiera, pod indeksem zawartym w vCC, z tablicy, do której odwołuje się vBB, krótką (całkowitą) wartość i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
-		<item>Umieszcza wartość całkowitą z vAA w tablicy, do której odwołuje się vBB z elementem zawierającym rejestr vCC.\nvBB[vCC] = vAA</item>
-		<item>Umieszcza wartość double/long z pary rejestrów vAA, vAA+1 w tablicy, do której odwołuje się vBB, z elementem zawierającym rejestr vCC.\nvBB[vCC] = (vAA, vAA+1)</item>
-		<item>Umieszcza referencję do obiektu z vAA w tablicy, do której odwołuje się vBB z elementem z rejestrem vCC.\nvBB[vCC] = vAA</item>
-		<item>Umieszcza wartość logiczną z vAA w tablicy, do której odwołuje się vBB z elementem zawierającym rejestr vCC.\nvBB[vCC] = vAA</item>
-		<item>Umieszcza wartość bajtową (całkowitą) z vAA w tablicy, do której odwołuje się vBB z elementem zawierającym rejestr vCC.\nvBB[vCC] = vAA</item>
-		<item>Umieszcza wartość char (znak) z vAA w tablicy, do której odwołuje się vBB przez element z rejestrem vCC.\nvBB[vCC] = vAA</item>
-		<item>Umieszcza krótką (całkowitą) wartość z vAA w tablicy, do której odwołuje się vBB z elementem zawierającym rejestr vCC.\nvBB[vCC] = vAA</item>
-		<item>Odczytuje wartość z pola instancji i umieszcza ją w rejestrze vA. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\nvA = pole vB</item>
-		<item>Odczytuje wartość typu double/long z pola instancji i umieszcza ją w parze rejestrów (vA, vA+1). Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\n(vA, vA+1) = pole vB</item>
-		<item>Odczytuje referencję do obiektu z pola instancji i umieszcza ją w rejestrze vA. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\nvA = pole vB</item>
-		<item>Odczytuje wartość logiczną z pola instancji i umieszcza ją w rejestrze vA. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\nvA = pole vB</item>
-		<item>Odczytuje wartość bajtową (całkowitą) z pola instancji i umieszcza ją w rejestrze vA. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\nvA = pole vB</item>
-		<item>Odczytuje wartość znaku z pola instancji i umieszcza ją w rejestrze vA. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\nvA = pole vB</item>
-		<item>Odczytuje krótką (całkowitą) wartość z pola instancji i umieszcza ją w rejestrze vA. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\nvA = pole vB</item>
-		<item>Umieszcza wartość z rejestru vA w polu instancji. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\npole vB = vA</item>
-		<item>Umieszcza wartość podwójną/długą z pary rejestrów (vA, vA+1) w polu instancji. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\npole vB = (vA, vA+1)</item>
-		<item>Umieszcza referencję do obiektu z rejestru vA w polu instancji. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\npole vB = vA</item>
-		<item>Umieszcza wartość logiczną z rejestru vA w polu instancji. Odniesienie do klasy zawierającej to pole znajduje się w rejestrze vB.\npole vB = vA</item>
-		<item>Ustawia wartość bajtową (całkowitą) określonego pola logicznego w instancji, do której odwołuje się rejestr vB, równą wartości rejestru vA, czyli:\npole vB = vA</item>
-		<item>Ustawia wartość char (znaku) określonego pola logicznego w instancji, do której odwołuje się rejestr vB, równą wartości rejestru vA, czyli:\npole vB = vA</item>
-		<item>Ustawia wartość krótką (całkowitą) określonego pola logicznego w instancji, do której odwołuje się rejestr vB, równą wartości rejestru vA, czyli:\npole vB = vA</item>
-		<item>Odczytuje wartość z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Odczytuje wartość double/long z pola statycznego i umieszcza ją w parze rejestrów vAA, vAA+1. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Odczytuje referencję do obiektu z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Odczytuje wartość logiczną z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Odczytuje wartość bajtową (całkowitą) z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Odczytuje wartość char z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Odczytuje krótką (całkowitą) wartość z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Umieszcza wartość z rejestru vAA w polu (pole statyczne). Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Umieszcza wartość podwójną/długą z pary rejestrów vAA, vAA+1 w polu (pole statyczne). Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Umieszcza referencję do obiektu z rejestru vAA w polu (pole statyczne). Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Umieszcza wartość logiczną z rejestru vAA w polu (pole statyczne). Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Umieszcza wartość bajtową (całkowitą) z rejestru vAA w polu (pole statyczne). Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Umieszcza wartość char z rejestru vAA w polu statycznym. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Umieszcza krótką (całkowitą) wartość z rejestru vAA w polu statycznym. Rejestr zawierający odwołanie do klasy zawierającej to pole nie jest używany.</item>
-		<item>Wywołuje (uruchamia) metodę wirtualną z parametrami. Parametry podano w nawiasach klamrowych. Pierwszy parametr (rejestr v2) zawiera odwołanie do klasy zawierającej wywoływaną metodę, drugi parametr (zawartość rejestru v3) jest przekazywany do wywoływanej metody.</item>
+		<item>Umieszcza stałą 16-bitową w górnych 16 bitach pary rejestrów vAA, vAA+1. Używane do inicjalizacji wartości double (zmiennoprzecinkowych).</item>
+		<item>Umieszcza referencję do określonego ciągu znaków w rejestrze vAA.</item>
+		<item>Umieszcza referencję do określonego ciągu znaków w rejestrze vAA.</item>
+		<item>Umieszcza referencję do stałej string identyfikowanej przez string_id w rejestrze vAA.</item>
+		<item>Pobiera monitor obiektu wskazywanego przez rejestr vAA.</item>
+		<item>Zwalnia monitor obiektu wskazywanego przez rejestr vAA.</item>
+		<item>Sprawdza, czy referencja do obiektu zawarta w rejestrze vAA może być rzutowana na klasę identyfikowaną przez type_id. Jeśli nie, zgłasza ClassCastException, w przeciwnym razie kontynuuje wykonanie.</item>
+		<item>Sprawdza, czy zawartość rejestru vB jest instancją klasy identyfikowanej przez type_id. Ustawia rejestr vA na wartość niezerową, jeśli tak, 0, jeśli nie.\nvA = vB instanceof type ? 1 : 0</item>
+		<item>Określa liczbę elementów tablicy z rejestru vB i umieszcza wartość w rejestrze vA.\nvA = vB.length</item>
+		<item>Tworzy instancję obiektu i umieszcza referencję do utworzonej instancji w rejestrze vAA.</item>
+		<item>Tworzy nową tablicę o zmiennej type_id z rozmiarem elementów rejestru vB i umieszcza referencję do tablicy w rejestrze vA.</item>
+		<item>Tworzy nową tablicę danych typu type_id i wypełnia ją parametrami (tzn. bez tablic long/double, ale typy referencyjne są dozwolone). Referencję do nowo utworzonej tablicy można uzyskać za pomocą instrukcji move-result-object bezpośrednio po tej instrukcji.</item>
+		<item>Tworzy nową tablicę danych typu type_id i wypełnia ją zakresem parametrów (tzn. bez tablic long/double, ale typy referencyjne są dozwolone). Referencję do nowo utworzonej tablicy można uzyskać za pomocą instrukcji move-result-object bezpośrednio po tej instrukcji.</item>
+		<item>Wypełnia tablicę wskazywaną przez rejestr vAA danymi statycznymi. Lokalizacja danych jest sumą pozycji bieżącej instrukcji i przesunięcia.</item>
+		<item>Zgłasza obiekt wyjątku. Referencja do obiektu wyjątku w rejestrze vAA.</item>
+		<item>Bezwarunkowe przejście do krótkiego (8-bitowego) przesunięcia.</item>
+		<item>Bezwarunkowe przejście do 16-bitowego przesunięcia.</item>
+		<item>Bezwarunkowe przejście do 32-bitowego przesunięcia.</item>
+		<item>Implementuje operator Switch, gdy stałe sterujące są blisko siebie (w jednym rzędzie). Instrukcja korzysta z tablicy indeksów. Przesunięcie instrukcji dla konkretnego przypadku jest określane przez indeks vAA. Jeśli indeks vAA wykracza poza tabelę, wykonanie kontynuuje się od następnej instrukcji (domyślnie).</item>
+		<item>Implementuje operator Switch w przypadku rzadkiej tablicy. Instrukcja korzysta z tablicy określającej przesunięcia dla każdej stałej. Jeśli w tabeli nie zostaną znalezione żadne dopasowania, wykonywana jest następna instrukcja (przypadek domyślny).</item>
+		<item>Porównuje wartości float (zmiennoprzecinkowe) w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = vBB &lt; vCC ? tak: 1, nie: -1, równe: 0</item>
+		<item>Porównuje wartości float (zmiennoprzecinkowe) w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = vBB &lt; vCC ? tak: 1, nie: -1, równe: 0</item>
+		<item>Porównuje wartości double (zmiennoprzecinkowe) w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? tak: 1, nie: -1, równe: 0</item>
+		<item>Porównuje wartości double (zmiennoprzecinkowe) w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? tak: 1, nie: -1, równe: 0</item>
+		<item>Porównuje wartości long (całkowite) w vBB i vCC i umieszcza wartość całkowitą w rejestrze vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? tak: 1, nie: -1, równe: 0</item>
+		<item>Skok do określonej etykiety, jeśli vA == vB. vA i vB zawierają wartości całkowite.\n(eq to skrót od Equals - równa się)</item>
+		<item>Skok do określonej etykiety, jeśli vA != vB. vA i vB zawierają wartości całkowite.\n(ne to skrót od Not Equals - nie równa się)</item>
+		<item>Skok do określonej etykiety, jeśli vA &lt; vB. vA i vB zawierają wartości całkowite.\n(lt to skrót od Less Than - mniejszy niż)</item>
+		<item>Skok do określonej etykiety, jeśli vA &lt;= vB. vA i vB zawierają wartości całkowite.\n(le to skrót od Less than or Equal - mniejszy lub równy)</item>
+		<item>Skok do określonej etykiety, jeśli vA > vB. vA i vB zawierają wartości całkowite.\n(gt to skrót od Greater Than - większy niż)</item>
+		<item>Skok do określonej etykiety, jeśli vA >= vB. vA i vB zawierają wartości całkowite.\n(ge to skrót od Greater than or Equal - większy lub równy)</item>
+		<item>Skok do określonej etykiety, jeśli vAA == 0. vAA zawiera wartość całkowitą.\n(eqz to skrót od Equals to Zero - równa się zero)</item>
+		<item>Skok do określonej etykiety, jeśli vAA != 0. vAA zawiera wartość całkowitą.\n(nez to skrót od Not Equals to Zero - nie równa się zero)</item>
+		<item>Skok do określonej etykiety, jeśli vAA &lt; 0. vAA zawiera wartość całkowitą.\n(ltz to skrót od Less Than Zero - mniejszy niż zero)</item>
+		<item>Skok do określonej etykiety, jeśli vAA &lt;= 0. vAA zawiera wartość całkowitą.\n(lez to skrót od Less than or Equal to Zero - mniejszy lub równy zero)</item>
+		<item>Skok do określonej etykiety, jeśli vAA > 0. vAA zawiera wartość całkowitą.\n(gtz to skrót od Greater Than Zero - większy niż zero)</item>
+		<item>Skok do określonej etykiety, jeśli vAA >= 0. vAA zawiera wartość całkowitą.\n(gez to skrót od Greater than or Equal to Zero - większy lub równy zero)</item>
+		<item>Pobiera wartość całkowitą pod indeksem zawartym w vCC z tablicy wskazywanej przez vBB i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
+		<item>Pobiera, pod indeksem zawartym w vCC, z tablicy wskazywanej przez vBB, wartość double/long i umieszcza ją w parze rejestrów vAA, vAA+1.\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>Pobiera, pod indeksem zawartym w vCC, z tablicy wskazywanej przez vBB, referencję do obiektu i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
+		<item>Pobiera, pod indeksem zawartym w vCC, z tablicy wskazywanej przez vBB, wartość logiczną i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
+		<item>Pobiera, pod indeksem zawartym w vCC, z tablicy wskazywanej przez vBB, wartość byte (całkowitą) i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
+		<item>Pobiera, pod indeksem zawartym w vCC, z tablicy wskazywanej przez vBB, wartość char i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
+		<item>Pobiera, pod indeksem zawartym w vCC, z tablicy wskazywanej przez vBB, wartość short (całkowitą) i umieszcza ją w rejestrze vAA.\nvAA = vBB[vCC]</item>
+		<item>Umieszcza wartość całkowitą z vAA w tablicy wskazywanej przez vBB, w elemencie zawierającym rejestr vCC.\nvBB[vCC] = vAA</item>
+		<item>Umieszcza wartość double/long z pary rejestrów vAA, vAA+1 w tablicy wskazywanej przez vBB, w elemencie zawierającym rejestr vCC.\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>Umieszcza referencję do obiektu z vAA w tablicy wskazywanej przez vBB, w elemencie o rejestrze vCC.\nvBB[vCC] = vAA</item>
+		<item>Umieszcza wartość logiczną z vAA w tablicy wskazywanej przez vBB, w elemencie zawierającym rejestr vCC.\nvBB[vCC] = vAA</item>
+		<item>Umieszcza wartość byte (całkowitą) z vAA w tablicy wskazywanej przez vBB, w elemencie zawierającym rejestr vCC.\nvBB[vCC] = vAA</item>
+		<item>Umieszcza wartość char (znak) z vAA w tablicy wskazywanej przez vBB, w elemencie o rejestrze vCC.\nvBB[vCC] = vAA</item>
+		<item>Umieszcza wartość short (całkowitą) z vAA w tablicy wskazywanej przez vBB, w elemencie zawierającym rejestr vCC.\nvBB[vCC] = vAA</item>
+		<item>Odczytuje wartość z pola instancji i umieszcza ją w rejestrze vA. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvA = vB.pole</item>
+		<item>Odczytuje wartość double/long z pola instancji i umieszcza ją w parze rejestrów (vA, vA+1). Referencja do klasy zawierającej to pole jest w rejestrze vB.\n(vA, vA+1) = vB.pole</item>
+		<item>Odczytuje referencję do obiektu z pola instancji i umieszcza ją w rejestrze vA. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvA = vB.pole</item>
+		<item>Odczytuje wartość logiczną z pola instancji i umieszcza ją w rejestrze vA. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvA = vB.pole</item>
+		<item>Odczytuje wartość byte (całkowitą) z pola instancji i umieszcza ją w rejestrze vA. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvA = vB.pole</item>
+		<item>Odczytuje wartość char z pola instancji i umieszcza ją w rejestrze vA. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvA = vB.pole</item>
+		<item>Odczytuje wartość short (całkowitą) z pola instancji i umieszcza ją w rejestrze vA. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvA = vB.pole</item>
+		<item>Umieszcza wartość z rejestru vA w polu instancji. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvB.pole = vA</item>
+		<item>Umieszcza wartość double/long z pary rejestrów (vA, vA+1) w polu instancji. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvB.pole = (vA, vA+1)</item>
+		<item>Umieszcza referencję do obiektu z rejestru vA w polu instancji. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvB.pole = vA</item>
+		<item>Umieszcza wartość logiczną z rejestru vA w polu instancji. Referencja do klasy zawierającej to pole jest w rejestrze vB.\nvB.pole = vA</item>
+		<item>Ustawia wartość byte (całkowitą) określonego pola logicznego w instancji wskazywanej przez rejestr vB równą wartości rejestru vA, czyli:\nvB.pole = vA</item>
+		<item>Ustawia wartość char (znak) określonego pola logicznego w instancji wskazywanej przez rejestr vB równą wartości rejestru vA, czyli:\nvB.pole = vA</item>
+		<item>Ustawia wartość short (całkowitą) określonego pola logicznego w instancji wskazywanej przez rejestr vB równą wartości rejestru vA, czyli:\nvB.pole = vA</item>
+		<item>Odczytuje wartość z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Odczytuje wartość double/long z pola statycznego i umieszcza ją w parze rejestrów vAA, vAA+1. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Odczytuje referencję do obiektu z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Odczytuje wartość logiczną z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Odczytuje wartość byte (całkowitą) z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Odczytuje wartość char z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Odczytuje wartość short (całkowitą) z pola statycznego i umieszcza ją w rejestrze vAA. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Umieszcza wartość z rejestru vAA w polu statycznym. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Umieszcza wartość double/long z pary rejestrów vAA, vAA+1 w polu statycznym. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Umieszcza referencję do obiektu z rejestru vAA w polu statycznym. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Umieszcza wartość logiczną z rejestru vAA w polu statycznym. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Umieszcza wartość byte (całkowitą) z rejestru vAA w polu statycznym. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Umieszcza wartość char z rejestru vAA w polu statycznym. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Umieszcza wartość short (całkowitą) z rejestru vAA w polu statycznym. Rejestr zawierający referencję do klasy zawierającej to pole nie jest używany.</item>
+		<item>Wywołuje (uruchamia) metodę wirtualną z parametrami. Parametry są wskazane w nawiasach klamrowych. Pierwszy parametr (rejestr v2) zawiera referencję do klasy zawierającej wywoływaną metodę, drugi parametr (zawartość rejestru v3) jest przekazywany do wywoływanej metody.</item>
 		<item>Wywołuje (uruchamia) metodę wirtualną z parametrami bezpośrednio z klasy nadrzędnej.</item>
 		<item>Wywołuje (uruchamia) metodę z parametrami bez uprawnień metody wirtualnej.</item>
-		<item>Wywołuje (uruchamia) metodę statyczną z parametrami. Parametry podano w nawiasach klamrowych. Parametr (zawartość rejestru v3) przekazywany jest do wywoływanej metody. Klasa zawierająca wywoływaną metodę jest wskazywana po nawiasach klamrowych.</item>
+		<item>Wywołuje (uruchamia) metodę statyczną z parametrami. Parametry są wskazane w nawiasach klamrowych. Parametr (zawartość rejestru v3) jest przekazywany do wywoływanej metody. Klasa zawierająca wywoływaną metodę jest wskazana po nawiasach klamrowych.</item>
 		<item>Wywołuje (uruchamia) metodę interfejsu z parametrami.</item>
-		<item>Wywołuje (uruchamia) metodę wirtualną z parametrami, ale parametry muszą być zawarte w rejestrach z numerami w kolejności.</item>
-		<item>Wywołuje (uruchamia) metodę wirtualną z parametrami bezpośrednio z klasy nadrzędnej, przy czym parametry muszą być zawarte w rejestrach z kolejnymi numerami.</item>
+		<item>Wywołuje (uruchamia) metodę wirtualną z parametrami, ale parametry muszą być zawarte w rejestrach o numerach w kolejności.</item>
+		<item>Wywołuje (uruchamia) metodę wirtualną z parametrami bezpośrednio z klasy nadrzędnej, ale parametry muszą być zawarte w rejestrach o kolejnych numerach.</item>
 		<item>Wywołuje (uruchamia) metodę z parametrami bez uprawnień metody wirtualnej, ale parametry muszą być zawarte w rejestrach o kolejnych numerach.</item>
 		<item>Wywołuje (uruchamia) metodę statyczną z parametrami, ale parametry muszą być zawarte w rejestrach o kolejnych numerach.</item>
 		<item>Wywołuje (uruchamia) metodę interfejsu z parametrami, ale parametry muszą być zawarte w rejestrach o kolejnych numerach.</item>
 		<item>Oblicza vA = -vB dla wartości typu całkowitego.</item>
 		<item>Oblicza vA = ~vB dla wartości całkowitych.\nvA = ~vB</item>
-		<item>Oblicza (vA, vA+1) = -(vB, vB+1) dla wartości typu long (integer).</item>
-		<item>Oblicza (vA, vA+1) = ~(vB, vB+1) dla wartości typu long (integer).</item>
-		<item>Oblicza vA = -vB dla wartości zmiennoprzecinkowych.</item>
-		<item>Oblicza (vA, vA+1) = -(vB, vB+1) dla wartości podwójnych (zmiennoprzecinkowych).</item>
-		<item>Konwertuje liczbę całkowitą z vB na liczbę typu long i zapisuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (długie) vB</item>
-		<item>Konwertuje liczbę całkowitą z vB na liczbę zmiennoprzecinkową i zapisuje ją w rejestrze vA.\nvA = (zmiennoprzecinkowy) vB</item>
-		<item>Konwertuje liczbę całkowitą z vB na liczbę podwójną (zmiennoprzecinkową) i zapisuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (podwójne) vB</item>
-		<item>Konwertuje długą (całkowitą) wartość z vB, vB+1 na liczbę całkowitą (integer) i zapisuje ją w rejestrze vA.\nvA = (int) (vB, vB+1)</item>
-		<item>Konwertuje długą (całkowitą) wartość z vB, vB+1 na liczbę zmiennoprzecinkową (zmiennoprzecinkową) i zapisuje ją w rejestrze vA.\nvA = (zmiennoprzecinkowy) (vB, vB+1)</item>
-		<item>Konwertuje długą (całkowitą) wartość z vB, vB+1 na wartość podwójną (zmiennoprzecinkową) i zapisuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (podwójne) (vB, vB+1)</item>
-		<item>Konwertuje wartość zmiennoprzecinkową z vB na wartość całkowitą (całkowitą) i zapisuje ją w rejestrze vA.\nvA = (int)vB</item>
-		<item>Konwertuje wartość zmiennoprzecinkową z vB na wartość długą (całkowitą) i zapisuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (długie) vB</item>
-		<item>Konwertuje wartość zmiennoprzecinkową z vB na wartość podwójną (zmiennoprzecinkową) i zapisuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (podwójne) vB</item>
-		<item>Konwertuje wartość podwójną (zmiennoprzecinkową) z vB, vB+1 na wartość całkowitą (całkowitą) i zapisuje ją w rejestrze vA.\nvA = (int) (vB, vB+1)</item>
-		<item>Konwertuje wartość podwójną (zmiennoprzecinkową) z vB, vB+1 na wartość długą (całkowitą) i zapisuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (długie) (vB, vB+1)</item>
-		<item>Konwertuje wartość podwójną (zmiennoprzecinkową) z vB, vB+1 na wartość zmiennoprzecinkową i zapisuje ją w rejestrze vA.\nvA = (zmiennoprzecinkowy) (vB, vB+1)</item>
-		<item>Konwertuje wartość całkowitą z vB na wartość bajtową i zapisuje ją w rejestrze vA.\nvA = (bajt) vB</item>
-		<item>Konwertuje wartość całkowitą z vB na wartość char i zapisuje ją w rejestrze vA.\nvA = (znak)vB</item>
-		<item>Konwertuje wartość całkowitą z vB na krótką wartość i zapisuje ją w rejestrze vA.\nvA = (krótko) vB</item>
-		<item>Oblicza vBB + vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB + vCC</item>
-		<item>Oblicza vBB - vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB – vCC</item>
-		<item>Oblicza vBB * vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB * vCC</item>
-		<item>Oblicza vBB/vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB / vCC</item>
-		<item>Oblicza vBB % vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB% vCC</item>
-		<item>Oblicza vBB i vCC (logiczne AND) i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB i vCC</item>
-		<item>Oblicza vBB | vCC (logiczne OR) i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB | vCC</item>
-		<item>Oblicza vBB ^ vCC (wyłączne OR) i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB ^ vCC</item>
-		<item>Przesuwa vBB w lewo o liczbę bitów określoną przez vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB &lt;&lt; vCC</item>
-		<item>Przesuwa vBB w prawo o liczbę bitów określoną przez vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB >> vCC</item>
-		<item>Przesuwa vBB bez zachowania znaku w prawo o liczbę bitów określoną przez vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB >>> vCC</item>
-		<item>Oblicza (vBB, vBB+1) + (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) - (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) * (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) / (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) % (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) &amp; (vCC, vCC+1) (logiczne AND) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) i (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) | (vCC, vCC+1) (logiczne OR) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) ^ (vCC, vCC+1) (wyłącznie AND) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
-		<item>Przesuwa vBB, vBB+1 w lewo o liczbę bitów określoną przez vCC i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
-		<item>Przesuwa vBB, vBB+1 w prawo o liczbę bitów określoną przez vCC i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
-		<item>Przesuwa vBB, vBB+1 w prawo bez zachowania znaku o liczbę bitów określoną przez vCC i zapisuje wynik w parze rejestrów vAA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
-		<item>Oblicza vBB + vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są zmiennoprzecinkowe.\nvAA = vBB + vCC</item>
-		<item>Oblicza vBB - vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są zmiennoprzecinkowe.\nvAA = vBB – vCC</item>
-		<item>Oblicza vBB * vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są zmiennoprzecinkowe.\nvAA = vBB * vCC</item>
-		<item>Oblicza vBB/vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są zmiennoprzecinkowe.\nvAA = vBB / vCC</item>
-		<item>Oblicza vBB % vCC i zapisuje wynik w rejestrze vAA. Wszystkie wartości są zmiennoprzecinkowe.\nvAA = vBB% vCC</item>
-		<item>Oblicza (vBB, vBB+1) + (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) - (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) * (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) / (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
-		<item>Oblicza (vBB, vBB+1) % (vCC, vCC+1) i zapisuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
-		<item>Oblicza vA + vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA + vB</item>
-		<item>Oblicza vA - vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA - vB</item>
-		<item>Oblicza vA * vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA * vB</item>
-		<item>Oblicza vA/vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA / vB</item>
-		<item>Oblicza vA % vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA% vB</item>
-		<item>Oblicza vA i vB (logiczne AND) i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA i vB</item>
-		<item>Oblicza vA | vB (logiczne OR) i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA | vB</item>
-		<item>Oblicza vA ^ vB (wyłączne OR) i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA ^ vB</item>
-		<item>Przesuwa vA w lewo o liczbę bitów określoną przez vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA &lt;&lt; vB</item>
-		<item>Przesuwa vA w prawo o liczbę bitów określoną przez vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA >> vB</item>
-		<item>Przesuwa vA bez zachowania jego znaku w prawo o liczbę bitów określoną przez vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vA >>> vB</item>
-		<item>Oblicza (vA, vA+1) + (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) - (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) * (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) / (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) % (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) &amp; (vB, vB+1) (logiczne AND) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) i (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) | (vB, vB+1) (logiczne OR) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) &amp; (vB, vB+1) (wyłącznie OR) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
-		<item>Przesuwa vA, vA+1 w lewo o liczbę bitów określoną przez vB i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
-		<item>Przesuwa vA, vA+1 w prawo o liczbę bitów określoną przez vB i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
-		<item>Przesuwa vA, vA+1 w prawo bez zachowania znaku o liczbę cyfr określoną przez vB i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są długie (liczba całkowita).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
-		<item>Oblicza vA + vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są zmiennoprzecinkowe.\nvA = vA + vB</item>
-		<item>Oblicza vA - vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są zmiennoprzecinkowe.\nvA = vA - vB</item>
-		<item>Oblicza vA * vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są zmiennoprzecinkowe.\nvA = vA * vB</item>
-		<item>Oblicza vA/vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są zmiennoprzecinkowe.\nvA = vA / vB</item>
-		<item>Oblicza vA % vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są zmiennoprzecinkowe.\nvA = vA% vB</item>
-		<item>Oblicza (vA, vA+1) + (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) - (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) * (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) / (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
-		<item>Oblicza (vA, vA+1) % (vB, vB+1) i zapisuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są podwójne (zmiennoprzecinkowe).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
-		<item>Oblicza vB + 0xFFFF i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vB + 0xFFFF</item>
-		<item>Oblicza 0xFFFF - vB i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = 0xFFFF - vB</item>
-		<item>Oblicza vB * 0xFFFF i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vB * 0xFFFF</item>
-		<item>Oblicza vB/0xFFFF i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vB / 0xFFFF</item>
-		<item>Oblicza vB % 0xFFFF i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vB% 0xFFFF</item>
-		<item>Oblicza vB i 0xFFFF (logiczne AND) i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vB i 0xFFFF</item>
-		<item>Oblicza vB | 0xFFFF (logiczne OR) i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vB | 0xFFFF</item>
-		<item>Oblicza vB ^ 0xFFFF (wyłączne OR) i zapisuje wynik w rejestrze vA. Wszystkie wartości są liczbami całkowitymi.\nvA = vB ^ 0xFFFF</item>
-		<item>Oblicza vBB + 0xFF i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB + 0xFF</item>
-		<item>Oblicza 0xFF - vBB i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = 0xFF - vBB</item>
-		<item>Oblicza vBB * 0xFF i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB * 0xFF</item>
-		<item>Oblicza vBB/0xFF i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB / 0xFF</item>
-		<item>Oblicza vBB % 0xFF i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB% 0xFF</item>
-		<item>Oblicza vBB i 0xFF (logiczne AND) i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB i 0xFF</item>
-		<item>Oblicza vBB | 0xFF (logiczne OR) i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB | 0xFF</item>
-		<item>Oblicza vBB ^ 0xFF (wyłączne OR) i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB ^ 0xFF</item>
-		<item>Przesuwa vBB w lewo o liczbę bitów określoną przez 0xFF i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB &lt;&lt; 0xFF</item>
-		<item>Przesuwa vBB w prawo o liczbę bitów określoną przez 0xFF i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB >> 0xFF</item>
-		<item>Sygnałowo przesuwa vBB w prawo o liczbę bitów określoną przez 0xFF i zapisuje wynik w rejestrze vAA. Wszystkie wartości są liczbami całkowitymi.\nvAA = vBB >>> 0xFF</item>
-		<item>Wywołuje (uruchamia) metodę podpisu polimorficznego z parametrami. Występuje w plikach Dex od wersji 038.</item>
-		<item>Wywołuje (uruchamia) metodę podpisu polimorficznego z parametrami, ale parametry muszą być zawarte w rejestrach o kolejnych numerach. Występuje w plikach Dex od wersji 038.</item>
-		<item>Umożliwia (rozpoczyna) wywoływanie witryny z parametrami. Występuje w plikach Dex od wersji 038.</item>
-		<item>Pozwala (rozpoczyna) wywoływanie strony z parametrami, ale parametry muszą być zawarte w rejestrach z numerami w odpowiedniej kolejności. Występuje w plikach Dex od wersji 038.</item>
-		<item>Umieszcza odwołanie do uchwytu metody w rejestrze vAA. Występuje w plikach Dex od wersji 039.</item>
-		<item>Umieszcza referencję do prototypu metody w rejestrze vAA. Występuje w plikach Dex od wersji 039.</item>
+		<item>Oblicza (vA, vA+1) = -(vB, vB+1) dla wartości typu long (całkowity).</item>
+		<item>Oblicza (vA, vA+1) = ~(vB, vB+1) dla wartości typu long (całkowity).</item>
+		<item>Oblicza vA = -vB dla wartości float.</item>
+		<item>Oblicza (vA, vA+1) = -(vB, vB+1) dla wartości double (zmiennoprzecinkowych).</item>
+		<item>Konwertuje liczbę całkowitą z vB na long i przechowuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (long) vB</item>
+		<item>Konwertuje liczbę całkowitą z vB na float i przechowuje ją w rejestrze vA.\nvA = (float) vB</item>
+		<item>Konwertuje liczbę całkowitą z vB na double (zmiennoprzecinkowy) i przechowuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (double) vB</item>
+		<item>Konwertuje wartość long (całkowitą) z vB, vB+1 na liczbę całkowitą i przechowuje ją w rejestrze vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Konwertuje wartość long (całkowitą) z vB, vB+1 na float (zmiennoprzecinkowy) i przechowuje ją w rejestrze vA.\nvA = (float) (vB, vB+1)</item>
+		<item>Konwertuje wartość long (całkowitą) z vB, vB+1 na double (zmiennoprzecinkowy) i przechowuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (double) (vB, vB+1)</item>
+		<item>Konwertuje wartość float (zmiennoprzecinkową) z vB na wartość całkowitą i przechowuje ją w rejestrze vA.\nvA = (int)vB</item>
+		<item>Konwertuje wartość float (zmiennoprzecinkową) z vB na wartość long (całkowitą) i przechowuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (long) vB</item>
+		<item>Konwertuje wartość float (zmiennoprzecinkową) z vB na wartość double (zmiennoprzecinkową) i przechowuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (double) vB</item>
+		<item>Konwertuje wartość double (zmiennoprzecinkową) z vB, vB+1 na wartość całkowitą i przechowuje ją w rejestrze vA.\nvA = (int) (vB, vB+1)</item>
+		<item>Konwertuje wartość double (zmiennoprzecinkową) z vB, vB+1 na wartość long (całkowitą) i przechowuje ją w parze rejestrów vA, vA+1.\n(vA, vA+1) = (long) (vB, vB+1)</item>
+		<item>Konwertuje wartość double (zmiennoprzecinkową) z vB, vB+1 na wartość float (zmiennoprzecinkową) i przechowuje ją w rejestrze vA.\nvA = (float) (vB, vB+1)</item>
+		<item>Konwertuje wartość całkowitą z vB na wartość byte i przechowuje ją w rejestrze vA.\nvA = (byte) vB</item>
+		<item>Konwertuje wartość całkowitą z vB na wartość char i przechowuje ją w rejestrze vA.\nvA = (char)vB</item>
+		<item>Konwertuje wartość całkowitą z vB na wartość short i przechowuje ją w rejestrze vA.\nvA = (short) vB</item>
+		<item>Oblicza vBB + vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB + vCC</item>
+		<item>Oblicza vBB - vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB - vCC</item>
+		<item>Oblicza vBB * vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB * vCC</item>
+		<item>Oblicza vBB / vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB / vCC</item>
+		<item>Oblicza vBB % vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB % vCC</item>
+		<item>Oblicza vBB &amp; vCC (logiczne AND) i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB &amp; vCC</item>
+		<item>Oblicza vBB | vCC (logiczne OR) i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB | vCC</item>
+		<item>Oblicza vBB ^ vCC (wyłączne OR) i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB ^ vCC</item>
+		<item>Przesuwa vBB w lewo o liczbę bitów określoną przez vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>Przesuwa vBB w prawo o liczbę bitów określoną przez vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB >> vCC</item>
+		<item>Przesuwa vBB bez zachowania znaku w prawo o liczbę bitów określoną przez vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB >>> vCC</item>
+		<item>Oblicza (vBB, vBB+1) + (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) - (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) * (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) / (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) % (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) &amp; (vCC, vCC+1) (logiczne AND) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) | (vCC, vCC+1) (logiczne OR) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) ^ (vCC, vCC+1) (wyłączne AND) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Przesuwa vBB, vBB+1 w lewo o liczbę bitów określoną przez vCC i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>Przesuwa vBB, vBB+1 w prawo o liczbę bitów określoną przez vCC i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>Przesuwa vBB, vBB+1 w prawo bez zachowania znaku o liczbę bitów określoną przez vCC i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu long (całkowitego).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Oblicza vBB + vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są typu float.\nvAA = vBB + vCC</item>
+		<item>Oblicza vBB - vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są typu float.\nvAA = vBB - vCC</item>
+		<item>Oblicza vBB * vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są typu float.\nvAA = vBB * vCC</item>
+		<item>Oblicza vBB / vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są typu float.\nvAA = vBB / vCC</item>
+		<item>Oblicza vBB % vCC i przechowuje wynik w rejestrze vAA. Wszystkie wartości są typu float.\nvAA = vBB % vCC</item>
+		<item>Oblicza (vBB, vBB+1) + (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) - (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) * (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) / (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>Oblicza (vBB, vBB+1) % (vCC, vCC+1) i przechowuje wynik w parze rejestrów vAA, vAA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>Oblicza vA + vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA + vB</item>
+		<item>Oblicza vA - vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA - vB</item>
+		<item>Oblicza vA * vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA * vB</item>
+		<item>Oblicza vA / vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA / vB</item>
+		<item>Oblicza vA % vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA % vB</item>
+		<item>Oblicza vA &amp; vB (logiczne AND) i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA &amp; vB</item>
+		<item>Oblicza vA | vB (logiczne OR) i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA | vB</item>
+		<item>Oblicza vA ^ vB (wyłączne OR) i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA ^ vB</item>
+		<item>Przesuwa vA w lewo o liczbę bitów określoną przez vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA &lt;&lt; vB</item>
+		<item>Przesuwa vA w prawo o liczbę bitów określoną przez vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA >> vB</item>
+		<item>Przesuwa vA bez zachowania znaku w prawo o liczbę bitów określoną przez vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vA >>> vB</item>
+		<item>Oblicza (vA, vA+1) + (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) - (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) * (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) / (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) % (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) &amp; (vB, vB+1) (logiczne AND) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) | (vB, vB+1) (logiczne OR) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) &amp; (vB, vB+1) (wyłączne OR) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Przesuwa vA, vA+1 w lewo o liczbę bitów określoną przez vB i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>Przesuwa vA, vA+1 w prawo o liczbę bitów określoną przez vB i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>Przesuwa vA, vA+1 w prawo bez zachowania znaku o liczbę bitów określoną przez vB i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu long (całkowitego).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>Oblicza vA + vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są typu float.\nvA = vA + vB</item>
+		<item>Oblicza vA - vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są typu float.\nvA = vA - vB</item>
+		<item>Oblicza vA * vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są typu float.\nvA = vA * vB</item>
+		<item>Oblicza vA / vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są typu float.\nvA = vA / vB</item>
+		<item>Oblicza vA % vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są typu float.\nvA = vA % vB</item>
+		<item>Oblicza (vA, vA+1) + (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) - (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) * (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) / (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>Oblicza (vA, vA+1) % (vB, vB+1) i przechowuje wynik w parze rejestrów vA, vA+1. Wszystkie wartości są typu double (zmiennoprzecinkowego).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>Oblicza vB + 0xFFFF i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vB + 0xFFFF</item>
+		<item>Oblicza 0xFFFF - vB i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = 0xFFFF - vB</item>
+		<item>Oblicza vB * 0xFFFF i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vB * 0xFFFF</item>
+		<item>Oblicza vB / 0xFFFF i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vB / 0xFFFF</item>
+		<item>Oblicza vB % 0xFFFF i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vB % 0xFFFF</item>
+		<item>Oblicza vB &amp; 0xFFFF (logiczne AND) i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vB &amp; 0xFFFF</item>
+		<item>Oblicza vB | 0xFFFF (logiczne OR) i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vB | 0xFFFF</item>
+		<item>Oblicza vB ^ 0xFFFF (wyłączne OR) i przechowuje wynik w rejestrze vA. Wszystkie wartości są całkowite.\nvA = vB ^ 0xFFFF</item>
+		<item>Oblicza vBB + 0xFF i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB + 0xFF</item>
+		<item>Oblicza 0xFF - vBB i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = 0xFF - vBB</item>
+		<item>Oblicza vBB * 0xFF i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB * 0xFF</item>
+		<item>Oblicza vBB / 0xFF i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB / 0xFF</item>
+		<item>Oblicza vBB % 0xFF i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB % 0xFF</item>
+		<item>Oblicza vBB &amp; 0xFF (logiczne AND) i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB &amp; 0xFF</item>
+		<item>Oblicza vBB | 0xFF (logiczne OR) i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB | 0xFF</item>
+		<item>Oblicza vBB ^ 0xFF (wyłączne OR) i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB ^ 0xFF</item>
+		<item>Przesuwa vBB w lewo o liczbę bitów określoną przez 0xFF i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>Przesuwa vBB w prawo o liczbę bitów określoną przez 0xFF i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB >> 0xFF</item>
+		<item>Przesuwa vBB w prawo ze znakiem o liczbę bitów określoną przez 0xFF i przechowuje wynik w rejestrze vAA. Wszystkie wartości są całkowite.\nvAA = vBB >>> 0xFF</item>
+		<item>Wywołuje (uruchamia) polimorficzną metodę sygnaturową z parametrami. Obecne w plikach Dex od wersji 038.</item>
+		<item>Wywołuje (uruchamia) polimorficzną metodę sygnaturową z parametrami, ale parametry muszą być zawarte w rejestrach o kolejnych numerach. Obecne w plikach Dex od wersji 038.</item>
+		<item>Umożliwia (uruchamia) wywołanie witryny z parametrami. Obecne w plikach Dex od wersji 038.</item>
+		<item>Umożliwia (uruchamia) wywołanie witryny z parametrami, ale parametry muszą być zawarte w rejestrach o numerach w kolejności. Obecne w plikach Dex od wersji 038.</item>
+		<item>Umieszcza referencję do uchwytu metody w rejestrze vAA. Obecne w plikach Dex od wersji 039.</item>
+		<item>Umieszcza referencję do prototypu metody w rejestrze vAA. Obecne w plikach Dex od wersji 039.</item>
+	</string-array>
+	<string-array name="years_or_days">
+		<item>lata</item>
+		<item>dni</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>Wbudowane</item>
+		<item>Niestandardowe</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>konfiguracje</item>
+		<item>uprawnienia</item>
+		<item>ciągi</item>
+		<item>zasoby</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>Drukuj informacje wyodrębnione z manifestu APK.</item>
+		<item>Drukuj każdą konfigurację używaną przez zasób w APK.</item>
+		<item>Drukuj uprawnienia wyodrębnione z manifestu APK.</item>
+		<item>Drukuj zawartość puli ciągów tabeli zasobów w APK.</item>
+		<item>Drukuj zawartość tabeli zasobów z APK.</item>
+		<item>Drukuj zasoby &lt;overlayable> APK.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Jasny</item>
+		<item>Ciemny</item>
+		<item>Czarny</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>Tryb awaryjny</item>
+		<item>Deobfuskacja</item>
+		<item>Unikaj Unicode</item>
+		<item>Pokaż niespójny kod</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>Zmień nazwę</item>
+		<item>Zmień nazwę tylko plików</item>
+		<item>Zastąp</item>
+		<item>Pomiń</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>Lewo</item>
+		<item>Prawo</item>
+	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>Wszystkie wielkie litery</item>
+		<item>Oddziel dwukropkiem</item>
+	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>Dodaj nowe zasoby (tylko pliki)</item>
+		<item>Usuń brakujące zasoby</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
 	</string-array>
 	<string-array name="sort">
 		<item>Nazwa</item>
-		<item>Imię odwrócone</item>
+		<item>Nazwa odwrotnie</item>
 		<item>Typ</item>
-		<item>Wpisz odwrócony</item>
+		<item>Typ odwrotnie</item>
 		<item>Rozmiar</item>
-		<item>Rozmiar odwrócony</item>
-		<item>Data</item>
-		<item>Data odwrócona</item>
+		<item>Rozmiar odwrotnie</item>
+		<item>Czas</item>
+		<item>Czas odwrotnie</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>Kolor HEX</item>
+		<item>Kod Smali</item>
+		<item>A,R,G,B</item>
 	</string-array>
 	<string-array name="format">
 		<item>@string/jks</item>
@@ -250,22 +594,415 @@
 		<item>@string/bks</item>
 		<item>@string/pk8</item>
 	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>jeden</item>
+		<item>dwa</item>
+		<item>kilka</item>
+		<item>wiele</item>
+		<item>inne</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>Nie dekompiluj</item>
+		<item>Dekompiluj do głównego katalogu</item>
+		<item>Dekompiluj do osobnego katalogu</item>
+		<item>Próbuj scalić pakiety</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>Tekst &lt;-> Base64</item>
+		<item>Tekst &lt;-> Unicode</item>
+		<item>Tekst &lt;-> Kodowanie URL</item>
+		<item>Tekst &lt;-> MD5</item>
+		<item>Tekst &lt;-> SHA-1</item>
+		<item>Tekst &lt;-> SHA-224</item>
+		<item>Tekst &lt;-> SHA-256</item>
+		<item>Tekst &lt;-> SHA-384</item>
+		<item>Tekst &lt;-> SHA-512</item>
+		<item>Tekst &lt;-> Tablica (UTF-8)</item>
+		<item>Tekst &lt;-> Tablica (UTF-16)</item>
+		<item>Tekst &lt;-> Tablica (UTF-16LE)</item>
+		<item>Tekst &lt;-> Tablica (UTF-16BE)</item>
+		<item>Tekst &lt;-> Tablica (US-ASCII)</item>
+		<item>Tekst &lt;-> Tablica (ISO-8859-1)</item>
+		<item>Tekst &lt;-> Tablica (CP1251)</item>
+		<item>Dziesiętny &lt;-> Binarny</item>
+		<item>Dziesiętny &lt;-> Ósemkowy</item>
+		<item>Dziesiętny &lt;-> Szesnastkowy</item>
+		<item>Dziesiętny &lt;-> Szesnastkowy (0x0)</item>
+		<item>Dziesiętny &lt;-> Szesnastkowy (0x00000000)</item>
+		<item>Zmiennoprzecinkowy &lt;-> Binarny</item>
+		<item>Zmiennoprzecinkowy &lt;-> Ósemkowy</item>
+		<item>Zmiennoprzecinkowy &lt;-> Szesnastkowy</item>
+		<item>Zmiennoprzecinkowy &lt;-> Szesnastkowy (0x0)</item>
+		<item>Zmiennoprzecinkowy &lt;-> Szesnastkowy (0x00000000)</item>
+		<item>Kolor &lt;-> Smali</item>
+		<item>Kolor &lt;-> Dziesiętny</item>
+		<item>Kolor &lt;-> A,R,G,B</item>
+        <item>Data &lt;-> Milisekundy</item>
+		<item>Data &lt;-> Szesnastkowy</item>
+	</string-array>
 	<string-array name="installLocation">
-		<item>Nie ustawiony</item>
-		<item>Auto</item>
-		<item>Tylko pamięć wewnętrzna</item>
-		<item>Preferowana pamięć zewnętrzna</item>
+		<item>Nie ustawiono</item>
+		<item>Automatycznie</item>
+		<item>Tylko wewnętrzna</item>
+		<item>Preferowana zewnętrzna</item>
+	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lietuvių</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+        <item>O\'zbek tili</item>
+        <item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+        <item>uz</item>
+        <item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>rrrr/MM/dd HH:mm</item>
+		<item>dd/MM/rrrr HH:mm</item>
+		<item>HH:mm rrrr/MM/dd</item>
+		<item>HH:mm dd/MM/rrrr</item>
+		<item>rr/MM/dd HH:mm</item>
+		<item>dd/MM/rr HH:mm</item>
+		<item>HH:mm rr/MM/dd</item>
+		<item>HH:mm dd/MM/rr</item>
+		<item>rrrr.MM.dd HH:mm</item>
+		<item>dd.MM.rrrr HH:mm</item>
+		<item>HH:mm rrrr.MM.dd</item>
+		<item>HH:mm dd.MM.rrrr</item>
+		<item>rr.MM.dd HH:mm</item>
+		<item>dd.MM.rr HH:mm</item>
+		<item>HH:mm rr.MM.dd</item>
+		<item>HH:mm dd.MM.rr</item>
+		<item>rrrr-MM-dd HH:mm</item>
+		<item>dd-MM-rrrr HH:mm</item>
+		<item>HH:mm rrrr-MM-dd</item>
+		<item>HH:mm dd-MM-rrrr</item>
+		<item>rr-MM-dd HH:mm</item>
+		<item>dd-MM-rr HH:mm</item>
+		<item>HH:mm rr-MM-dd</item>
+		<item>HH:mm dd-MM-rr</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>Domyślny</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>Prosta sztuczka</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>Domyślny</item>
+		<item>Poziomy</item>
+		<item>Pionowy</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
 	</string-array>
 	<string-array name="auto_save_variants">
-		<item>Poza</item>
+		<item>Wyłączone</item>
 		<item>15 sekund</item>
 		<item>30 sekund</item>
-		<item>1 Minut</item>
+		<item>1 minuta</item>
 		<item>5 minut</item>
 	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>Dostosowany obraz (gorsza jakość)</item>
+		<item>Obraz o wysokiej jakości (większy rozmiar)</item>
+		<item>Konwertuj do SVG</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>Ustawienia</item>
+		<item>Zakładki</item>
+		<item>Historia wyszukiwania/zastępowania</item>
+		<item>Słowniki</item>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>według liczby metod/pól</item>
+		<item>na równe części</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>Najpierw data</item>
+		<item>Najpierw rozmiar</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="editor_themes">
-		<item>Standard</item>
+		<item>Domyślny</item>
 		<item>Nowy</item>
+	</string-array>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>auto-detect</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>he</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pt-PT</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>to</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>as</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>my</item>
+		<item>ps</item>
+		<item>ti</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>Automatyczne</item>
+		<item>Azerbejdżański (łaciński)</item>
+		<item>Albański</item>
+		<item>Angielski</item>
+		<item>Arabski</item>
+		<item>Ormiański</item>
+		<item>Afrykanerski</item>
+		<item>Bengalski</item>
+		<item>Bułgarski</item>
+		<item>Bośniacki</item>
+		<item>Walijski</item>
+		<item>Węgierski</item>
+		<item>Wietnamski</item>
+		<item>Kreolski haitański</item>
+		<item>Holenderski</item>
+		<item>Grecki</item>
+		<item>Gudżarati</item>
+		<item>Duński</item>
+		<item>Hebrajski</item>
+		<item>Indonezyjski</item>
+		<item>Irlandzki</item>
+		<item>Islandzki</item>
+		<item>Hiszpański</item>
+		<item>Włoski</item>
+		<item>Kazachski</item>
+		<item>Kannada</item>
+		<item>Kantoński tradycyjny</item>
+		<item>Kataloński</item>
+		<item>Keretariański Otomi</item>
+		<item>Chiński tradycyjny</item>
+		<item>Chiński uproszczony</item>
+		<item>Koreański</item>
+		<item>Łotewski</item>
+		<item>Litewski</item>
+		<item>Malagasy</item>
+		<item>Malajski</item>
+		<item>Malajalam</item>
+		<item>Maltański</item>
+		<item>Maoryski</item>
+		<item>Marathi</item>
+		<item>Niemiecki</item>
+		<item>Nepalski</item>
+		<item>Norweski</item>
+		<item>Orija</item>
+		<item>Pendżabski</item>
+		<item>Perski</item>
+		<item>Polski</item>
+		<item>Portugalski (Brazylia)</item>
+		<item>Portugalski (Portugalia)</item>
+		<item>Rumuński</item>
+		<item>Rosyjski</item>
+		<item>Samoański</item>
+		<item>Serbski (cyrylica)</item>
+		<item>Serbski (łaciński)</item>
+		<item>Słowacki</item>
+		<item>Słoweński</item>
+		<item>Suahili</item>
+		<item>Tahitański</item>
+		<item>Tajski</item>
+		<item>Tamilski</item>
+		<item>Telugu</item>
+		<item>Tonga</item>
+		<item>Turecki</item>
+		<item>Ukraiński</item>
+		<item>Urdu</item>
+		<item>Fidżyjski</item>
+		<item>Filipiński</item>
+		<item>Fiński</item>
+		<item>Francuski</item>
+		<item>Hindi</item>
+		<item>Hmong Dhow</item>
+		<item>Chorwacki</item>
+		<item>Czeski</item>
+		<item>Szwedzki</item>
+		<item>Estoński</item>
+		<item>Jukatecki Majów</item>
+		<item>Japoński</item>
+		<item>Amharski</item>
+		<item>Asamski</item>
+		<item>Dari</item>
+		<item>Francuski (Kanada)</item>
+		<item>Inuktitut</item>
+		<item>Khmerski</item>
+		<item>Klingoński (łaciński)</item>
+		<item>Kurdyjski (centralny)</item>
+		<item>Kurdyjski (północny)</item>
+		<item>Laotański</item>
+		<item>Birmański</item>
+		<item>Pasztu</item>
+		<item>Tigrinia</item>
 	</string-array>
 	<string-array name="google_translator_codes">
 		<item>auto</item>
@@ -381,7 +1118,7 @@
 		<item>ug</item>
 	</string-array>
 	<string-array name="google_translator_names">
-		<item>Automatycznie</item>
+		<item>Automatyczne</item>
 		<item>Afrykanerski</item>
 		<item>Albański</item>
 		<item>Amharski</item>
@@ -395,10 +1132,10 @@
 		<item>Bułgarski</item>
 		<item>Kataloński</item>
 		<item>Cebuański</item>
-		<item>Chichewa</item>
+		<item>Cziczewa</item>
 		<item>Chiński uproszczony</item>
 		<item>Chiński tradycyjny</item>
-		<item>Korsyka</item>
+		<item>Korsykański</item>
 		<item>Chorwacki</item>
 		<item>Czeski</item>
 		<item>Duński</item>
@@ -415,7 +1152,7 @@
 		<item>Niemiecki</item>
 		<item>Grecki</item>
 		<item>Gudżarati</item>
-		<item>Haitański</item>
+		<item>Kreolski haitański</item>
 		<item>Hausa</item>
 		<item>Hawajski</item>
 		<item>Hebrajski</item>
@@ -431,19 +1168,19 @@
 		<item>Jawajski</item>
 		<item>Kannada</item>
 		<item>Kazachski</item>
-		<item>Khmer</item>
+		<item>Khmerski</item>
 		<item>Koreański</item>
-		<item>Kurdyjski (kurmanji)</item>
+		<item>Kurdyjski (Kurmandżi)</item>
 		<item>Kirgiski</item>
 		<item>Laotański</item>
-		<item>Łacina</item>
+		<item>Łaciński</item>
 		<item>Łotewski</item>
 		<item>Litewski</item>
 		<item>Luksemburski</item>
 		<item>Macedoński</item>
-		<item>Malagaski</item>
+		<item>Malagasy</item>
 		<item>Malajski</item>
-		<item>Malezyjski</item>
+		<item>Malajalam</item>
 		<item>Maltański</item>
 		<item>Maoryski</item>
 		<item>Marathi</item>
@@ -451,25 +1188,25 @@
 		<item>Birmański</item>
 		<item>Nepalski</item>
 		<item>Norweski</item>
-		<item>Paszto</item>
+		<item>Pasztu</item>
 		<item>Perski</item>
 		<item>Polski</item>
 		<item>Portugalski</item>
-		<item>Punjabi</item>
+		<item>Pendżabski</item>
 		<item>Rumuński</item>
 		<item>Rosyjski</item>
 		<item>Samoański</item>
-		<item>Szkocki gaelicki</item>
+		<item>Gaelicki szkocki</item>
 		<item>Serbski</item>
 		<item>Sesotho</item>
 		<item>Shona</item>
 		<item>Sindhi</item>
-		<item>Singale</item>
+		<item>Syngaleski</item>
 		<item>Słowacki</item>
 		<item>Słoweński</item>
 		<item>Somalijski</item>
 		<item>Hiszpański</item>
-		<item>Sundajczyk</item>
+		<item>Sundajski</item>
 		<item>Suahili</item>
 		<item>Szwedzki</item>
 		<item>Tadżycki</item>
@@ -487,11 +1224,11 @@
 		<item>Joruba</item>
 		<item>Zulu</item>
 		<item>Orija</item>
-		<item>Punjabi</item>
+		<item>Pendżabski</item>
 		<item>Rwanda</item>
-		<item>Tatar</item>
+		<item>Tatarski</item>
 		<item>Turkmeński</item>
-		<item>Uigurski</item>
+		<item>Ujgurski</item>
 	</string-array>
 	<string-array name="yandex_translator_codes">
 		<item>auto</item>
@@ -596,14 +1333,14 @@
 		<item>yi</item>
 	</string-array>
 	<string-array name="yandex_translator_names">
-		<item>Automatycznie</item>
+		<item>Automatyczne</item>
 		<item>Afrykanerski</item>
 		<item>Albański</item>
 		<item>Amharski</item>
 		<item>Arabski</item>
 		<item>Ormiański</item>
 		<item>Azerbejdżański</item>
-		<item>Baszkir</item>
+		<item>Baszkirski</item>
 		<item>Baskijski</item>
 		<item>Białoruski</item>
 		<item>Bengalski</item>
@@ -613,12 +1350,12 @@
 		<item>Kataloński</item>
 		<item>Cebuański</item>
 		<item>Chiński</item>
-		<item>Czuwaski</item>
+		<item>Czuwaszski</item>
 		<item>Chorwacki</item>
 		<item>Czeski</item>
 		<item>Duński</item>
 		<item>Holenderski</item>
-		<item>Elficki (Sindaryński)</item>
+		<item>Elficki (Sindarin)</item>
 		<item>Emoji</item>
 		<item>Angielski</item>
 		<item>Esperanto</item>
@@ -632,7 +1369,7 @@
 		<item>Gudżarati</item>
 		<item>Haitański</item>
 		<item>Hebrajski</item>
-		<item>Bergmary</item>
+		<item>Górski Mari</item>
 		<item>Hindi</item>
 		<item>Węgierski</item>
 		<item>Islandzki</item>
@@ -643,7 +1380,7 @@
 		<item>Jawajski</item>
 		<item>Kannada</item>
 		<item>Kazachski</item>
-		<item>Kazachski(łacina)</item>
+		<item>Kazachski (łaciński)</item>
 		<item>Khmerski</item>
 		<item>Koreański</item>
 		<item>Kirgiski</item>
@@ -653,9 +1390,9 @@
 		<item>Litewski</item>
 		<item>Luksemburski</item>
 		<item>Macedoński</item>
-		<item>Malgaski</item>
-		<item>Malezyjski</item>
+		<item>Malagasy</item>
 		<item>Malajski</item>
+		<item>Malajalam</item>
 		<item>Maltański</item>
 		<item>Maoryski</item>
 		<item>Marathi</item>
@@ -670,21 +1407,21 @@
 		<item>Pendżabski</item>
 		<item>Rumuński</item>
 		<item>Rosyjski</item>
-		<item>Szkocki-Gaelicki</item>
+		<item>Gaelicki szkocki</item>
 		<item>Serbski</item>
 		<item>Syngaleski</item>
 		<item>Słowacki</item>
 		<item>Słoweński</item>
 		<item>Hiszpański</item>
-		<item>Sundanezyjski</item>
+		<item>Sundajski</item>
 		<item>Suahili</item>
 		<item>Szwedzki</item>
 		<item>Tagalski</item>
 		<item>Tadżycki</item>
 		<item>Tamilski</item>
-		<item>Tatarski</item>
+		<item>tatarski</item>
 		<item>Telugu</item>
-		<item>Tajlandzki</item>
+		<item>Tajski</item>
 		<item>Turecki</item>
 		<item>Udmurcki</item>
 		<item>Ukraiński</item>
@@ -696,5 +1433,71 @@
 		<item>Xhosa</item>
 		<item>Jakucki</item>
 		<item>Jidysz</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>Auto</item>
+		<item>Arabski</item>
+		<item>Bułgarski</item>
+		<item>Chiński</item>
+		<item>Czeski</item>
+		<item>Duński</item>
+		<item>Holenderski</item>
+		<item>Angielski</item>
+		<item>Estoński</item>
+		<item>Fiński</item>
+		<item>Francuski</item>
+		<item>Niemiecki</item>
+		<item>Grecki</item>
+		<item>Węgierski</item>
+		<item>Indonezyjski</item>
+		<item>Włoski</item>
+		<item>Japoński</item>
+		<item>Koreański</item>
+		<item>Łotewski</item>
+		<item>Litewski</item>
+		<item>Norweski (Bokmål)</item>
+		<item>Polski</item>
+		<item>Portugalski</item>
+		<item>Rumuński</item>
+		<item>Rosyjski</item>
+		<item>Słowacki</item>
+		<item>Słoweński</item>
+		<item>Hiszpański</item>
+		<item>Szwedzki</item>
+		<item>Turecki</item>
+		<item>Ukraiński</item>
 	</string-array>
 </resources>
