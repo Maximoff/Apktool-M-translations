@@ -1,9 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>မှတ်ပုံတင်များ</item>
 		<item>ပကတိတန်ဖိုးများ</item>
 		<item>ပဏာမဒေတာအမျိုးအစားများ</item>
+	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
 	</string-array>
 	<string-array name="smali_help_values" formatted="false">
 		<item>vA သည် value range v0 - v15 ပါရှိသော 4-bit register တစ်ခုဖြစ်သည်။\nvAA သည် v0 - v255 တန်ဖိုးအကွာအဝေးရှိသော 8-bit မှတ်ပုံတင်တစ်ခုဖြစ်သည်။\nvAAAA သည် v0 - v65535 တန်ဖိုးအကွာအဝေးရှိသော 16-bit မှတ်ပုံတင်တစ်ခုဖြစ်သည်။</item>
@@ -13,7 +239,7 @@
 		<item>vA မှတ်ပုံတင်ရန် register vB ၏တန်ဖိုးကို ရွှေ့ပါ။</item>
 		<item>vBBBB မှတ်ပုံတင်ခြင်းတန်ဖိုးကို vAA မှတ်ပုံတင်သို့ ရွှေ့ပါ။</item>
 		<item>vBBBB မှတ်ပုံတင်ခြင်းတန်ဖိုးကို vAAAA မှတ်ပုံတင်သို့ ရွှေ့ပါ။</item>
-		<item>အတွဲ vA၊ vA+1 မှတ်ပုံတင်ရန် မှတ်ပုံတင်အတွဲ (vB၊ vB+1) ၏ ရှည်/နှစ်ထပ်တန်ဖိုးကို ရွှေ့ပါ။</item>
+		<item>အတွဲ vA၊ vA+1 မှတ်ပုံတင်ရန် မှတ်ပုံတင်အတွဲ (vB, vB+1) ၏ ရှည်/နှစ်ထပ်တန်ဖိုးကို ရွှေ့ပါ။</item>
 		<item>မှတ်ပုံတင်အတွဲ (vBBBB၊ vBBBB+1) ၏ရှည်/နှစ်ထပ်တန်ဖိုးကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 သို့ ရွှေ့ပါ။</item>
 		<item>မှတ်ပုံတင်အတွဲ (vBBBB၊ vBBBB+1) ၏ ရှည်/နှစ်ထပ်တန်ဖိုးကို vAAAA၊ vAAAA+1 မှတ်ပုံတင်အတွဲသို့ ရွှေ့ပါ။</item>
 		<item>vB မှတ်ပုံတင်မှ အရာဝတ္တုတစ်ခုကို ရည်ညွှန်းချက် vA မှတ်ပုံတင်သို့ ရွှေ့ပါ။</item>
@@ -41,8 +267,8 @@
 		<item>vAA မှတ်ပုံတင်ခြင်းဖြင့် ရည်ညွှန်းထားသော အရာဝတ္ထုမော်နီတာကို ရယူပါ။</item>
 		<item>vAA မှတ်ပုံတင်ခြင်းဖြင့် ရည်ညွှန်းထားသော အရာဝတ္ထုမော်နီတာကို ထုတ်ပေးသည်။</item>
 		<item>vAA မှတ်ပုံတင်ခြင်းတွင်ပါရှိသော အရာဝတ္ထုကိုးကားချက်ကို type_id မှသတ်မှတ်ထားသော အတန်းသို့ ကာစ်ပေးနိုင်ခြင်းရှိမရှိ စစ်ဆေးပါ။ မလုပ်နိုင်ပါက ClassCastException တစ်ခုကို ပစ်ချလိုက်သည်၊ သို့မဟုတ်ပါက ဆက်လက်လုပ်ဆောင်နေပါသည်။</item>
-		<item>vB မှတ်ပုံတင်ခြင်း၏ အကြောင်းအရာများသည် type_id မှသတ်မှတ်ထားသော အတန်း၏ဥပမာတစ်ခုဟုတ်မဟုတ် စစ်ဆေးပါ။ စာရင်းသွင်း vA ကို ပစ္စုပ္ပန်ဖြစ်လျှင် 0 မဟုတ်ပါက သုညမဟုတ်ဟု သတ်မှတ်သည်။\nvA = vB instanceOf type ? ၁၀</item>
-		<item>vB မှတ်ပုံတင်ခြင်းမှ array အစိတ်အပိုင်းများ၏ အရေအတွက်ကို သတ်မှတ်ပြီး vA မှတ်ပုံတင်ခြင်းတွင် တန်ဖိုးကို နေရာချပေးသည်။\nvA = vB.အရှည်</item>
+		<item>vB မှတ်ပုံတင်ခြင်း၏ အကြောင်းအရာများသည် type_id မှသတ်မှတ်ထားသော အတန်း၏ဥပမာတစ်ခုဟုတ်မဟုတ် စစ်ဆေးပါ။ စာရင်းသွင်း vA ကို ပစ္စုပ္ပန်ဖြစ်လျှင် 0 မဟုတ်ပါက သုညမဟုတ်ဟု သတ်မှတ်သည်။\nvA = vB instanceOf type ? 1:0</item>
+		<item>vB မှတ်ပုံတင်ခြင်းမှ array အစိတ်အပိုင်းများ၏ အရေအတွက်ကို သတ်မှတ်ပြီး vA မှတ်ပုံတင်ခြင်းတွင် တန်ဖိုးကို နေရာချပေးသည်။\nvA = vB.length</item>
 		<item>အရာဝတ္ထုအမျိုးအစားတစ်ခု၏ စံနမူနာတစ်ခုကို ဖန်တီးပြီး vAA မှတ်ပုံတင်မှုတွင် ဖန်တီးထားသော စံနမူနာကို အကိုးအကားထားစေသည်။</item>
 		<item>register vB ဒြပ်စင်များ၏ အရွယ်အစားဖြင့် type_id variable များ၏ array အသစ်တစ်ခုကို ဖန်တီးပြီး register vA တွင် array ကို ရည်ညွှန်းထားသည်။</item>
 		<item>type_id ၏ data array အသစ်တစ်ခုဖန်တီးပြီး ၎င်းကို parameters များဖြင့်ဖြည့်ပါ (ဆိုလိုတာက ရှည်လျားသော/နှစ်ထပ် array များမရှိသော်လည်း ကိုးကားမှုအမျိုးအစားများကို ခွင့်ပြုထားသည်)။ အသစ်ဖန်တီးထားသော array အား ကိုးကားချက်ကို ဤထုတ်ပြန်ချက်အပြီးတွင် ချက်ချင်း (တစ်ခုအသုံးပြုရမည်ဆိုပါက) move-result-object statement ကို အသုံးပြု၍ ရရှိနိုင်သည်။</item>
@@ -56,44 +282,44 @@
 		<item>ဇယားကျဲသည့်ကိစ္စတွင် Switch အော်ပရေတာအား အကောင်အထည်ဖော်ပါ။ ညွှန်ကြားချက်သည် ကိန်းသေတစ်ခုစီအတွက် အော့ဖ်ဆက်များကို သတ်မှတ်သည့် ဇယားကို အသုံးပြုသည်။ ဇယားတွင် ကိုက်ညီမှု မတွေ့ပါက နောက်ထုတ်ပြန်ချက် (မူလကိစ္စ) ကို လုပ်ဆောင်ပါသည်။</item>
 		<item>vBB နှင့် vCC ရှိ float (floating point) တန်ဖိုးများကို နှိုင်းယှဉ်ပြီး vAA မှတ်ပုံတင်ခြင်းတွင် ကိန်းပြည့်တန်ဖိုးကို နေရာချသည်-\nvAA = vBB &lt; vCC ? yes: 1၊ no: -1၊ equal: 0</item>
 		<item>vBB နှင့် vCC ရှိ float (floating point) တန်ဖိုးများကို နှိုင်းယှဉ်ပြီး vAA မှတ်ပုံတင်ခြင်းတွင် ကိန်းပြည့်တန်ဖိုးကို နေရာချသည်-\nvAA = vBB &lt; vCC ? yes: 1၊ no: -1၊ equal: 0</item>
-		<item>vBB နှင့် vCC ရှိ နှစ်ဆ (floating point) တန်ဖိုးများကို နှိုင်းယှဉ်ပြီး vAA မှတ်ပုံတင်ခြင်းတွင် ကိန်းပြည့်တန်ဖိုးကို နေရာချသည်-\nvAA = (vBB၊ vBB+1) &lt; (vCC၊ vCC+1) ? y\nyes: 1၊ no: -1၊ equal: 0</item>
-		<item>vBB နှင့် vCC ရှိ နှစ်ဆ (floating point) တန်ဖိုးများကို နှိုင်းယှဉ်ပြီး vAA မှတ်ပုံတင်ခြင်းတွင် ကိန်းပြည့်တန်ဖိုးကို နေရာချသည်-\nvAA = (vBB၊ vBB+1) > (vCC၊ vCC+1) ? yes: 1၊ no: -1၊ equal: 0</item>
-		<item>vBB နှင့် vCC ရှိ ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးများကို နှိုင်းယှဉ်ပြီး vAA မှတ်ပုံတင်မှုတွင် ကိန်းပြည့် (integer) တန်ဖိုးကို နေရာချသည်-\nvAA = (vBB၊ vBB+1) > (vCC၊ vCC+1) ? yes: 1၊ no: -1၊ equal: 0</item>
+		<item>vBB နှင့် vCC ရှိ နှစ်ဆ (floating point) တန်ဖိုးများကို နှိုင်းယှဉ်ပြီး vAA မှတ်ပုံတင်ခြင်းတွင် ကိန်းပြည့်တန်ဖိုးကို နေရာချသည်-\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nyes: 1၊ no: -1၊ equal: 0</item>
+		<item>vBB နှင့် vCC ရှိ နှစ်ဆ (floating point) တန်ဖိုးများကို နှိုင်းယှဉ်ပြီး vAA မှတ်ပုံတင်ခြင်းတွင် ကိန်းပြည့်တန်ဖိုးကို နေရာချသည်-\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? yes: 1၊ no: -1၊ equal: 0</item>
+		<item>vBB နှင့် vCC ရှိ ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးများကို နှိုင်းယှဉ်ပြီး vAA မှတ်ပုံတင်မှုတွင် ကိန်းပြည့် (integer) တန်ဖိုးကို နေရာချသည်-\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? yes: 1၊ no: -1၊ equal: 0</item>
 		<item>vA == vB ဆိုလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်ပါ။ vA နှင့် vB တွင် ကိန်းပြည့်တန်ဖိုးများ ပါဝင်သည်။\n(eq သည် Equals ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vA != vB ဆိုလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။ vA နှင့် vB တွင် ကိန်းပြည့်တန်ဖိုးများ ပါဝင်သည်။\n(ne သည် Not Equals ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vA &lt; vB ဆိုလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။ vA နှင့် vB တွင် ကိန်းပြည့်တန်ဖိုးများ ပါဝင်သည်။\n(Less Than ရဲ့ အတိုကောက် ဖြစ်ပါတယ်)</item>
-		<item>vA ရှိပါက သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်ပါ။</item>
+		<item>vA &lt;= vB ဆိုလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။ vA နှင့် vB တွင် ကိန်းပြည့်တန်ဖိုးများ ပါဝင်သည်။\n(le သည် Less than or Equal ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vA > vB ဖြစ်လျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။ vA နှင့် vB တွင် ကိန်းပြည့်တန်ဖိုးများ ပါဝင်သည်။\n(gt သည် Greater Than/More Than ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vA >= vB ဖြစ်လျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။ vA နှင့် vB တွင် ကိန်းပြည့်တန်ဖိုးများ ပါဝင်သည်။\n(ge သည် Greater than or Equal ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vAA == 0. vAA တွင် ကိန်းပြည့်တန်ဖိုးပါရှိလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။\n(eqz သည် Equals to Zero ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vAA != 0. vAA တွင် ကိန်းပြည့်တန်ဖိုးပါရှိလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။\n(nez သည် Not Equals to Zero ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vAA &lt; 0. vAA တွင် ကိန်းပြည့်တန်ဖိုးပါရှိလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။\n(ltz သည် Less Than Zero ၏ အတိုကောက်ဖြစ်သည်)</item>
-		<item>vAA ရှိလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်ပါ။</item>
+		<item>vAA &lt;= 0 ဆိုလျှင် သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။ vAA တွင် ကိန်းပြည့်တန်ဖိုးပါရှိသည်။\n(lez သည် Less than or Equal to Zero ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vAA > 0။ vAA တွင် ကိန်းပြည့်တန်ဖိုးပါနေပါက သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်သွားပါမည်။\n(gtz သည် Greater Than Zero ၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vAA >= 0။ vAA တွင် ကိန်းပြည့်တန်ဖိုးပါနေပါက သတ်မှတ်ထားသော အညွှန်းသို့ ခုန်တက်သည်။\n(gez သည် ပိုကြီးသည် သို့မဟုတ် သုညနှင့် ညီမျှခြင်း၏ အတိုကောက်ဖြစ်သည်)</item>
 		<item>vBB တွင်ကိုးကားထားသော array မှ vCC တွင်ပါရှိသောအညွှန်းတွင် ကိန်းပြည့်တန်ဖိုးကိုရယူပြီး vAA မှတ်ပုံတင်မှုတွင်ထည့်ပါ။\nvAA = vBB[vCC]</item>
-		<item>vBB တွင် ကိုးကားထားသော array မှ vCC ပါရှိသော အညွှန်းတွင် ရယူပြီး နှစ်ဆ/ရှည်သော တန်ဖိုးကို မှတ်ပုံတင်တွဲ vAA၊ vAA+1 တွင် နေရာပေးသည်။\n(vAA၊ vAA+1) = vBB[vCC]</item>
+		<item>vBB တွင် ကိုးကားထားသော array မှ vCC ပါရှိသော အညွှန်းတွင် ရယူပြီး နှစ်ဆ/ရှည်သော တန်ဖိုးကို မှတ်ပုံတင်တွဲ vAA၊ vAA+1 တွင် နေရာပေးသည်။\n(vAA, vAA+1) = vBB[vCC]</item>
 		<item>vCC တွင်ပါရှိသော အညွှန်းတွင်၊ vBB တွင်ရည်ညွှန်းထားသော array မှ၊ အရာဝတ္တုကိုရည်ညွှန်းပြီး vAA မှတ်ပုံတင်မှုတွင် နေရာပေးသည်။\nvAA = vBB[vCC]</item>
 		<item>vBB တွင် ကိုးကားထားသော array မှ vCC ပါရှိသော အညွှန်းတွင်၊ boolean တန်ဖိုးတစ်ခုကို ရယူပြီး vAA မှတ်ပုံတင်မှုတွင် နေရာယူသည်။\nvAA = vBB[vCC]</item>
 		<item>vCC တွင်ပါရှိသော အညွှန်းတွင်၊ vBB တွင်ကိုးကားထားသော array မှ၊ byte (integer) တန်ဖိုးကို ထုတ်ယူပြီး vAA မှတ်ပုံတင်မှုတွင် နေရာပေးသည်။\nvAA = vBB[vCC]</item>
 		<item>vCC တွင်ပါရှိသောအညွှန်းတွင်၊ vBB တွင်ကိုးကားထားသော array မှ char value ကိုရယူပြီး vAA မှတ်ပုံတင်မှုတွင်ထည့်သည်။\nvAA = vBB[vCC]</item>
 		<item>vCC တွင်ပါရှိသော အညွှန်းတွင်၊ vBB တွင် ကိုးကားထားသော array မှ၊ အတို (integer) တန်ဖိုးကို ထုတ်ယူပြီး vAA မှတ်ပုံတင်မှုတွင် နေရာပေးသည်။\nvAA = vBB[vCC]</item>
 		<item>vAA မှ ကိန်းပြည့်တန်ဖိုးကို vBB တွင် ရည်ညွှန်းထားသော array တွင် vCC မှတ်ပုံတင်ခြင်းပါရှိသော ဒြပ်စင်ဖြင့် နေရာချပါ။\nvBB[vCC] = vAA</item>
-		<item>မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 မှ နှစ်ဆ/ရှည်တန်ဖိုးကို vBB တွင် ကိုးကားထားသော array ထဲသို့ vCC မှတ်ပုံတင်ခြင်းပါရှိသော ဒြပ်စင်ဖြင့် ထည့်ပါ။\nvBB[vCC] = (vAA၊ vAA+1)</item>
+		<item>မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 မှ နှစ်ဆ/ရှည်တန်ဖိုးကို vBB တွင် ကိုးကားထားသော array ထဲသို့ vCC မှတ်ပုံတင်ခြင်းပါရှိသော ဒြပ်စင်ဖြင့် ထည့်ပါ။\nvBB[vCC] = (vAA, vAA+1)</item>
 		<item>vAA မှ အရာဝတ္တုတစ်ခုအား ကိုးကားချက်တစ်ခုကို vBB တွင် ရည်ညွှန်းထားသော array ထဲသို့ vCC မှတ်ပုံတင်သည့်ဒြပ်စင်တစ်ခုဖြင့် နေရာချပါ။\nvBB[vCC] = vAA</item>
 		<item>vAA မှ boolean တန်ဖိုးကို vBB မှ ရည်ညွှန်းထားသော array တွင် vCC မှတ်ပုံတင်ခြင်းပါရှိသော ဒြပ်စင်ဖြင့် နေရာချပါ။\nvBB[vCC] = vAA</item>
 		<item>vAA မှ byte (ကိန်းပြည့်) တန်ဖိုးကို vBB တွင် ရည်ညွှန်းထားသော array တွင် register vCC ပါရှိသော အစိတ်အပိုင်းဖြင့် နေရာချပါ။\nvBB[vCC] = vAA</item>
 		<item>vAA မှ char (အက္ခရာ) တန်ဖိုးကို vBB တွင် မှတ်ပုံတင်ထားသော vCC ဖြင့် အစိတ်အပိုင်းအလိုက် vBB တွင်ကိုးကားထားသော array သို့ နေရာချပါ။\nvBB[vCC] = vAA</item>
 		<item>vAA မှ တိုတောင်းသော (ကိန်းပြည့်) တန်ဖိုးကို vBB တွင် ရည်ညွှန်းထားသော array တွင် vCC မှတ်ပုံတင်ခြင်းပါရှိသော ဒြပ်စင်ဖြင့် နေရာချပါ။\nvBB[vCC] = vAA</item>
 		<item>instance အကွက်မှတန်ဖိုးကိုဖတ်ပြီး vA မှတ်ပုံတင်မှုတွင်ထည့်ပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvA = vB.field</item>
-		<item>ဥပမာအကွက်တစ်ခုမှ နှစ်ဆ/ရှည်တန်ဖိုးကို ဖတ်ပြီး မှတ်ပုံတင်တစ်စုံ (vA၊ vA+1) တွင် ထားရှိပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\n(vA၊ vA+1) = vB.field</item>
+		<item>ဥပမာအကွက်တစ်ခုမှ နှစ်ဆ/ရှည်တန်ဖိုးကို ဖတ်ပြီး မှတ်ပုံတင်တစ်စုံ (vA, vA+1) တွင် ထားရှိပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\n(vA, vA+1) = vB.field</item>
 		<item>instance အကွက်တစ်ခုမှ အရာဝတ္ထုတစ်ခုကို ကိုးကားဖတ်ပြီး vA မှတ်ပုံတင်မှုတွင် ထားရှိပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvA = vB.field</item>
 		<item>instance အကွက်မှ boolean တန်ဖိုးကို ဖတ်ပြီး vA register တွင် နေရာချပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvA = vB.field</item>
 		<item>instance အကွက်မှ byte (ကိန်းပြည့်) တန်ဖိုးကို ဖတ်ပြီး vA မှတ်ပုံတင်မှုတွင် ထားပေးသည်။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvA = vB.field</item>
 		<item>instance အကွက်တစ်ခုမှ char တန်ဖိုးကို ဖတ်ပြီး vA မှတ်ပုံတင်မှုတွင် နေရာချပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvA = vB.field</item>
 		<item>ဥပမာ အကွက်တစ်ခုမှ အတို (ကိန်းပြည့်) တန်ဖိုးကို ဖတ်ပြီး vA မှတ်ပုံတင်မှုတွင် ထားပေးပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvA = vB.field</item>
 		<item>vA မှတ်ပုံတင်ခြင်းမှ တန်ဖိုးကို instance အကွက်သို့ နေရာချပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvB.field = vA</item>
-		<item>မှတ်ပုံတင်အတွဲ (vA၊ vA+1) မှ နှစ်ဆ/ရှည်တန်ဖိုးကို သာဓကအကွက်တစ်ခုထဲသို့ နေရာချပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvB.field = (vA၊ vA+1)</item>
+		<item>မှတ်ပုံတင်အတွဲ (vA, vA+1) မှ နှစ်ဆ/ရှည်တန်ဖိုးကို သာဓကအကွက်တစ်ခုထဲသို့ နေရာချပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvB.field = (vA, vA+1)</item>
 		<item>vA မှတ်ပုံတင်ခြင်းမှ အရာဝတ္ထုတစ်ခုအား ရည်ညွှန်းချက်တစ်ခုကို instance အကွက်သို့ နေရာချပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvB.field = vA</item>
 		<item>vA မှတ်ပုံတင်ခြင်းမှ boolean တန်ဖိုးကို instance အကွက်ထဲသို့ နေရာချပါ။ ဤအကွက်ပါရှိသော အတန်းကို ရည်ညွှန်းချက်မှာ vB မှတ်ပုံတင်ခြင်းတွင် ဖြစ်သည်။\nvB.field = vA</item>
 		<item>register vB မှရည်ညွှန်းထားသော instance တွင် သတ်မှတ်ထားသော Boolean အကွက်၏ byte (ကိန်းပြည့်) တန်ဖိုးကို သတ်မှတ်ပေးသည်၊ ဆိုလိုသည်မှာ register vA ၏တန်ဖိုး၊\nvB.field = vA</item>
@@ -125,25 +351,25 @@
 		<item>ဘောင်များပါရှိသော အင်တာဖေ့စ်နည်းလမ်းတစ်ခုအား ခေါ်ဆိုမှုများ (လုပ်ဆောင်သည်)၊ သို့သော် ကန့်သတ်ချက်များကို စဉ်ဆက်မပြတ် နံပါတ်တပ်ထားသော မှတ်ပုံတင်များတွင် ထည့်သွင်းရပါမည်။</item>
 		<item>အမျိုးအစား ကိန်းပြည့်တန်ဖိုးများအတွက် vA = -vB ကို တွက်ချက်သည်။</item>
 		<item>ကိန်းပြည့်တန်ဖိုးများအတွက် vA = ~vB တွက်ချက်သည်။\nvA = ~vB</item>
-		<item>အမျိုးအစားအရှည် (ကိန်းပြည့်) တန်ဖိုးများအတွက် (vA၊ vA+1) = -(vB၊ vB+1) ကို တွက်ချက်သည်။</item>
-		<item>အမျိုးအစားရှည် (ကိန်းပြည့်) တန်ဖိုးများအတွက် (vA၊ vA+1) = ~(vB၊ vB+1) ကို တွက်ချက်သည်။</item>
+		<item>အမျိုးအစားအရှည် (ကိန်းပြည့်) တန်ဖိုးများအတွက် (vA, vA+1) = -(vB, vB+1) ကို တွက်ချက်သည်။</item>
+		<item>အမျိုးအစားရှည် (ကိန်းပြည့်) တန်ဖိုးများအတွက် (vA, vA+1) = ~(vB, vB+1) ကို တွက်ချက်သည်။</item>
 		<item>float တန်ဖိုးများအတွက် vA = -vB တွက်ချက်သည်။</item>
-		<item>နှစ်ထပ် (floating point) တန်ဖိုးများအတွက် (vA၊ vA+1) = -(vB၊ vB+1) ကို တွက်ချက်သည်။</item>
-		<item>ကိန်းပြည့်ကို vB မှ အရှည်သို့ ပြောင်းပြီး မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA၊ vA+1) = (ရှည်) vB</item>
+		<item>နှစ်ထပ် (floating point) တန်ဖိုးများအတွက် (vA, vA+1) = -(vB, vB+1) ကို တွက်ချက်သည်။</item>
+		<item>ကိန်းပြည့်ကို vB မှ အရှည်သို့ ပြောင်းပြီး မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA, vA+1) = (long) vB</item>
 		<item>vB မှ ကိန်းပြည့်တစ်ခုကို float အဖြစ်ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (float) vB</item>
-		<item>ကိန်းပြည့်ကို vB မှ နှစ်ဆ (floating point) သို့ ပြောင်းပြီး မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA၊ vA+1) = (နှစ်ဆ) vB</item>
-		<item>ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးကို vB၊ vB+1 မှ ကိန်းပြည့် (ကိန်းပြည့်) သို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (int) (vB၊ vB+1)</item>
-		<item>ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးကို vB၊ vB+1 မှ float (floating point) သို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (float) (vB၊ vB+1)</item>
-		<item>ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးကို vB၊ vB+1 မှ နှစ်ဆ (floating point) သို့ ပြောင်းပြီး ၎င်းကို မှတ်ပုံတင်တွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA၊ vA+1) = (နှစ်ဆ) (vB၊ vB+1)</item>
+		<item>ကိန်းပြည့်ကို vB မှ နှစ်ဆ (floating point) သို့ ပြောင်းပြီး မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA, vA+1) = (double) vB</item>
+		<item>ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးကို vB၊ vB+1 မှ ကိန်းပြည့် (ကိန်းပြည့်) သို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (int) (vB, vB+1)</item>
+		<item>ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးကို vB၊ vB+1 မှ float (floating point) သို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (float) (vB, vB+1)</item>
+		<item>ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးကို vB၊ vB+1 မှ နှစ်ဆ (floating point) သို့ ပြောင်းပြီး ၎င်းကို မှတ်ပုံတင်တွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA, vA+1) = (double) (vB, vB+1)</item>
 		<item>vB မှ float (floating point) တန်ဖိုးကို ကိန်းပြည့် (integer) တန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်ခြင်းတွင် သိမ်းဆည်းထားသည်။\nvA = (int)vB</item>
-		<item>float (floating point) တန်ဖိုးကို vB မှ long (integer) တန်ဖိုးသို့ ပြောင်းပြီး ၎င်းကို register pair vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA၊ vA+1) = (ရှည်) vB</item>
-		<item>float (floating point) တန်ဖိုးကို vB မှ နှစ်ဆ (floating point) တန်ဖိုးသို့ ပြောင်းပြီး ၎င်းကို register pair vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA၊ vA+1) = (နှစ်ဆ) vB</item>
-		<item>နှစ်ဆ (floating point) တန်ဖိုးကို vB၊ vB+1 မှ ကိန်းပြည့် (integer) တန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (int) (vB၊ vB+1)</item>
-		<item>နှစ်ဆ (floating point) တန်ဖိုးကို vB၊ vB+1 မှ ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးသို့ ပြောင်းပြီး ၎င်းကို မှတ်ပုံတင်တွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA၊ vA+1) = (ရှည်) (vB၊ vB+1)</item>
-		<item>နှစ်ဆ (floating point) တန်ဖိုးကို vB၊ vB+1 မှ float (floating point) တန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (float) (vB၊ vB+1)</item>
-		<item>vB မှ ကိန်းပြည့်တန်ဖိုးကို byte တန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (ဘိုက်) vB</item>
+		<item>float (floating point) တန်ဖိုးကို vB မှ long (integer) တန်ဖိုးသို့ ပြောင်းပြီး ၎င်းကို register pair vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA, vA+1) = (long) vB</item>
+		<item>float (floating point) တန်ဖိုးကို vB မှ နှစ်ဆ (floating point) တန်ဖိုးသို့ ပြောင်းပြီး ၎င်းကို register pair vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA, vA+1) = (double) vB</item>
+		<item>နှစ်ဆ (floating point) တန်ဖိုးကို vB၊ vB+1 မှ ကိန်းပြည့် (integer) တန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (int) (vB, vB+1)</item>
+		<item>နှစ်ဆ (floating point) တန်ဖိုးကို vB၊ vB+1 မှ ရှည်လျားသော (ကိန်းပြည့်) တန်ဖိုးသို့ ပြောင်းပြီး ၎င်းကို မှတ်ပုံတင်တွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။\n(vA, vA+1) = (long) (vB, vB+1)</item>
+		<item>နှစ်ဆ (floating point) တန်ဖိုးကို vB၊ vB+1 မှ float (floating point) တန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (float) (vB, vB+1)</item>
+		<item>vB မှ ကိန်းပြည့်တန်ဖိုးကို byte တန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (byte) vB</item>
 		<item>vB မှ ကိန်းပြည့်တန်ဖိုးကို char တန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (char)vB</item>
-		<item>vB မှ ကိန်းပြည့်တန်ဖိုးကို တိုတောင်းသောတန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (အတို) vB</item>
+		<item>vB မှ ကိန်းပြည့်တန်ဖိုးကို တိုတောင်းသောတန်ဖိုးသို့ ပြောင်းပြီး vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။\nvA = (short) vB</item>
 		<item>vBB + vCC ကို တွက်ချက်ပြီး ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB + vCC</item>
 		<item>vBB - vCC ကို တွက်ချက်ပြီး ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB - vCC</item>
 		<item>vBB * vCC ကို တွက်ချက်ပြီး ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB * vCC</item>
@@ -152,30 +378,30 @@
 		<item>vBB &amp; vCC (logical AND) တွက်ချက်ပြီး vAA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB &amp; vCC</item>
 		<item>vBB | တွက်ချက်သည်။ vCC (logical OR) နှင့် ရလဒ်များကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA=vBB| vCC</item>
 		<item>vBB ^ vCC (သီးသန့် OR) ကိုတွက်ချက်ပြီး vAA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA=vBB^vCC</item>
-		<item>vCC မှသတ်မှတ်ထားသောဘစ်အရေအတွက်ဖြင့်ထားခဲ့သော vBB ကိုပြောင်းပြီးရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင်သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB</item>
+		<item>vCC မှသတ်မှတ်ထားသောဘစ်အရေအတွက်ဖြင့်ထားခဲ့သော vBB ကိုပြောင်းပြီးရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင်သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB &lt;&lt; vCC</item>
 		<item>vBB မှ vCC မှသတ်မှတ်ထားသော bit အရေအတွက်အလိုက် ညာဘက်သို့ vBB ကိုပြောင်းကာ ရလဒ်ကို vAA မှတ်ပုံတင်ခြင်းတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB >> vCC</item>
 		<item>vCC မှသတ်မှတ်ထားသော bit အရေအတွက်ဖြင့် ဆိုင်းဘုတ်ကို ညာဘက်သို့မသိမ်းဘဲ vBB ကိုပြောင်းကာ ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB >>> vCC</item>
-		<item>ကွန်ပျူတာများ (vBB၊ vBB+1) + (vCC၊ vCC+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) + (vCC၊ vCC+1)</item>
-		<item>(vBB၊ vBB+1) - (vCC၊ vCC+1) တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းအတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) - (vCC၊ vCC+1)</item>
-		<item>ကွန်ပျူတာများ (vBB၊ vBB+1) * (vCC၊ vCC+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) * (vCC၊ vCC+1)</item>
-		<item>(vBB၊ vBB+1) / (vCC၊ vCC+1) တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းအတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) / (vCC၊ vCC+1)</item>
-		<item>(vBB၊ vBB+1) % (vCC၊ vCC+1) ကို တွက်ချက်ပြီး ရလဒ်ကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) % (vCC၊ vCC+1)</item>
-		<item>ကွန်ပျူတာများ (vBB၊ vBB+1) &amp; (vCC၊ vCC+1) (ယုတ္တိနည်း AND) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) &amp; (vCC၊ vCC+1)</item>
-		<item>ကွန်ပျူတာများ (vBB၊ vBB+1) | (vCC၊ vCC+1) (logical OR) ရလဒ်ကို vAA၊ vAA+1 မှတ်ပုံတင်တစ်စုံတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) | (vCC၊ vCC+1)</item>
-		<item>ကွန်ပျူတာများ (vBB၊ vBB+1) ^ (vCC၊ vCC+1) (သီးသန့် AND) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) ^ (vCC၊ vCC+1)</item>
-		<item>vBB၊ vBB+1 ကို vCC မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်ဖြင့် ဘယ်ဘက်သို့ ရွှေ့ကာ ရလဒ်ကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1)</item>
-		<item>vBB၊ vBB+1 ကို vCC မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်အလိုက် ညာဘက်သို့ပြောင်းကာ ရလဒ်ကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) >> vCC</item>
-		<item>vBB၊ vBB+1 သည် vCC မှ သတ်မှတ်ထားသော ဘစ်အရေအတွက်ဖြင့် ဆိုင်းဘုတ်ကို မထိန်းသိမ်းဘဲ ညာဘက်သို့ ရွှေ့ကာ ရလဒ်ကို မှတ်ပုံတင်တစ်စုံ vAA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) >>> vCC</item>
+		<item>တွက်ချက်သည် (vBB, vBB+1) + (vCC, vCC+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) - (vCC, vCC+1) တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းအတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>တွက်ချက်သည် (vBB, vBB+1) * (vCC, vCC+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) / (vCC, vCC+1) တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းအတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) % (vCC, vCC+1) ကို တွက်ချက်ပြီး ရလဒ်ကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>တွက်ချက်သည် (vBB, vBB+1) &amp; (vCC, vCC+1) (ယုတ္တိနည်း AND) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>တွက်ချက်သည် (vBB, vBB+1) | (vCC, vCC+1) (logical OR) ရလဒ်ကို vAA၊ vAA+1 မှတ်ပုံတင်တစ်စုံတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>တွက်ချက်သည် (vBB, vBB+1) ^ (vCC, vCC+1) (သီးသန့် OR) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>vBB၊ vBB+1 ကို vCC မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်ဖြင့် ဘယ်ဘက်သို့ ရွှေ့ကာ ရလဒ်ကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>vBB၊ vBB+1 ကို vCC မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်အလိုက် ညာဘက်သို့ပြောင်းကာ ရလဒ်ကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>vBB၊ vBB+1 သည် vCC မှ သတ်မှတ်ထားသော ဘစ်အရေအတွက်ဖြင့် ဆိုင်းဘုတ်ကို မထိန်းသိမ်းဘဲ ညာဘက်သို့ ရွှေ့ကာ ရလဒ်ကို မှတ်ပုံတင်တစ်စုံ vAA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
 		<item>vBB + vCC ကို တွက်ချက်ပြီး ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvAA = vBB + vCC</item>
 		<item>vBB - vCC ကို တွက်ချက်ပြီး ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvAA = vBB - vCC</item>
 		<item>vBB * vCC ကို တွက်ချက်ပြီး ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvAA = vBB * vCC</item>
 		<item>vBB/vCC ကို တွက်ချက်ပြီး ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvAA = vBB/vCC</item>
 		<item>vBB % vCC ကို တွက်ချက်ပြီး ရလဒ်ကို vAA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvAA = vBB % vCC</item>
-		<item>ကွန်ပျူတာများ (vBB၊ vBB+1) + (vCC၊ vCC+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) + (vCC၊ vCC+1)</item>
-		<item>(vBB၊ vBB+1) - (vCC၊ vCC+1) တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းအတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) - (vCC၊ vCC+1)</item>
-		<item>ကွန်ပျူတာများ (vBB၊ vBB+1) * (vCC၊ vCC+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) * (vCC၊ vCC+1)</item>
-		<item>(vBB၊ vBB+1) / (vCC၊ vCC+1) တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းအတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) / (vCC၊ vCC+1)</item>
-		<item>(vBB၊ vBB+1) % (vCC၊ vCC+1) ကို တွက်ချက်ပြီး ရလဒ်ကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA၊ vAA+1) = (vBB၊ vBB+1) % (vCC၊ vCC+1)</item>
+		<item>တွက်ချက်သည် (vBB, vBB+1) + (vCC, vCC+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) - (vCC, vCC+1) တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းအတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>တွက်ချက်သည် (vBB, vBB+1) * (vCC, vCC+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) / (vCC, vCC+1) တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းအတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) % (vCC, vCC+1) ကို တွက်ချက်ပြီး ရလဒ်ကို မှတ်ပုံတင်အတွဲ vAA၊ vAA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
 		<item>vA + vB ကိုတွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA = vA + vB</item>
 		<item>vA - vB ကို တွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA = vA - vB</item>
 		<item>vA * vB ကို တွက်ချက်ပြီး ရလဒ်ကို vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA = vA * vB</item>
@@ -184,30 +410,30 @@
 		<item>vA &amp; vB (logical AND) ကိုတွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA=vA&amp;vB</item>
 		<item>vA | တွက်ချက်သည်။ vB (logical OR) နှင့်ရလဒ်များကို vA မှတ်ပုံတင်တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA=vA| vB</item>
 		<item>vA^vB (သီးသန့် OR) ကိုတွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA=vA^vB</item>
-		<item>vB မှသတ်မှတ်ထားသောဘစ်အရေအတွက်ဖြင့် vA ကိုဘယ်ဘက်သို့ရွှေ့ပြီးရလဒ်ကို vA မှတ်ပုံတင်ခြင်းတွင်သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA=vA</item>
+		<item>vB မှသတ်မှတ်ထားသောဘစ်အရေအတွက်ဖြင့် vA ကိုဘယ်ဘက်သို့ရွှေ့ပြီးရလဒ်ကို vA မှတ်ပုံတင်ခြင်းတွင်သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA = vA &lt;&lt; vB</item>
 		<item>vB မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်အလိုက် vA ကို ညာဘက်သို့ပြောင်းကာ ရလဒ်ကို vA မှတ်ပုံတင်ခြင်းတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA=vA>>vB</item>
 		<item>vB မှသတ်မှတ်ထားသော bit အရေအတွက်ဖြင့် ၎င်း၏နိမိတ်လက္ခဏာကို ညာဘက်သို့မထိန်းသိမ်းဘဲ vA ကိုပြောင်းကာ ရလဒ်ကို vA မှတ်ပုံတင်ခြင်းတွင် သိမ်းဆည်းပါ။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA = vA >>> vB</item>
-		<item>တွက်ချက်မှုများ (vA၊ vA+1) + (vB၊ vB+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) + (vB၊ vB+1)</item>
-		<item>(vA၊ vA+1) - (vB၊ vB+1) ကို တွက်ချက်ပြီး ရလဒ် vA၊ vA+1 မှတ်ပုံတင်တစ်စုံတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) - (vB၊ vB+1)</item>
-		<item>တွက်ချက်မှုများ (vA၊ vA+1) * (vB၊ vB+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) * (vB၊ vB+1)</item>
-		<item>(vA၊ vA+1) / (vB၊ vB+1) ကို တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) / (vB၊ vB+1)</item>
-		<item>(vA၊ vA+1) % (vB၊ vB+1) တွက်ချက်ပြီး ရလဒ်ကို မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) % (vB၊ vB+1)</item>
-		<item>တွက်ချက်မှုများ (vA၊ vA+1) &amp; (vB၊ vB+1) (ယုတ္တိနည်း AND) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) &amp; (vB၊ vB+1)</item>
-		<item>(vA၊ vA+1) | တွက်ချက်သည်။ (vB၊ vB+1) (ယုတ္တိနည်း OR) ရလဒ်ကို vA၊ vA+1 မှတ်ပုံတင်တစ်စုံတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) | (vB၊ vB+1)</item>
-		<item>တွက်ချက်မှုများ (vA၊ vA+1) &amp; (vB၊ vB+1) (သီးသန့် OR) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) ^ (vB၊ vB+1)</item>
-		<item>vA၊ vA+1 ကို vB မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်အလိုက် ဘယ်ဘက်သို့ ရွှေ့ကာ ရလဒ်ကို မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1)</item>
-		<item>vA၊ vA+1 ကို vB မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်အလိုက် ညာဘက်သို့ပြောင်းကာ ရလဒ်ကို မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) >> vB</item>
-		<item>vB မှသတ်မှတ်ထားသော ဂဏန်းနံပါတ်များဖြင့် ဆိုင်းဘုတ်ကို မထိန်းသိမ်းဘဲ vA၊ vA+1 ကို ညာဘက်သို့ ရွှေ့ကာ ရလဒ်ကို မှတ်ပုံတင်တစ်စုံ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) >>> vB</item>
+		<item>တွက်ချက်မှုများ (vA, vA+1) + (vB, vB+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>(vA, vA+1) - (vB, vB+1) ကို တွက်ချက်ပြီး ရလဒ် vA၊ vA+1 မှတ်ပုံတင်တစ်စုံတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>တွက်ချက်မှုများ (vA, vA+1) * (vB, vB+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>(vA, vA+1) / (vB, vB+1) ကို တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>(vA, vA+1) % (vB, vB+1) တွက်ချက်ပြီး ရလဒ်ကို မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>တွက်ချက်မှုများ (vA, vA+1) &amp; (vB, vB+1) (ယုတ္တိနည်း AND) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>(vA, vA+1) | တွက်ချက်သည်။ (vB, vB+1) (ယုတ္တိနည်း OR) ရလဒ်ကို vA၊ vA+1 မှတ်ပုံတင်တစ်စုံတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>တွက်ချက်မှုများ (vA, vA+1) ^ (vB, vB+1) (သီးသန့် OR) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>vA၊ vA+1 ကို vB မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်အလိုက် ဘယ်ဘက်သို့ ရွှေ့ကာ ရလဒ်ကို မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>vA၊ vA+1 ကို vB မှသတ်မှတ်ထားသော ဘစ်အရေအတွက်အလိုက် ညာဘက်သို့ပြောင်းကာ ရလဒ်ကို မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>vB မှသတ်မှတ်ထားသော ဂဏန်းနံပါတ်များဖြင့် ဆိုင်းဘုတ်ကို မထိန်းသိမ်းဘဲ vA၊ vA+1 ကို ညာဘက်သို့ ရွှေ့ကာ ရလဒ်ကို မှတ်ပုံတင်တစ်စုံ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် အရှည် (ကိန်းပြည့်) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
 		<item>vA + vB ကိုတွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvA = vA + vB</item>
 		<item>vA - vB ကို တွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvA = vA - vB</item>
 		<item>vA * vB ကို တွက်ချက်ပြီး ရလဒ်ကို vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvA = vA * vB</item>
 		<item>vA/vB ကို တွက်ချက်ပြီး ရလဒ်ကို vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvA=vA/vB</item>
 		<item>vA % vB ကို တွက်ချက်ပြီး ရလဒ်ကို vA မှတ်ပုံတင်မှုတွင် သိမ်းဆည်းသည်။ တန်ဖိုးများအားလုံး မျှောနေပါသည်။\nvA = vA % vB</item>
-		<item>တွက်ချက်မှုများ (vA၊ vA+1) + (vB၊ vB+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) + (vB၊ vB+1)</item>
-		<item>(vA၊ vA+1) - (vB၊ vB+1) ကို တွက်ချက်ပြီး ရလဒ် vA၊ vA+1 မှတ်ပုံတင်တစ်စုံတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) - (vB၊ vB+1)</item>
-		<item>တွက်ချက်မှုများ (vA၊ vA+1) * (vB၊ vB+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) * (vB၊ vB+1)</item>
-		<item>(vA၊ vA+1) / (vB၊ vB+1) ကို တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) / (vB၊ vB+1)</item>
-		<item>(vA၊ vA+1) % (vB၊ vB+1) တွက်ချက်ပြီး ရလဒ်ကို မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA၊ vA+1) = (vA၊ vA+1) % (vB၊ vB+1)</item>
+		<item>တွက်ချက်မှုများ (vA, vA+1) + (vB, vB+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>(vA, vA+1) - (vB, vB+1) ကို တွက်ချက်ပြီး ရလဒ် vA၊ vA+1 မှတ်ပုံတင်တစ်စုံတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>တွက်ချက်မှုများ (vA, vA+1) * (vB, vB+1) နှင့် ရလဒ်များကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>(vA, vA+1) / (vB, vB+1) ကို တွက်ချက်ပြီး ရလဒ်ကို စာရင်းသွင်းတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>(vA, vA+1) % (vB, vB+1) တွက်ချက်ပြီး ရလဒ်ကို မှတ်ပုံတင်အတွဲ vA၊ vA+1 တွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် နှစ်ဆ (floating point) ဖြစ်သည်။\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
 		<item>vB + 0xFFFF ကိုတွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA = vB + 0xFFFF</item>
 		<item>0xFFFF - vB ကိုတွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA = 0xFFFF - vB</item>
 		<item>vB * 0xFFFF ကိုတွက်ချက်ပြီး vA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvA = vB * 0xFFFF</item>
@@ -224,7 +450,7 @@
 		<item>vBB &amp; 0xFF (logical AND) ကိုတွက်ချက်ပြီး vAA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB &amp; 0xFF</item>
 		<item>vBB | တွက်ချက်သည်။ 0xFF (logical OR) နှင့်ရလဒ်များကို vAA မှတ်ပုံတင်ခြင်းတွင်သိမ်းဆည်းပါ။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA=vBB| 0xFF</item>
 		<item>vBB^0xFF (သီးသန့် OR) ကိုတွက်ချက်ပြီး vAA မှတ်ပုံတင်မှုတွင် ရလဒ်ကို သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB^0xFF</item>
-		<item>0xFF မှသတ်မှတ်ထားသော bit အရေအတွက်ဖြင့်ထားခဲ့သော vBB ကိုပြောင်းပြီးရလဒ်ကို vAA မှတ်ပုံတင်ခြင်းတွင်သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB</item>
+		<item>0xFF မှသတ်မှတ်ထားသော bit အရေအတွက်ဖြင့်ထားခဲ့သော vBB ကိုပြောင်းပြီးရလဒ်ကို vAA မှတ်ပုံတင်ခြင်းတွင်သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB &lt;&lt; 0xFF</item>
 		<item>0xFF မှသတ်မှတ်ထားသော bit အရေအတွက်အလိုက် vBB ကို ညာဘက်သို့ပြောင်းကာ ရလဒ်ကို vAA မှတ်ပုံတင်ခြင်းတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB >> 0xFF</item>
 		<item>0xFF မှသတ်မှတ်ထားသော bit အရေအတွက်အလိုက် vBB ကို ညာဘက်သို့ သိသိသာသာပြောင်းကာ ရလဒ်ကို vAA မှတ်ပုံတင်ခြင်းတွင် သိမ်းဆည်းထားသည်။ တန်ဖိုးများအားလုံးသည် ကိန်းပြည့်ဖြစ်သည်။\nvAA = vBB >>> 0xFF</item>
 		<item>ဘောင်များပါရှိသော ပေါလီမိုရစ် လက်မှတ်နည်းလမ်းကို ခေါ်ဆိုခြင်း (လုပ်ဆောင်သည်)။ ဗားရှင်း 038 မှစ၍ Dex ဖိုင်များတွင် ပါရှိသည်။</item>
@@ -234,31 +460,1046 @@
 		<item>vAA မှတ်ပုံတင်ခြင်းတွင် နည်းလမ်းလက်ကိုင်တစ်ခုအား ရည်ညွှန်းချက်တစ်ခုထားရှိပါ။ ဗားရှင်း 039 ကတည်းက Dex ဖိုင်များထဲတွင် ရှိနေသည်။</item>
 		<item>vAA မှတ်ပုံတင်ခြင်းတွင် နည်းလမ်းရှေ့ပြေးပုံစံကို ကိုးကားထားသည်။ ဗားရှင်း 039 ကတည်းက Dex ဖိုင်များထဲတွင် ရှိနေသည်။</item>
 	</string-array>
-    <string-array name="sort">
-        <item>အမည်</item>
-        <item>အမည်(ပြောင်းပြန်)</item>
-        <item>အမျိုးအစား</item>
-        <item>အမျိုးအစား(ပြောင်းပြန်)</item>
-        <item>အရွယ်အစား</item>
-        <item>အရွယ်အစား(ပြောင်းပြန်)</item>
-        <item>အချိန်</item>
-        <item>အချိန်(ပြောင်းပြန်)</item>
-    </string-array> 
+	<string-array name="years_or_days">
+		<item>နှစ်များ</item>
+		<item>ရက်များ</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>ပါရှိသော</item>
+		<item>ကိုယ်ပိုင်</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>APK manifest မှ ထုတ်ယူသော အချက်အလက်များကို ပြမည်။</item>
+		<item>APK တွင် resource သုံးသော configuration တစ်ခုချင်း ပြမည်။</item>
+		<item>APK manifest မှ ထုတ်ယူသော ခွင့်ပြုချက်များကို ပြမည်။</item>
+		<item>APK ရှိ resource table string pool အကြောင်းအရာ ပြမည်။</item>
+		<item>APK မှ resource table အကြောင်းအရာ ပြမည်။</item>
+		<item>APK ၏ &lt;overlayable> resources များ ပြမည်။</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>အလင်း</item>
+		<item>အမှောင်</item>
+		<item>အနက်</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>အရန်မုဒ်</item>
+		<item>အမည်ဝှက်ဖြည်ခြင်း</item>
+		<item>Unicode လွတ်မြောက်ခြင်း</item>
+		<item>မကိုက်ညီသောကုဒ် ပြမည်</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>အမည်ပြောင်းမည်</item>
+		<item>ဖိုင်များသာ အမည်ပြောင်းမည်</item>
+		<item>အစားထိုးမည်</item>
+		<item>ကျော်မည်</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>ဘယ်</item>
+		<item>ညာ</item>
+	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>အကြီးစာလုံးအားလုံး</item>
+		<item>colon ဖြင့် ခွဲမည်</item>
+	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>resources အသစ်ထည့်မည် (ဖိုင်များသာ)</item>
+		<item>ပျောက်နေသော resources ဖျက်မည်</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
+	</string-array>
+	<string-array name="sort">
+		<item>အမည်</item>
+		<item>အမည်(ပြောင်းပြန်)</item>
+		<item>အမျိုးအစား</item>
+		<item>အမျိုးအစား(ပြောင်းပြန်)</item>
+		<item>အရွယ်အစား</item>
+		<item>အရွယ်အစား(ပြောင်းပြန်)</item>
+		<item>အချိန်</item>
+		<item>အချိန်(ပြောင်းပြန်)</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>HEX-အရောင်</item>
+		<item>Smali ကုဒ်</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>one</item>
+		<item>two</item>
+		<item>few</item>
+		<item>many</item>
+		<item>other</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>မဖြည်ချပါ</item>
+		<item>ပင်မဖိုလ်ဒါသို့ ဖြည်ချမည်</item>
+		<item>သီးခြားဖိုလ်ဒါသို့ ဖြည်ချမည်</item>
+		<item>ပက်ကေ့ခ်ျများ ပေါင်းရန် ကြိုးစားမည်</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>စာသား &lt;-> Base64</item>
+		<item>စာသား &lt;-> Unicode</item>
+		<item>စာသား &lt;-> URL encoding</item>
+		<item>စာသား &lt;-> MD5</item>
+		<item>စာသား &lt;-> SHA-1</item>
+		<item>စာသား &lt;-> SHA-224</item>
+		<item>စာသား &lt;-> SHA-256</item>
+		<item>စာသား &lt;-> SHA-384</item>
+		<item>စာသား &lt;-> SHA-512</item>
+		<item>စာသား &lt;-> Array (UTF-8)</item>
+		<item>စာသား &lt;-> Array (UTF-16)</item>
+		<item>စာသား &lt;-> Array (UTF-16LE)</item>
+		<item>စာသား &lt;-> Array (UTF-16BE)</item>
+		<item>စာသား &lt;-> Array (US-ASCII)</item>
+		<item>စာသား &lt;-> Array (ISO-8859-1)</item>
+		<item>စာသား &lt;-> Array (CP1251)</item>
+		<item>ဆယ်လီ &lt;-> Binary</item>
+		<item>ဆယ်လီ &lt;-> Octal</item>
+		<item>ဆယ်လီ &lt;-> Hex</item>
+		<item>ဆယ်လီ &lt;-> Hex (0x0)</item>
+		<item>ဆယ်လီ &lt;-> Hex (0x00000000)</item>
+		<item>Float &lt;-> နှစ်လုံးစနစ်</item>
+		<item>Float &lt;-> ရှစ်လုံးစနစ်</item>
+		<item>Float &lt;-> Hex</item>
+		<item>Float &lt;-> Hex (0x0)</item>
+		<item>Float &lt;-> Hex (0x00000000)</item>
+		<item>အရောင် &lt;-> Smali</item>
+		<item>အရောင် &lt;-> ဆယ်လီ</item>
+		<item>အရောင် &lt;-> A,R,G,B</item>
+		<item>ရက်စွဲ &lt;-> မီလီစက္ကန့်</item>
+		<item>ရက်စွဲ &lt;-> Hex</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>မသတ်မှတ်ပါ</item>
+		<item>အလိုအလျောက်</item>
+		<item>အတွင်းပိုင်းသာ</item>
+		<item>ပြင်ပကို ဦးစားပေး</item>
+	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lituania</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+		<item>O\'zbek tili</item>
+		<item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>zh-rTW</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+		<item>uz</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>yyyy/MM/dd HH:mm</item>
+		<item>dd/MM/yyyy HH:mm</item>
+		<item>HH:mm yyyy/MM/dd</item>
+		<item>HH:mm dd/MM/yyyy</item>
+		<item>yy/MM/dd HH:mm</item>
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item>
+		<item>HH:mm dd/MM/yy</item>
+		<item>yyyy.MM.dd HH:mm</item>
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>yy.MM.dd HH:mm</item>
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>yyyy-MM-dd HH:mm</item>
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>yy-MM-dd HH:mm</item>
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>ပုံမှန်</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>ရိုးရှင်းသောနည်း</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>ပုံမှန်</item>
+		<item>အလျားလိုက်</item>
+		<item>ထောင်လိုက်</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
 	<string-array name="auto_save_variants">
 		<item>Off</item>
-		<item>15 စက္ကန့်</item> 
+		<item>15 စက္ကန့်</item>
 		<item>30 စက္ကန့်</item>
-		<item>1 မိနစ်</item> 
+		<item>1 မိနစ်</item>
 		<item>5 မိနစ်</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>လိုက်လျောညီထွေ ပုံ (အရည်အသွေးနိမ့်)</item>
+		<item>အရည်အသွေးမြင့် ပုံ (အရွယ်ပိုကြီး)</item>
+		<item>SVG သို့ပြောင်းမည်</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>ဆက်တင်များ</item>
+		<item>စာမှတ်များ</item>
+		<item>ရှာဖွေ/အစားထိုး မှတ်တမ်း</item>
+		<item>အဘိဓာန်များ</item>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>method/field အရေအတွက်အလိုက်</item>
+		<item>ညီမျှသောအစိတ်အပိုင်းများသို့</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>ရက်စွဲအရင်</item>
+		<item>အရွယ်အစားအရင်</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
 	</string-array>
 	<string-array name="editor_themes">
 		<item>မူလ</item>
-		<item>အသစ်</item> 
+		<item>အသစ်</item>
 	</string-array>
-	<string-array name="format">
-        <item>@string/jks</item>
-        <item>@string/pkcs12</item>
-        <item>@string/bks</item>
-        <item>@string/pk8</item>
-    </string-array>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>auto-detect</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>he</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pt-PT</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>to</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>as</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>my</item>
+		<item>ps</item>
+		<item>ti</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>အလိုအလျောက်</item>
+		<item>အဇာဘိုင်ဂျန် (လက်တင်)</item>
+		<item>အယ်လ်ဘေးနီးယား</item>
+		<item>အင်္ဂလိပ်</item>
+		<item>အာရဗီ</item>
+		<item>အာမေးနီးယား</item>
+		<item>အာဖရိကန်</item>
+		<item>ဘင်္ဂါလီ</item>
+		<item>ဘူလ်ဂေးရီးယား</item>
+		<item>ဘော့စနီးယား</item>
+		<item>ဝေးလ်ရှ်</item>
+		<item>ဟန်ဂေရီ</item>
+		<item>ဗီယက်နမ်</item>
+		<item>ဟေတီခရီအိုလ်</item>
+		<item>ဒတ်ချ်</item>
+		<item>ဂရိ</item>
+		<item>ဂူဂျာရာတီ</item>
+		<item>ဒိန်းမတ်</item>
+		<item>ဟီဘရူး</item>
+		<item>အင်ဒိုနီးရှား</item>
+		<item>အိုင်းရစ်ရှ်</item>
+		<item>အိုက်စလန်</item>
+		<item>စပိန်</item>
+		<item>အီတလီ</item>
+		<item>ကာဇက်</item>
+		<item>ကန်နာဒါ</item>
+		<item>ကန်တုံ (ရိုးရာ)</item>
+		<item>ကတ်တလန်</item>
+		<item>အိုတိုမီ (ကယ်ရီတာရို)</item>
+		<item>ရိုးရာ တရုတ်</item>
+		<item>တရုတ် (ရိုးရှင်း)</item>
+		<item>ကိုရီးယား</item>
+		<item>လတ်ဗီးယား</item>
+		<item>လစ်သူယေးနီးယား</item>
+		<item>မာလာဂါစီ</item>
+		<item>မလေး</item>
+		<item>မလယာလမ်</item>
+		<item>မော်လ်တာ</item>
+		<item>မာအိုရီ</item>
+		<item>မာရသီ</item>
+		<item>ဂျာမန်</item>
+		<item>နီပေါ</item>
+		<item>နော်ဝေ</item>
+		<item>အိုရိယာ</item>
+		<item>ပန်ဂျာဘီ</item>
+		<item>ပါရှန်</item>
+		<item>ပိုလန်</item>
+		<item>ပေါ်တူဂီ (ဘရာဇီး)</item>
+		<item>ပေါ်တူဂီ (ပေါ်တူဂီ)</item>
+		<item>ရိုမေးနီးယား</item>
+		<item>ရုရှ</item>
+		<item>ဆမိုအာ</item>
+		<item>ဆားဘီးယား (စစ်ရီလစ်)</item>
+		<item>ဆားဘီးယား (လက်တင်)</item>
+		<item>ဆလိုဗက်</item>
+		<item>ဆလိုဗေးနီးယား</item>
+		<item>ဆွာဟီလီ</item>
+		<item>တာဟီတီ</item>
+		<item>ထိုင်း</item>
+		<item>တမီးလ်</item>
+		<item>တီလုဂူ</item>
+		<item>တွန်ဂါ</item>
+		<item>တူရကီ</item>
+		<item>ယူကရိန်း</item>
+		<item>အူရဒူ</item>
+		<item>ဖီဂျီ</item>
+		<item>ဖိလစ်ပိုင်</item>
+		<item>ဖင်လန်</item>
+		<item>ပြင်သစ်</item>
+		<item>ဟိန္ဒီ</item>
+		<item>မုံ ဒေါ</item>
+		<item>ခရိုအေးရှား</item>
+		<item>ချက်</item>
+		<item>ဆွီဒင်</item>
+		<item>အက်စတိုးနီးယား</item>
+		<item>ယူကာတန် မာယာ</item>
+		<item>ဂျပန်</item>
+		<item>အမ်ဟာရစ်</item>
+		<item>အာသံ</item>
+		<item>ဒါရီ</item>
+		<item>ပြင်သစ် (ကနေဒါ)</item>
+		<item>အီနုခ်တီတုတ်</item>
+		<item>ခမာ</item>
+		<item>ကလင်ဂွန် (လက်တင်)</item>
+		<item>ကဒ် (အလယ်ပိုင်း)</item>
+		<item>ကဒ် (မြောက်ပိုင်း)</item>
+		<item>လာအို</item>
+		<item>မြန်မာ</item>
+		<item>ပက်ရှတို</item>
+		<item>တီဂရင်ယာ</item>
+	</string-array>
+	<string-array name="google_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>အလိုအလျောက်</item>
+		<item>အာဖရိကန်</item>
+		<item>အယ်လ်ဘေးနီးယား</item>
+		<item>အမ်ဟာရစ်</item>
+		<item>အာရဗီ</item>
+		<item>အာမေးနီးယား</item>
+		<item>အဇာဘိုင်ဂျန်</item>
+		<item>ဘာစ်ခ်</item>
+		<item>ဘီလာရုစ်</item>
+		<item>ဘင်္ဂါလီ</item>
+		<item>ဘော့စနီးယား</item>
+		<item>ဘူလ်ဂေးရီးယား</item>
+		<item>ကတ်တလန်</item>
+		<item>စီဘူအာနို</item>
+		<item>ချိချေဝါ</item>
+		<item>တရုတ် (ရိုးရှင်း)</item>
+		<item>တရုတ် (ရိုးရာ)</item>
+		<item>ကော်စီကန်</item>
+		<item>ခရိုအေးရှား</item>
+		<item>ချက်</item>
+		<item>ဒိန်းမတ်</item>
+		<item>ဒတ်ချ်</item>
+		<item>အင်္ဂလိပ်</item>
+		<item>အက်စပရန်တို</item>
+		<item>အက်စတိုးနီးယား</item>
+		<item>ဖိလစ်ပိုင်</item>
+		<item>ဖင်လန်</item>
+		<item>ပြင်သစ်</item>
+		<item>ဖရီစီယန်</item>
+		<item>ဂါလီစီယန်</item>
+		<item>ဂျော်ဂျီယာ</item>
+		<item>ဂျာမန်</item>
+		<item>ဂရိ</item>
+		<item>ဂူဂျာရာတီ</item>
+		<item>ဟေတီခရီအိုလ်</item>
+		<item>ဟာဥစာ</item>
+		<item>ဟာဝိုင်ယီ</item>
+		<item>ဟီဘရူး</item>
+		<item>ဟိန္ဒီ</item>
+		<item>မုံ</item>
+		<item>ဟန်ဂေရီ</item>
+		<item>အိုက်စလန်</item>
+		<item>အစ်ဂ်ဘို</item>
+		<item>အင်ဒိုနီးရှား</item>
+		<item>အိုင်းရစ်ရှ်</item>
+		<item>အီတလီ</item>
+		<item>ဂျပန်</item>
+		<item>ဂျာဗား</item>
+		<item>ကန်နာဒါ</item>
+		<item>ကာဇက်</item>
+		<item>ခမာ</item>
+		<item>ကိုရီးယား</item>
+		<item>ကဒ် (ကာမန်ဂျီ)</item>
+		<item>ကာဂျစ်</item>
+		<item>လာအို</item>
+		<item>လက်တင်</item>
+		<item>လတ်ဗီးယား</item>
+		<item>လစ်သူယေးနီးယား</item>
+		<item>လူဇင်ဘတ်</item>
+		<item>မက်ဆီဒိုးနီးယား</item>
+		<item>မာလာဂါစီ</item>
+		<item>မလေး</item>
+		<item>မလယာလမ်</item>
+		<item>မော်လ်တာ</item>
+		<item>မာအိုရီ</item>
+		<item>မာရသီ</item>
+		<item>မွန်ဂိုလီးယား</item>
+		<item>မြန်မာ</item>
+		<item>နီပေါ</item>
+		<item>နော်ဝေ</item>
+		<item>ပက်ရှတို</item>
+		<item>ပါရှန်</item>
+		<item>ပိုလန်</item>
+		<item>ပေါ်တူဂီ</item>
+		<item>ပန်ဂျာဘီ</item>
+		<item>ရိုမေးနီးယား</item>
+		<item>ရုရှ</item>
+		<item>ဆမိုအာ</item>
+		<item>စကော့ဂေးလစ်</item>
+		<item>ဆားဘီးယား</item>
+		<item>ဆီဆိုသို</item>
+		<item>ရှိုနာ</item>
+		<item>စင်ဒီ</item>
+		<item>ဆင်ဟာလာ</item>
+		<item>ဆလိုဗက်</item>
+		<item>ဆလိုဗေးနီးယား</item>
+		<item>ဆိုမာလီ</item>
+		<item>စပိန်</item>
+		<item>ဆူဒန်နီးစ်</item>
+		<item>ဆွာဟီလီ</item>
+		<item>ဆွီဒင်</item>
+		<item>တာဂျစ်</item>
+		<item>တမီးလ်</item>
+		<item>တီလုဂူ</item>
+		<item>ထိုင်း</item>
+		<item>တူရကီ</item>
+		<item>ယူကရိန်း</item>
+		<item>အူရဒူ</item>
+		<item>ဥဇဘက်</item>
+		<item>ဗီယက်နမ်</item>
+		<item>ဝေးလ်ရှ်</item>
+		<item>ခိုစာ</item>
+		<item>ယစ်ဒစ်ရှ်</item>
+		<item>ယိုရူဘာ</item>
+		<item>ဇူလူ</item>
+		<item>အိုရိယာ</item>
+		<item>ပန်ဂျာဘီ</item>
+		<item>ရဝမ်ဒါ</item>
+		<item>တာတာ</item>
+		<item>တာ့ခ်မင်</item>
+		<item>ဝီဂါ</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>ba</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>my</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>zh</item>
+		<item>cv</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>sjn</item>
+		<item>emj</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>he</item>
+		<item>mrj</item>
+		<item>hi</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jv</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>kazlat</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mhr</item>
+		<item>mn</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>pap</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pa</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tl</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>udm</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>uzbcyr</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>sah</item>
+		<item>yi</item>
+	</string-array>
+	<string-array name="yandex_translator_names">
+		<item>အလိုအလျောက်</item>
+		<item>အာဖရိကန်</item>
+		<item>အယ်လ်ဘေးနီးယား</item>
+		<item>အမ်ဟာရစ်</item>
+		<item>အာရဗီ</item>
+		<item>အာမေးနီးယား</item>
+		<item>အဇာဘိုင်ဂျန်</item>
+		<item>ဘာရှ်ကီးရ်</item>
+		<item>ဘာစ်ခ်</item>
+		<item>ဘီလာရုစ်</item>
+		<item>ဘင်္ဂါလီ</item>
+		<item>ဘော့စနီးယား</item>
+		<item>ဘူလ်ဂေးရီးယား</item>
+		<item>မြန်မာ</item>
+		<item>ကတ်တလန်</item>
+		<item>စီဘူအာနို</item>
+		<item>တရုတ်</item>
+		<item>ချူဗားရှ်</item>
+		<item>ခရိုအေးရှား</item>
+		<item>ချက်</item>
+		<item>ဒိန်းမတ်</item>
+		<item>ဒတ်ချ်</item>
+		<item>အယ်လ်ဖ် (စင်ဒရင်)</item>
+		<item>Emoji</item>
+		<item>အင်္ဂလိပ်</item>
+		<item>အက်စပရန်တို</item>
+		<item>အက်စတိုးနီးယား</item>
+		<item>ဖင်လန်</item>
+		<item>ပြင်သစ်</item>
+		<item>ဂါလီစီယန်</item>
+		<item>ဂျော်ဂျီယာ</item>
+		<item>ဂျာမန်</item>
+		<item>ဂရိ</item>
+		<item>ဂူဂျာရာတီ</item>
+		<item>ဟေတီ</item>
+		<item>ဟီဘရူး</item>
+		<item>တောင်တန်း မာရီ</item>
+		<item>ဟိန္ဒီ</item>
+		<item>ဟန်ဂေရီ</item>
+		<item>အိုက်စလန်</item>
+		<item>အင်ဒိုနီးရှား</item>
+		<item>အိုင်းရစ်ရှ်</item>
+		<item>အီတလီ</item>
+		<item>ဂျပန်</item>
+		<item>ဂျာဗား</item>
+		<item>ကန်နာဒါ</item>
+		<item>ကာဇက်</item>
+		<item>ကာဇက် (လက်တင်)</item>
+		<item>ခမာ</item>
+		<item>ကိုရီးယား</item>
+		<item>ကာဂျစ်</item>
+		<item>လာအို</item>
+		<item>လက်တင်</item>
+		<item>လတ်ဗီးယား</item>
+		<item>လစ်သူယေးနီးယား</item>
+		<item>လူဇင်ဘတ်</item>
+		<item>မက်ဆီဒိုးနီးယား</item>
+		<item>မာလာဂါစီ</item>
+		<item>မလေး</item>
+		<item>မလယာလမ်</item>
+		<item>မော်လ်တာ</item>
+		<item>မာအိုရီ</item>
+		<item>မာရသီ</item>
+		<item>မာရီ</item>
+		<item>မွန်ဂိုလီးယား</item>
+		<item>နီပေါ</item>
+		<item>နော်ဝေ</item>
+		<item>ပါပီယာမင်တို</item>
+		<item>ပါရှန်</item>
+		<item>ပိုလန်</item>
+		<item>ပေါ်တူဂီ</item>
+		<item>ပန်ဂျာဘီ</item>
+		<item>ရိုမေးနီးယား</item>
+		<item>ရုရှ</item>
+		<item>စကော့ဂေးလစ်</item>
+		<item>ဆားဘီးယား</item>
+		<item>ဆင်ဟာလာ</item>
+		<item>ဆလိုဗက်</item>
+		<item>ဆလိုဗေးနီးယား</item>
+		<item>စပိန်</item>
+		<item>ဆူဒန်နီးစ်</item>
+		<item>ဆွာဟီလီ</item>
+		<item>ဆွီဒင်</item>
+		<item>တဂါလော့</item>
+		<item>တာဂျစ်</item>
+		<item>တမီးလ်</item>
+		<item>တာတာ</item>
+		<item>တီလုဂူ</item>
+		<item>ထိုင်း</item>
+		<item>တူရကီ</item>
+		<item>အူဒမတ်</item>
+		<item>ယူကရိန်း</item>
+		<item>အူရဒူ</item>
+		<item>ဥဇဘက်</item>
+		<item>ဥဇဘက် (စစ်ရီလစ်)</item>
+		<item>ဗီယက်နမ်</item>
+		<item>ဝေးလ်ရှ်</item>
+		<item>ခိုစာ</item>
+		<item>ယာကုတ်</item>
+		<item>ယစ်ဒစ်ရှ်</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>အလိုအလျောက်</item>
+		<item>အာရဗီ</item>
+		<item>ဘူလ်ဂေးရီးယား</item>
+		<item>တရုတ်</item>
+		<item>ချက်</item>
+		<item>ဒိန်းမတ်</item>
+		<item>ဒတ်ချ်</item>
+		<item>အင်္ဂလိပ်</item>
+		<item>အက်စတိုးနီးယား</item>
+		<item>ဖင်လန်</item>
+		<item>ပြင်သစ်</item>
+		<item>ဂျာမန်</item>
+		<item>ဂရိ</item>
+		<item>ဟန်ဂေရီ</item>
+		<item>အင်ဒိုနီးရှား</item>
+		<item>အီတလီ</item>
+		<item>ဂျပန်</item>
+		<item>ကိုရီးယား</item>
+		<item>လတ်ဗီးယား</item>
+		<item>လစ်သူယေးနီးယား</item>
+		<item>နော်ဝေ (ဘောက်မောလ်)</item>
+		<item>ပိုလန်</item>
+		<item>ပေါ်တူဂီ</item>
+		<item>ရိုမေးနီးယား</item>
+		<item>ရုရှ</item>
+		<item>ဆလိုဗက်</item>
+		<item>ဆလိုဗေးနီးယား</item>
+		<item>စပိန်</item>
+		<item>ဆွီဒင်</item>
+		<item>တူရကီ</item>
+		<item>ယူကရိန်း</item>
+	</string-array>
 </resources>

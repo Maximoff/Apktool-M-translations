@@ -70,7 +70,7 @@
     <string name="package_info2">%1$s (pkgId: %2$d, total resources: %3$d, main package)</string>
 	<string name="file_changed">File changed, save changes?</string>
 	<string name="so_prop">File: %1$s\nSize: %2$s\nType: %3$s\nTotal lines: %4$s\nModified lines: %5$s</string>
-    <string name="so_info">For successful editing, the length of the line before editing must match the length of the line after editing. If the length does not match, such lines will be highlighted in red. Try to avoid editing lines with strange characters! Even if all conditions are met, there is no 100% guarantee that the library will remain operational after editing; do not forget about backup!</string>
+    <string name="so_info">For successful editing, the length of the line before editing must match the length of the line after editing. If the length does not match, such lines will be highlighted in red. Try to avoid editing lines with strange characters! Even if all conditions are met, there is no 100%% guarantee that the library will remain operational after editing; do not forget about backup!</string>
     <string name="axml_prop">File: %1$s\nSize: %2$s\nTotal lines: %3$s\nModified lines: %4$s</string>
     <string name="axml_info_ref">There should be a resource ID in hexadecimal (HEX) format! Don\'t use strings!</string>
     <string name="axml_info_hex">The value must be in hexadecimal format (HEX)!</string>
@@ -201,10 +201,10 @@
 	<string name="smali_snalysis_desc">Smali Analysis Channel</string>
 	<string name="failed_open">Could not open \"%s\"!</string>
 	<string name="filesc">files</string>
-	<string name="foldersc">dirs</string>
+	<string name="foldersc">directories</string>
 	<string name="selected">selected</string>
 	<string name="total_filesc">Total files</string>
-	<string name="total_foldersc">Total dirs</string>
+	<string name="total_foldersc">Total directories</string>
 	<string name="properties">Properties</string>
 	<string name="modified">Last modified</string>
 	<string name="size_label">Size</string>
@@ -247,7 +247,7 @@
 	<string name="import_jks">Import signature key</string>
 	<string name="internal">Internal memory</string>
 	<string name="root_dir">Root directory</string>
-	<string name="custom_size">Your size</string>
+	<string name="custom_size">Custom size</string>
 	<string name="custom_size_info">Finished image size: %s.\n\nSpecify the largest side, the proportions will be saved automatically.\nSetting too large a size is not recommended.</string>
 	<string name="custom_size_info_vc">Specify the largest side, the proportions will be saved automatically.\nSetting too large a size is not recommended.\n0 - automatically.</string>
 	<string name="fav_short">Fav.</string>
@@ -263,7 +263,7 @@
 	<string name="lower_case">lowercase</string>
 	<string name="upper_case">UPPERCASE</string>
 	<string name="server">Server</string>
-    <string name="strings_edit">Lines editor</string>
+    <string name="strings_edit">Strings editor</string>
 	<string name="methods_count">Number of methods</string>
 	<string name="strings_count">Number of strings</string>
 	<string name="class_count">Number of classes</string>
@@ -674,7 +674,7 @@
 	<string name="verify_log_keySize">%1$s Key size (bits): %2$s.</string>
 	<string name="verify_log_key_algorithm">%1$s Key algorithm: %2$s.</string>
 	<string name="verify_jar">JAR signer %1$s: %2$s</string>
-	<string name="date">Vilidity Date:</string>
+	<string name="date">Validity Date:</string>
 	<string name="vdate_info">The validity period must be in YEARS!</string>
 	<string name="common_name">Common Name:</string>
 	<string name="organization_unit">Organization Unit:</string>
@@ -970,8 +970,8 @@
 	<string name="download_success">%s file downloaded successfully!</string>
 	<string name="load_binaries2">You need to download the aapt/aapt2 files! You can download them now or do it later in the settings. An Internet connection is required to download.\n\nDo you want to download now?</string>
 	<string name="load_binaries">The built-in aapt/aapt2 binaries may not be compatible with your system. You can update them now or do it later in the settings. An Internet connection is required to download.\n\nDo you want to download now?</string>
-	<string name="plugin_modif">The UnApkm plugin is signed by someone else\'s signature.  Probably the plugin has been modified.  It is highly recommended that you remove the plugin and download the original file from the developer\'s site.  By clicking \"Not remind\" you continue to use the modified plugin at your own peril and risk!</string>
-	<string name="not_remind">Not remind</string>
+	<string name="plugin_modif">The UnApkm plugin is signed by someone else\'s signature. Probably the plugin has been modified. It is highly recommended that you remove the plugin and download the original file from the developer\'s site. By clicking \"Don\'t remind\" you continue to use the modified plugin at your own peril and risk!</string>
+	<string name="not_remind">Don\'t remind</string>
 	<string name="mpatcher">MPatcher</string>
 	<string name="mpatcher_down">Download MPatcher</string>
 	<string name="mpatcher_run">Run MPatcher</string>

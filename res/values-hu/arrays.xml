@@ -1,9 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>Regiszterek</item>
 		<item>Szó szerinti értékek</item>
 		<item>Primitív adattípusok</item>
+	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
 	</string-array>
 	<string-array name="smali_help_values" formatted="false">
 		<item>A vA egy 4 bites regiszter v0 - v15 értéktartománnyal\nA vAA egy 8 bites regiszter, amelynek értéktartománya v0 - v255\nA vAAAA egy 16 bites regiszter, amelynek értéktartománya v0 - v65535</item>
@@ -41,8 +267,8 @@
 		<item>Lekéri az objektumfigyelőt, amelyre a vAA regiszter hivatkozik.</item>
 		<item>Felszabadítja a vAA regiszter által hivatkozott objektumfigyelőt.</item>
 		<item>Ellenőrzi, hogy a vAA regiszterben található objektumhivatkozás leadható-e a type_id által azonosított osztályba. ClassCastException kivételt dob, ha nem tud, ellenkező esetben folytatja a végrehajtást.</item>
-		<item>Ellenőrzi, hogy a vB regiszter tartalma a type_id által azonosított osztály példánya-e. A vA regisztert nem nullára állítja, ha van, 0-ra, ha nincs.\nvA = vB példányOf típusú ? 10</item>
-		<item>Meghatározza a tömbelemek számát a vB regiszterből, és az értéket a vA regiszterbe helyezi.\nvA = vB.hossz</item>
+		<item>Ellenőrzi, hogy a vB regiszter tartalma a type_id által azonosított osztály példánya-e. A vA regisztert nem nullára állítja, ha van, 0-ra, ha nincs.\nvA = vB instanceOf type ? 1:0</item>
+		<item>Meghatározza a tömbelemek számát a vB regiszterből, és az értéket a vA regiszterbe helyezi.\nvA = vB.length</item>
 		<item>Létrehoz egy objektumtípus példányát, és hivatkozást helyez el a létrehozott példányra a vAA-regiszterben.</item>
 		<item>Létrehoz egy új type_id változók tömbjét a vB regiszterelemek méretével, és hivatkozást helyez el a tömbre a vA regiszterben.</item>
 		<item>Létrehoz egy type_id típusú új adattömböt, és kitölti paraméterekkel (azaz nincs hosszú/dupla tömb, de a hivatkozási típusok megengedettek). Az újonnan létrehozott tömbre való hivatkozást az utasítást közvetlenül követő move-result-object utasítással kaphatjuk meg (ha használni kell).</item>
@@ -56,7 +282,7 @@
 		<item>Ritka táblázat esetén megvalósítja a Switch operátort. Az utasítás egy táblázatot használ, amely minden konstanshoz megadja az eltolásokat. Ha nem található egyezés a táblában, akkor a következő utasítás kerül végrehajtásra (alapértelmezett kis- és nagybetű).</item>
 		<item>Összehasonlítja a lebegőpontos (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = vBB &lt; vCC ? igen: 1, nem: -1, egyenlő: 0</item>
 		<item>Összehasonlítja a lebegőpontos (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = vBB &lt; vCC ? igen: 1, nem: -1, egyenlő: 0</item>
-		<item>Összehasonlítja a dupla (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nigen: 1, nem: -1, egyenlő: 0</item>
+		<item>Összehasonlítja a dupla (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? igen: 1, nem: -1, egyenlő: 0</item>
 		<item>Összehasonlítja a dupla (lebegőpontos) értékeket vBB-ben és vCC-ben, és elhelyezi az egész értéket a vAA-regiszterben:\nvAA = (vBB, vBB+1) > (vCC, vCC+1)? igen: 1, nem: -1, egyenlő: 0</item>
 		<item>Összehasonlítja a hosszú (egész) értékeket a vBB-ben és a vCC-ben, és elhelyezi az egész (egész) értéket a vAA-regiszterben:\nvAA = (vBB, vBB+1) > (vCC, vCC+1)? igen: 1, nem: -1, egyenlő: 0</item>
 		<item>A megadott címkére ugrik, ha vA == vB. vA és vB egész értékeket tartalmaz.\n(az eq az egyenlő rövidítése)</item>
@@ -86,7 +312,7 @@
 		<item>Elhelyezi a vAA karakter (karakter) értékét a vBB-ben hivatkozott tömbbe a vCC regiszterrel rendelkező elemenként.\nvBB[vCC] = vAA</item>
 		<item>A vAA rövid (egész) értékét a vBB-ben hivatkozott tömbbe helyezi a vCC regisztert tartalmazó elemmel.\nvBB[vCC] = vAA</item>
 		<item>Beolvassa az értéket a példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
-		<item>Dupla/hosszú értéket olvas be egy példánymezőből, és egy regiszterpárba helyezi (vA, vA+1). Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\n(vA, vA+1) = vB.mező</item>
+		<item>Dupla/hosszú értéket olvas be egy példánymezőből, és egy regiszterpárba helyezi (vA, vA+1). Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\n(vA, vA+1) = vB.field</item>
 		<item>Beolvas egy objektumhivatkozást egy példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
 		<item>Kiolvas egy logikai értéket a példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
 		<item>Beolvas egy bájt (egész szám) értéket egy példánymezőből, és elhelyezi a vA regiszterben. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvA = vB.field</item>
@@ -96,9 +322,9 @@
 		<item>Dupla/hosszú értéket helyez el egy regiszterpárból (vA, vA+1) egy példánymezőbe. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = (vA, vA+1)</item>
 		<item>Hivatkozást helyez el egy objektumra a vA regiszterből a példánymezőbe. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = vA</item>
 		<item>Elhelyezi a logikai értéket a vA regiszterből a példánymezőbe. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = vA</item>
-		<item>A vB regiszter által hivatkozott példányban a megadott logikai mező bájt (egész) értékét egyenlőnek állítja be a vA regiszter értékével, azaz:\nvB.field = vA</item>
-		<item>A vB regiszter által hivatkozott példányban a megadott logikai mező char (karakter) értékét egyenlővé állítja a vA regiszter értékével, azaz:\nvB.field = vA</item>
-		<item>A vB regiszter által hivatkozott példányban a megadott logikai mező rövid (egész) értékét a vA regiszter értékével egyenlőnek állítja be, azaz:\nvB.field = vA</item>
+		<item>A vA regiszter bájt (egész) értékét a példánymezőbe helyezi. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = vA</item>
+		<item>A vA regiszter char (karakter) értékét a példánymezőbe helyezi. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = vA</item>
+		<item>A vA regiszter rövid (egész) értékét a példánymezőbe helyezi. Az ezt a mezőt tartalmazó osztályra való hivatkozás a vB regiszterben található.\nvB.field = vA</item>
 		<item>Kiolvas egy értéket egy statikus mezőből, és elhelyezi a vAA regiszterben. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
 		<item>Kiolvas egy dupla/hosszú értéket egy statikus mezőből, és egy vAA, vAA+1 regiszterpárba helyezi. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
 		<item>Beolvas egy objektum hivatkozást egy statikus mezőből, és elhelyezi a vAA regiszterben. Az ezt a mezőt tartalmazó osztály hivatkozását tartalmazó regiszter nem használatos.</item>
@@ -149,7 +375,7 @@
 		<item>Kiszámítja a vBB * vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB * vCC</item>
 		<item>Kiszámítja a vBB / vCC-t, és eltárolja az eredményt a vAA regiszterben. Minden érték egész szám.\nvAA = vBB / vCC</item>
 		<item>Kiszámítja a vBB % vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB % vCC</item>
-		<item>Kiszámítja a vBB és vCC (logikai ÉS), az eredményt pedig a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB és vCC</item>
+		<item>Kiszámítja a vBB és vCC (logikai ÉS), az eredményt pedig a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB &amp; vCC</item>
 		<item>Kiszámítja a vBB | vCC (logikai VAGY), és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB | vCC</item>
 		<item>Kiszámítja a vBB ^ vCC-t (kizárólagos VAGY), és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB ^ vCC</item>
 		<item>A vBB-t balra tolja a vCC által megadott bitszámmal, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB &lt;&lt; vCC</item>
@@ -162,10 +388,10 @@
 		<item>Kiszámítja (vBB, vBB+1) % (vCC, vCC+1) és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
 		<item>Kiszámítja (vBB, vBB+1) &amp; (vCC, vCC+1) (logikai ÉS), és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
 		<item>Számít (vBB, vBB+1) | (vCC, vCC+1) (logikai VAGY), és az eredményt egy vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
-		<item>Kiszámítja (vBB, vBB+1) ^ (vCC, vCC+1) (kizárólag ÉS), és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Kiszámítja (vBB, vBB+1) ^ (vCC, vCC+1) (kizárólagos VAGY), és eltárolja az eredményt a vAA, vAA+1 regiszterpárban. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
 		<item>A vBB-t, vBB+1-et balra tolja a vCC által megadott bitszámmal, és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
 		<item>A vBB, vBB+1 jobbra tolja a vCC által megadott bitszámmal, és az eredményt a vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
-		<item>A vBB, vBB+1 jobbra tolja az előjel megőrzése nélkül a vCC által megadott bitszámmal, és az eredményt egy vAA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>A vBB, vBB+1 jobbra tolja az előjel megőrzése nélkül a vCC által megadott bitszámmal, és az eredményt egy vAA, vAA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
 		<item>Kiszámítja a vBB + vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték lebegő.\nvAA = vBB + vCC</item>
 		<item>Kiszámítja a vBB - vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték lebegő.\nvAA = vBB - vCC</item>
 		<item>Kiszámítja a vBB * vCC-t, és az eredményt a vAA regiszterben tárolja. Minden érték lebegő.\nvAA = vBB * vCC</item>
@@ -181,7 +407,7 @@
 		<item>Kiszámítja a vA * vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA * vB</item>
 		<item>Kiszámítja a vA / vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA / vB</item>
 		<item>Kiszámítja a vA % vB-t, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA % vB</item>
-		<item>Kiszámítja a vA és vB értékeket (logikai ÉS), és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA és vB</item>
+		<item>Kiszámítja a vA és vB értékeket (logikai ÉS), és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vA &amp; vB</item>
 		<item>Kiszámítja vA | vB (logikai VAGY), és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA | vB</item>
 		<item>Kiszámítja a vA ^ vB-t (kizárólagos VAGY), és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA ^ vB</item>
 		<item>A vA-t balra tolja a vB által megadott számú bittel, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vA &lt;&lt; vB</item>
@@ -194,7 +420,7 @@
 		<item>Kiszámítja (vA, vA+1) % (vB, vB+1), és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
 		<item>Kiszámítja (vA, vA+1) &amp; (vB, vB+1) (logikai ÉS), és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
 		<item>Kiszámítja (vA, vA+1) | (vB, vB+1) (logikai VAGY), és az eredményt egy vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
-		<item>Kiszámítja (vA, vA+1) &amp; (vB, vB+1) (kizárólagos VAGY), és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Kiszámítja (vA, vA+1) ^ (vB, vB+1) (kizárólagos VAGY), és eltárolja az eredményt a vA, vA+1 regiszterpárban. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
 		<item>A vA-t, vA+1-et balra tolja a vB által megadott bitszámmal, és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
 		<item>A vA, vA+1 jobbra tolja a vB által megadott bitszámmal, és az eredményt a vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
 		<item>A vA, vA+1 jobbra tolja az előjel megőrzése nélkül a vB által megadott számjegyek számával, és az eredményt vA, vA+1 regiszterpárban tárolja. Minden érték hosszú (egész).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
@@ -213,7 +439,7 @@
 		<item>Kiszámítja a vB * 0xFFFF értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB * 0xFFFF</item>
 		<item>Kiszámítja a vB / 0xFFFF értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB / 0xFFFF</item>
 		<item>Kiszámítja a vB % 0xFFFF értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB % 0xFFFF</item>
-		<item>Kiszámítja a vB &amp; 0xFFFF (logikai ÉS) értéket, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vB és 0xFFFF</item>
+		<item>Kiszámítja a vB &amp; 0xFFFF (logikai ÉS) értéket, és eltárolja az eredményt a vA regiszterben. Minden érték egész szám.\nvA = vB &amp; 0xFFFF</item>
 		<item>Kiszámítja vB | 0xFFFF (logikai VAGY), és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB | 0xFFFF</item>
 		<item>Kiszámítja a vB ^ 0xFFFF (kizárólagos VAGY) értéket, és az eredményt a vA regiszterben tárolja. Minden érték egész szám.\nvA = vB ^ 0xFFFF</item>
 		<item>Kiszámítja a vBB + 0xFF értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB + 0xFF</item>
@@ -221,7 +447,7 @@
 		<item>Kiszámítja a vBB * 0xFF értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB * 0xFF</item>
 		<item>Kiszámítja a vBB / 0xFF értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB / 0xFF</item>
 		<item>Kiszámítja a vBB % 0xFF értéket, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB % 0xFF</item>
-		<item>Kiszámítja a vBB &amp; 0xFF (logikai ÉS) értéket, és eltárolja az eredményt a vAA regiszterben. Minden érték egész szám.\nvAA = vBB és 0xFF</item>
+		<item>Kiszámítja a vBB &amp; 0xFF (logikai ÉS) értéket, és eltárolja az eredményt a vAA regiszterben. Minden érték egész szám.\nvAA = vBB &amp; 0xFF</item>
 		<item>Kiszámítja a vBB | 0xFF (logikai VAGY), és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB | 0xFF</item>
 		<item>Kiszámítja a vBB ^ 0xFF (kizárólagos VAGY) értéket, és eltárolja az eredményt a vAA regiszterben. Minden érték egész szám.\nvAA = vBB ^ 0xFF</item>
 		<item>A vBB-t balra tolja a 0xFF által megadott bitszámmal, és az eredményt a vAA regiszterben tárolja. Minden érték egész szám.\nvAA = vBB &lt;&lt; 0xFF</item>
@@ -234,50 +460,167 @@
 		<item>Hivatkozást helyez el egy metódusleíróra a vAA regiszterben. A 039-es verzió óta jelen van a Dex-fájlokban.</item>
 		<item>Hivatkozást helyez el a metódus prototípusára a vAA regiszterben. A 039-es verzió óta jelen van a Dex-fájlokban.</item>
 	</string-array>
+	<string-array name="years_or_days">
+		<item>év</item>
+		<item>nap</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>Beépített</item>
+		<item>Egyéni</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>Az APK manifestjéből kinyert információk kiírása.</item>
+		<item>Az APK-ban egy forrás által használt minden konfiguráció kiírása.</item>
+		<item>Az APK manifestjéből kinyert engedélyek kiírása.</item>
+		<item>Az APK erőforrástábla szövegkészletének tartalma.</item>
+		<item>Az APK erőforrástáblájának tartalma.</item>
+		<item>Egy APK &lt;overlayable> forrásainak kiírása.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Világos</item>
+		<item>Sötét</item>
+		<item>Fekete</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>Tartalék mód</item>
+		<item>Deobfuszkálás</item>
+		<item>Unicode escape</item>
+		<item>Inkonzisztens kód megjelenítése</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
+	</string-array>
 	<string-array name="copy_variants">
-        <item>Átnevezés</item>
+		<item>Átnevezés</item>
 		<item>Csak a fájlok átnevezése</item>
-        <item>Csere</item>
-        <item>Kihagyás</item>
-    </string-array>
+		<item>Csere</item>
+		<item>Kihagyás</item>
+	</string-array>
 	<string-array name="menu_pos">
-        <item>Balra</item>
-        <item>Jobbra</item>
-    </string-array>
+		<item>Balra</item>
+		<item>Jobbra</item>
+	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="checksum_names">
-        <item>Csupa nagybetű</item>
-        <item>Elválasztás kettősponttal</item>
-    </string-array>
+		<item>Csupa nagybetű</item>
+		<item>Elválasztás kettősponttal</item>
+	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
 	<string-array name="refresh_res">
-        <item>Új forráskészletek hozzáadása (csak fájlok)</item>
-        <item>Hiányzó forráskészletek törlése</item>
-    </string-array>
-    <string-array name="sort">
-        <item>Név</item>
-        <item>Név megfordítása</item>
-        <item>Típus</item>
-        <item>Típus megfordítása</item>
-        <item>Méret</item>
-        <item>Méret megfordítása</item>
-        <item>Idő</item>
-        <item>Idő megfordítása</item>
-    </string-array>
+		<item>Új forráskészletek hozzáadása (csak fájlok)</item>
+		<item>Hiányzó forráskészletek törlése</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
+	</string-array>
+	<string-array name="sort">
+		<item>Név</item>
+		<item>Név megfordítása</item>
+		<item>Típus</item>
+		<item>Típus megfordítása</item>
+		<item>Méret</item>
+		<item>Méret megfordítása</item>
+		<item>Idő</item>
+		<item>Idő megfordítása</item>
+	</string-array>
 	<string-array name="color_var">
-        <item>HEX-szín</item>
-        <item>Smali kód</item>
-        <item>A,R,G,B</item>
-    </string-array>
-    <string-array name="format">
-        <item>@string/jks</item>
-        <item>@string/pkcs12</item>
-        <item>@string/bks</item>
-        <item>@string/pk8</item>
-    </string-array>
+		<item>HEX-szín</item>
+		<item>Smali kód</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>one</item>
+		<item>two</item>
+		<item>few</item>
+		<item>many</item>
+		<item>other</item>
+	</string-array>
 	<string-array name="resDecodeMode">
 		<item>Nincs visszafejtés</item>
 		<item>Visszafejtés a fő könyvtárba</item>
 		<item>Visszafejtés egy különálló könyvtárba</item>
-        <item>Try to merge packages</item>
+		<item>Próbáld meg egyesíteni a csomagokat</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Szöveg &lt;-> Base64</item>
@@ -308,33 +651,145 @@
 		<item>Lebegő &lt;-> Hex (0x00000000)</item>
 		<item>Szín &lt;-> Smali</item>
 		<item>Szín &lt;-> Decimális</item>
-        <item>Szín &lt;-> A,R,G,B</item>
-        <item>Date &lt;-> Milliseconds</item>
-		<item>Date &lt;-> Hex</item>
+		<item>Szín &lt;-> A,R,G,B</item>
+		<item>Dátum &lt;-> ezredmásodperc</item>
+		<item>Dátum &lt;-> Hex</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Nincs beállítva</item>
-        <item>Automatikus</item>
-        <item>Csak belső</item>
-        <item>Preferált külső</item>
-    </string-array>
+		<item>Automatikus</item>
+		<item>Csak belső</item>
+		<item>Preferált külső</item>
+	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lituania</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+		<item>O\'zbek tili</item>
+		<item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>zh-rTW</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+		<item>uz</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>yyyy/MM/dd HH:mm</item>
+		<item>dd/MM/yyyy HH:mm</item>
+		<item>HH:mm yyyy/MM/dd</item>
+		<item>HH:mm dd/MM/yyyy</item>
+		<item>yy/MM/dd HH:mm</item>
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item>
+		<item>HH:mm dd/MM/yy</item>
+		<item>yyyy.MM.dd HH:mm</item>
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>yy.MM.dd HH:mm</item>
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>yyyy-MM-dd HH:mm</item>
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>yy-MM-dd HH:mm</item>
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
 	<string-array name="xml_format_variants">
 		<item>Alapértelmezett</item>
-		<item>Apktool</item> 
+		<item>Apktool</item>
 		<item>Android Studio</item>
 		<item>Egyszerű trükk</item>
 	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
 	<string-array name="orientation_variants">
 		<item>Alapértelmezett</item>
-		<item>Fekvő</item> 
+		<item>Fekvő</item>
 		<item>Álló</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
 	</string-array>
 	<string-array name="auto_save_variants">
 		<item>Ki</item>
-		<item>15 másodperc</item> 
+		<item>15 másodperc</item>
 		<item>30 másodperc</item>
-		<item>1 perc</item> 
+		<item>1 perc</item>
 		<item>5 perc</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
 	</string-array>
 	<string-array name="to_vector_values">
 		<item>Adaptált kép (gyengébb minőség)</item>
@@ -344,12 +799,120 @@
 	<string-array name="backup_values">
 		<item>Beállítások</item>
 		<item>Könyvjelzők</item>
-        <item>Előzmények keresése/cseréje</item>
+		<item>Előzmények keresése/cseréje</item>
 		<item>Szótárak</item>
-    </string-array>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>metódusok/mezők száma szerint</item>
+		<item>egyenlő részekre</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>Először a dátum</item>
+		<item>Először a méret</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="editor_themes">
 		<item>Alapértelmezett</item>
-		<item>Új</item> 
+		<item>Új</item>
+	</string-array>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>auto-detect</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>he</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pt-PT</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>to</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>as</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>my</item>
+		<item>ps</item>
+		<item>ti</item>
 	</string-array>
 	<string-array name="bing_translator_names">
 		<item>Automatikus</item>
@@ -443,119 +1006,334 @@
 		<item>Pastu</item>
 		<item>Tigrinya</item>
 	</string-array>
-    <string-array name="google_translator_names">
-        <item>Automatikus</item>
-        <item>Afrikai</item>
-        <item>Albán</item>
-        <item>Amhara</item>
-        <item>Arab</item>
-        <item>Örmény</item>
-        <item>Azerbajdzsán</item>
-        <item>Baszk</item>
-        <item>Belarusz</item>
-        <item>Bengáli</item>
-        <item>Bosnyák</item>
-        <item>Bolgár</item>
-        <item>Katalán</item>
-        <item>Cebui</item>
-        <item>Chichewa</item>
-        <item>Egyszerűsített kínai</item>
-        <item>Hagyományos kínai</item>
-        <item>Korzikai</item>
-        <item>Horvát</item>
-        <item>Cseh</item>
-        <item>Dán</item>
-        <item>Holland</item>
-        <item>Angol</item>
-        <item>Eszperantó</item>
-        <item>Észt</item>
-        <item>Fülöp-szigetek</item>
-        <item>Finn</item>
-        <item>Francia</item>
-        <item>Fríz</item>
-        <item>Galíciai</item>
-        <item>Grúz</item>
-        <item>Német</item>
-        <item>Görög</item>
-        <item>Gudzsaráti</item>
-        <item>Haiti kreol</item>
-        <item>Hausza</item>
-        <item>Hawaii</item>
-        <item>Héber</item>
-        <item>Hindi</item>
-        <item>Hmong</item>
-        <item>Magyar</item>
-        <item>Izlandi</item>
-        <item>Ibo</item>
-        <item>Indonéz</item>
-        <item>Ír</item>
-        <item>Olasz</item>
-        <item>Japán</item>
-        <item>Jávai</item>
-        <item>Kannada</item>
-        <item>Kazah</item>
-        <item>Kmer</item>
-        <item>Koreai</item>
-        <item>Kurd (Kurmanji)</item>
-        <item>Kirgiz</item>
-        <item>Laoszi</item>
-        <item>Latin</item>
-        <item>Lett</item>
-        <item>Litván</item>
-        <item>Luxemburgi</item>
-        <item>Makedón</item>
-        <item>Madagaszkári</item>
-        <item>Maláj</item>
-        <item>Malajálam</item>
-        <item>Máltai</item>
-        <item>Új-zélandi bennszülött</item>
-        <item>Maráti</item>
-        <item>Mongol</item>
-        <item>Mianmar (Burmai)</item>
-        <item>Nepáli</item>
-        <item>Norvég</item>
-        <item>Pastu</item>
-        <item>Perzsa</item>
-        <item>Lengyel</item>
-        <item>Portugál</item>
-        <item>Pandzsábi</item>
-        <item>Román</item>
-        <item>Orosz</item>
-        <item>Szamoai</item>
-        <item>Skót Kelta</item>
-        <item>Szerb</item>
-        <item>Sesothói</item>
-        <item>Shona</item>
-        <item>Szindi</item>
-        <item>Szingaléz</item>
-        <item>Szlovák</item>
-        <item>Szlovén</item>
-        <item>Szomáli</item>
-        <item>Spanyol</item>
-        <item>Sundanese</item>
-        <item>Szuahéli</item>
-        <item>Svéd</item>
-        <item>Tádzsik</item>
-        <item>Tamil</item>
-        <item>Telugu</item>
-        <item>Thaiföldi</item>
-        <item>Török</item>
-        <item>Ukrán</item>
-        <item>Urdu</item>
-        <item>Üzbég</item>
-        <item>Vietnámi</item>
-        <item>Walesi</item>
-        <item>Xhosa</item>
-        <item>Jiddis</item>
-        <item>Joruba</item>
-        <item>Zulu</item>
-        <item>Orijá</item>
-        <item>Pandzsábi</item>
-        <item>Ruanda</item>
-        <item>Tatár</item>
-        <item>Türkmén</item>
-        <item>Uigur</item>
-    </string-array>
+	<string-array name="google_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>Automatikus</item>
+		<item>Afrikai</item>
+		<item>Albán</item>
+		<item>Amhara</item>
+		<item>Arab</item>
+		<item>Örmény</item>
+		<item>Azerbajdzsán</item>
+		<item>Baszk</item>
+		<item>Belarusz</item>
+		<item>Bengáli</item>
+		<item>Bosnyák</item>
+		<item>Bolgár</item>
+		<item>Katalán</item>
+		<item>Cebui</item>
+		<item>Chichewa</item>
+		<item>Egyszerűsített kínai</item>
+		<item>Hagyományos kínai</item>
+		<item>Korzikai</item>
+		<item>Horvát</item>
+		<item>Cseh</item>
+		<item>Dán</item>
+		<item>Holland</item>
+		<item>Angol</item>
+		<item>Eszperantó</item>
+		<item>Észt</item>
+		<item>Fülöp-szigetek</item>
+		<item>Finn</item>
+		<item>Francia</item>
+		<item>Fríz</item>
+		<item>Galíciai</item>
+		<item>Grúz</item>
+		<item>Német</item>
+		<item>Görög</item>
+		<item>Gudzsaráti</item>
+		<item>Haiti kreol</item>
+		<item>Hausza</item>
+		<item>Hawaii</item>
+		<item>Héber</item>
+		<item>Hindi</item>
+		<item>Hmong</item>
+		<item>Magyar</item>
+		<item>Izlandi</item>
+		<item>Ibo</item>
+		<item>Indonéz</item>
+		<item>Ír</item>
+		<item>Olasz</item>
+		<item>Japán</item>
+		<item>Jávai</item>
+		<item>Kannada</item>
+		<item>Kazah</item>
+		<item>Kmer</item>
+		<item>Koreai</item>
+		<item>Kurd (Kurmanji)</item>
+		<item>Kirgiz</item>
+		<item>Laoszi</item>
+		<item>Latin</item>
+		<item>Lett</item>
+		<item>Litván</item>
+		<item>Luxemburgi</item>
+		<item>Makedón</item>
+		<item>Madagaszkári</item>
+		<item>Maláj</item>
+		<item>Malajálam</item>
+		<item>Máltai</item>
+		<item>Új-zélandi bennszülött</item>
+		<item>Maráti</item>
+		<item>Mongol</item>
+		<item>Mianmar (Burmai)</item>
+		<item>Nepáli</item>
+		<item>Norvég</item>
+		<item>Pastu</item>
+		<item>Perzsa</item>
+		<item>Lengyel</item>
+		<item>Portugál</item>
+		<item>Pandzsábi</item>
+		<item>Román</item>
+		<item>Orosz</item>
+		<item>Szamoai</item>
+		<item>Skót Kelta</item>
+		<item>Szerb</item>
+		<item>Sesothói</item>
+		<item>Shona</item>
+		<item>Szindi</item>
+		<item>Szingaléz</item>
+		<item>Szlovák</item>
+		<item>Szlovén</item>
+		<item>Szomáli</item>
+		<item>Spanyol</item>
+		<item>Sundanese</item>
+		<item>Szuahéli</item>
+		<item>Svéd</item>
+		<item>Tádzsik</item>
+		<item>Tamil</item>
+		<item>Telugu</item>
+		<item>Thaiföldi</item>
+		<item>Török</item>
+		<item>Ukrán</item>
+		<item>Urdu</item>
+		<item>Üzbég</item>
+		<item>Vietnámi</item>
+		<item>Walesi</item>
+		<item>Xhosa</item>
+		<item>Jiddis</item>
+		<item>Joruba</item>
+		<item>Zulu</item>
+		<item>Orijá</item>
+		<item>Pandzsábi</item>
+		<item>Ruanda</item>
+		<item>Tatár</item>
+		<item>Türkmén</item>
+		<item>Uigur</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>ba</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>my</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>zh</item>
+		<item>cv</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>sjn</item>
+		<item>emj</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>he</item>
+		<item>mrj</item>
+		<item>hi</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jv</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>kazlat</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mhr</item>
+		<item>mn</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>pap</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pa</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tl</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>udm</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>uzbcyr</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>sah</item>
+		<item>yi</item>
+	</string-array>
 	<string-array name="yandex_translator_names">
 		<item>Automatikus</item>
 		<item>Afrikai</item>
@@ -657,5 +1435,71 @@
 		<item>Xhosa</item>
 		<item>Jakut</item>
 		<item>Jiddis</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>Auto</item>
+		<item>Arab</item>
+		<item>Bolgár</item>
+		<item>Kínai</item>
+		<item>Cseh</item>
+		<item>Dán</item>
+		<item>Holland</item>
+		<item>Angol</item>
+		<item>Észt</item>
+		<item>Finn</item>
+		<item>Francia</item>
+		<item>Német</item>
+		<item>Görög</item>
+		<item>Magyar</item>
+		<item>Indonéz</item>
+		<item>Olasz</item>
+		<item>Japán</item>
+		<item>Koreai</item>
+		<item>Lett</item>
+		<item>Litván</item>
+		<item>Norvég (bokmål)</item>
+		<item>Lengyel</item>
+		<item>Portugál</item>
+		<item>Román</item>
+		<item>Orosz</item>
+		<item>Szlovák</item>
+		<item>Szlovén</item>
+		<item>Spanyol</item>
+		<item>Svéd</item>
+		<item>Török</item>
+		<item>Ukrán</item>
 	</string-array>
 </resources>
