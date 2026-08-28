@@ -1,13 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="LangDialogTitle">Wybierz język:</string>
 	<string name="LangSummary">Język aplikacji</string>
 	<string name="LangTitle">Język</string>
-	<string name="aapt2_arch_info">Lista architektur, które należy pozostawić w pliku apk, &lt;b&gt;oddzielona przecinkami&lt;/b&gt;. Wartość domyślna to wszystkie architektury.</string>
+	<string name="aapt2_arch_info">Lista architektur, które należy pozostawić w pliku apk, &lt;b>oddzielona przecinkami&lt;/b>. Wartość domyślna to wszystkie architektury.</string>
 	<string name="aapt2_configs">Ustaw konfiguracje</string>
-	<string name="aapt2_configs_info">&lt;b&gt;Rozdzielana przecinkami&lt;/b&gt; lista konfiguracji do uwzględnienia. Wartość domyślna to wszystkie konfiguracje.</string>
+	<string name="aapt2_configs_info">&lt;b>Rozdzielana przecinkami&lt;/b> lista konfiguracji do uwzględnienia. Wartość domyślna to wszystkie konfiguracje.</string>
 	<string name="aapt2_dens">Ustaw rozdzielczość ekranu</string>
-	<string name="aapt2_dens_info">&lt;b&gt;Rozdzielana przecinkami&lt;/b&gt; lista rozdzielczości ekranu, pod kątem której plik APK będzie zoptymalizowany. Wszystkie zasoby, które nie byłyby wykorzystane na urządzeniach o danej rozdzielczości, zostaną usunięte z APK.</string>
+	<string name="aapt2_dens_info">&lt;b>Rozdzielana przecinkami&lt;/b> lista rozdzielczości ekranu, pod kątem której plik APK będzie zoptymalizowany. Wszystkie zasoby, które nie byłyby wykorzystane na urządzeniach o danej rozdzielczości, zostaną usunięte z APK.</string>
 	<string name="aapts33_warn">Bądź przygotowany, że pliki SDK33 mogą być wolne i niestabilne!</string>
 	<string name="about">O aplikacji</string>
 	<string name="about_summary">Informacje o autorze, przydatne linki</string>
@@ -17,7 +17,7 @@
 	<string name="accessibility_service_toast">Aktywuj usługę Apktool M</string>
 	<string name="act_launch">Aktywność do uruchomienia</string>
 	<string name="act_list">Lista działań</string>
-	<string name="add_dummy">Dodaj "APKTOOL_DUMMY"</string>
+	<string name="add_dummy">Dodaj \"APKTOOL_DUMMY\"</string>
 	<string name="add_dummy_summary">Dodaj brakujące zasoby podczas dekompilacji</string>
 	<string name="add_from">Dodaj od</string>
 	<string name="add_media">Dodaj do galerii multimediów</string>
@@ -68,8 +68,8 @@
 	<string name="background">Tło</string>
 	<string name="background_preview">Tło</string>
 	<string name="backup">Kopia zapasowa</string>
-	<string name="baksmali_registers">Użyj "rejestrów" zamiast "lokalnych"</string>
-	<string name="baksmali_registers_summary">Podczas dekompilacji do smali użyj "rejestrów" zamiast "lokalnych"</string>
+	<string name="baksmali_registers">Użyj \"rejestrów\" zamiast \"lokalnych\"</string>
+	<string name="baksmali_registers_summary">Podczas dekompilacji do smali użyj \"rejestrów\" zamiast \"lokalnych\"</string>
 	<string name="base64">Base64: %s</string>
 	<string name="base64_cert">Base64 certyfikat: %s</string>
 	<string name="base64_decode">Dekoduj Base64</string>
@@ -83,7 +83,7 @@
 	<string name="buffer_size_summary">Rozmiar bufora bajtowego w kilobajtach</string>
 	<string name="build_and_decode">Buduj i dekoduj</string>
 	<string name="build_and_decode_summary">Skonfiguruj kompilację i dekodowanie ustawień.</string>
-	<string name="build_copy_file">Kopiowanie "%1$s"…</string>
+	<string name="build_copy_file">Kopiowanie \"%1$s\"…</string>
 	<string name="build_dex">Buduj dex</string>
 	<string name="build_notification">Powiadomienia</string>
 	<string name="build_notification_summary">Wyślij powiadomienie po zakończeniu kompilacji i dekompilacji</string>
@@ -128,19 +128,19 @@
 	<string name="compare_text">Porównaj tekst</string>
 	<string name="compile_project">Skompiluj ten projekt</string>
 	<string name="complete">Ukończono</string>
-	<string name="complete_msg">Ukończono, oryginał zapisany w "%s"</string>
-	<string name="complete_msg2">Ukończono, plik(i) zapisany(-e) w "%s"</string>
+	<string name="complete_msg">Ukończono, oryginał zapisany w \"%s\"</string>
+	<string name="complete_msg2">Ukończono, plik(i) zapisany(-e) w \"%s\"</string>
 	<string name="completed_error">Operacja zakończona błędami!</string>
 	<string name="completed_success">Operacja zakończona pomyślnie!</string>
 	<string name="compress_level">Poziom kompresji</string>
 	<string name="confirmation">Potwierdzenie</string>
-	<string name="confirmb">Kompilacja projektu "%s"?</string>
+	<string name="confirmb">Kompilacja projektu \"%s\"?</string>
 	<string name="convert_jks">Konwertuj na pk8+x509.pem</string>
 	<string name="converter">Konwerter</string>
 	<string name="copy">Kopiuj</string>
 	<string name="copyOriginalFiles">Sprawdź oryginał</string>
 	<string name="copyOriginalFiles_summary">Oryginalny podpis i manifest są zachowane</string>
-	<string name="copy_here">Skopiować "%s" tutaj?</string>
+	<string name="copy_here">Skopiować \"%s\" tutaj?</string>
 	<string name="copy_id">Kopiuj ID</string>
 	<string name="copy_path">Skopiuj ścieżkę</string>
 	<string name="copy_success">Skopiowano!</string>
@@ -173,13 +173,13 @@
 	<string name="date_format">Format daty</string>
 	<string name="date_format_summary">Wyświetlany format daty</string>
 	<string name="debug_mode">Ustaw apk jako debugowalną</string>
-	<string name="debug_mode_summary">Ustawia android:debuggable na "true" w skompilowanym manifeście APK</string>
+	<string name="debug_mode_summary">Ustawia android:debuggable na \"true\" w skompilowanym manifeście APK</string>
 	<string name="dec_indent">Zmniejsz wcięcie</string>
 	<string name="decode_run_title">Dekompilacja…</string>
 	<string name="decode_smali">Dekompilacja smali</string>
 	<string name="decoding_shared_library">Dekodowanie biblioteki współdzielonej %1$s, pkgId: %2$d</string>
 	<string name="decompile">Dekompiluj</string>
-	<string name="decompile_all_dex">Dekompiluj wszystkie "*.dex"</string>
+	<string name="decompile_all_dex">Dekompiluj wszystkie \"*.dex\"</string>
 	<string name="decompile_dex">Dekompiluj klasy*.dex</string>
 	<string name="decompile_multi_res">Dekompilacja dodatkowych zasobów</string>
 	<string name="decompile_res">Dekompiluj zasoby</string>
@@ -187,8 +187,8 @@
 	<string name="default_key_summary">Domyślny klucz podpisu</string>
 	<string name="default_signature_file">Domyślny podpis</string>
 	<string name="delete">Usuń</string>
-	<string name="delete_build">Usuń folder "build".</string>
-	<string name="delete_build_summary">Po kompilacji usuń folder "build".</string>
+	<string name="delete_build">Usuń folder \"build\".</string>
+	<string name="delete_build_summary">Po kompilacji usuń folder \"build\".</string>
 	<string name="delete_files_cm">Usuń pliki po kompresji</string>
 	<string name="delete_orig">Usuń oryginał</string>
 	<string name="deletion">Usuwanie %s</string>
@@ -204,7 +204,7 @@
 	<string name="dex_version">Wersja DEX</string>
 	<string name="dexs_info">Informacja dex</string>
 	<string name="diff_resources">Porównaj zasoby (aapt2)</string>
-	<string name="diff_resources2">Porównaj zasoby "%2$s" z zasobami "%1$s"</string>
+	<string name="diff_resources2">Porównaj zasoby \"%2$s\" z zasobami \"%1$s\"</string>
 	<string name="dir">Folder</string>
 	<string name="dirf">Folder: %s</string>
 	<string name="dirs_size">Rozmiar folderu</string>
@@ -217,7 +217,7 @@
 	<string name="dont_reset_cpb_summary">Przycisk wklejania podczas kopiowania plików zostanie zresetowany dopiero po długim naciśnięciu</string>
 	<string name="dont_work_aapt2">To nie działa z aapt2</string>
 	<string name="double_exit">Kliknij dwukrotnie, aby wyjść</string>
-	<string name="double_exit_summary">Naciśnij dwukrotnie "Wstecz", aby wyjść z aplikacji</string>
+	<string name="double_exit_summary">Naciśnij dwukrotnie \"Wstecz\", aby wyjść z aplikacji</string>
 	<string name="down">W dół</string>
 	<string name="down_for">Pobierz dla %s</string>
 	<string name="down_started">Rozpoczęło się pobieranie pliku</string>
@@ -259,20 +259,20 @@
 	<string name="editor_xml_format_summary">Opcja formatowania XML w celu wyrównania kodu</string>
 	<string name="empty">Pusty</string>
 	<string name="enc_res">Szyfruj zasoby</string>
-	<string name="enc_success">Zasoby zostały zaszyfrowane, plik został zapisany jako "%s"</string>
+	<string name="enc_success">Zasoby zostały zaszyfrowane, plik został zapisany jako \"%s\"</string>
 	<string name="encoding">Kodowanie</string>
 	<string name="encript_notice">Po zaszyfrowaniu zasobów aplikacja może częściowo lub całkowicie nie działać!</string>
 	<string name="enter_man">Wprowadź ręcznie</string>
 	<string name="enter_password">Wprowadź hasło:</string>
 	<string name="enter_path">Wprowadź ścieżkę</string>
-	<string name="err_collect_failed">Nie udało się pobrać certyfikatów z "%s", wpisCerts ma wartość null!</string>
+	<string name="err_collect_failed">Nie udało się pobrać certyfikatów z \"%s\", wpisCerts ma wartość null!</string>
 	<string name="err_encex">Wyjątek kodowania: %s</string>
-	<string name="err_failed_read">Nie można odczytać "%1$s" w "%2$s"</string>
-	<string name="err_mismatched_certs">Pakiet ma niezgodne certyfikaty przy wpisie "%s", ignorować!</string>
-	<string name="err_no_certs">Pakiet "%1$s" nie ma certyfikatów przy wpisie "%2$s"!</string>
+	<string name="err_failed_read">Nie można odczytać \"%1$s\" w \"%2$s\"</string>
+	<string name="err_mismatched_certs">Pakiet ma niezgodne certyfikaty przy wpisie \"%s\", ignorować!</string>
+	<string name="err_no_certs">Pakiet \"%1$s\" nie ma certyfikatów przy wpisie \"%2$s\"!</string>
 	<string name="err_no_certs2">Pakiet nie posiada certyfikatów, ignorować!</string>
-	<string name="err_no_manifest">Pakiet "%s" nie ma manifestu!</string>
-	<string name="err_not_exists">"%s" nie istnieje lub nie można go odczytać!</string>
+	<string name="err_no_manifest">Pakiet \"%s\" nie ma manifestu!</string>
+	<string name="err_not_exists">\"%s\" nie istnieje lub nie można go odczytać!</string>
 	<string name="err_save">Błąd zapisu: %s</string>
 	<string name="error">Błąd</string>
 	<string name="error_try_again">Błąd. Spróbuj ponownie.</string>
@@ -285,7 +285,7 @@
 	<string name="extract">Wyodrębnij</string>
 	<string name="extract_icon">Wyodrębnij ikonę</string>
 	<string name="extraction">Wyodrębnianie: %s</string>
-	<string name="failed_open">Nie można otworzyć "%s"!</string>
+	<string name="failed_open">Nie można otworzyć \"%s\"!</string>
 	<string name="failed_openset">Nie udało się otworzyć ustawień!</string>
 	<string name="faq">FAQ</string>
 	<string name="faq_summary">Pomoc dotycząca obsługi programu</string>
@@ -299,9 +299,9 @@
 	<string name="file_changed">Plik zmieniony, zapisać zmiany?</string>
 	<string name="file_download">Pobieranie pliku: %s</string>
 	<string name="file_filter">Filtr plików</string>
-	<string name="file_filter_help">Użyj szablonów ścieżek i/lub nazw plików, na przykład: "*.smali", "*/drawable*/*.xml", "assets/*". Nie używaj wyrażeń regularnych.</string>
-	<string name="file_is_changed">Plik "%s" został zmieniony na urządzeniu. Załadować plik ponownie?</string>
-	<string name="file_not_found">Plik "%s" nie został znaleziony</string>
+	<string name="file_filter_help">Użyj szablonów ścieżek i/lub nazw plików, na przykład: \"*.smali\", \"*/drawable*/*.xml\", \"assets/*\". Nie używaj wyrażeń regularnych.</string>
+	<string name="file_is_changed">Plik \"%s\" został zmieniony na urządzeniu. Załadować plik ponownie?</string>
+	<string name="file_not_found">Plik \"%s\" nie został znaleziony</string>
 	<string name="file_nw">Plik nie nadaje się do zapisu!</string>
 	<string name="file_size">Rozmiar pliku</string>
 	<string name="file_size_summary">Wyświetlany format rozmiaru pliku</string>
@@ -340,11 +340,11 @@
 	<string name="group">Grupa</string>
 	<string name="hash">Kod hash</string>
 	<string name="hash_code">Kod Hash: 0x%s</string>
-	<string name="heap_help">Aby naprawić błąd OOM, zwiększ rozmiar pamięci sterty.&lt;br&gt;&lt;br&gt;Aby zwiększyć rozmiar pamięci sterty, &lt;b&gt;potrzebujesz uprawnień administratora&lt;/b&gt;!&lt;br&gt;&lt;br&gt;Musisz otworzyć plik &lt;b&gt;/system/build.prop&lt;/b&gt; i dodać/zmienić w nim linię &lt;b&gt;dalvik.vm.heapsize = 512m&lt;/b&gt; (512m to rozmiar sterty w megabajtach).&lt;br&gt;&lt;br&gt;&lt;small&gt;Tę operację można wykonać przy użyciu Apktool M tylko wtedy, gdy partycja /system zostanie ponownie zamontowana z uprawnieniami do zapisu, w przeciwnym razie konieczne będzie użycie innych narzędzi.&lt;br&gt;&lt;br&gt;Czasami w pliku są dwie takie linie, jedną z nich trzeba usunąć.&lt;/small&gt;</string>
+	<string name="heap_help">Aby naprawić błąd OOM, zwiększ rozmiar pamięci sterty.&lt;br>&lt;br>Aby zwiększyć rozmiar pamięci sterty, &lt;b>potrzebujesz uprawnień administratora&lt;/b>!&lt;br>&lt;br>Musisz otworzyć plik &lt;b>/system/build.prop&lt;/b> i dodać/zmienić w nim linię &lt;b>dalvik.vm.heapsize = 512m&lt;/b> (512m to rozmiar sterty w megabajtach).&lt;br>&lt;br>&lt;small>Tę operację można wykonać przy użyciu Apktool M tylko wtedy, gdy partycja /system zostanie ponownie zamontowana z uprawnieniami do zapisu, w przeciwnym razie konieczne będzie użycie innych narzędzi.&lt;br>&lt;br>Czasami w pliku są dwie takie linie, jedną z nich trzeba usunąć.&lt;/small></string>
 	<string name="heap_info">Używana pamięć: %1$dMB.\nDostępna pamięć: %2$dMB.\nRozmiar sterty: %3$dMB.</string>
 	<string name="heap_memory">Pamięć sterty</string>
 	<string name="help_templates">Szablony pomocnicze</string>
-	<string name="help_templates_text">Aby zastąpić spacje w szablonach "LABEL", "DEFAULT_LABEL", "VERSION", a także separatory w szablonach "ARCH", "DATE" i "TIME", na przykład podkreśleniem "_", użyj następującego formatu: {LABEL_}, {DEFAULT_LABEL_}, {VERSION_}, {ARCH_}, {DATE_}, {TIME_}. Wartość może być dowolna.</string>
+	<string name="help_templates_text">Aby zastąpić spacje w szablonach \"LABEL\", \"DEFAULT_LABEL\", \"VERSION\", a także separatory w szablonach \"ARCH\", \"DATE\" i \"TIME\", na przykład podkreśleniem \"_\", użyj następującego formatu: {LABEL_}, {DEFAULT_LABEL_}, {VERSION_}, {ARCH_}, {DATE_}, {TIME_}. Wartość może być dowolna.</string>
 	<string name="hidden_files">Ukryte pliki</string>
 	<string name="hidden_files_summary">Pokaż ukryte pliki i foldery</string>
 	<string name="hide">Ukryj</string>
@@ -354,11 +354,11 @@
 	<string name="ignore_indent">Ignoruj wcięcia</string>
 	<string name="image_damage">Obraz jest uszkodzony!</string>
 	<string name="imgs_backup">Zapisz oryginalny obraz</string>
-	<string name="imgs_backup_summary">Zapisz oryginalny obraz podczas przetwarzania za pomocą funkcji "%1$s", "%2$s", "%3$s" i "%4$s"</string>
+	<string name="imgs_backup_summary">Zapisz oryginalny obraz podczas przetwarzania za pomocą funkcji \"%1$s\", \"%2$s\", \"%3$s\" i \"%4$s\"</string>
 	<string name="import_framework">Importuj jako framework</string>
 	<string name="import_jks">Importuj klucz podpisu</string>
 	<string name="import_scheme">Importuj jako schemat kolorów</string>
-	<string name="import_scheme_confirm">Zaimportować "%s" jako schemat kolorów edytora?</string>
+	<string name="import_scheme_confirm">Zaimportować \"%s\" jako schemat kolorów edytora?</string>
 	<string name="inc_indent">Zwiększ wcięcie</string>
 	<string name="inst_date">Data instalacji</string>
 	<string name="inst_update">Ostatnia aktualizacja</string>
@@ -398,9 +398,9 @@
 	<string name="kill_sign_notice">Aplikacja przetwarzana przez tę funkcję nie będzie mogła działać na wersjach Androida niższych niż 5!</string>
 	<string name="kill_sign_orig">Dodaj oryginalną aplikację, aby sprawdzić integralność</string>
 	<string name="kill_sign_rand">Losowa nazwa klasy</string>
-	<string name="label_config">Konfiguracja: "%s"</string>
-	<string name="label_den">Rozdzielczość ekranu: "%s"</string>
-	<string name="label_libs">Zestawy bibliotek: "%s"</string>
+	<string name="label_config">Konfiguracja: \"%s\"</string>
+	<string name="label_den">Rozdzielczość ekranu: \"%s\"</string>
+	<string name="label_libs">Zestawy bibliotek: \"%s\"</string>
 	<string name="launch_app">Start</string>
 	<string name="launch_fail">Uruchomienie nie powiodło się!</string>
 	<string name="lib_set">Zestawy bibliotek</string>
@@ -415,7 +415,7 @@
 	<string name="list_strings">Stringi</string>
 	<string name="load_binaries">Wbudowane pliki binarne aapt/aapt2 mogą nie być kompatybilne z twoim systemem. Możesz je zaktualizować teraz lub zrobić to później w ustawieniach. Do pobrania wymagane jest połączenie internetowe. Czy chcesz pobrać teraz?</string>
 	<string name="load_binaries2">Musisz pobrać pliki aapt/aapt2! Możesz je pobrać teraz lub zrobić to później w ustawieniach. Do pobrania wymagane jest połączenie internetowe. Czy chcesz pobrać teraz?</string>
-	<string name="load_signature_file_fail">Nie można załadować pliku podpisu "%1$s".</string>
+	<string name="load_signature_file_fail">Nie można załadować pliku podpisu \"%1$s\".</string>
 	<string name="locality_name">Nazwa lokalizacji:</string>
 	<string name="lower_case">małe litery</string>
 	<string name="mBakdeb">Informacje o debugowaniu</string>
@@ -452,31 +452,31 @@
 	<string name="mauto_update">Sprawdź aktualizacje</string>
 	<string name="mauto_update_summary">Sprawdź dostępność aktualizacji przy uruchomieniu</string>
 	<string name="max_value">Maksymalna wartość</string>
-	<string name="mbase_dir">Katalog bazowy: "%s"</string>
+	<string name="mbase_dir">Katalog bazowy: \"%s\"</string>
 	<string name="mchanges">Co nowego?</string>
 	<string name="mchanges_summary">Zmiany w tej wersji</string>
 	<string name="mcheck_update">Sprawdź teraz</string>
 	<string name="mcheck_update_summary">Sprawdź aktualizację teraz</string>
-	<string name="mcleaning">Czyszczenie plików w "%s"</string>
-	<string name="mcleaning_manifest">Czyszczenie "AndroidManifest.xml"</string>
+	<string name="mcleaning">Czyszczenie plików w \"%s\"</string>
+	<string name="mcleaning_manifest">Czyszczenie \"AndroidManifest.xml\"</string>
 	<string name="mcolor_properties">Projekt: %1$s\nBieżący katalog: %2$s\nRozmiar: %3$s\nWszystkie kolory: %4$s\nEdytowane kolory: %5$s</string>
 	<string name="mcompress">Kompresuj</string>
 	<string name="mcompression">Kompresja</string>
-	<string name="mdebug_rm">usuń "android:debuggable"</string>
+	<string name="mdebug_rm">usuń \"android:debuggable\"</string>
 	<string name="menu_position">Pozycja menu</string>
 	<string name="menu_position_summary">Pozycja menu kontekstowego pliku</string>
 	<string name="merge_dex">Połącz dex</string>
 	<string name="merge_dex_error">Łączenie plików nie będzie możliwe, przekroczono dozwoloną liczbę metod/pól!</string>
 	<string name="methods_count">Liczba metod</string>
 	<string name="mextract_zip">Wyodrębnij tutaj</string>
-	<string name="mextract_zip_to">Wyodrębnij do "%s"</string>
+	<string name="mextract_zip_to">Wyodrębnij do \"%s\"</string>
 	<string name="mime_type">Typ Mime</string>
 	<string name="minfo">Informacje</string>
 	<string name="miui_warn_message">Wygląda na to, że masz MIUI! Polecam otworzyć ustawienia programistyczne i wyłączyć optymalizację MIUI. Jeśli tego nie zrobisz, możesz mieć problemy z działaniem aplikacji, błędy i awarie. Proszę nie pisać do mnie w sprawie błędów programu, jeśli przeczytałeś tę wiadomość i nie zastosowałeś się do moich rad!</string>
 	<string name="miui_warn_title">Wykryto MIUI!</string>
 	<string name="mlong">Długi</string>
 	<string name="mmerge">Łącz</string>
-	<string name="mmerge_json">Scal pliki "apktool.json".</string>
+	<string name="mmerge_json">Scal pliki \"apktool.json\".</string>
 	<string name="modified">Ostatnio zmodyfikowany</string>
 	<string name="monochrome">Monochromia</string>
 	<string name="mopen_site">Otwórz witrynę</string>
@@ -487,9 +487,9 @@
 	<string name="moptimize_hint">Nazwy lub wzory nazw</string>
 	<string name="moptimize_info">Określ nazwy plików lub wzorce nazw plików, których nie chcesz kompresować. Każdą nazwę lub wzorzec wpisz w nowym wierszu. Nie używaj wyrażeń regularnych.</string>
 	<string name="moriginal">Oryginalny</string>
-	<string name="move_here">Przenieść "%s" tutaj?</string>
+	<string name="move_here">Przenieść \"%s\" tutaj?</string>
 	<string name="moving">Przenieś</string>
-	<string name="moving_file">Przenoszenie "%s"…</string>
+	<string name="moving_file">Przenoszenie \"%s\"…</string>
 	<string name="mpatcher">MPatcher</string>
 	<string name="mpatcher_down">Pobierz MPatcher</string>
 	<string name="mpatcher_down_summary">MPatcher — program do uruchamiania skryptów powłoki</string>
@@ -502,9 +502,9 @@
 	<string name="mplugin_not_installed_summary">Kliknij, aby pobrać wtyczkę</string>
 	<string name="mprepare">Przygotowanie…</string>
 	<string name="mprocessed">Przetworzone pliki: %d</string>
-	<string name="mprocessing">Przetwarzanie katalogu "%s"</string>
-	<string name="mprocessing_error">Błąd przetwarzania "%1$s", kod błędu %2$d</string>
-	<string name="mprocessing_file">Przetwarzanie pliku "%s"</string>
+	<string name="mprocessing">Przetwarzanie katalogu \"%s\"</string>
+	<string name="mprocessing_error">Błąd przetwarzania \"%1$s\", kod błędu %2$d</string>
+	<string name="mprocessing_file">Przetwarzanie pliku \"%s\"</string>
 	<string name="mreset_app_files">Zresetować wszystkie pliki aplikacji: frameworki, aapt itp.? Ustawienia nie zostaną zresetowane.</string>
 	<string name="mreset_app_settings">Zresetować wszystkie ustawienia aplikacji?</string>
 	<string name="mselect">Wybierz</string>
@@ -513,9 +513,9 @@
 	<string name="mselect_to">Wybierz do tego</string>
 	<string name="mshort">Krótki</string>
 	<string name="mshow_more_options">Więcej</string>
-	<string name="msplit_rm">usuń "android:isSplitRequired"</string>
-	<string name="msui_rm">usuń "android:sharedUserId"</string>
-	<string name="mtest_rm">usuń "android:testOnly"</string>
+	<string name="msplit_rm">usuń \"android:isSplitRequired\"</string>
+	<string name="msui_rm">usuń \"android:sharedUserId\"</string>
+	<string name="mtest_rm">usuń \"android:testOnly\"</string>
 	<string name="mtool_repl">Wymiana narzędzia</string>
 	<string name="mtool_repl_summary">Zastąpienie aapt, aapt2</string>
 	<string name="mtr_add_dict">Dodaj słownik</string>
@@ -525,7 +525,7 @@
 	<string name="mtr_check_source">Sprawdź zgodność z językiem źródłowym</string>
 	<string name="mtr_check_source_info">Jeśli wybrano określony język źródłowy, program spróbuje sprawdzić stringi pod kątem zgodności z tym językiem. Stringi w innych językach nie będą tłumaczone.</string>
 	<string name="mtr_combine">Połącz, jeśli istnieje</string>
-	<string name="mtr_confirmation">Czy na pewno chcesz usunąć plik "%1$s/%2$s.xml"?</string>
+	<string name="mtr_confirmation">Czy na pewno chcesz usunąć plik \"%1$s/%2$s.xml\"?</string>
 	<string name="mtr_create">Utwórz</string>
 	<string name="mtr_create_dict">Utwórz słownik</string>
 	<string name="mtr_deepl">DeepL</string>
@@ -539,7 +539,7 @@
 	<string name="mtr_google">Google</string>
 	<string name="mtr_google_web">Google Web</string>
 	<string name="mtr_hide_trans">Ukryj przetłumaczone</string>
-	<string name="mtr_info">Jeśli zasób ciągu już istnieje, zostanie nadpisany. Jeżeli nie ma takiego katalogu, zostanie on utworzony. Nazwa katalogu musi zaczynać się od "values".</string>
+	<string name="mtr_info">Jeśli zasób ciągu już istnieje, zostanie nadpisany. Jeżeli nie ma takiego katalogu, zostanie on utworzony. Nazwa katalogu musi zaczynać się od \"values\".</string>
 	<string name="mtr_invalid_res">nieprawidłowa odpowiedź serwera</string>
 	<string name="mtr_line_num">Numery linii</string>
 	<string name="mtr_mark_trans">Oznacz jako przetłumaczone</string>
@@ -572,7 +572,7 @@
 	<string name="mupdate_error">Błąd podczas sprawdzania aktualizacji! Spróbuj później!</string>
 	<string name="mupdate_get">Aktualizuj teraz</string>
 	<string name="mupdate_inbrowser">Otwórz w przeglądarce</string>
-	<string name="mupdate_message">&lt;b&gt;Nowa wersja:&lt;/b&gt; %1$s&lt;br&gt;&lt;br&gt;&lt;b&gt;Data:&lt;/b&gt; %2$s&lt;br&gt;&lt;br&gt;&lt;b&gt;Rozmiar:&lt;/b&gt; %3$s&lt;br&gt;&lt;br&gt;&lt;b&gt;Dziennik zmian:&lt;/b&gt;&lt;br&gt;%4$s</string>
+	<string name="mupdate_message">&lt;b>Nowa wersja:&lt;/b> %1$s&lt;br>&lt;br>&lt;b>Data:&lt;/b> %2$s&lt;br>&lt;br>&lt;b>Rozmiar:&lt;/b> %3$s&lt;br>&lt;br>&lt;b>Dziennik zmian:&lt;/b>&lt;br>%4$s</string>
 	<string name="mupdate_notf">Masz aktualną wersję!</string>
 	<string name="mupdate_pref">Aktualizacja programu</string>
 	<string name="mupdate_pref_summary">Ustawienia aktualizacji</string>
@@ -584,9 +584,9 @@
 	<string name="new_file">Nowy plik</string>
 	<string name="no">Nie</string>
 	<string name="no_data">brak dostępnych danych</string>
-	<string name="no_media">Utwórz plik ".nomedia".</string>
+	<string name="no_media">Utwórz plik \".nomedia\".</string>
 	<string name="no_open">Brak otwartych plików!</string>
-	<string name="not_directory">"%1$s" nie jest katalogiem!</string>
+	<string name="not_directory">\"%1$s\" nie jest katalogiem!</string>
 	<string name="not_found">Nic nie znaleziono!</string>
 	<string name="not_match">nie pasuje</string>
 	<string name="not_remind">Nie przypominaj</string>
@@ -605,13 +605,13 @@
 	<string name="open_in_editor">Otwórz w edytorze</string>
 	<string name="optimization_notice">Aby program działał w tle (gdy jest zminimalizowany), wskazane jest dodanie go do wyjątków optymalizatora systemu. Aplikacja będzie działać w tle tylko wtedy, gdy uruchomisz ją samodzielnie! Czy chcesz to zrobić?</string>
 	<string name="optimize_battery">Optymalizacja wydajności baterii</string>
-	<string name="option_enabled">Opcja "%s" jest włączona</string>
+	<string name="option_enabled">Opcja \"%s\" jest włączona</string>
 	<string name="organization_name">Nazwa organizacji:</string>
 	<string name="organization_unit">Jednostka organizacyjna:</string>
 	<string name="originalf">Oryginał: %s</string>
 	<string name="others">Inny</string>
 	<string name="output_directory">Katalog wyjściowy</string>
-	<string name="output_directory_not_extsts">Katalog wyjściowy "%1$s" nie istnieje i nie można go utworzyć!</string>
+	<string name="output_directory_not_extsts">Katalog wyjściowy \"%1$s\" nie istnieje i nie można go utworzyć!</string>
 	<string name="output_directory_not_set">Najpierw musisz ustawić katalog wyjściowy!</string>
 	<string name="output_directory_summary">Ustaw domyślny katalog wyjściowy</string>
 	<string name="overcompress">nadmiernie skompresuj wszystkie pliki</string>
@@ -622,10 +622,10 @@
 	<string name="package_info2">%1$s (pkgId: %2$d, całkowite zasoby: %3$d, pakiet główny)</string>
 	<string name="packages">Pakiety zasobów</string>
 	<string name="paste">Wklej</string>
-	<string name="patcher_apk">APK: "%s"</string>
+	<string name="patcher_apk">APK: \"%s\"</string>
 	<string name="patcher_patch">Łatka</string>
-	<string name="patcher_patchf">Łatka: "%s"</string>
-	<string name="patcher_project">Projekt: "%s"</string>
+	<string name="patcher_patchf">Łatka: \"%s\"</string>
+	<string name="patcher_project">Projekt: \"%s\"</string>
 	<string name="patcher_select">Wybierz łatkę</string>
 	<string name="patcher_select_error">To nie jest łatka!</string>
 	<string name="path_app">Ścieżka</string>
@@ -638,11 +638,11 @@
 	<string name="play">Play</string>
 	<string name="player">Player</string>
 	<string name="please_update_your_android">Zaktualizuj swój system Android do wersji 4.3 lub nowszej!</string>
-	<string name="plugin_modif">Wtyczka UnApkm jest podpisana cudzym podpisem. Prawdopodobnie wtyczka została zmodyfikowana. Zdecydowanie zaleca się usunięcie wtyczki i pobranie oryginalnego pliku ze strony programisty. Klikając "Nie przypominaj", kontynuujesz korzystanie ze zmodyfikowanej wtyczki na własne ryzyko!</string>
+	<string name="plugin_modif">Wtyczka UnApkm jest podpisana cudzym podpisem. Prawdopodobnie wtyczka została zmodyfikowana. Zdecydowanie zaleca się usunięcie wtyczki i pobranie oryginalnego pliku ze strony programisty. Klikając \"Nie przypominaj\", kontynuujesz korzystanie ze zmodyfikowanej wtyczki na własne ryzyko!</string>
 	<string name="pname_app">Pakiet</string>
 	<string name="pngquant">PNGQuant</string>
 	<string name="preview">Podgląd</string>
-	<string name="previewf">Podgląd "%s"</string>
+	<string name="previewf">Podgląd \"%s\"</string>
 	<string name="properties">Właściwości</string>
 	<string name="protection">Ochrona</string>
 	<string name="protection_info">Wykryto oznaki ochrony apk: %s. Należy pamiętać, że wykrywanie odbywa się na podstawie znaków pośrednich, więc może to być błąd!</string>
@@ -663,7 +663,7 @@
 	<string name="rem_path">Zapamiętaj ścieżkę</string>
 	<string name="rem_path_summary">Zapamiętaj ostatnią ścieżkę katalogu</string>
 	<string name="rename">Przemianuj</string>
-	<string name="rename_help">{NAME} - oryginalna nazwa pliku bez rozszerzenia.\n{EXT} - oryginalne rozszerzenie pliku.\n{DATE} - data w formacie "%1$s".\n{TIME} - godzina w formacie "%2$s".\n{0} - liczba zaczynająca się od "0".</string>
+	<string name="rename_help">{NAME} - oryginalna nazwa pliku bez rozszerzenia.\n{EXT} - oryginalne rozszerzenie pliku.\n{DATE} - data w formacie \"%1$s\".\n{TIME} - godzina w formacie \"%2$s\".\n{0} - liczba zaczynająca się od \"0\".</string>
 	<string name="repeat">Powtórz</string>
 	<string name="replace">Zastąp</string>
 	<string name="replace_adaptive">zastąp ikonę adaptacyjną</string>
@@ -671,8 +671,8 @@
 	<string name="replace_to_archive">Zastąp</string>
 	<string name="report_descr">Proszę krótko opisać swoje działania, po których wystąpił błąd</string>
 	<string name="report_error">Zgłoś tę aplikację do Apktool, aby uzyskać poprawkę: https://github.com/iBotPeaches/Apktool/issues/1728</string>
-	<string name="res_added">Dodano zasób "%s"</string>
-	<string name="res_removed">Usunięto zasób "%s"</string>
+	<string name="res_added">Dodano zasób \"%s\"</string>
+	<string name="res_removed">Usunięto zasób \"%s\"</string>
 	<string name="reset_fab">Zresetować pozycję pływającego przycisku?</string>
 	<string name="reset_files">Zresetuj pliki</string>
 	<string name="reset_remind">Zresetuj przypomnienia</string>
@@ -693,7 +693,7 @@
 	<string name="scaling_summary">Skaluj dwoma palcami</string>
 	<string name="scan_mode">Tryb nawigacji</string>
 	<string name="scoped_storage">Magazynowanie o ograniczonym zakresie</string>
-	<string name="scoped_storage_msg">W Androidzie 11 wprowadzono nowy sposób zarządzania plikami o nazwie "Pamięć o określonym zakresie". Musisz udzielić specjalnego pozwolenia!</string>
+	<string name="scoped_storage_msg">W Androidzie 11 wprowadzono nowy sposób zarządzania plikami o nazwie \"Pamięć o określonym zakresie\". Musisz udzielić specjalnego pozwolenia!</string>
 	<string name="scoped_storage_title">Zmiany w androidzie 11</string>
 	<string name="screen_on">Nie wyłączaj ekranu</string>
 	<string name="screen_on_summary">Trzymaj ekran zawsze włączony</string>
@@ -703,7 +703,7 @@
 	<string name="search_call">Znajdź połączenia</string>
 	<string name="search_call_get">Znajdź opcję odbierania połączeń</string>
 	<string name="search_call_put">Znajdź połączenia typu put</string>
-	<string name="search_class">Wyszukaj klasę "%s"</string>
+	<string name="search_class">Wyszukaj klasę \"%s\"</string>
 	<string name="search_files">Wyszukaj pliki</string>
 	<string name="search_hint">Tutaj wpisz tekst</string>
 	<string name="search_info">Wyszukiwanie treści odbywa się w plikach z następującymi rozszerzeniami: %s.\nObsługiwane wyszukiwanie wielowierszowe.</string>
@@ -726,7 +726,7 @@
 	<string name="send_log">Wyślij logi do programisty</string>
 	<string name="server">Serwer</string>
 	<string name="set_as_output_directory">Ustaw jako katalog wyjściowy</string>
-	<string name="set_enl">Wartość "android:extractNativeLibs":</string>
+	<string name="set_enl">Wartość \"android:extractNativeLibs\":</string>
 	<string name="sets_nf">Nie znaleziono zestawów bibliotek!</string>
 	<string name="settings">Ustawienia</string>
 	<string name="share_type">Podczas wysyłania rozważ typ pliku</string>
@@ -736,7 +736,7 @@
 	<string name="show">Pokaż</string>
 	<string name="show_errors">Pokaż błędy</string>
 	<string name="show_errors_summary">Pokaż błędy projektu</string>
-	<string name="show_exit">Pokaż przycisk "Wyjdź".</string>
+	<string name="show_exit">Pokaż przycisk \"Wyjdź\".</string>
 	<string name="show_exit_summary">Pokaż przycisk wyjścia na dolnym panelu</string>
 	<string name="show_line_numbers_summary">Pokaż numery linii</string>
 	<string name="show_orig">Pokaż oryginał</string>
@@ -744,7 +744,7 @@
 	<string name="sign_algorithm">Algorytm podpisu: %s</string>
 	<string name="sign_bits">Bity podpisu: %s</string>
 	<string name="sign_crc32">Podpis CRC32: %s</string>
-	<string name="sign_done">Podpis jest kompletny, a plik wyjściowy to "%1$s".</string>
+	<string name="sign_done">Podpis jest kompletny, a plik wyjściowy to \"%1$s\".</string>
 	<string name="sign_match">Podpisy pasują</string>
 	<string name="sign_md5">Podpis MD5: %s</string>
 	<string name="sign_run_title">Podpisywanie…</string>
@@ -753,11 +753,11 @@
 	<string name="sign_sha256">Podpis SHA-256: %s</string>
 	<string name="sign_sha384">Podpis SHA-384: %s</string>
 	<string name="sign_sha512">Podpis SHA-512: %s</string>
-	<string name="sign_ver_info">Wersje podpisu dla wersji Androida:\nV1 – pierwsza opcja podpisu, jedyna do Androida 7.0;\nV2 – dodana do Androida 7.0;\n\nWersję podpisu należy stosować w oparciu o minimalną/docelową wersję Androida wymaganą dla aplikacji. Jeśli wersja docelowa to 30+ (Android 11+), wymagana jest sygnatura V2.\n\nJeżeli nie zaznaczysz opcji "Zapisz", wybrane schematy zostaną użyte tylko tym razem.</string>
-	<string name="sign_ver_info2">Wersje podpisu dla wersji Androida:\nV1 – pierwsza opcja podpisu, jedyna do Androida 7.0;\nV2 – dodana do Androida 7.0;\nV3 – dodana do Androida 9.0;\nV4 – dodana do Androida 11;\n\nWersję podpisu należy stosować w oparciu o minimalną/docelową wersję Androida wymaganą dla aplikacji. Jeśli wersja docelowa to 30+ (Android 11+), wymagana jest sygnatura V2. V2 lub V3 muszą być używane razem z sygnaturą V4. Wersja V4 jest obecnie prawie nigdy nie używana.\n\nJeżeli nie zaznaczysz pola "Zapisz", wybrane schematy zostaną użyte tylko tym razem.</string>
+	<string name="sign_ver_info">Wersje podpisu dla wersji Androida:\nV1 – pierwsza opcja podpisu, jedyna do Androida 7.0;\nV2 – dodana do Androida 7.0;\n\nWersję podpisu należy stosować w oparciu o minimalną/docelową wersję Androida wymaganą dla aplikacji. Jeśli wersja docelowa to 30+ (Android 11+), wymagana jest sygnatura V2.\n\nJeżeli nie zaznaczysz opcji \"Zapisz\", wybrane schematy zostaną użyte tylko tym razem.</string>
+	<string name="sign_ver_info2">Wersje podpisu dla wersji Androida:\nV1 – pierwsza opcja podpisu, jedyna do Androida 7.0;\nV2 – dodana do Androida 7.0;\nV3 – dodana do Androida 9.0;\nV4 – dodana do Androida 11;\n\nWersję podpisu należy stosować w oparciu o minimalną/docelową wersję Androida wymaganą dla aplikacji. Jeśli wersja docelowa to 30+ (Android 11+), wymagana jest sygnatura V2. V2 lub V3 muszą być używane razem z sygnaturą V4. Wersja V4 jest obecnie prawie nigdy nie używana.\n\nJeżeli nie zaznaczysz pola \"Zapisz\", wybrane schematy zostaną użyte tylko tym razem.</string>
 	<string name="signature">Sygnatura</string>
 	<string name="signature_file">Plik podpisu</string>
-	<string name="signature_file_missing">Nie znaleziono pliku podpisu "%1$s". Używany jest podpis domyślny!</string>
+	<string name="signature_file_missing">Nie znaleziono pliku podpisu \"%1$s\". Używany jest podpis domyślny!</string>
 	<string name="signature_file_summary">Plik ustawień (plik pk8 lub plik magazynu kluczy). Jeśli jest to plik pk8, automatycznie wygeneruje plik x509.pem o tej samej nazwie (na przykład testkey.pk8 odpowiada testkey.x509.pem).</string>
 	<string name="signature_pass_not_set">Nie ustawiono hasła do magazynu kluczy, używany jest podpis domyślny!</string>
 	<string name="signature_scheme">Schemat podpisu: %s</string>
@@ -804,7 +804,7 @@
 	<string name="threads_count">Liczba wątków</string>
 	<string name="threads_count_summary">Liczba wątków dla procesów wielowątkowych</string>
 	<string name="time_spent">Czas spędzony: %s</string>
-	<string name="to_apks">Konwertuj na "*.apks"</string>
+	<string name="to_apks">Konwertuj na \"*.apks\"</string>
 	<string name="to_archive">Archiwizuj</string>
 	<string name="to_png">Konwertuj na PNG</string>
 	<string name="to_svg">Konwertuj na SVG</string>
@@ -848,7 +848,7 @@
 	<string name="use_v4_sign_summary">Użyj schematu podpisu v4 (Android 11+)</string>
 	<string name="using_apktool">Korzystanie z Apktool M %1$s na %2$s</string>
 	<string name="v1_cert_name">Nazwa plików RSA/SF</string>
-	<string name="v1_cert_name_info">Dozwolone znaki to litery łacińskie "A-Z", cyfry "0-9", łącznik "-" i znak podkreślenia "_". Wszystkie pozostałe znaki zostaną zastąpione znakiem podkreślenia.</string>
+	<string name="v1_cert_name_info">Dozwolone znaki to litery łacińskie \"A-Z\", cyfry \"0-9\", łącznik \"-\" i znak podkreślenia \"_\". Wszystkie pozostałe znaki zostaną zastąpione znakiem podkreślenia.</string>
 	<string name="v1_cert_name_summary">Nazwa plików RSA/SF dla podpisu V1</string>
 	<string name="value">Wartość</string>
 	<string name="vcode_app">Kod wersji</string>
@@ -873,15 +873,6 @@
 	<string name="wait_bg">Poczekaj na zakończenie uruchomionego procesu!</string>
 	<string name="whole_words">Całe słowa</string>
 	<string name="yes">Tak</string>
-	<string name="beta" translatable="false">β</string>
-	<string name="dot" translatable="false">•</string>
-	<string name="rarrow" translatable="false">→</string>
-	<string name="lock_icon" translatable="false"></string>
-	<string name="block_icon" translatable="false"></string>
-	<string name="list_icon" translatable="false"></string>
-	<string name="clock_icon" translatable="false"></string>
-	<string name="prev_icon" translatable="false">◀</string>
-	<string name="next_icon" translatable="false">▶</string>
 	<string name="smali">Smali</string>
 	<string name="mgithub">GitHub</string>
 	<string name="dont_change">Nie zmieniaj</string>
@@ -916,7 +907,7 @@
 	<string name="base_not_found">Nie znaleziono pliku bazowego, wyjście!</string>
 	<string name="copy_sign">Skopiuj podpis z innego APK</string>
 	<string name="embed_dp">Osadź Documents Provider</string>
-	<string name="embed_dp_info">Funkcja osadza w aplikacji dostawcę dokumentów, który zapewnia dostęp do ukrytych danych aplikacji. Foldery z ukrytymi danymi można otwierać przez systemową aplikację "Pliki" lub menedżera plików obsługującego dostawców dokumentów. Funkcja działa na Androidzie 5 i nowszym.</string>
+	<string name="embed_dp_info">Funkcja osadza w aplikacji dostawcę dokumentów, który zapewnia dostęp do ukrytych danych aplikacji. Foldery z ukrytymi danymi można otwierać przez systemową aplikację \"Pliki\" lub menedżera plików obsługującego dostawców dokumentów. Funkcja działa na Androidzie 5 i nowszym.</string>
 	<string name="libs_one_apk">Utwórz jedno APK z wybranych</string>
 	<string name="disable_syntax">Wyłącz składnię</string>
 	<string name="disable_syntax_summary">Całkowicie wyłącza podświetlanie składni w edytorze</string>
@@ -926,7 +917,7 @@
 	<string name="compare_apk_add">Dodane pliki</string>
 	<string name="compare_apk_del">Usunięte pliki</string>
 	<string name="compare_apk_mov">Przeniesione pliki</string>
-	<string name="compare_apk_mess">Porównaj zawartość "%1$s" z zawartością "%2$s"</string>
+	<string name="compare_apk_mess">Porównaj zawartość \"%1$s\" z zawartością \"%2$s\"</string>
 	<string name="only_diff">Tylko różnice</string>
 	<string name="program_closed">Program zostanie całkowicie zamknięty, kontynuować?</string>
 	<string name="remove_chars_info">Wpisz znaki, które chcesz usunąć z nazwy.</string>
@@ -941,15 +932,15 @@
 	<string name="linef">linia %d</string>
 	<string name="part_matches">częściowo pasuje</string>
 	<string name="files_rec">pliki rekurencyjnie</string>
-	<string name="dir_suffix">sufiks "/" dla folderów</string>
+	<string name="dir_suffix">sufiks \"/\" dla folderów</string>
 	<string name="open_apk_mf">Otwórz APK</string>
 	<string name="import_system">Importuj z systemu</string>
 	<string name="for_miui">Dla MIUI</string>
 	<string name="for_others">Dla innych</string>
 	<string name="copy_tt">Kopiuj do innej karty</string>
 	<string name="move_tt">Przenieś do innej karty</string>
-	<string name="copy_tt_conf">Skopiować "%s" do innej karty?</string>
-	<string name="move_tt_conf">Przenieść "%s" do innej karty?</string>
+	<string name="copy_tt_conf">Skopiować \"%s\" do innej karty?</string>
+	<string name="move_tt_conf">Przenieść \"%s\" do innej karty?</string>
 	<string name="create_icon">Utwórz ikonę</string>
 	<string name="fast_scroll_summary2">Szybkie przewijanie list</string>
 	<string name="mextract_zip_to2">Rozpakuj do innej karty</string>
@@ -968,10 +959,10 @@
 	<string name="custom_exts">Rozszerzenia tekstowe</string>
 	<string name="custom_exts_summary">Rozszerzenia plików, które program będzie wykrywał jako tekstowe</string>
 	<string name="custom_exts_info">Podaj rozszerzenia oddzielone przecinkami: aaa, bbb, ccc</string>
-	<string name="remove_property">Usuń &lt;property&gt;</string>
-	<string name="remove_property_summary">Usuń tagi &lt;property&gt; z manifestu podczas dekompilacji</string>
+	<string name="remove_property">Usuń &lt;property></string>
+	<string name="remove_property_summary">Usuń tagi &lt;property> z manifestu podczas dekompilacji</string>
 	<string name="save_sign_data">Zapisz dane podpisu V2 i V3</string>
-	<string name="save_sign_data_summary">Zapisuj dane podpisu podczas operacji na apk, jeśli wybrano opcję podpisu "Nie podpisuj"</string>
+	<string name="save_sign_data_summary">Zapisuj dane podpisu podczas operacji na apk, jeśli wybrano opcję podpisu \"Nie podpisuj\"</string>
 	<string name="sign_priority">Priorytet podpisu V1</string>
 	<string name="sign_priority_summary">Priorytet podpisu V1 podczas weryfikacji i pobierania danych podpisu</string>
 	<string name="hl_time">Czas podświetlenia folderu</string>
@@ -999,5 +990,5 @@
 	<string name="vector_icon">Ikona wektorowa</string>
 	<string name="adaptive_icon">Ikona adaptacyjna</string>
 	<string name="mtr_check_source">Sprawdź zgodność z językiem źródłowym</string>
-<string name="mtr_check_source_info">Jeśli wybrano określony język źródłowy, program spróbuje sprawdzić stringi pod kątem zgodności z tym językiem. Stringi w innych językach nie będą tłumaczone.</string>
+	<string name="mtr_check_source_info">Jeśli wybrano określony język źródłowy, program spróbuje sprawdzić stringi pod kątem zgodności z tym językiem. Stringi w innych językach nie będą tłumaczone.</string>
 </resources>

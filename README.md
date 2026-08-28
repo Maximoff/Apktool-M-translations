@@ -17,7 +17,7 @@
 4. символ `%` должен быть двойным `%%`, если он не используется для форматирования строки, или у строки должен быть атрибут `formatted="false"`.
 
 Пожалуйста, удаляйте по возможности из `strings.xml` строки с именами, начинающимися на `"abc_..."`, они не нужны.
-Так же не нужно переводить строки с именами:
+Так же не нужно переводить (удалите их) строки с именами:
 ```
 beta
 dot
@@ -31,6 +31,33 @@ next_icon
 search_menu_title
 status_bar_notification_info_overflow
 ```
+
+Удалите из `arrays.xml` массивы с именами:
+```
+smali_help_common_names
+aapts_version
+aapt2_dump
+app_theme_values
+jadx_sets_keys
+menu_pos_values
+file_size_values
+checksum_keys
+tooltips_keys
+charsets
+keys
+keys_hash
+quantity_items
+algorithmsArray
+entries_lang
+values_lang
+date_variants
+xml_format_values
+orientation_values
+auto_save_values
+ds_display_values
+editor_themes_values
+```
+Их не нужно изменять и переводить, это может привести к сбоям программы.
 
 ## For English
 Apktool M localization files.
@@ -51,7 +78,7 @@ Please use Apktool M's built-in translator, or manually correct the following ch
 4. the `%` character must be a double `%%` if it is not used to format the string, or the string must have a `formatted="false"` attribute.
 
 Please delete strings with names beginning with `"abc_..."` from `strings.xml` if possible, they are not needed.
-Also strings with names don't need to be translated:
+There is also no need to translate (remove them) strings with names:
 ```
 beta
 dot
@@ -65,3 +92,30 @@ next_icon
 search_menu_title
 status_bar_notification_info_overflow
 ```
+
+Remove arrays with names from `arrays.xml`:
+```
+smali_help_common_names
+aapts_version
+aapt2_dump
+app_theme_values
+jadx_sets_keys
+menu_pos_values
+file_size_values
+checksum_keys
+tooltips_keys
+charsets
+keys
+keys_hash
+quantity_items
+algorithmsArray
+entries_lang
+values_lang
+date_variants
+xml_format_values
+orientation_values
+auto_save_values
+ds_display_values
+editor_themes_values
+```
+They do not need to be changed or translated; this may lead to program crashes.
