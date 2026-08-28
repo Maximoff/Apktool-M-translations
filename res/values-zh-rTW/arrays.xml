@@ -1,0 +1,1505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="smali_help_names">
+		<item>寄存器</item>
+		<item>文字值</item>
+		<item>原始資料類型</item>
+	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
+	</string-array>
+	<string-array name="smali_help_values" formatted="false">
+		<item>vA 是一個 4 位寄存器，取值範圍為 v0 - v15\nvAA是8位寄存器，取值範圍為v0 - v255\nvAAAA 是一個 16 位寄存器，取值範圍為 v0 - v65535</item>
+		<item>使用0xF、0xFF等。來表示文字值。與寄存器一樣，數字 F 用於表示一系列值，例如：\n0xF值的範圍用[-0x8,0x7]表示\n0xFF的取值範圍用[-0x80,0x7F]表示</item>
+		<item>V - void，Z - 布林值，B - 位元組\nC - 字符，S - short，I - 整數\nJ - long，F - 浮點，D - double\nvoid：只能用於返回類型\n布林值：儲存值 true 或 false\nbyte：儲存-128到127之間的整數，佔用1個位元組\nShort：儲存從-32768到32767的整數，佔用2個位元組\nint：儲存從-2147483648到2147483647的整數，佔用4個位元組\nlong：儲存從-9223372036854775808到9223372036854775807的整數，佔用8個位元組\ndouble：儲存±4.9*10³²⁴到±1.7976931348623157*10³⁰⁸之間的浮點數，佔用8個位元組。點用作小數文字中的小數分隔符。\nfloat：儲存從-3.4*10³⁸到3.4*10³⁸的浮點數，佔用4個位元組\nchar：以UTF-16編碼儲存單個字符，佔用2個位元組，因此儲存值的範圍為0到65535。</item>
+		<item>沒有行動。</item>
+		<item>將寄存器 vB 的值移至寄存器 vA。</item>
+		<item>將 vBBBB 寄存器的值移至 vAA 寄存器。</item>
+		<item>將 vBBBB 寄存器的值移至 vAAAA 寄存器。</item>
+		<item>將寄存器對 (vB, vB+1) 的長整型/雙精度值移至寄存器對 vA, vA+1。</item>
+		<item>將寄存器對（vBBBB、vBBBB+1）的長整型/雙精度值移至寄存器對 vAA、vAA+1。</item>
+		<item>將寄存器對 (vBBBB、vBBBB+1) 的長整型/雙精度值移至寄存器對 vAAAA、vAAAA+1。</item>
+		<item>將物件引用從 vB 寄存器移至 vA 寄存器。</item>
+		<item>將物件引用從 vBBBB 寄存器移動到 vAA 寄存器。</item>
+		<item>將物件引用從 vBBBB 寄存器移動到 vAAAA 寄存器。</item>
+		<item>將先前調用的方法的返回值移至 vAA 寄存器中。</item>
+		<item>將先前調用的方法返回的 long/double 值移至寄存器對 vAA、vAA+1 中。</item>
+		<item>將先前調用的方法返回的物件引用移動到 vAA 寄存器中。</item>
+		<item>將方法調用期間（執行期間）發出的排除物件的引用移至 vAA 寄存器。</item>
+		<item>返回無返回值。</item>
+		<item>通過返回 vAA 寄存器中的值來返回。</item>
+		<item>通過將 double/long 值返回到一對寄存器 vAA、vAA+1 中來返回。</item>
+		<item>通過從 vAA 寄存器返回物件引用的值來返回。</item>
+		<item>將 4 位常量放入 vA 寄存器中。</item>
+		<item>將 16 位常量放入 vAA 寄存器中。</item>
+		<item>將整數常量放入 vAA 寄存器中。</item>
+		<item>將 16 位常數放入 vAA 寄存器的高位。用於初始化 float（浮點）值。</item>
+		<item>將 16 位整型常量放入寄存器對 vAA、vAA+1 中，將整型常量轉換為長整型常量。</item>
+		<item>將 32 位整型常量放入寄存器對 vAA、vAA+1 中，將整型常量轉換為長整型常量。</item>
+		<item>將 64 位常量放入寄存器對 vAA、vAA+1 中。</item>
+		<item>將 16 位常量放入寄存器對 vAA、vAA+1 的前 16 位中。用於初始化雙精度（浮點）值。</item>
+		<item>將對指定字串的引用放入 vAA 寄存器中。</item>
+		<item>將對指定字串的引用放入 vAA 寄存器中。</item>
+		<item>將由 string_id 識別的字串常量（字串）的引用放入 vAA 寄存器中。</item>
+		<item>獲取vAA寄存器引用的物件監視器。</item>
+		<item>釋放vAA寄存器引用的物件監視器。</item>
+		<item>檢查 vAA 寄存器中包含的物件引用是否可以轉換為 type_id 識別的類。如果不能，則拋出 ClassCastException，否則繼續執行。</item>
+		<item>檢查 vB 寄存器的內容是否是由 type_id 識別的類的實例。如果存在則將寄存器 vA 設定為非零，如果不存在則設定為 0。\nvA = vB instanceOf type ? 1:0</item>
+		<item>確定 vB 寄存器中的陣列元素數並將值放入 vA 寄存器中。\nvA = vB.length</item>
+		<item>建立物件類型的實例並將對所建立實例的引用放置在 vAA 寄存器中。</item>
+		<item>建立一個新的 type_id 變數陣列，其大小為寄存器 vB 元素，並將對該陣列的引用放置在寄存器 vA 中。</item>
+		<item>建立一個 type_id 類型的新資料陣列並用參數填充它（即，不允許使用 long/double 陣列，但允許引用類型）。可以使用緊隨該語句之後的 move-result-object 語句來獲取對新建立的陣列的引用（如果要使用該語句）。</item>
+		<item>建立一個 type_id 類型的新資料陣列，並用一系列參數填充它（即，沒有 long/double 陣列，但可以接受引用類型）。可以使用緊隨該語句之後的 move-result-object 語句來獲取對新建立的陣列的引用（如果要使用該語句）。</item>
+		<item>用靜態資料填充 vAA 寄存器中引用的陣列。資料位置是目前指令的位置和偏移量之和。</item>
+		<item>拋出例外物件。對 vAA 寄存器中例外物件的引用。</item>
+		<item>無條件前往到短（整數）8 位偏移量。</item>
+		<item>無條件前往到 16 位偏移量。</item>
+		<item>無條件前往到 32 位偏移量。</item>
+		<item>當控制常數彼此接近（連續）時實現 Switch 運算符。該指令使用索引表。特定情況的指令偏移量由 vAA 索引確定。如果 vAA 索引超出表範圍，則繼續執行下一條語句（預設）。</item>
+		<item>在稀疏表的情況下實現 Switch 運算符。該指令使用一個表來指定每個常量的偏移量。如果在表中沒有找到匹配項，則執行下一條語句（預設情況）。</item>
+		<item>比較vBB和vCC中的float（浮點）值並將整數值放入vAA寄存器中：\nvAA = vBB &lt; vCC ?是：1，否：-1，等於：0</item>
+		<item>比較vBB和vCC中的float（浮點）值並將整數值放入vAA寄存器中：\nvAA = vBB &lt; vCC ?是：1，否：-1，等於：0</item>
+		<item>比較vBB和vCC中的雙精度（浮點）值並將整數值放入vAA寄存器中：\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ？ 是：1，否：-1，等於：0</item>
+		<item>比較vBB和vCC中的雙精度（浮點）值並將整數值放入vAA寄存器中：\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ?是：1，否：-1，等於：0</item>
+		<item>比較vBB和vCC中的長（整型）值並將整型（整型）值放入vAA寄存器中：\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ?是：1，否：-1，等於：0</item>
+		<item>如果 vA == vB，則前往到指定標籤。 vA 和 vB 包含整數值。\n（eq 是等於的縮寫）</item>
+		<item>如果 vA != vB，則前往到指定標籤。 vA 和 vB 包含整數值。\n（ne 是不等於的縮寫）</item>
+		<item>如果 vA &lt; vB，則前往到指定標籤。 vA 和 vB 包含整數值。\n（lt 是小於的縮寫）</item>
+		<item>如果 vA &lt;= vB，則前往到指定標籤。 vA 和 vB 包含整數值。\n（le 是小於或等於/小於或等於的縮寫）</item>
+		<item>如果 vA > vB，則前往到指定標籤。 vA 和 vB 包含整數值。\n（gt 是大於/超過的縮寫）</item>
+		<item>如果 vA >= vB，則前往到指定標籤。 vA 和 vB 包含整數值。\n（ge 是大於或等於的縮寫）</item>
+		<item>如果 vAA == 0，則前往到指定標籤。vAA 包含整數值。\n（eqz 是「等於零」的縮寫）</item>
+		<item>如果 vAA != 0，則前往到指定標籤。vAA 包含一個整數值。\n（nez 是「不等於零」的縮寫）</item>
+		<item>如果 vAA &lt; 0，則前往到指定標籤。vAA 包含整數值。\n（ltz 是小於零的縮寫）</item>
+		<item>如果 vAA &lt;= 0，則前往到指定標籤。vAA 包含整數值。\n（lez 是小於或等於零/小於或等於零的縮寫）</item>
+		<item>如果 vAA > 0，則前往到指定標籤。vAA 包含整數值。\n（gtz 是大於零的縮寫）</item>
+		<item>如果 vAA >= 0，則前往到指定標籤。vAA 包含整數值。\n（gez 是大於或等於零的縮寫）</item>
+		<item>從 vBB 中引用的陣列中獲取 vCC 中包含的索引處的整數值，並將其放入 vAA 寄存器中。\nvAA = vBB[vCC]</item>
+		<item>在 vCC 中包含的索引處，從 vBB 中引用的陣列中獲取 double/long 值，並將其放入寄存器對 vAA、vAA+1 中。\n(vAA, vAA+1) = vBB[vCC]</item>
+		<item>在 vCC 中包含的索引處，從 vBB 中引用的陣列接收對物件的引用，並將其放入 vAA 寄存器中。\nvAA = vBB[vCC]</item>
+		<item>在 vCC 中包含的索引處，從 vBB 中引用的陣列中獲取一個布林值，並將其放入 vAA 寄存器中。\nvAA = vBB[vCC]</item>
+		<item>在 vCC 中包含的索引處，從 vBB 中引用的陣列中檢索一個位元組（整數）值，並將其放入 vAA 寄存器中。\nvAA = vBB[vCC]</item>
+		<item>在 vCC 中包含的索引處，從 vBB 中引用的陣列中檢索 char 值並將其放入 vAA 寄存器中。\nvAA = vBB[vCC]</item>
+		<item>在 vCC 中包含的索引處，從 vBB 中引用的陣列中檢索一個短（整數）值，並將其放入 vAA 寄存器中。\nvAA = vBB[vCC]</item>
+		<item>將 vAA 中的整數值放入 vBB 中引用的陣列中，其中元素包含 vCC 寄存器。\nvBB[vCC] = vAA</item>
+		<item>將寄存器對 vAA、vAA+1 中的雙精度/長整型值放入 vBB 中引用的陣列中，其中元素包含 vCC 寄存器。\nvBB[vCC] = (vAA, vAA+1)</item>
+		<item>將 vAA 中對物件的引用放入 vBB 中引用的陣列中，其中元素帶有 vCC 寄存器。\nvBB[vCC] = vAA</item>
+		<item>將 vAA 中的布林值放入 vBB 引用的陣列中，其中元素包含 vCC 寄存器。\nvBB[vCC] = vAA</item>
+		<item>將 vAA 中的位元組（整數）值放入 vBB 中引用的陣列中，其中元素包含寄存器 vCC。\nvBB[vCC] = vAA</item>
+		<item>將 vAA 中的 char（字符）值放入 vBB 中由寄存器 vCC 的元素引用的陣列中。\nvBB[vCC] = vAA</item>
+		<item>將 vAA 中的短（整數）值放入 vBB 中引用的陣列中，其中元素包含 vCC 寄存器。\nvBB[vCC] = vAA</item>
+		<item>從實例欄位讀取值並將其放入 vA 寄存器中。對包含此欄位的類的引用位於 vB 寄存器中。\nvA = vB.field</item>
+		<item>從實例欄位讀取雙精度/長整型值並將其放入一對寄存器（vA、vA+1）中。對包含此欄位的類的引用位於 vB 寄存器中。\n(vA, vA+1) = vB.field</item>
+		<item>從實例欄位讀取物件引用並將其放入 vA 寄存器中。對包含此欄位的類的引用位於 vB 寄存器中。\nvA = vB.field</item>
+		<item>從實例欄位讀取布林值並將其放入 vA 寄存器中。對包含此欄位的類的引用位於 vB 寄存器中。\nvA = vB.field</item>
+		<item>從實例欄位讀取位元組（整數）值並將其放入 vA 寄存器中。對包含此欄位的類的引用位於 vB 寄存器中。\nvA = vB.field</item>
+		<item>從實例欄位讀取 char 值並將其放入 vA 寄存器中。對包含此欄位的類的引用位於 vB 寄存器中。\nvA = vB.field</item>
+		<item>從實例欄位讀取一個短（整數）值並將其放入 vA 寄存器中。對包含此欄位的類的引用位於 vB 寄存器中。\nvA = vB.field</item>
+		<item>將 vA 寄存器中的值放入實例欄位中。對包含此欄位的類的引用位於 vB 寄存器中。\nvB.field = vA</item>
+		<item>將寄存器對 (vA, vA+1) 中的雙精度/長整型值放入實例欄位。對包含此欄位的類的引用位於 vB 寄存器中。\nvB.field = (vA, vA+1)</item>
+		<item>將 vA 寄存器中的物件引用放入實例欄位中。對包含此欄位的類的引用位於 vB 寄存器中。\nvB.field = vA</item>
+		<item>將 vA 寄存器中的布林值放入實例欄位中。對包含此欄位的類的引用位於 vB 寄存器中。\nvB.field = vA</item>
+		<item>將 vA 寄存器中的 byte（整數）值放入實例欄位中。對包含此欄位的類的引用位於 vB 寄存器中。\nvB.field = vA</item>
+		<item>將 vA 寄存器中的 char（字元）值放入實例欄位中。對包含此欄位的類的引用位於 vB 寄存器中。\nvB.field = vA</item>
+		<item>將 vA 寄存器中的 short（整數）值放入實例欄位中。對包含此欄位的類的引用位於 vB 寄存器中。\nvB.field = vA</item>
+		<item>從靜態欄位讀取值並將其放入 vAA 寄存器中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>從靜態欄位讀取 double/long 值並將其放入一對寄存器 vAA、vAA+1 中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>從靜態欄位讀取物件引用並將其放入 vAA 寄存器中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>從靜態欄位讀取布林值並將其放入 vAA 寄存器中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>從靜態欄位讀取位元組（整數）值並將其放入 vAA 寄存器中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>從靜態欄位讀取 char 值並將其放入 vAA 寄存器中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>從靜態欄位讀取一個短（整數）值並將其放入 vAA 寄存器中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>將 vAA 寄存器中的值放入欄位（靜態欄位）中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>將一對寄存器 vAA、vAA+1 中的雙精度/長整型值放入欄位（靜態欄位）中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>將 vAA 寄存器中對物件的引用放入欄位（靜態欄位）中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>將 vAA 寄存器中的布林值放入欄位（靜態欄位）中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>將 vAA 寄存器中的位元組（整數）值放入欄位（靜態欄位）中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>將 vAA 寄存器中的 char 值放入靜態欄位中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>將 vAA 寄存器中的短（整數）值放入靜態欄位中。不使用包含對包含此欄位的類的引用的寄存器。</item>
+		<item>調用（運行）帶參數的虛擬方法。參數用大括號表示。第一個參數（寄存器 v2）包含對包含被調用方法的類的引用，第二個參數（寄存器 v3 的內容）傳遞給被調用方法。</item>
+		<item>直接從父類調用（運行）帶有參數的虛擬方法。</item>
+		<item>在沒有虛擬方法權限的情況下調用（運行）帶參數的方法。</item>
+		<item>調用（運行）帶參數的靜態方法。參數用大括號表示。參數（寄存器 v3 的內容）被傳遞給被調用的方法。包含被調用方法的類在大括號後面指示。</item>
+		<item>調用（運行）帶參數的介面方法。</item>
+		<item>調用（運行）帶參數的虛方法，但參數必須按順序包含在帶有數字的寄存器中。</item>
+		<item>直接從父類調用（運行）帶參數的虛方法，但參數必須包含在具有連續編號的寄存器中。</item>
+		<item>在沒有虛擬方法權限的情況下調用（運行）帶參數的方法，但參數必須包含在按順序編號的寄存器中。</item>
+		<item>調用（運行）帶參數的靜態方法，但參數必須包含在具有連續編號的寄存器中。</item>
+		<item>調用（運行）帶參數的介面方法，但參數必須包含在按順序編號的寄存器中。</item>
+		<item>對於整數類型的值計算 vA = -vB。</item>
+		<item>計算整數值 vA = ~vB。\nvA = ~vB</item>
+		<item>對於 long（整數）類型的值，計算 (vA, vA+1) = -(vB, vB+1)。</item>
+		<item>對於 long（整數）類型的值，計算 (vA, vA+1) = ~(vB, vB+1)。</item>
+		<item>計算浮點值的 vA = -vB。</item>
+		<item>計算雙精度（浮點）值的 (vA, vA+1) = -(vB, vB+1)。</item>
+		<item>將整數從 vB 轉換為長整型並將其儲存在寄存器對 vA、vA+1 中。\n(vA, vA+1) = (長) vB</item>
+		<item>將整數從 vB 轉換為浮點數並將其儲存在 vA 寄存器中。\nvA =（浮點數）vB</item>
+		<item>將整數從 vB 轉換為雙精度型（浮點型）並將其儲存在寄存器對 vA、vA+1 中。\n(vA, vA+1) = (雙) vB</item>
+		<item>將 vB、vB+1 中的長整型值轉換為整型值並將其儲存在 vA 寄存器中。\nvA = (int) (vB, vB+1)</item>
+		<item>將 long（整數）值從 vB、vB+1 轉換為 float（浮點）並將其儲存在 vA 寄存器中。\nvA =（浮點數）（vB，vB+1）</item>
+		<item>將長整型值從 vB、vB+1 轉換為雙精度型（浮點型）並將其儲存在寄存器對 vA、vA+1 中。\n(vA, vA+1) = (雙) (vB, vB+1)</item>
+		<item>將浮點（floating point）值從 vB 轉換為整數（integer）值，並將其儲存在 vA 寄存器中。\nvA = (int)vB</item>
+		<item>將 float（浮點）值從 vB 轉換為 long（整數）值，並將其儲存在寄存器對 vA、vA+1 中。\n(vA, vA+1) = (長) vB</item>
+		<item>將 float（浮點）值從 vB 轉換為 double（浮點）值，並將其儲存在寄存器對 vA、vA+1 中。\n(vA, vA+1) = (雙) vB</item>
+		<item>將 vB、vB+1 中的雙精度（浮點）值轉換為整型（整數）值並將其儲存在 vA 寄存器中。\nvA = (int) (vB, vB+1)</item>
+		<item>將雙精度（浮點）值從 vB、vB+1 轉換為長整型（整數）值並將其儲存在寄存器對 vA、vA+1 中。\n(vA, vA+1) = (長) (vB, vB+1)</item>
+		<item>將 double（浮點）值從 vB、vB+1 轉換為 float（浮點）值並將其儲存在 vA 寄存器中。\nvA =（浮點數）（vB，vB+1）</item>
+		<item>將整數值從 vB 轉換為位元組值並將其儲存在 vA 寄存器中。\nvA =（位元組）vB</item>
+		<item>將整數值從 vB 轉換為字符值並將其儲存在 vA 寄存器中。\nvA = (字符)vB</item>
+		<item>將整數值從 vB 轉換為短值並將其儲存在 vA 寄存器中。\nvA =（短）vB</item>
+		<item>計算 vBB + vCC 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB + vCC</item>
+		<item>計算 vBB - vCC 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB - vCC</item>
+		<item>計算 vBB * vCC 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB * vCC</item>
+		<item>計算 vBB / vCC 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB / vCC</item>
+		<item>計算 vBB % vCC 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB % vCC</item>
+		<item>計算 vBB 和 vCC（邏輯與）並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB &amp; vCC</item>
+		<item>計算 vBB | vCC（邏輯或）並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB | vCC</item>
+		<item>計算 vBB ^ vCC（異或）並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB ^ vCC</item>
+		<item>將 vBB 左移 vCC 指定的位數，並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB &lt;&lt; vCC</item>
+		<item>將 vBB 右移 vCC 指定的位數，並將結果儲存到 vAA 寄存器中。所有值都是整數。\nvAA = vBB >> vCC</item>
+		<item>將 vBB 向右移動 vCC 指定的位數（不保留符號），並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB >>> vCC</item>
+		<item>計算 (vBB, vBB+1) + (vCC, vCC+1) 並將結果儲存在寄存器對 vAA, vAA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>計算（vBB，vBB+1）-（vCC，vCC+1）並將結果儲存到寄存器對vAA，vAA+1中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) * (vCC, vCC+1) 並將結果儲存在寄存器對 vAA, vAA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) / (vCC, vCC+1) 並將結果儲存在寄存器對 vAA, vAA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) % (vCC, vCC+1) 並將結果儲存到寄存器對 vAA, vAA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) &amp; (vCC, vCC+1)（邏輯與）並將結果儲存到寄存器對 vAA、vAA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) | (vCC，vCC+1)（邏輯或）並將結果儲存在一對寄存器vAA，vAA+1中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) ^ (vCC, vCC+1)（異或）並將結果儲存到寄存器對 vAA、vAA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>將 vBB、vBB+1 左移 vCC 指定的位數，並將結果儲存到寄存器對 vAA、vAA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
+		<item>將 vBB、vBB+1 右移 vCC 指定的位數，並將結果儲存到寄存器對 vAA、vAA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
+		<item>將 vBB、vBB+1 右移，不保留符號 vCC 指定的位數，並將結果儲存在一對寄存器 vAA、vA+1 中。所有值都是長整型（long）。\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>計算 vBB + vCC 並將結果儲存在 vAA 寄存器中。所有值都是浮點數。\nvAA = vBB + vCC</item>
+		<item>計算 vBB - vCC 並將結果儲存在 vAA 寄存器中。所有值都是浮點數。\nvAA = vBB - vCC</item>
+		<item>計算 vBB * vCC 並將結果儲存在 vAA 寄存器中。所有值都是浮點數。\nvAA = vBB * vCC</item>
+		<item>計算 vBB / vCC 並將結果儲存在 vAA 寄存器中。所有值都是浮點數。\nvAA = vBB / vCC</item>
+		<item>計算 vBB % vCC 並將結果儲存在 vAA 寄存器中。所有值都是浮點數。\nvAA = vBB % vCC</item>
+		<item>計算 (vBB, vBB+1) + (vCC, vCC+1) 並將結果儲存在寄存器對 vAA, vAA+1 中。所有值都是雙精度（浮點）。\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
+		<item>計算（vBB，vBB+1）-（vCC，vCC+1）並將結果儲存到寄存器對vAA，vAA+1中。所有值都是雙精度（浮點）。\n(vAA, vAA+1) = (vBB, vBB+1) - (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) * (vCC, vCC+1) 並將結果儲存在寄存器對 vAA, vAA+1 中。所有值都是雙精度（浮點）。\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) / (vCC, vCC+1) 並將結果儲存在寄存器對 vAA, vAA+1 中。所有值都是雙精度（浮點）。\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
+		<item>計算 (vBB, vBB+1) % (vCC, vCC+1) 並將結果儲存到寄存器對 vAA, vAA+1 中。所有值都是雙精度（浮點）。\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
+		<item>計算 vA + vB 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA + vB</item>
+		<item>計算 vA - vB 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA - vB</item>
+		<item>計算 vA * vB 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA * vB</item>
+		<item>計算 vA / vB 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA / vB</item>
+		<item>計算 vA % vB 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA % vB</item>
+		<item>計算 vA 和 vB（邏輯與）並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA &amp; vB</item>
+		<item>計算 vA | vB（邏輯或）並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA | vB</item>
+		<item>計算 vA ^ vB（異或）並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA^vB</item>
+		<item>將 vA 左移 vB 指定的位數，並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA &lt;&lt; vB</item>
+		<item>將 vA 右移 vB 指定的位數，並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA >> vB</item>
+		<item>將 vA 向右移動 vB 指定的位數（不保留其符號），並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vA >>> vB</item>
+		<item>計算 (vA, vA+1) + (vB, vB+1) 並將結果儲存在寄存器對 vA, vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) - (vB, vB+1) 並將結果儲存在一對寄存器 vA, vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) * (vB, vB+1) 並將結果儲存在寄存器對 vA, vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) / (vB, vB+1) 並將結果儲存在寄存器對 vA, vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) % (vB, vB+1) 並將結果儲存在寄存器對 vA, vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) &amp; (vB, vB+1)（邏輯與）並將結果儲存在寄存器對 vA, vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) | (vB，vB+1)（邏輯或）並將結果儲存在一對寄存器vA，vA+1中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) ^ (vB, vB+1)（異或）並將結果儲存在寄存器對 vA, vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>將 vA、vA+1 左移 vB 指定的位數，並將結果儲存到寄存器對 vA、vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>將 vA、vA+1 右移 vB 指定的位數，並將結果儲存到寄存器對 vA、vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>將 vA、vA+1 右移（不保留符號）vB 指定的位數，並將結果儲存在一對寄存器 vA、vA+1 中。所有值都是長整型（long）。\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>計算 vA + vB 並將結果儲存在 vA 寄存器中。所有值都是浮點數。\nvA = vA + vB</item>
+		<item>計算 vA - vB 並將結果儲存在 vA 寄存器中。所有值都是浮點數。\nvA = vA - vB</item>
+		<item>計算 vA * vB 並將結果儲存在 vA 寄存器中。所有值都是浮點數。\nvA = vA * vB</item>
+		<item>計算 vA / vB 並將結果儲存在 vA 寄存器中。所有值都是浮點數。\nvA = vA / vB</item>
+		<item>計算 vA % vB 並將結果儲存在 vA 寄存器中。所有值都是浮點數。\nvA = vA % vB</item>
+		<item>計算 (vA, vA+1) + (vB, vB+1) 並將結果儲存在寄存器對 vA, vA+1 中。所有值都是雙精度（浮點）。\n(vA, vA+1) = (vA, vA+1) + (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) - (vB, vB+1) 並將結果儲存在一對寄存器 vA, vA+1 中。所有值都是雙精度（浮點）。\n(vA, vA+1) = (vA, vA+1) - (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) * (vB, vB+1) 並將結果儲存在寄存器對 vA, vA+1 中。所有值都是雙精度（浮點）。\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) / (vB, vB+1) 並將結果儲存在寄存器對 vA, vA+1 中。所有值都是雙精度（浮點）。\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
+		<item>計算 (vA, vA+1) % (vB, vB+1) 並將結果儲存在寄存器對 vA, vA+1 中。所有值都是雙精度（浮點）。\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>計算 vB + 0xFFFF 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vB + 0xFFFF</item>
+		<item>計算 0xFFFF - vB 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = 0xFFFF - vB</item>
+		<item>計算 vB * 0xFFFF 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vB * 0xFFFF</item>
+		<item>計算 vB / 0xFFFF 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vB / 0xFFFF</item>
+		<item>計算 vB % 0xFFFF 並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vB% 0xFFFF</item>
+		<item>計算 vB &amp; 0xFFFF（邏輯與）並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vB &amp; 0xFFFF</item>
+		<item>計算 vB | 0xFFFF（邏輯或）並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vB | 0xFFFF</item>
+		<item>計算 vB ^ 0xFFFF（異或）並將結果儲存在 vA 寄存器中。所有值都是整數。\nvA = vB^0xFFFF</item>
+		<item>計算 vBB + 0xFF 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB + 0xFF</item>
+		<item>計算 0xFF - vBB 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = 0xFF - vBB</item>
+		<item>計算 vBB * 0xFF 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB * 0xFF</item>
+		<item>計算 vBB / 0xFF 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB / 0xFF</item>
+		<item>計算 vBB % 0xFF 並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB % 0xFF</item>
+		<item>計算 vBB &amp; 0xFF（邏輯與）並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB &amp; 0xFF</item>
+		<item>計算 vBB | 0xFF（邏輯或）並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB | 0xFF</item>
+		<item>計算 vBB ^ 0xFF（異或）並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA=vBB^0xFF</item>
+		<item>將 vBB 左移 0xFF 指定的位數，並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>將 vBB 右移 0xFF 指定的位數，並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB >> 0xFF</item>
+		<item>將 vBB 右移 0xFF 指定的位數，並將結果儲存在 vAA 寄存器中。所有值都是整數。\nvAA = vBB >>> 0xFF</item>
+		<item>使用參數調用（運行）多態簽名方法。自版本 038 以來存在於 Dex 檔案中。</item>
+		<item>調用（運行）帶參數的多態簽名方法，但參數必須包含在按順序編號的寄存器中。自版本 038 以來存在於 Dex 檔案中。</item>
+		<item>允許（開始）使用參數調用站點。自版本 038 以來存在於 Dex 檔案中。</item>
+		<item>允許（啟動）使用參數調用站點，但參數必須包含在按順序編號的寄存器中。自版本 038 以來存在於 Dex 檔案中。</item>
+		<item>將對方法句柄的引用放置在 vAA 寄存器中。自版本 039 以來存在於 Dex 檔案中。</item>
+		<item>在 vAA 寄存器中放置對方法原型的引用。自版本 039 以來存在於 Dex 檔案中。</item>
+	</string-array>
+	<string-array name="years_or_days">
+		<item>年</item>
+		<item>天</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>內置</item>
+		<item>自訂</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>列印從 APK 清單中提取的資訊。</item>
+		<item>列印 APK 中資源使用的每個組態。</item>
+		<item>列印從 APK 清單中提取的權限。</item>
+		<item>列印 APK 中資源表字串池的內容。</item>
+		<item>列印 APK 資源表的內容。</item>
+		<item>列印 APK 的 &lt;overlayable> 資源。</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>淺色</item>
+		<item>深色</item>
+		<item>純黑</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>回退模式</item>
+		<item>反混淆</item>
+		<item>轉義Unicode</item>
+		<item>顯示不一致的程式碼</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>改名</item>
+		<item>僅重新命名檔案</item>
+		<item>取代</item>
+		<item>跳過</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>左側</item>
+		<item>右側</item>
+	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>全部大寫</item>
+		<item>用冒號分隔</item>
+	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>新增新資源（僅限檔案）</item>
+		<item>刪除丟失的資源</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
+	</string-array>
+	<string-array name="sort">
+		<item>名稱</item>
+		<item>名稱（倒序）</item>
+		<item>檔案類型</item>
+		<item>檔案類型（倒序）</item>
+		<item>檔案大小</item>
+		<item>檔案大小（倒序）</item>
+		<item>修改時間</item>
+		<item>修改時間（倒序）</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>十六進位顏色</item>
+		<item>Smali 程式碼</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>one</item>
+		<item>two</item>
+		<item>few</item>
+		<item>many</item>
+		<item>other</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>不編譯</item>
+		<item>反編譯到主目錄</item>
+		<item>反編譯到單獨的目錄</item>
+		<item>嘗試合併包</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>文字 &lt;-> Base64</item>
+		<item>文字 &lt;-> 統一編碼</item>
+		<item>文字 &lt;-> 網址編碼</item>
+		<item>文字 &lt;-> MD5</item>
+		<item>文字 &lt;-> SHA-1</item>
+		<item>文字 &lt;-> SHA-224</item>
+		<item>文字 &lt;-> SHA-256</item>
+		<item>文字 &lt;-> SHA-384</item>
+		<item>文字 &lt;-> SHA-512</item>
+		<item>文字 &lt;-> 陣列（UTF-8）</item>
+		<item>文字 &lt;-> 陣列（UTF-16）</item>
+		<item>文字 &lt;-> 陣列（UTF-16LE）</item>
+		<item>文字 &lt;-> 陣列（UTF-16BE）</item>
+		<item>文字 &lt;-> 陣列（US-ASCII）</item>
+		<item>文字 &lt;-> 陣列（ISO-8859-1）</item>
+		<item>文字 &lt;-> 陣列（CP1251）</item>
+		<item>十進位 &lt;-> 二進位</item>
+		<item>十進位 &lt;-> 八進位</item>
+		<item>十進位 &lt;-> 十六進位</item>
+		<item>十進位 &lt;-> 十六進位（0x0）</item>
+		<item>十進位 &lt;-> 十六進位（0x00000000）</item>
+		<item>浮點數 &lt;-> 二進位</item>
+		<item>浮點數 &lt;-> 八進位</item>
+		<item>浮點數 &lt;-> 十六進位</item>
+		<item>浮點數 &lt;-> 十六進位（0x0）</item>
+		<item>浮點數 &lt;-> 十六進位（0x00000000）</item>
+		<item>顏色 &lt;-> Smali</item>
+		<item>顏色 &lt;-> 十進位</item>
+		<item>顏色 &lt;-> A,R,G,B</item>
+		<item>日期 &lt;-> 毫秒</item>
+		<item>日期 &lt;-> 十六進位</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>未設定</item>
+		<item>自動</item>
+		<item>僅限內部</item>
+		<item>首選外部</item>
+	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lituania</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+		<item>O\'zbek tili</item>
+		<item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>zh-rTW</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+		<item>uz</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>yyyy/MM/dd HH:mm</item>
+		<item>dd/MM/yyyy HH:mm</item>
+		<item>HH:mm yyyy/MM/dd</item>
+		<item>HH:mm dd/MM/yyyy</item>
+		<item>yy/MM/dd HH:mm</item>
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item>
+		<item>HH:mm dd/MM/yy</item>
+		<item>yyyy.MM.dd HH:mm</item>
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>yy.MM.dd HH:mm</item>
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>yyyy-MM-dd HH:mm</item>
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>yy-MM-dd HH:mm</item>
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>預設</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>簡單技巧</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>預設</item>
+		<item>橫屏</item>
+		<item>豎屏</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>關閉</item>
+		<item>15秒</item>
+		<item>30秒</item>
+		<item>1分鐘</item>
+		<item>5分鐘</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>自適應圖像（品質較低）</item>
+		<item>高品質圖像（更大尺寸）</item>
+		<item>轉換為SVG</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>設定</item>
+		<item>書籤</item>
+		<item>搜尋/取代歷史</item>
+		<item>字典</item>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>按方法/欄位的數量</item>
+		<item>分成相等的部分</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>日期在前</item>
+		<item>大小在前</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>預設</item>
+		<item>新樣式</item>
+	</string-array>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>auto-detect</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>he</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pt-PT</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>to</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>as</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>my</item>
+		<item>ps</item>
+		<item>ti</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>自動檢測</item>
+		<item>亞塞拜然語(拉丁語)</item>
+		<item>阿爾巴尼亞語</item>
+		<item>英語</item>
+		<item>阿拉伯語</item>
+		<item>亞美尼亞語</item>
+		<item>南非荷蘭語</item>
+		<item>孟加拉語</item>
+		<item>保加利亞語</item>
+		<item>波士尼亞語</item>
+		<item>威爾斯語</item>
+		<item>匈牙利語</item>
+		<item>越南語</item>
+		<item>海地克裡奧爾語</item>
+		<item>荷蘭語</item>
+		<item>希臘語</item>
+		<item>古吉拉特語</item>
+		<item>丹麥語</item>
+		<item>希伯來語</item>
+		<item>印度尼西亞語</item>
+		<item>愛爾蘭語</item>
+		<item>冰島語</item>
+		<item>西班牙語</item>
+		<item>義大利語</item>
+		<item>哈薩克語</item>
+		<item>卡納達語</item>
+		<item>廣東繁體</item>
+		<item>加泰隆尼亞語</item>
+		<item>克裡塔語注釋</item>
+		<item>繁體中文</item>
+		<item>簡體中文</item>
+		<item>韓語</item>
+		<item>拉脫維亞語</item>
+		<item>立陶宛語</item>
+		<item>馬達加斯加語</item>
+		<item>馬來語</item>
+		<item>馬拉雅拉姆語</item>
+		<item>馬爾他語</item>
+		<item>毛利語</item>
+		<item>馬拉地語</item>
+		<item>德語</item>
+		<item>尼泊爾語</item>
+		<item>挪威語</item>
+		<item>奧裡亞語</item>
+		<item>旁遮普語</item>
+		<item>波斯語</item>
+		<item>波蘭語</item>
+		<item>葡萄牙語(巴西)</item>
+		<item>葡萄牙語(葡萄牙)</item>
+		<item>羅馬尼亞語</item>
+		<item>俄語</item>
+		<item>薩摩亞語</item>
+		<item>塞爾維亞語(西裡爾語)</item>
+		<item>塞爾維亞語(拉丁語)</item>
+		<item>斯洛伐克語</item>
+		<item>斯洛維尼亞語</item>
+		<item>斯瓦希裡語</item>
+		<item>大溪地語</item>
+		<item>泰語</item>
+		<item>泰米爾語</item>
+		<item>泰盧固語</item>
+		<item>湯加語</item>
+		<item>土耳其語</item>
+		<item>烏克蘭語</item>
+		<item>烏爾都語</item>
+		<item>斐濟語</item>
+		<item>菲律賓語</item>
+		<item>芬蘭語</item>
+		<item>法語</item>
+		<item>印地語</item>
+		<item>苗語</item>
+		<item>克羅埃西亞語</item>
+		<item>捷克語</item>
+		<item>瑞典語</item>
+		<item>愛沙尼亞語</item>
+		<item>瑪雅語</item>
+		<item>日語</item>
+		<item>阿姆哈拉語</item>
+		<item>阿薩姆語</item>
+		<item>達裡語</item>
+		<item>法語(加拿大)</item>
+		<item>因紐特語</item>
+		<item>高棉語</item>
+		<item>克林貢語(拉丁語)</item>
+		<item>庫德語(中部)</item>
+		<item>庫德語(北部)</item>
+		<item>寮語</item>
+		<item>緬甸語</item>
+		<item>普什圖語</item>
+		<item>提格裡尼亞語</item>
+	</string-array>
+	<string-array name="google_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>自動檢測</item>
+		<item>南非荷蘭語</item>
+		<item>阿爾巴尼亞語</item>
+		<item>阿姆哈拉語</item>
+		<item>阿拉伯語</item>
+		<item>亞美尼亞語</item>
+		<item>亞塞拜然語</item>
+		<item>巴斯克語</item>
+		<item>白俄羅斯語</item>
+		<item>孟加拉語</item>
+		<item>波士尼亞語</item>
+		<item>保加利亞語</item>
+		<item>加泰隆尼亞語</item>
+		<item>宿霧語</item>
+		<item>齊佩瓦語</item>
+		<item>簡體中文</item>
+		<item>繁體中文</item>
+		<item>科西嘉語</item>
+		<item>克羅埃西亞語</item>
+		<item>捷克語</item>
+		<item>丹麥語</item>
+		<item>荷蘭語</item>
+		<item>英語</item>
+		<item>世界語</item>
+		<item>愛沙尼亞語</item>
+		<item>菲律賓語</item>
+		<item>芬蘭語</item>
+		<item>法語</item>
+		<item>弗裡斯蘭語</item>
+		<item>加裡西亞語</item>
+		<item>喬治亞語</item>
+		<item>德語</item>
+		<item>希臘語</item>
+		<item>古吉拉特語</item>
+		<item>海地克裡奧爾語</item>
+		<item>豪薩語</item>
+		<item>夏威夷語</item>
+		<item>希伯來語</item>
+		<item>印地語</item>
+		<item>苗語</item>
+		<item>匈牙利語</item>
+		<item>冰島語</item>
+		<item>伊博語</item>
+		<item>印度尼西亞語</item>
+		<item>愛爾蘭語</item>
+		<item>義大利語</item>
+		<item>日語</item>
+		<item>爪哇語</item>
+		<item>卡納達語</item>
+		<item>哈薩克語</item>
+		<item>高棉語</item>
+		<item>韓語</item>
+		<item>庫德語(庫爾曼吉)</item>
+		<item>吉爾吉斯語</item>
+		<item>寮語</item>
+		<item>拉丁語</item>
+		<item>拉脫維亞語</item>
+		<item>立陶宛語</item>
+		<item>盧森堡語</item>
+		<item>馬其頓語</item>
+		<item>馬達加斯加語</item>
+		<item>馬來語</item>
+		<item>馬拉雅拉姆語</item>
+		<item>馬爾他語</item>
+		<item>毛利語</item>
+		<item>馬拉地語</item>
+		<item>蒙古語</item>
+		<item>緬甸語</item>
+		<item>尼泊爾語</item>
+		<item>挪威語</item>
+		<item>普什圖語</item>
+		<item>波斯語</item>
+		<item>波蘭語</item>
+		<item>葡萄牙語</item>
+		<item>旁遮普語</item>
+		<item>羅馬尼亞語</item>
+		<item>俄語</item>
+		<item>薩摩亞語</item>
+		<item>蘇格蘭蓋爾語</item>
+		<item>塞爾維亞語</item>
+		<item>塞索託語</item>
+		<item>索納語</item>
+		<item>信德語</item>
+		<item>僧伽羅語</item>
+		<item>斯洛伐克語</item>
+		<item>斯洛維尼亞語</item>
+		<item>索馬利亞語</item>
+		<item>西班牙語</item>
+		<item>聖丹內斯語</item>
+		<item>斯瓦希裡語</item>
+		<item>瑞典語</item>
+		<item>塔吉克語</item>
+		<item>泰米爾語</item>
+		<item>泰盧固語</item>
+		<item>泰語</item>
+		<item>土耳其語</item>
+		<item>烏克蘭語</item>
+		<item>烏爾都語</item>
+		<item>烏茲別克語</item>
+		<item>越南語</item>
+		<item>威爾斯語</item>
+		<item>科薩語</item>
+		<item>意第緒語</item>
+		<item>約魯巴語</item>
+		<item>祖魯語</item>
+		<item>奧裡亞語</item>
+		<item>旁遮普語</item>
+		<item>盧安達語</item>
+		<item>韃靼語</item>
+		<item>土庫曼語</item>
+		<item>維吾爾族語</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>ba</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>my</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>zh</item>
+		<item>cv</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>sjn</item>
+		<item>emj</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>he</item>
+		<item>mrj</item>
+		<item>hi</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jv</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>kazlat</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mhr</item>
+		<item>mn</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>pap</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pa</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tl</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>udm</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>uzbcyr</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>sah</item>
+		<item>yi</item>
+	</string-array>
+	<string-array name="yandex_translator_names">
+		<item>自動檢測</item>
+		<item>南非荷蘭語</item>
+		<item>阿爾巴尼亞語</item>
+		<item>阿姆哈拉語</item>
+		<item>阿拉伯語</item>
+		<item>亞美尼亞語</item>
+		<item>亞塞拜然語</item>
+		<item>巴什基爾語</item>
+		<item>巴斯克語</item>
+		<item>白俄羅斯語</item>
+		<item>孟加拉語</item>
+		<item>波士尼亞語</item>
+		<item>保加利亞語</item>
+		<item>緬甸語</item>
+		<item>加泰隆尼亞語</item>
+		<item>宿霧語</item>
+		<item>中文</item>
+		<item>楚瓦什語</item>
+		<item>克羅埃西亞語</item>
+		<item>捷克語</item>
+		<item>丹麥語</item>
+		<item>荷蘭語</item>
+		<item>精靈語(辛達林語)</item>
+		<item>表情符號</item>
+		<item>英語</item>
+		<item>世界語</item>
+		<item>愛沙尼亞語</item>
+		<item>芬蘭語</item>
+		<item>法語</item>
+		<item>加裡西亞語</item>
+		<item>喬治亞語</item>
+		<item>德語</item>
+		<item>希臘語</item>
+		<item>古吉拉特語</item>
+		<item>海地語</item>
+		<item>希伯來語</item>
+		<item>希爾馬裡語</item>
+		<item>印地語</item>
+		<item>匈牙利語</item>
+		<item>冰島語</item>
+		<item>印度尼西亞語</item>
+		<item>愛爾蘭語</item>
+		<item>義大利語</item>
+		<item>日語</item>
+		<item>爪哇語</item>
+		<item>卡納達語</item>
+		<item>哈薩克語</item>
+		<item>哈薩克語(拉丁語)</item>
+		<item>高棉語</item>
+		<item>韓語</item>
+		<item>吉爾吉斯語</item>
+		<item>寮語</item>
+		<item>拉丁語</item>
+		<item>拉脫維亞語</item>
+		<item>立陶宛語</item>
+		<item>盧森堡語</item>
+		<item>馬其頓語</item>
+		<item>馬達加斯加語</item>
+		<item>馬來語</item>
+		<item>馬拉雅拉姆語</item>
+		<item>馬爾他語</item>
+		<item>毛利語</item>
+		<item>馬拉地語</item>
+		<item>瑪麗語</item>
+		<item>蒙古語</item>
+		<item>尼泊爾語</item>
+		<item>挪威語</item>
+		<item>帕皮亞門託語</item>
+		<item>波斯語</item>
+		<item>波蘭語</item>
+		<item>葡萄牙語</item>
+		<item>旁遮普語</item>
+		<item>羅馬尼亞語</item>
+		<item>俄語</item>
+		<item>蘇格蘭蓋爾語</item>
+		<item>塞爾維亞語</item>
+		<item>僧伽羅語</item>
+		<item>斯洛伐克語</item>
+		<item>斯洛維尼亞語</item>
+		<item>西班牙語</item>
+		<item>聖丹內斯語</item>
+		<item>斯瓦希裡語</item>
+		<item>瑞典語</item>
+		<item>塔加洛語</item>
+		<item>塔吉克語</item>
+		<item>泰米爾語</item>
+		<item>韃靼語</item>
+		<item>泰盧固語</item>
+		<item>泰語</item>
+		<item>土耳其語</item>
+		<item>烏德穆爾特語</item>
+		<item>烏克蘭語</item>
+		<item>烏爾都語</item>
+		<item>烏茲別克語</item>
+		<item>烏茲別克語(西裡爾語)</item>
+		<item>越南語</item>
+		<item>威爾斯語</item>
+		<item>科薩語</item>
+		<item>雅庫特語</item>
+		<item>意第緒語</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>自動檢測</item>
+		<item>阿拉伯語</item>
+		<item>保加利亞語</item>
+		<item>中文</item>
+		<item>捷克語</item>
+		<item>丹麥語</item>
+		<item>荷蘭語</item>
+		<item>英語</item>
+		<item>愛沙尼亞語</item>
+		<item>芬蘭語</item>
+		<item>法語</item>
+		<item>德語</item>
+		<item>希臘語</item>
+		<item>匈牙利語</item>
+		<item>印度尼西亞語</item>
+		<item>義大利語</item>
+		<item>日語</item>
+		<item>韓語</item>
+		<item>拉脫維亞語</item>
+		<item>立陶宛語</item>
+		<item>挪威語(書面語)</item>
+		<item>波蘭語</item>
+		<item>葡萄牙語</item>
+		<item>羅馬尼亞語</item>
+		<item>俄語</item>
+		<item>斯洛伐克語</item>
+		<item>斯洛維尼亞語</item>
+		<item>西班牙語</item>
+		<item>瑞典語</item>
+		<item>土耳其語</item>
+		<item>烏克蘭語</item>
+	</string-array>
+</resources>
