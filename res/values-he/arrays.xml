@@ -5,10 +5,236 @@
 		<item>ערכים מילוליים</item>
 		<item>סוגי נתונים פרימיטיביים</item>
 	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
+	</string-array>
 	<string-array name="smali_help_values" formatted="false">
 		<item>vA הוא אוגר של 4 סיביות עם טווח הערכים v0 - v15\nvAA הוא אוגר של 8 סיביות עם טווח ערכים של v0 - v255\nvAAAA הוא אוגר של 16 סיביות עם טווח ערכים של v0 - v65535</item>
 		<item>נעשה שימוש ב-0xF, 0xFF וכו\'. לייצג ערכים מילוליים. כמו רגיסטרים, המספר F משמש לייצוג טווח של ערכים, לדוגמה:\nהטווח של ערכי 0xF מיוצג על ידי [-0x8, 0x7]\nטווח הערכים של 0xFF מיוצג על ידי [-0x80, 0x7F]</item>
-		<item>V - ריק, Z - בוליאני, B - בייט\nC - char, S - קצר, I - int\nJ - ארוך, F - לצוף, D - כפול\nvoid: ניתן להשתמש רק עבור סוגי החזרות\nboolean: מאחסן את הערך true או false\nbyte: מאחסן מספר שלם מ-128 עד 127 ותופס בית אחד\nקצר: מאחסן מספר שלם מ-32768 עד 32767 ולוקח 2 בתים\nint: מאחסן מספר שלם מ-2147483648 עד 2147483647 ותופס 4 בתים\nארוך: מאחסן מספר שלם מ-9223372036854775808 עד 9223372036854775807 ותופס 8 בתים\nכפול: מאחסן מספר נקודה צפה מ-±4.9*10³²⁴ עד ±1.7976931348623157*10³⁰⁸ ותופס 8 בתים. נקודה משמשת כמפריד עשרוני במילולי שבר.\nfloat: מאחסן מספר נקודה צפה מ-3.4*10³⁸ עד 3.4*10³⁸ ותופס 4 בתים\nchar: מאחסן תו בודד בקידוד UTF-16 ותופס 2 בתים, כך שטווח הערכים המאוחסנים הוא מ-0 עד 65535.</item>
+		<item>V - ריק, Z - בוליאני, B - בייט\nC - char, S - קצר, I - int\nJ - ארוך, F - float, D - כפול\nvoid: ניתן להשתמש רק עבור סוגי החזרות\nboolean: מאחסן את הערך true או false\nbyte: מאחסן מספר שלם מ־-128 עד 127 ותופס בית אחד\nקצר: מאחסן מספר שלם מ־-32768 עד 32767 ולוקח 2 בתים\nint: מאחסן מספר שלם מ-2147483648 עד 2147483647 ותופס 4 בתים\nארוך: מאחסן מספר שלם מ-9223372036854775808 עד 9223372036854775807 ותופס 8 בתים\nכפול: מאחסן מספר נקודה צפה מ-±4.9*10³²⁴ עד ±1.7976931348623157*10³⁰⁸ ותופס 8 בתים. נקודה משמשת כמפריד עשרוני במילולי שבר.\nfloat: מאחסן מספר נקודה צפה מ-3.4*10³⁸ עד 3.4*10³⁸ ותופס 4 בתים\nchar: מאחסן תו בודד בקידוד UTF-16 ותופס 2 בתים, כך שטווח הערכים המאוחסנים הוא מ-0 עד 65535.</item>
 		<item>שום פעולה.</item>
 		<item>מעביר את הערך של register vB ל- register vA.</item>
 		<item>מעביר את הערך של אוגר vBBBB לאוגר vAA.</item>
@@ -41,7 +267,7 @@
 		<item>מקבל את מוניטור האובייקטים שמתייחסים אליו על ידי האוגר vAA.</item>
 		<item>משחרר את צג האובייקטים שאליו מתייחס אוגר vAA.</item>
 		<item>בודק האם ניתן להטיל הפניה לאובייקט הכלול ב-vAA למחלקה המזוהה על ידי type_id. זורק ClassCastException אם הוא לא יכול, אחרת ממשיך בביצוע.</item>
-		<item>בודק אם התוכן של אוגר vB הוא מופע של המחלקה המזוהה על ידי type_id. מגדיר את ה-vA של הרישום ללא אפס אם קיים, 0 אם לא.\nvA = vB instanceOf type ? 10</item>
+		<item>בודק אם התוכן של אוגר vB הוא מופע של המחלקה המזוהה על ידי type_id. מגדיר את ה-vA של הרישום ללא אפס אם קיים, 0 אם לא.\nvA = vB instanceOf type ? 1:0</item>
 		<item>קובע את מספר רכיבי המערך מאוגר vB וממקם את הערך באוגר vA.\nvA = vB.length</item>
 		<item>יוצר מופע של סוג אובייקט ומציב הפניה למופע שנוצר במאגר vAA.</item>
 		<item>יוצר מערך חדש של משתני type_id בגודל של רכיבי register vB ומציב הפניה למערך ב- register vA.</item>
@@ -56,7 +282,7 @@
 		<item>מיישמת אופרטור Switch במקרה של טבלה דלילה. ההוראה משתמשת בטבלה המציינת קיזוזים עבור כל קבוע. אם לא נמצאו התאמות בטבלה, ההצהרה הבאה מבוצעת (אות ברירת מחדל).</item>
 		<item>משווה את ערכי הציפה (הנקודה הצפה) ב-vBB ו-vCC וממקם את הערך השלם במאגר vAA:\nvAA = vBB &lt; vCC ? כן: 1, לא: -1, שווה: 0</item>
 		<item>משווה את ערכי הציפה (הנקודה הצפה) ב-vBB ו-vCC וממקם את הערך השלם במאגר vAA:\nvAA = vBB &lt; vCC ? כן: 1, לא: -1, שווה: 0</item>
-		<item>משווה את הערכים הכפולים (הנקודה צפה) ב-vBB ו-vCC וממקם את הערך השלם באוגר vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nכן: 1, לא: -1, שווה: 0</item>
+		<item>משווה את הערכים הכפולים (הנקודה צפה) ב-vBB ו-vCC וממקם את הערך השלם באוגר vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? כן: 1, לא: -1, שווה: 0</item>
 		<item>משווה את הערכים הכפולים (הנקודה צפה) ב-vBB ו-vCC וממקם את הערך השלם באוגר vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? כן: 1, לא: -1, שווה: 0</item>
 		<item>משווה את הערכים הארוכים (המספר השלם) ב-vBB וב-vCC וממקם את הערך השלם (השלם) במאגר vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? כן: 1, לא: -1, שווה: 0</item>
 		<item>קופץ לתווית שצוינה אם vA == vB. vA ו-vB מכילים ערכים שלמים.\n(eq הוא קיצור של Equals)</item>
@@ -96,9 +322,9 @@
 		<item>מציב ערך כפול/ארוך מזוג אוגר (vA, vA+1) לתוך שדה מופע. ההתייחסות למחלקה המכילה את השדה הזה נמצאת ברישום vB.\nvB.field = (vA, vA+1)</item>
 		<item>ממקמת הפניה לאובייקט מאוגר ה-vA בשדה המופע. ההתייחסות למחלקה המכילה את השדה הזה נמצאת ברישום vB.\nvB.field = vA</item>
 		<item>ממקם את הערך הבוליאני מאוגר ה-vA בשדה המופע. ההתייחסות למחלקה המכילה את השדה הזה נמצאת ברישום vB.\nvB.field = vA</item>
-		<item>מגדיר את ערך הבתים (מספר שלם) של השדה הבוליאני שצוין במופע שאליו מתייחס register vB שווה לערך של register vA, כלומר:\nvB.field = vA</item>
-		<item>מגדיר את ערך התו (תו) של השדה הבוליאני שצוין במופע שאליו מתייחס register vB שווה לערך של register vA, כלומר:\nvB.field = vA</item>
-		<item>מגדיר את הערך הקצר (המספר השלם) של השדה הבוליאני שצוין במופע שאליו מתייחס register vB שווה לערך של register vA, כלומר:\nvB.field = vA</item>
+		<item>ממקם את ערך הבתים (מספר שלם) מאוגר ה-vA בשדה המופע. ההתייחסות למחלקה המכילה את השדה הזה נמצאת ברישום vB.\nvB.field = vA</item>
+		<item>ממקם את ערך התו מאוגר ה-vA בשדה המופע. ההתייחסות למחלקה המכילה את השדה הזה נמצאת ברישום vB.\nvB.field = vA</item>
+		<item>ממקם את הערך הקצר (מספר שלם) מאוגר ה-vA בשדה המופע. ההתייחסות למחלקה המכילה את השדה הזה נמצאת ברישום vB.\nvB.field = vA</item>
 		<item>קורא ערך משדה סטטי וממקם אותו במאגר vAA. האוגר המכיל את ההפניה למחלקה המכילה שדה זה אינו בשימוש.</item>
 		<item>קורא ערך כפול/ארוך משדה סטטי וממקם אותו בזוג אוגרים vAA, vAA+1. האוגר המכיל את ההפניה למחלקה המכילה שדה זה אינו בשימוש.</item>
 		<item>קורא הפניה לאובייקט משדה סטטי וממקם אותו במאגר vAA. האוגר המכיל את ההפניה למחלקה המכילה שדה זה אינו בשימוש.</item>
@@ -152,7 +378,7 @@
 		<item>מחשב vBB &amp; vCC (לוגי AND) ומאחסן את התוצאה ב-vAA register. כל הערכים הם מספר שלם.\nvAA = vBB &amp; vCC</item>
 		<item>מחשב vBB | vCC (או לוגי) ומאחסן את התוצאה במאגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB | vCC</item>
 		<item>מחשב את vBB ^ vCC (בלעדי OR) ומאחסן את התוצאה במאגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB ^ vCC</item>
-		<item>מעביר את vBB שנשאר לפי מספר הביטים שצוין על ידי vCC ומאחסן את התוצאה באוגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB &lt;&lt; vCC</item>
+		<item>מעביר את vBB שמאלה לפי מספר הביטים שצוין על ידי vCC ומאחסן את התוצאה באוגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB &lt;&lt; vCC</item>
 		<item>מעביר את vBB ימינה במספר הסיביות שצוין על ידי vCC ומאחסן את התוצאה במאגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB >> vCC</item>
 		<item>מעביר את vBB מבלי לשמר סימן ימינה במספר הסיביות שצוין על ידי vCC, ומאחסן את התוצאה במאגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB >>> vCC</item>
 		<item>מחשב (vBB, vBB+1) + (vCC, vCC+1) ומאחסן את התוצאה בזוג האוגר vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) + (vCC, vCC+1)</item>
@@ -162,10 +388,10 @@
 		<item>מחשב (vBB, vBB+1) % (vCC, vCC+1) ומאחסן את התוצאה בזוג האוגר vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
 		<item>מחשב (vBB, vBB+1) &amp; (vCC, vCC+1) (לוגי AND) ומאחסן את התוצאה בזוג האוגר vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
 		<item>מחשב (vBB, vBB+1) | (vCC, vCC+1) (או לוגי) ומאחסן את התוצאה בזוג אוגרים vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
-		<item>מחשב (vBB, vBB+1) ^ (vCC, vCC+1) (בלעדי AND) ומאחסן את התוצאה בזוג האוגר vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>מחשב (vBB, vBB+1) ^ (vCC, vCC+1) (XOR) ומאחסן את התוצאה בזוג האוגר vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
 		<item>מעביר את vBB, vBB+1 שמאלה במספר הסיביות שצוין על ידי vCC, ומאחסן את התוצאה בזוג האוגר vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
 		<item>מעביר את vBB, vBB+1 ימינה במספר הסיביות שצוין על ידי vCC, ומאחסן את התוצאה בזוג האוגר vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
-		<item>מעביר את vBB, vBB+1 ימינה מבלי לשמר את הסימן במספר הסיביות שצוין על ידי vCC, ומאחסן את התוצאה בזוג אוגרים vAA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>מעביר את vBB, vBB+1 ימינה מבלי לשמר את הסימן במספר הסיביות שצוין על ידי vCC, ומאחסן את התוצאה בזוג אוגרים vAA, vAA+1. כל הערכים ארוכים (מספר שלם).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
 		<item>מחשב vBB + vCC ומאחסן את התוצאה במאגר vAA. כל הערכים צפים.\nvAA = vBB + vCC</item>
 		<item>מחשב vBB - vCC ומאחסן את התוצאה במאגר vAA. כל הערכים צפים.\nvAA = vBB - vCC</item>
 		<item>מחשב את vBB * vCC ומאחסן את התוצאה במאגר vAA. כל הערכים צפים.\nvAA = vBB * vCC</item>
@@ -194,7 +420,7 @@
 		<item>מחשב (vA, vA+1) % (vB, vB+1) ומאחסן את התוצאה בזוג האוגר vA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
 		<item>מחשב (vA, vA+1) &amp; (vB, vB+1) (ולוגי AND) ומאחסן את התוצאה בזוג האוגר vA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
 		<item>מחשב (vA, vA+1) | (vB, vB+1) (או לוגי) ומאחסן את התוצאה בזוג אוגרים vA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
-		<item>מחשב (vA, vA+1) &amp; (vB, vB+1) (בלעדי OR) ומאחסן את התוצאה בזוג האוגר vA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>מחשב (vA, vA+1) ^ (vB, vB+1) (בלעדי OR) ומאחסן את התוצאה בזוג האוגר vA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
 		<item>מעביר את vA, vA+1 שמאלה במספר הסיביות שצוין על ידי vB, ומאחסן את התוצאה בזוג האוגר vA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
 		<item>מעביר את vA, vA+1 ימינה במספר הסיביות שצוין על ידי vB, ומאחסן את התוצאה בזוג האוגר vA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
 		<item>מעביר את vA, vA+1 ימינה מבלי לשמר את הסימן במספר הספרות שצוין ב-vB, ומאחסן את התוצאה בזוג אוגרים vA, vA+1. כל הערכים ארוכים (מספר שלם).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
@@ -224,7 +450,7 @@
 		<item>מחשב את vBB &amp; 0xFF (ולוגי AND) ומאחסן את התוצאה במאגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB &amp; 0xFF</item>
 		<item>מחשב vBB | 0xFF (או לוגי) ומאחסן את התוצאה באוגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB | 0xFF</item>
 		<item>מחשב את vBB ^ 0xFF (בלעדי OR) ומאחסן את התוצאה במאגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB ^ 0xFF</item>
-		<item>מעביר את vBB שנשאר לפי מספר הביטים שצוין על ידי 0xFF ומאחסן את התוצאה באוגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB &lt;&lt; 0xFF</item>
+		<item>מעביר את vBB שמאלה לפי מספר הביטים שצוין על ידי 0xFF ומאחסן את התוצאה באוגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB &lt;&lt; 0xFF</item>
 		<item>מעביר את vBB ימינה במספר הסיביות שצוין ב-0xFF ומאחסן את התוצאה באוגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB >> 0xFF</item>
 		<item>מעביר באופן איתות את vBB ימינה במספר הסיביות שצוין ב-0xFF ומאחסן את התוצאה באוגר vAA. כל הערכים הם מספר שלם.\nvAA = vBB >>> 0xFF</item>
 		<item>קורא (מריץ) שיטת חתימה פולימורפית עם פרמטרים. קיים בקבצי Dex מאז גרסה 038.</item>
@@ -233,5 +459,1047 @@
 		<item>מאפשר (מתחיל) להתקשר לאתר עם פרמטרים, אך הפרמטרים חייבים להיות מוכלים ברגיסטרים עם מספרים לפי הסדר. קיים בקבצי Dex מאז גרסה 038.</item>
 		<item>מציב הפניה לנקודת אחיזה של שיטה באוגר vAA. קיים בקבצי Dex מאז גרסה 039.</item>
 		<item>מציב הפניה לאב-טיפוס השיטה במאגר vAA. קיים בקבצי Dex מאז גרסה 039.</item>
+	</string-array>
+	<string-array name="years_or_days">
+		<item>שנים</item>
+		<item>ימים</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>מובנה</item>
+		<item>מותאם</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>הדפסת מידע שחולץ ממניפסט ה-APK.</item>
+		<item>הדפסת כל תצורה שמשמשת משאב ב-APK.</item>
+		<item>הדפסת ההרשאות שחולצו ממניפסט ה-APK.</item>
+		<item>הדפסת תוכן מאגר המחרוזות של טבלת המשאבים ב-APK.</item>
+		<item>הדפסת תוכן טבלת המשאבים מה-APK.</item>
+		<item>הדפסת משאבי &lt;overlayable> של APK.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>בהיר</item>
+		<item>כהה</item>
+		<item>שחור</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>מצב Fallback</item>
+		<item>הסרת ערפול</item>
+		<item>Escape ליוניקוד</item>
+		<item>הצגת קוד לא עקבי</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>שינוי שם</item>
+		<item>שינוי שם קבצים בלבד</item>
+		<item>החלפה</item>
+		<item>דילוג</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>שמאל</item>
+		<item>ימין</item>
+	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>הכול באותיות גדולות</item>
+		<item>הפרדה בנקודתיים</item>
+	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>הוספת משאבים חדשים (קבצים בלבד)</item>
+		<item>מחיקת משאבים חסרים</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
+	</string-array>
+	<string-array name="sort">
+		<item>שם</item>
+		<item>שם הפוך</item>
+		<item>סוג</item>
+		<item>סוג הפוך</item>
+		<item>גודל</item>
+		<item>גודל הפוך</item>
+		<item>זמן</item>
+		<item>זמן הפוך</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>צבע HEX</item>
+		<item>קוד Smali</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>one</item>
+		<item>two</item>
+		<item>few</item>
+		<item>many</item>
+		<item>other</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>לא לפרק</item>
+		<item>פירוק לתיקייה הראשית</item>
+		<item>פירוק לתיקייה נפרדת</item>
+		<item>ניסיון למזג חבילות</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>טקסט &lt;-> Base64</item>
+		<item>טקסט &lt;-> Unicode</item>
+		<item>טקסט &lt;-> קידוד URL</item>
+		<item>טקסט &lt;-> MD5</item>
+		<item>טקסט &lt;-> SHA-1</item>
+		<item>טקסט &lt;-> SHA-224</item>
+		<item>טקסט &lt;-> SHA-256</item>
+		<item>טקסט &lt;-> SHA-384</item>
+		<item>טקסט &lt;-> SHA-512</item>
+		<item>טקסט &lt;-> מערך (UTF-8)</item>
+		<item>טקסט &lt;-> מערך (UTF-16)</item>
+		<item>טקסט &lt;-> מערך (UTF-16LE)</item>
+		<item>טקסט &lt;-> מערך (UTF-16BE)</item>
+		<item>טקסט &lt;-> מערך (US-ASCII)</item>
+		<item>טקסט &lt;-> מערך (ISO-8859-1)</item>
+		<item>טקסט &lt;-> מערך (CP1251)</item>
+		<item>עשרוני &lt;-> Binary</item>
+		<item>עשרוני &lt;-> Octal</item>
+		<item>עשרוני &lt;-> Hex</item>
+		<item>עשרוני &lt;-> Hex (0x0)</item>
+		<item>עשרוני &lt;-> Hex (0x00000000)</item>
+		<item>נקודה צפה &lt;-> Binary</item>
+		<item>נקודה צפה &lt;-> Octal</item>
+		<item>נקודה צפה &lt;-> Hex</item>
+		<item>נקודה צפה &lt;-> Hex (0x0)</item>
+		<item>נקודה צפה &lt;-> Hex (0x00000000)</item>
+		<item>צבע &lt;-> Smali</item>
+		<item>צבע &lt;-> עשרוני</item>
+		<item>צבע &lt;-> A,R,G,B</item>
+		<item>תאריך &lt;-> מילישניות</item>
+		<item>תאריך &lt;-> Hex</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>לא הוגדר</item>
+		<item>אוטומטי</item>
+		<item>פנימי בלבד</item>
+		<item>חיצוני מועדף</item>
+	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lituania</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+		<item>O\'zbek tili</item>
+		<item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>zh-rTW</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+		<item>uz</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>yyyy/MM/dd HH:mm</item>
+		<item>dd/MM/yyyy HH:mm</item>
+		<item>HH:mm yyyy/MM/dd</item>
+		<item>HH:mm dd/MM/yyyy</item>
+		<item>yy/MM/dd HH:mm</item>
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item>
+		<item>HH:mm dd/MM/yy</item>
+		<item>yyyy.MM.dd HH:mm</item>
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>yy.MM.dd HH:mm</item>
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>yyyy-MM-dd HH:mm</item>
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>yy-MM-dd HH:mm</item>
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>ברירת מחדל</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>טריק פשוט</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>ברירת מחדל</item>
+		<item>לרוחב</item>
+		<item>לאורך</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>כבוי</item>
+		<item>15 שניות</item>
+		<item>30 שניות</item>
+		<item>דקה אחת</item>
+		<item>5 דקות</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>תמונה מותאמת (איכות נמוכה יותר)</item>
+		<item>תמונה באיכות גבוהה (גודל גדול יותר)</item>
+		<item>המרה ל-SVG</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>הגדרות</item>
+		<item>סימניות</item>
+		<item>היסטוריית חיפוש/החלפה</item>
+		<item>מילונים</item>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>לפי מספר מתודות/שדות</item>
+		<item>לחלקים שווים</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>תאריך תחילה</item>
+		<item>גודל תחילה</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>ברירת מחדל</item>
+		<item>חדש</item>
+	</string-array>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>auto-detect</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>he</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pt-PT</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>to</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>as</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>my</item>
+		<item>ps</item>
+		<item>ti</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>אוטומטי</item>
+		<item>אזרית (לטינית)</item>
+		<item>אלבנית</item>
+		<item>אנגלית</item>
+		<item>ערבית</item>
+		<item>ארמנית</item>
+		<item>אפריקאנס</item>
+		<item>בנגלית</item>
+		<item>בולגרית</item>
+		<item>בוסנית</item>
+		<item>וולשית</item>
+		<item>הונגרית</item>
+		<item>וייטנאמית</item>
+		<item>קריאולית האיטית</item>
+		<item>הולנדית</item>
+		<item>יוונית</item>
+		<item>גוג\'ראטית</item>
+		<item>דנית</item>
+		<item>עברית</item>
+		<item>אינדונזית</item>
+		<item>אירית</item>
+		<item>איסלנדית</item>
+		<item>ספרדית</item>
+		<item>איטלקית</item>
+		<item>קזחית</item>
+		<item>קנאדה</item>
+		<item>קנטונזית מסורתית</item>
+		<item>קטלאנית</item>
+		<item>אוטומי קרטרה</item>
+		<item>סינית מסורתית</item>
+		<item>סינית פשוטה</item>
+		<item>קוריאנית</item>
+		<item>לטבית</item>
+		<item>ליטאית</item>
+		<item>מלגשית</item>
+		<item>מלאית</item>
+		<item>מלאיאלם</item>
+		<item>מלטזית</item>
+		<item>מאורית</item>
+		<item>מרטהית</item>
+		<item>גרמנית</item>
+		<item>נפאלית</item>
+		<item>נורווגית</item>
+		<item>אורייה</item>
+		<item>פנג\'אבי</item>
+		<item>פרסית</item>
+		<item>פולנית</item>
+		<item>פורטוגזית (ברזיל)</item>
+		<item>פורטוגזית (פורטוגל)</item>
+		<item>רומנית</item>
+		<item>רוסית</item>
+		<item>סמואית</item>
+		<item>סרבית (קירילית)</item>
+		<item>סרבית (לטינית)</item>
+		<item>סלובקית</item>
+		<item>סלובנית</item>
+		<item>סווהילי</item>
+		<item>טהיטית</item>
+		<item>תאית</item>
+		<item>טמילית</item>
+		<item>טלוגו</item>
+		<item>טונגאית</item>
+		<item>טורקית</item>
+		<item>אוקראינית</item>
+		<item>אורדו</item>
+		<item>פיג\'ית</item>
+		<item>פיליפינית</item>
+		<item>פינית</item>
+		<item>צרפתית</item>
+		<item>הינדי</item>
+		<item>המונג דאו</item>
+		<item>קרואטית</item>
+		<item>צ\'כית</item>
+		<item>שוודית</item>
+		<item>אסטונית</item>
+		<item>מאיה יוקטקית</item>
+		<item>יפנית</item>
+		<item>אמהרית</item>
+		<item>אסאמית</item>
+		<item>דארי</item>
+		<item>צרפתית (קנדה)</item>
+		<item>אינוקטיטוט</item>
+		<item>חמר</item>
+		<item>קלינגונית (לטינית)</item>
+		<item>כורדית (מרכזית)</item>
+		<item>כורדית (צפונית)</item>
+		<item>לאו</item>
+		<item>מיאנמר (בורמזית)</item>
+		<item>פשטו</item>
+		<item>תיגרינית</item>
+	</string-array>
+	<string-array name="google_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>אוטומטי</item>
+		<item>אפריקאנס</item>
+		<item>אלבנית</item>
+		<item>אמהרית</item>
+		<item>ערבית</item>
+		<item>ארמנית</item>
+		<item>אזרית</item>
+		<item>בסקית</item>
+		<item>בלארוסית</item>
+		<item>בנגלית</item>
+		<item>בוסנית</item>
+		<item>בולגרית</item>
+		<item>קטלאנית</item>
+		<item>סבואנו</item>
+		<item>צ\'יצ\'ווה</item>
+		<item>סינית פשוטה</item>
+		<item>סינית מסורתית</item>
+		<item>קורסיקאית</item>
+		<item>קרואטית</item>
+		<item>צ\'כית</item>
+		<item>דנית</item>
+		<item>הולנדית</item>
+		<item>אנגלית</item>
+		<item>אספרנטו</item>
+		<item>אסטונית</item>
+		<item>פיליפינית</item>
+		<item>פינית</item>
+		<item>צרפתית</item>
+		<item>פריזית</item>
+		<item>גליסית</item>
+		<item>גאורגית</item>
+		<item>גרמנית</item>
+		<item>יוונית</item>
+		<item>גוג\'ראטית</item>
+		<item>קריאולית האיטית</item>
+		<item>האוסה</item>
+		<item>הוואית</item>
+		<item>עברית</item>
+		<item>הינדי</item>
+		<item>המונג</item>
+		<item>הונגרית</item>
+		<item>איסלנדית</item>
+		<item>איגבו</item>
+		<item>אינדונזית</item>
+		<item>אירית</item>
+		<item>איטלקית</item>
+		<item>יפנית</item>
+		<item>ג\'אווה</item>
+		<item>קנאדה</item>
+		<item>קזחית</item>
+		<item>חמר</item>
+		<item>קוריאנית</item>
+		<item>כורדית (קורמאנג\'י)</item>
+		<item>קירגיזית</item>
+		<item>לאו</item>
+		<item>לטינית</item>
+		<item>לטבית</item>
+		<item>ליטאית</item>
+		<item>לוקסמבורגית</item>
+		<item>מקדונית</item>
+		<item>מלגשית</item>
+		<item>מלאית</item>
+		<item>מלאיאלם</item>
+		<item>מלטזית</item>
+		<item>מאורית</item>
+		<item>מרטהית</item>
+		<item>מונגולית</item>
+		<item>מיאנמר (בורמזית)</item>
+		<item>נפאלית</item>
+		<item>נורווגית</item>
+		<item>פשטו</item>
+		<item>פרסית</item>
+		<item>פולנית</item>
+		<item>פורטוגזית</item>
+		<item>פנג\'אבי</item>
+		<item>רומנית</item>
+		<item>רוסית</item>
+		<item>סמואית</item>
+		<item>גאלית סקוטית</item>
+		<item>סרבית</item>
+		<item>ססוטו</item>
+		<item>שונה</item>
+		<item>סינדהית</item>
+		<item>סינהלית</item>
+		<item>סלובקית</item>
+		<item>סלובנית</item>
+		<item>סומלית</item>
+		<item>ספרדית</item>
+		<item>סונדנזית</item>
+		<item>סווהילי</item>
+		<item>שוודית</item>
+		<item>טג\'יקית</item>
+		<item>טמילית</item>
+		<item>טלוגו</item>
+		<item>תאית</item>
+		<item>טורקית</item>
+		<item>אוקראינית</item>
+		<item>אורדו</item>
+		<item>אוזבקית</item>
+		<item>וייטנאמית</item>
+		<item>וולשית</item>
+		<item>קוסה</item>
+		<item>יידיש</item>
+		<item>יורובה</item>
+		<item>זולו</item>
+		<item>אורייה</item>
+		<item>פנג\'אבי</item>
+		<item>קינירואנדה</item>
+		<item>טטרית</item>
+		<item>טורקמנית</item>
+		<item>אויגורית</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>ba</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>my</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>zh</item>
+		<item>cv</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>sjn</item>
+		<item>emj</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>he</item>
+		<item>mrj</item>
+		<item>hi</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jv</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>kazlat</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mhr</item>
+		<item>mn</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>pap</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pa</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tl</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>udm</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>uzbcyr</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>sah</item>
+		<item>yi</item>
+	</string-array>
+	<string-array name="yandex_translator_names">
+		<item>אוטומטי</item>
+		<item>אפריקאנס</item>
+		<item>אלבנית</item>
+		<item>אמהרית</item>
+		<item>ערבית</item>
+		<item>ארמנית</item>
+		<item>אזרית</item>
+		<item>בשקירית</item>
+		<item>בסקית</item>
+		<item>בלארוסית</item>
+		<item>בנגלית</item>
+		<item>בוסנית</item>
+		<item>בולגרית</item>
+		<item>בורמזית</item>
+		<item>קטלאנית</item>
+		<item>סבואנו</item>
+		<item>סינית</item>
+		<item>צ\'ובשית</item>
+		<item>קרואטית</item>
+		<item>צ\'כית</item>
+		<item>דנית</item>
+		<item>הולנדית</item>
+		<item>אלפית (סינדארין)</item>
+		<item>אימוג\'י</item>
+		<item>אנגלית</item>
+		<item>אספרנטו</item>
+		<item>אסטונית</item>
+		<item>פינית</item>
+		<item>צרפתית</item>
+		<item>גליסית</item>
+		<item>גאורגית</item>
+		<item>גרמנית</item>
+		<item>יוונית</item>
+		<item>גוג\'ראטית</item>
+		<item>האיטית</item>
+		<item>עברית</item>
+		<item>מארי הררית</item>
+		<item>הינדי</item>
+		<item>הונגרית</item>
+		<item>איסלנדית</item>
+		<item>אינדונזית</item>
+		<item>אירית</item>
+		<item>איטלקית</item>
+		<item>יפנית</item>
+		<item>ג\'אווה</item>
+		<item>קנאדה</item>
+		<item>קזחית</item>
+		<item>קזחית (לטינית)</item>
+		<item>חמר</item>
+		<item>קוריאנית</item>
+		<item>קירגיזית</item>
+		<item>לאו</item>
+		<item>לטינית</item>
+		<item>לטבית</item>
+		<item>ליטאית</item>
+		<item>לוקסמבורגית</item>
+		<item>מקדונית</item>
+		<item>מלגשית</item>
+		<item>מלאית</item>
+		<item>מלאיאלם</item>
+		<item>מלטזית</item>
+		<item>מאורית</item>
+		<item>מרטהית</item>
+		<item>מארי</item>
+		<item>מונגולית</item>
+		<item>נפאלית</item>
+		<item>נורווגית</item>
+		<item>פפיאמנטו</item>
+		<item>פרסית</item>
+		<item>פולנית</item>
+		<item>פורטוגזית</item>
+		<item>פנג\'אבי</item>
+		<item>רומנית</item>
+		<item>רוסית</item>
+		<item>גאלית סקוטית</item>
+		<item>סרבית</item>
+		<item>סינהלית</item>
+		<item>סלובקית</item>
+		<item>סלובנית</item>
+		<item>ספרדית</item>
+		<item>סונדנזית</item>
+		<item>סווהילי</item>
+		<item>שוודית</item>
+		<item>טגלוג</item>
+		<item>טג\'יקית</item>
+		<item>טמילית</item>
+		<item>טטרית</item>
+		<item>טלוגו</item>
+		<item>תאית</item>
+		<item>טורקית</item>
+		<item>אודמורטית</item>
+		<item>אוקראינית</item>
+		<item>אורדו</item>
+		<item>אוזבקית</item>
+		<item>אוזבקית (קירילית)</item>
+		<item>וייטנאמית</item>
+		<item>וולשית</item>
+		<item>קוסה</item>
+		<item>יאקוטית</item>
+		<item>יידיש</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>אוטומטי</item>
+		<item>ערבית</item>
+		<item>בולגרית</item>
+		<item>סינית</item>
+		<item>צ\'כית</item>
+		<item>דנית</item>
+		<item>הולנדית</item>
+		<item>אנגלית</item>
+		<item>אסטונית</item>
+		<item>פינית</item>
+		<item>צרפתית</item>
+		<item>גרמנית</item>
+		<item>יוונית</item>
+		<item>הונגרית</item>
+		<item>אינדונזית</item>
+		<item>איטלקית</item>
+		<item>יפנית</item>
+		<item>קוריאנית</item>
+		<item>לטבית</item>
+		<item>ליטאית</item>
+		<item>נורווגית (בוקמול)</item>
+		<item>פולנית</item>
+		<item>פורטוגזית</item>
+		<item>רומנית</item>
+		<item>רוסית</item>
+		<item>סלובקית</item>
+		<item>סלובנית</item>
+		<item>ספרדית</item>
+		<item>שוודית</item>
+		<item>טורקית</item>
+		<item>אוקראינית</item>
 	</string-array>
 </resources>

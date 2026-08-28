@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apktool M 常見問題</title>
+    <style>
+        .light {
+            background-color: #ffffff;
+        }
+    
+	    .dark {
+            background-color: #303030;
+        }
+    
+        .black {
+            background-color: #000000;
+        }
+        
+        .light .section_title, .light .content_text, .light .answer_text {
+            color: #424242;
+        }
+    
+        .light .content_text {
+            background: #ddebf7;
+        }
+    
+        .light .answer_text {
+            background: #dddddd;
+        }
+    
+	    .dark .section_title, .dark .content_text, .dark .answer_text {
+            color: #bdbdbd;
+        }
+    
+        .dark .content_text {
+            background: #081e22;
+        }
+    
+        .dark .answer_text {
+            background: #222222;
+        }
+    
+        .black .section_title, .black .content_text, .black .answer_text {
+            color: #ffffff;
+        }
+    
+        .black .content_text {
+            background: #222222;
+        }
+    
+        .black .answer_text {
+            border: 1px solid #424242;
+            background: #222222;
+        }
+    
+        .black .question_title {
+            border: 1px solid #424242;
+            background: #424242;
+            background: #111111;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        .section_title {
+            border: none;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .content_text {
+            border: 1px solid #c0c6d2;
+            border-radius: 3px;
+            padding: 6px;
+            background: #ddebf7;
+        }
+        
+        a:active,
+        a:hover,
+        a {
+            text-decoration: none;
+            color: #2196F3;
+        }
+        
+        .details_block {
+            margin-bottom: 10px;
+            border-radius: 3px;
+            overflow: auto;
+        }
+        
+        .question_title {
+            border: 1px solid #2196F3;
+            padding: 6px;
+            background: #2196F3;
+            color: #ffffff;
+        }
+        
+        .answer_text {
+            border: 1px solid #2196F3;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 6px;
+        }
+        
+        .warning_text {
+            color: red;
+        }
+    </style>
+</head>
+<body class="light">
+    <section class="section_zero">
+        <div class="section_title">  內容  </div>
+        <div class="content_text">
+            <li><a href="https://4pda.to/forum/index.php?showtopic=1002506&view=findpost&p=116526321"><b>在 4PDA 上更新了常見問題解答（俄語）</b></a></li>
+            <li><a href="#section_one">快速編輯</a></li>
+            <li><a href="#section_two">完全編輯 - 反編譯和彙編</a></li>
+            <li><a href="#section_three">翻譯應用程式</a></li>
+            <li><a href="#section_four">合併分包功能</a></li>
+            <li><a href="#section_five">建立自訂簽名</a></li>
+            <li><a href="#section_six">檔案管理器</a></li>
+            <li><a href="#section_seven">雜項</a></li>
+            <li><a href="#section_eight">MPatcher</a></li>
+        </div>
+    </section>
+    <section id="section_one">
+        <div class="section_title">  快速編輯  </div>
+        <details class="details_block">
+            <summary class="question_title">什麼是快速編輯？</summary>
+            <div class="answer_text">  這是在不需要反編譯和重建的情況下編輯一些核心應用程式資料。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">快速編輯是做什麼用的？</summary>
+            <div class="answer_text">
+                <li>查看有關應用程式（APK）、其權限和首選安裝位置的資訊（不要與實際安裝位置混淆）；</li>
+                <li>更改應用程式名稱；</li>
+                <li>更改應用包名稱（克隆應用）；</li>
+                <li>取代應用程式中的矢量（自動生成）、自適應和常規光柵圖示；</li>
+                <li>設定首選應用程式安裝位置；</li>
+                <li>更改最低或目標 SDK 版本；</li>
+                <li>使應用程式適配 Android TV；</li>
+                <li>從清單中移除：<code>android:isSplitRequired、android:debuggable、
+                        android:testOnly</code>。  </li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  為什麼我需要「權限」項？  </summary>
+            <div class="answer_text">  查看應用程式的權限，以及啟用或禁用這些權限。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  我可以將圖像轉換為矢量嗎？  </summary>
+            <div class="answer_text">  可以。<br>  支援 PNG、Jpeg、Webp 和 Svg 格式<br>  轉換使用的類型為 <u>{old file name}_vector.xml</u><br>  轉換時，您可以提高或降低圖像品質。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  是否可以將 svg 圖像轉換為 VectorDrawable？  </summary>
+            <div class="answer_text">  可以。<br>  在 SVG/VectorDrawable 多邊形預覽版（未編譯）中可用<br>
+                <u>注意：</u> SVG 必須具有簡單且足夠的結構，否則解析器可能無法正確處理它，您就得手動對其進行規範化才能使其正常工作。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  是否可以將位圖圖像轉換為 VectorDrawable？  </summary>
+            <div class="answer_text">  可以。<br>  這不是靈丹妙藥。它可能在跟蹤時有很大的誤差 - 這取決於源圖像幾何結構的複雜性。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何取代應用程式圖示？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>準備必要的圖示，最好是 png 格式和尺寸不超過 192x192px。  </li>
+                    <li>選擇所需的應用程式 → 快速編輯。</li>
+                    <li>在左上角，您可以看到已安裝應用程式的圖示及其名稱。</li>
+                    <li>點擊圖示本身並選擇先前準備的圖示。</li>
+                    <li>如有必要，請選中必要的設定框：「取代自適應圖示」、「高品質圖示（較大尺寸）」</li>
+                    <li>如果之前沒有安裝過，請選擇簽名檔案。</li>
+                    <li>點擊「儲存」。</li>
+                </ol>  完成的檔案將與所選的應用程式在同一個資料夾中，並緊挨著，且末尾帶有 mod 標籤字樣。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何提取應用程式圖示？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>選擇所需的應用程式 → 快速編輯。</li>
+                    <li>長按圖示。</li>
+                </ol>  提取的圖示將與所選的應用程式在同一個資料夾中，並緊挨著。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何更改最低或目標 SDK 版本？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>選擇所需的應用程式 → 快速編輯。</li>
+                    <li>對「最低SDK版本」或「目標SDK版本」設定進行必要的更改。</li>
+                    <li>點擊「儲存」。</li>
+                </ol>  完成的檔案將與所選的應用程式在同一個資料夾中，並緊挨著，且末尾帶有 mod 標籤字樣。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何更改應用名稱？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>選擇所需的應用程式 → 快速編輯。</li>
+                    <li>接下來，將所需應用程式的名稱更改為所需的名稱。</li>
+                    <li>如果之前沒有安裝過，請選擇簽名檔案。</li>
+                    <li>點擊「儲存」。</li>
+                </ol>  完成的檔案將被放置在選定的應用程式旁邊，並在末尾標記 mod 字樣。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  為什麼我無法更改「應用名稱」？（該專案處於非活動狀態。）  </summary>
+            <div class="answer_text">  可能是因為應用程式的最低 SDK 版本高於您的系統版本。在這些條件下，編輯受到限制。<br>  首先，您需要降級 SDK 的最低版本，然後編輯其他所有內容。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何更改應用包名稱？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>選擇所需的應用程式 → 「快速編輯」。</li>
+                    <li>接下來，更改程式包名稱。</li>
+                    <li>如果之前沒有安裝過，請選擇簽名檔案。</li>
+                    <li>點擊「儲存」。</li>
+                </ol>  完成的檔案將被放置在選定的應用程式旁邊，並在末尾標記 mod 字樣。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何在此應用程式中進行 apk 克隆？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>選擇所需的應用程式 → 「快速編輯」。</li>
+                    <li>然後更改包名稱，例如在名稱的最後新增或刪除一個字母。</li>
+                    <li>如果之前沒有安裝過，請選擇簽名檔案。</li>
+                    <li>點擊「儲存」。</li>
+                </ol>  完成的檔案將被放置在選定的應用程式旁邊，並在末尾標記 mod 字樣。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何在快速編輯過程中克隆應用程式？  </summary>
+            <div class="answer_text">  該程式在快速編輯過程中更改以下參數：AndroidManifest.xml 和 resources.arsc。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何使應用程式適配 Android TV？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>選擇所需的應用程式 → 「快速編輯」。</li>
+                    <li>接下來，選中「適配 Android TV」。</li>
+                    <li>如果之前沒有安裝過，請選擇簽名檔案。</li>
+                    <li>點擊「儲存」。</li>
+                </ol>  完成的檔案將被放置在選定的應用程式旁邊，並在末尾標記 mod 字樣。應用程式圖示被用作於橫幅。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如果快速編輯後應用程式無法安裝，我該怎麼辦？  </summary>
+            <div class="answer_text">  檢查是否沒有對安裝包進行簽名？<br>  在快速編輯中，選擇一個簽名。預設情況下，如果您以前沒有使用過簽名，請選擇「不簽名」。  </div>
+        </details>
+    </section>
+    <section id="section_two">
+        <div class="section_title">  完全編輯 - 反編譯和彙編  </div>
+        <details class="details_block">
+            <summary class="question_title">  什麼是反編譯，它的用途是什麼？  </summary>
+            <div class="answer_text">  反編譯 arsc + dex —— 將二進位程式碼轉換為人類可讀的格式。在編輯應用程式資源（resources.arsc）和 Smali 彙編程式（程式碼）時是必需的。也適用於需要這種反編譯的函式 —— 用於存取資訊、應用補丁、翻譯...  <p><em>要使重新編譯正常工作，需要 aapt 的二進位檔案。首次啟動應用時，系統會提示您安裝。如果沒有，請到「設定 » 編譯 » 更換工具」中下載 ... "</em></p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何反編譯應用程式？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>選擇所需的應用。</li>
+                    <li>點擊它。</li>
+                    <li>將開啟一個彈出選單。</li>
+                    <li>選擇「反編譯」。</li>
+                    <li>我們標記需要反編譯的專案：</li>
+                    <ul>
+                        <li>「反編譯資源」</li>
+                        <li>「反編譯 classes.dex」或「反編譯所有 *.dex 檔案"<br>
+                            <em>（「所有 *.dex」項負責子資料夾中的 dex：例如 assets、mthook 等）</em>
+                        </li>
+                        <li>此外，如有必要，還可以選擇反編譯的位置進行「反編譯額外資源」。</li>
+                    </ul>
+                </ol>  反編譯成功後，如果之前在「設定」中啟用了音訊和對話框通知，則會出現該通知。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何編譯回應用程式？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>在專案中，點一下資源管理器窗口上方的「編譯此專案」標籤。</li>
+                    <li>在編譯窗口中，選擇資源構建工具 aapt 或 aapt2。</li>
+                    <li>如有必要，還可以指定自動簽名。</li>
+                </ol>  紀錄是實時顯示的。您可以在構建過程中跟蹤階段、注釋和錯誤。<br>  完成後，紀錄將停止（這將是可見的）。<br>  編譯成功後，如果之前在「設定」中啟用了音訊和對話框通知，則會出現該通知。<br>  在底部，系統還會提示您立即安裝構建的應用程式。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  應用程式構建後儲存在哪裡？  </summary>
+            <div class="answer_text">  到包含已反編譯應用程式的資料夾。在專案根目錄中（apktool.json 旁邊）  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  是否可以同時反編譯多個檔案？  </summary>
+            <div class="answer_text">  可以，但最好連續反編譯幾個，因為如果同時反編譯，可能會記憶體不足。<br><br>
+                <details class="details_block">
+                    <summary class="question_title">  怎麼做？  </summary>
+                    <div class="answer_text">  選擇多個檔案並長按以開啟選單。<br>
+                        <u>注意！</u>  這適用於相同類型的檔案。如果選擇了 apk 以外的內容，則選單將不包含任何專案。  </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何更改儲存 apk 的資料夾？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>設定 → 「編譯」 → 「匯出目錄」  </li>
+                    <li>轉到所需的資料夾，點擊「路徑」行 - 設為匯出目錄。</li>
+                    <li>您也可以直接在檔案管理器中設定輸出檔案夾。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  什麼是「已安裝應用程式的輸出目錄」專案？  </summary>
+            <div class="answer_text">  這是從「應用程式」選單中匯出/提取 APK 以進行進一步工作的目錄。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何取代「.apk」檔案中的資源？  </summary>
+            <div class="answer_text">  首先您需要反編譯，然後複製/貼上檔案並構建。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如果儘管一切都沒有錯誤，或者我根本沒有更改 apk 中的任何內容，只是重新編譯，但應用程式沒有構建，我該怎麼辦？  </summary>
+            <div class="answer_text">  切換 aapt 版本。<br> 查看「警告」事件級別的紀錄。  <br> 一般來說，請查看紀錄 - 在那裡應該有指出原因。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  與 Apktool 專案的相容性如何？  </summary>
+            <div class="answer_text">  Apktool M 允許您構建通過常規 Apktool 解析的專案。<br>  在構建之前，Apktool M 將 .yml 轉換為 .json。<br>  您可以使用紀錄跟蹤有關處理程式的資訊。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Apktool M 可以與系統應用程式一起使用嗎？  </summary>
+            <div class="answer_text">  是的，有可能。<br><br>
+                <details class="details_block">
+                    <summary class="question_title">  怎麼做？  </summary>
+                    <div class="answer_text">  在使用此類 apk 之前，您需要使用此 apk 上下文選單中的專案匯入 apk 框架。匯入是在所有此類 apk 上執行的。    <p>基本路徑：/system/framework/..</p>    它們也可以位於 /system/vendor/framework 等相鄰目錄中。如果這些目錄存在（很少見）。<br><br>  框架示例：<br>
+                        <img align="center" alt="" class="image" src="data:image/webp;base64,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" width="100%">
+                        <p>然後反編譯並編譯為常規 apk。若要儲存原始 META-INF 和清單 – 請在反編譯設定中啟用「匹配原始檔」。</p>
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  「編譯與反編譯」部分中的要點說明  </summary>
+            <div class="answer_text">
+                <details class="details_block">
+                    <summary class="question_title">  匯出目錄  </summary>
+                    <div class="answer_text">  從「應用程式」選項卡匯出/提取已安裝應用程式的路徑。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  使用 aapt2  </summary>
+                    <div class="answer_text">  在構建之前，將該工具的第二個版本新增到 aapt 版本選擇項中。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  偵錯資訊  </summary>
+                    <div class="answer_text">
+                        <p>在構建時，偵錯資料儲存在 Smali 檔案中，如 <code>.line、.param</code> 等。</p>
+                        
+                        <u>注意：</u><br>  僅在可偵錯模式下偵錯應用程式時才需要此資料。也適用於 Logcat 中對 Smali 當機進行狹隘的偵錯（這種情況很少發生，它可以作為導致當機的線路的錨點提供說明）。它們不會影響程式碼執行。這些資料在編輯 Smali 彙編器作為參考點等（對於建模者）時也會有所說明。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  偵錯模式  </summary>
+                    <div class="answer_text">  將清單中 <code>
+                            &lt;application /&gt;
+                        </code> 標籤裡的 <code>android:debuggable</code> 屬性值設為 <code>true</code>。    通知系統它是一個偵錯應用程式。允許您擴展存取此應用程式的紀錄記錄。只有在特殊工具（例如 Android Studio，以及 ADB 級別的偵錯等）的說明下，才能與該函式的功能進行交互。此選項不適用於 Logcat - 如果更改此參數，系統紀錄中的偵錯條目數不會改變。    <p>若要將此類應用程式指定為目前要偵錯的應用程式，請在「系統設定」的開發者選項中「偵錯應用」裡選擇它（路徑可能會有所不同）。</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  詳細  </summary>
+                    <div class="answer_text">  在構建過程中，它會在編譯每個檔案之後將其最終狀態輸出到紀錄中。如果不需要，請不要啟用它。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  匹配原始檔  </summary>
+                    <div class="answer_text">  允許您通過鑑於原始資源雜湊來儲存原始 META-INF 和清單雜湊。<br>  此模式僅允許您編輯 Smali – 如果您嘗試在 res/... 中構建編輯後的檔案，它將在最終的 apk 中被刪除，因為它與原始雜湊（已修改）不匹配。  <p>
+                                <span class="warning_text"><em>這個問題需要作出清楚的說明。</em></span></p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  分析所有 Smali  </summary>
+                    <div class="answer_text">  加快 Smali 中的檔案分析速度。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  新增「APKTOOL_DUMMY」  </summary>
+                    <div class="answer_text">
+                        <p>預設情況下，resources.arsc 中的資源 ID 是按等差數列設定的。在某些情況下，它可能已損壞 - 值類型中的某些位置可能不會被填充（未佔用）。</p>
+                        <p>這些位置是從 APKTOOL_DUMMY 樁程式碼設定的，以恢復數列的完整性。這些行不被任何人使用，也不影響任何東西。</p>
+                        <u>小提示：</u><br>
+                        <p>如果從 res/values/public.xml 中刪除了一個資源物件，那麼在構建期間，它將嘗試找到一個可用空位，並在其中設定其 ID。如果沒有可用位置，它將被新增到其類別中專案列表的末尾。不建議使用 Smali 中指定的物件 ID 執行此操作 - 這將會導致當機，因為 ID 指定的資源已移動（不再存在）。</p>
+                        <p>完全刪除 public.xml 將迫使 Apktool 從頭開始建立一個數列 – 因為起始和結束 ID 之間沒有可用空位，然後 APKTOOL_DUMMY 將不會安裝到任何地方。</p>
+                        <p>對 APKTOOL_DUMMY 的需求完全由使用者決定。如果反編譯專案在 ID 之間具有特定的結構（特別是由於自訂屬性和(或)程式碼混淆），則也可能需要這樣做。</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  格式化 HTML  </summary>
+                    <div class="answer_text">  所有 .html 和 .htm(?) 檔案的內容將根據 XML 語法進行格式化。這可能會破壞 HTML 頁面的輸出顯示。只有在必要時才安裝。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  刪除「build」資料夾  </summary>
+                    <div class="answer_text">
+                        <p>在構建期間，DEX 和 ARSC 檔案會快取在「build」資料夾中。如果在上一次構建之後未修改資源並重新構建 apk，那麼 .arsc 將不會再次建立，而是從快取的實例中提取，因為它的雜湊值是相同的（未修改）。這也適用於 Smali（DEX 檔案）。通過跳過重新編譯來加快 apk 的構建速度。</p>
+                        <p>刪除資料夾只會釋放空間。之後，在下一次構建期間，.dex 和 .arsc 將「從頭開始」重新建立，資料夾將被重新建立。激活此選項可使您在成功構建後自動刪除資料夾。如果需要，請激活它。</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  全部到輸出目錄  </summary>
+                    <div class="answer_text">  所有成功編譯的 apk 將自動遷移到上述輸出目錄。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  管理框架  </summary>
+                    <div class="answer_text">  允許您管理從外部匯入的框架。點擊重設按鈕可清除列表和本機檔案本身，並從 Apktool M 恢復 res-framework.apk（ID 1）。  </div>
+                </details>
+            </div>
+        </details>
+    </section>
+    <section id="section_three">
+        <div class="section_title">  翻譯應用程式  </div>
+        <details class="details_block">
+            <summary class="question_title">  支援多少種語言的翻譯？  </summary>
+            <div class="answer_text">  超過 100 種語言。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  在 Yandex 翻譯中有哪些選項可用？  </summary>
+            <div class="answer_text">
+                <li>自動翻譯資源（strings、arrays、plurals）和 smali 中選定的字串；</li>
+                <li>手動翻譯資源（strings、arrays、plurals）和 smali；</li>
+                <li>更正譯文；</li>
+                <li>線上翻譯有多種翻譯服務可供選擇；</li>
+                <li>離線翻譯；</li>
+                <li>字典支援；</li>
+                <li>根據現有的翻譯建立自己的字典；</li>
+                <li>支援 MT 管理器字典；</li>
+                <li>組合語言。</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  此應用程式中有多少線上翻譯服務？  </summary>
+            <div class="answer_text">  三個：Yandex、Google、Bing。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  我找不到此應用程式的翻譯功能。如何啟用 Yandex 翻譯並將應用程式（strings.xml）翻譯成漢語？  </summary>
+            <div class="answer_text">  此功能僅在應用程式反編譯時可用。  <ol>
+                    <li>反編譯所需 apk 的資源。</li>
+                    <li>轉到包含反編譯檔案的資料夾。</li>
+                    <li>開啟檔案管理器選單（點一下地址欄開啟），並選擇「翻譯模式」。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何自動翻譯應用程式？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>反編譯所需 apk 的資源。</li>
+                    <li>轉到包含反編譯檔案的資料夾。</li>
+                    <li>開啟檔案管理器選單（點一下地址欄開啟），並選擇「翻譯模式」，然後點一下右上角的三個點，並選擇「自動翻譯」。</li>
+                    <li>在開啟的選單中，選擇所需的翻譯服務，例如 Yandex。</li>
+                    <li>在「源語言」項中，您可以保留選擇「自動檢測」 目標語言 - 選擇所需語言。預設情況下，建議使用系統上安裝的語言。</li>
+                    <li>在底部，選中「如果存在則合併」或「僅儲存翻譯後的字串」這些必要的選項</li>
+                    <li>選擇必要的行並選擇它們。</li>
+                    <li>點擊「翻譯」以翻譯 res/values/strings 中的字串。</li>
+                    <li>完成後，再次點一下右上角的三個點，然後選擇「儲存」  </li>
+                    <li>整合專案（應用程式）。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何在 smali 中自動翻譯應用程式？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>反編譯所需的 apk。</li>
+                    <li>轉到包含反編譯檔案的資料夾。</li>
+                    <li>開啟檔案管理器選單（點一下地址欄開啟），並選擇「翻譯 Smali」，然後點一下右上角的三個點，並選擇「自動翻譯」。</li>
+                    <li>在開啟的選單中，選擇所需的翻譯服務，例如 Yandex。</li>
+                    <li>在「源語言」項中，您可以保留選擇「自動檢測」 目標語言 - 選擇所需語言。預設情況下，建議使用系統上安裝的語言。</li>
+                    <li>選擇必要的行並選擇它們。</li>
+                    <li>在底部，選中「如果存在則合併」或「僅儲存翻譯後的字串」這些必要的選項</li>
+                    <li>點擊「翻譯」</li>
+                    <li>完成後，再次點一下右上角的三個點，然後選擇「儲存」  </li>
+                    <li>整合專案（應用程式）。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  在「自動翻譯」中，有一個「糾正翻譯」的功能。它是做什麼用的？  </summary>
+            <div class="answer_text">  跳過不需要翻譯的行：<code>true、false、%1$d/%2$d</code>，現在還包括矢量圖形、引用等，並在自動翻譯後更正一些行。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何手動翻譯應用程式？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>反編譯所需的 apk。</li>
+                    <li>轉到包含反編譯檔案的資料夾。</li>
+                    <li>開啟檔案管理器選單（點一下地址欄開啟），並選擇「翻譯 Smali」，然後手動編輯必要的行。</li>
+                    <li>在右上角，點一下三個點，然後選擇「儲存」</li>
+                    <li>整合專案（應用程式）。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如果翻譯後的應用程式預設字串不包含必要的字串，而其他字串包含，我該如何組合語言？  </summary>
+            <div class="answer_text">  在對應用程式進行必要的翻譯後，轉到翻譯選單，選擇「新增，選擇來源」，然後新增來自其他語言環境的缺失行。當然，如有必要，我們會翻譯它們。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Apktool M 支援什麼字典格式？  </summary>
+            <div class="answer_text">  *.amd 和 *.mtd  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何從翻譯檔案建立自己的字典？  </summary>
+            <div class="answer_text">  開啟 Yandex 翻譯，從選單中選擇「建立字典」，在專案資料夾中選擇源資源（未翻譯的字串）和目標資源（您的翻譯檔案），然後儲存。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何使用儲存的字典？  </summary>
+            <div class="answer_text">  下次進行翻譯時，它將出現在翻譯服務選項中。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  我在哪裡可以得到現成的字典進行離線翻譯？  </summary>
+            <div class="answer_text">  在 <a href="https://4pda.to/forum/index.php?showtopic=548542&amp;view=findpost&amp;p=29447386&amp;anchor=Spoil-29447386-6">MT 管理器話題</a> 中<br>  將其複製到「輸出目錄/dictionary」（預設情況下，它在內部儲存空間的「Apktool_M/dictionary」中），或者只需點一下程式中的字典檔案匯入並新增即可。<br>  之後，該字典將出現在 Yandex 翻譯的自動翻譯服務中。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  翻譯後，專案未整合。返回錯誤。  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>刪除通常在編譯錯誤紀錄中指出的無效內容。</li>
+                    <li>如果不是在 aapt2 中構建的，且沒有關於無效翻譯字串的錯誤，請使用 aapt1 進行構建。</li>
+                    <li>該應用程式可能受到簽名保護。</li>
+                </ol>
+            </div>
+        </details>
+    </section>
+    <section id="section_four">
+        <div class="section_title">  合併分包功能  </div>
+        <details class="details_block">
+            <summary class="question_title">  什麼是合併分包？  </summary>
+            <div class="answer_text">  這是將 Android App Bundle（分包）合併為一個安裝檔案，以及安裝和提取此類檔案。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何從分包中構建 apk？此選項位於何處？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>在上下文選單中的「合併分包」。只需在 apks/xapk 上短按即可調用。</li>
+                    <li>在上下文選單中的「合併分包」。通過點擊一組預選/選定的 apk 來調用。</li>
+                </ol>  接下來，如果沒有先構建應用程式，請選擇必要的編譯工具：aapt2 或 aapt。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  我可以從已安裝的分包中構建 apk 嗎？  </summary>
+            <div class="answer_text">  可以。<br>  在應用程式列表中選擇已安裝的應用程式，然後長按調出「合併分包」項。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  收集的檔案位於何處？  </summary>
+            <div class="answer_text">  APK 位於預設的工作資料夾「內部儲存空間/Apktool_M」中。<br>
+                <small><i>在構建結束時，會有一個「安裝」按鈕，但如果長按它，則會開啟包含此檔案的資料夾。</i></small>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  有關如何使用 Apktool M 將 Apks 轉換為 Apk 的分步說明。  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>選擇所需的檔案（Apks）並點一下它。</li>
+                    <li>然後從出現的選單中選擇「合併分包」。</li>
+                    <li>然後再次點擊「合併分包」按鈕（首先確保所有檔案，即所有複選框都已啟用）。</li>
+                    <li>之後，選擇所需的工具（aapt2 或 aapt，如果應用程式未編譯），然後點一下「選擇」按鈕。</li>
+                    <li>等待整個過程完成。</li>
+                </ol>  現在您的 Apks 已經變成了一個 Apk，可以像使用普通的 Apk 檔案一樣使用它。  </div>
+        </details>
+    </section>
+    <section id="section_five">
+        <div class="section_title">  建立自訂簽名  </div>
+        <details class="details_block">
+            <summary class="question_title">  如何建立我的簽名？  </summary>
+            <div class="answer_text">
+                <p>進入「設定」→「簽名」，選擇「建立金鑰」。</p>
+                <li><small><i>在簽名設定中，您可以設定 RSA/SF 檔案的名稱，以及 V1 簽名的建立者姓名</i></small></li><br>  在開啟的選單中，填寫以下行：  <p><u>簽名算法：</u><br>  憑證 Hash 算法的長度差異（在對 apk 進行簽名後）。SHA256withRSA 是最佳選擇。我們預設保留它。MD5 被認為是不安全的。詳細的差異可以在網際網路上找到。</p>
+                <p><u>金鑰類型：</u><br>  指定金鑰庫類型。預設指定為 JKS（也可稱為 .keystore）。詳細的差異可以在網際網路上找到。</p>
+                <p><u>金鑰路徑：</u><br>  金鑰的輸出儲存位置。檔案名稱是自動輸入的，如有需要，您可以在末尾進行更改。</p>
+                <p><u>別名：</u><br>  金鑰的別名。在匯入/操作期間指定。</p>
+                <p><u>金鑰庫和金鑰密碼：</u><br>  在匯入/使用金鑰之前，用密碼保護金鑰庫和金鑰本身。為了方便起見，您可以使它們完全相同。</p>
+                <p><u>金鑰大小：</u><br>  指定要讀取的金鑰簽名的位數（長度）。預設值為2048。增加大小會增加其加密強度，但分析起來更困難（速度較慢）。使用資訊幾何級數設定（2、4、8、16、32、64、128、256、512、1024、2048、4096，依此類推）</p>
+                <p><u>有效期：</u><br>  從建立日期算起，金鑰的真實性到期的時間。以年為單位。</p>
+                <p><u>需要以下資訊來通知您有關簽名所有者的資訊。根據需要指定：</u><br>  姓名、職位、組織、城市、地區/省、國家。</p>
+                <p>點擊「儲存」按鈕完成建立，並將金鑰庫放置於先前指定的路徑中。</p>
+                <p>點擊「建立並使用」按鈕還將匯入最終檔案以代替使用者簽名。</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  是否可以將 jks/keystore 金鑰庫轉換為 pk8私鑰+X509憑證？  </summary>
+            <div class="answer_text">  是的，有可能。  </div>
+        </details>
+    </section>
+    <section id="section_six">
+        <div class="section_title">  檔案管理器  </div>
+        <details class="details_block">
+            <summary class="question_title">  Apktool 有成熟的檔案管理器嗎？  </summary>
+            <div class="answer_text">  有的。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何存取檔案管理器選單？  </summary>
+            <div class="answer_text">  通過點一下地址欄開啟選單。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  它有什麼特點？  </summary>
+            <div class="answer_text">
+                <li>刪除檔案；</li>
+                <li>複製；</li>
+                <li>重新命名，包括批量重新命名；</li>
+                <li>建立檔案清單；</li>
+                <li>壓縮；</li>
+                <li>檔案和資料夾屬性；</li>
+                <li>全面搜尋；</li>
+                <li>書籤；</li>
+                <li>上次開啟的檔案歷史記錄；</li>
+                <li>APK/APKS 檔案屬性對話框是一個單獨的主題；</li>
+                <li>預覽矢量 XML/SVG 檔案，以及將圖像轉換為矢量；</li>
+                <li>預覽 TTF/OTF 字型；</li>
+                <li>長按選定的 APK 或圖片進行批量操作；</li>
+                <li>在專案資料夾中，在資原始檔的屬性中，有來自 public.xml 的 ID（如果有的話）。</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  查看檔案時如何開啟上下文選單？  </summary>
+            <div class="answer_text">  長按檔案本身。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  上下文選單中有哪些專案可用？  </summary>
+            <div class="answer_text">
+                <li>分享檔案</li>
+                <li>開啟方式</li>
+                <li>刪除</li>
+                <li>重新命名</li>
+                <li>壓縮</li>
+                <li>解壓到目前目錄</li>
+                <li>解壓到「檔案名稱」</li>
+                <li>查看內容</li>
+                <li>屬性</li>
+                <li>複製</li>
+                <li>移動</li>
+                <li>MPatcher</li>
+                <li>選擇</li>
+                <li>全選</li>
+                <li>複製名稱</li>
+                <li>複製路徑</li>
+                <li>新增到書籤</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何選擇檔案/資料夾？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>長按檔案/資料夾本身或圖示。</li>
+                    <li>通過長按圖示選擇檔案/資料夾後，您可以長按另一個檔案的圖示，實現從頭到尾（區間）的選擇檔案。</li>
+                    <li>您還可以通過長按「返回上層」圖示（..）快速選擇所有內容</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何重新命名檔案？  </summary>
+            <div class="answer_text">  通過長按檔案，將出現重新命名對話框。<br>  在同一對話框中，長按「自動」後，可以在自動模式下使用範本重新命名。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何直接從應用程式使用外部編輯器編輯檔案？  </summary>
+            <div class="answer_text">  長按檔案 → 在彈出的上下文選單中，選擇「開啟方式」...  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何建立檔案歸檔？  </summary>
+            <div class="answer_text">  從上下文選單中選擇「壓縮」。壓縮檔案時，可以將它們新增到現有壓縮包中。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  是否可以刪除或取代存檔（包括 APK）中的檔案/資料夾，而無需拆解/彙編它們？  </summary>
+            <div class="answer_text">  可以。<br>
+                <ol>
+                    <li>長按壓縮包或 .apk 並從彈出選單中選擇「查看內容」。</li>
+                    <li>長按以選擇需要刪除或提取的內容。</li>
+                </ol>  經過必要的操作之後，檔案將自動重新組合併簽名。<br>  原始檔新增 .bak 副檔名並備份在旁邊。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何用已編輯的檔案或資料夾取代反編譯 APK 中的檔案或資料夾？  </summary>
+            <div class="answer_text">  長按所需的檔案，並在上下文選單中選擇「提取到目前目錄」...<br>  例如，如果要取代 drawable 資料夾中的圖像，則必須將帶有取代項的 res 資料夾新增到 apk，其中包含 drawable 資料夾，而 drawable 資料夾中又包含圖像。<br>
+                <p>
+                    <span class="warning_text">換句話說，保持目錄結構很重要！</span>
+                </p>  經過必要的操作之後，我們將以 apk 副檔名存檔檔案。<br>  並對其進行簽名。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Apktool M 是否擁有成熟的搜尋引擎？  </summary>
+            <div class="answer_text">  有的。<br>  既有檔案搜尋、檔案名稱、檔案中的文字搜尋，也有已安裝的應用程式搜尋。<br>  長按地址可觸發手動地址輸入。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  此應用程式是否具有正規表示式搜尋功能？  </summary>
+            <div class="answer_text">  有的。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何開始使用搜尋？  </summary>
+            <div class="answer_text">  通過點一下地址開啟檔案管理器選單。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  未找到資料夾搜尋。僅在檔案中。  </summary>
+            <div class="answer_text">  您不需要鎖定資料夾本身，而是轉到要搜尋的資料夾中，然後點一下「資料夾/檔案的箭頭或路徑」，將出現一個搜尋選單。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  是否儲存了所有搜尋結果，以及如何找到它們？  </summary>
+            <div class="answer_text">  是的。搜尋歷史記錄已儲存。<br>  專案將顯示在資源管理器選單中（點一下頂部的地址），或者長按底部面板中的搜尋圖示（如果已啟用）。<br>  您也可以在搜尋結果中進行搜尋。<br>  如果您沒有搜尋任何內容，則此專案不會出現。  </div>
+        </details>
+    </section>
+    <section id="section_seven">
+        <div class="section_title">  雜項  </div>
+        <details class="details_block">
+            <summary class="question_title">  Apktool 有克隆功能嗎？  </summary>
+            <div class="answer_text">  有的。<br>  這需要對應用程式進行完全反編譯。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  我還可以如何克隆應用程式？  </summary>
+            <div class="answer_text">  使用 MPatcher 程式中的補丁。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何從應用程式中刪除除 zh、eng 之外的不必要語言？  </summary>
+            <div class="answer_text">  在上下文選單中，選擇「最佳化（aapt2）」項。<br>  在此專案的設定中，選中「設定組態」框，並指定需要保留的語言，在本例中為「zh, zh-rCN」。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何刪除除簡體中文、繁體中文和英語以外的所有語言？  </summary>
+            <div class="answer_text">  類似於刪除除中文和英語之外的所有語言。<br>  在「設定組態」項中，指定需要保留的語言，例如「zh, zh-rCN, zh-rTW」。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何查看已安裝的應用程式列表？  </summary>
+            <div class="answer_text">  在右上角 - 「應用」選項卡。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何在應用程式中編輯整個清單？  </summary>
+            <div class="answer_text">  反編譯資源時，將編輯整個清單。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  是否有內置的值轉換器？  </summary>
+            <div class="answer_text">
+                <p>有的。</p>
+                <details class="details_block">
+                    <summary class="question_title">  如何到達那裡？  </summary>
+                    <div class="answer_text">  主螢幕 → 右上角的三點 → 轉換器。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  支援哪些值？  </summary>
+                    <div class="answer_text">
+                        <li>文字 ↔ SHA-384</li>
+                        <li>文字 ↔ SHA-224</li>
+                        <li>文字 ↔ SHA-256</li>
+                        <li>文字 ↔ SHA-512</li>
+                        <li>文字 ↔ SHA-1</li>
+                        <li>文字 ↔ MD5</li>
+                        <li>文字 ↔ 網址編碼</li>
+                        <li>文字 ↔ 統一編碼</li>
+                        <li>文字 ↔ Base64</li>
+                        <li>文字 ↔ 陣列（US-ASCII）</li>
+                        <li>文字 ↔ 陣列（UTF-16LE）</li>
+                        <li>文字 ↔ 陣列（UTF-16BE）</li>
+                        <li>文字 ↔ 陣列（UTF-8）</li>
+                        <li>文字 ↔ 陣列（CP1251）</li>
+                        <li>文字 ↔ 陣列（ISO-8859-1）</li>
+                        <li>十進位 ↔ 八進位</li>
+                        <li>十進位 ↔ 二進位</li>
+                        <li>顏色 ↔ Smali</li>
+                        <li>十進位 ↔ 十六進位（0x0）</li>
+                        <li>十進位 ↔ 十六進位（0x00000000）</li>
+                        <li>十進位 ↔ 十六進位</li>
+                        <li>浮點數 ↔ 二進位</li>
+                        <li>浮點數 ↔ 八進位</li>
+                        <li>浮點數 ↔ 十六進位</li>
+                        <li>浮點數 ↔ 十六進位（0x0）</li>
+                        <li>浮點數 ↔ 十六進位（0x00000000）</li>
+                        <p><u>請注意！</u></p>  所有向後相容的加密都可以轉換回來。這是在底部輸入窗口中完成的。  </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何更新 Apktool M？  </summary>
+            <div class="answer_text">  主螢幕 → 右上角的三點 → 「設定」 → 「更新」，啟用「檢查更新」。<br>  在下面，您可以選擇「更新檢查頻率」項。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何下載更新？  </summary>
+            <div class="answer_text">  從 Apktool M 本身，或通過瀏覽器下載。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  更新檔案儲存在哪裡？  </summary>
+            <div class="answer_text">  在內部儲存空間的「Download」資料夾中。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  我可以禁用更新檢查嗎？  </summary>
+            <div class="answer_text">  可以。  <p>主螢幕 → 右上角的三點 → 「設定」 → 「關於」 → 「禁用更新檢查」</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何從備份中還原？我的還原專案處於非活動狀態...  </summary>
+            <div class="answer_text">  若要恢復，必須先儲存您的帳戶。<br>  備份檔案必須位於「/內部儲存空間/Apktool_M.backup」路徑中，如果不存在，則表示該專案處於非活動狀態。  </div>
+        </details>
+    </section>
+    <section id="section_eight">
+        <div class="section_title">  MPatcher  </div>
+        <details class="details_block">
+            <summary class="question_title">  什麼是 MPatcher？  </summary>
+            <div class="answer_text">  它是一個用於運行、建立、匯入、匯出用 Shell 編寫的腳本和補丁的應用程式，集成在 Apktool M 中。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  論壇上是否有單獨的話題？  </summary>
+            <div class="answer_text">  有的：<a href="https://4pda.to/forum/index.php?showtopic=1018077">MPatcher</a>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  如何調用 MPatcher？  </summary>
+            <div class="answer_text">  長按檔案，並在開啟的上下文選單中選擇「MPatcher」。<br>  這將指定目標 apk。    <p>在目標專案「編譯此專案」上面有一個下拉選單，其中有一個 MPatcher 專案。</p>
+            </div>
+        </details>
+    </section>
+    <script type="text/javascript">(function(){window.location.search.substring(1).split("&").forEach(function(a){a=a.split("=");"theme"==a[0]&&document.body.setAttribute("class",a[1])});})();</script>
+</body>
+</html>

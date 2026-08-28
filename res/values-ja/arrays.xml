@@ -5,10 +5,236 @@
 		<item>リテラル値</item>
 		<item>プリミティブデータ型</item>
 	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
+	</string-array>
 	<string-array name="smali_help_values" formatted="false">
 		<item>vA は、値の範囲が v0 ～ v15 の 4 ビット レジスタです。\nvAA は、値の範囲が v0 ～ v255 の 8 ビット レジスタです。\nvAAAA は、値の範囲が v0 ～ v65535 の 16 ビット レジスタです。</item>
 		<item>0xF、0xFFなどが使用されます。リテラル値を表すために。レジスタと同様に、数値 F は値の範囲を表すために使用されます。次に例を示します。\n0xF値の範囲は[-0x8, 0x7]で表されます。\n0xFFの値の範囲は[-0x80, 0x7F]で表されます</item>
-		<item>V - ボイド、Z - ブール値、B - バイト\nC - char、S - short、I - int\nJ - ロング、F - フロート、D - ダブル\nvoid: 戻り値の型にのみ使用できます。\nブール値: true または false の値を格納します。\nbyte: -128 ～ 127 の整数を格納し、1 バイトを占有します\nshort: -32768 ～ 32767 の整数を格納し、2 バイトを使用します。\nint: -2147483648 ～ 2147483647 の整数を格納し、4 バイトを占有します\nlong: -9223372036854775808 から 9223372036854775807 までの整数を格納し、8 バイトを占有します\ndouble: ±4.9*10³²⁴ ～ ±1.7976931348623157*10³⁰⁸ の浮動小数点数を格納し、8 バイトを占有します。ドットは、小数リテラルの小数点区切り文字として使用されます。\nfloat: -3.4*103⁸ から 3.4*103⁸ までの浮動小数点数を格納し、4 バイトを占有します。\nchar: UTF-16 エンコードで 1 つの文字を格納し、2 バイトを占有するため、格納される値の範囲は 0 ～ 65535 です。</item>
+		<item>V - void、Z - boolean、B - byte\nC - char、S - short、I - int\nJ - long、F - float、D - double\nvoid: 戻り値の型にのみ使用できます。\nブール値: true または false の値を格納します。\nbyte: -128 ～ 127 の整数を格納し、1 バイトを占有します\nshort: -32768 ～ 32767 の整数を格納し、2 バイトを使用します。\nint: -2147483648 ～ 2147483647 の整数を格納し、4 バイトを占有します\nlong: -9223372036854775808 から 9223372036854775807 までの整数を格納し、8 バイトを占有します\ndouble: ±4.9*10³²⁴ ～ ±1.7976931348623157*10³⁰⁸ の浮動小数点数を格納し、8 バイトを占有します。ドットは、小数リテラルの小数点区切り文字として使用されます。\nfloat: -3.4*10³⁸ から 3.4*10³⁸ までの浮動小数点数を格納し、4 バイトを占有します。\nchar: UTF-16 エンコードで 1 つの文字を格納し、2 バイトを占有するため、格納される値の範囲は 0 ～ 65535 です。</item>
 		<item>アクションはありません。</item>
 		<item>レジスタ vB の値をレジスタ vA に移動します。</item>
 		<item>vBBBB レジスタの値を vAA レジスタに移動します。</item>
@@ -40,9 +266,9 @@
 		<item>string_id で識別される文字列定数 (string) への参照を vAA レジスタに配置します。</item>
 		<item>vAA レジスタによって参照されるオブジェクト モニターを取得します。</item>
 		<item>vAA レジスタによって参照されるオブジェクト モニターを解放します。</item>
-		<item>vAA レジスタに含まれるオブジェクト参照を type_id で識別されるクラスにキャストできるかどうかをチェックします。実行できない場合は ClassCastException をスローし、実行できない場合は実行を続行します。</item>
-		<item>vB レジスタの内容が type_id で識別されるクラスのインスタンスであるかどうかを確認します。レジスタ vA が存在する場合は非ゼロ、存在しない場合は 0 に設定します。\nvA = vB インスタンスのタイプ ? 10</item>
-		<item>vB レジスタから配列要素の数を決定し、その値を vA レジスタに配置します。\nvA = vB.長さ</item>
+		<item>vAA レジスタに含まれるオブジェクト参照を type_id で識別されるクラスにキャストできるかどうかをチェックします。できない場合は ClassCastException をスローし、可能な場合は実行を続行します。</item>
+		<item>vB レジスタの内容が type_id で識別されるクラスのインスタンスであるかどうかを確認します。レジスタ vA が存在する場合は非ゼロ、存在しない場合は 0 に設定します。\nvA = vB instanceOf type ? 1:0</item>
+		<item>vB レジスタから配列要素の数を決定し、その値を vA レジスタに配置します。\nvA = vB.length</item>
 		<item>オブジェクト タイプのインスタンスを作成し、作成されたインスタンスへの参照を vAA レジスタに配置します。</item>
 		<item>レジスタ vB 要素のサイズで type_id 変数の新しい配列を作成し、その配列への参照をレジスタ vA に配置します。</item>
 		<item>type_id 型の新しいデータ配列を作成し、パラメーターを入力します (つまり、long/double 配列は使用できませんが、参照型は許可されます)。新しく作成された配列への参照は、このステートメントの直後に move-result-object ステートメントを使用して取得できます (使用する場合)。</item>
@@ -56,12 +282,12 @@
 		<item>スパース テーブルの場合に Switch 演算子を実装します。この命令では、各定数のオフセットを指定するテーブルを使用します。テーブル内に一致するものが見つからない場合は、次のステートメントが実行されます (デフォルトの場合)。</item>
 		<item>vBB と vCC の float (浮動小数点) 値を比較し、整数値を vAA レジスタに配置します。\nvAA = vBB &lt; vCC ?はい: 1、いいえ: -1、等しい: 0</item>
 		<item>vBB と vCC の float (浮動小数点) 値を比較し、整数値を vAA レジスタに配置します。\nvAA = vBB &lt; vCC ?はい: 1、いいえ: -1、等しい: 0</item>
-		<item>vBB と vCC の double (浮動小数点) 値を比較し、整数値を vAA レジスタに配置します。\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nはい: 1、いいえ: -1、等しい: 0</item>
+		<item>vBB と vCC の double (浮動小数点) 値を比較し、整数値を vAA レジスタに配置します。\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? はい: 1、いいえ: -1、等しい: 0</item>
 		<item>vBB と vCC の double (浮動小数点) 値を比較し、整数値を vAA レジスタに配置します。\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ?はい: 1、いいえ: -1、等しい: 0</item>
 		<item>vBB と vCC の Long (整数) 値を比較し、整数 (整数) 値を vAA レジスターに配置します。\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ?はい: 1、いいえ: -1、等しい: 0</item>
 		<item>vA == vB の場合、指定されたラベルにジャンプします。 vA と vB には整数値が含まれます。\n(eq は等しいの略です)</item>
 		<item>vA != vB の場合、指定されたラベルにジャンプします。 vA と vB には整数値が含まれます。\n(ne は Not Equals の略です)</item>
-		<item>vA &lt; vB の場合、指定されたラベルにジャンプします。 vA と vB には整数値が含まれます。\n(Less Than の略です)</item>
+		<item>vA &lt; vB の場合、指定されたラベルにジャンプします。 vA と vB には整数値が含まれます。\n(lt は Less Than の略です)</item>
 		<item>vA &lt;= vB の場合、指定されたラベルにジャンプします。 vA と vB には整数値が含まれます。\n(le は Less than or Equal/以下の略語です)</item>
 		<item>vA > vB の場合、指定されたラベルにジャンプします。 vA と vB には整数値が含まれます。\n(gt は Greater Than/More Than の略です)</item>
 		<item>vA >= vB の場合、指定されたラベルにジャンプします。 vA と vB には整数値が含まれます。\n(ge は「以上」または「等しい」の略です)</item>
@@ -85,20 +311,20 @@
 		<item>vAA からのバイト (整数) 値を、レジスタ vCC を含む要素を持つ vBB で参照される配列に配置します。\nvBB[vCC] = vAA</item>
 		<item>vAA からの char (文字) 値を、レジスタ vCC を持つ要素によって vBB で参照される配列に配置します。\nvBB[vCC] = vAA</item>
 		<item>vAA からの short (整数) 値を、vCC レジスタを含む要素を持つ vBB で参照される配列に配置します。\nvBB[vCC] = vAA</item>
-		<item>インスタンスフィールドから値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.フィールド</item>
-		<item>インスタンス フィールドから double/long 値を読み取り、それをレジスタのペア (vA、vA+1) に配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\n(vA, vA+1) = vB.フィールド</item>
-		<item>インスタンス フィールドからオブジェクト参照を読み取り、vA レジスタに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.フィールド</item>
-		<item>インスタンスフィールドからブール値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.フィールド</item>
-		<item>インスタンス フィールドからバイト (整数) 値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.フィールド</item>
-		<item>インスタンスフィールドから char 値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.フィールド</item>
-		<item>インスタンス フィールドから short (整数) 値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.フィールド</item>
-		<item>vA レジスタの値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.フィールド = vA</item>
-		<item>レジスタ ペア (vA、vA+1) の double/long 値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.フィールド = (vA, vA+1)</item>
-		<item>vA レジスタからのオブジェクトへの参照をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.フィールド = vA</item>
-		<item>vA レジスタのブール値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.フィールド = vA</item>
-		<item>レジスタ vB によって参照されるインスタンス内の指定されたブール フィールドのバイト (整数) 値をレジスタ vA の値と等しく設定します。\nvB.フィールド = vA</item>
-		<item>レジスタ vB によって参照されるインスタンス内の指定されたブール フィールドの char (文字) 値を、レジスタ vA の値と等しくなるように設定します。\nvB.フィールド = vA</item>
-		<item>レジスタ vB によって参照されるインスタンス内の指定されたブール フィールドの short (整数) 値を、レジスタ vA の値と等しくなるように設定します。\nvB.フィールド = vA</item>
+		<item>インスタンスフィールドから値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.field</item>
+		<item>インスタンス フィールドから double/long 値を読み取り、それをレジスタのペア (vA、vA+1) に配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\n(vA, vA+1) = vB.field</item>
+		<item>インスタンス フィールドからオブジェクト参照を読み取り、vA レジスタに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.field</item>
+		<item>インスタンスフィールドからブール値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.field</item>
+		<item>インスタンス フィールドからバイト (整数) 値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.field</item>
+		<item>インスタンスフィールドから char 値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.field</item>
+		<item>インスタンス フィールドから short (整数) 値を読み取り、それを vA レジスタに置きます。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvA = vB.field</item>
+		<item>vA レジスタの値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.field = vA</item>
+		<item>レジスタ ペア (vA、vA+1) の double/long 値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.field = (vA, vA+1)</item>
+		<item>vA レジスタからのオブジェクトへの参照をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.field = vA</item>
+		<item>vA レジスタのブール値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.field = vA</item>
+		<item>vA レジスタのバイト (整数) 値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.field = vA</item>
+		<item>vA レジスタの char (文字) 値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.field = vA</item>
+		<item>vA レジスタの short (整数) 値をインスタンス フィールドに配置します。このフィールドを含むクラスへの参照は、vB レジスタにあります。\nvB.field = vA</item>
 		<item>静的フィールドから値を読み取り、それを vAA レジスタに置きます。このフィールドを含むクラスへの参照を含むレジスタは使用されません。</item>
 		<item>静的フィールドから double/long 値を読み取り、それをレジスター vAA、vAA+1 のペアに置きます。このフィールドを含むクラスへの参照を含むレジスタは使用されません。</item>
 		<item>静的フィールドからオブジェクト参照を読み取り、それを vAA レジスタに置きます。このフィールドを含むクラスへの参照を含むレジスタは使用されません。</item>
@@ -129,21 +355,21 @@
 		<item>long 型 (整数) の値に対して (vA, vA+1) = ~(vB, vB+1) を計算します。</item>
 		<item>float 値の vA = -vB を計算します。</item>
 		<item>double (浮動小数点) 値の (vA, vA+1) = -(vB, vB+1) を計算します。</item>
-		<item>整数を vB から Long に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (ロング) vB</item>
-		<item>整数を vB から浮動小数点に変換し、vA レジスタに格納します。\nvA = (浮動小数点) vB</item>
-		<item>整数を vB から double (浮動小数点) に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (倍精度) vB</item>
+		<item>整数を vB から Long に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (long) vB</item>
+		<item>整数を vB から浮動小数点に変換し、vA レジスタに格納します。\nvA = (float) vB</item>
+		<item>整数を vB から double (浮動小数点) に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (double) vB</item>
 		<item>vB、vB+1 の Long (整数) 値を整数 (integer) に変換し、vA レジスタに格納します。\nvA = (int) (vB, vB+1)</item>
-		<item>Long (整数) 値を vB、vB+1 から float (浮動小数点) に変換し、vA レジスタに格納します。\nvA = (浮動小数点) (vB、vB+1)</item>
-		<item>Long (整数) 値を vB、vB+1 から double (浮動小数点) に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (倍精度) (vB, vB+1)</item>
+		<item>Long (整数) 値を vB、vB+1 から float (浮動小数点) に変換し、vA レジスタに格納します。\nvA = (float) (vB、vB+1)</item>
+		<item>Long (整数) 値を vB、vB+1 から double (浮動小数点) に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (double) (vB, vB+1)</item>
 		<item>vB から float (浮動小数点) 値を整数 (整数) 値に変換し、vA レジスタに格納します。\nvA = (int)vB</item>
-		<item>float (浮動小数点) 値を vB から long (整数) 値に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (ロング) vB</item>
-		<item>float (浮動小数点) 値を vB から double (浮動小数点) 値に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (倍精度) vB</item>
+		<item>float (浮動小数点) 値を vB から long (整数) 値に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (long) vB</item>
+		<item>float (浮動小数点) 値を vB から double (浮動小数点) 値に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (double) vB</item>
 		<item>vB、vB+1 の double (浮動小数点) 値を整数 (整数) 値に変換し、vA レジスタに格納します。\nvA = (int) (vB, vB+1)</item>
-		<item>double (浮動小数点) 値を vB、vB+1 から long (整数) 値に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (ロング) (vB, vB+1)</item>
-		<item>vB、vB+1 の double (浮動小数点) 値を float (浮動小数点) 値に変換し、vA レジスタに格納します。\nvA = (浮動小数点) (vB、vB+1)</item>
-		<item>整数値を vB からバイト値に変換し、vA レジスタに格納します。\nvA = (バイト) vB</item>
-		<item>整数値を vB から char 値に変換し、vA レジスタに格納します。\nvA = (文字)vB</item>
-		<item>整数値を vB から short 値に変換し、vA レジスタに格納します。\nvA = (短い) vB</item>
+		<item>double (浮動小数点) 値を vB、vB+1 から long (整数) 値に変換し、レジスタ ペア vA、vA+1 に格納します。\n(vA, vA+1) = (long) (vB, vB+1)</item>
+		<item>vB、vB+1 の double (浮動小数点) 値を float (浮動小数点) 値に変換し、vA レジスタに格納します。\nvA = (float) (vB、vB+1)</item>
+		<item>整数値を vB からバイト値に変換し、vA レジスタに格納します。\nvA = (byte) vB</item>
+		<item>整数値を vB から char 値に変換し、vA レジスタに格納します。\nvA = (char) vB</item>
+		<item>整数値を vB から short 値に変換し、vA レジスタに格納します。\nvA = (short) vB</item>
 		<item>vBB + vCC を計算し、結果を vAA レジスタに保存します。すべての値は整数です。\nvAA = vBB + vCC</item>
 		<item>vBB - vCC を計算し、結果を vAA レジスタに保存します。すべての値は整数です。\nvAA = vBB - vCC</item>
 		<item>vBB * vCC を計算し、結果を vAA レジスタに保存します。すべての値は整数です。\nvAA = vBB * vCC</item>
@@ -155,17 +381,17 @@
 		<item>vBB を vCC で指定されたビット数だけ左にシフトし、結果を vAA レジスタに格納します。すべての値は整数です。\nvAA = vBB &lt;&lt; vCC</item>
 		<item>vBB を vCC で指定されたビット数だけ右にシフトし、結果を vAA レジスタに格納します。すべての値は整数です。\nvAA = vBB >> vCC</item>
 		<item>vBB を符号を保持せずに vCC で指定されたビット数だけ右にシフトし、結果を vAA レジスタに格納します。すべての値は整数です。\nvAA = vBB >>> vCC</item>
-		<item>(vBB, vBB+1) + (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に保存します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) + (vCC、vCC+1)</item>
-		<item>(vBB, vBB+1) - (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) - (vCC、vCC+1)</item>
-		<item>(vBB, vBB+1) * (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に保存します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) * (vCC、vCC+1)</item>
-		<item>(vBB, vBB+1) / (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) / (vCC、vCC+1)</item>
-		<item>(vBB, vBB+1) % (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) % (vCC、vCC+1)</item>
-		<item>(vBB, vBB+1) &amp; (vCC, vCC+1) (論理積) を計算し、結果をレジスタ ペア vAA、vAA+1 に保存します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) &amp; (vCC、vCC+1)</item>
-		<item>計算 (vBB、vBB+1) | (vCC、vCC+1) (論理和) を計算し、結果をレジスタ vAA、vAA+1 のペアに格納します。すべての値はlo​​ng (整数) です。\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC、vCC+1)</item>
-		<item>(vBB, vBB+1) ^ (vCC, vCC+1) (排他的 AND) を計算し、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
-		<item>vBB、vBB+1 を vCC で指定されたビット数だけ左にシフトし、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) &lt;&lt; vCC</item>
-		<item>vBB、vBB+1 を vCC で指定されたビット数だけ右シフトし、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) >> vCC</item>
-		<item>vBB、vBB+1 を vCC で指定されたビット数だけ符号を保たずに右にシフトし、結果を 1 組のレジスタ vAA、vA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) >>> vCC</item>
+		<item>(vBB, vBB+1) + (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に保存します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) + (vCC、vCC+1)</item>
+		<item>(vBB, vBB+1) - (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) - (vCC、vCC+1)</item>
+		<item>(vBB, vBB+1) * (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に保存します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) * (vCC、vCC+1)</item>
+		<item>(vBB, vBB+1) / (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) / (vCC、vCC+1)</item>
+		<item>(vBB, vBB+1) % (vCC, vCC+1) を計算し、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) % (vCC、vCC+1)</item>
+		<item>(vBB, vBB+1) &amp; (vCC, vCC+1) (論理積) を計算し、結果をレジスタ ペア vAA、vAA+1 に保存します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) &amp; (vCC、vCC+1)</item>
+		<item>(vBB、vBB+1) | (vCC、vCC+1) (論理和) を計算し、結果をレジスタ vAA、vAA+1 のペアに格納します。すべての値は long (整数) です。\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC、vCC+1)</item>
+		<item>(vBB, vBB+1) ^ (vCC, vCC+1) (排他的論理和) を計算し、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値は long (整数) です。\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>vBB、vBB+1 を vCC で指定されたビット数だけ左にシフトし、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) &lt;&lt; vCC</item>
+		<item>vBB、vBB+1 を vCC で指定されたビット数だけ右シフトし、結果をレジスタ ペア vAA、vAA+1 に格納します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) >> vCC</item>
+		<item>vBB、vBB+1 を vCC で指定されたビット数だけ符号を保たずに右にシフトし、結果を 1 組のレジスタ vAA、vAA+1 に格納します。すべての値は long (整数) です。\n(vAA、vAA+1) = (vBB、vBB+1) >>> vCC</item>
 		<item>vBB + vCC を計算し、結果を vAA レジスタに保存します。すべての値は浮動小数点数です。\nvAA = vBB + vCC</item>
 		<item>vBB - vCC を計算し、結果を vAA レジスタに保存します。すべての値は浮動小数点数です。\nvAA = vBB - vCC</item>
 		<item>vBB * vCC を計算し、結果を vAA レジスタに保存します。すべての値は浮動小数点数です。\nvAA = vBB * vCC</item>
@@ -187,17 +413,17 @@
 		<item>vA を vB で指定されたビット数だけ左にシフトし、結果を vA レジスタに格納します。すべての値は整数です。\nvA = vA &lt;&lt; vB</item>
 		<item>vA を vB で指定されたビット数だけ右にシフトし、結果を vA レジスタに格納します。すべての値は整数です。\nvA = vA >> vB</item>
 		<item>vA を符号を保持せずに vB で指定されたビット数だけ右にシフトし、結果を vA レジスタに格納します。すべての値は整数です。\nvA = vA >>> vB</item>
-		<item>(vA、vA+1) + (vB、vB+1) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vA、vA+1) = (vA、vA+1) + (vB、vB+1)</item>
-		<item>(vA、vA+1) - (vB、vB+1) を計算し、結果をレジスタ vA、vA+1 のペアに格納します。すべての値はlo​​ng (整数) です。\n(vA、vA+1) = (vA、vA+1) - (vB、vB+1)</item>
-		<item>(vA、vA+1) * (vB、vB+1) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vA、vA+1) = (vA、vA+1) * (vB、vB+1)</item>
-		<item>(vA、vA+1) / (vB、vB+1) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vA、vA+1) = (vA、vA+1) / (vB、vB+1)</item>
-		<item>(vA, vA+1) % (vB, vB+1) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
-		<item>(vA、vA+1) &amp; (vB、vB+1) (論理積) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
-		<item>(vA、vA+1) を計算します。 (vB、vB+1) (論理和) を計算し、結果をレジスタ vA、vA+1 のペアに格納します。すべての値はlo​​ng (整数) です。\n(vA, vA+1) = (vA, vA+1) | (vB、vB+1)</item>
-		<item>(vA、vA+1) &amp; (vB、vB+1) (排他的論理和) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
-		<item>vA、vA+1をvBで指定されたビット数だけ左シフトし、結果をレジスタペアvA、vA+1に格納します。すべての値はlo​​ng (整数) です。\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
-		<item>vA、vA+1をvBで指定されたビット数だけ右シフトし、結果をレジスタペアvA、vA+1に格納します。すべての値はlo​​ng (整数) です。\n(vA, vA+1) = (vA, vA+1) >> vB</item>
-		<item>vA、vA+1 を、符号を保持せずに vB で指定された桁数だけ右にシフトし、結果を 1 対のレジスタ vA、vA+1 に格納します。すべての値はlo​​ng (整数) です。\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
+		<item>(vA、vA+1) + (vB、vB+1) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値は long (整数) です。\n(vA、vA+1) = (vA、vA+1) + (vB、vB+1)</item>
+		<item>(vA、vA+1) - (vB、vB+1) を計算し、結果をレジスタ vA、vA+1 のペアに格納します。すべての値は long (整数) です。\n(vA、vA+1) = (vA、vA+1) - (vB、vB+1)</item>
+		<item>(vA、vA+1) * (vB、vB+1) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値は long (整数) です。\n(vA、vA+1) = (vA、vA+1) * (vB、vB+1)</item>
+		<item>(vA、vA+1) / (vB、vB+1) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値は long (整数) です。\n(vA、vA+1) = (vA、vA+1) / (vB、vB+1)</item>
+		<item>(vA, vA+1) % (vB, vB+1) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値は long (整数) です。\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
+		<item>(vA、vA+1) &amp; (vB、vB+1) (論理積) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値は long (整数) です。\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
+		<item>(vA、vA+1) | (vB、vB+1) (論理和) を計算し、結果をレジスタ vA、vA+1 のペアに格納します。すべての値は long (整数) です。\n(vA, vA+1) = (vA, vA+1) | (vB、vB+1)</item>
+		<item>(vA、vA+1) ^ (vB、vB+1) (排他的論理和) を計算し、結果をレジスタ ペア vA、vA+1 に格納します。すべての値は long (整数) です。\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>vA、vA+1をvBで指定されたビット数だけ左シフトし、結果をレジスタペアvA、vA+1に格納します。すべての値は long (整数) です。\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
+		<item>vA、vA+1をvBで指定されたビット数だけ右シフトし、結果をレジスタペアvA、vA+1に格納します。すべての値は long (整数) です。\n(vA, vA+1) = (vA, vA+1) >> vB</item>
+		<item>vA、vA+1 を、符号を保持せずに vB で指定された桁数だけ右にシフトし、結果を 1 対のレジスタ vA、vA+1 に格納します。すべての値は long (整数) です。\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
 		<item>vA + vB を計算し、結果を vA レジスタに保存します。すべての値は浮動小数点数です。\nvA = vA + vB</item>
 		<item>vA - vB を計算し、結果を vA レジスタに保存します。すべての値は浮動小数点数です。\nvA = vA - vB</item>
 		<item>vA * vB を計算し、結果を vA レジスタに保存します。すべての値は浮動小数点数です。\nvA = vA * vB</item>
@@ -242,11 +468,59 @@
 		<item>内蔵</item>
 		<item>カスタム</item>
 	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>APK のマニフェストから抽出した情報を表示します。</item>
+		<item>APK 内のリソースが使用するすべての構成を表示します。</item>
+		<item>APK のマニフェストから抽出した権限を表示します。</item>
+		<item>APK のリソーステーブル文字列プールの内容を表示します。</item>
+		<item>APK のリソーステーブルの内容を表示します。</item>
+		<item>APK の &lt;overlayable> リソースを表示します。</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>ライト</item>
+		<item>ダーク</item>
+		<item>ブラック</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
 	<string-array name="jadx_sets">
 		<item>代替モード</item>
 		<item>難読化解除</item>
 		<item>Unicode エスケープ</item>
 		<item>一貫性のないコード表示</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
 	</string-array>
 	<string-array name="copy_variants">
 		<item>名前変更</item>
@@ -258,13 +532,46 @@
 		<item>左</item>
 		<item>右</item>
 	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="checksum_names">
 		<item>全て大文字</item>
 		<item>コロン区切り</item>
 	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
 	<string-array name="refresh_res">
 		<item>新しいリソースを追加（ファイルのみ）</item>
 		<item>不足リソースを削除</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
 	</string-array>
 	<string-array name="sort">
 		<item>名前</item>
@@ -286,6 +593,28 @@
 		<item>@string/pkcs12</item>
 		<item>@string/bks</item>
 		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>one</item>
+		<item>two</item>
+		<item>few</item>
+		<item>many</item>
+		<item>other</item>
 	</string-array>
 	<string-array name="resDecodeMode">
 		<item>デコードしない</item>
@@ -332,16 +661,121 @@
 		<item>内部のみ</item>
 		<item>外部優先</item>
 	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lituania</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+		<item>O\'zbek tili</item>
+		<item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>zh-rTW</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+		<item>uz</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>yyyy/MM/dd HH:mm</item>
+		<item>dd/MM/yyyy HH:mm</item>
+		<item>HH:mm yyyy/MM/dd</item>
+		<item>HH:mm dd/MM/yyyy</item>
+		<item>yy/MM/dd HH:mm</item>
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item>
+		<item>HH:mm dd/MM/yy</item>
+		<item>yyyy.MM.dd HH:mm</item>
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>yy.MM.dd HH:mm</item>
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>yyyy-MM-dd HH:mm</item>
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>yy-MM-dd HH:mm</item>
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
 	<string-array name="xml_format_variants">
 		<item>デフォルト</item>
 		<item>Apktool</item>
 		<item>Android Studio</item>
 		<item>シンプルスタイル</item>
 	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
 	<string-array name="orientation_variants">
 		<item>デフォルト</item>
 		<item>横向き</item>
 		<item>縦向き</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
 	</string-array>
 	<string-array name="auto_save_variants">
 		<item>オフ</item>
@@ -349,6 +783,13 @@
 		<item>30秒</item>
 		<item>1分</item>
 		<item>5分</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
 	</string-array>
 	<string-array name="to_vector_values">
 		<item>変換した画像（低品質）</item>
@@ -361,8 +802,704 @@
 		<item>検索/置換履歴</item>
 		<item>辞書</item>
 	</string-array>
+	<string-array name="split_dex_items">
+		<item>メソッド／フィールド数で分割</item>
+		<item>均等に分割</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>日付を先に</item>
+		<item>サイズを先に</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="editor_themes">
 		<item>デフォルト</item>
 		<item>新テーマ</item>
+	</string-array>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>auto-detect</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>he</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pt-PT</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>to</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>as</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>my</item>
+		<item>ps</item>
+		<item>ti</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>自動</item>
+		<item>アゼルバイジャン語（ラテン文字）</item>
+		<item>アルバニア語</item>
+		<item>英語</item>
+		<item>アラビア語</item>
+		<item>アルメニア語</item>
+		<item>アフリカーンス語</item>
+		<item>ベンガル語</item>
+		<item>ブルガリア語</item>
+		<item>ボスニア語</item>
+		<item>ウェールズ語</item>
+		<item>ハンガリー語</item>
+		<item>ベトナム語</item>
+		<item>ハイチ・クレオール語</item>
+		<item>オランダ語</item>
+		<item>ギリシャ語</item>
+		<item>グジャラート語</item>
+		<item>デンマーク語</item>
+		<item>ヘブライ語</item>
+		<item>インドネシア語</item>
+		<item>アイルランド語</item>
+		<item>アイスランド語</item>
+		<item>スペイン語</item>
+		<item>イタリア語</item>
+		<item>カザフ語</item>
+		<item>カンナダ語</item>
+		<item>広東語（繁体字）</item>
+		<item>カタルーニャ語</item>
+		<item>ケレタロ・オトミ語</item>
+		<item>繁体字中国語</item>
+		<item>簡体字中国語</item>
+		<item>韓国語</item>
+		<item>ラトビア語</item>
+		<item>リトアニア語</item>
+		<item>マラガシ語</item>
+		<item>マレー語</item>
+		<item>マラヤーラム語</item>
+		<item>マルタ語</item>
+		<item>マオリ語</item>
+		<item>マラーティー語</item>
+		<item>ドイツ語</item>
+		<item>ネパール語</item>
+		<item>ノルウェー語</item>
+		<item>オリヤー語</item>
+		<item>パンジャブ語</item>
+		<item>ペルシャ語</item>
+		<item>ポーランド語</item>
+		<item>ポルトガル語（ブラジル）</item>
+		<item>ポルトガル語（ポルトガル）</item>
+		<item>ルーマニア語</item>
+		<item>ロシア語</item>
+		<item>サモア語</item>
+		<item>セルビア語（キリル文字）</item>
+		<item>セルビア語（ラテン文字）</item>
+		<item>スロバキア語</item>
+		<item>スロベニア語</item>
+		<item>スワヒリ語</item>
+		<item>タヒチ語</item>
+		<item>タイ語</item>
+		<item>タミル語</item>
+		<item>テルグ語</item>
+		<item>トンガ語</item>
+		<item>トルコ語</item>
+		<item>ウクライナ語</item>
+		<item>ウルドゥー語</item>
+		<item>フィジー語</item>
+		<item>フィリピン語</item>
+		<item>フィンランド語</item>
+		<item>フランス語</item>
+		<item>ヒンディー語</item>
+		<item>モン語</item>
+		<item>クロアチア語</item>
+		<item>チェコ語</item>
+		<item>スウェーデン語</item>
+		<item>エストニア語</item>
+		<item>ユカテコ・マヤ語</item>
+		<item>日本語</item>
+		<item>アムハラ語</item>
+		<item>アッサム語</item>
+		<item>ダリー語</item>
+		<item>フランス語（カナダ）</item>
+		<item>イヌクティトゥット語</item>
+		<item>クメール語</item>
+		<item>クリンゴン語（ラテン文字）</item>
+		<item>クルド語（中央）</item>
+		<item>クルド語（北部）</item>
+		<item>ラオ語</item>
+		<item>ミャンマー語（ビルマ語）</item>
+		<item>パシュトー語</item>
+		<item>ティグリニア語</item>
+	</string-array>
+	<string-array name="google_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>自動</item>
+		<item>アフリカーンス語</item>
+		<item>アルバニア語</item>
+		<item>アムハラ語</item>
+		<item>アラビア語</item>
+		<item>アルメニア語</item>
+		<item>アゼルバイジャン語</item>
+		<item>バスク語</item>
+		<item>ベラルーシ語</item>
+		<item>ベンガル語</item>
+		<item>ボスニア語</item>
+		<item>ブルガリア語</item>
+		<item>カタルーニャ語</item>
+		<item>セブアノ語</item>
+		<item>チェワ語</item>
+		<item>簡体字中国語</item>
+		<item>繁体字中国語</item>
+		<item>コルシカ語</item>
+		<item>クロアチア語</item>
+		<item>チェコ語</item>
+		<item>デンマーク語</item>
+		<item>オランダ語</item>
+		<item>英語</item>
+		<item>エスペラント語</item>
+		<item>エストニア語</item>
+		<item>フィリピン語</item>
+		<item>フィンランド語</item>
+		<item>フランス語</item>
+		<item>フリジア語</item>
+		<item>ガリシア語</item>
+		<item>ジョージア語</item>
+		<item>ドイツ語</item>
+		<item>ギリシャ語</item>
+		<item>グジャラート語</item>
+		<item>ハイチ・クレオール語</item>
+		<item>ハウサ語</item>
+		<item>ハワイ語</item>
+		<item>ヘブライ語</item>
+		<item>ヒンディー語</item>
+		<item>モン語</item>
+		<item>ハンガリー語</item>
+		<item>アイスランド語</item>
+		<item>イボ語</item>
+		<item>インドネシア語</item>
+		<item>アイルランド語</item>
+		<item>イタリア語</item>
+		<item>日本語</item>
+		<item>ジャワ語</item>
+		<item>カンナダ語</item>
+		<item>カザフ語</item>
+		<item>クメール語</item>
+		<item>韓国語</item>
+		<item>クルド語（クルマンジー）</item>
+		<item>キルギス語</item>
+		<item>ラオ語</item>
+		<item>ラテン語</item>
+		<item>ラトビア語</item>
+		<item>リトアニア語</item>
+		<item>ルクセンブルク語</item>
+		<item>マケドニア語</item>
+		<item>マラガシ語</item>
+		<item>マレー語</item>
+		<item>マラヤーラム語</item>
+		<item>マルタ語</item>
+		<item>マオリ語</item>
+		<item>マラーティー語</item>
+		<item>モンゴル語</item>
+		<item>ミャンマー語（ビルマ語）</item>
+		<item>ネパール語</item>
+		<item>ノルウェー語</item>
+		<item>パシュトー語</item>
+		<item>ペルシャ語</item>
+		<item>ポーランド語</item>
+		<item>ポルトガル語</item>
+		<item>パンジャブ語</item>
+		<item>ルーマニア語</item>
+		<item>ロシア語</item>
+		<item>サモア語</item>
+		<item>スコットランド・ゲール語</item>
+		<item>セルビア語</item>
+		<item>セソト語</item>
+		<item>ショナ語</item>
+		<item>シンド語</item>
+		<item>シンハラ語</item>
+		<item>スロバキア語</item>
+		<item>スロベニア語</item>
+		<item>ソマリ語</item>
+		<item>スペイン語</item>
+		<item>スンダ語</item>
+		<item>スワヒリ語</item>
+		<item>スウェーデン語</item>
+		<item>タジク語</item>
+		<item>タミル語</item>
+		<item>テルグ語</item>
+		<item>タイ語</item>
+		<item>トルコ語</item>
+		<item>ウクライナ語</item>
+		<item>ウルドゥー語</item>
+		<item>ウズベク語</item>
+		<item>ベトナム語</item>
+		<item>ウェールズ語</item>
+		<item>コサ語</item>
+		<item>イディッシュ語</item>
+		<item>ヨルバ語</item>
+		<item>ズールー語</item>
+		<item>オリヤー語</item>
+		<item>パンジャブ語</item>
+		<item>ルワンダ語</item>
+		<item>タタール語</item>
+		<item>トルクメン語</item>
+		<item>ウイグル語</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>ba</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>my</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>zh</item>
+		<item>cv</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>sjn</item>
+		<item>emj</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>he</item>
+		<item>mrj</item>
+		<item>hi</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jv</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>kazlat</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mhr</item>
+		<item>mn</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>pap</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pa</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tl</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>udm</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>uzbcyr</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>sah</item>
+		<item>yi</item>
+	</string-array>
+	<string-array name="yandex_translator_names">
+		<item>自動</item>
+		<item>アフリカーンス語</item>
+		<item>アルバニア語</item>
+		<item>アムハラ語</item>
+		<item>アラビア語</item>
+		<item>アルメニア語</item>
+		<item>アゼルバイジャン語</item>
+		<item>バシキール語</item>
+		<item>バスク語</item>
+		<item>ベラルーシ語</item>
+		<item>ベンガル語</item>
+		<item>ボスニア語</item>
+		<item>ブルガリア語</item>
+		<item>ビルマ語</item>
+		<item>カタルーニャ語</item>
+		<item>セブアノ語</item>
+		<item>中国語</item>
+		<item>チュヴァシ語</item>
+		<item>クロアチア語</item>
+		<item>チェコ語</item>
+		<item>デンマーク語</item>
+		<item>オランダ語</item>
+		<item>エルフ語（シンダール語）</item>
+		<item>絵文字</item>
+		<item>英語</item>
+		<item>エスペラント語</item>
+		<item>エストニア語</item>
+		<item>フィンランド語</item>
+		<item>フランス語</item>
+		<item>ガリシア語</item>
+		<item>ジョージア語</item>
+		<item>ドイツ語</item>
+		<item>ギリシャ語</item>
+		<item>グジャラート語</item>
+		<item>ハイチ語</item>
+		<item>ヘブライ語</item>
+		<item>山地マリ語</item>
+		<item>ヒンディー語</item>
+		<item>ハンガリー語</item>
+		<item>アイスランド語</item>
+		<item>インドネシア語</item>
+		<item>アイルランド語</item>
+		<item>イタリア語</item>
+		<item>日本語</item>
+		<item>ジャワ語</item>
+		<item>カンナダ語</item>
+		<item>カザフ語</item>
+		<item>カザフ語（ラテン文字）</item>
+		<item>クメール語</item>
+		<item>韓国語</item>
+		<item>キルギス語</item>
+		<item>ラオ語</item>
+		<item>ラテン語</item>
+		<item>ラトビア語</item>
+		<item>リトアニア語</item>
+		<item>ルクセンブルク語</item>
+		<item>マケドニア語</item>
+		<item>マラガシ語</item>
+		<item>マレー語</item>
+		<item>マラヤーラム語</item>
+		<item>マルタ語</item>
+		<item>マオリ語</item>
+		<item>マラーティー語</item>
+		<item>マリ語</item>
+		<item>モンゴル語</item>
+		<item>ネパール語</item>
+		<item>ノルウェー語</item>
+		<item>パピアメント語</item>
+		<item>ペルシャ語</item>
+		<item>ポーランド語</item>
+		<item>ポルトガル語</item>
+		<item>パンジャブ語</item>
+		<item>ルーマニア語</item>
+		<item>ロシア語</item>
+		<item>スコットランド・ゲール語</item>
+		<item>セルビア語</item>
+		<item>シンハラ語</item>
+		<item>スロバキア語</item>
+		<item>スロベニア語</item>
+		<item>スペイン語</item>
+		<item>スンダ語</item>
+		<item>スワヒリ語</item>
+		<item>スウェーデン語</item>
+		<item>タガログ語</item>
+		<item>タジク語</item>
+		<item>タミル語</item>
+		<item>タタール語</item>
+		<item>テルグ語</item>
+		<item>タイ語</item>
+		<item>トルコ語</item>
+		<item>ウドムルト語</item>
+		<item>ウクライナ語</item>
+		<item>ウルドゥー語</item>
+		<item>ウズベク語</item>
+		<item>ウズベク語（キリル文字）</item>
+		<item>ベトナム語</item>
+		<item>ウェールズ語</item>
+		<item>コサ語</item>
+		<item>ヤクート語</item>
+		<item>イディッシュ語</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>自動</item>
+		<item>アラビア語</item>
+		<item>ブルガリア語</item>
+		<item>中国語</item>
+		<item>チェコ語</item>
+		<item>デンマーク語</item>
+		<item>オランダ語</item>
+		<item>英語</item>
+		<item>エストニア語</item>
+		<item>フィンランド語</item>
+		<item>フランス語</item>
+		<item>ドイツ語</item>
+		<item>ギリシャ語</item>
+		<item>ハンガリー語</item>
+		<item>インドネシア語</item>
+		<item>イタリア語</item>
+		<item>日本語</item>
+		<item>韓国語</item>
+		<item>ラトビア語</item>
+		<item>リトアニア語</item>
+		<item>ノルウェー語（ブークモール）</item>
+		<item>ポーランド語</item>
+		<item>ポルトガル語</item>
+		<item>ルーマニア語</item>
+		<item>ロシア語</item>
+		<item>スロバキア語</item>
+		<item>スロベニア語</item>
+		<item>スペイン語</item>
+		<item>スウェーデン語</item>
+		<item>トルコ語</item>
+		<item>ウクライナ語</item>
 	</string-array>
 </resources>

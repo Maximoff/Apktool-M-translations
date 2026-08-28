@@ -1,9 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>Kayıtlar</item>
 		<item>Değişmez değerler</item>
 		<item>İlkel veri türleri</item>
+	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
 	</string-array>
 	<string-array name="smali_help_values" formatted="false">
 		<item>vA, v0 - v15 değer aralığına sahip 4 bitlik bir kayıttır\nvAA, v0 - v255 değer aralığına sahip 8 bitlik bir kayıttır\nvAAAA, v0 - v65535 değer aralığına sahip 16 bitlik bir kayıttır</item>
@@ -41,8 +267,8 @@
 		<item>vAA kaydı tarafından başvurulan nesne monitörünü alır.</item>
 		<item>vAA kaydı tarafından başvurulan nesne monitörünü serbest bırakır.</item>
 		<item>vAA kaydında bulunan bir nesne referansının type_id tarafından tanımlanan sınıfa aktarılıp aktarılamayacağını kontrol eder. Başarısız olursa ClassCastException atar, aksi takdirde yürütmeye devam eder.</item>
-		<item>VB kaydının içeriğinin type_id tarafından tanımlanan sınıfın bir örneği olup olmadığını kontrol eder. vA kaydını sıfırdan farklı bir değere, yoksa 0\'a ayarlar.\nvA = vB örneğinin türü ? 10</item>
-		<item>VB kaydındaki dizi öğelerinin sayısını belirler ve değeri vA kaydına yerleştirir.\nvA = vB.uzunluk</item>
+		<item>VB kaydının içeriğinin type_id tarafından tanımlanan sınıfın bir örneği olup olmadığını kontrol eder. vA kaydını sıfırdan farklı bir değere, yoksa 0\'a ayarlar.\nvA = vB instanceOf type ? 1:0</item>
+		<item>VB kaydındaki dizi öğelerinin sayısını belirler ve değeri vA kaydına yerleştirir.\nvA = vB.length</item>
 		<item>Bir nesne türünün bir örneğini oluşturur ve oluşturulan örneğe bir referansı vAA kaydına yerleştirir.</item>
 		<item>Register vB öğelerinin boyutunda yeni bir type_id değişkenleri dizisi oluşturur ve vA yazmacındaki diziye bir başvuru yerleştirir.</item>
 		<item>type_id türünde yeni bir veri dizisi oluşturur ve bunu parametrelerle doldurur (yani uzun/çift dizilere izin verilmez, ancak referans türlerine izin verilir). Yeni oluşturulan diziye bir referans, bu ifadenin hemen ardından gelen move-result-object ifadesi kullanılarak elde edilebilir (eğer kullanılacaksa).</item>
@@ -85,20 +311,20 @@
 		<item>Bayt (tamsayı) değerini vAA\'dan, vCC kaydını içeren öğeyle birlikte vBB\'de başvurulan diziye yerleştirir.\nvBB[vCC] = vAA</item>
 		<item>vAA\'daki char (karakter) değerini, vCC yazmacına sahip öğe tarafından vBB\'de başvurulan diziye yerleştirir.\nvBB[vCC] = vAA</item>
 		<item>vAA\'daki kısa (tamsayı) değeri, vCC kaydını içeren öğeyle birlikte vBB\'de başvurulan diziye yerleştirir.\nvBB[vCC] = vAA</item>
-		<item>Örnek alanındaki değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
-		<item>Bir örnek alanından double/long değerini okur ve onu bir çift kayda (vA, vA+1) yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\n(vA, vA+1) = vB.alanı</item>
-		<item>Örnek alanından bir nesne referansını okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
-		<item>Örnek alanından bir boole değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
-		<item>Örnek alanından bir bayt (tamsayı) değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
-		<item>Örnek alanından bir char değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
-		<item>Örnek alanından kısa (tamsayı) bir değer okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.alanı</item>
-		<item>Değeri vA kaydından örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.alanı = vA</item>
-		<item>Bir kayıt çiftinden (vA, vA+1) bir çift/uzun değeri örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.alanı = (vA, vA+1)</item>
-		<item>vA kaydındaki bir nesneye referansı örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.alanı = vA</item>
-		<item>Boolean değerini vA kaydından örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.alanı = vA</item>
-		<item>vB kaydı tarafından başvurulan örnekteki belirtilen Boolean alanının bayt (tamsayı) değerini, vA kaydının değerine eşit olarak ayarlar; yani:\nvB.alanı = vA</item>
-		<item>vB kaydı tarafından başvurulan örnekteki belirtilen Boolean alanının char (karakter) değerini, vA kaydının değerine eşit olarak ayarlar; yani:\nvB.alanı = vA</item>
-		<item>vB kaydı tarafından başvurulan örnekteki belirtilen Boolean alanının kısa (tamsayı) değerini, vA kaydının değerine eşit olarak ayarlar; yani:\nvB.alanı = vA</item>
+		<item>Örnek alanındaki değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.field</item>
+		<item>Bir örnek alanından double/long değerini okur ve onu bir çift kayda (vA, vA+1) yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\n(vA, vA+1) = vB.field</item>
+		<item>Örnek alanından bir nesne referansını okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.field</item>
+		<item>Örnek alanından bir boole değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.field</item>
+		<item>Örnek alanından bir bayt (tamsayı) değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.field</item>
+		<item>Örnek alanından bir char değeri okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.field</item>
+		<item>Örnek alanından kısa (tamsayı) bir değer okur ve bunu vA kaydına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvA = vB.field</item>
+		<item>Değeri vA kaydından örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.field = vA</item>
+		<item>Bir kayıt çiftinden (vA, vA+1) bir çift/uzun değeri örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.field = (vA, vA+1)</item>
+		<item>vA kaydındaki bir nesneye referansı örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.field = vA</item>
+		<item>Boolean değerini vA kaydından örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.field = vA</item>
+		<item>vA kaydındaki bayt (tamsayı) değerini örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.field = vA</item>
+		<item>vA kaydındaki char (karakter) değerini örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.field = vA</item>
+		<item>vA kaydındaki kısa (tamsayı) değeri örnek alanına yerleştirir. Bu alanı içeren sınıfa yapılan referans vB kaydındadır.\nvB.field = vA</item>
 		<item>Statik bir alandan bir değer okur ve onu vAA kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
 		<item>Statik bir alandan double/long değerini okur ve onu bir çift vAA, vAA+1 kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
 		<item>Statik bir alandan bir nesne referansını okur ve bunu vAA kaydına yerleştirir. Bu alanı içeren sınıfa referansı içeren kayıt kullanılmaz.</item>
@@ -149,7 +375,7 @@
 		<item>vBB * vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB * vCC</item>
 		<item>VBB / vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB / vCC</item>
 		<item>vBB % vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB % vCC</item>
-		<item>vBB ve vCC\'yi (mantıksal AND) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB ve vCC</item>
+		<item>vBB ve vCC\'yi (mantıksal AND) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB &amp; vCC</item>
 		<item>vBB\'yi hesaplar | vCC (mantıksal VEYA) ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB | vCC</item>
 		<item>vBB ^ vCC\'yi (özel OR) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB ^ vCC</item>
 		<item>vBB\'yi, vCC tarafından belirtilen bit sayısı kadar sola kaydırır ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB &lt;&lt; vCC</item>
@@ -162,10 +388,10 @@
 		<item>(vBB, vBB+1) %\'sini (vCC, vCC+1) hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
 		<item>(vBB, vBB+1) ve (vCC, vCC+1) (mantıksal AND) hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
 		<item>Hesaplamalar (vBB, vBB+1) | (vCC, vCC+1) (mantıksal VEYA) ve sonucu bir çift vAA, vAA+1 kaydında saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
-		<item>(vBB, vBB+1) ^ (vCC, vCC+1) (exclusive AND) değerini hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>(vBB, vBB+1) ^ (vCC, vCC+1) (özel VEYA) değerini hesaplar ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
 		<item>vBB, vBB+1\'i vCC tarafından belirtilen bit sayısı kadar sola kaydırır ve sonucu vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
 		<item>vBB, vBB+1\'i, vCC tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu, vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
-		<item>vBB, vBB+1\'i, vCC tarafından belirtilen bit sayısı kadar işareti korumadan sağa kaydırır ve sonucu, vAA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>vBB, vBB+1\'i, vCC tarafından belirtilen bit sayısı kadar işareti korumadan sağa kaydırır ve sonucu, vAA, vAA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
 		<item>vBB + vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler değişkendir.\nvAA = vBB + vCC</item>
 		<item>VBB - vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler değişkendir.\nvAA = vBB - vCC</item>
 		<item>vBB * vCC\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler değişkendir.\nvAA = vBB * vCC</item>
@@ -194,7 +420,7 @@
 		<item>(vA, vA+1) % (vB, vB+1)\'i hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
 		<item>(vA, vA+1) &amp; (vB, vB+1)\'i (mantıksal AND) hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
 		<item>Hesaplar (vA, vA+1) | (vB, vB+1) (mantıksal OR) ve sonucu bir çift vA, vA+1 kaydında saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
-		<item>(vA, vA+1) &amp; (vB, vB+1)\'i (hariç OR) hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>(vA, vA+1) ^ (vB, vB+1)\'i (hariç OR) hesaplar ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
 		<item>vA, vA+1\'i vB tarafından belirtilen bit sayısı kadar sola kaydırır ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
 		<item>vA, vA+1\'i vB tarafından belirtilen bit sayısı kadar sağa kaydırır ve sonucu vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
 		<item>vA, vA+1\'i, vB tarafından belirtilen basamak sayısı kadar işareti korumadan sağa kaydırır ve sonucu, vA, vA+1 kayıt çiftinde saklar. Tüm değerler uzundur (tamsayı).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
@@ -213,7 +439,7 @@
 		<item>vB * 0xFFFF\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB * 0xFFFF</item>
 		<item>vB / 0xFFFF\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB / 0xFFFF</item>
 		<item>vB % 0xFFFF\'yi hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB % 0xFFFF</item>
-		<item>vB &amp; 0xFFFF\'yi (mantıksal VE) hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB ve 0xFFFF</item>
+		<item>vB &amp; 0xFFFF\'yi (mantıksal VE) hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB &amp; 0xFFFF</item>
 		<item>vB\'yi hesaplar | 0xFFFF (mantıksal VEYA) ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB | 0xFFFF</item>
 		<item>vB ^ 0xFFFF\'yi (özel VEYA) hesaplar ve sonucu vA kaydında saklar. Tüm değerler tam sayıdır.\nvA = vB ^ 0xFFFF</item>
 		<item>vBB + 0xFF\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB + 0xFF</item>
@@ -221,7 +447,7 @@
 		<item>vBB * 0xFF\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB * 0xFF</item>
 		<item>vBB / 0xFF\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB / 0xFF</item>
 		<item>vBB % 0xFF\'yi hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB % 0xFF</item>
-		<item>vBB ve 0xFF\'yi (mantıksal VE) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB ve 0xFF</item>
+		<item>vBB ve 0xFF\'yi (mantıksal VE) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB &amp; 0xFF</item>
 		<item>vBB\'yi hesaplar | 0xFF (mantıksal VEYA) ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB | 0xFF</item>
 		<item>vBB ^ 0xFF\'yi (özel VEYA) hesaplar ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB ^ 0xFF</item>
 		<item>vBB\'yi 0xFF ile belirtilen bit sayısı kadar sola kaydırır ve sonucu vAA kaydında saklar. Tüm değerler tam sayıdır.\nvAA = vBB &lt;&lt; 0xFF</item>
@@ -234,725 +460,1046 @@
 		<item>vAA kaydındaki bir yöntem tanıtıcısına başvuru yerleştirir. Sürüm 039\'dan beri Dex dosyalarında mevcut.</item>
 		<item>vAA kaydındaki yöntem prototipine bir referans yerleştirir. Sürüm 039\'dan beri Dex dosyalarında mevcut.</item>
 	</string-array>
-    <string-array name="copy_variants">
-        <item>Yeniden Adlandır</item>
-		<item>Rename files only</item>
-        <item>Değiştir</item>
-        <item>Geç</item>
-    </string-array>
-    <string-array name="menu_pos">
-        <item>Sol</item>
-        <item>Sağ</item>
-    </string-array>
-    <string-array name="checksum_names">
-        <item>Hepsi büyük harf</item>
-        <item>İki nokta üst üste ile ayırın</item>
-    </string-array>
-    <string-array name="sort">
-        <item>Ad</item>
-        <item>İsim ters</item>
-        <item>Tip</item>
-        <item>Ters yazın</item>
-        <item>Boyut</item>
-        <item>Ters boyut</item>
-        <item>Zaman</item>
-        <item>Ters Zaman</item>
-    </string-array>
-    <string-array name="color_var">
-        <item>HEX-color</item>
-        <item>Smali kod</item>
-        <item>A,R,G,B</item>
-    </string-array>
-    <string-array name="format">
-        <item>@string/jks</item>
-        <item>@string/pkcs12</item>
-        <item>@string/bks</item>
-        <item>@string/pk8</item>
-    </string-array>
-    <string-array name="resDecodeMode">
-        <item>Geri derleme</item>
-        <item>Ana dizine geri derl2e</item>
-        <item>Ayrı bir dizine geri derle</item>
-        <item>Try to merge packages</item>
-    </string-array>
-    <string-array name="converter_items">
-        <item>Text &lt;-> Base64</item>
-        <item>Text &lt;-> Unicode</item>
-        <item>Text &lt;-> URL encoding</item>
-        <item>Text &lt;-> MD5</item>
-        <item>Text &lt;-> SHA-1</item>
-        <item>Text &lt;-> SHA-224</item>
-        <item>Text &lt;-> SHA-256</item>
-        <item>Text &lt;-> SHA-384</item>
-        <item>Text &lt;-> SHA-512</item>
-        <item>Text &lt;-> Array (UTF-8)</item>
-        <item>Text &lt;-> Array (UTF-16)</item>
-        <item>Text &lt;-> Array (UTF-16LE)</item>
-        <item>Text &lt;-> Array (UTF-16BE)</item>
-        <item>Text &lt;-> Array (US-ASCII)</item>
-        <item>Text &lt;-> Array (ISO-8859-1)</item>
-        <item>Text &lt;-> Array (CP1251)</item>
-        <item>Decimal &lt;-> Binary</item>
-        <item>Decimal &lt;-> Octal</item>
-        <item>Decimal &lt;-> Hex</item>
-        <item>Decimal &lt;-> Hex (0x0)</item>
-        <item>Decimal &lt;-> Hex (0x00000000)</item>
-        <item>Float &lt;-> Binary</item>
-        <item>Float &lt;-> Octal</item>
-        <item>Float &lt;-> Hex</item>
-        <item>Float &lt;-> Hex (0x0)</item>
-        <item>Float &lt;-> Hex (0x00000000)</item>
-        <item>Color &lt;-> Smali</item>
-        <item>Color &lt;-> Decimal</item>
-        <item>Color &lt;-> A,R,G,B</item>
-        <item>Date &lt;-> Milliseconds</item>
-		<item>Date &lt;-> Hex</item>
-    </string-array>
-    <string-array name="installLocation">
-        <item>Ayarlama</item>
-        <item>Otomatik</item>
-        <item>Yalnızca dahili</item>
-        <item>Tercil edilen hafıza</item>
-    </string-array>
-    <string-array name="orientation_variants">
-        <item>varsayılan</item>
-        <item>yan ekran</item>
-        <item>dk ekran</item>
-    </string-array>
-    <string-array name="auto_save_variants">
-        <item>kapalı</item>
-        <item>15 saniye</item>
-        <item>30 saniye</item>
-        <item>1 saniye</item>
-        <item>5 saniye</item>
-    </string-array>
-    <string-array name="to_vector_values">
-        <item>Uyarlanmış görüntü (düşük kalite)</item>
-        <item>yüksek çözünürlüklü resim (daha büyük boyut)</item>
-        <item>SVG\'ye çevir</item>
-    </string-array>
-    <string-array name="backup_values">
-        <item>ayarlar</item>
-        <item>yer imleri</item>
-        <item>geçmişi ara/yerleştir</item>
-        <item>Sözlükler</item>
-    </string-array>
-    <string-array name="editor_themes">
-        <item>varsayılan</item>
-        <item>yeni</item>
-    </string-array>
-    <string-array name="bing_translator_codes">
-        <item>auto-detect</item>
-        <item>az</item>
-        <item>sq</item>
-        <item>en</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>af</item>
-        <item>bn</item>
-        <item>bg</item>
-        <item>bs</item>
-        <item>cy</item>
-        <item>hu</item>
-        <item>vi</item>
-        <item>ht</item>
-        <item>nl</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>da</item>
-        <item>he</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>is</item>
-        <item>es</item>
-        <item>it</item>
-        <item>kk</item>
-        <item>kn</item>
-        <item>yue</item>
-        <item>ca</item>
-        <item>otq</item>
-        <item>zh-Hant</item>
-        <item>zh-Hans</item>
-        <item>ko</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>de</item>
-        <item>ne</item>
-        <item>nb</item>
-        <item>or</item>
-        <item>pa</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>pt-PT</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>sm</item>
-        <item>sr-Cyrl</item>
-        <item>sr-Latn</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>sw</item>
-        <item>ty</item>
-        <item>th</item>
-        <item>ta</item>
-        <item>te</item>
-        <item>to</item>
-        <item>tr</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>fj</item>
-        <item>fil</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>hi</item>
-        <item>mww</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>sv</item>
-        <item>et</item>
-        <item>yua</item>
-        <item>ja</item>
-        <item>am</item>
-        <item>as</item>
-        <item>prs</item>
-        <item>fr-CA</item>
-        <item>iu</item>
-        <item>km</item>
-        <item>tlh-Latn</item>
-        <item>ku</item>
-        <item>kmr</item>
-        <item>lo</item>
-        <item>my</item>
-        <item>ps</item>
-        <item>ti</item>
-    </string-array>
-    <string-array name="bing_translator_names">
-        <item>Automatic</item>
-        <item>Azerbaijani (Latin)</item>
-        <item>Albanian</item>
-        <item>English</item>
-        <item>Arabic</item>
-        <item>Armenian</item>
-        <item>Afrikaans</item>
-        <item>Bengali</item>
-        <item>Bulgarian</item>
-        <item>Bosnian</item>
-        <item>Welsh</item>
-        <item>Hungarian</item>
-        <item>Vietnamese</item>
-        <item>Haitian Creole</item>
-        <item>Dutch</item>
-        <item>Greek</item>
-        <item>Gujarati</item>
-        <item>Danish</item>
-        <item>Hebrew</item>
-        <item>Indonesian</item>
-        <item>Irish</item>
-        <item>Icelandic</item>
-        <item>Spanish</item>
-        <item>Italian</item>
-        <item>Kazakh</item>
-        <item>Kannada</item>
-        <item>Cantonese Traditional</item>
-        <item>Catalan</item>
-        <item>Keretarian Otomi</item>
-        <item>Traditional Chinese</item>
-        <item>Chinese Simplified</item>
-        <item>Korean</item>
-        <item>Latvian</item>
-        <item>Lithuanian</item>
-        <item>Malagasy</item>
-        <item>Malay</item>
-        <item>Malayalam</item>
-        <item>Maltese</item>
-        <item>Maori</item>
-        <item>Marathi</item>
-        <item>German</item>
-        <item>Nepali</item>
-        <item>Norwegian</item>
-        <item>Oriya</item>
-        <item>Punjabi</item>
-        <item>Persian</item>
-        <item>Polish</item>
-        <item>Portuguese (Brazil)</item>
-        <item>Portuguese (Portugal)</item>
-        <item>Romanian</item>
-        <item>Russian</item>
-        <item>Samoa</item>
-        <item>Serbian (Cyrillic)</item>
-        <item>Serbian (Latin)</item>
-        <item>Slovak</item>
-        <item>Slovenian</item>
-        <item>Swahili</item>
-        <item>Tahiti</item>
-        <item>Thai</item>
-        <item>Tamil</item>
-        <item>Telugu</item>
-        <item>Tonga</item>
-        <item>Turkish</item>
-        <item>Ukrainian</item>
-        <item>Urdu</item>
-        <item>Fiji</item>
-        <item>Filipino</item>
-        <item>Finnish</item>
-        <item>French</item>
-        <item>Hindi</item>
-        <item>Hmong Dhow</item>
-        <item>Croatian</item>
-        <item>Czech</item>
-        <item>Swedish</item>
-        <item>Estonian</item>
-        <item>Yucatec Maya</item>
-        <item>Japanese</item>
-        <item>Amharic</item>
-        <item>Assamese</item>
-        <item>Dari</item>
-        <item>French (Canada)</item>
-        <item>Inuktitut</item>
-        <item>Khmer</item>
-        <item>Klingon (Latin)</item>
-        <item>Kurdish (Central)</item>
-        <item>Kurdish (Northern)</item>
-        <item>Lao</item>
-        <item>Myanmar (Burmese)</item>
-        <item>Pashto</item>
-        <item>Tigrinya</item>
-    </string-array>
-    <string-array name="google_translator_codes">
-        <item>auto</item>
-        <item>af</item>
-        <item>sq</item>
-        <item>am</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>az</item>
-        <item>eu</item>
-        <item>be</item>
-        <item>bn</item>
-        <item>bs</item>
-        <item>bg</item>
-        <item>ca</item>
-        <item>ceb</item>
-        <item>ny</item>
-        <item>zh-cn</item>
-        <item>zh-tw</item>
-        <item>co</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>da</item>
-        <item>nl</item>
-        <item>en</item>
-        <item>eo</item>
-        <item>et</item>
-        <item>tl</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>fy</item>
-        <item>gl</item>
-        <item>ka</item>
-        <item>de</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>ht</item>
-        <item>ha</item>
-        <item>haw</item>
-        <item>iw</item>
-        <item>hi</item>
-        <item>hmn</item>
-        <item>hu</item>
-        <item>is</item>
-        <item>ig</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>it</item>
-        <item>ja</item>
-        <item>jw</item>
-        <item>kn</item>
-        <item>kk</item>
-        <item>km</item>
-        <item>ko</item>
-        <item>ku</item>
-        <item>ky</item>
-        <item>lo</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>lb</item>
-        <item>mk</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>mn</item>
-        <item>my</item>
-        <item>ne</item>
-        <item>no</item>
-        <item>ps</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>ma</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>sm</item>
-        <item>gd</item>
-        <item>sr</item>
-        <item>st</item>
-        <item>sn</item>
-        <item>sd</item>
-        <item>si</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>so</item>
-        <item>es</item>
-        <item>su</item>
-        <item>sw</item>
-        <item>sv</item>
-        <item>tg</item>
-        <item>ta</item>
-        <item>te</item>
-        <item>th</item>
-        <item>tr</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>uz</item>
-        <item>vi</item>
-        <item>cy</item>
-        <item>xh</item>
-        <item>yi</item>
-        <item>yo</item>
-        <item>zu</item>
-        <item>or</item>
-        <item>pa</item>
-        <item>rw</item>
-        <item>tt</item>
-        <item>tk</item>
-        <item>ug</item>
-    </string-array>
-    <string-array name="google_translator_names">
-        <item>Automatic</item>
-        <item>Afrikaans</item>
-        <item>Albanian</item>
-        <item>Amharic</item>
-        <item>Arabic</item>
-        <item>Armenian</item>
-        <item>Azerbaijani</item>
-        <item>Basque</item>
-        <item>Belarusian</item>
-        <item>Bengali</item>
-        <item>Bosnian</item>
-        <item>Bulgarian</item>
-        <item>Catalan</item>
-        <item>Cebuano</item>
-        <item>Chichewa</item>
-        <item>Chinese Simplified</item>
-        <item>Chinese Traditional</item>
-        <item>Corsican</item>
-        <item>Croatian</item>
-        <item>Czech</item>
-        <item>Danish</item>
-        <item>Dutch</item>
-        <item>English</item>
-        <item>Esperanto</item>
-        <item>Estonian</item>
-        <item>Filipino</item>
-        <item>Finnish</item>
-        <item>French</item>
-        <item>Frisian</item>
-        <item>Galician</item>
-        <item>Georgian</item>
-        <item>German</item>
-        <item>Greek</item>
-        <item>Gujarati</item>
-        <item>Haitian Creole</item>
-        <item>Hausa</item>
-        <item>Hawaiian</item>
-        <item>Hebrew</item>
-        <item>Hindi</item>
-        <item>Hmong</item>
-        <item>Hungarian</item>
-        <item>Icelandic</item>
-        <item>Igbo</item>
-        <item>Indonesian</item>
-        <item>Irish</item>
-        <item>Italian</item>
-        <item>Japanese</item>
-        <item>Javanese</item>
-        <item>Kannada</item>
-        <item>Kazakh</item>
-        <item>Khmer</item>
-        <item>Korean</item>
-        <item>Kurdish (Kurmanji)</item>
-        <item>Kyrgyz</item>
-        <item>Lao</item>
-        <item>Latin</item>
-        <item>Latvian</item>
-        <item>Lithuanian</item>
-        <item>Luxembourgish</item>
-        <item>Macedonian</item>
-        <item>Malagasy</item>
-        <item>Malay</item>
-        <item>Malayalam</item>
-        <item>Maltese</item>
-        <item>Maori</item>
-        <item>Marathi</item>
-        <item>Mongolian</item>
-        <item>Myanmar (Burmese)</item>
-        <item>Nepali</item>
-        <item>Norwegian</item>
-        <item>Pashto</item>
-        <item>Persian</item>
-        <item>Polish</item>
-        <item>Portuguese</item>
-        <item>Punjabi</item>
-        <item>Romanian</item>
-        <item>Russian</item>
-        <item>Samoan</item>
-        <item>Scots Gaelic</item>
-        <item>Serbian</item>
-        <item>Sesotho</item>
-        <item>Shona</item>
-        <item>Sindhi</item>
-        <item>Sinhala</item>
-        <item>Slovak</item>
-        <item>Slovenian</item>
-        <item>Somali</item>
-        <item>Spanish</item>
-        <item>Sundanese</item>
-        <item>Swahili</item>
-        <item>Swedish</item>
-        <item>Tajik</item>
-        <item>Tamil</item>
-        <item>Telugu</item>
-        <item>Thai</item>
-        <item>Turkish</item>
-        <item>Ukrainian</item>
-        <item>Urdu</item>
-        <item>Uzbek</item>
-        <item>Vietnamese</item>
-        <item>Welsh</item>
-        <item>Xhosa</item>
-        <item>Yiddish</item>
-        <item>Yoruba</item>
-        <item>Zulu</item>
-        <item>Oriya</item>
-        <item>Punjabi</item>
-        <item>Rwanda</item>
-        <item>Tatar</item>
-        <item>Turkmen</item>
-        <item>Uigur</item>
-    </string-array>
-    <string-array name="yandex_translator_codes">
-        <item>auto</item>
-        <item>af</item>
-        <item>sq</item>
-        <item>am</item>
-        <item>ar</item>
-        <item>hy</item>
-        <item>az</item>
-        <item>ba</item>
-        <item>eu</item>
-        <item>be</item>
-        <item>bn</item>
-        <item>bs</item>
-        <item>bg</item>
-        <item>my</item>
-        <item>ca</item>
-        <item>ceb</item>
-        <item>zh</item>
-        <item>cv</item>
-        <item>hr</item>
-        <item>cs</item>
-        <item>da</item>
-        <item>nl</item>
-        <item>sjn</item>
-        <item>emj</item>
-        <item>en</item>
-        <item>eo</item>
-        <item>et</item>
-        <item>fi</item>
-        <item>fr</item>
-        <item>gl</item>
-        <item>ka</item>
-        <item>de</item>
-        <item>el</item>
-        <item>gu</item>
-        <item>ht</item>
-        <item>he</item>
-        <item>mrj</item>
-        <item>hi</item>
-        <item>hu</item>
-        <item>is</item>
-        <item>id</item>
-        <item>ga</item>
-        <item>it</item>
-        <item>ja</item>
-        <item>jv</item>
-        <item>kn</item>
-        <item>kk</item>
-        <item>kazlat</item>
-        <item>km</item>
-        <item>ko</item>
-        <item>ky</item>
-        <item>lo</item>
-        <item>la</item>
-        <item>lv</item>
-        <item>lt</item>
-        <item>lb</item>
-        <item>mk</item>
-        <item>mg</item>
-        <item>ms</item>
-        <item>ml</item>
-        <item>mt</item>
-        <item>mi</item>
-        <item>mr</item>
-        <item>mhr</item>
-        <item>mn</item>
-        <item>ne</item>
-        <item>no</item>
-        <item>pap</item>
-        <item>fa</item>
-        <item>pl</item>
-        <item>pt</item>
-        <item>pa</item>
-        <item>ro</item>
-        <item>ru</item>
-        <item>gd</item>
-        <item>sr</item>
-        <item>si</item>
-        <item>sk</item>
-        <item>sl</item>
-        <item>es</item>
-        <item>su</item>
-        <item>sw</item>
-        <item>sv</item>
-        <item>tl</item>
-        <item>tg</item>
-        <item>ta</item>
-        <item>tt</item>
-        <item>te</item>
-        <item>th</item>
-        <item>tr</item>
-        <item>udm</item>
-        <item>uk</item>
-        <item>ur</item>
-        <item>uz</item>
-        <item>uzbcyr</item>
-        <item>vi</item>
-        <item>cy</item>
-        <item>xh</item>
-        <item>sah</item>
-        <item>yi</item>
-    </string-array>
-    <string-array name="yandex_translator_names">
-        <item>Automatic</item>
-        <item>Afrikaans</item>
-        <item>Albanian</item>
-        <item>Amharic</item>
-        <item>Arabic</item>
-        <item>Armenian</item>
-        <item>Azerbaijani</item>
-        <item>Bashkir</item>
-        <item>Basque</item>
-        <item>Belarusian</item>
-        <item>Bengali</item>
-        <item>Bosnian</item>
-        <item>Bulgarian</item>
-        <item>Burmese</item>
-        <item>Catalan</item>
-        <item>Cebuano</item>
-        <item>Chinese</item>
-        <item>Chuvash</item>
-        <item>Croatian</item>
-        <item>Czech</item>
-        <item>Danish</item>
-        <item>Dutch</item>
-        <item>Elvish (Sindarin)</item>
-        <item>Emoji</item>
-        <item>English</item>
-        <item>Esperanto</item>
-        <item>Estonian</item>
-        <item>Finnish</item>
-        <item>French</item>
-        <item>Galician</item>
-        <item>Georgian</item>
-        <item>German</item>
-        <item>Greek</item>
-        <item>Gujarati</item>
-        <item>Haitian</item>
-        <item>Hebrew</item>
-        <item>Hill Mari</item>
-        <item>Hindi</item>
-        <item>Hungarian</item>
-        <item>Icelandic</item>
-        <item>Indonesian</item>
-        <item>Irish</item>
-        <item>Italian</item>
-        <item>Japanese</item>
-        <item>Javanese</item>
-        <item>Kannada</item>
-        <item>Kazakh</item>
-        <item>Kazakh (Latin)</item>
-        <item>Khmer</item>
-        <item>Korean</item>
-        <item>Kyrgyz</item>
-        <item>Lao</item>
-        <item>Latin</item>
-        <item>Latvian</item>
-        <item>Lithuanian</item>
-        <item>Luxembourgish</item>
-        <item>Macedonian</item>
-        <item>Malagasy</item>
-        <item>Malay</item>
-        <item>Malayalam</item>
-        <item>Maltese</item>
-        <item>Maori</item>
-        <item>Marathi</item>
-        <item>Mari</item>
-        <item>Mongolian</item>
-        <item>Nepali</item>
-        <item>Norwegian</item>
-        <item>Papiamento</item>
-        <item>Persian</item>
-        <item>Polish</item>
-        <item>Portuguese</item>
-        <item>Punjabi</item>
-        <item>Romanian</item>
-        <item>Russian</item>
-        <item>Scottish Gaelic</item>
-        <item>Serbian</item>
-        <item>Sinhalese</item>
-        <item>Slovak</item>
-        <item>Slovenian</item>
-        <item>Spanish</item>
-        <item>Sundanese</item>
-        <item>Swahili</item>
-        <item>Swedish</item>
-        <item>Tagalog</item>
-        <item>Tajik</item>
-        <item>Tamil</item>
-        <item>Tatar</item>
-        <item>Telugu</item>
-        <item>Thai</item>
-        <item>Turkish</item>
-        <item>Udmurt</item>
-        <item>Ukrainian</item>
-        <item>Urdu</item>
-        <item>Uzbek</item>
-        <item>Uzbek (Cyrillic)</item>
-        <item>Vietnamese</item>
-        <item>Welsh</item>
-        <item>Xhosa</item>
-        <item>Yakut</item>
-        <item>Yiddish</item>
-    </string-array>
+	<string-array name="years_or_days">
+		<item>yıl</item>
+		<item>gün</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>Yerleşik</item>
+		<item>Özel</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>APK manifestinden çıkarılan bilgileri yazdırır.</item>
+		<item>APK\'deki bir kaynağın kullandığı her yapılandırmayı yazdırır.</item>
+		<item>APK manifestinden çıkarılan izinleri yazdırır.</item>
+		<item>APK\'deki kaynak tablosu dize havuzunun içeriğini yazdırır.</item>
+		<item>APK\'deki kaynak tablosunun içeriğini yazdırır.</item>
+		<item>Bir APK\'nin &lt;overlayable> kaynaklarını yazdırır.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Açık</item>
+		<item>Koyu</item>
+		<item>Siyah</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>Yedek mod</item>
+		<item>Karartmayı çözme</item>
+		<item>Unicode kaçışı</item>
+		<item>Tutarsız kodu göster</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
+	</string-array>
+	<string-array name="copy_variants">
+		<item>Yeniden Adlandır</item>
+		<item>Yalnızca dosyaları yeniden adlandır</item>
+		<item>Değiştir</item>
+		<item>Geç</item>
+	</string-array>
+	<string-array name="menu_pos">
+		<item>Sol</item>
+		<item>Sağ</item>
+	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>Hepsi büyük harf</item>
+		<item>İki nokta üst üste ile ayırın</item>
+	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>Yeni kaynak ekle (yalnızca dosyalar)</item>
+		<item>Eksik kaynakları sil</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
+	</string-array>
+	<string-array name="sort">
+		<item>Ad</item>
+		<item>İsim ters</item>
+		<item>Tip</item>
+		<item>Ters yazın</item>
+		<item>Boyut</item>
+		<item>Ters boyut</item>
+		<item>Zaman</item>
+		<item>Ters Zaman</item>
+	</string-array>
+	<string-array name="color_var">
+		<item>HEX-color</item>
+		<item>Smali kod</item>
+		<item>A,R,G,B</item>
+	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>one</item>
+		<item>two</item>
+		<item>few</item>
+		<item>many</item>
+		<item>other</item>
+	</string-array>
+	<string-array name="resDecodeMode">
+		<item>Geri derleme yapma</item>
+		<item>Ana dizine geri derle</item>
+		<item>Ayrı bir dizine geri derle</item>
+		<item>Paketleri birleştirmeyi dene</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>Metin &lt;-> Base64</item>
+		<item>Metin &lt;-> Unicode</item>
+		<item>Metin &lt;-> URL kodlama</item>
+		<item>Metin &lt;-> MD5</item>
+		<item>Metin &lt;-> SHA-1</item>
+		<item>Metin &lt;-> SHA-224</item>
+		<item>Metin &lt;-> SHA-256</item>
+		<item>Metin &lt;-> SHA-384</item>
+		<item>Metin &lt;-> SHA-512</item>
+		<item>Metin &lt;-> Dizi (UTF-8)</item>
+		<item>Metin &lt;-> Dizi (UTF-16)</item>
+		<item>Metin &lt;-> Dizi (UTF-16LE)</item>
+		<item>Metin &lt;-> Dizi (UTF-16BE)</item>
+		<item>Metin &lt;-> Dizi (US-ASCII)</item>
+		<item>Metin &lt;-> Dizi (ISO-8859-1)</item>
+		<item>Metin &lt;-> Dizi (CP1251)</item>
+		<item>Ondalık &lt;-> İkili</item>
+		<item>Ondalık &lt;-> Sekizli</item>
+		<item>Ondalık &lt;-> Hex</item>
+		<item>Ondalık &lt;-> Hex (0x0)</item>
+		<item>Ondalık &lt;-> Hex (0x00000000)</item>
+		<item>Kayan nokta &lt;-> İkili</item>
+		<item>Kayan nokta &lt;-> Sekizli</item>
+		<item>Kayan nokta &lt;-> Hex</item>
+		<item>Kayan nokta &lt;-> Hex (0x0)</item>
+		<item>Kayan nokta &lt;-> Hex (0x00000000)</item>
+		<item>Renk &lt;-> Smali</item>
+		<item>Renk &lt;-> Ondalık</item>
+		<item>Renk &lt;-> A,R,G,B</item>
+		<item>Tarih &lt;-> Milisaniye</item>
+		<item>Tarih &lt;-> Hex</item>
+	</string-array>
+	<string-array name="installLocation">
+		<item>Ayarlama</item>
+		<item>Otomatik</item>
+		<item>Yalnızca dahili</item>
+		<item>Tercil edilen hafıza</item>
+	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lituania</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+		<item>O\'zbek tili</item>
+		<item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>zh-rTW</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+		<item>uz</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>yyyy/MM/dd HH:mm</item>
+		<item>dd/MM/yyyy HH:mm</item>
+		<item>HH:mm yyyy/MM/dd</item>
+		<item>HH:mm dd/MM/yyyy</item>
+		<item>yy/MM/dd HH:mm</item>
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item>
+		<item>HH:mm dd/MM/yy</item>
+		<item>yyyy.MM.dd HH:mm</item>
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>yy.MM.dd HH:mm</item>
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>yyyy-MM-dd HH:mm</item>
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>yy-MM-dd HH:mm</item>
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>Varsayılan</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>Basit yöntem</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>varsayılan</item>
+		<item>yan ekran</item>
+		<item>dk ekran</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="auto_save_variants">
+		<item>kapalı</item>
+		<item>15 saniye</item>
+		<item>30 saniye</item>
+		<item>1 saniye</item>
+		<item>5 saniye</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
+	</string-array>
+	<string-array name="to_vector_values">
+		<item>Uyarlanmış görüntü (düşük kalite)</item>
+		<item>yüksek çözünürlüklü resim (daha büyük boyut)</item>
+		<item>SVG\'ye çevir</item>
+	</string-array>
+	<string-array name="backup_values">
+		<item>ayarlar</item>
+		<item>yer imleri</item>
+		<item>geçmişi ara/yerleştir</item>
+		<item>Sözlükler</item>
+	</string-array>
+	<string-array name="split_dex_items">
+		<item>yöntem/alan sayısına göre</item>
+		<item>eşit parçalara</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>Önce tarih</item>
+		<item>Önce boyut</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="editor_themes">
+		<item>varsayılan</item>
+		<item>yeni</item>
+	</string-array>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
+	</string-array>
+	<string-array name="bing_translator_codes">
+		<item>auto-detect</item>
+		<item>az</item>
+		<item>sq</item>
+		<item>en</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>af</item>
+		<item>bn</item>
+		<item>bg</item>
+		<item>bs</item>
+		<item>cy</item>
+		<item>hu</item>
+		<item>vi</item>
+		<item>ht</item>
+		<item>nl</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>da</item>
+		<item>he</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>is</item>
+		<item>es</item>
+		<item>it</item>
+		<item>kk</item>
+		<item>kn</item>
+		<item>yue</item>
+		<item>ca</item>
+		<item>otq</item>
+		<item>zh-Hant</item>
+		<item>zh-Hans</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>de</item>
+		<item>ne</item>
+		<item>nb</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pt-PT</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>sr-Cyrl</item>
+		<item>sr-Latn</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>sw</item>
+		<item>ty</item>
+		<item>th</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>to</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>fj</item>
+		<item>fil</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>hi</item>
+		<item>mww</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>sv</item>
+		<item>et</item>
+		<item>yua</item>
+		<item>ja</item>
+		<item>am</item>
+		<item>as</item>
+		<item>prs</item>
+		<item>fr-CA</item>
+		<item>iu</item>
+		<item>km</item>
+		<item>tlh-Latn</item>
+		<item>ku</item>
+		<item>kmr</item>
+		<item>lo</item>
+		<item>my</item>
+		<item>ps</item>
+		<item>ti</item>
+	</string-array>
+	<string-array name="bing_translator_names">
+		<item>Otomatik</item>
+		<item>Azerbaycan (Latin)</item>
+		<item>Arnavutça</item>
+		<item>İngilizce</item>
+		<item>Arapça</item>
+		<item>Ermenice</item>
+		<item>Afrikaanca</item>
+		<item>Bengalce</item>
+		<item>Bulgarca</item>
+		<item>Boşnakça</item>
+		<item>Galce</item>
+		<item>Macarca</item>
+		<item>Vietnamca</item>
+		<item>Haiti Kreyolu</item>
+		<item>Felemenkçe</item>
+		<item>Yunanca</item>
+		<item>Güceratça</item>
+		<item>Danca</item>
+		<item>İbranice</item>
+		<item>Endonezce</item>
+		<item>İrlandaca</item>
+		<item>İzlandaca</item>
+		<item>İspanyolca</item>
+		<item>İtalyanca</item>
+		<item>Kazakça</item>
+		<item>Kannada</item>
+		<item>Kantonca (Geleneksel)</item>
+		<item>Katalanca</item>
+		<item>Querétaro Otomisi</item>
+		<item>Geleneksel Çince</item>
+		<item>Basitleştirilmiş Çince</item>
+		<item>Korece</item>
+		<item>Letonca</item>
+		<item>Litvanca</item>
+		<item>Malgaşça</item>
+		<item>Malayca</item>
+		<item>Malayalam</item>
+		<item>Maltaca</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>Almanca</item>
+		<item>Nepalce</item>
+		<item>Norveççe</item>
+		<item>Oriya</item>
+		<item>Pencapça</item>
+		<item>Farsça</item>
+		<item>Lehçe</item>
+		<item>Portekizce (Brezilya)</item>
+		<item>Portekizce (Portekiz)</item>
+		<item>Rumence</item>
+		<item>Rusça</item>
+		<item>Samoaca</item>
+		<item>Sırpça (Kiril)</item>
+		<item>Sırpça (Latin)</item>
+		<item>Slovakça</item>
+		<item>Slovence</item>
+		<item>Svahili</item>
+		<item>Tahitice</item>
+		<item>Tayca</item>
+		<item>Tamilce</item>
+		<item>Teluguca</item>
+		<item>Tongaca</item>
+		<item>Türkçe</item>
+		<item>Ukraynaca</item>
+		<item>Urduca</item>
+		<item>Fijice</item>
+		<item>Filipince</item>
+		<item>Fince</item>
+		<item>Fransızca</item>
+		<item>Hintçe</item>
+		<item>Hmong</item>
+		<item>Hırvatça</item>
+		<item>Çekçe</item>
+		<item>İsveççe</item>
+		<item>Estonca</item>
+		<item>Yukatek Mayacası</item>
+		<item>Japonca</item>
+		<item>Amharca</item>
+		<item>Assamca</item>
+		<item>Darice</item>
+		<item>Fransızca (Kanada)</item>
+		<item>Inuktitut</item>
+		<item>Khmerce</item>
+		<item>Klingonca (Latin)</item>
+		<item>Kürtçe (Merkezî)</item>
+		<item>Kürtçe (Kuzey)</item>
+		<item>Laoca</item>
+		<item>Myanmar (Birman)</item>
+		<item>Peştuca</item>
+		<item>Tigrinya</item>
+	</string-array>
+	<string-array name="google_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>ny</item>
+		<item>zh-cn</item>
+		<item>zh-tw</item>
+		<item>co</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>tl</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>fy</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>ha</item>
+		<item>haw</item>
+		<item>iw</item>
+		<item>hi</item>
+		<item>hmn</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>ig</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jw</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ku</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mn</item>
+		<item>my</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>ps</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ma</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sm</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>st</item>
+		<item>sn</item>
+		<item>sd</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>so</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>yi</item>
+		<item>yo</item>
+		<item>zu</item>
+		<item>or</item>
+		<item>pa</item>
+		<item>rw</item>
+		<item>tt</item>
+		<item>tk</item>
+		<item>ug</item>
+	</string-array>
+	<string-array name="google_translator_names">
+		<item>Otomatik</item>
+		<item>Afrikaanca</item>
+		<item>Arnavutça</item>
+		<item>Amharca</item>
+		<item>Arapça</item>
+		<item>Ermenice</item>
+		<item>Azerbaycan dili</item>
+		<item>Baskça</item>
+		<item>Belarusça</item>
+		<item>Bengalce</item>
+		<item>Boşnakça</item>
+		<item>Bulgarca</item>
+		<item>Katalanca</item>
+		<item>Cebuano</item>
+		<item>Çevaca</item>
+		<item>Basitleştirilmiş Çince</item>
+		<item>Chinese Traditional</item>
+		<item>Korsikaca</item>
+		<item>Hırvatça</item>
+		<item>Çekçe</item>
+		<item>Danca</item>
+		<item>Felemenkçe</item>
+		<item>İngilizce</item>
+		<item>Esperanto</item>
+		<item>Estonca</item>
+		<item>Filipince</item>
+		<item>Fince</item>
+		<item>Fransızca</item>
+		<item>Frizce</item>
+		<item>Galiçyaca</item>
+		<item>Gürcüce</item>
+		<item>Almanca</item>
+		<item>Yunanca</item>
+		<item>Güceratça</item>
+		<item>Haiti Kreyolu</item>
+		<item>Hausa</item>
+		<item>Hawaii dili</item>
+		<item>İbranice</item>
+		<item>Hintçe</item>
+		<item>Hmong</item>
+		<item>Macarca</item>
+		<item>İzlandaca</item>
+		<item>Igbo</item>
+		<item>Endonezce</item>
+		<item>İrlandaca</item>
+		<item>İtalyanca</item>
+		<item>Japonca</item>
+		<item>Cavaca</item>
+		<item>Kannada</item>
+		<item>Kazakça</item>
+		<item>Khmerce</item>
+		<item>Korece</item>
+		<item>Kürtçe (Kurmançça)</item>
+		<item>Kırgızca</item>
+		<item>Laoca</item>
+		<item>Latince</item>
+		<item>Letonca</item>
+		<item>Litvanca</item>
+		<item>Lüksemburgca</item>
+		<item>Makedonca</item>
+		<item>Malgaşça</item>
+		<item>Malayca</item>
+		<item>Malayalam</item>
+		<item>Maltaca</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>Moğolca</item>
+		<item>Myanmar (Birman)</item>
+		<item>Nepalce</item>
+		<item>Norveççe</item>
+		<item>Peştuca</item>
+		<item>Farsça</item>
+		<item>Lehçe</item>
+		<item>Portekizce</item>
+		<item>Pencapça</item>
+		<item>Rumence</item>
+		<item>Rusça</item>
+		<item>Samoaca</item>
+		<item>İskoçça Gaelcesi</item>
+		<item>Sırpça</item>
+		<item>Sotho</item>
+		<item>Shona</item>
+		<item>Sindhi</item>
+		<item>Sinhala</item>
+		<item>Slovakça</item>
+		<item>Slovence</item>
+		<item>Somalice</item>
+		<item>İspanyolca</item>
+		<item>Sundaca</item>
+		<item>Svahili</item>
+		<item>İsveççe</item>
+		<item>Tacikçe</item>
+		<item>Tamilce</item>
+		<item>Teluguca</item>
+		<item>Tayca</item>
+		<item>Türkçe</item>
+		<item>Ukraynaca</item>
+		<item>Urduca</item>
+		<item>Özbekçe</item>
+		<item>Vietnamca</item>
+		<item>Galce</item>
+		<item>Xhosa</item>
+		<item>Yidiş</item>
+		<item>Yoruba</item>
+		<item>Zuluca</item>
+		<item>Oriya</item>
+		<item>Pencapça</item>
+		<item>Ruandaca</item>
+		<item>Tatarca</item>
+		<item>Türkmence</item>
+		<item>Uygurca</item>
+	</string-array>
+	<string-array name="yandex_translator_codes">
+		<item>auto</item>
+		<item>af</item>
+		<item>sq</item>
+		<item>am</item>
+		<item>ar</item>
+		<item>hy</item>
+		<item>az</item>
+		<item>ba</item>
+		<item>eu</item>
+		<item>be</item>
+		<item>bn</item>
+		<item>bs</item>
+		<item>bg</item>
+		<item>my</item>
+		<item>ca</item>
+		<item>ceb</item>
+		<item>zh</item>
+		<item>cv</item>
+		<item>hr</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>sjn</item>
+		<item>emj</item>
+		<item>en</item>
+		<item>eo</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>gl</item>
+		<item>ka</item>
+		<item>de</item>
+		<item>el</item>
+		<item>gu</item>
+		<item>ht</item>
+		<item>he</item>
+		<item>mrj</item>
+		<item>hi</item>
+		<item>hu</item>
+		<item>is</item>
+		<item>id</item>
+		<item>ga</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>jv</item>
+		<item>kn</item>
+		<item>kk</item>
+		<item>kazlat</item>
+		<item>km</item>
+		<item>ko</item>
+		<item>ky</item>
+		<item>lo</item>
+		<item>la</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>lb</item>
+		<item>mk</item>
+		<item>mg</item>
+		<item>ms</item>
+		<item>ml</item>
+		<item>mt</item>
+		<item>mi</item>
+		<item>mr</item>
+		<item>mhr</item>
+		<item>mn</item>
+		<item>ne</item>
+		<item>no</item>
+		<item>pap</item>
+		<item>fa</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>pa</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>gd</item>
+		<item>sr</item>
+		<item>si</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>su</item>
+		<item>sw</item>
+		<item>sv</item>
+		<item>tl</item>
+		<item>tg</item>
+		<item>ta</item>
+		<item>tt</item>
+		<item>te</item>
+		<item>th</item>
+		<item>tr</item>
+		<item>udm</item>
+		<item>uk</item>
+		<item>ur</item>
+		<item>uz</item>
+		<item>uzbcyr</item>
+		<item>vi</item>
+		<item>cy</item>
+		<item>xh</item>
+		<item>sah</item>
+		<item>yi</item>
+	</string-array>
+	<string-array name="yandex_translator_names">
+		<item>Otomatik</item>
+		<item>Afrikaanca</item>
+		<item>Arnavutça</item>
+		<item>Amharca</item>
+		<item>Arapça</item>
+		<item>Ermenice</item>
+		<item>Azerbaycan dili</item>
+		<item>Başkurtça</item>
+		<item>Baskça</item>
+		<item>Belarusça</item>
+		<item>Bengalce</item>
+		<item>Boşnakça</item>
+		<item>Bulgarca</item>
+		<item>Birmanca</item>
+		<item>Katalanca</item>
+		<item>Cebuano</item>
+		<item>Çince</item>
+		<item>Çuvaşça</item>
+		<item>Hırvatça</item>
+		<item>Çekçe</item>
+		<item>Danca</item>
+		<item>Felemenkçe</item>
+		<item>Elfçe (Sindarin)</item>
+		<item>Emoji</item>
+		<item>İngilizce</item>
+		<item>Esperanto</item>
+		<item>Estonca</item>
+		<item>Fince</item>
+		<item>Fransızca</item>
+		<item>Galiçyaca</item>
+		<item>Gürcüce</item>
+		<item>Almanca</item>
+		<item>Yunanca</item>
+		<item>Güceratça</item>
+		<item>Haitice</item>
+		<item>İbranice</item>
+		<item>Dağ Marice</item>
+		<item>Hintçe</item>
+		<item>Macarca</item>
+		<item>İzlandaca</item>
+		<item>Endonezce</item>
+		<item>İrlandaca</item>
+		<item>İtalyanca</item>
+		<item>Japonca</item>
+		<item>Cavaca</item>
+		<item>Kannada</item>
+		<item>Kazakça</item>
+		<item>Kazakça (Latin)</item>
+		<item>Khmerce</item>
+		<item>Korece</item>
+		<item>Kırgızca</item>
+		<item>Laoca</item>
+		<item>Latince</item>
+		<item>Letonca</item>
+		<item>Litvanca</item>
+		<item>Lüksemburgca</item>
+		<item>Makedonca</item>
+		<item>Malgaşça</item>
+		<item>Malayca</item>
+		<item>Malayalam</item>
+		<item>Maltaca</item>
+		<item>Maori</item>
+		<item>Marathi</item>
+		<item>Marice</item>
+		<item>Moğolca</item>
+		<item>Nepalce</item>
+		<item>Norveççe</item>
+		<item>Papiamento</item>
+		<item>Farsça</item>
+		<item>Lehçe</item>
+		<item>Portekizce</item>
+		<item>Pencapça</item>
+		<item>Rumence</item>
+		<item>Rusça</item>
+		<item>İskoçça Gaelcesi</item>
+		<item>Sırpça</item>
+		<item>Sinhala</item>
+		<item>Slovakça</item>
+		<item>Slovence</item>
+		<item>İspanyolca</item>
+		<item>Sundaca</item>
+		<item>Svahili</item>
+		<item>İsveççe</item>
+		<item>Tagalog</item>
+		<item>Tacikçe</item>
+		<item>Tamilce</item>
+		<item>Tatarca</item>
+		<item>Teluguca</item>
+		<item>Tayca</item>
+		<item>Türkçe</item>
+		<item>Udmurtça</item>
+		<item>Ukraynaca</item>
+		<item>Urduca</item>
+		<item>Özbekçe</item>
+		<item>Özbekçe (Kiril)</item>
+		<item>Vietnamca</item>
+		<item>Galce</item>
+		<item>Xhosa</item>
+		<item>Yakutça</item>
+		<item>Yidiş</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>Otomatik</item>
+		<item>Arapça</item>
+		<item>Bulgarca</item>
+		<item>Çince</item>
+		<item>Çekçe</item>
+		<item>Danca</item>
+		<item>Hollandaca</item>
+		<item>İngilizce</item>
+		<item>Estonca</item>
+		<item>Fince</item>
+		<item>Fransızca</item>
+		<item>Almanca</item>
+		<item>Yunanca</item>
+		<item>Macarca</item>
+		<item>Endonezce</item>
+		<item>İtalyanca</item>
+		<item>Japonca</item>
+		<item>Korece</item>
+		<item>Letonca</item>
+		<item>Litvanca</item>
+		<item>Norveççe (Bokmål)</item>
+		<item>Lehçe</item>
+		<item>Portekizce</item>
+		<item>Rumence</item>
+		<item>Rusça</item>
+		<item>Slovakça</item>
+		<item>Slovence</item>
+		<item>İspanyolca</item>
+		<item>İsveççe</item>
+		<item>Türkçe</item>
+		<item>Ukraynaca</item>
+	</string-array>
 </resources>

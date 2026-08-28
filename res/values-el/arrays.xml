@@ -5,22 +5,236 @@
 		<item>Ονομαστικές τιμές</item>
 		<item>Αρχικοί τύποι δεδομένων</item>
 	</string-array>
-        <string-array name="ds_display_items">
-		<item>Ημερ/νία πρώτα</item>
-		<item>Μέγεθος πρώτα</item> 
-	</string-array>
-        <string-array name="years_or_days">
-		<item>έτη</item>
-		<item>ημέρες</item>
-	</string-array>
-        <string-array name="store_type">
-		<item>Ενσωματωμένο</item>
-		<item>Προσαρμοσμένο</item>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
 	</string-array>
 	<string-array name="smali_help_values" formatted="false">
 		<item>Το vA είναι ένας καταχωρητής 4-bit με το εύρος τιμών v0 - v15\nΤο vAA είναι ένας καταχωρητής 8-bit με εύρος τιμών v0 - v255\nΤο vAAAA είναι ένας καταχωρητής 16-bit με εύρος τιμών v0 - v65535</item>
 		<item>Χρησιμοποιούνται 0xF, 0xFF κ.λπ. να αντιπροσωπεύει κυριολεκτικές αξίες. Όπως και οι καταχωρητές, ο αριθμός F χρησιμοποιείται για να αναπαραστήσει μια περιοχή τιμών, για παράδειγμα:\nΤο εύρος τιμών 0xF αντιπροσωπεύεται από [-0x8, 0x7]\nΤο εύρος τιμών του 0xFF αντιπροσωπεύεται από [-0x80, 0x7F]</item>
-		<item>V - void, Z - boolean, B - byte\nC - char, S - short, I - int\nJ - μακρύ, F - float, D - διπλό\nvoid: μπορεί να χρησιμοποιηθεί μόνο για τύπους επιστροφής\nboolean: αποθηκεύει την τιμή true ή false\nbyte: αποθηκεύει έναν ακέραιο από -128 έως 127 και καταλαμβάνει 1 byte\nshort: αποθηκεύει έναν ακέραιο από -32768 έως 32767 και παίρνει 2 byte\nint: αποθηκεύει έναν ακέραιο από -2147483648 έως 2147483647 και καταλαμβάνει 4 byte\nlong: αποθηκεύει έναν ακέραιο από -9223372036854775808 έως 9223372036854775807 και καταλαμβάνει 8 byte\nδιπλό: αποθηκεύει έναν αριθμό κινητής υποδιαστολής από ±4,9*10³²4 έως ±1,7976931348623157*10308 και καταλαμβάνει 8 byte. Μια τελεία χρησιμοποιείται ως διαχωριστικό δεκαδικών σε κλασματικά κυριολεκτικά.\nfloat: αποθηκεύει έναν αριθμό κινητής υποδιαστολής από -3,4*1038 έως 3,4*1038 και καταλαμβάνει 4 byte\nchar: αποθηκεύει έναν μόνο χαρακτήρα σε κωδικοποίηση UTF-16 και καταλαμβάνει 2 byte, επομένως το εύρος των αποθηκευμένων τιμών είναι από 0 έως 65535.</item>
+		<item>V - void, Z - boolean, B - byte\nC - char, S - short, I - int\nJ - μακρύ, F - float, D - διπλό\nvoid: μπορεί να χρησιμοποιηθεί μόνο για τύπους επιστροφής\nboolean: αποθηκεύει την τιμή true ή false\nbyte: αποθηκεύει έναν ακέραιο από -128 έως 127 και καταλαμβάνει 1 byte\nshort: αποθηκεύει έναν ακέραιο από -32768 έως 32767 και παίρνει 2 byte\nint: αποθηκεύει έναν ακέραιο από -2147483648 έως 2147483647 και καταλαμβάνει 4 byte\nlong: αποθηκεύει έναν ακέραιο από -9223372036854775808 έως 9223372036854775807 και καταλαμβάνει 8 byte\nδιπλό: αποθηκεύει έναν αριθμό κινητής υποδιαστολής από ±4,9*10³²⁴ έως ±1,7976931348623157*10³⁰⁸ και καταλαμβάνει 8 byte. Μια τελεία χρησιμοποιείται ως διαχωριστικό δεκαδικών σε κλασματικά κυριολεκτικά.\nfloat: αποθηκεύει έναν αριθμό κινητής υποδιαστολής από -3,4*10³⁸ έως 3,4*10³⁸ και καταλαμβάνει 4 byte\nchar: αποθηκεύει έναν μόνο χαρακτήρα σε κωδικοποίηση UTF-16 και καταλαμβάνει 2 byte, επομένως το εύρος των αποθηκευμένων τιμών είναι από 0 έως 65535.</item>
 		<item>Καμία ενέργεια.</item>
 		<item>Μετακινεί την τιμή του καταχωρητή vB στον καταχωρητή vA.</item>
 		<item>Μετακινεί την τιμή του καταχωρητή vBBBB στον καταχωρητή vAA.</item>
@@ -54,7 +268,7 @@
 		<item>Απελευθερώνει την οθόνη αντικειμένου που αναφέρεται από τον καταχωρητή vAA.</item>
 		<item>Ελέγχει εάν μια αναφορά αντικειμένου που περιέχεται στον καταχωρητή vAA μπορεί να μεταδοθεί στην κλάση που προσδιορίζεται από το type_id. Εκτελεί ένα ClassCastException εάν δεν μπορεί, διαφορετικά συνεχίζει την εκτέλεση.</item>
 		<item>Ελέγχει εάν τα περιεχόμενα του καταχωρητή vB είναι μια παρουσία της κλάσης που προσδιορίζεται από το type_id. Ορίζει τον καταχωρητή vA σε μη μηδενικό εάν υπάρχει, 0 εάν όχι.\nvA = vB στιγμιότυπο του τύπου ; 10</item>
-		<item>Καθορίζει τον αριθμό των στοιχείων πίνακα από τον καταχωρητή vB και τοποθετεί την τιμή στον καταχωρητή vA.\nvA = vB.μήκος</item>
+		<item>Καθορίζει τον αριθμό των στοιχείων πίνακα από τον καταχωρητή vB και τοποθετεί την τιμή στον καταχωρητή vA.\nvA = vB.length</item>
 		<item>Δημιουργεί μια παρουσία ενός τύπου αντικειμένου και τοποθετεί μια αναφορά στο δημιουργημένο στιγμιότυπο στον καταχωρητή vAA.</item>
 		<item>Δημιουργεί έναν νέο πίνακα μεταβλητών type_id με το μέγεθος των στοιχείων καταχωρητή vB και τοποθετεί μια αναφορά στον πίνακα στον καταχωρητή vA.</item>
 		<item>Δημιουργεί έναν νέο πίνακα δεδομένων τύπου type_id και τον γεμίζει με παραμέτρους (δηλαδή, δεν επιτρέπονται μεγάλοι/διπλοί πίνακες, αλλά επιτρέπονται τύποι αναφοράς). Μια αναφορά στον πίνακα που δημιουργήθηκε πρόσφατα μπορεί να ληφθεί χρησιμοποιώντας τη δήλωση move-result-object αμέσως μετά από αυτήν τη δήλωση (αν πρόκειται να χρησιμοποιηθεί).</item>
@@ -68,7 +282,7 @@
 		<item>Υλοποιεί τον τελεστή Switch σε περίπτωση αραιού πίνακα. Η εντολή χρησιμοποιεί έναν πίνακα που καθορίζει μετατοπίσεις για κάθε σταθερά. Εάν δεν βρεθούν αντιστοιχίες στον πίνακα, τότε εκτελείται η επόμενη πρόταση (προεπιλεγμένη περίπτωση).</item>
 		<item>Συγκρίνει τις τιμές float (κινητής υποδιαστολής) σε vBB και vCC και τοποθετεί την ακέραια τιμή στον καταχωρητή vAA:\nvAA = vBB &lt; vCC ? ναι: 1, όχι: -1, ίσο: 0</item>
 		<item>Συγκρίνει τις τιμές float (κινητής υποδιαστολής) σε vBB και vCC και τοποθετεί την ακέραια τιμή στον καταχωρητή vAA:\nvAA = vBB &lt; vCC ? ναι: 1, όχι: -1, ίσο: 0</item>
-		<item>Συγκρίνει τις διπλές τιμές (κινητής υποδιαστολής) σε vBB και vCC και τοποθετεί την ακέραια τιμή στον καταχωρητή vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nναι: 1, όχι: -1, ίσο: 0</item>
+		<item>Συγκρίνει τις διπλές τιμές (κινητής υποδιαστολής) σε vBB και vCC και τοποθετεί την ακέραια τιμή στον καταχωρητή vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? ναι: 1, όχι: -1, ίσο: 0</item>
 		<item>Συγκρίνει τις διπλές τιμές (κινητής υποδιαστολής) σε vBB και vCC και τοποθετεί την ακέραια τιμή στον καταχωρητή vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ναι: 1, όχι: -1, ίσο: 0</item>
 		<item>Συγκρίνει τις τιμές long (ακέραιος) σε vBB και vCC και τοποθετεί την ακέραια (ακέραια) τιμή στον καταχωρητή vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? ναι: 1, όχι: -1, ίσο: 0</item>
 		<item>Μεταβαίνει στην καθορισμένη ετικέτα εάν vA == vB. Τα vA και vB περιέχουν ακέραιες τιμές.\n(το eq είναι συντομογραφία του Equals)</item>
@@ -97,20 +311,20 @@
 		<item>Τοποθετεί την τιμή byte (ακέραιος) από vAA στον πίνακα που αναφέρεται στο vBB με το στοιχείο που περιέχει τον καταχωρητή vCC.\nvBB[vCC] = vAA</item>
 		<item>Τοποθετεί την τιμή χαρακτήρων (χαρακτήρα) από vAA στον πίνακα που αναφέρεται στο vBB ανά στοιχείο με καταχωρητή vCC.\nvBB[vCC] = vAA</item>
 		<item>Τοποθετεί τη σύντομη (ακέραιος) τιμή από το vAA στον πίνακα που αναφέρεται στο vBB με το στοιχείο που περιέχει τον καταχωρητή vCC.\nvBB[vCC] = vAA</item>
-		<item>Διαβάζει την τιμή από το πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.πεδίο</item>
-		<item>Διαβάζει μια διπλή/μεγάλη τιμή από ένα πεδίο παρουσίας και την τοποθετεί σε ένα ζεύγος καταχωρητών (vA, vA+1). Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\n(vA, vA+1) = vB.πεδίο</item>
-		<item>Διαβάζει μια αναφορά αντικειμένου από ένα πεδίο παρουσίας και το τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.πεδίο</item>
-		<item>Διαβάζει μια δυαδική τιμή από το πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.πεδίο</item>
-		<item>Διαβάζει μια τιμή byte (ακέραιος) από ένα πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.πεδίο</item>
-		<item>Διαβάζει μια τιμή char από ένα πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.πεδίο</item>
-		<item>Διαβάζει μια σύντομη (ακέραια) τιμή από ένα πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.πεδίο</item>
-		<item>Τοποθετεί την τιμή από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.πεδίο = vA</item>
+		<item>Διαβάζει την τιμή από το πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.field</item>
+		<item>Διαβάζει μια διπλή/μεγάλη τιμή από ένα πεδίο παρουσίας και την τοποθετεί σε ένα ζεύγος καταχωρητών (vA, vA+1). Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\n(vA, vA+1) = vB.field</item>
+		<item>Διαβάζει μια αναφορά αντικειμένου από ένα πεδίο παρουσίας και το τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.field</item>
+		<item>Διαβάζει μια δυαδική τιμή από το πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.field</item>
+		<item>Διαβάζει μια τιμή byte (ακέραιος) από ένα πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.field</item>
+		<item>Διαβάζει μια τιμή char από ένα πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.field</item>
+		<item>Διαβάζει μια σύντομη (ακέραια) τιμή από ένα πεδίο παρουσίας και την τοποθετεί στον καταχωρητή vA. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvA = vB.field</item>
+		<item>Τοποθετεί την τιμή από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.field = vA</item>
 		<item>Τοποθετεί μια διπλή/μεγάλη τιμή από ένα ζεύγος καταχωρητών (vA, vA+1) σε ένα πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.field = (vA, vA+1)</item>
-		<item>Τοποθετεί μια αναφορά σε ένα αντικείμενο από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.πεδίο = vA</item>
-		<item>Τοποθετεί τη boolean τιμή από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.πεδίο = vA</item>
-		<item>Ορίζει την τιμή byte (ακέραιος) του καθορισμένου πεδίου Boolean στην περίπτωση που αναφέρεται από τον καταχωρητή vB ίση με την τιμή του καταχωρητή vA, δηλαδή:\nvB.πεδίο = vA</item>
-		<item>Ορίζει την τιμή χαρακτήρων (χαρακτήρα) του καθορισμένου πεδίου Boolean στην περίπτωση που αναφέρεται από τον καταχωρητή vB ίση με την τιμή του καταχωρητή vA, δηλαδή:\nvB.πεδίο = vA</item>
-		<item>Ορίζει τη σύντομη (ακέραιος) τιμή του καθορισμένου πεδίου Boolean στην περίπτωση που αναφέρεται από τον καταχωρητή vB ίση με την τιμή του καταχωρητή vA, δηλαδή:\nvB.πεδίο = vA</item>
+		<item>Τοποθετεί μια αναφορά σε ένα αντικείμενο από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.field = vA</item>
+		<item>Τοποθετεί τη boolean τιμή από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.field = vA</item>
+		<item>Τοποθετεί την τιμή byte (ακέραιος) από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.field = vA</item>
+		<item>Τοποθετεί την τιμή char (χαρακτήρα) από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.field = vA</item>
+		<item>Τοποθετεί τη σύντομη (ακέραια) τιμή από τον καταχωρητή vA στο πεδίο παρουσίας. Η αναφορά στην κλάση που περιέχει αυτό το πεδίο βρίσκεται στον καταχωρητή vB.\nvB.field = vA</item>
 		<item>Διαβάζει μια τιμή από ένα στατικό πεδίο και την τοποθετεί στον καταχωρητή vAA. Ο καταχωρητής που περιέχει την αναφορά στην κλάση που περιέχει αυτό το πεδίο δεν χρησιμοποιείται.</item>
 		<item>Διαβάζει μια διπλή/μεγάλη τιμή από ένα στατικό πεδίο και την τοποθετεί σε ένα ζεύγος καταχωρητών vAA, vAA+1. Ο καταχωρητής που περιέχει την αναφορά στην κλάση που περιέχει αυτό το πεδίο δεν χρησιμοποιείται.</item>
 		<item>Διαβάζει μια αναφορά αντικειμένου από ένα στατικό πεδίο και το τοποθετεί στον καταχωρητή vAA. Ο καταχωρητής που περιέχει την αναφορά στην κλάση που περιέχει αυτό το πεδίο δεν χρησιμοποιείται.</item>
@@ -174,10 +388,10 @@
 		<item>Υπολογίζει (vBB, vBB+1) % (vCC, vCC+1) και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vAA, vAA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
 		<item>Υπολογίζει (vBB, vBB+1) &amp; (vCC, vCC+1) (λογικό ΚΑΙ) και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vAA, vAA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
 		<item>Υπολογίζει (vBB, vBB+1) | (vCC, vCC+1) (λογικό OR) και αποθηκεύει το αποτέλεσμα σε ένα ζεύγος καταχωρητών vAA, vAA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
-		<item>Υπολογίζει (vBB, vBB+1) ^ (vCC, vCC+1) (αποκλειστικά ΚΑΙ) και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vAA, vAA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Υπολογίζει (vBB, vBB+1) ^ (vCC, vCC+1) (αποκλειστικό Ή) και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vAA, vAA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
 		<item>Μετατοπίζει τα vBB, vBB+1 προς τα αριστερά κατά τον αριθμό των bit που καθορίζεται από το vCC και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vAA, vAA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
 		<item>Μετατοπίζει τα vBB, vBB+1 προς τα δεξιά κατά τον αριθμό των bit που καθορίζεται από το vCC και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vAA, vAA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
-		<item>Μετατοπίζει τα vBB, vBB+1 προς τα δεξιά χωρίς να διατηρεί το πρόσημο από τον αριθμό των bit που καθορίζεται από το vCC και αποθηκεύει το αποτέλεσμα σε ένα ζεύγος καταχωρητών vAA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Μετατοπίζει τα vBB, vBB+1 προς τα δεξιά χωρίς να διατηρεί το πρόσημο από τον αριθμό των bit που καθορίζεται από το vCC και αποθηκεύει το αποτέλεσμα σε ένα ζεύγος καταχωρητών vAA, vAA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
 		<item>Υπολογίζει vBB + vCC και αποθηκεύει το αποτέλεσμα στον καταχωρητή vAA. Όλες οι τιμές είναι float.\nvAA = vBB + vCC</item>
 		<item>Υπολογίζει vBB - vCC και αποθηκεύει το αποτέλεσμα στον καταχωρητή vAA. Όλες οι τιμές είναι float.\nvAA = vBB - vCC</item>
 		<item>Υπολογίζει vBB * vCC και αποθηκεύει το αποτέλεσμα στον καταχωρητή vAA. Όλες οι τιμές είναι float.\nvAA = vBB * vCC</item>
@@ -206,7 +420,7 @@
 		<item>Υπολογίζει (vA, vA+1) % (vB, vB+1) και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
 		<item>Υπολογίζει (vA, vA+1) &amp; (vB, vB+1) (λογικό ΚΑΙ) και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
 		<item>Υπολογίζει (vA, vA+1) | (vB, vB+1) (λογικό OR) και αποθηκεύει το αποτέλεσμα σε ένα ζεύγος καταχωρητών vA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
-		<item>Υπολογίζει (vA, vA+1) &amp; (vB, vB+1) (αποκλειστικά OR) και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Υπολογίζει (vA, vA+1) ^ (vB, vB+1) (αποκλειστικά OR) και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
 		<item>Μετατοπίζει τα vA, vA+1 προς τα αριστερά κατά τον αριθμό των bit που καθορίζεται από το vB και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
 		<item>Μετατοπίζει τα vA, vA+1 προς τα δεξιά κατά τον αριθμό των bit που καθορίζεται από το vB και αποθηκεύει το αποτέλεσμα στο ζεύγος καταχωρητών vA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
 		<item>Μετατοπίζει τα vA, vA+1 προς τα δεξιά χωρίς να διατηρεί το πρόσημο από τον αριθμό των ψηφίων που καθορίζονται από το vB και αποθηκεύει το αποτέλεσμα σε ένα ζεύγος καταχωρητών vA, vA+1. Όλες οι τιμές είναι μεγάλες (ακέραιος).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
@@ -246,6 +460,68 @@
 		<item>Τοποθετεί μια αναφορά σε μια λαβή μεθόδου στον καταχωρητή vAA. Παρουσιάζεται σε αρχεία Dex από την έκδοση 039.</item>
 		<item>Τοποθετεί μια αναφορά στο πρωτότυπο της μεθόδου στον καταχωρητή vAA. Παρουσιάζεται σε αρχεία Dex από την έκδοση 039.</item>
 	</string-array>
+	<string-array name="years_or_days">
+		<item>έτη</item>
+		<item>ημέρες</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>Ενσωματωμένο</item>
+		<item>Προσαρμοσμένο</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>Εκτύπωση πληροφοριών που εξήχθησαν από το manifest του APK.</item>
+		<item>Εκτύπωση κάθε διαμόρφωσης που χρησιμοποιείται από πόρο στο APK.</item>
+		<item>Εκτύπωση των αδειών που εξήχθησαν από το manifest του APK.</item>
+		<item>Εκτύπωση των περιεχομένων της δεξαμενής συμβολοσειρών του πίνακα πόρων στο APK.</item>
+		<item>Εκτύπωση των περιεχομένων του πίνακα πόρων από το APK.</item>
+		<item>Εκτύπωση των πόρων &lt;overlayable> ενός APK.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Φωτεινό</item>
+		<item>Σκοτεινό</item>
+		<item>Μαύρο</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
+		<item>Λειτουργία εφεδρείας</item>
+		<item>Deobfuscation</item>
+		<item>Διαφυγή Unicode</item>
+		<item>Εμφάνιση ασυνεπούς κώδικα</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
+	</string-array>
 	<string-array name="copy_variants">
 		<item>Μετονομασία</item>
 		<item>Μετονομ. αρχείων μόνο</item>
@@ -256,13 +532,46 @@
 		<item>Αριστερά</item>
 		<item>Δεξιά</item>
 	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="checksum_names">
 		<item>Όλα κεφαλαία</item>
 		<item>Διαχωρισμός με άνω / κάτω τελεία</item>
 	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
 	<string-array name="refresh_res">
 		<item>Προσθήκη νέων πόρων (μόνο αρχεία)</item>
 		<item>Διαγραφή ελλειπών πόρων</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
 	</string-array>
 	<string-array name="sort">
 		<item>Όνομα</item>
@@ -279,11 +588,72 @@
 		<item>Smali κώδικας</item>
 		<item>A,R,G,B</item>
 	</string-array>
+	<string-array name="format">
+		<item>@string/jks</item>
+		<item>@string/pkcs12</item>
+		<item>@string/bks</item>
+		<item>@string/pk8</item>
+	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>one</item>
+		<item>two</item>
+		<item>few</item>
+		<item>many</item>
+		<item>other</item>
+	</string-array>
 	<string-array name="resDecodeMode">
 		<item>Χωρίς απομεταγλώττιση</item>
 		<item>Απομεταγλώττιση στον κύριο κατάλογο</item>
 		<item>Απομεταγλώττιση σε ξεχωριστό κατάλογο</item>
-        <item>Προσπάθεια συγχώνευσης πακέτων</item>
+		<item>Προσπάθεια συγχώνευσης πακέτων</item>
+	</string-array>
+	<string-array name="converter_items">
+		<item>Κείμενο &lt;-> Base64</item>
+		<item>Κείμενο &lt;-> Unicode</item>
+		<item>Κείμενο &lt;-> Κωδικοποίηση URL</item>
+		<item>Κείμενο &lt;-> MD5</item>
+		<item>Κείμενο &lt;-> SHA-1</item>
+		<item>Κείμενο &lt;-> SHA-224</item>
+		<item>Κείμενο &lt;-> SHA-256</item>
+		<item>Κείμενο &lt;-> SHA-384</item>
+		<item>Κείμενο &lt;-> SHA-512</item>
+		<item>Κείμενο &lt;-> Πίνακας (UTF-8)</item>
+		<item>Κείμενο &lt;-> Πίνακας (UTF-16)</item>
+		<item>Κείμενο &lt;-> Πίνακας (UTF-16LE)</item>
+		<item>Κείμενο &lt;-> Πίνακας (UTF-16BE)</item>
+		<item>Κείμενο &lt;-> Πίνακας (US-ASCII)</item>
+		<item>Κείμενο &lt;-> Πίνακας (ISO-8859-1)</item>
+		<item>Κείμενο &lt;-> Πίνακας (CP1251)</item>
+		<item>Δεκαδικό &lt;-> Δυαδικό</item>
+		<item>Δεκαδικό &lt;-> Οκταδικό</item>
+		<item>Δεκαδικό &lt;-> Hex</item>
+		<item>Δεκαδικό &lt;-> Hex (0x0)</item>
+		<item>Δεκαδικό &lt;-> Hex (0x00000000)</item>
+		<item>Κινητή υποδιαστολή &lt;-> Δυαδικό</item>
+		<item>Κινητή υποδιαστολή &lt;-> Οκταδικό</item>
+		<item>Κινητή υποδιαστολή &lt;-> Hex</item>
+		<item>Κινητή υποδιαστολή &lt;-> Hex (0x0)</item>
+		<item>Κινητή υποδιαστολή &lt;-> Hex (0x00000000)</item>
+		<item>Χρώμα &lt;-> Smali</item>
+		<item>Χρώμα &lt;-> Δεκαδικό</item>
+		<item>Χρώμα &lt;-> A,R,G,B</item>
+		<item>Ημερομηνία &lt;-> Χιλιοστά δευτερολέπτου</item>
+		<item>Ημερομηνία &lt;-> Hex</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Δεν έχει οριστεί</item>
@@ -291,10 +661,121 @@
 		<item>Μόνο εσωτερικά</item>
 		<item>Προτιμώμενη εξωτερική</item>
 	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lituania</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+		<item>O\'zbek tili</item>
+		<item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>zh-rTW</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+		<item>uz</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>yyyy/MM/dd HH:mm</item>
+		<item>dd/MM/yyyy HH:mm</item>
+		<item>HH:mm yyyy/MM/dd</item>
+		<item>HH:mm dd/MM/yyyy</item>
+		<item>yy/MM/dd HH:mm</item>
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item>
+		<item>HH:mm dd/MM/yy</item>
+		<item>yyyy.MM.dd HH:mm</item>
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>yy.MM.dd HH:mm</item>
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>yyyy-MM-dd HH:mm</item>
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>yy-MM-dd HH:mm</item>
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>Προεπιλογή</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>Απλό κόλπο</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
 	<string-array name="orientation_variants">
 		<item>Προεπιλογή</item>
 		<item>Τοπίο</item>
 		<item>Πορτρέτο</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
 	</string-array>
 	<string-array name="auto_save_variants">
 		<item>Off</item>
@@ -302,6 +783,13 @@
 		<item>30 δευτ</item>
 		<item>1 λεπτό</item>
 		<item>5 λεπτά</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
 	</string-array>
 	<string-array name="to_vector_values">
 		<item>Προσαρμοσμένη εικόνα (ποιότητα κατώτερη)</item>
@@ -314,24 +802,25 @@
 		<item>Αναζήτηση/αντικατάσταση ιστορικού</item>
 		<item>Λεξικά</item>
 	</string-array>
+	<string-array name="split_dex_items">
+		<item>ανά αριθμό μεθόδων/πεδίων</item>
+		<item>σε ίσα μέρη</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>Ημερ/νία πρώτα</item>
+		<item>Μέγεθος πρώτα</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="editor_themes">
 		<item>Προεπιλογή</item>
 		<item>Νέο</item>
 	</string-array>
-	<string-array name="app_theme">
-		<item>Φωτεινό</item>
-		<item>Σκοτεινό</item>
-		<item>Μαύρο</item>
-	</string-array>
-	<string-array name="jadx_sets">
-		<item>Λειτουργία εφεδρείας</item>
-		<item>Deobfuscation</item>
-		<item>Διαφυγή Unicode</item>
-		<item>Εμφάνιση ασυνεπούς κώδικα</item>
-	</string-array>
-	<string-array name="split_dex_items">
-		<item>ανά αριθμό μεθόδων/πεδίων</item>
-		<item>σε ίσα μέρη</item>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
 	</string-array>
 	<string-array name="bing_translator_codes">
 		<item>auto-detect</item>
@@ -427,95 +916,95 @@
 	</string-array>
 	<string-array name="bing_translator_names">
 		<item>Αυτόματα</item>
-		<item>Azerbaijani (Latin)</item>
-		<item>Albanian</item>
-		<item>English</item>
-		<item>Arabic</item>
-		<item>Armenian</item>
-		<item>Afrikaans</item>
-		<item>Bengali</item>
-		<item>Bulgarian</item>
-		<item>Bosnian</item>
-		<item>Welsh</item>
-		<item>Hungarian</item>
-		<item>Vietnamese</item>
-		<item>Haitian Creole</item>
-		<item>Dutch</item>
-		<item>Greek</item>
-		<item>Gujarati</item>
-		<item>Danish</item>
-		<item>Hebrew</item>
-		<item>Indonesian</item>
-		<item>Irish</item>
-		<item>Icelandic</item>
-		<item>Spanish</item>
-		<item>Italian</item>
-		<item>Kazakh</item>
-		<item>Kannada</item>
-		<item>Cantonese Traditional</item>
-		<item>Catalan</item>
-		<item>Keretarian Otomi</item>
-		<item>Traditional Chinese</item>
-		<item>Chinese Simplified</item>
-		<item>Korean</item>
-		<item>Latvian</item>
-		<item>Lithuanian</item>
-		<item>Malagasy</item>
-		<item>Malay</item>
-		<item>Malayalam</item>
-		<item>Maltese</item>
-		<item>Maori</item>
-		<item>Marathi</item>
-		<item>German</item>
-		<item>Nepali</item>
-		<item>Norwegian</item>
-		<item>Oriya</item>
-		<item>Punjabi</item>
-		<item>Persian</item>
-		<item>Polish</item>
-		<item>Portuguese (Brazil)</item>
-		<item>Portuguese (Portugal)</item>
-		<item>Romanian</item>
-		<item>Russian</item>
-		<item>Samoa</item>
-		<item>Serbian (Cyrillic)</item>
-		<item>Serbian (Latin)</item>
-		<item>Slovak</item>
-		<item>Slovenian</item>
-		<item>Swahili</item>
-		<item>Tahiti</item>
-		<item>Thai</item>
-		<item>Tamil</item>
-		<item>Telugu</item>
-		<item>Tonga</item>
-		<item>Turkish</item>
-		<item>Ukrainian</item>
-		<item>Urdu</item>
-		<item>Fiji</item>
-		<item>Filipino</item>
-		<item>Finnish</item>
-		<item>French</item>
-		<item>Hindi</item>
-		<item>Hmong Dhow</item>
-		<item>Croatian</item>
-		<item>Czech</item>
-		<item>Swedish</item>
-		<item>Estonian</item>
-		<item>Yucatec Maya</item>
-		<item>Japanese</item>
-		<item>Amharic</item>
-		<item>Assamese</item>
-		<item>Dari</item>
-		<item>French (Canada)</item>
-		<item>Inuktitut</item>
-		<item>Khmer</item>
-		<item>Klingon (Latin)</item>
-		<item>Kurdish (Central)</item>
-		<item>Kurdish (Northern)</item>
-		<item>Lao</item>
-		<item>Myanmar (Burmese)</item>
-		<item>Pashto</item>
-		<item>Tigrinya</item>
+		<item>Αζερικά (λατινικά)</item>
+		<item>Αλβανικά</item>
+		<item>Αγγλικά</item>
+		<item>Αραβικά</item>
+		<item>Αρμενικά</item>
+		<item>Αφρικάανς</item>
+		<item>Βεγγαλικά</item>
+		<item>Βουλγαρικά</item>
+		<item>Βοσνιακά</item>
+		<item>Ουαλικά</item>
+		<item>Ουγγρικά</item>
+		<item>Βιετναμικά</item>
+		<item>Αϊτινά κρεολικά</item>
+		<item>Ολλανδικά</item>
+		<item>Ελληνικά</item>
+		<item>Γκουτζαρατικά</item>
+		<item>Δανικά</item>
+		<item>Εβραϊκά</item>
+		<item>Ινδονησιακά</item>
+		<item>Ιρλανδικά</item>
+		<item>Ισλανδικά</item>
+		<item>Ισπανικά</item>
+		<item>Ιταλικά</item>
+		<item>Καζακικά</item>
+		<item>Κανάντα</item>
+		<item>Καντονέζικα παραδοσιακά</item>
+		<item>Καταλανικά</item>
+		<item>Οτόμι Κερέταρο</item>
+		<item>Κινεζικά παραδοσιακά</item>
+		<item>Κινεζικά απλοποιημένα</item>
+		<item>Κορεατικά</item>
+		<item>Λετονικά</item>
+		<item>Λιθουανικά</item>
+		<item>Μαλγασικά</item>
+		<item>Μαλαϊκά</item>
+		<item>Μαλαγιαλάμ</item>
+		<item>Μαλτεζικά</item>
+		<item>Μαορί</item>
+		<item>Μαραθικά</item>
+		<item>Γερμανικά</item>
+		<item>Νεπαλικά</item>
+		<item>Νορβηγικά</item>
+		<item>Όντια</item>
+		<item>Παντζαμπικά</item>
+		<item>Περσικά</item>
+		<item>Πολωνικά</item>
+		<item>Πορτογαλικά (Βραζιλία)</item>
+		<item>Πορτογαλικά (Πορτογαλία)</item>
+		<item>Ρουμανικά</item>
+		<item>Ρωσικά</item>
+		<item>Σαμοανικά</item>
+		<item>Σερβικά (κυριλλικά)</item>
+		<item>Σερβικά (λατινικά)</item>
+		<item>Σλοβακικά</item>
+		<item>Σλοβενικά</item>
+		<item>Σουαχίλι</item>
+		<item>Ταϊτινά</item>
+		<item>Ταϊλανδικά</item>
+		<item>Ταμίλ</item>
+		<item>Τελούγκου</item>
+		<item>Τονγκανικά</item>
+		<item>Τουρκικά</item>
+		<item>Ουκρανικά</item>
+		<item>Ούρντου</item>
+		<item>Φίτζι</item>
+		<item>Φιλιππινικά</item>
+		<item>Φινλανδικά</item>
+		<item>Γαλλικά</item>
+		<item>Χίντι</item>
+		<item>Χμονγκ</item>
+		<item>Κροατικά</item>
+		<item>Τσεχικά</item>
+		<item>Σουηδικά</item>
+		<item>Εσθονικά</item>
+		<item>Γιουκατέκ μάγια</item>
+		<item>Ιαπωνικά</item>
+		<item>Αμχαρικά</item>
+		<item>Ασαμικά</item>
+		<item>Νταρί</item>
+		<item>Γαλλικά (Καναδάς)</item>
+		<item>Ινουκτιτούτ</item>
+		<item>Χμερ</item>
+		<item>Κλίνγκον (λατινικά)</item>
+		<item>Κουρδικά (κεντρικά)</item>
+		<item>Κουρδικά (βόρεια)</item>
+		<item>Λαοτινά</item>
+		<item>Βιρμανικά</item>
+		<item>Πάστο</item>
+		<item>Τιγρινιακά</item>
 	</string-array>
 	<string-array name="google_translator_codes">
 		<item>auto</item>
@@ -632,116 +1121,116 @@
 	</string-array>
 	<string-array name="google_translator_names">
 		<item>Αυτόματα</item>
-		<item>Afrikaans</item>
-		<item>Albanian</item>
-		<item>Amharic</item>
-		<item>Arabic</item>
-		<item>Armenian</item>
-		<item>Azerbaijani</item>
-		<item>Basque</item>
-		<item>Belarusian</item>
-		<item>Bengali</item>
-		<item>Bosnian</item>
-		<item>Bulgarian</item>
-		<item>Catalan</item>
-		<item>Cebuano</item>
-		<item>Chichewa</item>
-		<item>Chinese Simplified</item>
+		<item>Αφρικάανς</item>
+		<item>Αλβανικά</item>
+		<item>Αμχαρικά</item>
+		<item>Αραβικά</item>
+		<item>Αρμενικά</item>
+		<item>Αζερικά</item>
+		<item>Βασκικά</item>
+		<item>Λευκορωσικά</item>
+		<item>Βεγγαλικά</item>
+		<item>Βοσνιακά</item>
+		<item>Βουλγαρικά</item>
+		<item>Καταλανικά</item>
+		<item>Σεμπουάνο</item>
+		<item>Τσιτσέουα</item>
+		<item>Κινεζικά απλοποιημένα</item>
 		<item>Chinese Traditional</item>
-		<item>Corsican</item>
-		<item>Croatian</item>
-		<item>Czech</item>
-		<item>Danish</item>
-		<item>Dutch</item>
-		<item>English</item>
-		<item>Esperanto</item>
-		<item>Estonian</item>
-		<item>Filipino</item>
-		<item>Finnish</item>
-		<item>French</item>
-		<item>Frisian</item>
-		<item>Galician</item>
-		<item>Georgian</item>
-		<item>German</item>
-		<item>Greek</item>
-		<item>Gujarati</item>
-		<item>Haitian Creole</item>
-		<item>Hausa</item>
-		<item>Hawaiian</item>
-		<item>Hebrew</item>
-		<item>Hindi</item>
-		<item>Hmong</item>
-		<item>Hungarian</item>
-		<item>Icelandic</item>
-		<item>Igbo</item>
-		<item>Indonesian</item>
-		<item>Irish</item>
-		<item>Italian</item>
-		<item>Japanese</item>
-		<item>Javanese</item>
-		<item>Kannada</item>
-		<item>Kazakh</item>
-		<item>Khmer</item>
-		<item>Korean</item>
-		<item>Kurdish (Kurmanji)</item>
-		<item>Kyrgyz</item>
-		<item>Lao</item>
-		<item>Latin</item>
-		<item>Latvian</item>
-		<item>Lithuanian</item>
-		<item>Luxembourgish</item>
-		<item>Macedonian</item>
-		<item>Malagasy</item>
-		<item>Malay</item>
-		<item>Malayalam</item>
-		<item>Maltese</item>
-		<item>Maori</item>
-		<item>Marathi</item>
-		<item>Mongolian</item>
-		<item>Myanmar (Burmese)</item>
-		<item>Nepali</item>
-		<item>Norwegian</item>
-		<item>Pashto</item>
-		<item>Persian</item>
-		<item>Polish</item>
-		<item>Portuguese</item>
-		<item>Punjabi</item>
-		<item>Romanian</item>
-		<item>Russian</item>
-		<item>Samoan</item>
-		<item>Scots Gaelic</item>
-		<item>Serbian</item>
-		<item>Sesotho</item>
-		<item>Shona</item>
-		<item>Sindhi</item>
-		<item>Sinhala</item>
-		<item>Slovak</item>
-		<item>Slovenian</item>
-		<item>Somali</item>
-		<item>Spanish</item>
-		<item>Sundanese</item>
-		<item>Swahili</item>
-		<item>Swedish</item>
-		<item>Tajik</item>
-		<item>Tamil</item>
-		<item>Telugu</item>
-		<item>Thai</item>
-		<item>Turkish</item>
-		<item>Ukrainian</item>
-		<item>Urdu</item>
-		<item>Uzbek</item>
-		<item>Vietnamese</item>
-		<item>Welsh</item>
-		<item>Xhosa</item>
-		<item>Yiddish</item>
-		<item>Yoruba</item>
-		<item>Zulu</item>
-		<item>Oriya</item>
-		<item>Punjabi</item>
-		<item>Rwanda</item>
-		<item>Tatar</item>
-		<item>Turkmen</item>
-		<item>Uigur</item>
+		<item>Κορσικανικά</item>
+		<item>Κροατικά</item>
+		<item>Τσεχικά</item>
+		<item>Δανικά</item>
+		<item>Ολλανδικά</item>
+		<item>Αγγλικά</item>
+		<item>Εσπεράντο</item>
+		<item>Εσθονικά</item>
+		<item>Φιλιππινικά</item>
+		<item>Φινλανδικά</item>
+		<item>Γαλλικά</item>
+		<item>Φριζικά</item>
+		<item>Γαλικιανά</item>
+		<item>Γεωργιανά</item>
+		<item>Γερμανικά</item>
+		<item>Ελληνικά</item>
+		<item>Γκουτζαρατικά</item>
+		<item>Αϊτινά κρεολικά</item>
+		<item>Χάουσα</item>
+		<item>Χαβανέζικα</item>
+		<item>Εβραϊκά</item>
+		<item>Χίντι</item>
+		<item>Χμονγκ</item>
+		<item>Ουγγρικά</item>
+		<item>Ισλανδικά</item>
+		<item>Ίγκμπο</item>
+		<item>Ινδονησιακά</item>
+		<item>Ιρλανδικά</item>
+		<item>Ιταλικά</item>
+		<item>Ιαπωνικά</item>
+		<item>Ιαβαϊκά</item>
+		<item>Κανάντα</item>
+		<item>Καζακικά</item>
+		<item>Χμερ</item>
+		<item>Κορεατικά</item>
+		<item>Κουρδικά (κουρμαντζί)</item>
+		<item>Κιργιζικά</item>
+		<item>Λαοτινά</item>
+		<item>Λατινικά</item>
+		<item>Λετονικά</item>
+		<item>Λιθουανικά</item>
+		<item>Λουξεμβουργιανά</item>
+		<item>Σλαβομακεδονικά</item>
+		<item>Μαλγασικά</item>
+		<item>Μαλαϊκά</item>
+		<item>Μαλαγιαλάμ</item>
+		<item>Μαλτεζικά</item>
+		<item>Μαορί</item>
+		<item>Μαραθικά</item>
+		<item>Μογγολικά</item>
+		<item>Βιρμανικά</item>
+		<item>Νεπαλικά</item>
+		<item>Νορβηγικά</item>
+		<item>Πάστο</item>
+		<item>Περσικά</item>
+		<item>Πολωνικά</item>
+		<item>Πορτογαλικά</item>
+		<item>Παντζαμπικά</item>
+		<item>Ρουμανικά</item>
+		<item>Ρωσικά</item>
+		<item>Σαμοανικά</item>
+		<item>Σκωτική γαελική</item>
+		<item>Σερβικά</item>
+		<item>Σεσότο</item>
+		<item>Σόνα</item>
+		<item>Σίντι</item>
+		<item>Σινχαλεζικά</item>
+		<item>Σλοβακικά</item>
+		<item>Σλοβενικά</item>
+		<item>Σομαλικά</item>
+		<item>Ισπανικά</item>
+		<item>Σουνδανικά</item>
+		<item>Σουαχίλι</item>
+		<item>Σουηδικά</item>
+		<item>Τατζικικά</item>
+		<item>Ταμίλ</item>
+		<item>Τελούγκου</item>
+		<item>Ταϊλανδικά</item>
+		<item>Τουρκικά</item>
+		<item>Ουκρανικά</item>
+		<item>Ούρντου</item>
+		<item>Ουζμπεκικά</item>
+		<item>Βιετναμικά</item>
+		<item>Ουαλικά</item>
+		<item>Κόσα</item>
+		<item>Γίντις</item>
+		<item>Γιορούμπα</item>
+		<item>Ζουλού</item>
+		<item>Όντια</item>
+		<item>Παντζαμπικά</item>
+		<item>Κινιαρουάντα</item>
+		<item>Ταταρικά</item>
+		<item>Τουρκμενικά</item>
+		<item>Ουιγούρ</item>
 	</string-array>
 	<string-array name="yandex_translator_codes">
 		<item>auto</item>
@@ -847,104 +1336,170 @@
 	</string-array>
 	<string-array name="yandex_translator_names">
 		<item>Αυτόματα</item>
-		<item>Afrikaans</item>
-		<item>Albanian</item>
-		<item>Amharic</item>
-		<item>Arabic</item>
-		<item>Armenian</item>
-		<item>Azerbaijani</item>
-		<item>Bashkir</item>
-		<item>Basque</item>
-		<item>Belarusian</item>
-		<item>Bengali</item>
-		<item>Bosnian</item>
-		<item>Bulgarian</item>
-		<item>Burmese</item>
-		<item>Catalan</item>
-		<item>Cebuano</item>
-		<item>Chinese</item>
-		<item>Chuvash</item>
-		<item>Croatian</item>
-		<item>Czech</item>
-		<item>Danish</item>
-		<item>Dutch</item>
-		<item>Elvish (Sindarin)</item>
+		<item>Αφρικάανς</item>
+		<item>Αλβανικά</item>
+		<item>Αμχαρικά</item>
+		<item>Αραβικά</item>
+		<item>Αρμενικά</item>
+		<item>Αζερικά</item>
+		<item>Μπασκιρικά</item>
+		<item>Βασκικά</item>
+		<item>Λευκορωσικά</item>
+		<item>Βεγγαλικά</item>
+		<item>Βοσνιακά</item>
+		<item>Βουλγαρικά</item>
+		<item>Βιρμανικά</item>
+		<item>Καταλανικά</item>
+		<item>Σεμπουάνο</item>
+		<item>Κινεζικά</item>
+		<item>Τσουβασικά</item>
+		<item>Κροατικά</item>
+		<item>Τσεχικά</item>
+		<item>Δανικά</item>
+		<item>Ολλανδικά</item>
+		<item>Ελφικά (σίνταριν)</item>
 		<item>Emoji</item>
-		<item>English</item>
-		<item>Esperanto</item>
-		<item>Estonian</item>
-		<item>Finnish</item>
-		<item>French</item>
-		<item>Galician</item>
-		<item>Georgian</item>
-		<item>German</item>
-		<item>Greek</item>
-		<item>Gujarati</item>
-		<item>Haitian</item>
-		<item>Hebrew</item>
-		<item>Hill Mari</item>
-		<item>Hindi</item>
-		<item>Hungarian</item>
-		<item>Icelandic</item>
-		<item>Indonesian</item>
-		<item>Irish</item>
-		<item>Italian</item>
-		<item>Japanese</item>
-		<item>Javanese</item>
-		<item>Kannada</item>
-		<item>Kazakh</item>
-		<item>Kazakh (Latin)</item>
-		<item>Khmer</item>
-		<item>Korean</item>
-		<item>Kyrgyz</item>
-		<item>Lao</item>
-		<item>Latin</item>
-		<item>Latvian</item>
-		<item>Lithuanian</item>
-		<item>Luxembourgish</item>
-		<item>Macedonian</item>
-		<item>Malagasy</item>
-		<item>Malay</item>
-		<item>Malayalam</item>
-		<item>Maltese</item>
-		<item>Maori</item>
-		<item>Marathi</item>
-		<item>Mari</item>
-		<item>Mongolian</item>
-		<item>Nepali</item>
-		<item>Norwegian</item>
-		<item>Papiamento</item>
-		<item>Persian</item>
-		<item>Polish</item>
-		<item>Portuguese</item>
-		<item>Punjabi</item>
-		<item>Romanian</item>
-		<item>Russian</item>
-		<item>Scottish Gaelic</item>
-		<item>Serbian</item>
-		<item>Sinhalese</item>
-		<item>Slovak</item>
-		<item>Slovenian</item>
-		<item>Spanish</item>
-		<item>Sundanese</item>
-		<item>Swahili</item>
-		<item>Swedish</item>
-		<item>Tagalog</item>
-		<item>Tajik</item>
-		<item>Tamil</item>
-		<item>Tatar</item>
-		<item>Telugu</item>
-		<item>Thai</item>
-		<item>Turkish</item>
-		<item>Udmurt</item>
-		<item>Ukrainian</item>
-		<item>Urdu</item>
-		<item>Uzbek</item>
-		<item>Uzbek (Cyrillic)</item>
-		<item>Vietnamese</item>
-		<item>Welsh</item>
-		<item>Xhosa</item>
-		<item>Yakut</item>
-		<item>Yiddish</item>
+		<item>Αγγλικά</item>
+		<item>Εσπεράντο</item>
+		<item>Εσθονικά</item>
+		<item>Φινλανδικά</item>
+		<item>Γαλλικά</item>
+		<item>Γαλικιανά</item>
+		<item>Γεωργιανά</item>
+		<item>Γερμανικά</item>
+		<item>Ελληνικά</item>
+		<item>Γκουτζαρατικά</item>
+		<item>Αϊτινά</item>
+		<item>Εβραϊκά</item>
+		<item>Ορεινά μάρι</item>
+		<item>Χίντι</item>
+		<item>Ουγγρικά</item>
+		<item>Ισλανδικά</item>
+		<item>Ινδονησιακά</item>
+		<item>Ιρλανδικά</item>
+		<item>Ιταλικά</item>
+		<item>Ιαπωνικά</item>
+		<item>Ιαβαϊκά</item>
+		<item>Κανάντα</item>
+		<item>Καζακικά</item>
+		<item>Καζακικά (λατινικά)</item>
+		<item>Χμερ</item>
+		<item>Κορεατικά</item>
+		<item>Κιργιζικά</item>
+		<item>Λαοτινά</item>
+		<item>Λατινικά</item>
+		<item>Λετονικά</item>
+		<item>Λιθουανικά</item>
+		<item>Λουξεμβουργιανά</item>
+		<item>Σλαβομακεδονικά</item>
+		<item>Μαλγασικά</item>
+		<item>Μαλαϊκά</item>
+		<item>Μαλαγιαλάμ</item>
+		<item>Μαλτεζικά</item>
+		<item>Μαορί</item>
+		<item>Μαραθικά</item>
+		<item>Μάρι</item>
+		<item>Μογγολικά</item>
+		<item>Νεπαλικά</item>
+		<item>Νορβηγικά</item>
+		<item>Παπιαμέντο</item>
+		<item>Περσικά</item>
+		<item>Πολωνικά</item>
+		<item>Πορτογαλικά</item>
+		<item>Παντζαμπικά</item>
+		<item>Ρουμανικά</item>
+		<item>Ρωσικά</item>
+		<item>Σκωτική γαελική</item>
+		<item>Σερβικά</item>
+		<item>Σινχαλεζικά</item>
+		<item>Σλοβακικά</item>
+		<item>Σλοβενικά</item>
+		<item>Ισπανικά</item>
+		<item>Σουνδανικά</item>
+		<item>Σουαχίλι</item>
+		<item>Σουηδικά</item>
+		<item>Ταγκαλόγκ</item>
+		<item>Τατζικικά</item>
+		<item>Ταμίλ</item>
+		<item>Ταταρικά</item>
+		<item>Τελούγκου</item>
+		<item>Ταϊλανδικά</item>
+		<item>Τουρκικά</item>
+		<item>Ουντμούρτ</item>
+		<item>Ουκρανικά</item>
+		<item>Ούρντου</item>
+		<item>Ουζμπεκικά</item>
+		<item>Ουζμπεκικά (κυριλλικά)</item>
+		<item>Βιετναμικά</item>
+		<item>Ουαλικά</item>
+		<item>Κόσα</item>
+		<item>Γιακούτ</item>
+		<item>Γίντις</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>Αυτόματο</item>
+		<item>Αραβικά</item>
+		<item>Βουλγαρικά</item>
+		<item>Κινεζικά</item>
+		<item>Τσεχικά</item>
+		<item>Δανικά</item>
+		<item>Ολλανδικά</item>
+		<item>Αγγλικά</item>
+		<item>Εσθονικά</item>
+		<item>Φινλανδικά</item>
+		<item>Γαλλικά</item>
+		<item>Γερμανικά</item>
+		<item>Ελληνικά</item>
+		<item>Ουγγρικά</item>
+		<item>Ινδονησιακά</item>
+		<item>Ιταλικά</item>
+		<item>Ιαπωνικά</item>
+		<item>Κορεατικά</item>
+		<item>Λετονικά</item>
+		<item>Λιθουανικά</item>
+		<item>Νορβηγικά (Bokmål)</item>
+		<item>Πολωνικά</item>
+		<item>Πορτογαλικά</item>
+		<item>Ρουμανικά</item>
+		<item>Ρωσικά</item>
+		<item>Σλοβακικά</item>
+		<item>Σλοβενικά</item>
+		<item>Ισπανικά</item>
+		<item>Σουηδικά</item>
+		<item>Τουρκικά</item>
+		<item>Ουκρανικά</item>
 	</string-array>
 </resources>

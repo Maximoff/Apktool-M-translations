@@ -267,7 +267,7 @@
 		<item>Gets the object monitor referenced by the vAA register.</item>
 		<item>Releases the object monitor referenced by the vAA register.</item>
 		<item>Checks whether an object reference contained in the vAA register can be cast to the class identified by type_id. Throws a ClassCastException if it cannot, otherwise continues execution.</item>
-		<item>Checks whether the contents of the vB register is an instance of the class identified by type_id. Sets register vA to non-zero if present, 0 if not.\nvA = vB instanceOf type ? 10</item>
+		<item>Checks whether the contents of the vB register is an instance of the class identified by type_id. Sets register vA to non-zero if present, 0 if not.\nvA = vB instanceOf type ? 1:0</item>
 		<item>Determines the number of array elements from the vB register and places the value in the vA register.\nvA = vB.length</item>
 		<item>Creates an instance of an object type and places a reference to the created instance in the vAA register.</item>
 		<item>Creates a new array of type_id variables with the size of register vB elements and places a reference to the array in register vA.</item>
@@ -282,7 +282,7 @@
 		<item>Implements the Switch operator in case of a sparse table. The instruction uses a table that specifies offsets for each constant. If no matches are found in the table, then the next statement is executed (default case).</item>
 		<item>Compares the float (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = vBB &lt; vCC ? yes: 1, no: -1, equal: 0</item>
 		<item>Compares the float (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = vBB &lt; vCC ? yes: 1, no: -1, equal: 0</item>
-		<item>Compares the double (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nyes: 1, no: -1, equal: 0</item>
+		<item>Compares the double (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? yes: 1, no: -1, equal: 0</item>
 		<item>Compares the double (floating point) values in vBB and vCC and places the integer value in the vAA register:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? yes: 1, no: -1, equal: 0</item>
 		<item>Compares the long (integer) values in vBB and vCC and places the integer (integer) value in the vAA register:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? yes: 1, no: -1, equal: 0</item>
 		<item>Jumps to the specified label if vA == vB. vA and vB contain integer values.\n(eq is short for Equals)</item>
@@ -322,9 +322,9 @@
 		<item>Places a double/long value from a register pair (vA, vA+1) into an instance field. The reference to the class containing this field is in the vB register.\nvB.field = (vA, vA+1)</item>
 		<item>Places a reference to an object from the vA register into the instance field. The reference to the class containing this field is in the vB register.\nvB.field = vA</item>
 		<item>Places the boolean value from the vA register into the instance field. The reference to the class containing this field is in the vB register.\nvB.field = vA</item>
-		<item>Sets the byte (integer) value of the specified Boolean field in the instance referenced by register vB equal to the value of register vA, that is:\nvB.field = vA</item>
-		<item>Sets the char (character) value of the specified Boolean field in the instance referenced by register vB equal to the value of register vA, that is:\nvB.field = vA</item>
-		<item>Sets the short (integer) value of the specified Boolean field in the instance referenced by register vB equal to the value of register vA, that is:\nvB.field = vA</item>
+		<item>Places the byte (integer) value from the vA register into the instance field. The reference to the class containing this field is in the vB register.\nvB.field = vA</item>
+		<item>Places the char (character) value from the vA register into the instance field. The reference to the class containing this field is in the vB register.\nvB.field = vA</item>
+		<item>Places the short (integer) value from the vA register into the instance field. The reference to the class containing this field is in the vB register.\nvB.field = vA</item>
 		<item>Reads a value from a static field and places it in the vAA register. The register containing the reference to the class containing this field is not used.</item>
 		<item>Reads a double/long value from a static field and places it in a pair of registers vAA, vAA+1. The register containing the reference to the class containing this field is not used.</item>
 		<item>Reads an object reference from a static field and places it in the vAA register. The register containing the reference to the class containing this field is not used.</item>
@@ -388,10 +388,10 @@
 		<item>Calculates (vBB, vBB+1) % (vCC, vCC+1) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
 		<item>Computes (vBB, vBB+1) &amp; (vCC, vCC+1) (logical AND) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
 		<item>Computes (vBB, vBB+1) | (vCC, vCC+1) (logical OR) and stores the result in a pair of registers vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
-		<item>Computes (vBB, vBB+1) ^ (vCC, vCC+1) (exclusive AND) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Computes (vBB, vBB+1) ^ (vCC, vCC+1) (exclusive OR) and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
 		<item>Shifts vBB, vBB+1 to the left by the number of bits specified by vCC, and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
 		<item>Shifts vBB, vBB+1 to the right by the number of bits specified by vCC, and stores the result in the register pair vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
-		<item>Shifts vBB, vBB+1 to the right without preserving the sign by the number of bits specified by vCC, and stores the result in a pair of registers vAA, vA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Shifts vBB, vBB+1 to the right without preserving the sign by the number of bits specified by vCC, and stores the result in a pair of registers vAA, vAA+1. All values are long (integer).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
 		<item>Calculates vBB + vCC and stores the result in the vAA register. All values are float.\nvAA = vBB + vCC</item>
 		<item>Calculates vBB - vCC and stores the result in the vAA register. All values are float.\nvAA = vBB - vCC</item>
 		<item>Calculates vBB * vCC and stores the result in the vAA register. All values are float.\nvAA = vBB * vCC</item>
@@ -420,7 +420,7 @@
 		<item>Calculates (vA, vA+1) % (vB, vB+1) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
 		<item>Computes (vA, vA+1) &amp; (vB, vB+1) (logical AND) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
 		<item>Calculates (vA, vA+1) | (vB, vB+1) (logical OR) and stores the result in a pair of registers vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
-		<item>Computes (vA, vA+1) &amp; (vB, vB+1) (exclusive OR) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Computes (vA, vA+1) ^ (vB, vB+1) (exclusive OR) and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
 		<item>Shifts vA, vA+1 to the left by the number of bits specified by vB, and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
 		<item>Shifts vA, vA+1 to the right by the number of bits specified by vB, and stores the result in the register pair vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
 		<item>Shifts vA, vA+1 to the right without preserving the sign by the number of digits specified by vB, and stores the result in a pair of registers vA, vA+1. All values are long (integer).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
@@ -680,7 +680,8 @@
 		<item>Italiano</item>
 		<item>Polski</item>
 		<item>မြန်မာ</item>
-		<item>中文</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
 		<item>Português</item>
 		<item>Română</item>
 		<item>Türkçe</item>
@@ -710,6 +711,7 @@
 		<item>pl</item>
 		<item>my</item>
 		<item>zh</item>
+		<item>zh-rTW</item>
 		<item>pt</item>
 		<item>ro</item>
 		<item>tr</item>

@@ -1,14 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="smali_help_names">
+	<string-array name="smali_help_names">
 		<item>Registros</item>
 		<item>Valores literales</item>
 		<item>Tipos de datos primitivos</item>
 	</string-array>
+	<string-array name="smali_help_common_names">
+		<item>nop</item>
+		<item>move vA, vB</item>
+		<item>move/from16 vAA, vBBBB</item>
+		<item>move/16 vAAAA, vBBBB</item>
+		<item>move-wide vA, vB</item>
+		<item>move-wide/from16 vAA, vBBBB</item>
+		<item>move-wide/16 vAAAA, vBBBB</item>
+		<item>move-object vA, vB</item>
+		<item>move-object/from16 vAA, vBBBB</item>
+		<item>move-object/16 vAAAA, vBBBB</item>
+		<item>move-result vAA</item>
+		<item>move-result-wide vAA</item>
+		<item>move-result-object vAA</item>
+		<item>move-exception vAA</item>
+		<item>return-void</item>
+		<item>return vAA</item>
+		<item>return-wide vAA</item>
+		<item>return-object vAA</item>
+		<item>const/4 vA, 0xF</item>
+		<item>const/16 vAA, 0xFFFF</item>
+		<item>const vAA, 0xFFFFFFFF</item>
+		<item>const/high16 vAA, 0xFFFF</item>
+		<item>const-wide/16 vAA, 0xFFFF</item>
+		<item>const-wide/32 vAA, 0xFFFFFFFF</item>
+		<item>const-wide vAA, #FFFFFFFFFFFFFFFF</item>
+		<item>const-wide/high16 vAA, 0xFFFF</item>
+		<item>const-string vAA, string</item>
+		<item>const-string/jumbo vAA, string (32-bit index)</item>
+		<item>const-class vAA, type</item>
+		<item>monitor-enter vAA</item>
+		<item>monitor-exit vAA</item>
+		<item>check-cast vAA, type</item>
+		<item>instance-of vA, vB, type</item>
+		<item>array-length vA, vB</item>
+		<item>new-instance vAA, type</item>
+		<item>new-array vA, vB, type</item>
+		<item>filled-new-array {vC, vD, vE, vF, vG}, type</item>
+		<item>filled-new-array/range {vCCCC .. vNNNN}, type</item>
+		<item>fill-array-data vAA, :array</item>
+		<item>throw vAA</item>
+		<item>goto :goto_XX</item>
+		<item>goto/16 :goto_XXXX</item>
+		<item>goto/32 :goto_XXXXXXXX</item>
+		<item>packed-switch vAA, :pswitch_data</item>
+		<item>sparse-switch vAA, :sswitch_data</item>
+		<item>cmpl-float vAA, vBB, vCC</item>
+		<item>cmpg-float vAA, vBB, vCC</item>
+		<item>cmpl-double vAA, vBB, vCC</item>
+		<item>cmpg-double vAA, vBB, vCC</item>
+		<item>cmp-long vAA, vBB, vCC</item>
+		<item>if-eq vA, vB, :cond_XXXX</item>
+		<item>if-ne vA, vB, :cond_XXXX</item>
+		<item>if-lt vA, vB, :cond_XXXX</item>
+		<item>if-le vA, vB, :cond_XXXX</item>
+		<item>if-gt vA, vB, :cond_XXXX</item>
+		<item>if-ge vA, vB, :cond_XXXX</item>
+		<item>if-eqz vAA, :cond_XXXX</item>
+		<item>if-nez vAA, :cond_XXXX</item>
+		<item>if-ltz vAA, :cond_XXXX</item>
+		<item>if-lez vAA, :cond_XXXX</item>
+		<item>if-gtz vAA, :cond_XXXX</item>
+		<item>if-gez vAA, :cond_XXXX</item>
+		<item>aget vAA, vBB, vCC</item>
+		<item>aget-wide vAA, vBB, vCC</item>
+		<item>aget-object vAA, vBB, vCC</item>
+		<item>aget-boolean vAA, vBB, vCC</item>
+		<item>aget-byte vAA, vBB, vCC</item>
+		<item>aget-char vAA, vBB, vCC</item>
+		<item>aget-short vAA, vBB, vCC</item>
+		<item>aput vAA, vBB, vCC</item>
+		<item>aput-wide vAA, vBB, vCC</item>
+		<item>aput-object vAA, vBB, vCC</item>
+		<item>aput-boolean vAA, vBB, vCC</item>
+		<item>aput-byte vAA, vBB, vCC</item>
+		<item>aput-char vAA, vBB, vCC</item>
+		<item>aput-short vAA, vBB, vCC</item>
+		<item>iget vA, vB, fields</item>
+		<item>iget-wide vA, vB, fields</item>
+		<item>iget-object vA, vB, fields</item>
+		<item>iget-boolean vA, vB, fields</item>
+		<item>iget-byte vA, vB, field</item>
+		<item>iget-char vA, vB, field</item>
+		<item>iget-short vA, vB, fields</item>
+		<item>iput vA, vB, fields</item>
+		<item>iput-wide vA, vB, fields</item>
+		<item>iput-object vA, vB, fields</item>
+		<item>iput-boolean vA, vB, fields</item>
+		<item>iput-byte vA, vB, fields</item>
+		<item>iput-char vA, vB, fields</item>
+		<item>iput-short vA, vB, fields</item>
+		<item>sget vAA, static field</item>
+		<item>sget-wide vAA, static field</item>
+		<item>sget-object vAA, static field</item>
+		<item>sget-boolean vAA, static field</item>
+		<item>sget-byte vAA, static field</item>
+		<item>sget-char vAA, static field</item>
+		<item>sget-short vAA, static field</item>
+		<item>sput vAA, static field</item>
+		<item>sput-wide vAA, static field</item>
+		<item>sput-object vAA, static field</item>
+		<item>sput-boolean vAA, static field</item>
+		<item>sput-byte vAA, static field</item>
+		<item>sput-char vAA, static field</item>
+		<item>sput-short vAA, static field</item>
+		<item>invoke-virtual {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-super {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-direct {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-static {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-interface {vC, vD, vE, vF, vG}, method</item>
+		<item>invoke-virtual/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-super/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-direct/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-static/range {vCCCC .. vNNNN}, method</item>
+		<item>invoke-interface/range {vCCCC .. vNNNN}, method</item>
+		<item>neg-int vA, vB</item>
+		<item>not-int vA, vB</item>
+		<item>neg-long vA, vB</item>
+		<item>not-long vA, vB</item>
+		<item>neg-float vA, vB</item>
+		<item>neg-double vA, vB</item>
+		<item>int-to-long vA, vB</item>
+		<item>int-to-float vA, vB</item>
+		<item>int-to-double vA, vB</item>
+		<item>long-to-int vA, vB</item>
+		<item>long-to-float vA, vB</item>
+		<item>long-to-double vA, vB</item>
+		<item>float-to-int vA, vB</item>
+		<item>float-to-long vA, vB</item>
+		<item>float-to-double vA, vB</item>
+		<item>double-to-int vA, vB</item>
+		<item>double-to-long vA, vB</item>
+		<item>double-to-float vA, vB</item>
+		<item>int-to-byte vA, vB</item>
+		<item>int-to-char vA, vB</item>
+		<item>int-to-short vA, vB</item>
+		<item>add-int vAA, vBB, vCC</item>
+		<item>sub-int vAA, vBB, vCC</item>
+		<item>mul-int vAA, vBB, vCC</item>
+		<item>div-int vAA, vBB, vCC</item>
+		<item>rem-int vAA, vBB, vCC</item>
+		<item>and-int vAA, vBB, vCC</item>
+		<item>or-int vAA, vBB, vCC</item>
+		<item>xor-int vAA, vBB, vCC</item>
+		<item>shl-int vAA, vBB, vCC</item>
+		<item>shr-int vAA, vBB, vCC</item>
+		<item>ushr-int vAA, vBB, vCC</item>
+		<item>add-long vAA, vBB, vCC</item>
+		<item>sub-long vAA, vBB, vCC</item>
+		<item>mul-long vAA, vBB, vCC</item>
+		<item>div-long vAA, vBB, vCC</item>
+		<item>rem-long vAA, vBB, vCC</item>
+		<item>and-long vAA, vBB, vCC</item>
+		<item>or-long vAA, vBB, vCC</item>
+		<item>xor-long vAA, vBB, vCC</item>
+		<item>shl-long vAA, vBB, vCC</item>
+		<item>shr-long vAA, vBB, vCC</item>
+		<item>ushr-long vAA, vBB, vCC</item>
+		<item>add-float vAA, vBB, vCC</item>
+		<item>sub-float vAA, vBB, vCC</item>
+		<item>mul-float vAA, vBB, vCC</item>
+		<item>div-float vAA, vBB, vCC</item>
+		<item>rem-float vAA, vBB, vCC</item>
+		<item>add-double vAA, vBB, vCC</item>
+		<item>sub-double vAA, vBB, vCC</item>
+		<item>mul-double vAA, vBB, vCC</item>
+		<item>div-double vAA, vBB, vCC</item>
+		<item>rem-double vAA, vBB, vCC</item>
+		<item>add-int/2addr vA, vB</item>
+		<item>sub-int/2addr vA, vB</item>
+		<item>mul-int/2addr vA, vB</item>
+		<item>div-int/2addr vA, vB</item>
+		<item>rem-int/2addr vA, vB</item>
+		<item>and-int/2addr vA, vB</item>
+		<item>or-int/2addr vA, vB</item>
+		<item>xor-int/2addr vA, vB</item>
+		<item>shl-int/2addr vA, vB</item>
+		<item>shr-int/2addr vA, vB</item>
+		<item>ushr-int/2addr vA, vB</item>
+		<item>add-long/2addr vA, vB</item>
+		<item>sub-long/2addr vA, vB</item>
+		<item>mul-long/2addr vA, vB</item>
+		<item>div-long/2addr vA, vB</item>
+		<item>rem-long/2addr vA, vB</item>
+		<item>and-long/2addr vA, vB</item>
+		<item>or-long/2addr vA, vB</item>
+		<item>xor-long/2addr vA, vB</item>
+		<item>shl-long/2addr vA, vB</item>
+		<item>shr-long/2addr vA, vB</item>
+		<item>ushr-long/2addr vA, vB</item>
+		<item>add-float/2addr vA, vB</item>
+		<item>sub-float/2addr vA, vB</item>
+		<item>mul-float/2addr vA, vB</item>
+		<item>div-float/2addr vA, vB</item>
+		<item>rem-float/2addr vA, vB</item>
+		<item>add-double/2addr vA, vB</item>
+		<item>sub-double/2addr vA, vB</item>
+		<item>mul-double/2addr vA, vB</item>
+		<item>div-double/2addr vA, vB</item>
+		<item>rem-double/2addr vA, vB</item>
+		<item>add-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rsub-int vA, vB, 0xFFFF</item>
+		<item>mul-int/lit16 vA, vB, 0xFFFF</item>
+		<item>div-int/lit16 vA, vB, 0xFFFF</item>
+		<item>rem-int/lit16 vA, vB, 0xFFFF</item>
+		<item>and-int/lit16 vA, vB, 0xFFFF</item>
+		<item>or-int/lit16 vA, vB, 0xFFFF</item>
+		<item>xor-int/lit16 vA, vB, 0xFFFF</item>
+		<item>add-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rsub-int/lit8 vAA, vBB, 0xFF</item>
+		<item>mul-int/lit8 vAA, vBB, 0xFF</item>
+		<item>div-int/lit8 vAA, vBB, 0xFF</item>
+		<item>rem-int/lit8 vAA, vBB, 0xFF</item>
+		<item>and-int/lit8 vAA, vBB, 0xFF</item>
+		<item>or-int/lit8 vAA, vBB, 0xFF</item>
+		<item>xor-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shl-int/lit8 vAA, vBB, 0xFF</item>
+		<item>shr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>ushr-int/lit8 vAA, vBB, 0xFF</item>
+		<item>invoke-polymorphic {vC, vD, vE, vF, vG}, method, prototype</item>
+		<item>invoke-polymorphic/range {vCCCC .. vNNNN}, method, prototype</item>
+		<item>invoke-custom {vC, vD, vE, vF, vG}, call site</item>
+		<item>invoke-custom/range {vCCCC .. vNNNN}, call point</item>
+		<item>const-method-handle vAA, method handle</item>
+		<item>const-method-type vAA, method prototype</item>
+	</string-array>
 	<string-array name="smali_help_values" formatted="false">
 		<item>vA es un registro de 4 bits con el rango de valores v0 - v15\nvAA es un registro de 8 bits con un rango de valores de v0 - v255\nvAAAA es un registro de 16 bits con un rango de valores de v0 - v65535</item>
 		<item>Se utilizan 0xF, 0xFF, etc. para representar valores literales. Al igual que los registros, el número F se utiliza para representar un rango de valores, por ejemplo:\nEl rango de valores 0xF está representado por [-0x8, 0x7]\nEl rango de valores de 0xFF está representado por [-0x80, 0x7F]</item>
-		<item>V - vacío, Z - booleano, B - byte\nC - char, S - corto, I - int\nJ - largo, F - flotante, D - doble\nnulo: solo se puede utilizar para tipos de devolución\nbooleano: almacena el valor verdadero o falso\nbyte: almacena un número entero de -128 a 127 y ocupa 1 byte\nbreve: almacena un número entero de -32768 a 32767 y ocupa 2 bytes\nint: almacena un número entero de -2147483648 a 2147483647 y ocupa 4 bytes\nde largo: almacena un número entero de -9223372036854775808 a 9223372036854775807 y ocupa 8 bytes\ndoble: almacena un número de coma flotante de ±4,9*10³²⁴ a ±1,7976931348623157*10³⁰⁸ y ocupa 8 bytes. Se utiliza un punto como separador decimal en literales fraccionarios.\nflotante: almacena un número de punto flotante de -3,4*10³⁸ a 3,4*10³⁸ y ocupa 4 bytes\nchar: almacena un solo carácter en codificación UTF-16 y ocupa 2 bytes, por lo que el rango de valores almacenados es de 0 a 65535.</item>
+		<item>V - void, Z - booleano, B - byte\nC - char, S - short, I - int\nJ - long, F - float, D - double\nvoid: solo se puede utilizar para tipos de devolución\nbooleano: almacena el valor verdadero o falso\nbyte: almacena un número entero de -128 a 127 y ocupa 1 byte\nshort: almacena un número entero de -32768 a 32767 y ocupa 2 bytes\nint: almacena un número entero de -2147483648 a 2147483647 y ocupa 4 bytes\nlong: almacena un número entero de -9223372036854775808 a 9223372036854775807 y ocupa 8 bytes\ndoble: almacena un número de coma flotante de ±4,9*10³²⁴ a ±1,7976931348623157*10³⁰⁸ y ocupa 8 bytes. Se utiliza un punto como separador decimal en literales fraccionarios.\nflotante: almacena un número de punto flotante de -3,4*10³⁸ a 3,4*10³⁸ y ocupa 4 bytes\nchar: almacena un solo carácter en codificación UTF-16 y ocupa 2 bytes, por lo que el rango de valores almacenados es de 0 a 65535.</item>
 		<item>Ninguna acción.</item>
 		<item>Mueve el valor del registro vB al registro vA.</item>
 		<item>Mueve el valor del registro vBBBB al registro vAA.</item>
@@ -41,8 +267,8 @@
 		<item>Obtiene el monitor de objetos al que hace referencia el registro vAA.</item>
 		<item>Libera el monitor de objetos al que hace referencia el registro vAA.</item>
 		<item>Comprueba si una referencia de objeto contenida en el registro vAA se puede convertir a la clase identificada por type_id. Lanza una ClassCastException si no puede; de lo contrario, continúa la ejecución.</item>
-		<item>Comprueba si el contenido del registro vB es una instancia de la clase identificada por type_id. Establece el registro vA en un valor distinto de cero si está presente y en 0 si no.\nvA = vB tipo de instancia? 10</item>
-		<item>Determina el número de elementos de la matriz del registro vB y coloca el valor en el registro vA.\nvA = vB.longitud</item>
+		<item>Comprueba si el contenido del registro vB es una instancia de la clase identificada por type_id. Establece el registro vA en un valor distinto de cero si está presente y en 0 si no.\nvA = vB instanceOf type ? 1:0</item>
+		<item>Determina el número de elementos de la matriz del registro vB y coloca el valor en el registro vA.\nvA = vB.length</item>
 		<item>Crea una instancia de un tipo de objeto y coloca una referencia a la instancia creada en el registro vAA.</item>
 		<item>Crea una nueva matriz de variables type_id con el tamaño de los elementos del registro vB y coloca una referencia a la matriz en el registro vA.</item>
 		<item>Crea una nueva matriz de datos de tipo type_id y la llena con parámetros (es decir, no hay matrices largas/dobles, pero se permiten tipos de referencia). Se puede obtener una referencia a la matriz recién creada usando la declaración move-result-object inmediatamente después de esta declaración (si se va a usar alguna).</item>
@@ -56,12 +282,12 @@
 		<item>Implementa el operador Switch en caso de una tabla dispersa. La instrucción utiliza una tabla que especifica compensaciones para cada constante. Si no se encuentran coincidencias en la tabla, se ejecuta la siguiente instrucción (caso predeterminado).</item>
 		<item>Compara los valores flotantes (punto flotante) en vBB y vCC y coloca el valor entero en el registro vAA:\nvAA = vBB &lt;vCC? sí: 1, no: -1, igual: 0</item>
 		<item>Compara los valores flotantes (punto flotante) en vBB y vCC y coloca el valor entero en el registro vAA:\nvAA = vBB &lt;vCC? sí: 1, no: -1, igual: 0</item>
-		<item>Compara los valores dobles (punto flotante) en vBB y vCC y coloca el valor entero en el registro vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? y\nsí: 1, no: -1, igual: 0</item>
+		<item>Compara los valores dobles (punto flotante) en vBB y vCC y coloca el valor entero en el registro vAA:\nvAA = (vBB, vBB+1) &lt; (vCC, vCC+1) ? sí: 1, no: -1, igual: 0</item>
 		<item>Compara los valores dobles (punto flotante) en vBB y vCC y coloca el valor entero en el registro vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? sí: 1, no: -1, igual: 0</item>
 		<item>Compara los valores largos (enteros) en vBB y vCC y coloca el valor entero (entero) en el registro vAA:\nvAA = (vBB, vBB+1) > (vCC, vCC+1) ? sí: 1, no: -1, igual: 0</item>
 		<item>Salta a la etiqueta especificada si vA == vB. vA y vB contienen valores enteros.\n(eq es la abreviatura de iguales)</item>
 		<item>Salta a la etiqueta especificada si vA != vB. vA y vB contienen valores enteros.\n(ne es la abreviatura de No iguales)</item>
-		<item>Salta a la etiqueta especificada si vA &lt;vB. vA y vB contienen valores enteros.\n(Es la abreviatura de Menos que)</item>
+		<item>Salta a la etiqueta especificada si vA &lt;vB. vA y vB contienen valores enteros.\n(lt es la abreviatura de menor que)</item>
 		<item>Salta a la etiqueta especificada si vA &lt;= vB. vA y vB contienen valores enteros.\n(le es una abreviatura de Menos que o Igual/Menos o igual)</item>
 		<item>Salta a la etiqueta especificada si vA > vB. vA y vB contienen valores enteros.\n(gt es la abreviatura de Mayor que/Más que)</item>
 		<item>Salta a la etiqueta especificada si vA >= vB. vA y vB contienen valores enteros.\n(ge es la abreviatura de Mayor que o Igual)</item>
@@ -85,20 +311,20 @@
 		<item>Coloca el valor del byte (entero) de vAA en la matriz a la que se hace referencia en vBB con el elemento que contiene el registro vCC.\nvBB[vCC] = vAA</item>
 		<item>Coloca el valor char (carácter) de vAA en la matriz a la que se hace referencia en vBB por elemento con registro vCC.\nvBB[vCC] = vAA</item>
 		<item>Coloca el valor corto (entero) de vAA en la matriz a la que se hace referencia en vBB con el elemento que contiene el registro vCC.\nvBB[vCC] = vAA</item>
-		<item>Lee el valor del campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.campo</item>
-		<item>Lee un valor doble/largo de un campo de instancia y lo coloca en un par de registros (vA, vA+1). La referencia a la clase que contiene este campo está en el registro vB.\n(vA, vA+1) = vB.campo</item>
-		<item>Lee una referencia de objeto de un campo de instancia y la coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.campo</item>
-		<item>Lee un valor booleano del campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.campo</item>
-		<item>Lee un valor de byte (entero) de un campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.campo</item>
-		<item>Lee un valor de carácter de un campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.campo</item>
-		<item>Lee un valor corto (entero) de un campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.campo</item>
-		<item>Coloca el valor del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.campo = vA</item>
-		<item>Coloca un valor doble/largo de un par de registros (vA, vA+1) en un campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.campo = (vA, vA+1)</item>
-		<item>Coloca una referencia a un objeto del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.campo = vA</item>
-		<item>Coloca el valor booleano del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.campo = vA</item>
-		<item>Establece el valor de byte (entero) del campo booleano especificado en la instancia a la que hace referencia el registro vB igual al valor del registro vA, es decir:\nvB.campo = vA</item>
-		<item>Establece el valor char (carácter) del campo booleano especificado en la instancia a la que hace referencia el registro vB igual al valor del registro vA, es decir:\nvB.campo = vA</item>
-		<item>Establece el valor corto (entero) del campo booleano especificado en la instancia a la que hace referencia el registro vB igual al valor del registro vA, es decir:\nvB.campo = vA</item>
+		<item>Lee el valor del campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.field</item>
+		<item>Lee un valor doble/largo de un campo de instancia y lo coloca en un par de registros (vA, vA+1). La referencia a la clase que contiene este campo está en el registro vB.\n(vA, vA+1) = vB.field</item>
+		<item>Lee una referencia de objeto de un campo de instancia y la coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.field</item>
+		<item>Lee un valor booleano del campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.field</item>
+		<item>Lee un valor de byte (entero) de un campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.field</item>
+		<item>Lee un valor de carácter de un campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.field</item>
+		<item>Lee un valor corto (entero) de un campo de instancia y lo coloca en el registro vA. La referencia a la clase que contiene este campo está en el registro vB.\nvA = vB.field</item>
+		<item>Coloca el valor del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.field = vA</item>
+		<item>Coloca un valor doble/largo de un par de registros (vA, vA+1) en un campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.field = (vA, vA+1)</item>
+		<item>Coloca una referencia a un objeto del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.field = vA</item>
+		<item>Coloca el valor booleano del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.field = vA</item>
+		<item>Coloca el valor de byte (entero) del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.field = vA</item>
+		<item>Coloca el valor char (carácter) del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.field = vA</item>
+		<item>Coloca el valor corto (entero) del registro vA en el campo de instancia. La referencia a la clase que contiene este campo está en el registro vB.\nvB.field = vA</item>
 		<item>Lee un valor de un campo estático y lo coloca en el registro vAA. No se utiliza el registro que contiene la referencia a la clase que contiene este campo.</item>
 		<item>Lee un valor doble/largo de un campo estático y lo coloca en un par de registros vAA, vAA+1. No se utiliza el registro que contiene la referencia a la clase que contiene este campo.</item>
 		<item>Lee una referencia de objeto de un campo estático y la coloca en el registro vAA. No se utiliza el registro que contiene la referencia a la clase que contiene este campo.</item>
@@ -149,8 +375,8 @@
 		<item>Calcula vBB * vCC y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB * vCC</item>
 		<item>Calcula vBB/vCC y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB / vCC</item>
 		<item>Calcula vBB % vCC y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB % vCC</item>
-		<item>Calcula vBB y vCC (Y lógico) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB y vCC</item>
-		<item>Calcula vBB | vCC (OR lógico) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB | CCV</item>
+		<item>Calcula vBB y vCC (Y lógico) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB &amp; vCC</item>
+		<item>Calcula vBB | vCC (OR lógico) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB | vCC</item>
 		<item>Calcula vBB ^ vCC (OR exclusivo) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB ^vCC</item>
 		<item>Desplaza vBB hacia la izquierda el número de bits especificado por vCC y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB &lt;&lt; vCC</item>
 		<item>Desplaza vBB hacia la derecha según el número de bits especificado por vCC y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB >> vCC</item>
@@ -160,12 +386,12 @@
 		<item>Calcula (vBB, vBB+1) * (vCC, vCC+1) y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) * (vCC, vCC+1)</item>
 		<item>Calcula (vBB, vBB+1) / (vCC, vCC+1) y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) / (vCC, vCC+1)</item>
 		<item>Calcula (vBB, vBB+1) % (vCC, vCC+1) y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) % (vCC, vCC+1)</item>
-		<item>Calcula (vBB, vBB+1) y (vCC, vCC+1) (Y lógico) y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) y (vCC, vCC+1)</item>
+		<item>Calcula (vBB, vBB+1) y (vCC, vCC+1) (Y lógico) y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) &amp; (vCC, vCC+1)</item>
 		<item>Calcula (vBB, vBB+1) | (vCC, vCC+1) (OR lógico) y almacena el resultado en un par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) | (vCC, vCC+1)</item>
-		<item>Calcula (vBB, vBB+1) ^ (vCC, vCC+1) (AND exclusivo) y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
+		<item>Calcula (vBB, vBB+1) ^ (vCC, vCC+1) (OR exclusivo) y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) ^ (vCC, vCC+1)</item>
 		<item>Desplaza vBB, vBB+1 hacia la izquierda el número de bits especificado por vCC y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) &lt;&lt; vCC</item>
 		<item>Desplaza vBB, vBB+1 hacia la derecha según el número de bits especificado por vCC y almacena el resultado en el par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) >> vCC</item>
-		<item>Desplaza vBB, vBB+1 hacia la derecha sin conservar el signo por el número de bits especificado por vCC y almacena el resultado en un par de registros vAA, vA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
+		<item>Desplaza vBB, vBB+1 hacia la derecha sin conservar el signo por el número de bits especificado por vCC y almacena el resultado en un par de registros vAA, vAA+1. Todos los valores son largos (enteros).\n(vAA, vAA+1) = (vBB, vBB+1) >>> vCC</item>
 		<item>Calcula vBB + vCC y almacena el resultado en el registro vAA. Todos los valores son flotantes.\nvAA = vBB + vCC</item>
 		<item>Calcula vBB - vCC y almacena el resultado en el registro vAA. Todos los valores son flotantes.\nvAA = vBB - vCC</item>
 		<item>Calcula vBB * vCC y almacena el resultado en el registro vAA. Todos los valores son flotantes.\nvAA = vBB * vCC</item>
@@ -181,7 +407,7 @@
 		<item>Calcula vA * vB y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vA * vB</item>
 		<item>Calcula vA/vB y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vA / vB</item>
 		<item>Calcula vA % vB y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vA % vB</item>
-		<item>Calcula vA y vB (Y lógico) y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vA y vB</item>
+		<item>Calcula vA y vB (Y lógico) y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vA &amp; vB</item>
 		<item>Calcula vA | vB (OR lógico) y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vA | vB</item>
 		<item>Calcula vA ^ vB (OR exclusivo) y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vA ^vB</item>
 		<item>Desplaza vA hacia la izquierda el número de bits especificado por vB y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vA &lt;&lt; vB</item>
@@ -192,9 +418,9 @@
 		<item>Calcula (vA, vA+1) * (vB, vB+1) y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) * (vB, vB+1)</item>
 		<item>Calcula (vA, vA+1) / (vB, vB+1) y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) / (vB, vB+1)</item>
 		<item>Calcula (vA, vA+1) % (vB, vB+1) y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) % (vB, vB+1)</item>
-		<item>Calcula (vA, vA+1) y (vB, vB+1) (Y lógico) y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) y (vB, vB+1)</item>
+		<item>Calcula (vA, vA+1) y (vB, vB+1) (Y lógico) y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) &amp; (vB, vB+1)</item>
 		<item>Calcula (vA, vA+1) | (vB, vB+1) (OR lógico) y almacena el resultado en un par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) | (vB, vB+1)</item>
-		<item>Calcula (vA, vA+1) y (vB, vB+1) (OR exclusivo) y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
+		<item>Calcula (vA, vA+1) ^ (vB, vB+1) (OR exclusivo) y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) ^ (vB, vB+1)</item>
 		<item>Desplaza vA, vA+1 hacia la izquierda el número de bits especificado por vB y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) &lt;&lt; vB</item>
 		<item>Desplaza vA, vA+1 hacia la derecha el número de bits especificado por vB y almacena el resultado en el par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) >> vB</item>
 		<item>Desplaza vA, vA+1 hacia la derecha sin conservar el signo por el número de dígitos especificado por vB y almacena el resultado en un par de registros vA, vA+1. Todos los valores son largos (enteros).\n(vA, vA+1) = (vA, vA+1) >>> vB</item>
@@ -213,7 +439,7 @@
 		<item>Calcula vB * 0xFFFF y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vB * 0xFFFF</item>
 		<item>Calcula vB/0xFFFF y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vB / 0xFFFF</item>
 		<item>Calcula vB % 0xFFFF y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vB % 0xFFFF</item>
-		<item>Calcula vB y 0xFFFF (Y lógico) y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vB y 0xFFFF</item>
+		<item>Calcula vB y 0xFFFF (Y lógico) y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vB &amp; 0xFFFF</item>
 		<item>Calcula vB | 0xFFFF (OR lógico) y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vB | 0xFFFF</item>
 		<item>Calcula vB ^ 0xFFFF (OR exclusivo) y almacena el resultado en el registro vA. Todos los valores son enteros.\nvA = vB ^ 0xFFFF</item>
 		<item>Calcula vBB + 0xFF y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB + 0xFF</item>
@@ -221,7 +447,7 @@
 		<item>Calcula vBB * 0xFF y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB * 0xFF</item>
 		<item>Calcula vBB/0xFF y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB / 0xFF</item>
 		<item>Calcula vBB % 0xFF y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB % 0xFF</item>
-		<item>Calcula vBB y 0xFF (Y lógico) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB y 0xFF</item>
+		<item>Calcula vBB y 0xFF (Y lógico) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB &amp; 0xFF</item>
 		<item>Calcula vBB | 0xFF (OR lógico) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB | 0xFF</item>
 		<item>Calcula vBB ^ 0xFF (OR exclusivo) y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB ^ 0xFF</item>
 		<item>Desplaza vBB hacia la izquierda el número de bits especificado por 0xFF y almacena el resultado en el registro vAA. Todos los valores son enteros.\nvAA = vBB &lt;&lt; 0xFF</item>
@@ -234,11 +460,67 @@
 		<item>Coloca una referencia a un identificador de método en el registro vAA. Presente en archivos Dex desde la versión 039.</item>
 		<item>Coloca una referencia al prototipo del método en el registro vAA. Presente en archivos Dex desde la versión 039.</item>
 	</string-array>
-    <string-array name="jadx_sets">
+	<string-array name="years_or_days">
+		<item>años</item>
+		<item>días</item>
+	</string-array>
+	<string-array name="store_type">
+		<item>Integrado</item>
+		<item>Personalizado</item>
+	</string-array>
+	<string-array name="syntax_values">
+		<item>@string/disable_syntax</item>
+		<item>C++</item>
+		<item>CSS</item>
+		<item>Java</item>
+		<item>JavaScript</item>
+		<item>JSON</item>
+		<item>Objective-C</item>
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="aapts_version">
+		<item>SDK30</item>
+		<item>SDK33</item>
+		<item>SDK35</item>
+	</string-array>
+	<string-array name="aapt2_dump">
+		<item>badging</item>
+		<item>configurations</item>
+		<item>permissions</item>
+		<item>strings</item>
+		<item>resources</item>
+		<item>overlayable</item>
+	</string-array>
+	<string-array name="aapt2_dump_descr">
+		<item>Mostrar la información extraída del manifiesto del APK.</item>
+		<item>Mostrar cada configuración usada por un recurso en el APK.</item>
+		<item>Mostrar los permisos extraídos del manifiesto del APK.</item>
+		<item>Mostrar el contenido del grupo de cadenas de la tabla de recursos del APK.</item>
+		<item>Mostrar el contenido de la tabla de recursos del APK.</item>
+		<item>Mostrar los recursos &lt;overlayable> de un APK.</item>
+	</string-array>
+	<string-array name="app_theme">
+		<item>Claro</item>
+		<item>Oscuro</item>
+		<item>Negro</item>
+	</string-array>
+	<string-array name="app_theme_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+	<string-array name="jadx_sets">
 		<item>Respaldo</item>
 		<item>Deobfuscación</item>
 		<item>Escapar Unicode</item>
 		<item>Mostrar código inconsistente</item>
+	</string-array>
+	<string-array name="jadx_sets_keys">
+		<item>jadx_fallback</item>
+		<item>jadx_deobfuscation</item>
+		<item>jadx_unicode</item>
+		<item>jadx_inconsistent</item>
 	</string-array>
 	<string-array name="copy_variants">
 		<item>Renombrar</item>
@@ -250,6 +532,47 @@
 		<item>Izquierda</item>
 		<item>Derecha</item>
 	</string-array>
+	<string-array name="menu_pos_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="file_size">
+		<item>1 KiB = 1024 B</item>
+		<item>1 kB = 1000 B</item>
+	</string-array>
+	<string-array name="file_size_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
+	<string-array name="checksum_names">
+		<item>Todo en mayúsculas</item>
+		<item>Separar con dos puntos</item>
+	</string-array>
+	<string-array name="checksum_keys">
+		<item>checksum_upper</item>
+		<item>checksum_separate</item>
+	</string-array>
+	<string-array name="tooltips_names">
+		<item>Smali</item>
+		<item>XML</item>
+	</string-array>
+	<string-array name="tooltips_keys">
+		<item>tooltips_smali</item>
+		<item>tooltips_xml</item>
+	</string-array>
+	<string-array name="refresh_res">
+		<item>Añadir recursos nuevos (solo archivos)</item>
+		<item>Eliminar recursos faltantes</item>
+	</string-array>
+	<string-array name="charsets">
+		<item>UTF-8</item>
+		<item>UTF-16</item>
+		<item>UTF-16LE</item>
+		<item>UTF-16BE</item>
+		<item>US-ASCII</item>
+		<item>ISO-8859-1</item>
+		<item>CP1251</item>
+	</string-array>
 	<string-array name="sort">
 		<item>Nombre</item>
 		<item>Nombre inverso</item>
@@ -260,17 +583,44 @@
 		<item>Hora</item>
 		<item>Tiempo inverso</item>
 	</string-array>
+	<string-array name="color_var">
+		<item>Color HEX</item>
+		<item>Código Smali</item>
+		<item>A,R,G,B</item>
+	</string-array>
 	<string-array name="format">
 		<item>@string/jks</item>
 		<item>@string/pkcs12</item>
 		<item>@string/bks</item>
 		<item>@string/pk8</item>
 	</string-array>
+	<string-array name="keys">
+		<item>editorkey</item>
+		<item>media</item>
+		<item>platform</item>
+		<item>shared</item>
+		<item>testkey</item>
+	</string-array>
+	<string-array name="keys_hash">
+		<item>1817397831</item>
+		<item>3661058070</item>
+		<item>1463045784</item>
+		<item>2725691727</item>
+		<item>4152456470</item>
+	</string-array>
+	<string-array name="quantity_items">
+		<item>zero</item>
+		<item>one</item>
+		<item>two</item>
+		<item>few</item>
+		<item>many</item>
+		<item>other</item>
+	</string-array>
 	<string-array name="resDecodeMode">
 		<item>No descompilar</item>
 		<item>Descompilar al directorio principal</item>
 		<item>Descompilar en un directorio distinto</item>
-        <item>Try to merge packages</item>
+		<item>Intentar fusionar paquetes</item>
 	</string-array>
 	<string-array name="converter_items">
 		<item>Texto &lt;-> Base64</item>
@@ -282,28 +632,28 @@
 		<item>Texto &lt;-> SHA-256</item>
 		<item>Texto &lt;-> SHA-384</item>
 		<item>Texto &lt;-> SHA-512</item>
-		<item>Texto &lt;-> Array (UTF-8)</item>
-		<item>Texto &lt;-> Array (UTF-16)</item>
-		<item>Texto &lt;-> Array (UTF-16LE)</item>
-		<item>Texto &lt;-> Array (UTF-16BE)</item>
-		<item>Texto &lt;-> Array (US-ASCII)</item>
-		<item>Texto &lt;-> Array (ISO-8859-1)</item>
-		<item>Texto &lt;-> Array (CP1251)</item>
+		<item>Texto &lt;-> Matriz (UTF-8)</item>
+		<item>Texto &lt;-> Matriz (UTF-16)</item>
+		<item>Texto &lt;-> Matriz (UTF-16LE)</item>
+		<item>Texto &lt;-> Matriz (UTF-16BE)</item>
+		<item>Texto &lt;-> Matriz (US-ASCII)</item>
+		<item>Texto &lt;-> Matriz (ISO-8859-1)</item>
+		<item>Texto &lt;-> Matriz (CP1251)</item>
 		<item>Decimal &lt;-> Binario</item>
 		<item>Decimal &lt;-> Octal</item>
 		<item>Decimal &lt;-> Hex</item>
 		<item>Decimal &lt;-> Hex (0x0)</item>
 		<item>Decimal &lt;-> Hex (0x00000000)</item>
-		<item>Float &lt;-> Binary</item>
-		<item>Float &lt;-> Octal</item>
-		<item>Float &lt;-> Hex</item>
-		<item>Float &lt;-> Hex (0x0)</item>
-		<item>Float &lt;-> Hex (0x00000000)</item>
+		<item>Flotante &lt;-> Binario</item>
+		<item>Flotante &lt;-> Octal</item>
+		<item>Flotante &lt;-> Hex</item>
+		<item>Flotante &lt;-> Hex (0x0)</item>
+		<item>Flotante &lt;-> Hex (0x00000000)</item>
 		<item>Color &lt;-> Smali</item>
 		<item>Color &lt;-> Decimal</item>
 		<item>Color &lt;-> A,R,G,B</item>
-        <item>Date &lt;-> Milliseconds</item>
-		<item>Date &lt;-> Hex</item>
+		<item>Fecha &lt;-> Milisegundos</item>
+		<item>Fecha &lt;-> Hex</item>
 	</string-array>
 	<string-array name="installLocation">
 		<item>Sin definir</item>
@@ -311,12 +661,135 @@
 		<item>Memoria Interna</item>
 		<item>Memoria Externa</item>
 	</string-array>
+	<string-array name="algorithmsArray">
+		<item>MD5withRSA</item>
+		<item>SHA1withRSA</item>
+		<item>SHA224withRSA</item>
+		<item>SHA256withRSA</item>
+		<item>SHA384withRSA</item>
+		<item>SHA512withRSA</item>
+	</string-array>
+	<string-array name="entries_lang">
+		<item>Русский</item>
+		<item>Українська</item>
+		<item>English</item>
+		<item>Ελληνικά</item>
+		<item>Français</item>
+		<item>Deutsch</item>
+		<item>Lituania</item>
+		<item>Italiano</item>
+		<item>Polski</item>
+		<item>မြန်မာ</item>
+		<item>中文（简体）</item>
+		<item>中文（繁體）</item>
+		<item>Português</item>
+		<item>Română</item>
+		<item>Türkçe</item>
+		<item>Čeština</item>
+		<item>Việt Nam</item>
+		<item>Български</item>
+		<item>فارسی</item>
+		<item>عربي</item>
+		<item>Shqip</item>
+		<item>한국어</item>
+		<item>Español</item>
+		<item>Bahasa Indonesia</item>
+		<item>עברית</item>
+		<item>Magyar</item>
+		<item>O\'zbek tili</item>
+		<item>日本語</item>
+	</string-array>
+	<string-array name="values_lang">
+		<item>ru</item>
+		<item>uk</item>
+		<item>en</item>
+		<item>el</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>lt</item>
+		<item>it</item>
+		<item>pl</item>
+		<item>my</item>
+		<item>zh</item>
+		<item>zh-rTW</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>tr</item>
+		<item>cs</item>
+		<item>vi</item>
+		<item>bg</item>
+		<item>fa</item>
+		<item>ar</item>
+		<item>sq</item>
+		<item>ko</item>
+		<item>es</item>
+		<item>in</item>
+		<item>he</item>
+		<item>hu</item>
+		<item>uz</item>
+		<item>ja</item>
+	</string-array>
+	<string-array name="date_variants">
+		<item>yyyy/MM/dd HH:mm</item>
+		<item>dd/MM/yyyy HH:mm</item>
+		<item>HH:mm yyyy/MM/dd</item>
+		<item>HH:mm dd/MM/yyyy</item>
+		<item>yy/MM/dd HH:mm</item>
+		<item>dd/MM/yy HH:mm</item>
+		<item>HH:mm yy/MM/dd</item>
+		<item>HH:mm dd/MM/yy</item>
+		<item>yyyy.MM.dd HH:mm</item>
+		<item>dd.MM.yyyy HH:mm</item>
+		<item>HH:mm yyyy.MM.dd</item>
+		<item>HH:mm dd.MM.yyyy</item>
+		<item>yy.MM.dd HH:mm</item>
+		<item>dd.MM.yy HH:mm</item>
+		<item>HH:mm yy.MM.dd</item>
+		<item>HH:mm dd.MM.yy</item>
+		<item>yyyy-MM-dd HH:mm</item>
+		<item>dd-MM-yyyy HH:mm</item>
+		<item>HH:mm yyyy-MM-dd</item>
+		<item>HH:mm dd-MM-yyyy</item>
+		<item>yy-MM-dd HH:mm</item>
+		<item>dd-MM-yy HH:mm</item>
+		<item>HH:mm yy-MM-dd</item>
+		<item>HH:mm dd-MM-yy</item>
+	</string-array>
+	<string-array name="xml_format_variants">
+		<item>Predeterminado</item>
+		<item>Apktool</item>
+		<item>Android Studio</item>
+		<item>Truco simple</item>
+	</string-array>
+	<string-array name="xml_format_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+	<string-array name="orientation_variants">
+		<item>Predeterminado</item>
+		<item>Horizontal</item>
+		<item>Vertical</item>
+	</string-array>
+	<string-array name="orientation_values">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+	</string-array>
 	<string-array name="auto_save_variants">
 		<item>Desactivado</item>
 		<item>15 segundos</item>
 		<item>30 segundos</item>
 		<item>1 minuto</item>
 		<item>5 minutos</item>
+	</string-array>
+	<string-array name="auto_save_values">
+		<item>0</item>
+		<item>15</item>
+		<item>30</item>
+		<item>60</item>
+		<item>300</item>
 	</string-array>
 	<string-array name="to_vector_values">
 		<item>Imagen adaptada (calidad inferior)</item>
@@ -329,9 +802,25 @@
 		<item>Historial</item>
 		<item>Diccionarios</item>
 	</string-array>
+	<string-array name="split_dex_items">
+		<item>por número de métodos/campos</item>
+		<item>en partes iguales</item>
+	</string-array>
+	<string-array name="ds_display_items">
+		<item>Fecha primero</item>
+		<item>Tamaño primero</item>
+	</string-array>
+	<string-array name="ds_display_values">
+		<item>0</item>
+		<item>1</item>
+	</string-array>
 	<string-array name="editor_themes">
 		<item>Predeterminado</item>
 		<item>Nuevo</item>
+	</string-array>
+	<string-array name="editor_themes_values">
+		<item>default</item>
+		<item>new</item>
 	</string-array>
 	<string-array name="bing_translator_codes">
 		<item>auto-detect</item>
@@ -427,95 +916,95 @@
 	</string-array>
 	<string-array name="bing_translator_names">
 		<item>Automático</item>
-		<item>Azerbaijani (Latin)</item>
-		<item>Albanian</item>
-		<item>English</item>
-		<item>Arabic</item>
-		<item>Armenian</item>
-		<item>Afrikaans</item>
-		<item>Bengali</item>
-		<item>Bulgarian</item>
-		<item>Bosnian</item>
-		<item>Welsh</item>
-		<item>Hungarian</item>
-		<item>Vietnamese</item>
-		<item>Haitian Creole</item>
-		<item>Dutch</item>
-		<item>Greek</item>
-		<item>Gujarati</item>
-		<item>Danish</item>
-		<item>Hebrew</item>
-		<item>Indonesian</item>
-		<item>Irish</item>
-		<item>Icelandic</item>
-		<item>Spanish</item>
-		<item>Italian</item>
-		<item>Kazakh</item>
-		<item>Kannada</item>
-		<item>Cantonese Traditional</item>
-		<item>Catalan</item>
-		<item>Keretarian Otomi</item>
-		<item>Traditional Chinese</item>
-		<item>Chinese Simplified</item>
-		<item>Korean</item>
-		<item>Latvian</item>
-		<item>Lithuanian</item>
-		<item>Malagasy</item>
-		<item>Malay</item>
+		<item>Azerbaiyano (latín)</item>
+		<item>Albanés</item>
+		<item>Inglés</item>
+		<item>Árabe</item>
+		<item>Armenio</item>
+		<item>Afrikáans</item>
+		<item>Bengalí</item>
+		<item>Búlgaro</item>
+		<item>Bosnio</item>
+		<item>Galés</item>
+		<item>Húngaro</item>
+		<item>Vietnamita</item>
+		<item>Criollo haitiano</item>
+		<item>Neerlandés</item>
+		<item>Griego</item>
+		<item>Guyaratí</item>
+		<item>Danés</item>
+		<item>Hebreo</item>
+		<item>Indonesio</item>
+		<item>Irlandés</item>
+		<item>Islandés</item>
+		<item>Español</item>
+		<item>Italiano</item>
+		<item>Kazajo</item>
+		<item>Canarés</item>
+		<item>Cantonés tradicional</item>
+		<item>Catalán</item>
+		<item>Otomí de Querétaro</item>
+		<item>Chino tradicional</item>
+		<item>Chino simplificado</item>
+		<item>Coreano</item>
+		<item>Letón</item>
+		<item>Lituano</item>
+		<item>Malgache</item>
+		<item>Malayo</item>
 		<item>Malayalam</item>
-		<item>Maltese</item>
-		<item>Maori</item>
-		<item>Marathi</item>
-		<item>German</item>
-		<item>Nepali</item>
-		<item>Norwegian</item>
+		<item>Maltés</item>
+		<item>Maorí</item>
+		<item>Maratí</item>
+		<item>Alemán</item>
+		<item>Nepalí</item>
+		<item>Noruego</item>
 		<item>Oriya</item>
-		<item>Punjabi</item>
-		<item>Persian</item>
-		<item>Polish</item>
-		<item>Portuguese (Brazil)</item>
-		<item>Portuguese (Portugal)</item>
-		<item>Romanian</item>
-		<item>Russian</item>
-		<item>Samoa</item>
-		<item>Serbian (Cyrillic)</item>
-		<item>Serbian (Latin)</item>
-		<item>Slovak</item>
-		<item>Slovenian</item>
-		<item>Swahili</item>
-		<item>Tahiti</item>
-		<item>Thai</item>
+		<item>Panyabí</item>
+		<item>Persa</item>
+		<item>Polaco</item>
+		<item>Portugués (Brasil)</item>
+		<item>Portugués (Portugal)</item>
+		<item>Rumano</item>
+		<item>Ruso</item>
+		<item>Samoano</item>
+		<item>Serbio (cirílico)</item>
+		<item>Serbio (latín)</item>
+		<item>Eslovaco</item>
+		<item>Esloveno</item>
+		<item>Suajili</item>
+		<item>Tahitiano</item>
+		<item>Tailandés</item>
 		<item>Tamil</item>
 		<item>Telugu</item>
-		<item>Tonga</item>
-		<item>Turkish</item>
-		<item>Ukrainian</item>
+		<item>Tongano</item>
+		<item>Turco</item>
+		<item>Ucraniano</item>
 		<item>Urdu</item>
-		<item>Fiji</item>
+		<item>Fiyiano</item>
 		<item>Filipino</item>
-		<item>Finnish</item>
-		<item>French</item>
+		<item>Finés</item>
+		<item>Francés</item>
 		<item>Hindi</item>
-		<item>Hmong Dhow</item>
-		<item>Croatian</item>
-		<item>Czech</item>
-		<item>Swedish</item>
-		<item>Estonian</item>
-		<item>Yucatec Maya</item>
-		<item>Japanese</item>
-		<item>Amharic</item>
-		<item>Assamese</item>
-		<item>Dari</item>
-		<item>French (Canada)</item>
+		<item>Hmong</item>
+		<item>Croata</item>
+		<item>Checo</item>
+		<item>Sueco</item>
+		<item>Estonio</item>
+		<item>Maya yucateco</item>
+		<item>Japonés</item>
+		<item>Amárico</item>
+		<item>Asamés</item>
+		<item>Darí</item>
+		<item>Francés (Canadá)</item>
 		<item>Inuktitut</item>
-		<item>Khmer</item>
-		<item>Klingon (Latin)</item>
-		<item>Kurdish (Central)</item>
-		<item>Kurdish (Northern)</item>
+		<item>Jemer</item>
+		<item>Klingon (latín)</item>
+		<item>Kurdo (central)</item>
+		<item>Kurdo (norteño)</item>
 		<item>Lao</item>
-		<item>Myanmar (Burmese)</item>
-		<item>Pashto</item>
-		<item>Tigrinya</item>
+		<item>Birmano</item>
+		<item>Pastún</item>
+		<item>Tigriña</item>
 	</string-array>
 	<string-array name="google_translator_codes">
 		<item>auto</item>
@@ -632,115 +1121,115 @@
 	</string-array>
 	<string-array name="google_translator_names">
 		<item>Automático</item>
-		<item>Afrikaans</item>
-		<item>Albanian</item>
-		<item>Amharic</item>
-		<item>Arabic</item>
-		<item>Armenian</item>
-		<item>Azerbaijani</item>
-		<item>Basque</item>
-		<item>Belarusian</item>
-		<item>Bengali</item>
-		<item>Bosnian</item>
-		<item>Bulgarian</item>
-		<item>Catalan</item>
+		<item>Afrikáans</item>
+		<item>Albanés</item>
+		<item>Amárico</item>
+		<item>Árabe</item>
+		<item>Armenio</item>
+		<item>Azerbaiyano</item>
+		<item>Euskera</item>
+		<item>Bielorruso</item>
+		<item>Bengalí</item>
+		<item>Bosnio</item>
+		<item>Búlgaro</item>
+		<item>Catalán</item>
 		<item>Cebuano</item>
 		<item>Chichewa</item>
-		<item>Chinese Simplified</item>
+		<item>Chino simplificado</item>
 		<item>Chinese Traditional</item>
-		<item>Corsican</item>
-		<item>Croatian</item>
-		<item>Czech</item>
-		<item>Danish</item>
-		<item>Dutch</item>
-		<item>English</item>
+		<item>Corso</item>
+		<item>Croata</item>
+		<item>Checo</item>
+		<item>Danés</item>
+		<item>Neerlandés</item>
+		<item>Inglés</item>
 		<item>Esperanto</item>
-		<item>Estonian</item>
+		<item>Estonio</item>
 		<item>Filipino</item>
-		<item>Finnish</item>
-		<item>French</item>
-		<item>Frisian</item>
-		<item>Galician</item>
-		<item>Georgian</item>
-		<item>German</item>
-		<item>Greek</item>
-		<item>Gujarati</item>
-		<item>Haitian Creole</item>
+		<item>Finés</item>
+		<item>Francés</item>
+		<item>Frisón</item>
+		<item>Gallego</item>
+		<item>Georgiano</item>
+		<item>Alemán</item>
+		<item>Griego</item>
+		<item>Guyaratí</item>
+		<item>Criollo haitiano</item>
 		<item>Hausa</item>
-		<item>Hawaiian</item>
-		<item>Hebrew</item>
+		<item>Hawaiano</item>
+		<item>Hebreo</item>
 		<item>Hindi</item>
 		<item>Hmong</item>
-		<item>Hungarian</item>
-		<item>Icelandic</item>
+		<item>Húngaro</item>
+		<item>Islandés</item>
 		<item>Igbo</item>
-		<item>Indonesian</item>
-		<item>Irish</item>
-		<item>Italian</item>
-		<item>Japanese</item>
-		<item>Javanese</item>
-		<item>Kannada</item>
-		<item>Kazakh</item>
-		<item>Khmer</item>
-		<item>Korean</item>
-		<item>Kurdish (Kurmanji)</item>
-		<item>Kyrgyz</item>
+		<item>Indonesio</item>
+		<item>Irlandés</item>
+		<item>Italiano</item>
+		<item>Japonés</item>
+		<item>Javanés</item>
+		<item>Canarés</item>
+		<item>Kazajo</item>
+		<item>Jemer</item>
+		<item>Coreano</item>
+		<item>Kurdo (kurmanji)</item>
+		<item>Kirguís</item>
 		<item>Lao</item>
-		<item>Latin</item>
-		<item>Latvian</item>
-		<item>Lithuanian</item>
-		<item>Luxembourgish</item>
-		<item>Macedonian</item>
-		<item>Malagasy</item>
-		<item>Malay</item>
+		<item>Latín</item>
+		<item>Letón</item>
+		<item>Lituano</item>
+		<item>Luxemburgués</item>
+		<item>Macedonio</item>
+		<item>Malgache</item>
+		<item>Malayo</item>
 		<item>Malayalam</item>
-		<item>Maltese</item>
-		<item>Maori</item>
-		<item>Marathi</item>
-		<item>Mongolian</item>
-		<item>Myanmar (Burmese)</item>
-		<item>Nepali</item>
-		<item>Norwegian</item>
-		<item>Pashto</item>
-		<item>Persian</item>
-		<item>Polish</item>
-		<item>Portuguese</item>
-		<item>Punjabi</item>
-		<item>Romanian</item>
-		<item>Russian</item>
-		<item>Samoan</item>
-		<item>Scots Gaelic</item>
-		<item>Serbian</item>
-		<item>Sesotho</item>
+		<item>Maltés</item>
+		<item>Maorí</item>
+		<item>Maratí</item>
+		<item>Mongol</item>
+		<item>Birmano</item>
+		<item>Nepalí</item>
+		<item>Noruego</item>
+		<item>Pastún</item>
+		<item>Persa</item>
+		<item>Polaco</item>
+		<item>Portugués</item>
+		<item>Panyabí</item>
+		<item>Rumano</item>
+		<item>Ruso</item>
+		<item>Samoano</item>
+		<item>Gaélico escocés</item>
+		<item>Serbio</item>
+		<item>Sesoto</item>
 		<item>Shona</item>
 		<item>Sindhi</item>
-		<item>Sinhala</item>
-		<item>Slovak</item>
-		<item>Slovenian</item>
-		<item>Somali</item>
-		<item>Spanish</item>
-		<item>Sundanese</item>
-		<item>Swahili</item>
-		<item>Swedish</item>
-		<item>Tajik</item>
+		<item>Cingalés</item>
+		<item>Eslovaco</item>
+		<item>Esloveno</item>
+		<item>Somalí</item>
+		<item>Español</item>
+		<item>Sundanés</item>
+		<item>Suajili</item>
+		<item>Sueco</item>
+		<item>Tayiko</item>
 		<item>Tamil</item>
 		<item>Telugu</item>
-		<item>Thai</item>
-		<item>Turkish</item>
-		<item>Ukrainian</item>
+		<item>Tailandés</item>
+		<item>Turco</item>
+		<item>Ucraniano</item>
 		<item>Urdu</item>
-		<item>Uzbek</item>
-		<item>Vietnamese</item>
-		<item>Welsh</item>
+		<item>Uzbeko</item>
+		<item>Vietnamita</item>
+		<item>Galés</item>
 		<item>Xhosa</item>
-		<item>Yiddish</item>
+		<item>Yidis</item>
 		<item>Yoruba</item>
-		<item>Zulu</item>
+		<item>Zulú</item>
 		<item>Oriya</item>
-		<item>Punjabi</item>
-		<item>Rwanda</item>
-		<item>Tatar</item>
-		<item>Turkmen</item>
+		<item>Panyabí</item>
+		<item>Kinyarwanda</item>
+		<item>Tártaro</item>
+		<item>Turcomano</item>
 		<item>Uigur</item>
 	</string-array>
 	<string-array name="yandex_translator_codes">
@@ -847,104 +1336,170 @@
 	</string-array>
 	<string-array name="yandex_translator_names">
 		<item>Automático</item>
-		<item>Afrikaans</item>
-		<item>Albanian</item>
-		<item>Amharic</item>
-		<item>Arabic</item>
-		<item>Armenian</item>
-		<item>Azerbaijani</item>
-		<item>Bashkir</item>
-		<item>Basque</item>
-		<item>Belarusian</item>
-		<item>Bengali</item>
-		<item>Bosnian</item>
-		<item>Bulgarian</item>
-		<item>Burmese</item>
-		<item>Catalan</item>
+		<item>Afrikáans</item>
+		<item>Albanés</item>
+		<item>Amárico</item>
+		<item>Árabe</item>
+		<item>Armenio</item>
+		<item>Azerbaiyano</item>
+		<item>Baskir</item>
+		<item>Euskera</item>
+		<item>Bielorruso</item>
+		<item>Bengalí</item>
+		<item>Bosnio</item>
+		<item>Búlgaro</item>
+		<item>Birmano</item>
+		<item>Catalán</item>
 		<item>Cebuano</item>
-		<item>Chinese</item>
-		<item>Chuvash</item>
-		<item>Croatian</item>
-		<item>Czech</item>
-		<item>Danish</item>
-		<item>Dutch</item>
-		<item>Elvish (Sindarin)</item>
+		<item>Chino</item>
+		<item>Chuvasio</item>
+		<item>Croata</item>
+		<item>Checo</item>
+		<item>Danés</item>
+		<item>Neerlandés</item>
+		<item>Élfico (sindarin)</item>
 		<item>Emoji</item>
-		<item>English</item>
+		<item>Inglés</item>
 		<item>Esperanto</item>
-		<item>Estonian</item>
-		<item>Finnish</item>
-		<item>French</item>
-		<item>Galician</item>
-		<item>Georgian</item>
-		<item>German</item>
-		<item>Greek</item>
-		<item>Gujarati</item>
-		<item>Haitian</item>
-		<item>Hebrew</item>
-		<item>Hill Mari</item>
+		<item>Estonio</item>
+		<item>Finés</item>
+		<item>Francés</item>
+		<item>Gallego</item>
+		<item>Georgiano</item>
+		<item>Alemán</item>
+		<item>Griego</item>
+		<item>Guyaratí</item>
+		<item>Haitiano</item>
+		<item>Hebreo</item>
+		<item>Mari de las colinas</item>
 		<item>Hindi</item>
-		<item>Hungarian</item>
-		<item>Icelandic</item>
-		<item>Indonesian</item>
-		<item>Irish</item>
-		<item>Italian</item>
-		<item>Japanese</item>
-		<item>Javanese</item>
-		<item>Kannada</item>
-		<item>Kazakh</item>
-		<item>Kazakh (Latin)</item>
-		<item>Khmer</item>
-		<item>Korean</item>
-		<item>Kyrgyz</item>
+		<item>Húngaro</item>
+		<item>Islandés</item>
+		<item>Indonesio</item>
+		<item>Irlandés</item>
+		<item>Italiano</item>
+		<item>Japonés</item>
+		<item>Javanés</item>
+		<item>Canarés</item>
+		<item>Kazajo</item>
+		<item>Kazajo (latín)</item>
+		<item>Jemer</item>
+		<item>Coreano</item>
+		<item>Kirguís</item>
 		<item>Lao</item>
-		<item>Latin</item>
-		<item>Latvian</item>
-		<item>Lithuanian</item>
-		<item>Luxembourgish</item>
-		<item>Macedonian</item>
-		<item>Malagasy</item>
-		<item>Malay</item>
+		<item>Latín</item>
+		<item>Letón</item>
+		<item>Lituano</item>
+		<item>Luxemburgués</item>
+		<item>Macedonio</item>
+		<item>Malgache</item>
+		<item>Malayo</item>
 		<item>Malayalam</item>
-		<item>Maltese</item>
-		<item>Maori</item>
-		<item>Marathi</item>
+		<item>Maltés</item>
+		<item>Maorí</item>
+		<item>Maratí</item>
 		<item>Mari</item>
-		<item>Mongolian</item>
-		<item>Nepali</item>
-		<item>Norwegian</item>
+		<item>Mongol</item>
+		<item>Nepalí</item>
+		<item>Noruego</item>
 		<item>Papiamento</item>
-		<item>Persian</item>
-		<item>Polish</item>
-		<item>Portuguese</item>
-		<item>Punjabi</item>
-		<item>Romanian</item>
-		<item>Russian</item>
-		<item>Scottish Gaelic</item>
-		<item>Serbian</item>
-		<item>Sinhalese</item>
-		<item>Slovak</item>
-		<item>Slovenian</item>
-		<item>Spanish</item>
-		<item>Sundanese</item>
-		<item>Swahili</item>
-		<item>Swedish</item>
-		<item>Tagalog</item>
-		<item>Tajik</item>
+		<item>Persa</item>
+		<item>Polaco</item>
+		<item>Portugués</item>
+		<item>Panyabí</item>
+		<item>Rumano</item>
+		<item>Ruso</item>
+		<item>Gaélico escocés</item>
+		<item>Serbio</item>
+		<item>Cingalés</item>
+		<item>Eslovaco</item>
+		<item>Esloveno</item>
+		<item>Español</item>
+		<item>Sundanés</item>
+		<item>Suajili</item>
+		<item>Sueco</item>
+		<item>Tagalo</item>
+		<item>Tayiko</item>
 		<item>Tamil</item>
-		<item>Tatar</item>
+		<item>Tártaro</item>
 		<item>Telugu</item>
-		<item>Thai</item>
-		<item>Turkish</item>
+		<item>Tailandés</item>
+		<item>Turco</item>
 		<item>Udmurt</item>
-		<item>Ukrainian</item>
+		<item>Ucraniano</item>
 		<item>Urdu</item>
-		<item>Uzbek</item>
-		<item>Uzbek (Cyrillic)</item>
-		<item>Vietnamese</item>
-		<item>Welsh</item>
+		<item>Uzbeko</item>
+		<item>Uzbeko (cirílico)</item>
+		<item>Vietnamita</item>
+		<item>Galés</item>
 		<item>Xhosa</item>
-		<item>Yakut</item>
-		<item>Yiddish</item>
+		<item>Yakuto</item>
+		<item>Yidis</item>
+	</string-array>
+	<string-array name="deepl_translator_codes">
+		<item>auto</item>
+		<item>ar</item>
+		<item>bg</item>
+		<item>zh</item>
+		<item>cs</item>
+		<item>da</item>
+		<item>nl</item>
+		<item>en</item>
+		<item>et</item>
+		<item>fi</item>
+		<item>fr</item>
+		<item>de</item>
+		<item>el</item>
+		<item>hu</item>
+		<item>id</item>
+		<item>it</item>
+		<item>ja</item>
+		<item>ko</item>
+		<item>lv</item>
+		<item>lt</item>
+		<item>nb</item>
+		<item>pl</item>
+		<item>pt</item>
+		<item>ro</item>
+		<item>ru</item>
+		<item>sk</item>
+		<item>sl</item>
+		<item>es</item>
+		<item>sv</item>
+		<item>tr</item>
+		<item>uk</item>
+	</string-array>
+	<string-array name="deepl_translator_names">
+		<item>Auto</item>
+		<item>Árabe</item>
+		<item>Búlgaro</item>
+		<item>Chino</item>
+		<item>Checo</item>
+		<item>Danés</item>
+		<item>Neerlandés</item>
+		<item>Inglés</item>
+		<item>Estonio</item>
+		<item>Finés</item>
+		<item>Francés</item>
+		<item>Alemán</item>
+		<item>Griego</item>
+		<item>Húngaro</item>
+		<item>Indonesio</item>
+		<item>Italiano</item>
+		<item>Japonés</item>
+		<item>Coreano</item>
+		<item>Letón</item>
+		<item>Lituano</item>
+		<item>Noruego (Bokmål)</item>
+		<item>Polaco</item>
+		<item>Portugués</item>
+		<item>Rumano</item>
+		<item>Ruso</item>
+		<item>Eslovaco</item>
+		<item>Esloveno</item>
+		<item>Español</item>
+		<item>Sueco</item>
+		<item>Turco</item>
+		<item>Ucraniano</item>
 	</string-array>
 </resources>
