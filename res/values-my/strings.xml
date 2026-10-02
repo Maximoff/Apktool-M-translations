@@ -188,7 +188,7 @@
 	<string name="verify_log_keySize">%1$s Key size (bits): %2$s.</string>
 	<string name="verify_log_key_algorithm">%1$s Key algorithm: %2$s.</string>
 	<string name="verify_jar">JAR signer %1$s: %2$s</string>
-	<string name="date">Vilidity Date:</string>
+	<string name="date">Validity Date:</string>
 	<string name="common_name">ယျေဘူယျအနညိ:</string>
 	<string name="organization_unit">Organization ယူနစ်@</string>
 	<string name="organization_name">Organization အမည်:</string>

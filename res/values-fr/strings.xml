@@ -528,7 +528,7 @@
 	<string name="verify_log_keySize">%1$s Taille de la clé (bits) : %2$s.</string>
 	<string name="verify_log_key_algorithm">%1$s Algorithme clé : %2$s.</string>
 	<string name="verify_jar">Signataire du JAR %1$s : %2$s</string>
-	<string name="date">Date de vilidité :</string>
+	<string name="date">Date de validité :</string>
 	<string name="vdate_info">La période de validité doit être en ANNÉES !</string>
 	<string name="common_name">Nom commun:</string>
 	<string name="organization_unit">Unité d\'organisation:</string>

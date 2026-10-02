@@ -262,7 +262,7 @@
 	<string name="verify_log_keySize">%1$s Velikost Klíče(v bitech): %2$s.</string>
 	<string name="verify_log_key_algorithm">%1$s Key algorithm: %2$s.</string>
 	<string name="verify_jar">JAR podpisovač %1$s: %2$s</string>
-	<string name="date">Vilidity Date:</string>
+	<string name="date">Validity Date:</string>
 	<string name="common_name">Běžný název:</string>
 	<string name="organization_unit">Organizační jednotka@</string>
 	<string name="organization_name">Název organizace:</string>
