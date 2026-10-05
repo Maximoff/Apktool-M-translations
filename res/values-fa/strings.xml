@@ -30,7 +30,6 @@
 	<string name="split_arch">تقسیم بر اساس معماری</string>
 	<string name="sets_nf">هیچ مجموعه کتابخانه ای یافت نشد!</string>
 	<string name="enter_path">وارد کردن مسیر</string>
-	<string name="ultra_target_api">ءAPI هدف را تغییر ندهید</string>
 	<string name="dont_change">تغییر نده</string>
 	<string name="error_try_again">خطا، لطفاً دوباره امتحان کنید</string>
 	<string name="miui_warn_title">بهینه ساز MIUI شناسایی شد!</string>
