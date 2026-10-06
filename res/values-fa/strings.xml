@@ -30,11 +30,12 @@
 	<string name="split_arch">تقسیم بر اساس معماری</string>
 	<string name="sets_nf">هیچ مجموعه کتابخانه ای یافت نشد!</string>
 	<string name="enter_path">وارد کردن مسیر</string>
-	<string name="ultra_target_api">ءAPI هدف را تغییر ندهید</string>
 	<string name="dont_change">تغییر نده</string>
 	<string name="error_try_again">خطا، لطفاً دوباره امتحان کنید</string>
 	<string name="miui_warn_title">بهینه ساز MIUI شناسایی شد!</string>
 	<string name="miui_warn_message">به نظر می رسد شما MIUI دارید! توصیه می کنم تنظیمات توسعه دهنده را باز کنید و بهینه سازی MIUI را غیرفعال کنید. اگر این کار را انجام ندهید، ممکن است با مشکل در عملکرد برنامه، خطا و خرابی مواجه شوید. لطفاً اگر این پیام را خواندید و به توصیه های من عمل نکردید در مورد خطاهای برنامه برای من ننویسید!</string>
+	<string name="base64_sign">‏Base64 امضا: %s</string>
+    <string name="base64_cert">‏Base64 گواهی: %s</string>
 	<string name="topmenu_toast">اکنون می دانید که یک منو در اینجا وجود دارد!</string>
 	<string name="add_media">اضافه کردن به رسانه ها</string>
 	<string name="wait_bg">منتظر پایان فرآیند اجرا باشید!</string>
@@ -44,11 +45,14 @@
 	<string name="cloning">شبیه سازی</string>
 	<string name="cloning_result">نام قدیمی: %1$s\nنام جدید: %2$s\nزمان سپری شده: %3$s</string>
 	<string name="originalf">اصلی: %s</string>
+	<string name="mgithub">گیت‌هاب</string>
 	<string name="soeditor">ویرایشگر کتابخانه</string>
 	<string name="packages">بسته های منابع</string>
 	<string name="package_info">%1$s (شناسه بسته: %2$d، کل منابع: %3$d)</string>
 	<string name="package_info2">%1$s (شناسه بسته: %2$d، کل منابع: %3$d، بسته اصلی)</string>
 	<string name="file_changed">فایل تغییر کرد، تغییرات ذخیره شود؟</string>
+	   <string name="editor_state_str">خ:%1$d[%2$d]، ن:%3$d[%4$d]، %5$s</string>
+    <string name="editor_state_str2">خ:%1$d[%2$d]، ن:%3$d[%4$d]، ا:%5$d[%6$d-%7$d]، %8$s</string>
 	<string name="so_prop">فایل: %1$s\n اندازه: %2$s\nنوع: %3$s\nکل خطوط: %4$s\nخطوط اصلاح شده: %5$s</string>
 	<string name="so_info">برای ویرایش موفق، طول خط قبل از ویرایش باید با طول خط بعد از ویرایش مطابقت داشته باشد. اگر طول مطابقت نداشته باشد، چنین خطوطی با رنگ قرمز برجسته می شوند. سعی کنید از ویرایش خطوط با نویسه های عجیب و غریب خودداری کنید! حتی اگر همه شرایط رعایت شود، هیچ تضمین ۱۰۰ درصدی وجود ندارد که کتابخانه پس از ویرایش عملیاتی/قابل اجرا بماند. پشتیبان گیری را فراموش نکنید!</string>
 	<string name="axml_prop">فایل: %1$s\nاندازه: %2$s\nکل خطوط: %3$s\nخطوط اصلاح شده: %4$s</string>
@@ -61,6 +65,7 @@
 	<string name="down">پایین</string>
 	<string name="threads">رشته ها</string>
 	<string name="select_rows">انتخاب ردیف ها</string>
+	<string name="ultra_target_api">‏API هدف تغییر داده نشود</string>
 	<string name="start">ابتدا</string>
 	<string name="end">انتها</string>
 	<string name="framework">چارچوب</string>
@@ -104,7 +109,26 @@
 	<string name="styled">رشته سبک دار</string>
 	<string name="app_crashed">خطایی در برنامه وجود داشت!  برای مشاهده گزارش لمس کنید</string>
 	<string name="max_value">حداکثر مقدار</string>
+	<string name="mode">حالت</string>
+    <string name="play_row">پخش در ردیف</string>
+    <string name="server_start">راه‌اندازی کارگزار HTTP/WebDav</string>
+    <string name="local_server">کارگزار محلی</string>
+    <string name="server_label">کارگزار HTTP/WebDav</string>
+    <string name="server_starting">در حال راه‌اندازی کارگزار...</string>
+    <string name="server_running">کارگزار در حال اجرا است</string>
+    <string name="server_running_f">کارگزار راه‌اندازی شد: %s</string>
+    <string name="server_already_running">کارگزار از قبل در حال اجرا است!</string>
+    <string name="server_stopped">کارگزار متوقف شد</string>
+    <string name="stop">توقف</string>
+    <string name="pathf">مسیر: %s</string>
+    <string name="color_pipette">نیچه رنگ</string>
+    <string name="pipette_info">شما می‌توانید با فشار دادن انگشت خود در داخل ذره‌بین، مقیاس را تغییر دهید.
+تنظیم دقیق با حرکت دادن انگشت روی ذره‌بین انجام می‌شود.
+یک ضربه کوتاه روی نیمه بالایی حلقه رنگ، رنگ را رونوشت می‌کند، و ضربه طولانی قالب رنگ را تغییر می‌دهد.
+یک ضربه کوتاه روی نیمه پایینی حلقه، ذره‌بین را می‌بندد، و ضربه طولانی، بزرگنمایی را به حالت اولیه برمی‌گرداند.</string>
+    <string name="permission_needle">برای استفاده از این قابلیت مجوز باید اعطا شود!</string>
 	<string name="sign_ver_info">نسخه های امضا برای نسخه های اندروید:\nنسخه ۱ - اولین گزینه امضا، تنها تا اندروید ۷.۰؛\nنسخه ۲ - به اندروید ۷.۰ اضافه شد؛\n\nنسخه امضا باید بر اساس حداقل/هدف نسخه اندروید مورد نیاز برای برنامه استفاده شود. اگر نسخه هدف ۳۰+ (اندروید ۱۱ و بالاتر) باشد، امضای نسخه ۲ لازم است.\n\nاگر جعبه بررسی \"ذخیره\" را علامت نزنید، طرح‌های انتخابی فقط این بار استفاده خواهند شد.</string>
+	<string name="resources_found">در مجموع %d منبع یافت شد</string>
 	<string name="sign_ver_info2">نسخه های امضا برای نسخه های اندروید:\nنسخه ۱ – اولین گزینه امضا، تنها تا اندروید ۷.۰؛\nنسخه ۲ – به اندروید ۷.۰ اضافه شد؛\nنسخه ۳ – به اندروید ۹.۰ اضافه شد؛\nنسخه ۴ – به اندروید ۱۱ اضافه شد؛\n\nنسخه امضا باید بر اساس حداقل/هدف نسخه اندروید مورد نیاز برای برنامه استفاده شود. اگر نسخه هدف ۳۰+ (اندروید ۱۱ و بالاتر) باشد، امضای نسخه ۲ لازم است. نسخه ۲ یا نسخه ۳ باید همراه با امضای نسخه ۴ استفاده شود. نسخه ۴ در حال حاضر تقریباً هرگز استفاده نمی شود؛\n\nاگر جعبه بررسی \"ذخیره\" را علامت نزنید، طرح‌های انتخابی فقط این بار استفاده خواهند شد.</string>
 	<string name="ignore_indent">نادیده گرفتن تورفتگی</string>
 	<string name="file_nw">فایل قابل نوشتن نیست!</string>
@@ -168,6 +192,8 @@
 	<string name="total_foldersc">مجموع پوشه ها</string>
 	<string name="properties">ویژگی ها</string>
 	<string name="modified">آخرین تغییر</string>
+	<string name="program_closed">برنامه کاملاً بسته خواهد شد، آیا باید ادامه دهم؟</string>
+    <string name="remove_chars_info">نویسه‌هایی را که می‌خواهید از نام حذف شوند، وارد کنید.</string>
 	<string name="size_label">اندازه</string>
 	<string name="csize_label">اندازه فشرده</string>
 	<string name="apk_size_label">اندازه APK</string>
@@ -237,6 +263,7 @@
 	<string name="aapt2_arch_info">فهرست معماری هایی که باید در apk باقی بمانند، &lt;b>با واوک از هم جدا شوند&lt;/b>. پیش فرض تمام معماری ها است.</string>
 	<string name="label_den">تراکم صفحه: \"%s\"</string>
 	<string name="label_config">پیکربندی: \"%s\"</string>
+	    <string name="part_matches">تا حدی مطابقت دارد</string>
 	<string name="label_libs">مجموعه کتابخانه: \"%s\"</string>
 	<string name="aapt2_dens_info">&lt;b>جدا شده با واوک&lt;/b> فهرست تراکم صفحه‌ای که APK برای آن بهینه‌سازی می‌شود.  تمام منابعی که در دستگاه هایی با تراکم داده شده استفاده نمی شوند از APK حذف خواهند شد.</string>
 	<string name="aapt2_configs_info">&lt;b>جدا شده با واوک&lt;/b> فهرست پیکریندی هایی که باید گنجانده شود.  پیش فرض همه پیکربندی است.</string>
@@ -253,6 +280,7 @@
 	<string name="apps_system">برنامه های سیستمی</string>
 	<string name="details">جزئیات</string>
 	<string name="apps_installed_sum">مشاهده برنامه نصب شده</string>
+	    <string name="dir_suffix">پسوند "/" برای پوشه‌ها</string>
 	<string name="apps_system_sum">مشاهده برنامه های سیستمی</string>
 	<string name="version_app">نام نسخه</string>
 	<string name="vcode_app">کد نسخه</string>
@@ -840,10 +868,19 @@
 	<string name="mapk_sign_fail">امضای APK با امضای برنامه نصب شده مطابقت ندارد!</string>
 	<string name="mapk_version_low">نسخه apk (%1$s) کمتر از نسخه برنامه نصب شده (%2$s) است!</string>
 	<string name="msplit_rm">حذف \"android:isSplitRequired\"</string>
+	<string name="editor_indent">اندازه تورفتگی</string>
+    <string name="editor_indent_summary">اندازه تورفتگی هنگام قالب‌بندی متن</string>
+    <string name="editor_auto_reload">بارگذاری مجدد پرونده‌های تغییر یافته به صورت خودکار</string>
+    <string name="editor_auto_reload_summary">برای تأیید درخواست نشود، اما اگر پرونده توسط برنامه دیگری تغییر داده شده است، فوراً دوباره بارگذاری شود.</string>
+    <string name="install_options">گزینه‌های نصب</string>
+    <string name="install_options_summary">انتخاب گزینه‌های نصب پرونده apk</string>
 	<string name="mdebug_rm">حذف \"android:debuggable\"</string>
 	<string name="mtest_rm">حذف \"android:testOnly\"</string>
 	<string name="msui_rm">حذف \"android:sharedUserId\"</string>
 	<string name="madapt_tv">سازگاری برای Android TV</string>
+	<string name="select_icon">نماد برنامه</string>
+    <string name="select_icon_summary">انتخاب نماد برنامه</string>
+    <string name="select_icon_info">برای تغییر نماد، باید مجدداً راه‌اندازی کنید، ادامه می‌دهید؟</string>
 	<string name="mreset_app_files">همه فایل های برنامه بازنشانی شود: چارچوب ها، aapt و غیره؟  تنظیمات بازنشانی نخواهد شد.</string>
 	<string name="mreset_app_settings">همه تنظیمات برنامه بازنشانی شود؟</string>
 	<string name="mzipalign">ZipAlign</string>
@@ -861,6 +898,7 @@
 	<string name="mtr_only_tr">فقط رشته های ترجمه شده ذخیره شود</string>
 	<string name="mtr_info">اگر منبع رشته از قبل وجود داشته باشد، بازنویسی خواهد شد. اگر چنین پوشه کاری ای وجود نداشته باشد، ایجاد می شود. نام پوشه کاری باید با \"values\" شروع شود.</string>
 	<string name="string_exists">رشته ای با همین نام از قبل وجود دارد!</string>
+	<string name="both_options">هر دو گزینه</string>
 	<string name="confirmation">تائید</string>
 	<string name="mtr_confirmation">آیا مطمئنید که می‌خواهید \"%1$s/%2$s.xml\" را حذف کنید؟</string>
 	<string name="add_from">افزودن از</string>
