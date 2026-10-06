@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apktool M FAQ</title>
+    <style>
+        .light {
+            background-color: #ffffff;
+        }
+    
+	    .dark {
+            background-color: #303030;
+        }
+    
+        .black {
+            background-color: #000000;
+        }
+        
+        .light .section_title, .light .content_text, .light .answer_text {
+            color: #424242;
+        }
+    
+        .light .content_text {
+            background: #ddebf7;
+        }
+    
+        .light .answer_text {
+            background: #dddddd;
+        }
+    
+	    .dark .section_title, .dark .content_text, .dark .answer_text {
+            color: #bdbdbd;
+        }
+    
+        .dark .content_text {
+            background: #081e22;
+        }
+    
+        .dark .answer_text {
+            background: #222222;
+        }
+    
+        .black .section_title, .black .content_text, .black .answer_text {
+            color: #ffffff;
+        }
+    
+        .black .content_text {
+            background: #222222;
+        }
+    
+        .black .answer_text {
+            border: 1px solid #424242;
+            background: #222222;
+        }
+    
+        .black .question_title {
+            border: 1px solid #424242;
+            background: #424242;
+            background: #111111;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        .section_title {
+            border: none;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .content_text {
+            border: 1px solid #c0c6d2;
+            border-radius: 3px;
+            padding: 6px;
+            background: #ddebf7;
+        }
+        
+        a:active,
+        a:hover,
+        a {
+            text-decoration: none;
+            color: #2196F3;
+        }
+        
+        .details_block {
+            margin-bottom: 10px;
+            border-radius: 3px;
+            overflow: auto;
+        }
+        
+        .question_title {
+            border: 1px solid #2196F3;
+            padding: 6px;
+            background: #2196F3;
+            color: #ffffff;
+        }
+        
+        .answer_text {
+            border: 1px solid #2196F3;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 6px;
+        }
+        
+        .warning_text {
+            color: red;
+        }
+    </style>
+</head>
+<body class="light">
+    <section class="section_zero">
+        <div class="section_title">  目次  </div>
+        <div class="content_text">
+            <li><a href="https://4pda.to/forum/index.php?showtopic=1002506&view=findpost&p=116526321"><b>4PDA の更新された FAQ（ロシア語）</b></a></li>
+            <li><a href="#section_one">クイック編集</a></li>
+            <li><a href="#section_two">完全編集 - デコンパイルとビルド</a></li>
+            <li><a href="#section_three">アプリの翻訳</a></li>
+            <li><a href="#section_four">Antisplit 機能</a></li>
+            <li><a href="#section_five">カスタム署名の作成</a></li>
+            <li><a href="#section_six">ファイルマネージャー</a></li>
+            <li><a href="#section_seven">その他</a></li>
+            <li><a href="#section_eight">MPatcher</a></li>
+        </div>
+    </section>
+    <section id="section_one">
+        <div class="section_title">  クイック編集  </div>
+        <details class="details_block">
+            <summary class="question_title">クイック編集とは何ですか？</summary>
+            <div class="answer_text">  デコンパイルと再ビルドをせずに、アプリの主要なデータの一部を編集することです。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">クイック編集は何に使いますか？</summary>
+            <div class="answer_text">
+                <li>アプリ（apk）の情報、権限、優先インストール先を表示する（実際のインストール先と混同しないでください）;</li>
+                <li>アプリ名を変更する;</li>
+                <li>アプリのパッケージ名を変更する（アプリを複製する）;</li>
+                <li>アプリ内のベクター（自動生成）、アダプティブ、通常のラスターアイコンを置き換える;</li>
+                <li>アプリの優先インストール先を設定する;</li>
+                <li>最小またはターゲット SDK バージョンを変更する;</li>
+                <li>アプリを Android TV 向けに適応させる;</li>
+                <li>Manifest から削除する: <code>android:isSplitRequired, android:debuggable,
+                        android:testOnly</code>.  </li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  「権限」項目は何のためですか？  </summary>
+            <div class="answer_text">  アプリの権限を表示し、有効または無効にするためです。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  画像をベクターに変換できますか？  </summary>
+            <div class="answer_text">  はい。<br>  PNG、Jpeg、Webp、Svg 形式に対応しています。<br>  変換には次を使用します <u>{old file name}type _vector.xml</u><br>  変換時に画質を上げたり下げたりできます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  svg 画像を VectorDrawable に変換できますか？  </summary>
+            <div class="answer_text">  はい。<br>  未コンパイルの SVG/VectorDrawable ポリゴンのプレビューで利用できます<br>
+                <u>注意:</u> svg は単純で適切な構造である必要があります。そうでないとパーサーが正しく処理できず、動作させるために手動で正規化する必要があります。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ビットマップ画像を VectorDrawable に変換できますか？  </summary>
+            <div class="answer_text">  はい。<br>  万能ではありません。トレース誤差が大きくなることがあり、元画像の形状の複雑さに依存します。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリアイコンを置き換えるには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>必要なアイコンを用意します。できれば png 形式で、サイズは 192x192px 以下が望ましいです。  </li>
+                    <li>対象アプリを選択 → クイック編集。</li>
+                    <li>左上にインストール済みアプリのアイコンと名前が表示されます。</li>
+                    <li>アイコン自体をタップし、用意したアイコンを選択します。</li>
+                    <li>必要に応じて設定をオンにします: 「アダプティブアイコンを置き換える」「高品質アイコン（大きいサイズ）」</li>
+                    <li>以前にインストールしていなければ、署名ファイルも選択します。</li>
+                    <li>「保存」をタップします。</li>
+                </ol>  完成ファイルは同じフォルダー内、選択したアプリの横に、末尾に mod ラベル付きで置かれます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリアイコンを抽出するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>対象アプリを選択 → クイック編集。</li>
+                    <li>アイコンを長押しします。</li>
+                </ol>  抽出したアイコンは同じフォルダー内、選択したアプリの横に置かれます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  最小またはターゲット sdk バージョンを変更するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>対象アプリを選択 → クイック編集。</li>
+                    <li>「最小 SDK バージョン」または「ターゲット SDK バージョン」の設定で必要な変更をします。</li>
+                    <li>「保存」をタップします。</li>
+                </ol>  完成ファイルは同じフォルダー内、選択したアプリの横に、末尾に mod ラベル付きで置かれます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリ名を変更するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>対象アプリを選択 → クイック編集。</li>
+                    <li>次に、目的のアプリ名を必要な名前に変更します。</li>
+                    <li>以前にインストールしていなければ、署名ファイルを選択します。</li>
+                    <li>「保存」をタップします。</li>
+                </ol>  完成ファイルは選択したアプリの横に、末尾に mod 付きで置かれます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  「アプリ名」を変更できないのはなぜですか？（項目が無効です。）  </summary>
+            <div class="answer_text">  おそらくアプリの最小 sdk バージョンがシステムのバージョンより高いためです。この条件では編集が制限されます。<br>  まず最小 sdk バージョンを下げてから、ほかを編集してください。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリのパッケージ名を変更するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>対象アプリを選択 → 「クイック編集」。</li>
+                    <li>次にパッケージ名を変更します。</li>
+                    <li>以前にインストールしていなければ、署名ファイルを選択します。</li>
+                    <li>「保存」をタップします。</li>
+                </ol>  完成ファイルは選択したアプリの横に、末尾に mod 付きで置かれます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  このアプリで apk のクローンを作るには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>対象アプリを選択 → 「クイック編集」。</li>
+                    <li>次にパッケージ名を変更します。たとえば名前の末尾の文字を追加または削除します。</li>
+                    <li>以前にインストールしていなければ、署名ファイルを選択します。</li>
+                    <li>「保存」をタップします。</li>
+                </ol>  完成ファイルは選択したアプリの横に、末尾に mod 付きで置かれます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  クイック編集中にアプリをクローンするには？  </summary>
+            <div class="answer_text">  プログラムはクイック編集時に次のパラメータを変更します: AndroidManifest.xml と resources.arsc。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリを Android TV 向けに適応させるには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>対象アプリを選択 → 「クイック編集」。</li>
+                    <li>次に「Android TV 向けに適応」のチェックをオンにします。</li>
+                    <li>以前にインストールしていなければ、署名ファイルを選択します。</li>
+                    <li>「保存」をタップします。</li>
+                </ol>  完成ファイルは選択したアプリの横に、末尾に mod 付きで置かれます。アプリアイコンがバナーとして使われます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  クイック編集後にアプリがインストールできない場合は？  </summary>
+            <div class="answer_text">  パッケージに署名し忘れていないか確認してください。<br>  クイック編集で署名を選択します。以前に署名を使っていなければ、既定では「署名しない」を選びます。  </div>
+        </details>
+    </section>
+    <section id="section_two">
+        <div class="section_title">  完全編集 - デコンパイルとビルド  </div>
+        <details class="details_block">
+            <summary class="question_title">  デコンパイルとは何で、何に使いますか？  </summary>
+            <div class="answer_text">  arsc+dex のデコンパイルはバイナリコードを人が読める形式に変換します。アプリ資源（resources.arsc）と Smali アセンブラ（コード）の編集に必要です。また、情報へのアクセス、パッチ適用、翻訳など、このデコンパイルが必要な機能にも使います...  <p><em>再コンパイルには aapt のバイナリが必要です。インストール要求はアプリ初回起動時に表示されます。していなければ、「設定」ビルドとデコンパイル「ツールの置換」…用にダウンロード、で行います。</em></p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリをデコンパイルするには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>対象アプリを選択します。</li>
+                    <li>タップします。</li>
+                    <li>ポップアップメニューが開きます。</li>
+                    <li>「デコンパイル」を選択します。</li>
+                    <li>デコンパイルする項目をマークします:</li>
+                    <ul>
+                        <li>「資源をデコンパイル」</li>
+                        <li>「classes.dex をデコンパイル」または「すべての *.dex ファイルをデコンパイル」。<br>
+                            <em>（「すべての *.dex」は入れ子フォルダー内の dex、たとえば assets、mthook などを担当します。）</em>
+                        </li>
+                        <li>必要なら「追加資源のデコンパイル」でデコンパイル先も選べます。</li>
+                    </ul>
+                </ol>  デコンパイルが成功すると、設定で以前有効にしていれば音声とダイアログの通知があります。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリを再コンパイルするには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>プロジェクト内で、エクスプローラーウィンドウの上の「プロジェクトをビルド」ラベルをタップします。</li>
+                    <li>ビルドウィンドウで資源ビルドツール aapt または aapt2 を選択します。</li>
+                    <li>必要なら自動署名も指定できます。</li>
+                </ol>  ログはリアルタイムで表示されます。ビルド中の段階、コメント、エラーを追跡できます。<br>  完了するとログが止まります（それが分かります）。<br>  コンパイルが成功すると、設定で以前有効にしていれば音声とダイアログの通知があります。<br>  下部では、ビルドしたアプリをすぐにインストールするかも尋ねられます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ビルド後、アプリはどこに保存されますか？  </summary>
+            <div class="answer_text">  分解したアプリのフォルダーへ。プロジェクトルート（apktool.json の横）  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  複数ファイルを同時にデコンパイルできますか？  </summary>
+            <div class="answer_text">  はい。ただし同時だとメモリが足りないことがあるので、連続してデコンパイルした方がよいです。<br><br>
+                <details class="details_block">
+                    <summary class="question_title">  どうすればよいですか？  </summary>
+                    <div class="answer_text">  複数ファイルを選択し、長押しでメニューを開きます。<br>
+                        <u>注意！</u>  同じ種類のファイルで機能します。apk 以外が選択されていると、メニューに項目が出ません。  </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  apk の保存先フォルダーを変更するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>設定 → 「ビルドとデコンパイル」 → 「インストール済みアプリの出力ディレクトリを設定」  </li>
+                    <li>目的のフォルダーに行き、「パス」行をタップして出力ディレクトリを設定します。</li>
+                    <li>ファイルマネージャーで直接出力フォルダーを設定することもできます。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  「インストール済みアプリの出力ディレクトリ」項目とは？  </summary>
+            <div class="answer_text">  アプリメニューから、以降の作業のために APK をエクスポート／抽出するディレクトリです。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  「.apk」ファイル内の資源を置き換えるには？  </summary>
+            <div class="answer_text">  まずデコンパイルし、ファイルをコピー／貼り付けてビルドします。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  エラーなく作業したのにアプリがビルドされない、または apk を何も変えず再コンパイルしただけの場合は？  </summary>
+            <div class="answer_text">  aapt のバージョンを切り替えてください。<br> ログの Warning イベントレベルを確認してください。  <br> 一般にログを見てください。原因が示されているはずです。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  通常の Apktool プロジェクトとの互換性は？  </summary>
+            <div class="answer_text">  Apktool M は通常の Apktool で解析されたプロジェクトをビルドできます。<br>  ビルド前に Apktool M は .yml を .json に変換します。<br>  ログで処理情報を追跡できます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Apktool M はシステムアプリを扱えますか？  </summary>
+            <div class="answer_text">  はい、可能です。<br><br>
+                <details class="details_block">
+                    <summary class="question_title">  どうすればよいですか？  </summary>
+                    <div class="answer_text">  そのような apk を扱う前に、その apk のコンテキストメニュー項目で apk フレームワークをインポートする必要があります。インポートはそのような apk すべてに対して行います。    <p>基本パス: /system/framework/..</p>    /system/vendor/framework など隣接ディレクトリにもある場合があります。それらのディレクトリがある場合（まれです）。<br><br>  フレームワークの例:<br>
+                        <img align="center" alt="" class="image" src="data:image/webp;base64,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" width="100%">
+                        <p>その後、通常の apk と同様にデコンパイルとコンパイルをします。元の META-INF と manifest を残すには、デコンパイル設定で「オリジナルに合わせる」ラジオボタンを有効にします。</p>
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  「ビルドとデコンパイル」セクションの項目の説明  </summary>
+            <div class="answer_text">
+                <details class="details_block">
+                    <summary class="question_title">  出力フォルダー  </summary>
+                    <div class="answer_text">  「アプリ」タブからインストール済みアプリをエクスポート／抽出するパスです。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  aapt2 を使用  </summary>
+                    <div class="answer_text">  ビルド前の aapt バージョン選択項目に、ツールの第2バージョンを追加します。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  デバッグ情報  </summary>
+                    <div class="answer_text">
+                        <p>ビルド時、デバッグデータは Smali ファイルに保存されます。例:<code>.line, .param</code>など。</p>
+                        
+                        <u>注意:</u><br>  このデータはデバッグ可能モードでのアプリデバッグ専用です。また Logcat での Smali クラッシュのピンポイントデバッグにも使えます（まれ。クラッシュ原因の行のアンカーになります）。コード実行には影響しません。モデラーが Smali アセンブラを編集するときの参照点にもなります。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  デバッグモード  </summary>
+                    <div class="answer_text">  書き込みます <code>
+                            &lt;application /&gt;
+                        </code> manifest のタグ内の属性値を <code>android:debuggable</code> へ <code>true</code>。システムにデバッグアプリであることを通知します。このアプリのログへのアクセスを広げられます。機能の操作は専用ツール（Android Studio や ADB レベルのデバッグなど）でのみ可能です。このオプションは Logcat には適用されません。このパラメータを変えてもシステムログのデバッグエントリ数は変わりません。    <p>そのようなアプリを現在のデバッグ対象にするには、「システム設定」開発者向け「デバッグアプリ」で選択します（パスは異なる場合があります）。</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  完全  </summary>
+                    <div class="answer_text">  ビルド中、各ファイルのコンパイル後の最終状態をログに出力します。不要なら有効にしないでください。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  オリジナルに合わせる  </summary>
+                    <div class="answer_text">  元の資源ハッシュを尊重することで、元の META-INF と manifest のハッシュを保存できます。<br>  このモードでは Smali のみ編集できます。res/... の編集ファイルをビルドしようとすると、元のハッシュと一致しない（変更済み）ため最終 apk から削除されます。  <p>
+                                <span class="warning_text"><em>この質問は明確化が必要です。</em></span></p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  すべての Smalisedit の解析  </summary>
+                    <div class="answer_text">  Smali のファイル解析を高速化します。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  「APKTOOL_DUMMY」を追加  </summary>
+                    <div class="answer_text">
+                        <p>既定では resources.arsc 内の資源 ID は等差数列で設定されます。壊れている場合があり、値タイプ内の一部が未記入（空き）のことがあります。</p>
+                        <p>それらの場所は数列の整合性を戻すために APKTOOL_DUMMY スタブで埋められます。これらの行は誰も使わず、何にも影響しません。</p>
+                        <u>簡単な注記:</u><br>
+                        <p>res/values/public.xml から資源オブジェクトを削除すると、ビルド時にそのような空きを探してそこに ID を設定しようとします。空きがなければ、そのカテゴリの項目リストの末尾に追加されます。Smali で指定されているオブジェクト ID では推奨しません。ID で指定された資源が移動済み（もはや存在しない）ためクラッシュします。</p>
+                        <p>public.xml を削除すると、Apktool は数列をゼロから作ります。開始 ID と終了 ID の間に空きがないため APKTOOL_DUMMY はどこにも入りません。</p>
+                        <p>APKTOOL_DUMMY の要否はユーザーが決めます。デコンパイルしたプロジェクトの ID 構造が特殊な場合（カスタム属性や難読化など）にも必要になることがあります。</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  HTML を整形  </summary>
+                    <div class="answer_text">  すべての .html および .htm（?）ファイルの内容が XML 構文に従って整形されます。HTML ページの表示が崩れることがあります。必要なときだけ入れてください。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  「build」フォルダーを削除  </summary>
+                    <div class="answer_text">
+                        <p>ビルド中、DEX と ARSC ファイルは build フォルダーにキャッシュされます。前回のビルド後に資源を変えていなければ、再ビルド時に .arsc は再作成されず、ハッシュが同一（未変更）のためキャッシュから使われます。Smali（DEX ファイル）も同様です。再コンパイルを省略して apk ビルドを速くします。</p>
+                        <p>フォルダー削除は空き容量を増やすだけです。その後のビルドでは .dex と .arsc が「ゼロから」再作成され、フォルダーも再作成されます。このオプションを有効にすると、成功したビルドの後でフォルダーを自動削除できます。必要なら有効にしてください。</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  すべて出力ディレクトリへ  </summary>
+                    <div class="answer_text">  正常にコンパイルされた apk はすべて、上記の出力ディレクトリへ自動的に移されます。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  フレームワークの管理  </summary>
+                    <div class="answer_text">  外部からインポートしたフレームワークを管理できます。リセットボタンは一覧とファイルをローカルで消し、Apktool M から res-framework.apk（ID 1）も復元します。  </div>
+                </details>
+            </div>
+        </details>
+    </section>
+    <section id="section_three">
+        <div class="section_title">  アプリの翻訳  </div>
+        <details class="details_block">
+            <summary class="question_title">  翻訳で何言語がサポートされていますか？  </summary>
+            <div class="answer_text">  100 言語以上です。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Yandex.Translate で使えるオプションは？  </summary>
+            <div class="answer_text">
+                <li>資源（strings、arrays、plurals）と smali の選択文字列の自動翻訳;</li>
+                <li>資源（strings、arrays、plurals）と smali の手動翻訳;</li>
+                <li>翻訳の修正;</li>
+                <li>複数の翻訳サービスから選べるオンライン翻訳;</li>
+                <li>オフライン翻訳;</li>
+                <li>辞書サポート;</li>
+                <li>既存の翻訳から独自辞書を作成;</li>
+                <li>MT Manager 辞書のサポート;</li>
+                <li>言語の結合。</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリで使えるオンライン翻訳サービスはいくつですか？  </summary>
+            <div class="answer_text">  3つ: Yandex、Google、Bing。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリの翻訳機能が見つかりません。Yandex.Translate を有効にしてアプリ（strings.xml）をロシア語に翻訳するには？  </summary>
+            <div class="answer_text">  この機能はアプリがデコンパイルされているときだけ使えます。  <ol>
+                    <li>目的の apk の資源をデコンパイルします。</li>
+                    <li>デコンパイル済みファイルのフォルダーに移動します。</li>
+                    <li>ファイルマネージャーメニュー（アドレスバーをタップして開く）を開き、「翻訳」を選択します。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリを自動翻訳するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>目的の apk の資源をデコンパイルします。</li>
+                    <li>デコンパイル済みファイルのフォルダーに移動します。</li>
+                    <li>ファイルマネージャーメニュー（アドレスバーをタップして開く）を開き、「翻訳」を選び、右上の三点をタップして「自動翻訳」を選びます。</li>
+                    <li>開いたメニューで目的の翻訳サービス、たとえば Yandex を選びます。</li>
+                    <li>「ソース言語」では「言語を検出」のままで構いません。最終言語の自動選択では目的の言語を選びます。既定ではシステムに入っている言語が提案されます。</li>
+                    <li>下部で必要なチェック「存在すれば結合」または「翻訳済み文字列のみ保存」をオンにします</li>
+                    <li>必要な行を選択します。</li>
+                    <li>「翻訳」をタップして res/values/strings の文字列を翻訳します。</li>
+                    <li>転送が終わったら、もう一度右上の三点をタップして「保存」を選びます  </li>
+                    <li>プロジェクト（アプリ）をビルドします。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  smali 内のアプリを自動翻訳するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>目的の apk をデコンパイルします。</li>
+                    <li>デコンパイル済みファイルのフォルダーに移動します。</li>
+                    <li>ファイルマネージャーメニュー（アドレスバーをタップして開く）を開き、「smali 翻訳」を選び、右上の三点をタップして「自動翻訳」を選びます。</li>
+                    <li>開いたメニューで目的の翻訳サービス、たとえば Yandex を選びます。</li>
+                    <li>「ソース言語」では「言語を検出」のままで構いません。最終言語の自動選択では目的の言語を選びます。既定ではシステムに入っている言語が提案されます。</li>
+                    <li>必要な行を選択します。</li>
+                    <li>下部で必要なチェック「存在すれば結合」または「翻訳済み文字列のみ保存」をオンにします</li>
+                    <li>「翻訳」をタップ</li>
+                    <li>転送が終わったら、もう一度右上の三点をタップして「保存」を選びます。  </li>
+                    <li>プロジェクト（アプリ）をビルドします。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  「自動翻訳」に「翻訳を修正」機能があります。何のためですか？  </summary>
+            <div class="answer_text">  翻訳しなくてよい行をスキップするため: <code>true, false, %1$d/%2$d</code>。現在はベクターグラフィックや参照なども含み、自動翻訳後の一部の行も修正します。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリを手動で翻訳するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>目的の apk をデコンパイルします。</li>
+                    <li>デコンパイル済みファイルのフォルダーに移動します。</li>
+                    <li>ファイルマネージャーメニュー（アドレスバーをタップして開く）を開き、「smali 翻訳」を選んで必要な行を手動編集します。</li>
+                    <li>右上の三点をタップして「保存」を選びます</li>
+                    <li>プロジェクト（アプリ）をビルドします。</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  翻訳したアプリの既定文字列に必要なものがなく、ほかの言語にはある場合、言語を結合するには？  </summary>
+            <div class="answer_text">  必要な翻訳の後、翻訳メニューで「追加、次から追加」を選び、別のロケールから不足行を追加します。必要ならその後翻訳します。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Apktool M がサポートする辞書形式は？  </summary>
+            <div class="answer_text">  *.amd と *.mtd  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  翻訳済みファイルから独自辞書を作るには？  </summary>
+            <div class="answer_text">  Yandex.Translate を開き、メニューから「辞書を作成」を選び、プロジェクトフォルダーでソース（未翻訳文字列）とターゲット資源（翻訳ファイル）を選んで保存します。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  保存した辞書はどう使いますか？  </summary>
+            <div class="answer_text">  次に転送するとき、翻訳サービスの選択に表示されます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  オフライン翻訳用の既製辞書はどこで入手できますか？  </summary>
+            <div class="answer_text">  次の場所: <a href="https://4pda.to/forum/index.php?showtopic=548542&amp;view=findpost&amp;p=29447386&amp;anchor=Spoil-29447386-6">MT Manager トピック</a><br>  「出力ディレクトリ/dictionary」（既定は内部メモリの「Apktool_M/dictionary」）へコピーするか、プログラム内で辞書ファイルをタップしてインポートし追加します。<br>  その後、辞書は Yandex.Translate の自動翻訳サービスに表示されます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  転送後、プロジェクトが集まりません。エラーが返ります。  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>ビルドエラーログに通常示される無効な行を削除します。</li>
+                    <li>aapt2 でビルドできず、無効な翻訳文字列のエラーもなければ、ビルドには aapt1 を使います。</li>
+                    <li>アプリが署名で保護されている可能性があります。</li>
+                </ol>
+            </div>
+        </details>
+    </section>
+    <section id="section_four">
+        <div class="section_title">  Antisplit 機能  </div>
+        <details class="details_block">
+            <summary class="question_title">  Antisplit とは何ですか？  </summary>
+            <div class="answer_text">  Android App Bundle（split）を 1 つのインストールファイルに結合し、そのようなファイルのインストールと抽出も行う機能です。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  split から apk をビルドするには？ このオプションはどこにありますか？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>コンテキストメニュー「Antisplit」。apks/xapk の短いタップで呼び出します。</li>
+                    <li>コンテキストメニュー「Antisplit」。事前選択／選択した apk のグループをタップして呼び出します。</li>
+                </ol>  次に必要なコンパイルツールを選びます: アプリが最初にビルドされない場合は aapt2 または aapt。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  インストール済み split から apk をビルドできますか？  </summary>
+            <div class="answer_text">  はい。<br>  アプリ一覧でインストール済みアプリを選び、長押しで「Antisplit」項目を呼び出します。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  集めたファイルはどこにありますか？  </summary>
+            <div class="answer_text">  apk は既定の作業フォルダー internal_memory/Apktool_M にあります。<br>
+                <small><i>ビルド終了時に「インストール」ボタンが出ますが、長押しするとファイルのあるフォルダーが開きます。</i></small>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Apktool M で Apks を Apk に変換する手順。  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>目的のファイル（Apks）を選んでタップします。</li>
+                    <li>表示されたメニューから「Antisplit」を選びます。</li>
+                    <li>もう一度「Antisplit」ボタンをタップします（まずすべてのファイル、つまりすべてのチェックがオンか確認します）。</li>
+                    <li>その後、目的のツール（アプリがコンパイルされない場合は aapt2 または aapt）を選び、「選択」ボタンをタップします。</li>
+                    <li>処理全体が終わるまで待ちます。</li>
+                </ol>  これで Apks が Apk になり、通常の Apk ファイルとして扱えます。  </div>
+        </details>
+    </section>
+    <section id="section_five">
+        <div class="section_title">  カスタム署名の作成  </div>
+        <details class="details_block">
+            <summary class="question_title">  自分の署名を作るには？  </summary>
+            <div class="answer_text">
+                <p>「設定」→「署名」に行き、「キーを作成」を選びます。</p>
+                <li><small><i>署名設定では RSA/SF ファイル名と、V1 署名の作成者名を設定できます</i></small></li><br>  開いたメニューで次の行を入力します:  <p><u>署名アルゴリズム:</u><br>  証明書ハッシュの長さの違い（apk 署名後）。SHA256withRSA が最適です。既定のままにします。MD5 は安全でないとされます。詳細な違いはインターネットで確認できます。</p>
+                <p><u>種類:</u><br>  ストレージの種類を指定します。既定は JKS（.keystore としても知られます）。詳細な違いはインターネットで確認できます。</p>
+                <p><u>キーへのパス:</u><br>  キーの出力保存場所です。ファイル名は自動入力され、最後に変更できます。</p>
+                <p><u>エイリアス:</u><br>  キーのエイリアス。インポート／操作時に指定します。</p>
+                <p><u>ストレージとキーのパスワード:</u><br>  インポート／使用前にストレージとキー自体を保護するパスワードです。便宜上、同じにしても構いません。</p>
+                <p><u>キーサイズ:</u><br>  読み取るキー署名のビット数（長さ）です。既定値は 2048 です。大きくすると暗号強度は上がりますが、解析は難しく（遅く）なります。幾何数列（2、4、8、16、32、64、128、256、512、1024、2048、4096 など）で設定します</p>
+                <p><u>有効期間:</u><br>  作成日からキーの真正性が切れるまでの時間です。年単位で指定します。</p>
+                <p><u>次の情報は署名所有者の案内用です。任意で指定してください:</u><br>  名前、役職、組織、市区町村、地域／州、国。</p>
+                <p>「保存」ボタンで作成を完了し、先に指定したパスにキーストアを置きます。</p>
+                <p>「作成して使用」ボタンは、最終ファイルをユーザー署名の代わりに追加インポートします。</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  jks/keystore リポジトリを pk8+x509.pem に変換できますか？  </summary>
+            <div class="answer_text">  はい、可能です。  </div>
+        </details>
+    </section>
+    <section id="section_six">
+        <div class="section_title">  ファイルマネージャー  </div>
+        <details class="details_block">
+            <summary class="question_title">  Apktool に本格的なファイルマネージャーはありますか？  </summary>
+            <div class="answer_text">  はい。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ファイルマネージャーメニューを開くには？  </summary>
+            <div class="answer_text">  アドレスバーをタップするとメニューが開きます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  どのような機能がありますか？  </summary>
+            <div class="answer_text">
+                <li>ファイルの削除;</li>
+                <li>コピー;</li>
+                <li>名前の変更（一括変更を含む）;</li>
+                <li>ファイル一覧の作成;</li>
+                <li>アーカイブ;</li>
+                <li>ファイルとフォルダーのプロパティ;</li>
+                <li>本格的な検索;</li>
+                <li>ブックマーク;</li>
+                <li>最近開いたファイルの履歴;</li>
+                <li>apk/apks ファイルのプロパティダイアログは別トピックです;</li>
+                <li>ベクター xml/svg のプレビュー、および画像のベクター変換;</li>
+                <li>ttf/otf フォントのプレビュー;</li>
+                <li>選択した apk や画像の一括操作（長押し）;</li>
+                <li>プロジェクトフォルダーでは、資源ファイルのプロパティに public.xml の ID があります（あれば）。</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ファイル閲覧時にコンテキストメニューを開くには？  </summary>
+            <div class="answer_text">  ファイル自体を長押しします。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  コンテキストメニューにどの項目がありますか？  </summary>
+            <div class="answer_text">
+                <li>ファイルを送信...</li>
+                <li>次で開く...</li>
+                <li>削除。</li>
+                <li>名前を変更。</li>
+                <li>圧縮。</li>
+                <li>ここに展開。</li>
+                <li>「ファイル名」へ展開</li>
+                <li>内容を表示。</li>
+                <li>プロパティ。</li>
+                <li>コピー。</li>
+                <li>切り取り。</li>
+                <li>MPatcher.</li>
+                <li>選択。</li>
+                <li>すべて選択。</li>
+                <li>名前をコピー。</li>
+                <li>パスをコピー。</li>
+                <li>ブックマークに追加。</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ファイル／フォルダーを選択するには？  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>ファイル／フォルダー自体またはアイコンを長押しします。</li>
+                    <li>アイコンの長押しでファイル／フォルダーを選んだ後、別ファイルのアイコンを長押しすると「から〜まで」を選択できます。</li>
+                    <li>「戻る」アイコン（..）の長押しですべてをすばやく選択することもできます</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ファイルの名前を変更するには？  </summary>
+            <div class="answer_text">  ファイルを長押しすると名前変更ダイアログが出ます。<br>  同じダイアログで「auto」を長押しすると、テンプレートで自動モードの名前変更ができます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリから直接、外部エディタでファイルを編集するには？  </summary>
+            <div class="answer_text">  ファイルを長押し → ポップアップのコンテキストメニューで「次で開く」...  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ファイルのアーカイブを作るには？  </summary>
+            <div class="answer_text">  コンテキストメニューから「圧縮」を選びます。アーカイブ時、既存アーカイブに追加できます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  分解／組み立てせずに、アーカイブ（APK を含む）内のファイル／フォルダーを削除または置換できますか？  </summary>
+            <div class="answer_text">  はい。<br>
+                <ol>
+                    <li>/.apk アーカイブを長押しし、ポップアップメニューから「内容を表示」を選びます。</li>
+                    <li>削除または抽出したいものを長押しで選びます。</li>
+                </ol>  必要な操作の後、ファイルは自動的に再組み立てされ署名されます。<br>  元のファイルは横に .bak 拡張子で保存されます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  分解済み APK で、すでに編集したファイルやフォルダーに置き換えるには？  </summary>
+            <div class="answer_text">  目的のファイルを長押しし、コンテキストメニューで「ここに展開」...<br>  たとえば drawable フォルダーの画像を置き換える場合、画像を含む drawable フォルダーが入った置換用 res フォルダーを apk に追加する必要があります。<br>
+                <p>
+                    <span class="warning_text">つまり、ディレクトリ構造を保つことが重要です！</span>
+                </p>  必要な操作の後、apk 拡張子で再びアーカイブします。<br>  署名します。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Apktool M に本格的な検索エンジンはありますか？  </summary>
+            <div class="answer_text">  はい。<br>  ファイル検索、ファイル名、ファイル内テキスト検索、インストール済みアプリがあります。<br>  アドレスの手動入力は、アドレスの長押しで起動します。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリに正規表現検索はありますか？  </summary>
+            <div class="answer_text">  はい。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  検索を使い始めるには？  </summary>
+            <div class="answer_text">  アドレスをタップしてファイルマネージャーメニューを開きます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  フォルダー検索が見つかりません。ファイル内だけです。  </summary>
+            <div class="answer_text">  フォルダー自体を長押しするのではなく、検索するフォルダーに入り、「矢印またはフォルダー／ファイルへのパス」をタップすると検索メニューが出ます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  検索結果はすべて保存されますか？ どう探せばよいですか？  </summary>
+            <div class="answer_text">  はい。検索履歴は保存されます。<br>  エクスプローラーメニュー（上部のアドレスをタップ）に項目が出るか、下部パネルの検索アイコンが有効ならそれを長押しします。<br>  検索結果の中をさらに検索することもできます。<br>  何も検索していなければ、この項目はありません。  </div>
+        </details>
+    </section>
+    <section id="section_seven">
+        <div class="section_title">  その他  </div>
+        <details class="details_block">
+            <summary class="question_title">  Apktool にクローン機能はありますか？  </summary>
+            <div class="answer_text">  はい。<br>  アプリの完全なデコンパイルが必要です。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ほかにアプリをクローンする方法は？  </summary>
+            <div class="answer_text">  MPatcher プログラムのパッチを使います。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ru、eng 以外の不要な言語をアプリから除くには？  </summary>
+            <div class="answer_text">  コンテキストメニューで「最適化 (aapt2)」を選びます。<br>  この項目の設定で「構成を設定」をオンにし、残す言語を指定します。この場合は「ru, ru-rRU」です。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  ロシア語、ウクライナ語、英語以外の言語をすべて除くには？  </summary>
+            <div class="answer_text">  ロシア語と英語以外を削除する場合と同様です。<br>  「構成を設定」で残す言語を指定します。例: 「ru, ru-rRU, uk, ru-rUA, uk-rRU」。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  インストール済みアプリの一覧を見るには？  </summary>
+            <div class="answer_text">  右上 — 「アプリ」タブ。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  アプリの Manifest 全体を編集するには？  </summary>
+            <div class="answer_text">  資源をデコンパイルすると manifest 全体を編集できます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  組み込みの値コンバーターはありますか？  </summary>
+            <div class="answer_text">
+                <p>はい。</p>
+                <details class="details_block">
+                    <summary class="question_title">  どうやって行けますか？  </summary>
+                    <div class="answer_text">  ホーム画面 → 右上の三点 → コンバーター。  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  どの値がサポートされていますか？  </summary>
+                    <div class="answer_text">
+                        <li>テキスト ↔ SHA-384</li>
+                        <li>テキスト ↔ SHA-224</li>
+                        <li>テキスト ↔ SHA-256</li>
+                        <li>テキスト ↔ SHA-512</li>
+                        <li>テキスト SHA-1 テキスト</li>
+                        <li>テキスト ↔ MD5</li>
+                        <li>テキスト ↔ URL エンコード</li>
+                        <li>テキスト ↔ Unicode</li>
+                        <li>↔ Base64 テキスト</li>
+                        <li>テキスト ↔ Array (US-ASCII)</li>
+                        <li>テキスト ↔ Array (UTF-16LE)</li>
+                        <li>テキスト ↔ Array (UTF-16BE)</li>
+                        <li>テキスト ↔ Array (UTF-8)</li>
+                        <li>テキスト ↔ Array (CP1251)</li>
+                        <li>テキスト ↔ Array (ISO-8859-1)</li>
+                        <li>十進 ↔ 八進</li>
+                        <li>十進 ↔ 二進</li>
+                        <li>↔ Smali 色</li>
+                        <li>十進 ↔ Hex (0x0)</li>
+                        <li>十進 ↔ Hex (0x00000000)</li>
+                        <li>十進 ↔ Hex</li>
+                        <li>Float ↔ 二進</li>
+                        <li>Float ↔ 八進</li>
+                        <li>Float ↔ Hex</li>
+                        <li>Float ↔ Hex (0x0)</li>
+                        <li>Float ↔ Hex (0x00000000)</li>
+                        <p><u>ご注意！</u></p>  後方互換のある暗号はすべて戻すことができます。下の入力ウィンドウで行います。  </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Apktool M を更新するには？  </summary>
+            <div class="answer_text">  ホーム画面 → 右上の三点 → 「設定」 → 「プログラムの更新」で「更新を確認」を有効にします。<br>  下で「更新確認の頻度」を選べます。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  更新をダウンロードするには？  </summary>
+            <div class="answer_text">  Apktool M 自体から、またはブラウザーでダウンロードします。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  更新ファイルはどこに保存されますか？  </summary>
+            <div class="answer_text">  内部メモリの「Download」フォルダーへ。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  更新確認を無効にできますか？  </summary>
+            <div class="answer_text">  はい、できます。  <p>ホーム画面 → 右上の三点 → 「設定」 → 「アプリについて」 → 「更新確認を無効にする」。</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  バックアップから復元するには？ 復元項目が無効です...  </summary>
+            <div class="answer_text">  復元するには、まずアカウントを保存する必要があります。<br>  バックアップファイルはパス「/internal_memory/Apktool_M. backup」にある必要があります。なければ項目は無効です。  </div>
+        </details>
+    </section>
+    <section id="section_eight">
+        <div class="section_title">  MPatcher  </div>
+        <details class="details_block">
+            <summary class="question_title">  MPatcher とは何ですか？  </summary>
+            <div class="answer_text">  Shell で書かれたスクリプトとパッチを実行、作成、インポート、エクスポートするアプリで、Apktool M に統合されています。  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  フォーラムに別トピックはありますか？  </summary>
+            <div class="answer_text">  はい: <a href="https://4pda.to/forum/index.php?showtopic=1018077">MPatcher</a>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  MPatcher を呼び出すには？  </summary>
+            <div class="answer_text">  ファイルを長押しし、開いたコンテキストメニューで「MPatcher」を選びます。<br>  これで対象 apk が指定されます。    <p>対象プロジェクトを選ぶには、「ビルド」の上にドロップダウンメニューがあり、MPatcher 項目があります。</p>
+            </div>
+        </details>
+    </section>
+    <script type="text/javascript">(function(){window.location.search.substring(1).split("&").forEach(function(a){a=a.split("=");"theme"==a[0]&&document.body.setAttribute("class",a[1])});})();</script>
+</body>
+</html>

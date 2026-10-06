@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apktool M FAQ</title>
+    <style>
+        .light {
+            background-color: #ffffff;
+        }
+    
+	    .dark {
+            background-color: #303030;
+        }
+    
+        .black {
+            background-color: #000000;
+        }
+        
+        .light .section_title, .light .content_text, .light .answer_text {
+            color: #424242;
+        }
+    
+        .light .content_text {
+            background: #ddebf7;
+        }
+    
+        .light .answer_text {
+            background: #dddddd;
+        }
+    
+	    .dark .section_title, .dark .content_text, .dark .answer_text {
+            color: #bdbdbd;
+        }
+    
+        .dark .content_text {
+            background: #081e22;
+        }
+    
+        .dark .answer_text {
+            background: #222222;
+        }
+    
+        .black .section_title, .black .content_text, .black .answer_text {
+            color: #ffffff;
+        }
+    
+        .black .content_text {
+            background: #222222;
+        }
+    
+        .black .answer_text {
+            border: 1px solid #424242;
+            background: #222222;
+        }
+    
+        .black .question_title {
+            border: 1px solid #424242;
+            background: #424242;
+            background: #111111;
+        }
+        
+        section {
+            margin-bottom: 20px;
+        }
+        
+        .section_title {
+            border: none;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 4px;
+            margin-bottom: 10px;
+        }
+        
+        .content_text {
+            border: 1px solid #c0c6d2;
+            border-radius: 3px;
+            padding: 6px;
+            background: #ddebf7;
+        }
+        
+        a:active,
+        a:hover,
+        a {
+            text-decoration: none;
+            color: #2196F3;
+        }
+        
+        .details_block {
+            margin-bottom: 10px;
+            border-radius: 3px;
+            overflow: auto;
+        }
+        
+        .question_title {
+            border: 1px solid #2196F3;
+            padding: 6px;
+            background: #2196F3;
+            color: #ffffff;
+        }
+        
+        .answer_text {
+            border: 1px solid #2196F3;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 6px;
+        }
+        
+        .warning_text {
+            color: red;
+        }
+    </style>
+</head>
+<body class="light">
+    <section class="section_zero">
+        <div class="section_title">  Conținut  </div>
+        <div class="content_text">
+            <li><a href="https://4pda.to/forum/index.php?showtopic=1002506&view=findpost&p=116526321"><b>FAQ actualizat pe 4PDA (în rusă)</b></a></li>
+            <li><a href="#section_one">Editare rapidă</a></li>
+            <li><a href="#section_two">Editare completă - decompilare și asamblare</a></li>
+            <li><a href="#section_three">Traducerea aplicațiilor</a></li>
+            <li><a href="#section_four">Funcția Antisplit</a></li>
+            <li><a href="#section_five">Crearea unei semnături personalizate</a></li>
+            <li><a href="#section_six">Manager de fișiere</a></li>
+            <li><a href="#section_seven">Diverse</a></li>
+            <li><a href="#section_eight">MPatcher</a></li>
+        </div>
+    </section>
+    <section id="section_one">
+        <div class="section_title">  Editare rapidă  </div>
+        <details class="details_block">
+            <summary class="question_title">Ce este editarea rapidă?</summary>
+            <div class="answer_text">  Este editarea unor date de bază ale aplicației fără a fi nevoie de decompilare și reconstruire.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">Pentru ce se folosește editarea rapidă?</summary>
+            <div class="answer_text">
+                <li>pentru a vizualiza informații despre aplicație (apk), permisiunile sale și locația de instalare preferată (a nu se confunda cu locația de instalare reală);</li>
+                <li>pentru a schimba numele aplicației;</li>
+                <li>pentru a schimba numele pachetului aplicației (clonarea aplicației);</li>
+                <li>pentru a înlocui pictogramele vectoriale (generate automat), adaptive și raster obișnuite din aplicații;</li>
+                <li>pentru a seta locația de instalare preferată a aplicației;</li>
+                <li>pentru a schimba versiunea minimă sau țintă a SDK;</li>
+                <li>pentru a adapta aplicația pentru Android TV;</li>
+                <li>pentru a-l elimina din Manifest: <code>android:isSplitRequired, android:debuggable,
+                        android:testOnly</code>.  </li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  De ce am nevoie de elementul „Permisiuni”?  </summary>
+            <div class="answer_text">  Pentru a vizualiza permisiunile aplicației, precum și pentru a le activa sau dezactiva.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Pot converti imaginile în vector?  </summary>
+            <div class="answer_text">  Da.<br>  Sunt acceptate formatele PNG, Jpeg, Webp și Svg.<br>  Conversia se face folosind <u>{old file name}type _vector.xml</u><br>  La conversie, puteți îmbunătăți sau degrada calitatea imaginii.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Este posibilă conversia unei imagini svg în VectorDrawable?  </summary>
+            <div class="answer_text">  Da.<br>  Disponibil în previzualizarea poligoanelor SVG/VectorDrawable (necompilate)<br>
+                <u>Notă:</u> svg-ul trebuie să aibă o structură simplă și adecvată, altfel parserul s-ar putea să nu-l proceseze corect și va trebui să-l normalizați manual pentru a funcționa corespunzător.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Este posibilă conversia imaginilor bitmap în VectorDrawable?  </summary>
+            <div class="answer_text">  Da.<br>  Aceasta nu este o panacee. Poate avea o eroare mare la trasare — depinde de complexitatea geometriei imaginii sursă.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum înlocuiesc pictograma aplicației?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Pregătiți pictograma necesară, de preferință în format png și de dimensiune, de preferință, de cel mult 192x192px.  </li>
+                    <li>Selectați aplicația dorită → Editare rapidă.</li>
+                    <li>În colțul din stânga sus puteți vedea pictograma aplicației instalate și numele acesteia.</li>
+                    <li>Atingeți pictograma și selectați pictograma pregătită anterior.</li>
+                    <li>Dacă este necesar, bifați casetele de setări: „înlocuire pictogramă adaptivă” „pictogramă de înaltă calitate (dimensiune mai mare)”</li>
+                    <li>Selectați și fișierul de semnătură dacă nu l-ați instalat înainte.</li>
+                    <li>Apăsați „Salvare”.</li>
+                </ol>  Fișierul final va fi în același folder, lângă aplicația selectată, cu eticheta mod la sfârșit.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum extrag pictograma aplicației?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Selectați aplicația dorită → Editare rapidă.</li>
+                    <li>Atingere lungă pe pictogramă.</li>
+                </ol>  Pictograma extrasă va fi în același folder, lângă aplicația selectată.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum schimb versiunea minimă sau țintă a sdk?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Selectați aplicația dorită → Editare rapidă.</li>
+                    <li>Faceți modificările necesare în setările „Versiune minimă SDK” sau „Versiune țintă SDK”.</li>
+                    <li>Apăsați „Salvare”.</li>
+                </ol>  Fișierul final va fi în același folder, lângă aplicația selectată, cu eticheta mod la sfârșit.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum schimb numele aplicației?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Selectați aplicația dorită → Editare rapidă.</li>
+                    <li>Apoi schimbați numele aplicației dorite.</li>
+                    <li>Selectați fișierul de semnătură dacă nu l-ați instalat înainte.</li>
+                    <li>Apăsați „Salvare”.</li>
+                </ol>  Fișierul final va fi plasat lângă aplicația selectată, cu mod la sfârșit.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  De ce nu pot schimba „Numele aplicației”? (Elementul este inactiv.)  </summary>
+            <div class="answer_text">  Probabil pentru că versiunea minimă sdk a aplicației este mai mare decât versiunea sistemului. În aceste condiții, editarea este restricționată.<br>  Mai întâi trebuie să coborâți versiunea minimă a sdk, apoi să editați restul.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum schimb numele pachetului aplicației?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Selectați aplicația dorită → „Editare rapidă”.</li>
+                    <li>Apoi schimbați numele pachetului.</li>
+                    <li>Selectați fișierul de semnătură dacă nu l-ați instalat înainte.</li>
+                    <li>Apăsați „Salvare”.</li>
+                </ol>  Fișierul final va fi plasat lângă aplicația selectată, cu mod la sfârșit.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum fac un clon apk în această aplicație?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Selectați aplicația dorită → „Editare rapidă”.</li>
+                    <li>Apoi schimbați numele pachetului, de exemplu adăugând sau eliminând ultimele litere din nume.</li>
+                    <li>Selectați fișierul de semnătură dacă nu l-ați instalat înainte.</li>
+                    <li>Apăsați „Salvare”.</li>
+                </ol>  Fișierul final va fi plasat lângă aplicația selectată, cu mod la sfârșit.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum clonez o aplicație în timpul editării rapide?  </summary>
+            <div class="answer_text">  Programul modifică următorii parametri în timpul editării rapide: AndroidManifest.xml și resources.arsc.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum adaptez aplicația pentru Android TV?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Selectați aplicația dorită → „Editare rapidă”.</li>
+                    <li>Apoi bifați caseta „Adaptează pentru Android TV”.</li>
+                    <li>Selectați fișierul de semnătură dacă nu l-ați instalat înainte.</li>
+                    <li>Apăsați „Salvare”.</li>
+                </ol>  Fișierul final va fi plasat lângă aplicația selectată, cu mod la sfârșit. Pictograma aplicației este folosită ca banner.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Ce trebuie să fac dacă aplicația nu se instalează după o editare rapidă?  </summary>
+            <div class="answer_text">  Ați verificat dacă pur și simplu nu ați semnat pachetul?<br>  În editarea rapidă, selectați o semnătură. Implicit, alegeți „nu semna” dacă nu ați folosit semnătura înainte.  </div>
+        </details>
+    </section>
+    <section id="section_two">
+        <div class="section_title">  Editare completă - decompilare și asamblare  </div>
+        <details class="details_block">
+            <summary class="question_title">  Ce este decompilarea și pentru ce se folosește?  </summary>
+            <div class="answer_text">  decompilarea arsc+dex traduce codul binar într-un format lizibil. Necesară pentru editarea resurselor aplicației (resources.arsc) și a asamblorului Smali (cod). Și pentru funcțiile care necesită această decompilare — accesarea informațiilor, aplicarea de patch-uri, traducere...  <p><em>Recompilarea necesită prezența binarilor aapt. Solicitarea de instalare apare la prima lansare a aplicației. Dacă nu ați făcut acest lucru, descărcarea se face în „Setări” Compilare și decompilare „Înlocuire instrumente” Descărcare pentru ... ”</em></p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum decompilez aplicația?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Selectați aplicația dorită.</li>
+                    <li>Atingeți-o.</li>
+                    <li>Se deschide un meniu pop-up.</li>
+                    <li>Selectați „Decompilează”.</li>
+                    <li>Marcăm elementele care trebuie decompilate:</li>
+                    <ul>
+                        <li>„Decompilează resursele”</li>
+                        <li>„Decompilează classes.dex” sau „Decompilează toate fișierele *.dex”.<br>
+                            <em>(Elementul „toate *.dex” este responsabil pentru dex-urile din foldere imbricate: de exemplu, în assets, mthook etc.)</em>
+                        </li>
+                        <li>Și, dacă este necesar, „Decompilarea resurselor suplimentare” cu alegerea unde să se decompileze.</li>
+                    </ul>
+                </ol>  După o decompilare reușită, va exista o notificare audio și un dialog, dacă a fost activată anterior în Setări.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum compilez aplicația înapoi?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>În interiorul proiectului, apăsați eticheta „Compilează proiectul” deasupra ferestrei explorerului.</li>
+                    <li>În fereastra de compilare, selectați instrumentul de resurse: aapt sau aapt2.</li>
+                    <li>Puteți specifica și semnarea automată, dacă este necesar.</li>
+                </ol>  Jurnalul este afișat în timp real. Puteți urmări etapele, comentariile și erorile în timpul compilării.<br>  La finalizare, jurnalul se va opri (acest lucru va fi vizibil).<br>  După o compilare reușită, va exista o notificare audio și un dialog, dacă a fost activată anterior în Setări.<br>  În partea de jos vi se va propune și instalarea imediată a aplicației compilate.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Unde este salvată aplicația după compilare?  </summary>
+            <div class="answer_text">  În folderul cu aplicația dezasamblată. În rădăcina proiectului (lângă apktool.json)  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Este posibilă decompilarea mai multor fișiere simultan?  </summary>
+            <div class="answer_text">  Da, dar este mai bine să decompilați mai multe pe rând, deoarece dacă decompilați simultan s-ar putea să nu aveți suficientă memorie.<br><br>
+                <details class="details_block">
+                    <summary class="question_title">  Cum se face?  </summary>
+                    <div class="answer_text">  Selectați mai multe fișiere și apăsați lung pentru a deschide meniul.<br>
+                        <u>Atenție!</u>  Funcționează pentru fișiere de același tip. Dacă este selectat altceva decât apk, meniul nu va conține elemente.  </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum schimb folderul unde vor fi salvate apk-urile?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Setări → „Compilare și decompilare” → „Setează directorul de ieșire al aplicațiilor instalate”  </li>
+                    <li>Mergeți în folderul dorit, atingeți linia „cale” — setați directorul de ieșire.</li>
+                    <li>Puteți seta folderul de ieșire și direct în managerul de fișiere.</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Ce este elementul „Directorul de ieșire al aplicațiilor instalate”?  </summary>
+            <div class="answer_text">  Este directorul unde APK-urile vor fi exportate/extrase pentru lucrări ulterioare din meniul Aplicații.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum înlocuiesc resursele din fișierul „.apk”?  </summary>
+            <div class="answer_text">  Mai întâi trebuie să decompilați, apoi să copiați/lipiți fișiere și să compilați.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Ce trebuie să fac dacă aplicația nu se compilează, deși totul a fost făcut fără erori, sau nu am schimbat nimic în apk, ci doar l-am recompilat?  </summary>
+            <div class="answer_text">  Schimbați versiunea aapt.<br> Vizualizați jurnalul la nivelul de eveniment Warning.  <br> În general, uitați-vă la jurnal — motivul ar trebui să fie indicat acolo.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Care este compatibilitatea cu proiectele Apktool?  </summary>
+            <div class="answer_text">  Apktool M permite compilarea proiectelor analizate prin Apktool obișnuit.<br>  Înainte de compilare, Apktool M convertește .yml în .json.<br>  Puteți urmări informațiile despre proces folosind jurnalul.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Poate Apktool M să lucreze cu aplicații de sistem?  </summary>
+            <div class="answer_text">  Da, este posibil.<br><br>
+                <details class="details_block">
+                    <summary class="question_title">  Cum se face?  </summary>
+                    <div class="answer_text">  Înainte de a lucra cu astfel de apk-uri, trebuie să importați framework-urile apk folosind elementul din meniul contextual pentru acest apk. Importul se face pe toate astfel de apk-uri.    <p>Calea de bază: /system/framework/..</p>    Pot fi situate și în /system/vendor/framework etc., în directoare adiacente. Dacă aceste directoare există (o apariție rară).<br><br>  Exemplu de framework-uri:<br>
+                        <img align="center" alt="" class="image" src="data:image/webp;base64,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" width="100%">
+                        <p>Apoi decompilați și compilați ca un apk obișnuit. Pentru a păstra META-INF și manifestul originale, activați butonul radio „Potrivire cu originalul” în setările de decompilare.</p>
+                    </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Explicația punctelor din secțiunea „Compilare și decompilare”  </summary>
+            <div class="answer_text">
+                <details class="details_block">
+                    <summary class="question_title">  Folder de ieșire  </summary>
+                    <div class="answer_text">  Calea unde aplicațiile instalate vor fi exportate/extrase din fila „Aplicații”.  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Folosește aapt2  </summary>
+                    <div class="answer_text">  Adaugă a doua versiune a instrumentului la elementul de selectare a versiunii aapt înainte de compilare.  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Informații de depanare  </summary>
+                    <div class="answer_text">
+                        <p>La compilare, datele de depanare sunt stocate în fișiere Smali, cum ar fi<code>.line, .param</code>și așa mai departe.</p>
+                        
+                        <u>Notă:</u><br>  Aceste date sunt necesare doar pentru depanarea aplicației în modul depanabil. Și pentru depanarea punctuală a crash-urilor Smali în Logcat (apariție rară; poate ajuta ca ancoră la linia care cauzează crash-ul). Nu afectează execuția codului. Aceste date pot ajuta și la editarea asamblorului Smali ca puncte de referință (pentru modelatori).  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Mod de depanare  </summary>
+                    <div class="answer_text">  Scrie <code>
+                            &lt;application /&gt;
+                        </code> valoarea atributului în manifest, în eticheta <code>android:debuggable</code> la <code>true</code>. Anunță sistemul că este o aplicație de depanare. Permite extinderea accesului la jurnalizarea acestei aplicații. Interacțiunea cu această funcție este posibilă doar cu ajutorul unor instrumente speciale (cum ar fi Android Studio, precum și depanarea la nivel ADB etc.). Această opțiune nu se aplică Logcat — numărul de înregistrări de depanare din jurnalul sistemului nu se va schimba dacă acest parametru este modificat.    <p>Pentru a specifica o astfel de aplicație ca cea curentă pentru depanare, selectați-o în „Setări sistem” Pentru dezvoltatori „Aplicație de depanare” (căile pot diferi).</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Complet  </summary>
+                    <div class="answer_text">  În timpul compilării, afișează în jurnal starea finală a fiecăruia dintre fișiere după compilare. Nu o activați dacă nu aveți nevoie.  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Potrivire cu originalul  </summary>
+                    <div class="answer_text">  Permite salvarea hash-ului original META-INF și al manifestului respectând hash-urile originale ale resurselor.<br>  Acest mod permite editarea doar a Smali — dacă încercați să compilați fișierul editat din res/..., va fi șters în apk-ul final, deoarece nu se potrivește cu hash-ul original (modificat).  <p>
+                                <span class="warning_text"><em>Această întrebare trebuie clarificată.</em></span></p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Analiza tuturor Smalisedit  </summary>
+                    <div class="answer_text">  Accelerează analiza fișierelor în Smali.  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Adaugă „APKTOOL_DUMMY”  </summary>
+                    <div class="answer_text">
+                        <p>Implicit, ID-urile de resurse din resources.arsc sunt setate în progresie aritmetică. În unele cazuri, poate fi întreruptă — unele locuri din tipurile de valori pot să nu fie completate (sunt neocupate).</p>
+                        <p>Aceste locuri sunt setate din stub-ul APKTOOL_DUMMY pentru a restabili integritatea progresiei. Aceste linii nu sunt folosite de nimeni și nu afectează nimic.</p>
+                        <u>O mică notă:</u><br>
+                        <p>Dacă ștergeți un obiect de resursă din res/values/public.xml, în timpul compilării va încerca să găsească un astfel de spațiu liber și să-și seteze ID-ul acolo. Dacă nu există locuri disponibile, va fi adăugat la sfârșitul listei de elemente din categoria sa. Nu este recomandat să faceți acest lucru cu ID-uri de obiecte specificate în Smali — va cauza un crash, deoarece resursa specificată prin ID a fost mutată (nu mai există ca atare).</p>
+                        <p>Ștergerea public.xml va forța Apktool să creeze o progresie de la zero — atunci APKTOOL_DUMMY nu va fi instalat nicăieri, deoarece nu există spații libere între ID-ul de început și cel de închidere.</p>
+                        <p>Necesitatea APKTOOL_DUMMY este determinată exclusiv de utilizator. Poate fi necesară și dacă proiectul decompilat are o structură specifică între ID-uri (în special din cauza atributelor personalizate și/sau a ofuscării).</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Formatare HTML  </summary>
+                    <div class="answer_text">  Conținutul tuturor fișierelor .html și .htm (?) va fi formatat conform sintaxei XML. Acest lucru poate perturba afișarea paginii HTML. Se instalează doar dacă este necesar.  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Șterge folderul „build”  </summary>
+                    <div class="answer_text">
+                        <p>În timpul compilării, fișierele DEX și ARSC sunt puse în cache în folderul build. Dacă nu ați schimbat resursele după compilarea anterioară și ați recompilat apk-ul, .arsc nu va fi creat din nou, ci va fi preluat din instanța din cache, deoarece hash-ul său este identic (nemodificat). Acest lucru se aplică și Smali (fișiere DEX). Accelerează compilarea apk-ului sărind recompilarea.</p>
+                        <p>Ștergerea unui folder este însoțită doar de eliberarea de spațiu. După aceea, la următoarea compilare, .dex și .arsc vor fi recreate „de la zero” și folderul va fi recreat. Activarea acestei opțiuni permite ștergerea automată a unui folder după o compilare reușită. Activați-o dacă doriți.</p>
+                    </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Toate în directorul de ieșire  </summary>
+                    <div class="answer_text">  Toate apk-urile compilate cu succes vor fi mutate automat în directorul de ieșire de mai sus.  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Gestionarea framework-urilor  </summary>
+                    <div class="answer_text">  Permite gestionarea cadrelor importate din exterior. Butonul de resetare golește lista și fișierele local, și restaurează și res-framework.apk (ID 1) din Apktool M.  </div>
+                </details>
+            </div>
+        </details>
+    </section>
+    <section id="section_three">
+        <div class="section_title">  Traducerea aplicațiilor  </div>
+        <details class="details_block">
+            <summary class="question_title">  Câte limbi sunt suportate pentru traducere?  </summary>
+            <div class="answer_text">  Peste 100 de limbi.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Ce opțiuni sunt disponibile în Yandex.Translate?  </summary>
+            <div class="answer_text">
+                <li>Traducere automată a șirurilor selectate din resurse (strings, arrays, plurals) și smali;</li>
+                <li>Traducere manuală în resurse (strings, arrays, plurals) și smali;</li>
+                <li>Corectarea traducerii;</li>
+                <li>Traducere online cu alegerea mai multor servicii de traducere;</li>
+                <li>Traducere offline;</li>
+                <li>Suport pentru dicționare;</li>
+                <li>Crearea propriilor dicționare dintr-o traducere existentă;</li>
+                <li>Suport pentru dicționarele MT Manager;</li>
+                <li>Combinarea limbilor.</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Câte servicii de traducere online sunt disponibile în aplicație?  </summary>
+            <div class="answer_text">  Trei: Yandex, Google, Bing.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Nu găsesc funcția de traducere a aplicației. Cum activez Yandex.Translate și traduc aplicația (strings.xml) în rusă?  </summary>
+            <div class="answer_text">  Această funcție este disponibilă doar când aplicația este decompilată.  <ol>
+                    <li>Decompilați resursele apk-ului dorit.</li>
+                    <li>Mergeți în folderul cu fișierele decompilate.</li>
+                    <li>Deschideți meniul managerului de fișiere (se deschide apăsând bara de adrese) și selectați „Translator”.</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum traduc o aplicație automat?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Decompilați resursele apk-ului dorit.</li>
+                    <li>Mergeți în folderul cu fișierele decompilate.</li>
+                    <li>Deschideți meniul managerului de fișiere (se deschide apăsând bara de adrese) și selectați elementul „Translator”, apoi apăsați cele trei puncte dreapta sus și selectați „Traducere automată”.</li>
+                    <li>În meniul care se deschide, selectați serviciul de traducere dorit, de exemplu Yandex.</li>
+                    <li>La elementul „Limba sursă” puteți lăsa „Detectează limba”; la selectarea automată a limbii finale, alegeți-o pe cea dorită. Implicit este sugerată limba instalată pe sistem.</li>
+                    <li>În partea de jos, bifați casetele necesare „Unește dacă există” sau „Salvează doar șirurile traduse”</li>
+                    <li>Selectați liniile necesare.</li>
+                    <li>Apăsați „Traduce” pentru a traduce șirurile din res/values/strings.</li>
+                    <li>După finalizarea transferului, apăsați din nou cele trei puncte dreapta sus și selectați „Salvare”  </li>
+                    <li>Compilăm proiectul nostru (aplicația).</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum traduc o aplicație în smali automat?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Decompilați apk-ul dorit.</li>
+                    <li>Mergeți în folderul cu fișierele decompilate.</li>
+                    <li>Deschideți meniul managerului de fișiere (se deschide apăsând bara de adrese) și selectați „traducere smali”, apoi apăsați cele trei puncte dreapta sus și selectați „Traducere automată”.</li>
+                    <li>În meniul care se deschide, selectați serviciul de traducere dorit, de exemplu Yandex.</li>
+                    <li>La elementul „Limba sursă” puteți lăsa „Detectează limba”; la selectarea automată a limbii finale, alegeți-o pe cea dorită. Implicit este sugerată limba instalată pe sistem.</li>
+                    <li>Selectați liniile necesare.</li>
+                    <li>În partea de jos, bifați casetele necesare „Unește dacă există” sau „Salvează doar șirurile traduse”</li>
+                    <li>Apăsați „Traduce”</li>
+                    <li>După finalizarea transferului, apăsați din nou cele trei puncte dreapta sus și selectați „Salvare”.  </li>
+                    <li>Compilăm proiectul nostru (aplicația).</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  În „Traducere automată” există o funcție „corectează traducerea”. Pentru ce se folosește?  </summary>
+            <div class="answer_text">  Pentru a sări liniile pe care nu trebuie să le traduceți: <code>true, false, %1$d/%2$d</code>, acum include și grafica vectorială, referințe etc., precum și corectează unele linii după traducerea automată.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum traduc o aplicație manual?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Decompilați apk-ul dorit.</li>
+                    <li>Mergeți în folderul cu fișierele decompilate.</li>
+                    <li>Deschideți meniul managerului de fișiere (se deschide apăsând bara de adrese) și selectați „traducere smali” și editați manual liniile necesare.</li>
+                    <li>Dreapta sus, apăsați cele trei puncte și selectați „Salvare”</li>
+                    <li>Compilăm proiectul nostru (aplicația).</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum pot combina limbi dacă șirurile implicite ale aplicației traduse nu conțin pe cele necesare, dar altele da?  </summary>
+            <div class="answer_text">  După traducerea necesară a aplicației, mergeți în meniul translatorului, selectați „adaugă, adaugă din” și adăugați liniile lipsă din altă localizare. Desigur, apoi le traducem, dacă este necesar.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Ce format de dicționar este suportat în Apktool M?  </summary>
+            <div class="answer_text">  *.amd și *.mtd  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum îmi creez propriul dicționar dintr-un fișier tradus?  </summary>
+            <div class="answer_text">  Deschideți Yandex.Translate, selectați „creează dicționar” din meniu, selectați sursa (șiruri netraduse) și resursa țintă (fișierul dvs. de traducere) din folderul proiectului și salvați.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum folosesc dicționarul salvat?  </summary>
+            <div class="answer_text">  Data viitoare când faceți un transfer, va apărea în selectarea serviciului de traducere.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  De unde pot obține un dicționar gata pentru traducere offline?  </summary>
+            <div class="answer_text">  În <a href="https://4pda.to/forum/index.php?showtopic=548542&amp;view=findpost&amp;p=29447386&amp;anchor=Spoil-29447386-6">subiectul MT Manager</a><br>  Copiați-l în „Director de ieșire/dictionary” (implicit este „Apktool_M/dictionary” în memoria internă) sau pur și simplu importați-l apăsând pe fișierul dicționarului în program și adăugați-l.<br>  După aceea, dicționarul va apărea în Yandex.Translate, în serviciile de traducere automată.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  După transfer, proiectul nu este colectat. Returnează o eroare.  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Ștergeți liniile invalide care sunt de obicei specificate în jurnalul de eroare al compilării.</li>
+                    <li>Pentru compilare, folosiți aapt1 dacă nu se compilează cu aapt2 și nu există erori despre șiruri de traducere invalide.</li>
+                    <li>Aplicația poate fi protejată prin semnătură.</li>
+                </ol>
+            </div>
+        </details>
+    </section>
+    <section id="section_four">
+        <div class="section_title">  Funcția Antisplit  </div>
+        <details class="details_block">
+            <summary class="question_title">  Ce este un Antisplit?  </summary>
+            <div class="answer_text">  Este îmbinarea Android App Bundle (split) într-un singur fișier de instalare, precum și instalarea și extragerea acestor fișiere.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum se compilează un apk din split-uri? Unde se află această opțiune?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>În meniul contextual „Antisplit”. Apelat cu o atingere scurtă pe apks/xapk.</li>
+                    <li>În meniul contextual „Antisplit”. Apelat atingând un grup de apk-uri preselctate / selectate.</li>
+                </ol>  Apoi selectați instrumentul de compilare necesar: aapt2 sau aapt, dacă aplicația nu se compilează mai întâi.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Pot compila un apk din split-ul instalat?  </summary>
+            <div class="answer_text">  Da.<br>  Selectăm aplicația instalată din lista de aplicații și cu o atingere lungă apelăm elementul „Antisplit”.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Unde se află fișierul colectat?  </summary>
+            <div class="answer_text">  Apk-ul se află în folderul de lucru implicit: internal_memory/Apktool_M.<br>
+                <small><i>La sfârșitul compilării va exista un buton „Instalează”, dar dacă îl țineți apăsat mult timp, se va deschide folderul cu fișierul.</i></small>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Instrucțiuni pas cu pas pentru conversia Apks în Apk folosind Apktool M.  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Selectați fișierul dorit (Apks) și apăsați pe el.</li>
+                    <li>Apoi selectați „Antisplit” din meniul care apare.</li>
+                    <li>Apoi apăsați din nou butonul „Antisplit” (mai întâi asigurați-vă că toate fișierele, adică toate casetele, au fost activate).</li>
+                    <li>După aceea, selectați instrumentul dorit (aapt2 sau aapt dacă aplicația nu este compilată) și apăsați butonul „Selectează”.</li>
+                    <li>Așteptați finalizarea întregului proces.</li>
+                </ol>  Acum Apks-ul dvs. s-a transformat într-un Apk și puteți lucra cu el ca cu un fișier Apk obișnuit.  </div>
+        </details>
+    </section>
+    <section id="section_five">
+        <div class="section_title">  Crearea unei semnături personalizate  </div>
+        <details class="details_block">
+            <summary class="question_title">  Cum îmi creez semnătura?  </summary>
+            <div class="answer_text">
+                <p>Mergeți la „Setări” → „Semnătură”, selectați „Creează cheie”.</p>
+                <li><small><i>În setările de semnătură puteți seta numele fișierelor RSA/SF, precum și numele creatorului pentru semnătura V1</i></small></li><br>  În meniul care se deschide, completați următoarele linii:  <p><u>Algoritm de semnătură:</u><br>  Diferența în lungimea hash-ului certificatului (după semnarea apk-ului). SHA256withRSA este optim. Îl lăsăm implicit. MD5 este considerat nesigur. Diferențele detaliate pot fi găsite pe Internet.</p>
+                <p><u>Tip:</u><br>  Specifică tipul de stocare. Implicit, JKS (cunoscut și ca .keystore). Diferențele detaliate pot fi găsite pe Internet.</p>
+                <p><u>Calea către cheie:</u><br>  Locația de ieșire a stocării cheii. Numele fișierului este introdus automat și îl puteți schimba la final dacă doriți.</p>
+                <p><u>Alias:</u><br>  Alias pentru cheie. Specificat la import/operare.</p>
+                <p><u>Parola stocării și a cheii:</u><br>  Parolă pentru protejarea stocării și a cheii înainte de import/utilizare. Pentru comoditate, le puteți face identice.</p>
+                <p><u>Dimensiunea cheii:</u><br>  Specifică numărul de biți (lungimea) semnăturii cheii. Valoarea implicită este 2048. Mărirea dimensiunii crește puterea criptografică, dar este mai greu de analizat (mai lent). Se setează folosind o progresie geometrică informativă (2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096 și așa mai departe)</p>
+                <p><u>Perioada de valabilitate:</u><br>  Timpul de la data creării când expiră autenticitatea cheii. Specificat în ani.</p>
+                <p><u>Următoarele informații sunt necesare pentru a informa despre proprietarul semnăturii. Specificați după dorință:</u><br>  Nume, funcție, organizație, oraș, regiune/stat, țară.</p>
+                <p>Butonul „Salvare” finalizează crearea și plasează depozitul de chei pe calea specificată anterior.</p>
+                <p>Butonul „Creează și folosește” importă suplimentar fișierul final în locul semnăturii utilizatorului.</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Este posibilă conversia depozitelor jks/keystore în pk8+x509.pem?  </summary>
+            <div class="answer_text">  Da, este posibil.  </div>
+        </details>
+    </section>
+    <section id="section_six">
+        <div class="section_title">  Manager de fișiere  </div>
+        <details class="details_block">
+            <summary class="question_title">  Are Apktool un manager de fișiere complet?  </summary>
+            <div class="answer_text">  Da.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum accesez meniul managerului de fișiere?  </summary>
+            <div class="answer_text">  Meniul se deschide apăsând bara de adrese.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Ce funcții are?  </summary>
+            <div class="answer_text">
+                <li>ștergerea fișierelor;</li>
+                <li>copierea lor;</li>
+                <li>redenumirea, inclusiv redenumirea în lot;</li>
+                <li>crearea unei liste de fișiere;</li>
+                <li>arhivarea;</li>
+                <li>proprietățile fișierelor și folderelor;</li>
+                <li>căutare completă;</li>
+                <li>marcaje;</li>
+                <li>istoricul ultimelor fișiere deschise;</li>
+                <li>dialogul de proprietăți al fișierului apk/apks este un subiect separat;</li>
+                <li>previzualizarea fișierelor xml/svg vectoriale, precum și conversia imaginilor în vector;</li>
+                <li>previzualizarea fonturilor ttf/otf;</li>
+                <li>operații în lot cu apk-uri sau imagini selectate, prin apăsare lungă;</li>
+                <li>în folderele proiectului, în proprietățile fișierelor de resurse, se află ID-ul lor din public.xml (dacă există).</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum deschid meniul contextual la vizualizarea fișierelor?  </summary>
+            <div class="answer_text">  Atingere lungă pe fișierul însuși.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Ce elemente sunt disponibile în meniul contextual?  </summary>
+            <div class="answer_text">
+                <li>Trimite fișierul(ele)...</li>
+                <li>Deschide în...</li>
+                <li>Elimină.</li>
+                <li>Redenumește.</li>
+                <li>Comprimă.</li>
+                <li>Extrage aici.</li>
+                <li>Extrage în „Nume fișier”</li>
+                <li>Vezi conținutul.</li>
+                <li>Proprietăți.</li>
+                <li>Copiază.</li>
+                <li>Taie.</li>
+                <li>MPatcher.</li>
+                <li>Alege.</li>
+                <li>Selectează tot.</li>
+                <li>Copiază numele.</li>
+                <li>Copiază calea.</li>
+                <li>Adaugă la marcaje.</li>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum selectez un fișier / folder?  </summary>
+            <div class="answer_text">
+                <ol>
+                    <li>Apăsare lungă pe fișierul / folderul însuși sau pe pictogramă.</li>
+                    <li>După selectarea unui fișier / folder prin apăsare lungă pe pictogramă, puteți apăsa lung pe pictograma altui fișier pentru a selecta fișiere „de la și până la”.</li>
+                    <li>Puteți selecta rapid totul și prin apăsare lungă pe pictograma „înapoi” (..)</li>
+                </ol>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum redenumesc fișierele?  </summary>
+            <div class="answer_text">  Prin apăsare lungă pe fișier apare dialogul de redenumire.<br>  În același dialog, prin apăsare lungă pe „auto”, puteți redenumi în mod automat folosind șabloane.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum pot edita un fișier folosind un editor extern direct din aplicație?  </summary>
+            <div class="answer_text">  Apăsare lungă pe fișier → în meniul contextual pop-up, selectați „Deschide în”...  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum creez o arhivă de fișiere?  </summary>
+            <div class="answer_text">  Selectați „Comprimă” din meniul contextual. La arhivarea fișierelor, le puteți adăuga la o arhivă existentă.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Pot șterge sau înlocui fișiere/foldere în arhive (inclusiv APK-uri) fără a le dezasambla/asambla?  </summary>
+            <div class="answer_text">  Da.<br>
+                <ol>
+                    <li>Atingere lungă pe arhiva /.apk și selectați „Vezi conținutul” din meniul pop-up.</li>
+                    <li>Folosiți o atingere lungă pentru a selecta ce trebuie să ștergeți sau să extrageți.</li>
+                </ol>  După manipulările necesare, fișierul va fi reasamblat și semnat automat.<br>  Fișierul original este salvat alături cu extensia .bak.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum pot înlocui un fișier sau un folder cu unul deja editat într-un APK dezasamblat?  </summary>
+            <div class="answer_text">  Atingere lungă pe fișierul dorit și selectați „Extrage aici” din meniul contextual...<br>  Dacă doriți, de exemplu, să înlocuiți o imagine din folderul drawable, trebuie să adăugați la apk folderul res cu înlocuirea, care conține folderul drawable, care la rândul său conține imaginea.<br>
+                <p>
+                    <span class="warning_text">Cu alte cuvinte, este important să păstrați structura directoarelor!</span>
+                </p>  După acțiunile necesare, arhivăm din nou fișierul cu extensia apk.<br>  Îl semnăm.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Are Apktool M un motor de căutare complet?  </summary>
+            <div class="answer_text">  Da.<br>  Există atât căutare de fișiere, de nume de fișiere, de text în fișiere, cât și de aplicații instalate.<br>  Introducerea manuală a adresei este declanșată prin apăsare lungă pe adresă.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Are aplicația căutare cu expresii regulate?  </summary>
+            <div class="answer_text">  Da.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum încep să folosesc căutarea?  </summary>
+            <div class="answer_text">  Deschideți meniul managerului de fișiere apăsând pe adresă.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Nu am găsit căutarea de foldere. Doar în fișier.  </summary>
+            <div class="answer_text">  Nu trebuie să țineți folderul, ci să intrați în folderul unde se va face căutarea, apoi să apăsați pe „săgeata sau calea către folder/fișier” și va apărea meniul de căutare.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Sunt salvate toate rezultatele căutării și cum le găsesc?  </summary>
+            <div class="answer_text">  Da. Istoricul căutărilor este salvat.<br>  Apare un element în meniul Explorer (apăsați pe adresa de sus) sau prin apăsare lungă pe pictograma de căutare din panoul de jos, dacă este activată acolo.<br>  Puteți căuta și în rezultatele căutării însele.<br>  Dacă nu ați căutat nimic, acest element lipsește.  </div>
+        </details>
+    </section>
+    <section id="section_seven">
+        <div class="section_title">  Diverse  </div>
+        <details class="details_block">
+            <summary class="question_title">  Are Apktool o funcție de clonare?  </summary>
+            <div class="answer_text">  Da.<br>  Aceasta necesită o decompilare completă a aplicației.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum mai pot clona o aplicație?  </summary>
+            <div class="answer_text">  Folosiți patch-ul din programul MPatcher.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum pot elimina limbile inutile din aplicație, cu excepția ru, eng?  </summary>
+            <div class="answer_text">  În meniul contextual, selectați elementul „Optimizează (aapt2)”.<br>  În setările acestui element, bifați caseta „Setează configurația” și specificați limba pe care trebuie să o lăsați, în acest caz „ru, ru-rRU”.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum elimin toate limbile cu excepția rusă, ucraineană și engleză?  </summary>
+            <div class="answer_text">  Similar cu ștergerea tuturor limbilor cu excepția rusă și engleză.<br>  La elementul „Setează configurația”, specificați limbile pe care trebuie să le lăsați, de exemplu „ru, ru-rRU, uk, ru-rUA, uk-rRU”.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum pot vizualiza lista de aplicații instalate?  </summary>
+            <div class="answer_text">  Dreapta sus — fila „Aplicații”.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum editez tot Manifestul din aplicație?  </summary>
+            <div class="answer_text">  Tot manifestul este editat când resursele sunt decompilate.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Există un convertor de valori integrat?  </summary>
+            <div class="answer_text">
+                <p>Da.</p>
+                <details class="details_block">
+                    <summary class="question_title">  Cum ajung acolo?  </summary>
+                    <div class="answer_text">  Ecranul principal → Trei puncte în colțul din dreapta sus → Convertorul.  </div>
+                </details>
+                <details class="details_block">
+                    <summary class="question_title">  Ce valori sunt suportate?  </summary>
+                    <div class="answer_text">
+                        <li>Text ↔ SHA-384</li>
+                        <li>Text ↔ SHA-224</li>
+                        <li>Text ↔ SHA-256</li>
+                        <li>Text ↔ SHA-512</li>
+                        <li>Text SHA-1 text</li>
+                        <li>Text ↔ MD5</li>
+                        <li>Text ↔ Codare URL</li>
+                        <li>Text ↔ Unicode</li>
+                        <li>↔ Text Base64</li>
+                        <li>Text ↔ Array (US-ASCII)</li>
+                        <li>Text ↔ Array (UTF-16LE)</li>
+                        <li>Text ↔ Array (UTF-16BE)</li>
+                        <li>Text ↔ Array (UTF-8)</li>
+                        <li>Text ↔ Array (CP1251)</li>
+                        <li>Text ↔ Array (ISO-8859-1)</li>
+                        <li>Zecimal ↔ Octal</li>
+                        <li>Zecimal ↔ Binar</li>
+                        <li>↔ Culoare Smali</li>
+                        <li>Zecimal ↔ Hex (0x0)</li>
+                        <li>Zecimal ↔ Hex (0x00000000)</li>
+                        <li>Zecimal ↔ Hex</li>
+                        <li>Float ↔ Binar</li>
+                        <li>Float ↔ Octal</li>
+                        <li>Float ↔ Hex</li>
+                        <li>Float ↔ Hex (0x0)</li>
+                        <li>Float ↔ Hex (0x00000000)</li>
+                        <p><u>Atenție!</u></p>  Toate cifrurile compatibile invers pot fi convertite înapoi. Acest lucru se face în fereastra de introducere de jos.  </div>
+                </details>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum actualizez Apktool M?  </summary>
+            <div class="answer_text">  Ecranul principal → Trei puncte în colțul din dreapta sus → „Setări” → „Actualizare program” activați „Verifică actualizări”.<br>  Mai jos puteți selecta elementul „Frecvența verificării actualizărilor”.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum descarc actualizarea?  </summary>
+            <div class="answer_text">  Din Apktool M însuși sau descărcați prin browser.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Unde este salvat fișierul de actualizare?  </summary>
+            <div class="answer_text">  În memoria internă, în folderul „Download”.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Pot dezactiva verificarea actualizărilor?  </summary>
+            <div class="answer_text">  Da, puteți.  <p>Ecranul principal → Trei puncte în colțul din dreapta sus → „Setări” → „Despre aplicație” → „Dezactivează verificarea actualizărilor”.</p>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum pot restaura dintr-o copie de rezervă? Elementul meu de restaurare nu este activ...  </summary>
+            <div class="answer_text">  Pentru a recupera, trebuie mai întâi să salvați contul.<br>  Fișierul de rezervă trebuie să se afle pe calea: „/internal_memory/Apktool_M. backup”; dacă nu este prezent, elementul nu este activ.  </div>
+        </details>
+    </section>
+    <section id="section_eight">
+        <div class="section_title">  MPatcher  </div>
+        <details class="details_block">
+            <summary class="question_title">  Ce este MPatcher?  </summary>
+            <div class="answer_text">  Este o aplicație pentru rularea, crearea, importul și exportul de scripturi și patch-uri scrise în Shell, integrată în Apktool M.  </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Există un subiect separat pe Forum?  </summary>
+            <div class="answer_text">  Da: <a href="https://4pda.to/forum/index.php?showtopic=1018077">MPatcher</a>
+            </div>
+        </details>
+        <details class="details_block">
+            <summary class="question_title">  Cum apelez MPatcher?  </summary>
+            <div class="answer_text">  Atingere lungă pe fișier și selectați „MPatcher” din meniul contextual care se deschide.<br>  Aceasta va specifica apk-ul țintă.    <p>Pentru a selecta proiectul țintă — deasupra „Compilează” există un meniu derulant, există un element MPatcher.</p>
+            </div>
+        </details>
+    </section>
+    <script type="text/javascript">(function(){window.location.search.substring(1).split("&").forEach(function(a){a=a.split("=");"theme"==a[0]&&document.body.setAttribute("class",a[1])});})();</script>
+</body>
+</html>
