@@ -957,4 +957,22 @@
         <string name="select_icon_info">Για να αλλάξετε το εικονίδιο, θα πρέπει να κάνετε επανεκκίνηση. Συνέχεια;</string>
         <string name="editor_indent">Μέγεθος εσοχής</string> 
 	    <string name="editor_indent_summary">Μέγεθος εσοχής κατά τη μορφοποίηση κειμένου</string>
+        <string name="resources_found">Βρέθηκαν συνολικά %d πόροι</string>
+        <string name="play_row">Παίξτε σε σειρά</string>
+        <string name="color_pipette">Πιπέτα χρώματος</string>
+        <string name="permission_needle">Πρέπει να δοθεί άδεια για χρήση αυτής της λειτουργίας!</string>
+        <string name="pipette_info">Μπορείτε να αλλάξετε την κλίμακα κάνοντας κίνηση σύσφιξης μέσα στο μεγεθυντικό φακό.\nΟι λεπτές ρυθμίσεις γίνονται μετακινώντας το δάχτυλό σας πάνω στο μεγεθυντικό φακό.\nΜε σύντομο πάτημα στο άνω μισό του χρωματικού δακτυλίου αντιγράφεται το χρώμα, ενώ με παρατεταμένο πάτημα αλλάζει η μορφή.\nΜε σύντομο πάτημα στο κάτω μισό του δακτυλίου κλείνει το μεγεθυντικό φακό, ενώ με παρατεταμένο πάτημα επαναφέρεται το ζουμ.</string>
+        <string name="part_matches">ταιριάζει εν μέρει</string>
+        <string name="editor_auto_reload">Αυτόματη επαναφόρτωση των τροποποιημένων αρχείων</string>
+        <string name="editor_auto_reload_summary">Χωρίςερώτηση επιβεβαίωσης, αλλά φορτώστε ξανά το αρχείο αμέσως, εάν έχει τροποποιηθεί από άλλο πρόγραμμα</string>
+        <string name="mode">Λειτουργία</string>
+        <string name="server_start">Έναρξη HTTP/WebDav διακομιστή</string>
+        <string name="server_running">Ο διακομιστής είναι σε λειτουργία!</string>
+        <string name="server_running_f">Ο διακομιστής ξεκίνησε: %s</string>
+        <string name="server_stopped">Ο διακομιστής διακόπηκε</string>
+        <string name="start">Έναρξη</string>
+        <string name="stop">Παύση</string>
+        <string name="local_server">Τοπικός διακομιστής</string>
+        <string name="server_already_running">Ο διακομιστής λειτουργεί ήδη!</string>
+        <string name="pathf">Διαδρομή: %s</string>
 </resources>
