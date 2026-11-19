@@ -810,6 +810,10 @@
     <string name="select_icon">Иконка приложения</string>
 	<string name="select_icon_summary">Выберите иконку приложения</string>
     <string name="select_icon_info">Для смены иконки потребуется перезапуск, продолжить?</string>
+    <string name="rows_count">Количество строк в имени</string>
+	<string name="rows_count_summary">Количество строк в имени файла и информации в списке файлов</string>
+ 	<string name="fix_quotes">Исправлять кавычки в переводчике</string>
+	<string name="fix_quotes_summary">Удалять кавычки, если вся строка полностью в кавычках</string>
 	<string name="shell_run">Запустить скрипт</string>
 	<string name="shell_run_root">Запустить скрипт с root-правами</string>
 	<string name="search_call">Найти вызовы</string>

@@ -16,8 +16,8 @@
 	<string name="block_icon" translatable="false">&#xec41;</string>
     <string name="list_icon" translatable="false">&#xec6f;</string>
     <string name="clock_icon" translatable="false">&#xec4e;</string>
-    <string name="prev_icon" translatable="false">◀</string>
-    <string name="next_icon" translatable="false">▶</string>
+    <string name="prev_icon" translatable="false">&#xec78;</string>
+    <string name="next_icon" translatable="false">&#xec6e;</string>
 	<string name="base64">Base64: %s</string>
 	<string name="base64_sign">Base64 of signature: %s</string>
 	<string name="base64_cert">Base64 of certificate: %s</string>
@@ -831,6 +831,10 @@
     <string name="select_icon">Application icon</string>
 	<string name="select_icon_summary">Select an application icon</string>
     <string name="select_icon_info">To change the icon, you will need to restart, continue?</string>
+    <string name="rows_count">Number of lines in name</string>
+	<string name="rows_count_summary">Number of lines in the file name and information in the file list</string>
+ 	<string name="fix_quotes">Correct quotes in the translator</string>
+	<string name="fix_quotes_summary">Remove quotes if the entire string is completely in quotes</string>
     <string name="shell_run">Run script</string>
 	<string name="shell_run_root">Run the script with root rights</string>
 	<string name="search_call">Find calls</string>
