@@ -965,4 +965,28 @@
     <string name="resources_found">共找到 %d 个资源</string>
     <string name="editor_indent">缩进大小</string>
 	<string name="editor_indent_summary">格式化文本时的缩进大小</string>
+
+    <string name="mode">模式</string>
+    <string name="server_start">启动 HTTP/WebDav 服务器</string>
+    <string name="local_server">本地服务器</string>
+    <string name="server_label">HTTP/WebDav 服务器</string>
+    <string name="server_starting">正在启动服务器...</string>
+    <string name="server_running">服务器正在运行</string>
+    <string name="server_running_f">服务器已启动：%s</string>
+    <string name="server_already_running">服务器已经在运行了！</string>
+    <string name="server_stopped">服务器已停止</string>
+    <string name="stop">停止</string>
+    <string name="pathf">路径：%s</string>
+    <string name="random_sign">用随机密钥签名</string>
+    <string name="color_pipette">取色器</string>
+    <string name="pipette_info">您可以通过在放大镜内捏合来改变缩放比例。\n通过在放大镜上移动手指可以进行微调。\n短按颜色环的上半部分可复制颜色，长按可更改格式。\n短按颜色环的下半部分可关闭放大镜，长按可重置缩放。</string>
+    <string name="permission_needle">必须获得权限才能使用此功能！</string>
+    <string name="part_matches">部分匹配</string>
+    <string name="dir_suffix">文件夹的后缀“/”</string>
+ 	<string name="editor_auto_reload">自动重新加载已更改的文件</string>
+	<string name="editor_auto_reload_summary">如果文件已被其他程序修改，不需要请求确认，而是立即重新加载该文件</string>
+    <string name="rows_count">名字中的行数</string>
+	<string name="rows_count_summary">文件名中的行数，以及文件列表中的信息</string>
+ 	<string name="fix_quotes">在翻译器中更正引号</string>
+	<string name="fix_quotes_summary">如果整个字符串完全被引号包围，则去掉引号</string>
 </resources>
